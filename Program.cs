@@ -17,6 +17,9 @@
             {
                 Console.WriteLine(item);
             }
+
+            //Modified Kaprekar Numbers
+            Console.WriteLine(basic_Task.kaprekarNumbers(1, 100));
         }
     }
 }
