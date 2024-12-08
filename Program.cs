@@ -20,6 +20,22 @@
 
             //Modified Kaprekar Numbers
             Console.WriteLine(basic_Task.kaprekarNumbers(1, 100));
+
+            //ACM ICPC TEAM
+            List<string> topic = new List<string>();
+            topic = ["10101", "11100", "11010", "00101"];
+            List<int> newList = basic_Task.acmTeam(topic);
+            //foreach (var item in newList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            Console.WriteLine(String.Join(" ", newList.ToArray()));
+
+            //Fair Rations
+            List<int> B = new List<int>();
+            B = [1, 2];
+            Console.WriteLine(basic_Task.fairRations(B));
+
         }
     }
 }
