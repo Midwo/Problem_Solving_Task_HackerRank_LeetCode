@@ -2,6 +2,60 @@
 {
     internal class Basic_Task
     {
+        public void countApplesAndOranges(int s, int t, int a, int b, List<int> apples, List<int> oranges)
+        {
+            int houseAplle = 0;
+            int houseOranges = 0;
+
+            foreach (var i in apples)
+            {
+                if ((a + i) >= s && (a + i) <= t)
+                {
+                    houseAplle++;
+                }
+            }
+            foreach (var i in oranges)
+            {
+                if ((b + i) <= t && (b + i) >= s)
+                {
+                    houseOranges++;
+                }
+            }
+            Console.WriteLine(houseAplle);
+            Console.WriteLine(houseOranges);
+        }
+
+        public List<int> gradingStudents(List<int> grades)
+        {
+            List<int> ListGrading = new List<int>();
+
+            foreach (int i in grades)
+            {
+                if (i < 38)
+                {
+                    ListGrading.Add(i);
+                }
+                else
+                {
+                    double x1;
+                    x1 = i / 5;
+                    int z1 = (int)x1;
+                    int y1 = i % 5;
+                    // ListGrading.Add(z1);
+                    // ListGrading.Add(y1);
+                    if (y1 >= 3)
+                    {
+                        ListGrading.Add((z1 + 1) * 5);
+                    }
+                    else
+                    {
+                        ListGrading.Add(i);
+                    }
+                }
+            }
+            return ListGrading;
+        }
+
         public string Happy_ladybugs(string b)
         {
             //b = "RBY_YBR";
