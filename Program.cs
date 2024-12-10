@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-namespace ProblemSolving
+﻿namespace ProblemSolving
 {
     internal class Program
     {
@@ -57,10 +55,13 @@ namespace ProblemSolving
             //B = [1, 2];
             //Console.WriteLine(basic_Task.fairRations(B));
 
-            //Encryption
-            string s = "chillout";
-            Console.WriteLine(basic_Task.encryption(s));
+            ////Encryption
+            //string s = "chillout";
+            //Console.WriteLine(basic_Task.encryption(s));
 
+            //Two Character
+            string s = "beabeefeab";
+            Console.WriteLine(basic_Task.alternate(s));
         }
     }
 }
