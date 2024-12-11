@@ -340,5 +340,36 @@
             return howLongMax;
         }
 
+        public int flatlandSpaceStations(int n, int[] c)
+        {
+            Array.Sort(c);
+            int maxDistanceFromStation = c[0];
+            for (int i = 1; i < c.Length; i++)
+            {
+                int distance = (c[i] - c[i - 1]) / 2;
+                maxDistanceFromStation = Math.Max(maxDistanceFromStation, distance);
+            }
+            return Math.Max(maxDistanceFromStation, n - 1 - c[c.Length - 1]);
+        }
+
+        public List<int> icecreamParlor(int m, List<int> arr)
+        {
+            List<int> outputList = new List<int>();
+            for (int i = 0; i < arr.Count; i++)
+            {
+                for (int j = i + 1; j < arr.Count; j++)
+                {
+                    if (arr[i] + arr[j] == m)
+                    {
+                        outputList.Add(i + 1);
+                        outputList.Add(j + 1);
+                        break;
+                    }
+                }
+            }
+            return outputList;
+        }
+
+
     }
 }

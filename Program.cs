@@ -59,9 +59,22 @@
             //string s = "chillout";
             //Console.WriteLine(basic_Task.encryption(s));
 
-            //Two Character
-            string s = "beabeefeab";
-            Console.WriteLine(basic_Task.alternate(s));
+            ////Two Character
+            //string s = "beabeefeab";
+            //Console.WriteLine(basic_Task.alternate(s));
+
+            //Flatland Space Stations
+            int n = 5;
+            int[] c = [0, 4];
+            Console.WriteLine(basic_Task.flatlandSpaceStations(n, c));
+
+            //Ice Cream Parlor 
+            foreach (var item in basic_Task.icecreamParlor(4, [1, 4, 5, 3, 2]))
+            {
+                Console.WriteLine(item.ToString());
+            }
+
         }
     }
 }
+
