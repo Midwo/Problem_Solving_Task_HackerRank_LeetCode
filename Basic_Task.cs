@@ -407,5 +407,15 @@
             return outputPrintList;
         }
 
+        public string pokerNim(int k, List<int> c)
+        {
+            var xor = c[0];
+            for (var i = 1; i < c.Count; ++i)
+            {
+                xor ^= c[i];
+            }
+            return xor != 0 ? "First" : "Second";
+        }
+
     }
 }

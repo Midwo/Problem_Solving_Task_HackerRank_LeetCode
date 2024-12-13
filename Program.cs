@@ -81,6 +81,11 @@
             //    Console.WriteLine(query);
             //}
 
+            //Poker Nim
+            Console.WriteLine(basic_Task.pokerNim(5, [1,2]));
+
+
+
 
         }
     }
