@@ -63,16 +63,24 @@
             //string s = "beabeefeab";
             //Console.WriteLine(basic_Task.alternate(s));
 
-            //Flatland Space Stations
-            int n = 5;
-            int[] c = [0, 4];
-            Console.WriteLine(basic_Task.flatlandSpaceStations(n, c));
+            ////Flatland Space Stations
+            //int n = 5;
+            //int[] c = [0, 4];
+            //Console.WriteLine(basic_Task.flatlandSpaceStations(n, c));
 
-            //Ice Cream Parlor 
-            foreach (var item in basic_Task.icecreamParlor(4, [1, 4, 5, 3, 2]))
-            {
-                Console.WriteLine(item.ToString());
-            }
+            ////Ice Cream Parlor 
+            //foreach (var item in basic_Task.icecreamParlor(4, [1, 4, 5, 3, 2]))
+            //{
+            //    Console.WriteLine(item.ToString());
+            //}
+
+            ////Weighted Uniform Strings
+            //List<string> queries = basic_Task.weightedUniformStrings("abbcccdddd",[ 1, 7, 5, 4, 15]);
+            //foreach (string query in queries)
+            //{
+            //    Console.WriteLine(query);
+            //}
+
 
         }
     }
