@@ -417,5 +417,15 @@
             return xor != 0 ? "First" : "Second";
         }
 
+        public string nimGame(List<int> pile)
+        {
+            var xor = pile[0];
+            for (var i = 1; i < pile.Count; ++i)
+            {
+                xor ^= pile[i];
+            }
+            return xor != 0 ? "First" : "Second";
+        }
+
     }
 }

@@ -81,12 +81,11 @@
             //    Console.WriteLine(query);
             //}
 
-            //Poker Nim
-            Console.WriteLine(basic_Task.pokerNim(5, [1,2]));
+            ////Poker Nim
+            //Console.WriteLine(basic_Task.pokerNim(5, [1,2]));
 
-
-
-
+            //Introduction to Nim Game
+            Console.WriteLine(basic_Task.nimGame([3, 2, 4]));
         }
     }
 }
