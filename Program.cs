@@ -1,4 +1,8 @@
-﻿namespace ProblemSolving
+﻿using System.Reflection.Metadata.Ecma335;
+using System.Runtime.Intrinsics.Arm;
+using System.Transactions;
+
+namespace ProblemSolving
 {
     internal class Program
     {
@@ -84,8 +88,18 @@
             ////Poker Nim
             //Console.WriteLine(basic_Task.pokerNim(5, [1,2]));
 
-            //Introduction to Nim Game
-            Console.WriteLine(basic_Task.nimGame([3, 2, 4]));
+            ////Introduction to Nim Game
+            //Console.WriteLine(basic_Task.nimGame([3, 2, 4]));
+
+            ////Super Reduced String
+            //Console.WriteLine(basic_Task.superReducedString1("acdqglrfkqyuqfjkxyqvnrtysfrzrmzlygfveulqfpdbhlqdqrrqdqlhbdpfqluevfgylzmrzrfsytrnvqyxkjfquyqkfrlacdqj"));
+            ////Faster alernative
+            //Console.WriteLine(basic_Task.superReducedString1("acdqglrfkqyuqfjkxyqvnrtysfrzrmzlygfveulqfpdbhlqdqrrqdqlhbdpfqluevfgylzmrzrfsytrnvqyxkjfquyqkfrlacdqj"));
+
+            //Beautiful Paris
+            Console.WriteLine(basic_Task.beautifulPairs([1, 2, 3, 4], [1, 2, 3, 3]));
+
+
         }
     }
 }

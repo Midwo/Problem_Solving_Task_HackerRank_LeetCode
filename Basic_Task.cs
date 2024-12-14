@@ -427,5 +427,84 @@
             return xor != 0 ? "First" : "Second";
         }
 
+        public string superReducedString(string s)
+        {
+            bool endLoop = false;
+            do
+            {
+                endLoop = true;
+                for (int i = 0; i < s.Length - 1; i++)
+                {
+                    if (s[i] == s[i + 1])
+                    {
+                        if (i == 0)
+                        {
+                            s = s.Substring(i + 2);
+                        }
+                        else
+                        {
+                            s = s.Substring(0, i) + s.Substring(i + 2);
+                        }
+                        endLoop = false;
+                        break;
+                    }
+
+                }
+
+            } while (!endLoop);
+            return s.Length == 0 ? "Empty String" : s;
+        }
+
+        public string superReducedString1(string s)
+        {
+            Stack<char> myStack = new Stack<char>();
+
+            foreach (char c in s)
+            {
+                if (myStack.Count == 0)
+                    myStack.Push(c);
+                else
+                {
+                    if (c == myStack.Peek())
+                        myStack.Pop();
+                    else
+                        myStack.Push(c);
+                }
+            }
+
+            string myString = String.Join("", myStack.Reverse());
+
+            return String.IsNullOrEmpty(myString) ? "Empty String" : myString;
+        }
+
+        public int beautifulPairs(List<int> A, List<int> B)
+        {
+            int pairs = 0;
+            int countA = A.Count;
+            for (int i = 0; i < A.Count; i++)
+            {
+                for (int y = 0; y < B.Count; y++)
+                {
+                    if (A[i] == B[y])
+                    {
+                        pairs++;
+                        A.RemoveAt(i);
+                        B.RemoveAt(y);
+                        i = -1;
+                        break;
+                    }
+                }
+            }
+            if (pairs != countA)
+            {
+                pairs++;
+            }
+            else
+            {
+                pairs--;
+            }
+            return pairs;
+        }
+
     }
 }
