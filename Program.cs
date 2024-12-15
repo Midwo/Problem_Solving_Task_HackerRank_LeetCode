@@ -95,11 +95,9 @@
             ////Beautiful Paris
             //Console.WriteLine(basic_Task.beautifulPairs([1, 2, 3, 4], [1, 2, 3, 3]));
 
-            ////The Time on Words
-            //Console.WriteLine(basic_Task.timeInWords(5, 45));
-
-            //Greedy Florist
-            Console.WriteLine(basic_Task.getMinimumCost(2, [2, 5, 6]));
+            //The Time on Words
+            Console.WriteLine(basic_Task.timeInWords(5, 45));
+            
 
         }
     }
