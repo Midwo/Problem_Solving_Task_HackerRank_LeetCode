@@ -1,8 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-using System.Runtime.Intrinsics.Arm;
-using System.Transactions;
-
-namespace ProblemSolving
+﻿namespace ProblemSolving
 {
     internal class Program
     {
@@ -96,9 +92,12 @@ namespace ProblemSolving
             ////Faster alernative
             //Console.WriteLine(basic_Task.superReducedString1("acdqglrfkqyuqfjkxyqvnrtysfrzrmzlygfveulqfpdbhlqdqrrqdqlhbdpfqluevfgylzmrzrfsytrnvqyxkjfquyqkfrlacdqj"));
 
-            //Beautiful Paris
-            Console.WriteLine(basic_Task.beautifulPairs([1, 2, 3, 4], [1, 2, 3, 3]));
+            ////Beautiful Paris
+            //Console.WriteLine(basic_Task.beautifulPairs([1, 2, 3, 4], [1, 2, 3, 3]));
 
+            //The Time on Words
+            Console.WriteLine(basic_Task.timeInWords(5, 45));
+            
 
         }
     }
