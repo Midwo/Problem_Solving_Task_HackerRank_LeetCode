@@ -103,8 +103,11 @@ namespace ProblemSolving
             ////Greedy Florist
             //Console.WriteLine(basic_Task.getMinimumCost(2, [2,5,6]));
 
-            ////Extra Long Factorials
-            basic_Task.extraLongFactorials(25);
+            //////Extra Long Factorials
+            //basic_Task.extraLongFactorials(25);
+
+            //The Power Sum
+            Console.WriteLine(basic_Task.powerSum(100, 3));
 
         }
     }
