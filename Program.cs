@@ -1,4 +1,6 @@
-﻿namespace ProblemSolving
+﻿using System.Numerics;
+
+namespace ProblemSolving
 {
     internal class Program
     {
@@ -98,9 +100,11 @@
             ////The Time on Words
             //Console.WriteLine(basic_Task.timeInWords(5, 45));
 
-            //Greedy Florist
-            Console.WriteLine(basic_Task.getMinimumCost(2, [2,5,6]));
-            
+            ////Greedy Florist
+            //Console.WriteLine(basic_Task.getMinimumCost(2, [2,5,6]));
+
+            ////Extra Long Factorials
+            basic_Task.extraLongFactorials(25);
 
         }
     }

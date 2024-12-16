@@ -1,4 +1,6 @@
-﻿namespace ProblemSolving
+﻿using System.Numerics;
+
+namespace ProblemSolving
 {
     internal class Basic_Task
     {
@@ -575,5 +577,17 @@
             }
             return cost;
         }
+      
+        public void extraLongFactorials(int n)
+        {
+            BigInteger x = 1;
+            for (int i = n; i > 1; i--)
+            {
+                x = x * (BigInteger)i;
+            }
+            Console.WriteLine(x);
+        }
+
+
     }
 }
