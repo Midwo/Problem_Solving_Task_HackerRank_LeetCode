@@ -592,6 +592,7 @@ namespace ProblemSolving
         {
             return recursive(X, N, 1);
         }
+
         private int recursive(int total, int power, int num)
         {
             int val = Convert.ToInt32(total - Math.Pow(num, power));
@@ -600,6 +601,23 @@ namespace ProblemSolving
             if (val < 0) return 0;
 
             return recursive(val, power, num + 1) + recursive(total, power, num + 1);
+        }
+
+        public int maxMin(int k, List<int> arr)
+        {
+            k--;
+            arr.Sort();
+            int minValue = int.MaxValue;
+            int actualValue = 0;
+            for (int i = 0; i < arr.Count - k; i++)
+            {
+                actualValue = arr[i + k] - arr[i];
+                if (actualValue < minValue)
+                {
+                    minValue = actualValue;
+                }
+            }
+            return minValue;
         }
 
     }

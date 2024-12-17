@@ -106,8 +106,11 @@ namespace ProblemSolving
             //////Extra Long Factorials
             //basic_Task.extraLongFactorials(25);
 
-            //The Power Sum
-            Console.WriteLine(basic_Task.powerSum(100, 3));
+            ////The Power Sum
+            //Console.WriteLine(basic_Task.powerSum(100, 3));
+
+            //Max Min
+            Console.WriteLine(basic_Task.maxMin(4, [3, 4, 10, 20, 30, 40, 100, 200, 1, 2]));
 
         }
     }
