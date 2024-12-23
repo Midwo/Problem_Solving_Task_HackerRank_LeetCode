@@ -10,8 +10,11 @@ namespace ProblemSolving
         {
             Basic_Task basic_Task = new Basic_Task();
 
-            //Divisible Sum Pairs
-            Console.WriteLine(basic_Task.divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]));
+            //Cats and a Mouse
+            Console.WriteLine(basic_Task.catAndMouse(1, 2, 3));
+
+            ////Divisible Sum Pairs
+            //Console.WriteLine(basic_Task.divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]));
 
             ////Apple and Orange
             //List<int> oranges = new List<int>();

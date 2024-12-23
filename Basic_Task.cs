@@ -4,6 +4,25 @@ namespace ProblemSolving
 {
     internal class Basic_Task
     {
+        public string catAndMouse(int x, int y, int z)
+        {
+            int CatA = Math.Abs(z - x);
+            int CatB = Math.Abs(z - y);
+
+            if (CatA == CatB)
+            {
+                return "Mouse C";
+            }
+            else if (CatA < CatB)
+            {
+                return "Cat A";
+            }
+            else
+            {
+                return "Cat B";
+            }
+        }
+
         public int divisibleSumPairs(int n, int k, List<int> ar)
         {
             int count = 0;
