@@ -4,6 +4,23 @@ namespace ProblemSolving
 {
     internal class Basic_Task
     {
+        public int divisibleSumPairs(int n, int k, List<int> ar)
+        {
+            int count = 0;
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = i + 1; j < n; j++)
+                {
+                    int sum = ar[i] + ar[j];
+                    if (sum % k == 0)
+                    {
+                        count++;
+                    }
+                }
+            }
+            return count;
+        }
+
         public void countApplesAndOranges(int s, int t, int a, int b, List<int> apples, List<int> oranges)
         {
             int houseAplle = 0;

@@ -1,4 +1,6 @@
-﻿using System.Numerics;
+﻿using System.Net;
+
+
 
 namespace ProblemSolving
 {
@@ -7,6 +9,9 @@ namespace ProblemSolving
         static void Main(string[] args)
         {
             Basic_Task basic_Task = new Basic_Task();
+
+            //Divisible Sum Pairs
+            Console.WriteLine(basic_Task.divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]));
 
             ////Apple and Orange
             //List<int> oranges = new List<int>();
@@ -112,8 +117,19 @@ namespace ProblemSolving
             ////Max Min
             //Console.WriteLine(basic_Task.maxMin(4, [3, 4, 10, 20, 30, 40, 100, 200, 1, 2]));
 
-            //Bigger is Greater
-            Console.WriteLine(basic_Task.biggerIsGreater("ehdegnmorgafrjxvsck"));
+            ////Bigger is Greater
+            //Console.WriteLine(basic_Task.biggerIsGreater("ehdegnmorgafrjxvsck"));
+
+            ////Maximum Subarray Sum
+            //List<long> a = new List<long>();
+            //long m;
+
+            //a = [3, 3, 9, 9, 5];
+            //m = 7;
+
+
+
+
 
 
         }
