@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System.Linq;
+using System.Net;
 
 
 
@@ -9,9 +10,12 @@ namespace ProblemSolving
         static void Main(string[] args)
         {
             Basic_Task basic_Task = new Basic_Task();
+            LeetCodeAll leetCodeAll = new LeetCodeAll();
 
-            //Cats and a Mouse
-            Console.WriteLine(basic_Task.catAndMouse(1, 2, 3));
+            //HACKERRANK
+
+            ////Cats and a Mouse
+            //Console.WriteLine(basic_Task.catAndMouse(1, 2, 3));
 
             ////Divisible Sum Pairs
             //Console.WriteLine(basic_Task.divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]));
@@ -127,14 +131,60 @@ namespace ProblemSolving
             //List<long> a = new List<long>();
             //long m;
 
-            //a = [3, 3, 9, 9, 5];
-            //m = 7;
+
+            //LEETCODE//LEETCODE//           
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//           
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//
+            //LEETCODE//LEETCODE//
+
+            //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL
+            //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL
+            //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL
+
+            ////(1.) Two Sum 
+            //Console.WriteLine(leetCodeAll.TwoSum([2, 7, 11, 15], 9));
+            //Console.WriteLine(String.Join("",leetCodeAll.TwoSum([2, 7, 11, 15], 9)));
+
+            //(88.) Merge Sorted Array
+            int[] nums1 = [1,2,3,0,0,0];
+            int m = 3;
+            int[] nums2 = [2,5,6];
+            int n = 3;
+
+            int i = m - 1;
+            int j = n - 1;
+            int k = m + n - 1;
+            while (i >= 0 && j >= 0)
+            {
+                if (nums1[i] > nums2[j])
+                {
+                    nums1[k--] = nums1[i--];
+                }
+                else
+                {
+                    nums1[k--] = nums2[j--];
+                }
+            }
+
+            while (j >= 0)
+            {
+                nums1[k--] = nums2[j--];
+            }
 
 
-
-
-
-
+            Console.WriteLine(String.Join("", nums1));    
         }
     }
 }
