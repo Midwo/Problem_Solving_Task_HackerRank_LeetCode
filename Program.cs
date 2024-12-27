@@ -158,9 +158,10 @@ namespace ProblemSolving
             //Console.WriteLine(String.Join("",leetCodeAll.TwoSum([2, 7, 11, 15], 9)));
 
             ////(9.) Palindrome Number (EASY)
-            Console.WriteLine(leetCodeAll.IsPalindrome(1234567899));
-           
+            //Console.WriteLine(leetCodeAll.IsPalindrome(1234567899));
 
+            ////(13.) Roman to Integer (EASY)
+            Console.WriteLine(leetCodeAll.RomanToInt("MCMXCIV"));
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
