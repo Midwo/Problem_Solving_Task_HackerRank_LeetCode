@@ -18,7 +18,6 @@
             }
             return printOutput;
         }
-
         public bool IsPalindrome(int x)
         {
             bool ToSame = false;
@@ -36,7 +35,6 @@
             }
             return ToSame;
         }
-
         public int RomanToInt(string s)
         {
             int howMany = 0;
@@ -66,6 +64,26 @@
                 }
             }
             return howMany;
+        }
+        public string LongestCommonPrefix(string[] strs)
+        {
+            int minChar = strs.Min(s => s.Length);
+            string[] x = strs.OrderBy(s => s).ToArray();
+            string firstString = x[0];
+            string lastString = x[x.Length - 1];
+            string outPutString = "";
+            for (int i = 0; i < minChar; i++)
+            {
+                if (firstString[i] == lastString[i])
+                {
+                    outPutString += firstString[i];
+                }
+                else
+                {
+                    break;
+                }
+            }
+            return outPutString;
         }
     }
 }
