@@ -1,4 +1,6 @@
-﻿namespace ProblemSolving
+﻿using System.Numerics;
+
+namespace ProblemSolving
 {
     internal class Program
     {
@@ -145,15 +147,19 @@
             //LEETCODE//LEETCODE//
             //LEETCODE//LEETCODE//
 
+
+
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL
 
-            ////(1.) Two Sum 
+            ////(1.) Two Sum (EASY)
             //Console.WriteLine(leetCodeAll.TwoSum([2, 7, 11, 15], 9));
             //Console.WriteLine(String.Join("",leetCodeAll.TwoSum([2, 7, 11, 15], 9)));
 
-            ////(2.) Add Two Numbers
+            ////(9.) Palindrome Number (EASY)
+            Console.WriteLine(leetCodeAll.IsPalindrome(1234567899));
+           
 
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
@@ -169,11 +175,11 @@
             //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
 
-            
 
 
-   
-   
+
+
+
         }
 
     }

@@ -24,5 +24,23 @@ namespace ProblemSolving
             }
             return printOutput;
         }
+
+        public bool IsPalindrome(int x)
+        {
+            bool ToSame = false;
+            if (x < 0)
+            {
+                ToSame = false;
+            }
+            else
+            {
+                long x1 = long.Parse(new string(x.ToString().Reverse().ToArray()));
+                if (x1 == x)
+                {
+                    ToSame = true;
+                }
+            }
+            return ToSame;
+        }
     }
 }
