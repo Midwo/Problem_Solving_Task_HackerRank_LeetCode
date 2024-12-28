@@ -166,93 +166,27 @@ namespace ProblemSolving
             ////(14.) Longest Common Prefix (EASY)
             //Console.WriteLine(leetCodeAll.LongestCommonPrefix(["flower", "flow", "flight"]));
 
-            ////20. Valid Parentheses
-            Console.WriteLine(leetCodeAll.IsValid("()[]{}"));
+            ////(20.) Valid Parentheses
+            //Console.WriteLine(leetCodeAll.IsValid("()[]{}"));
 
-            //Dictionary<int, int> dictionaryBracket = new Dictionary<int, int>();
-
-            //foreach (char item in s)
-            //{
-            //    if (dictionaryBracket.ContainsKey((int)item))
-            //    {
-            //        dictionaryBracket[(int)item]++;
-            //    }
-            //    else
-            //    {
-            //        dictionaryBracket.Add((int)item, 1);
-            //    }
-            //}
-
-            ////foreach (var item in dictionaryBracket)
-            ////{
-            ////    Console.WriteLine(item.Key + " : " + item.Value);
-            ////}
-            //bool trueOrFalse = true;
-            //foreach (var item in dictionaryBracket)
-            //{
-            //    if (item.Key == 125 || item.Key == 123)
-            //    {
-            //        if (dictionaryBracket.ContainsKey(125) && dictionaryBracket.ContainsKey(123))
-            //        {
-            //            if (dictionaryBracket[125] != dictionaryBracket[123])
-            //            {
-            //                trueOrFalse = false;
-            //                break;
-            //            }
-            //        }
-            //        else
-            //        {
-            //            trueOrFalse = false;
-            //            break;
-            //        }
-            //    }
-            //    else if (item.Key == 93 || item.Key == 91)
-            //    {
-            //        if (dictionaryBracket.ContainsKey(93) && dictionaryBracket.ContainsKey(91))
-            //        {
-            //            if (dictionaryBracket[93] != dictionaryBracket[91])
-            //            {
-            //                trueOrFalse = false;
-            //                break;
-            //            }
-            //        }
-            //        else
-            //        {
-            //            trueOrFalse = false;
-            //            break;
-            //        }
-            //    }
-            //    else
-            //    {
-            //        if (dictionaryBracket.ContainsKey(40) && dictionaryBracket.ContainsKey(41))
-            //        {
-            //            if (dictionaryBracket[40] != dictionaryBracket[41])
-            //            {
-            //                trueOrFalse = false;
-            //                break;
-            //            }
-            //        }
-            //        else
-            //        {
-            //            trueOrFalse = false;
-            //            break;
-            //        }
-
-            //    }
-            //}
-
-            //Console.WriteLine(trueOrFalse);
-
-            //Table
-            // 125 }
-            // 123 {
-            // 93 ]
-            // 91 [
-            // 40 (
-            // 41 )
-
-
-
+            ////(21.) Merge Two Sorted Lists
+            ListNode list1 = new ListNode(1);
+            list1.next = new ListNode(2);
+            list1.next.next = new ListNode(4);
+            ListNode list2 = new ListNode(1);
+            list2.next = new ListNode(3);
+            list2.next.next = new ListNode(3);
+            var x = leetCodeAll.MergeTwoLists(list1, list2);
+            bool endLoop = true;
+            do
+            {
+                Console.WriteLine(x.val);
+                x = x.next;
+                if(x == null)
+                {
+                    endLoop = false;
+                }
+            } while (endLoop);
 
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
@@ -268,6 +202,5 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
         }
-
     }
 }
