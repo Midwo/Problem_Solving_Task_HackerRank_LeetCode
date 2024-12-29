@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Numerics;
+using System.Reflection.Metadata.Ecma335;
 
 namespace ProblemSolving
 {
@@ -192,12 +193,14 @@ namespace ProblemSolving
             ////(26.) Remove Duplicates from Sorted Array (EASY)
             //Console.WriteLine(leetCodeAll.RemoveDuplicates([1, 1, 2]));
 
-            ////(27). Remove Element (EASY)
+            ////(27.) Remove Element (EASY)
             //Console.WriteLine(leetCodeAll.RemoveElement([3,2,2,3], 3));
 
-            ////28.Find the Index of the First Occurrence in a String (EASY)
-            Console.WriteLine(leetCodeAll.StrStr("aaa", "aa"));
+            ////(28.) Find the Index of the First Occurrence in a String (EASY)
+            //Console.WriteLine(leetCodeAll.StrStr("aaa", "aa"));
 
+            ////(32.) Search Insert Position
+            Console.WriteLine(leetCodeAll.SearchInsert([1, 3, 5, 6], 7));
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 

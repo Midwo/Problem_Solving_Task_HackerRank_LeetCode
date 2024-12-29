@@ -232,7 +232,19 @@ namespace ProblemSolving
             }
             return outputIint;
         }
-
+        public int SearchInsert(int[] nums, int target)
+        {
+            int where = -1;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] >= target)
+                {
+                    where = i;
+                    break;
+                }
+            }
+            return where == -1 ? nums.Length : where;
+        }
     }
 
     public class ListNode
