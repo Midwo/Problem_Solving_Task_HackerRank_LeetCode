@@ -199,8 +199,10 @@ namespace ProblemSolving
             ////(28.) Find the Index of the First Occurrence in a String (EASY)
             //Console.WriteLine(leetCodeAll.StrStr("aaa", "aa"));
 
-            ////(32.) Search Insert Position
-            Console.WriteLine(leetCodeAll.SearchInsert([1, 3, 5, 6], 7));
+            ////(35.) Search Insert Position
+            //Console.WriteLine(leetCodeAll.SearchInsert([1, 3, 5, 6], 7));
+
+
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
