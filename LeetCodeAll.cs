@@ -245,6 +245,20 @@ namespace ProblemSolving
             }
             return where == -1 ? nums.Length : where;
         }
+        public int LengthOfLastWord(string s)
+        {
+            s = s.Trim();
+            int lenght = -1;
+            for (int i = s.Length - 1; i > 0; i--)
+            {
+                if (s[i] == ' ')
+                {
+                    lenght = s.Length - 1 - i;
+                    break;
+                }
+            }
+            return lenght == -1 ? s.Length : lenght;
+        }
     }
 
     public class ListNode
