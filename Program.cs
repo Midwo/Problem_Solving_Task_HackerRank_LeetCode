@@ -166,27 +166,31 @@ namespace ProblemSolving
             ////(14.) Longest Common Prefix (EASY)
             //Console.WriteLine(leetCodeAll.LongestCommonPrefix(["flower", "flow", "flight"]));
 
-            ////(20.) Valid Parentheses
+            ////(20.) Valid Parentheses (EASY)
             //Console.WriteLine(leetCodeAll.IsValid("()[]{}"));
 
-            ////(21.) Merge Two Sorted Lists
-            ListNode list1 = new ListNode(1);
-            list1.next = new ListNode(2);
-            list1.next.next = new ListNode(4);
-            ListNode list2 = new ListNode(1);
-            list2.next = new ListNode(3);
-            list2.next.next = new ListNode(3);
-            var x = leetCodeAll.MergeTwoLists(list1, list2);
-            bool endLoop = true;
-            do
-            {
-                Console.WriteLine(x.val);
-                x = x.next;
-                if(x == null)
-                {
-                    endLoop = false;
-                }
-            } while (endLoop);
+            ////(21.) Merge Two Sorted Lists (EASY)
+            //ListNode list1 = new ListNode(1);
+            //list1.next = new ListNode(2);
+            //list1.next.next = new ListNode(4);
+            //ListNode list2 = new ListNode(1);
+            //list2.next = new ListNode(3);
+            //list2.next.next = new ListNode(3);
+            //var x = leetCodeAll.MergeTwoLists(list1, list2);
+            //bool endLoop = true;
+            //do
+            //{
+            //    Console.WriteLine(x.val);
+            //    x = x.next;
+            //    if(x == null)
+            //    {
+            //        endLoop = false;
+            //    }
+            //} while (endLoop);
+
+            ////(26.) Remove Duplicates from Sorted Array
+            Console.WriteLine(leetCodeAll.RemoveDuplicates([1, 1, 2]));
+
 
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150

@@ -166,6 +166,21 @@ namespace ProblemSolving
 
             return newNodeList.next;
         }
+        public int RemoveDuplicates(int[] nums)
+        {
+            int current = int.MinValue;
+            int total = 0;
+            foreach (int num in nums)
+            {
+                if (current != num)
+                {
+                    total++;
+                    nums[total - 1] = num;
+                }
+                current = num;
+            }
+            return total;
+        }
     }
 
     public class ListNode
