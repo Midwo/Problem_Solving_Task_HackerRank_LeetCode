@@ -188,8 +188,11 @@ namespace ProblemSolving
             //    }
             //} while (endLoop);
 
-            ////(26.) Remove Duplicates from Sorted Array
-            Console.WriteLine(leetCodeAll.RemoveDuplicates([1, 1, 2]));
+            ////(26.) Remove Duplicates from Sorted Array (EASY)
+            //Console.WriteLine(leetCodeAll.RemoveDuplicates([1, 1, 2]));
+
+            ////(27). Remove Element (EASY)
+            Console.WriteLine(leetCodeAll.RemoveElement([3,2,2,3], 3));
 
 
 

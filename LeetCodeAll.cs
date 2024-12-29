@@ -181,6 +181,19 @@ namespace ProblemSolving
             }
             return total;
         }
+        public int RemoveElement(int[] nums, int val)
+        {
+            int total = 0;
+            foreach (int i in nums)
+            {
+                if (i != val)
+                {
+                    nums[total] = i;
+                    total++;
+                }
+            }
+            return total;
+        }
     }
 
     public class ListNode
