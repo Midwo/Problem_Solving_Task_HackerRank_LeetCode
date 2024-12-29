@@ -194,6 +194,45 @@ namespace ProblemSolving
             }
             return total;
         }
+        public int StrStr(string haystack, string needle)
+        {
+            int outputIint = -1;
+            bool cancelLoop = false;
+            for (int i = 0; i < haystack.Length; i++)
+            {
+                if (i + needle.Length <= haystack.Length)
+                {
+                    if (haystack[i] == needle[0])
+                    {
+                        for (int j = 1; j < needle.Length; j++)
+                        {
+                            if (haystack[i + j] != needle[j])
+                            {
+                                break;
+                            }
+                            else
+                            {
+                                if (j == needle.Length - 1)
+                                {
+                                    outputIint = i;
+                                    cancelLoop = true;
+                                    break;
+                                }
+                            }
+                        }
+                        if (needle.Length == 1)
+                        {
+                            outputIint = i;
+                            cancelLoop = true;
+                            break;
+                        }
+                    }
+                    if (cancelLoop) { break; }
+                }
+            }
+            return outputIint;
+        }
+
     }
 
     public class ListNode

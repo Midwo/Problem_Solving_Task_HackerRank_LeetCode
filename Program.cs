@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System.Collections.Generic;
+using System.Numerics;
 
 namespace ProblemSolving
 {
@@ -192,8 +193,10 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.RemoveDuplicates([1, 1, 2]));
 
             ////(27). Remove Element (EASY)
-            Console.WriteLine(leetCodeAll.RemoveElement([3,2,2,3], 3));
+            //Console.WriteLine(leetCodeAll.RemoveElement([3,2,2,3], 3));
 
+            ////28.Find the Index of the First Occurrence in a String (EASY)
+            Console.WriteLine(leetCodeAll.StrStr("aaa", "aa"));
 
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
