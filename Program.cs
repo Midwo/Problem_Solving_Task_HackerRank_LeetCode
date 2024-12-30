@@ -206,7 +206,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LengthOfLastWord(" fly me   to   the moon  "));
 
             ////(66.) Plus One (EASY)
-            Console.WriteLine(String.Join("",leetCodeAll.PlusOne([9, 9, 9, 9])));
+            //Console.WriteLine(String.Join("",leetCodeAll.PlusOne([9, 9, 9, 9])));
+
+            ////(67.) Add Binary (EASY)
+            Console.WriteLine(
+                leetCodeAll.AddBinary("100110000000000000000000000000000000000000000000000000", 
+                                      "111111101010101101010101010101010101010101010111111111"));
+
+
+            
 
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150

@@ -292,6 +292,139 @@ namespace ProblemSolving
             }
             return digits;
         }
+        public string AddBinary(string a, string b)
+        {
+            var aArray = a.ToCharArray().Select(c => c.ToString()).ToArray();
+            var bArray = b.ToCharArray().Select(c => c.ToString()).ToArray();
+            int a1 = a.Length;
+            int b1 = b.Length;
+            int howManyAdd = 0;
+            if (a1 >= b1)
+            {
+                for (int i = 0; i < a1; i++)
+                {
+                    //Console.WriteLine("a1: " + a[a1-i-1] );
+                    if (b1 - i - 1 >= 0)
+                    {
+                        //Console.WriteLine("b1: " + b[b1 - i - 1]);
+                        if (howManyAdd + int.Parse((aArray[a1 - i - 1])) + int.Parse((bArray[b1 - i - 1])) > 2)
+                        {
+                            howManyAdd = 1;
+                            aArray[a1 - i - 1] = "1";
+                        }
+                        else if (howManyAdd + int.Parse((aArray[a1 - i - 1])) + int.Parse((bArray[b1 - i - 1])) == 2)
+                        {
+                            howManyAdd = 1;
+                            aArray[a1 - i - 1] = "0";
+                        }
+                        else if (howManyAdd + int.Parse((aArray[a1 - i - 1])) + int.Parse((bArray[b1 - i - 1])) == 1)
+                        {
+                            howManyAdd = 0;
+                            aArray[a1 - i - 1] = "1";
+                        }
+                        else
+                        {
+                            howManyAdd = 0;
+                            aArray[a1 - i - 1] = "0";
+                        }
+
+                    }
+                    else
+                    {
+                        //Console.WriteLine("b1: " + b[b1 - i - 1]);
+                        if (howManyAdd + int.Parse((aArray[a1 - i - 1])) > 2)
+                        {
+                            howManyAdd = 1;
+                            aArray[a1 - i - 1] = "1";
+                        }
+                        else if (howManyAdd + int.Parse((aArray[a1 - i - 1])) == 2)
+                        {
+                            howManyAdd = 1;
+                            aArray[a1 - i - 1] = "0";
+                        }
+                        else if (howManyAdd + int.Parse((aArray[a1 - i - 1])) == 1)
+                        {
+                            howManyAdd = 0;
+                            aArray[a1 - i - 1] = "1";
+                        }
+                        else
+                        {
+                            howManyAdd = 0;
+                            aArray[a1 - i - 1] = "0";
+                        }
+                    }
+                }
+                if (howManyAdd > 0)
+                {
+                    aArray = new String[] { "1" }.Concat(aArray).ToArray();
+                }
+            }
+            else
+            {
+                for (int i = 0; i < b1; i++)
+                {
+                    if (a1 - i - 1 >= 0)
+                    {
+                        if (howManyAdd + int.Parse((aArray[a1 - i - 1])) + int.Parse((bArray[b1 - i - 1])) > 2)
+                        {
+                            howManyAdd = 1;
+                            bArray[b1 - i - 1] = "1";
+                        }
+                        else if (howManyAdd + int.Parse((aArray[a1 - i - 1])) + int.Parse((bArray[b1 - i - 1])) == 2)
+                        {
+                            howManyAdd = 1;
+                            bArray[b1 - i - 1] = "0";
+                        }
+                        else if (howManyAdd + int.Parse((aArray[a1 - i - 1])) + int.Parse((bArray[b1 - i - 1])) == 1)
+                        {
+                            howManyAdd = 0;
+                            bArray[b1 - i - 1] = "1";
+                        }
+                        else
+                        {
+                            howManyAdd = 0;
+                            bArray[b1 - i - 1] = "0";
+                        }
+
+                    }
+                    else
+                    {
+                        if (howManyAdd + int.Parse((bArray[b1 - i - 1])) > 2)
+                        {
+                            howManyAdd = 1;
+                            bArray[b1 - i - 1] = "1";
+                        }
+                        else if (howManyAdd + int.Parse((bArray[b1 - i - 1])) == 2)
+                        {
+                            howManyAdd = 1;
+                            bArray[b1 - i - 1] = "0";
+                        }
+                        else if (howManyAdd + int.Parse((bArray[b1 - i - 1])) == 1)
+                        {
+                            howManyAdd = 0;
+                            bArray[b1 - i - 1] = "1";
+                        }
+                        else
+                        {
+                            howManyAdd = 0;
+                            bArray[b1 - i - 1] = "0";
+                        }
+                    }
+                }
+                if (howManyAdd > 0)
+                {
+                    bArray = new String[] { "1" }.Concat(bArray).ToArray();
+                }
+            }
+            if (a1 >= b1)
+            {
+                return string.Join("", aArray);
+            }
+            else
+            {
+                return string.Join("", bArray);
+            }
+        }
 
     }
 
