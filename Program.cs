@@ -209,11 +209,12 @@ namespace ProblemSolving
             //Console.WriteLine(String.Join("",leetCodeAll.PlusOne([9, 9, 9, 9])));
 
             ////(67.) Add Binary (EASY)
-            Console.WriteLine(
-                leetCodeAll.AddBinary("100110000000000000000000000000000000000000000000000000", 
-                                      "111111101010101101010101010101010101010101010111111111"));
+            //Console.WriteLine(
+            //    leetCodeAll.AddBinary("100110000000000000000000000000000000000000000000000000", 
+            //                          "111111101010101101010101010101010101010101010111111111"));
 
-
+            ////(69.) Sqrt(x) (EASY)
+            Console.WriteLine(leetCodeAll.MySqrt(22));
             
 
 

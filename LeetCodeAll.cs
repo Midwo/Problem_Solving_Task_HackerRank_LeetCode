@@ -425,6 +425,10 @@ namespace ProblemSolving
                 return string.Join("", bArray);
             }
         }
+        public int MySqrt(int x)
+        {
+            return (int)Math.Sqrt(x);
+        }
 
     }
 
