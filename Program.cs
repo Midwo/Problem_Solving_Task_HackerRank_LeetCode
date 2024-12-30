@@ -203,7 +203,11 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SearchInsert([1, 3, 5, 6], 7));
 
             ////(58.) Lenght of Last Word (EASY)
-            Console.WriteLine(leetCodeAll.LengthOfLastWord(" fly me   to   the moon  "));
+            //Console.WriteLine(leetCodeAll.LengthOfLastWord(" fly me   to   the moon  "));
+
+            ////(66.) Plus One (EASY)
+            Console.WriteLine(String.Join("",leetCodeAll.PlusOne([9, 9, 9, 9])));
+
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 

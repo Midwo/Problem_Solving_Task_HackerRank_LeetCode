@@ -259,6 +259,40 @@ namespace ProblemSolving
             }
             return lenght == -1 ? s.Length : lenght;
         }
+        public int[] PlusOne(int[] digits)
+        {
+            int tempPlusOne = 0;
+
+            if (digits[digits.Length - 1] < 9)
+            {
+                digits[digits.Length - 1] = digits[digits.Length - 1] + 1;
+            }
+            else
+            {
+                digits[digits.Length - 1] = 0;
+                tempPlusOne = 1;
+                for (int i = digits.Length - 2; i >= 0; i--)
+                {
+                    if (digits[i] == 9)
+                    {
+                        digits[i] = 0;
+                    }
+                    else
+                    {
+                        digits[i] = digits[i] + 1;
+                        tempPlusOne = 0;
+                        break;
+                    }
+                }
+            }
+            if (tempPlusOne == 1)
+            {
+                int[] array1 = [1];
+                digits = array1.Concat(digits).ToArray();
+            }
+            return digits;
+        }
+
     }
 
     public class ListNode
