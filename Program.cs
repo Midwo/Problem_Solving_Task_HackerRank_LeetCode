@@ -221,21 +221,24 @@ namespace ProblemSolving
             ////(70.) Climbing Stairs (EASY)
             //Console.WriteLine(leetCodeAll.ClimbStairs(5));
 
-            ////(83.) Remove Duplicates from Sorted List
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(1);
-            head.next.next = new ListNode(2);
-            var x = leetCodeAll.DeleteDuplicates(head); 
-            bool endLoop = true;
-            do
-            {
-                Console.WriteLine(x.val);
-                x = x.next;
-                if (x == null)
-                {
-                    endLoop = false;
-                }
-            } while (endLoop);
+            ////(83.) Remove Duplicates from Sorted List (EASY)
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(1);
+            //head.next.next = new ListNode(2);
+            //var x = leetCodeAll.DeleteDuplicates(head); 
+            //bool endLoop = true;
+            //do
+            //{
+            //    Console.WriteLine(x.val);
+            //    x = x.next;
+            //    if (x == null)
+            //    {
+            //        endLoop = false;
+            //    }
+            //} while (endLoop);
+
+            ////(88.) Merge Sorted Array  
+            leetCodeAll.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3);
 
 
 
