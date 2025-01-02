@@ -429,6 +429,24 @@ namespace ProblemSolving
         {
             return (int)Math.Sqrt(x);
         }
+        public int ClimbStairs(int n)
+        {
+            if (n <= 1)
+            {
+                return n;
+            }
+
+            List<int> howManyList = new List<int>();
+            howManyList.Add(1);
+            howManyList.Add(1);
+
+            for (int i = 2; i <= n; i++)
+            {
+                howManyList.Add(howManyList[i - 1] + howManyList[i - 2]);
+            }
+
+            return howManyList[n];
+        }
 
     }
 

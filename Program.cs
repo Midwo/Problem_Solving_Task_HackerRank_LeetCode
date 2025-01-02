@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Numerics;
 using System.Reflection.Metadata.Ecma335;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProblemSolving
 {
@@ -214,22 +215,24 @@ namespace ProblemSolving
             //                          "111111101010101101010101010101010101010101010111111111"));
 
             ////(69.) Sqrt(x) (EASY)
-            Console.WriteLine(leetCodeAll.MySqrt(22));
-            
+            //Console.WriteLine(leetCodeAll.MySqrt(22));
+
+            ////(70.) Climbing Stairs (EASY)
+            Console.WriteLine(leetCodeAll.ClimbStairs(5));
 
 
-            //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
-            //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
-            //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
+        //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
+        //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
+        //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
 
-            ////(88.) Merge Sorted Array
-            //int[] nums1 = [1, 2, 3, 0, 0, 0];
-            //int m = 3;
-            //int[] nums2 = [2, 5, 6];
-            //int n = 3;
-            //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
-            //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
+        ////(88.) Merge Sorted Array
+        //int[] nums1 = [1, 2, 3, 0, 0, 0];
+        //int m = 3;
+        //int[] nums2 = [2, 5, 6];
+        //int n = 3;
+        //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
+        //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
-        }
+    }
     }
 }
