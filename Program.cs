@@ -180,12 +180,13 @@ namespace ProblemSolving
             //list2.next = new ListNode(3);
             //list2.next.next = new ListNode(3);
             //var x = leetCodeAll.MergeTwoLists(list1, list2);
+
             //bool endLoop = true;
             //do
             //{
             //    Console.WriteLine(x.val);
             //    x = x.next;
-            //    if(x == null)
+            //    if (x == null)
             //    {
             //        endLoop = false;
             //    }
@@ -218,21 +219,49 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MySqrt(22));
 
             ////(70.) Climbing Stairs (EASY)
-            Console.WriteLine(leetCodeAll.ClimbStairs(5));
+            //Console.WriteLine(leetCodeAll.ClimbStairs(5));
+
+            ////(83.) Remove Duplicates from Sorted List
+            ListNode head = new ListNode(1);
+            head.next = new ListNode(1);
+            head.next.next = new ListNode(2);
+            var x = leetCodeAll.DeleteDuplicates(head); 
+            bool endLoop = true;
+            do
+            {
+                Console.WriteLine(x.val);
+                x = x.next;
+                if (x == null)
+                {
+                    endLoop = false;
+                }
+            } while (endLoop);
 
 
-        //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
-        //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
-        //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
 
-        ////(88.) Merge Sorted Array
-        //int[] nums1 = [1, 2, 3, 0, 0, 0];
-        //int m = 3;
-        //int[] nums2 = [2, 5, 6];
-        //int n = 3;
-        //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
-        //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
+            //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
+            //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
+            //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
 
-    }
+            ////(88.) Merge Sorted Array
+            //int[] nums1 = [1, 2, 3, 0, 0, 0];
+            //int m = 3;
+            //int[] nums2 = [2, 5, 6];
+            //int n = 3;
+            //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
+            //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
+
+        }
+        //public class ListNode
+        //{
+        //    public int val;
+        //    public ListNode next;
+        //    public ListNode(int val = 0, ListNode next = null)
+        //    {
+        //        this.val = val;
+        //        this.next = next;
+        //    }
+        //}
+
     }
 }
