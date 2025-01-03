@@ -232,23 +232,33 @@
             //    }
             //} while (endLoop);
 
-            ////(88.) Merge Sorted Array  
+            ////(88.) Merge Sorted Array (EASY)
             //leetCodeAll.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3);
 
-            //(94.) Binary Tree Inorder Traversal
-            TreeNode root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
-            root.left.left = new TreeNode(4);
-            root.left.right = new TreeNode(5);
-            root.right.left = null;
-            root.right.right = new TreeNode(8);
-            root.left.left.left = null;
-            root.left.left.right = null;
-            root.left.right.left = new TreeNode(6);
-            root.left.right.right = new TreeNode(7);
-            root.right.right.left = new TreeNode(9);
-            Console.WriteLine(string.Join("", leetCodeAll.InorderTraversal(root)));
+            ////(94.) Binary Tree Inorder Traversal (EASY)
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(2);
+            //root.right = new TreeNode(3);
+            //root.left.left = new TreeNode(4);
+            //root.left.right = new TreeNode(5);
+            //root.right.left = null;
+            //root.right.right = new TreeNode(8);
+            //root.left.left.left = null;
+            //root.left.left.right = null;
+            //root.left.right.left = new TreeNode(6);
+            //root.left.right.right = new TreeNode(7);
+            //root.right.right.left = new TreeNode(9);
+            //Console.WriteLine(string.Join("", leetCodeAll.InorderTraversal(root)));
+
+            //(100.) Same Tree (EASY)
+            TreeNode p = new TreeNode(1);
+            p.left = new TreeNode(2);
+            p.right = new TreeNode(3);
+            TreeNode q = new TreeNode(1);
+            q.left = new TreeNode(2);
+            p.right = new TreeNode(3);
+            Console.WriteLine(leetCodeAll.IsSameTree(p, q));
+
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 

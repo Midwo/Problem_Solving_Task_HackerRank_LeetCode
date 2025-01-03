@@ -1,4 +1,5 @@
-﻿using static ProblemSolving.Program;
+﻿using System.ComponentModel.Design.Serialization;
+using static ProblemSolving.Program;
 
 namespace ProblemSolving
 {
@@ -482,7 +483,6 @@ namespace ProblemSolving
             }
             Console.WriteLine(string.Join("", nums1));
         }
-
         public IList<int> InorderTraversal(TreeNode root)
         {
             List<int> resultList = new List<int>();
@@ -491,6 +491,31 @@ namespace ProblemSolving
                 return resultList;
             }
             return TreeNode.InTree(resultList, root);
+        }
+        public bool IsSameTree(TreeNode p, TreeNode q)
+        {
+            if (p == null && q == null)
+            {
+                return true;
+            }
+
+            if (p == null || q == null)
+            {
+                return false;
+            }
+
+            if (p.val != q.val)
+            {
+                return false;
+            }
+            if (q.val == p.val) 
+            {
+                return TreeNode.TreeNodeIsSameTree(true, p, q);
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 
@@ -516,7 +541,51 @@ namespace ProblemSolving
             this.left = left;
             this.right = right;
         }
+        public static bool TreeNodeIsSameTree(bool boolValue, TreeNode q, TreeNode p)
+        {
+            if (q.left != null && p.left != null)
+            {
+                if (q.left.val == p.left.val)
+                {
+                    boolValue = TreeNodeIsSameTree(boolValue, q.left, p.left);
+                }
+                else 
+                {
+                    return false; 
+                }
+            }
+            else
+            {
+                if (q.left == null && p.left == null)
+                { }
+                else
+                {
+                    return false;
+                }
+            }
+            if (q.right != null && p.right != null)
+            {
+                if (q.right.val == p.right.val) 
+                {
+                    boolValue = TreeNodeIsSameTree(boolValue, q.right, p.right);
+                }
+                else 
+                { 
+                    return false; 
+                }
+            }
+            else
+            {
+                if (q.right == null && p.right == null)
+                { }
+                else
+                {
+                    return false;
+                }
+            }
+            return boolValue;
 
+        }
         public static IList<int> InTree(IList<int> resultList, TreeNode root)
         {
             if (root.left != null)
