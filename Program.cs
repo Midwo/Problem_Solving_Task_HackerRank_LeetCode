@@ -1,9 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Numerics;
-using System.Reflection.Metadata.Ecma335;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace ProblemSolving
+﻿namespace ProblemSolving
 {
     internal class Program
     {
@@ -238,9 +233,22 @@ namespace ProblemSolving
             //} while (endLoop);
 
             ////(88.) Merge Sorted Array  
-            leetCodeAll.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3);
+            //leetCodeAll.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3);
 
-
+            //(94.) Binary Tree Inorder Traversal
+            TreeNode root = new TreeNode(1);
+            root.left = new TreeNode(2);
+            root.right = new TreeNode(3);
+            root.left.left = new TreeNode(4);
+            root.left.right = new TreeNode(5);
+            root.right.left = null;
+            root.right.right = new TreeNode(8);
+            root.left.left.left = null;
+            root.left.left.right = null;
+            root.left.right.left = new TreeNode(6);
+            root.left.right.right = new TreeNode(7);
+            root.right.right.left = new TreeNode(9);
+            Console.WriteLine(string.Join("", leetCodeAll.InorderTraversal(root)));
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
@@ -266,5 +274,30 @@ namespace ProblemSolving
         //    }
         //}
 
+        //public class TreeNode
+        //{
+        //    public int val;
+        //    public TreeNode left;
+        //    public TreeNode right;
+        //    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+        //    {
+        //        this.val = val;
+        //        this.left = left;
+        //        this.right = right;
+        //    }
+        //}
+        //public static IList<int> InTree(IList<int> resultList, TreeNode root)
+        //{
+        //    if (root.left != null)
+        //    {
+        //        resultList = InTree(resultList, root.left);
+        //    }
+        //    resultList.Add(root.val);
+        //    if (root.right != null)
+        //    {
+        //        resultList = InTree(resultList, root.right);
+        //    }
+        //    return resultList;
+        //}
     }
 }

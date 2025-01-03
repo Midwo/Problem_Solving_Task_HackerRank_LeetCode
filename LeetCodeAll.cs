@@ -482,6 +482,16 @@ namespace ProblemSolving
             }
             Console.WriteLine(string.Join("", nums1));
         }
+
+        public IList<int> InorderTraversal(TreeNode root)
+        {
+            List<int> resultList = new List<int>();
+            if (root == null)
+            {
+                return resultList;
+            }
+            return TreeNode.InTree(resultList, root);
+        }
     }
 
     public class ListNode
@@ -494,4 +504,33 @@ namespace ProblemSolving
             this.next = next;
         }
     }
+
+    public class TreeNode
+    {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+        {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+
+        public static IList<int> InTree(IList<int> resultList, TreeNode root)
+        {
+            if (root.left != null)
+            {
+                resultList = InTree(resultList, root.left);
+            }
+            resultList.Add(root.val);
+            if (root.right != null)
+            {
+                resultList = InTree(resultList, root.right);
+            }
+            return resultList;
+        }
+    }
 }
+
+
