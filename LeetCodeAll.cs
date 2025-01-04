@@ -517,6 +517,29 @@ namespace ProblemSolving
                 return false;
             }
         }
+        public bool IsSymmetric(TreeNode root)
+        {
+            if (root.left == null && root.right == null)
+            {
+                return true;
+            }
+            if (root.left == null || root.right == null)
+            {
+                return false;
+            }
+            if (root.left.val != root.right.val)
+            {
+                return false;
+            }
+            if (root.left.val == root.right.val)
+            {
+                return TreeNode.TreeNodeRootIsSymmetric(true, root.left, root.right);
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 
     public class ListNode
@@ -541,11 +564,46 @@ namespace ProblemSolving
             this.left = left;
             this.right = right;
         }
+
+        public static bool TreeNodeRootIsSymmetric(bool boolValue, TreeNode leftRoot, TreeNode rightRoot)
+        { 
+            if (leftRoot.left != null || rightRoot.right != null)
+            {
+                if (leftRoot.left != null && rightRoot.right != null)
+                {
+                    if (leftRoot.left.val == rightRoot.right.val)
+                    {
+                        boolValue = TreeNodeRootIsSymmetric(boolValue, leftRoot.left, rightRoot.right);
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else { return false; }
+            }
+            if (leftRoot.right != null || rightRoot.left != null)
+            {
+                if (leftRoot.right != null && rightRoot.left != null)
+                {
+                    if (leftRoot.right.val == rightRoot.left.val)
+                    {
+                        boolValue = TreeNodeRootIsSymmetric(boolValue, leftRoot.right, rightRoot.left);
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else { return false; }
+            }
+            return boolValue;
+        }
         public static bool TreeNodeIsSameTree(bool boolValue, TreeNode q, TreeNode p)
         {
             if (q.left != null && p.left != null)
             {
-                if (q.left.val == p.left.val)
+                if (q.left.val == p.right.val)
                 {
                     boolValue = TreeNodeIsSameTree(boolValue, q.left, p.left);
                 }

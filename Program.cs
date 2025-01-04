@@ -250,15 +250,45 @@
             //root.right.right.left = new TreeNode(9);
             //Console.WriteLine(string.Join("", leetCodeAll.InorderTraversal(root)));
 
-            //(100.) Same Tree (EASY)
-            TreeNode p = new TreeNode(1);
-            p.left = new TreeNode(2);
-            p.right = new TreeNode(3);
-            TreeNode q = new TreeNode(1);
-            q.left = new TreeNode(2);
-            p.right = new TreeNode(3);
-            Console.WriteLine(leetCodeAll.IsSameTree(p, q));
+            ////(100.) Same Tree (EASY)
+            //TreeNode p = new TreeNode(1);
+            //p.left = new TreeNode(2);
+            //p.right = new TreeNode(3);
+            //TreeNode q = new TreeNode(1);
+            //q.left = new TreeNode(2);
+            //p.right = new TreeNode(3);
+            //Console.WriteLine(leetCodeAll.IsSameTree(p, q));
 
+            //(101.) Symmetric Tree (EASY)
+            #region Symmetric Tree - other test cases
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(2);
+            //root.right = new TreeNode(2);
+            //root.left.left = null;
+            //root.left.right = new TreeNode(3);
+            //root.right.left = null;
+            //root.right.right = new TreeNode(3);
+
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(2);
+            //root.right = new TreeNode(2);
+            //root.left.left = new TreeNode(3);
+            //root.left.right = new TreeNode(4);
+            //root.right.left = new TreeNode(4);
+            //root.right.right = new TreeNode(3);
+
+            //TreeNode root = new TreeNode(1);
+
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(0);
+            #endregion Region_1
+            TreeNode root = new TreeNode(1);
+            root.left = new TreeNode(2);
+            root.right = new TreeNode(2);
+            root.left.left = null;
+            root.left.right = new TreeNode(3);
+            root.right.left = new TreeNode(3);
+            Console.WriteLine(leetCodeAll.IsSymmetric(root));
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
