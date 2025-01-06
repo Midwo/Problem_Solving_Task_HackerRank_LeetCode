@@ -540,6 +540,14 @@ namespace ProblemSolving
                 return false;
             }
         }
+        public int MaxDepth(TreeNode root)
+        {
+            if (root != null)
+            {
+                return (TreeNode.TreeMaxDepth(root));
+            }
+            return 0;
+        }
     }
 
     public class ListNode
@@ -564,7 +572,16 @@ namespace ProblemSolving
             this.left = left;
             this.right = right;
         }
-
+        public static int TreeMaxDepth(TreeNode root)
+        {
+           if (root == null)
+            {
+                return 0;
+            }
+            var leftDepth = TreeMaxDepth(root.left);
+            var rightDepth = TreeMaxDepth(root.right);
+            return Math.Max(leftDepth, rightDepth) + 1;
+        }
         public static bool TreeNodeRootIsSymmetric(bool boolValue, TreeNode leftRoot, TreeNode rightRoot)
         { 
             if (leftRoot.left != null || rightRoot.right != null)

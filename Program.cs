@@ -259,7 +259,7 @@
             //p.right = new TreeNode(3);
             //Console.WriteLine(leetCodeAll.IsSameTree(p, q));
 
-            //(101.) Symmetric Tree (EASY)
+            ////(101.) Symmetric Tree (EASY)
             #region Symmetric Tree - other test cases
             //TreeNode root = new TreeNode(1);
             //root.left = new TreeNode(2);
@@ -282,13 +282,36 @@
             //TreeNode root = new TreeNode(1);
             //root.left = new TreeNode(0);
             #endregion Region_1
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(2);
+            //root.right = new TreeNode(2);
+            //root.left.left = null;
+            //root.left.right = new TreeNode(3);
+            //root.right.left = new TreeNode(3);
+            //Console.WriteLine(leetCodeAll.IsSymmetric(root));
+
+            //(104.) Maximum Depth of Binary Tree
+            #region Maximum Depth - other test cases
+            //TreeNode root = new TreeNode(3);
+            //root.left = new TreeNode(9);
+            //root.right = new TreeNode(20);
+            //root.left.left = null;
+            //root.left.right = null;
+            //root.right.left = new TreeNode(15);
+            //root.right.right = new TreeNode(7);
+
+            ////Next Test Case
+            //TreeNode root = null;
+            #endregion
+            //[1, 2, 3, 4, null, null, 5]
             TreeNode root = new TreeNode(1);
             root.left = new TreeNode(2);
-            root.right = new TreeNode(2);
-            root.left.left = null;
-            root.left.right = new TreeNode(3);
-            root.right.left = new TreeNode(3);
-            Console.WriteLine(leetCodeAll.IsSymmetric(root));
+            root.right = new TreeNode(3);
+            root.left.left = new TreeNode(4);
+            root.left.right = null;
+            root.right.left = null;
+            root.right.right = new TreeNode(5);
+            Console.WriteLine(leetCodeAll.MaxDepth(root));
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
