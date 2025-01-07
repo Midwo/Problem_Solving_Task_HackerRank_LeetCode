@@ -10,6 +10,9 @@
 
             //HACKERRANK
 
+            ////Sales by Match
+            Console.WriteLine(basic_Task.sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
+
             ////Cats and a Mouse
             //Console.WriteLine(basic_Task.catAndMouse(1, 2, 3));
 
