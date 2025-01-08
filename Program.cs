@@ -10,8 +10,11 @@
 
             //HACKERRANK
 
+            ////Subarray Division 1
+            Console.WriteLine(basic_Task.birthday([2, 2, 1, 3, 2], 4, 2));
+
             ////Sales by Match
-            Console.WriteLine(basic_Task.sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
+            //Console.WriteLine(basic_Task.sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
 
             ////Cats and a Mouse
             //Console.WriteLine(basic_Task.catAndMouse(1, 2, 3));
@@ -307,14 +310,22 @@
             //TreeNode root = null;
             #endregion
             //[1, 2, 3, 4, null, null, 5]
-            TreeNode root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
-            root.left.left = new TreeNode(4);
-            root.left.right = null;
-            root.right.left = null;
-            root.right.right = new TreeNode(5);
-            Console.WriteLine(leetCodeAll.MaxDepth(root));
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(2);
+            //root.right = new TreeNode(3);
+            //root.left.left = new TreeNode(4);
+            //root.left.right = null;
+            //root.right.left = null;
+            //root.right.right = new TreeNode(5);
+            //Console.WriteLine(leetCodeAll.MaxDepth(root));
+
+            //(108.) Convert Sorted Array to Binary Search Tree
+            int[] nums = [-10, -3, 0, 5, 9];
+            if(nums.Length <= 0)
+            {
+                Console.WriteLine("Null");
+            }
+            
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 

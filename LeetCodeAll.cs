@@ -548,6 +548,10 @@ namespace ProblemSolving
             }
             return 0;
         }
+        public TreeNode SortedArrayToBST(int[] nums)
+        {
+            return new TreeNode();
+        }
     }
 
     public class ListNode
