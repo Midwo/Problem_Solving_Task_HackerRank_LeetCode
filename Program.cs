@@ -11,7 +11,7 @@
             //HACKERRANK
 
             ////Subarray Division 1
-            Console.WriteLine(basic_Task.birthday([2, 2, 1, 3, 2], 4, 2));
+            //Console.WriteLine(basic_Task.birthday([2, 2, 1, 3, 2], 4, 2));
 
             ////Sales by Match
             //Console.WriteLine(basic_Task.sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
@@ -320,12 +320,10 @@
             //Console.WriteLine(leetCodeAll.MaxDepth(root));
 
             //(108.) Convert Sorted Array to Binary Search Tree
-            int[] nums = [-10, -3, 0, 5, 9];
-            if(nums.Length <= 0)
-            {
-                Console.WriteLine("Null");
-            }
+            //int[] nums = [-10, -3, 0, 5, 9];
+            //TreeNode root = leetCodeAll.SortedArrayToBST(nums);
             
+
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 

@@ -550,7 +550,17 @@ namespace ProblemSolving
         }
         public TreeNode SortedArrayToBST(int[] nums)
         {
-            return new TreeNode();
+            if (nums.Length == 0)
+            {
+                return null;
+            }
+            int centerValue = nums.Length / 2;
+            TreeNode root = new TreeNode(nums[centerValue]);
+
+            root.left = SortedArrayToBST(nums[..centerValue]);
+            root.right = SortedArrayToBST(nums[(centerValue+1)..]);
+
+            return root;
         }
     }
 
