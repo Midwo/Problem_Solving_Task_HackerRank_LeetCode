@@ -296,7 +296,7 @@
             //root.right.left = new TreeNode(3);
             //Console.WriteLine(leetCodeAll.IsSymmetric(root));
 
-            //(104.) Maximum Depth of Binary Tree
+            ////(104.) Maximum Depth of Binary Tree (EASY)
             #region Maximum Depth - other test cases
             //TreeNode root = new TreeNode(3);
             //root.left = new TreeNode(9);
@@ -319,10 +319,28 @@
             //root.right.right = new TreeNode(5);
             //Console.WriteLine(leetCodeAll.MaxDepth(root));
 
-            //(108.) Convert Sorted Array to Binary Search Tree
+            ////(108.) Convert Sorted Array to Binary Search Tree (EASY)
             //int[] nums = [-10, -3, 0, 5, 9];
             //TreeNode root = leetCodeAll.SortedArrayToBST(nums);
-            
+
+            //(111.) Minimum Depth of Binary Tree (EASY)
+            #region Minimum Depth - other test cases
+            //TreeNode root = new TreeNode(3);
+            //root.left = new TreeNode(9);
+            //root.right = new TreeNode(20);
+            //root.right.left = new TreeNode(15);
+            //root.right.right = new TreeNode(7);
+            #endregion
+            TreeNode root = new TreeNode(2);
+            root.left = null;
+            root.right = new TreeNode(3);
+            root.right.left = null;
+            root.right.right = new TreeNode(4);
+            root.right.right.left = null;
+            root.right.right.right = new TreeNode(5);
+            root.right.right.right.left = null;
+            root.right.right.right.right = new TreeNode(6);
+            Console.WriteLine(leetCodeAll.MinDepth(root));
 
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150

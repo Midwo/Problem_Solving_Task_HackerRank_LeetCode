@@ -562,6 +562,11 @@ namespace ProblemSolving
 
             return root;
         }
+        public int MinDepth(TreeNode root)
+        {
+            return TreeNode.TreeMinDepth(root);
+        }
+
     }
 
     public class ListNode
@@ -588,7 +593,7 @@ namespace ProblemSolving
         }
         public static int TreeMaxDepth(TreeNode root)
         {
-           if (root == null)
+            if (root == null)
             {
                 return 0;
             }
@@ -596,6 +601,27 @@ namespace ProblemSolving
             var rightDepth = TreeMaxDepth(root.right);
             return Math.Max(leftDepth, rightDepth) + 1;
         }
+        public static int TreeMinDepth(TreeNode root)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+            if (root.left == null && root.right == null)
+            {
+                return 1;
+            }
+            if (root.left == null)
+            {
+                return TreeMinDepth(root.right) + 1;
+            }
+            if (root.right == null)
+            {
+                return TreeMinDepth(root.left) + 1;
+            }
+            return Math.Min(TreeMinDepth(root.left), TreeMinDepth(root.right))+1;
+        }
+
         public static bool TreeNodeRootIsSymmetric(bool boolValue, TreeNode leftRoot, TreeNode rightRoot)
         { 
             if (leftRoot.left != null || rightRoot.right != null)
