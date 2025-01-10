@@ -323,7 +323,7 @@
             //int[] nums = [-10, -3, 0, 5, 9];
             //TreeNode root = leetCodeAll.SortedArrayToBST(nums);
 
-            //(111.) Minimum Depth of Binary Tree (EASY)
+            ////(111.) Minimum Depth of Binary Tree (EASY)
             #region Minimum Depth - other test cases
             //TreeNode root = new TreeNode(3);
             //root.left = new TreeNode(9);
@@ -331,16 +331,38 @@
             //root.right.left = new TreeNode(15);
             //root.right.right = new TreeNode(7);
             #endregion
-            TreeNode root = new TreeNode(2);
-            root.left = null;
+            //TreeNode root = new TreeNode(2);
+            //root.left = null;
+            //root.right = new TreeNode(3);
+            //root.right.left = null;
+            //root.right.right = new TreeNode(4);
+            //root.right.right.left = null;
+            //root.right.right.right = new TreeNode(5);
+            //root.right.right.right.left = null;
+            //root.right.right.right.right = new TreeNode(6);
+
+            //Console.WriteLine(leetCodeAll.MinDepth(root));
+
+            ////(112.) Path Sum (EASY)
+            #region Path Sum other test cases 
+            //TreeNode root = new TreeNode(5);
+            //root.left = new TreeNode(4);
+            //root.right = new TreeNode(8);
+            //root.left.left = new TreeNode(11);
+            //root.left.left.left = new TreeNode(7);
+            //root.left.left.right = new TreeNode(2);
+            //root.right.left = new TreeNode(13);
+            //root.right.right = new TreeNode(4);
+            //root.right.right.right = new TreeNode(1);
+            //int targetSum = 22;
+            #endregion
+            TreeNode root = new TreeNode(1);
+            root.left = new TreeNode(2);
             root.right = new TreeNode(3);
-            root.right.left = null;
-            root.right.right = new TreeNode(4);
-            root.right.right.left = null;
-            root.right.right.right = new TreeNode(5);
-            root.right.right.right.left = null;
-            root.right.right.right.right = new TreeNode(6);
-            Console.WriteLine(leetCodeAll.MinDepth(root));
+            int targetSum = 5;
+
+            Console.WriteLine(leetCodeAll.HasPathSum(root, targetSum));
+
 
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150

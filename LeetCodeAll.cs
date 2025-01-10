@@ -566,6 +566,10 @@ namespace ProblemSolving
         {
             return TreeNode.TreeMinDepth(root);
         }
+        public bool HasPathSum(TreeNode root, int targetSum)
+        {
+            return TreeNode.TreeHasPathSum(root, targetSum);
+        }
 
     }
 
@@ -590,6 +594,19 @@ namespace ProblemSolving
             this.val = val;
             this.left = left;
             this.right = right;
+        }
+        public static bool TreeHasPathSum(TreeNode root,int targetSum)
+        {
+            if (root == null)
+            {
+                return false;
+            }
+            targetSum -= root.val;
+            if (root.left == null && root.right == null && targetSum == 0) 
+            {
+                return true;
+            }
+            return TreeHasPathSum(root.left, targetSum) || TreeHasPathSum(root.right, targetSum);
         }
         public static int TreeMaxDepth(TreeNode root)
         {
