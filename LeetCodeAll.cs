@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.Design.Serialization;
 using System.Security;
+using System.Text.RegularExpressions;
 using static ProblemSolving.Program;
 
 namespace ProblemSolving
@@ -509,7 +510,7 @@ namespace ProblemSolving
             {
                 return false;
             }
-            if (q.val == p.val) 
+            if (q.val == p.val)
             {
                 return TreeNode.TreeNodeIsSameTree(true, p, q);
             }
@@ -559,7 +560,7 @@ namespace ProblemSolving
             TreeNode root = new TreeNode(nums[centerValue]);
 
             root.left = SortedArrayToBST(nums[..centerValue]);
-            root.right = SortedArrayToBST(nums[(centerValue+1)..]);
+            root.right = SortedArrayToBST(nums[(centerValue + 1)..]);
 
             return root;
         }
@@ -585,11 +586,11 @@ namespace ProblemSolving
             }
             else
             {
-                for (int i = 0; i < numRows-1; i++) 
+                for (int i = 0; i < numRows - 1; i++)
                 {
                     List<int> currentList = new List<int>();
                     currentList.Add(1);
-                    for(int j = 1; j < fullList[i].Count; j++)
+                    for (int j = 1; j < fullList[i].Count; j++)
                     {
                         currentList.Add(fullList[i][j - 1] + fullList[i][j]);
                     }
@@ -620,7 +621,7 @@ namespace ProblemSolving
                     currentList.Add(1);
                     fullList.Add(currentList);
                 }
-                return fullList[fullList.Count-1];
+                return fullList[fullList.Count - 1];
             }
         }
         public int MaxProfit(int[] prices)
@@ -637,7 +638,61 @@ namespace ProblemSolving
             }
             return maxProfit;
         }
-
+        public bool IsPalindrome(string s)
+        {
+            Dictionary<char, char> dictionaryASCII = new Dictionary<char, char>()
+        {
+            {'a','a'}, {'b','b'}, {'c','c'}, {'d','d'}, {'e','e'}, {'f','f'}, {'g','g'}, {'h','h'}, {'i','i'}, {'j','j'}, {'k','k'},
+            {'l','l'}, {'m','m'}, {'n','n'}, {'o','o'}, {'p','p'}, {'q','q'}, {'r','r'}, {'s','s'}, {'t','t'}, {'u','u'}, {'v','v'},
+            {'w','w'}, {'x','x'}, {'y','y'}, {'z','z'}, {'A','a'}, {'B','b'}, {'C','c'}, {'D','d'}, {'E','e'}, {'F','f'}, {'G','g'},
+            {'H','h'}, {'I','i'}, {'J','j'}, {'K','k'}, {'L','l'}, {'M','m'}, {'N','n'}, {'O','o'}, {'P','p'}, {'Q','q'}, {'R','r'},
+            {'S','s'}, {'T','t'}, {'U','u'}, {'V','v'}, {'W','w'}, {'X','x'}, {'Y','y'}, {'Z','z'}, {'0','0'}, {'1','1'}, {'2','2'},
+            {'3','3'}, {'4','4'}, {'5','5'}, {'6','6'}, {'7','7'}, {'8','8'}, {'9','9'}
+        };
+            string newS = "";
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (dictionaryASCII.ContainsKey(s[i]))
+                {
+                    newS += dictionaryASCII[s[i]];
+                }
+            }
+            int lengthNews = newS.Length;
+            if (lengthNews < 1)
+            {
+                return true;
+            }
+            if (lengthNews % 2 == 0)
+            {
+                int centerString = newS.Length / 2;
+                //Console.WriteLine(newS.Length);
+                for (int i = 0; i < centerString; i++)
+                {
+                    if (newS[centerString + i] != newS[centerString - i - 1])
+                    {
+                        return false;
+                    }
+                }
+                //Console.WriteLine(newS);
+                return true;
+            }
+            else
+            {
+                int centerString = newS.Length / 2;
+                //Console.WriteLine(newS.Length);
+                for (int i = 1; i < centerString + 1; i++)
+                {
+                    if (newS[centerString + i] != newS[centerString - i])
+                    {
+                        return false;
+                    }
+                }
+                //Console.WriteLine(newS);
+                return true;
+            }
+            //string strRegex = @"^[a-zA-Z][a-zA-Z0-9]*$";
+            //Regex re = new Regex(strRegex);
+        }
     }
 
     public class ListNode

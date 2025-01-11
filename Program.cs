@@ -384,9 +384,13 @@
             //    Console.Write(i + " ");
             //}
 
-            ////(121.) Best Time to Boy and Sell Stock
-            int[] prices = [7, 1, 5, 3, 6, 4];
-            Console.WriteLine(leetCodeAll.MaxProfit(prices));
+            ////(121.) Best Time to Boy and Sell Stock (EASY)
+            //int[] prices = [7, 1, 5, 3, 6, 4];
+            //Console.WriteLine(leetCodeAll.MaxProfit(prices));
+
+            ////(125.) Valid Palindrome (EASY)
+            string s = "abb";
+            Console.WriteLine(leetCodeAll.IsPalindrome(s));
 
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
