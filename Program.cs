@@ -363,17 +363,25 @@
 
             //Console.WriteLine(leetCodeAll.HasPathSum(root, targetSum));
 
-            //(118.) Pascal's Triangle (EASY)
-            int numRows = 30;
-            var x =  leetCodeAll.PascalsTriangleGenerate(numRows);
-            foreach (var i in x) 
+            ////(118.) Pascal's Triangle (EASY)
+            //int numRows = 30;
+            //var x =  leetCodeAll.PascalsTriangleGenerate(numRows);
+            //foreach (var i in x) 
+            //{
+            //    Console.WriteLine("");
+            //    foreach (var j in i)
+            //    {
+            //        Console.Write(j);
+            //        Console.Write(" ");
+            //    }
+            //}
+
+            //(119.) Pascal's Triangle II (EASY)
+            int numRows = 3;
+            var x = leetCodeAll.GetRow(numRows);
+            foreach (var i in x)
             {
-                Console.WriteLine("");
-                foreach (var j in i)
-                {
-                    Console.Write(j);
-                    Console.Write(" ");
-                }
+                Console.Write(i + " ");
             }
 
 
