@@ -623,6 +623,20 @@ namespace ProblemSolving
                 return fullList[fullList.Count-1];
             }
         }
+        public int MaxProfit(int[] prices)
+        {
+            int buyOrCheapPrice = prices[0];
+            int maxProfit = 0;
+            for (int i = 1; i < prices.Length; i++)
+            {
+                if (buyOrCheapPrice > prices[i])
+                {
+                    buyOrCheapPrice = prices[i];
+                }
+                maxProfit = Math.Max(maxProfit, prices[i] - buyOrCheapPrice);
+            }
+            return maxProfit;
+        }
 
     }
 

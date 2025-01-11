@@ -376,14 +376,17 @@
             //    }
             //}
 
-            //(119.) Pascal's Triangle II (EASY)
-            int numRows = 3;
-            var x = leetCodeAll.GetRow(numRows);
-            foreach (var i in x)
-            {
-                Console.Write(i + " ");
-            }
+            ////(119.) Pascal's Triangle II (EASY)
+            //int numRows = 3;
+            //var x = leetCodeAll.GetRow(numRows);
+            //foreach (var i in x)
+            //{
+            //    Console.Write(i + " ");
+            //}
 
+            ////(121.) Best Time to Boy and Sell Stock
+            int[] prices = [7, 1, 5, 3, 6, 4];
+            Console.WriteLine(leetCodeAll.MaxProfit(prices));
 
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
