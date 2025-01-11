@@ -356,12 +356,25 @@
             //root.right.right.right = new TreeNode(1);
             //int targetSum = 22;
             #endregion
-            TreeNode root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
-            int targetSum = 5;
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(2);
+            //root.right = new TreeNode(3);
+            //int targetSum = 5;
 
-            Console.WriteLine(leetCodeAll.HasPathSum(root, targetSum));
+            //Console.WriteLine(leetCodeAll.HasPathSum(root, targetSum));
+
+            //(118.) Pascal's Triangle (EASY)
+            int numRows = 30;
+            var x =  leetCodeAll.PascalsTriangleGenerate(numRows);
+            foreach (var i in x) 
+            {
+                Console.WriteLine("");
+                foreach (var j in i)
+                {
+                    Console.Write(j);
+                    Console.Write(" ");
+                }
+            }
 
 
 
