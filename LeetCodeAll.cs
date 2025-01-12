@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.Design.Serialization;
+using System.Runtime.CompilerServices;
 using System.Security;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -658,6 +659,22 @@ namespace ProblemSolving
                 }
             }
             return true;
+        }
+        public int SingleNumber(int[] nums)
+        {
+            Dictionary<int, int> dictionaryNums = new Dictionary<int, int>();
+            foreach (int item in nums)
+            {
+                if (dictionaryNums.ContainsKey(item))
+                {
+                    dictionaryNums[item]++;
+                }
+                else
+                {
+                    dictionaryNums.Add(item, 1);
+                }
+            }
+            return dictionaryNums.FirstOrDefault(x => x.Value == 1).Key;
         }
     }
 

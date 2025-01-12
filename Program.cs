@@ -389,10 +389,12 @@
             //Console.WriteLine(leetCodeAll.MaxProfit(prices));
 
             ////(125.) Valid Palindrome (EASY)
-            string s = "A man, a plan, a canal: Panama";
-            Console.WriteLine(leetCodeAll.IsPalindrome(s));
+            //string s = "A man, a plan, a canal: Panama";
+            //Console.WriteLine(leetCodeAll.IsPalindrome(s));
 
-
+            ////(136.) Single Number (EASY)
+            int[] nums = [4, 1, 2, 1, 2];
+            Console.WriteLine(leetCodeAll.SingleNumber(nums));
 
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
