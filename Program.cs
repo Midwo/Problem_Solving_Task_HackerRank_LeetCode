@@ -389,8 +389,10 @@
             //Console.WriteLine(leetCodeAll.MaxProfit(prices));
 
             ////(125.) Valid Palindrome (EASY)
-            string s = "abb";
+            string s = "A man, a plan, a canal: Panama";
             Console.WriteLine(leetCodeAll.IsPalindrome(s));
+
+
 
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150

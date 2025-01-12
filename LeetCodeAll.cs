@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.Design.Serialization;
 using System.Security;
+using System.Text;
 using System.Text.RegularExpressions;
 using static ProblemSolving.Program;
 
@@ -640,58 +641,23 @@ namespace ProblemSolving
         }
         public bool IsPalindrome(string s)
         {
-            Dictionary<char, char> dictionaryASCII = new Dictionary<char, char>()
-        {
-            {'a','a'}, {'b','b'}, {'c','c'}, {'d','d'}, {'e','e'}, {'f','f'}, {'g','g'}, {'h','h'}, {'i','i'}, {'j','j'}, {'k','k'},
-            {'l','l'}, {'m','m'}, {'n','n'}, {'o','o'}, {'p','p'}, {'q','q'}, {'r','r'}, {'s','s'}, {'t','t'}, {'u','u'}, {'v','v'},
-            {'w','w'}, {'x','x'}, {'y','y'}, {'z','z'}, {'A','a'}, {'B','b'}, {'C','c'}, {'D','d'}, {'E','e'}, {'F','f'}, {'G','g'},
-            {'H','h'}, {'I','i'}, {'J','j'}, {'K','k'}, {'L','l'}, {'M','m'}, {'N','n'}, {'O','o'}, {'P','p'}, {'Q','q'}, {'R','r'},
-            {'S','s'}, {'T','t'}, {'U','u'}, {'V','v'}, {'W','w'}, {'X','x'}, {'Y','y'}, {'Z','z'}, {'0','0'}, {'1','1'}, {'2','2'},
-            {'3','3'}, {'4','4'}, {'5','5'}, {'6','6'}, {'7','7'}, {'8','8'}, {'9','9'}
-        };
-            string newS = "";
+            StringBuilder stringBuilderInputString = new StringBuilder();
             for (int i = 0; i < s.Length; i++)
             {
-                if (dictionaryASCII.ContainsKey(s[i]))
+                if (char.IsLetterOrDigit(s[i]))
                 {
-                    newS += dictionaryASCII[s[i]];
+                    stringBuilderInputString.Append(s[i]);
                 }
             }
-            int lengthNews = newS.Length;
-            if (lengthNews < 1)
+            String newS = stringBuilderInputString.ToString().ToLower();
+            for (int i = 0; i < newS.Length / 2; i++)
             {
-                return true;
-            }
-            if (lengthNews % 2 == 0)
-            {
-                int centerString = newS.Length / 2;
-                //Console.WriteLine(newS.Length);
-                for (int i = 0; i < centerString; i++)
+                if (newS[newS.Length - 1 - i] != newS[i])
                 {
-                    if (newS[centerString + i] != newS[centerString - i - 1])
-                    {
-                        return false;
-                    }
+                    return false;
                 }
-                //Console.WriteLine(newS);
-                return true;
             }
-            else
-            {
-                int centerString = newS.Length / 2;
-                //Console.WriteLine(newS.Length);
-                for (int i = 1; i < centerString + 1; i++)
-                {
-                    if (newS[centerString + i] != newS[centerString - i])
-                    {
-                        return false;
-                    }
-                }
-                //Console.WriteLine(newS);
-                return true;
-            }
-            //string strRegex = @"^[a-zA-Z][a-zA-Z0-9]*$";
-            //Regex re = new Regex(strRegex);
+            return true;
         }
     }
 
