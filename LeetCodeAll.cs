@@ -676,6 +676,18 @@ namespace ProblemSolving
             }
             return dictionaryNums.FirstOrDefault(x => x.Value == 1).Key;
         }
+        public bool HasCycle(ListNode head)
+        {
+            if (head == null) return false;
+            ListNode slow = head;
+            do
+            {
+                if (head.next == null || head.next.next == null) return false;
+                slow = slow.next;
+                head = head.next.next;
+            } while (slow != head);
+            return true;
+        }
     }
 
     public class ListNode

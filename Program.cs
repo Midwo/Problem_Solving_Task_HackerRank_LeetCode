@@ -393,9 +393,17 @@
             //Console.WriteLine(leetCodeAll.IsPalindrome(s));
 
             ////(136.) Single Number (EASY)
-            int[] nums = [4, 1, 2, 1, 2];
-            Console.WriteLine(leetCodeAll.SingleNumber(nums));
+            //int[] nums = [4, 1, 2, 1, 2];
+            //Console.WriteLine(leetCodeAll.SingleNumber(nums));
 
+            ////(141.) Linked List Cycle
+            ListNode head = new ListNode(3);
+            head.next = new ListNode(2);
+            head.next.next = new ListNode(0);
+            head.next.next.next = new ListNode(-4);
+            head.next.next.next.next = head.next;
+
+            Console.WriteLine(leetCodeAll.HasCycle(head));
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
