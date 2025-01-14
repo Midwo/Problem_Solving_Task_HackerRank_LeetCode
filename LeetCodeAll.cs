@@ -688,6 +688,11 @@ namespace ProblemSolving
             } while (slow != head);
             return true;
         }
+        public IList<int> PreorderTraversal(TreeNode root)
+        {
+            IList<int> listRoot = new List<int>();
+            return TreeNode.TreePreorderTraversal(root, listRoot);
+        }
     }
 
     public class ListNode
@@ -711,6 +716,23 @@ namespace ProblemSolving
             this.val = val;
             this.left = left;
             this.right = right;
+        }
+
+        public static IList<int> TreePreorderTraversal(TreeNode root, IList<int> listRoot)
+        {
+            if (root == null)
+            {
+                return listRoot;
+            }
+            else
+            {
+                listRoot.Add(root.val);
+            }
+            var leftRoot = TreePreorderTraversal(root.left, listRoot);
+            var righRoot = TreePreorderTraversal(root.right, listRoot);
+
+
+            return listRoot;
         }
         public static bool TreeHasPathSum(TreeNode root,int targetSum)
         {

@@ -396,14 +396,25 @@
             //int[] nums = [4, 1, 2, 1, 2];
             //Console.WriteLine(leetCodeAll.SingleNumber(nums));
 
-            ////(141.) Linked List Cycle
-            ListNode head = new ListNode(3);
-            head.next = new ListNode(2);
-            head.next.next = new ListNode(0);
-            head.next.next.next = new ListNode(-4);
-            head.next.next.next.next = head.next;
+            ////(141.) Linked List Cycle (EASY)
+            //ListNode head = new ListNode(3);
+            //head.next = new ListNode(2);
+            //head.next.next = new ListNode(0);
+            //head.next.next.next = new ListNode(-4);
+            //head.next.next.next.next = head.next;
+            //Console.WriteLine(leetCodeAll.HasCycle(head));
 
-            Console.WriteLine(leetCodeAll.HasCycle(head));
+            ////(144.) Binary Tree Preorder Traversal (EASY)
+            TreeNode root = new TreeNode(1);
+            root.left = new TreeNode(2);
+            root.right = new TreeNode(3);
+            root.left.left = new TreeNode(4);
+            root.left.right = new TreeNode(5);
+            root.left.right.left = new TreeNode(6);
+            root.left.right.right = new TreeNode(7);
+            root.right.right = new TreeNode(8);
+            root.right.right.left = new TreeNode(9);
+            Console.WriteLine(string.Join(" ", leetCodeAll.PreorderTraversal(root)));
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
