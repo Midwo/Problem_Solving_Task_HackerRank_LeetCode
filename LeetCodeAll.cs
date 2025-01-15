@@ -693,6 +693,11 @@ namespace ProblemSolving
             IList<int> listRoot = new List<int>();
             return TreeNode.TreePreorderTraversal(root, listRoot);
         }
+        public IList<int> PostorderTraversal(TreeNode root)
+        {
+            IList<int> listRoot = new List<int>();
+            return TreeNode.TreePostorderTraversal(root, listRoot);
+        }
     }
 
     public class ListNode
@@ -717,7 +722,17 @@ namespace ProblemSolving
             this.left = left;
             this.right = right;
         }
-
+        public static IList<int> TreePostorderTraversal(TreeNode root, IList<int> listRoot)
+        {
+            if (root == null)
+            {
+                return listRoot;
+            }
+            var leftRoot = TreePostorderTraversal(root.left, listRoot);
+            var righRoot = TreePostorderTraversal(root.right, listRoot);
+            listRoot.Add(root.val);
+            return listRoot;
+        }
         public static IList<int> TreePreorderTraversal(TreeNode root, IList<int> listRoot)
         {
             if (root == null)
