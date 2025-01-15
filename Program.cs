@@ -417,21 +417,59 @@
             //Console.WriteLine(string.Join(" ", leetCodeAll.PreorderTraversal(root)));
 
             ////(145.) Binary Tree Postorder Traversal (EASY)
-            TreeNode root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.left.left = new TreeNode(4);
-            root.left.right = new TreeNode(5);
-            root.left.right.left = new TreeNode(6);
-            root.left.right.right = new TreeNode(7);
-            root.right = new TreeNode(3);
-            root.right.right = new TreeNode(8);
-            root.right.right.left = new TreeNode(9);
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(2);
+            //root.left.left = new TreeNode(4);
+            //root.left.right = new TreeNode(5);
+            //root.left.right.left = new TreeNode(6);
+            //root.left.right.right = new TreeNode(7);
+            //root.right = new TreeNode(3);
+            //root.right.right = new TreeNode(8);
+            //root.right.right.left = new TreeNode(9);
+            //Console.WriteLine(string.Join(" ", leetCodeAll.PostorderTraversal(root)));
 
-            Console.WriteLine(string.Join(" ", leetCodeAll.PostorderTraversal(root)));
+            ////(160.) Intersection of Two Linked List (EASY)
+            ListNode headA = new ListNode(4);
+            ListNode headB = new ListNode(5);
+            ListNode headC = new ListNode(8);
+            headC.next = new ListNode(4);
+            headC.next.next = new ListNode(5);
+            headA.next = new ListNode(1);
+            headA.next.next = headC;
+            headB.next = new ListNode(6);
+            headB.next.next = new ListNode(1);
+            headB.next.next.next = headC;
+            #region other cases 
+            //ListNode headA = new ListNode(2);
+            //headA.next = new ListNode(6);
+            //headA = new ListNode(4);
+            //ListNode headB = new ListNode(1);
+            //headB.next = new ListNode(5);
 
-
-
-
+            //ListNode headC = new ListNode(3);
+            //ListNode headA = headC;
+            //ListNode headB = new ListNode(2);
+            //headB.next = headC;
+            #endregion
+            #region running the result
+            ListNode result = leetCodeAll.GetIntersectionNode(headA, headB);
+            if (result != null)
+            {
+                Console.WriteLine(result.val);
+                do
+                {
+                    if (result.next != null)
+                    {
+                        result = result.next;
+                        Console.WriteLine(result.val);
+                    }
+                } while (result.next != null);
+            }
+            else
+            {
+                Console.WriteLine("No intersection");
+            }
+#endregion
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 

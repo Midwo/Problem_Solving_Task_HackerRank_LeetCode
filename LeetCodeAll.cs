@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Security;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Xml.Linq;
 using static ProblemSolving.Program;
 
 namespace ProblemSolving
@@ -697,6 +698,42 @@ namespace ProblemSolving
         {
             IList<int> listRoot = new List<int>();
             return TreeNode.TreePostorderTraversal(root, listRoot);
+        }
+        public ListNode GetIntersectionNode(ListNode headA, ListNode headB)
+        {
+            //while (headB != null)
+            //{
+            //    ListNode temp = headA;
+            //    while (temp != null)
+            //    {
+
+            //        // If both Nodes are same
+            //        if (temp == headB)
+            //            return headB;
+            //        temp = temp.next;
+            //    }
+            //    headB = headB.next;
+            //}
+            //return null;
+
+            HashSet<ListNode> visitedPointsFromHeadA = new HashSet<ListNode>();
+
+            ListNode listA = headA;
+            while (listA != null)
+            {
+                visitedPointsFromHeadA.Add(listA);
+                listA = listA.next;
+            }
+
+            ListNode listB = headB;
+            while (listB != null)
+            {
+                if (visitedPointsFromHeadA.Contains(listB))
+                    return listB;
+                listB = listB.next;
+            }
+
+            return null;
         }
     }
 
