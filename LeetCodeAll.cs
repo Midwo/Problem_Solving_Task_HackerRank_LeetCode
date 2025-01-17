@@ -773,6 +773,17 @@ namespace ProblemSolving
             }
             return dictionaryCountNumbers.FirstOrDefault(x => x.Value == dictionaryCountNumbers.Values.Max()).Key;
         }
+        public int TitleToNumber(string columnTitle)
+        {
+            int tempResult = 0;
+            int howLength = columnTitle.Length;
+            for (int i = howLength-1; i >= 0; i--)
+            {
+                tempResult += ((int)columnTitle[i] - 64)* (int)Math.Pow(26, howLength-i-1);        
+            }
+            return tempResult;
+        }
+
     }
 
     public class ListNode

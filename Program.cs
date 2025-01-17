@@ -478,8 +478,11 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ConvertToTitle(columnNumber));
 
             ////(169.) Majority Element (EASY)
-            int[] nums = [3, 2, 3];
-            Console.WriteLine(leetCodeAll.MajorityElement(nums));
+            //int[] nums = [3, 2, 3];
+            //Console.WriteLine(leetCodeAll.MajorityElement(nums));
+
+            ////(171.) Excel Sheet Column Number
+            Console.WriteLine(leetCodeAll.TitleToNumber("AB"));
 
         //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
         //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
