@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel;
+using System.Data.SqlTypes;
+using System.Net;
 
 namespace ProblemSolving
 {
@@ -481,20 +483,33 @@ namespace ProblemSolving
             //int[] nums = [3, 2, 3];
             //Console.WriteLine(leetCodeAll.MajorityElement(nums));
 
-            ////(171.) Excel Sheet Column Number
-            Console.WriteLine(leetCodeAll.TitleToNumber("AB"));
+            ////(171.) Excel Sheet Column Number (EASY)
+            //Console.WriteLine(leetCodeAll.TitleToNumber("AB"));
+
+            ////(175.) Combine Two Tables (EASY) (MS SQL)
+            string SqlQuery = @"
+            Select
+            [firstName],
+            [lastName],
+            [city],
+            [state]
+            From Person
+            left join Address
+            on Person.personId = Address.personId";
+
+
 
         //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
         //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
         //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
 
-        ////(88.) Merge Sorted Array
-        //int[] nums1 = [1, 2, 3, 0, 0, 0];
-        //int m = 3;
-        //int[] nums2 = [2, 5, 6];
-        //int n = 3;
-        //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
-        //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
+            ////(88.) Merge Sorted Array
+            //int[] nums1 = [1, 2, 3, 0, 0, 0];
+            //int m = 3;
+            //int[] nums2 = [2, 5, 6];
+            //int n = 3;
+            //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
+            //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
     }
         //public class ListNode
