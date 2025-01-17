@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using ProblemSolving.LeetCode;
+using System.ComponentModel;
 using System.Data.SqlTypes;
 using System.Net;
 
@@ -162,8 +163,10 @@ namespace ProblemSolving
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL
 
             ////(1.) Two Sum (EASY)
-            //Console.WriteLine(leetCodeAll.TwoSum([2, 7, 11, 15], 9));
-            //Console.WriteLine(String.Join("",leetCodeAll.TwoSum([2, 7, 11, 15], 9)));
+            Console.WriteLine(String.Join("", leetCodeAll.TwoSum([2, 7, 11, 15], 9)));
+            //OR
+            LeetCode_1 classLeetCode = new LeetCode_1();
+            Console.WriteLine(String.Join("", classLeetCode.TwoSum([2, 7, 11, 15], 9)));
 
             ////(9.) Palindrome Number (EASY)
             //Console.WriteLine(leetCodeAll.IsPalindrome(1234567899));
@@ -513,12 +516,22 @@ namespace ProblemSolving
             //    Where a.salary > b.salary";
 
             ////(182.) Duplicate Emails (EASY)
-            string SqlQeury = @"
-                SELECT
-                [email]
-                FROM [test1].[dbo].[test_email]
-                Group by [email]
-                Having Count(email) > 1;";
+            //string SqlQuery = @"
+            //    SELECT
+            //    [email]
+            //    FROM [test1].[dbo].[test_email]
+            //    Group by [email]
+            //    Having Count(email) > 1;";
+
+            ////(183.) Customers Who Never Order (EASY)
+            string SqlQuery = @"
+                Select 
+                a.[name] as [Customers]
+                From Customers as a
+                left join Orders as b
+                on a.id = b.customerId
+                where b.id is null
+                ";
 
         //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
         //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
