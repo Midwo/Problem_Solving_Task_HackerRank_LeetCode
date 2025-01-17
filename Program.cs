@@ -487,15 +487,30 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TitleToNumber("AB"));
 
             ////(175.) Combine Two Tables (EASY) (MS SQL)
+            //string SqlQuery = @"
+            //Select
+            //[firstName],
+            //[lastName],
+            //[city],
+            //[state]
+            //From Person
+            //left join Address
+            //on Person.personId = Address.personId";
+
+            ////(181.) Employees Earning More Than Their Managers (EASY)
+            string SqlQuery1 = @"
+                SELECT
+                a.name as [Employee]
+                FROM Employee as a
+                Where a.salary > (SELECT salary FROM Employee Where a.managerId = id)";
+            //Alternative
             string SqlQuery = @"
-            Select
-            [firstName],
-            [lastName],
-            [city],
-            [state]
-            From Person
-            left join Address
-            on Person.personId = Address.personId";
+                SELECT
+                a.name as [Employee]
+                FROM Employee as a
+                left join Employee as b
+                on a.managerId = b.id
+                Where a.salary > b.salary";
 
 
 
