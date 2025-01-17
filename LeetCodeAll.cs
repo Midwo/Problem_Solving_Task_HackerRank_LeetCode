@@ -757,7 +757,22 @@ namespace ProblemSolving
             //    }
             //    return new string (res.ToString().Reverse().ToArray());
         }
-
+        public int MajorityElement(int[] nums)
+        {
+            Dictionary<int, int> dictionaryCountNumbers = new Dictionary<int, int>();
+            foreach (int num in nums)
+            {
+                if (dictionaryCountNumbers.ContainsKey(num))
+                {
+                    dictionaryCountNumbers[num]++;
+                }
+                else
+                {
+                    dictionaryCountNumbers.Add(num, 1);
+                }
+            }
+            return dictionaryCountNumbers.FirstOrDefault(x => x.Value == dictionaryCountNumbers.Values.Max()).Key;
+        }
     }
 
     public class ListNode

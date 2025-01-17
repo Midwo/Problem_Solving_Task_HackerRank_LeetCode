@@ -474,24 +474,26 @@ namespace ProblemSolving
             #endregion
 
             ////(168.) Excel Sheet Column Title (EASY)
-            int columnNumber = 704;
-            Console.WriteLine(leetCodeAll.ConvertToTitle(columnNumber));
+            //int columnNumber = 704;
+            //Console.WriteLine(leetCodeAll.ConvertToTitle(columnNumber));
 
+            ////(169.) Majority Element (EASY)
+            int[] nums = [3, 2, 3];
+            Console.WriteLine(leetCodeAll.MajorityElement(nums));
 
+        //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
+        //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
+        //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
 
-            //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
-            //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
-            //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
+        ////(88.) Merge Sorted Array
+        //int[] nums1 = [1, 2, 3, 0, 0, 0];
+        //int m = 3;
+        //int[] nums2 = [2, 5, 6];
+        //int n = 3;
+        //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
+        //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
-            ////(88.) Merge Sorted Array
-            //int[] nums1 = [1, 2, 3, 0, 0, 0];
-            //int m = 3;
-            //int[] nums2 = [2, 5, 6];
-            //int n = 3;
-            //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
-            //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
-
-        }
+    }
         //public class ListNode
         //{
         //    public int val;
