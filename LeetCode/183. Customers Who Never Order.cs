@@ -10,6 +10,7 @@ namespace ProblemSolving.LeetCode
     internal class LeetCode_183
     {
         //(183.) Customers Who Never Order
+
         string SqlQuery = @"
                 Select 
                 a.[name] as [Customers]

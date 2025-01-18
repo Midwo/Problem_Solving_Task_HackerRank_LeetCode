@@ -804,6 +804,19 @@ namespace ProblemSolving
             //}
             //return result;
         }
+        public int HammingWeight(int n)
+        {
+            string tempStringBinary = Convert.ToString(n, 2);
+            int howManyOne = 0;
+            foreach (char item in tempStringBinary)
+            {
+                if (item == '1')
+                {
+                    howManyOne++;
+                }
+            }
+            return howManyOne;
+        }
     }
 
     public class ListNode

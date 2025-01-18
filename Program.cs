@@ -11,7 +11,6 @@ namespace ProblemSolving
         {
             Basic_Task basic_Task = new Basic_Task();
             LeetCodeAll leetCodeAll = new LeetCodeAll();
-            LeetCode_Itnerview150 leetCodeInterview150 = new LeetCode_Itnerview150();
 
             //HACKERRANK
 
@@ -534,12 +533,18 @@ namespace ProblemSolving
             //    ";
 
             ////(190.) Reverse Bits
-            uint n = 43261596;
-            Console.WriteLine(leetCodeAll.reverseBits(n));
-            //OR
-            LeetCode_190 classLeetCode = new LeetCode_190();
-            Console.WriteLine(classLeetCode.reverseBits(n));
+            //uint n = 43261596;
+            //Console.WriteLine(leetCodeAll.reverseBits(n));
+            ////OR
+            //LeetCode_190 classLeetCode = new LeetCode_190();
+            //Console.WriteLine(classLeetCode.reverseBits(n));
 
+            ////(191.) Number of 1 Bits
+            int n = 3;
+            Console.WriteLine(leetCodeAll.HammingWeight(n));
+            //OR
+            LeetCode_191 classLeetCode = new LeetCode_191();
+            Console.WriteLine(classLeetCode.HammingWeight(n));
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
