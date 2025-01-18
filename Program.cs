@@ -163,10 +163,10 @@ namespace ProblemSolving
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL
 
             ////(1.) Two Sum (EASY)
-            Console.WriteLine(String.Join("", leetCodeAll.TwoSum([2, 7, 11, 15], 9)));
-            //OR
-            LeetCode_1 classLeetCode = new LeetCode_1();
-            Console.WriteLine(String.Join("", classLeetCode.TwoSum([2, 7, 11, 15], 9)));
+            //Console.WriteLine(String.Join("", leetCodeAll.TwoSum([2, 7, 11, 15], 9)));
+            ////OR
+            //LeetCode_1 classLeetCode = new LeetCode_1();
+            //Console.WriteLine(String.Join("", classLeetCode.TwoSum([2, 7, 11, 15], 9)));
 
             ////(9.) Palindrome Number (EASY)
             //Console.WriteLine(leetCodeAll.IsPalindrome(1234567899));
@@ -524,18 +524,26 @@ namespace ProblemSolving
             //    Having Count(email) > 1;";
 
             ////(183.) Customers Who Never Order (EASY)
-            string SqlQuery = @"
-                Select 
-                a.[name] as [Customers]
-                From Customers as a
-                left join Orders as b
-                on a.id = b.customerId
-                where b.id is null
-                ";
+            //string SqlQuery = @"
+            //    Select 
+            //    a.[name] as [Customers]
+            //    From Customers as a
+            //    left join Orders as b
+            //    on a.id = b.customerId
+            //    where b.id is null
+            //    ";
 
-        //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
-        //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
-        //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
+            ////(190.) Reverse Bits
+            uint n = 43261596;
+            Console.WriteLine(leetCodeAll.reverseBits(n));
+            //OR
+            LeetCode_190 classLeetCode = new LeetCode_190();
+            Console.WriteLine(classLeetCode.reverseBits(n));
+
+
+            //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
+            //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
+            //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
 
             ////(88.) Merge Sorted Array
             //int[] nums1 = [1, 2, 3, 0, 0, 0];
@@ -545,7 +553,7 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
             //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
-    }
+        }
         //public class ListNode
         //{
         //    public int val;
