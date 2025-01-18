@@ -169,15 +169,27 @@ namespace ProblemSolving
 
             ////(9.) Palindrome Number (EASY)
             //Console.WriteLine(leetCodeAll.IsPalindrome(1234567899));
+            ////OR
+            //LeetCode_9 classLeetCode = new LeetCode_9();
+            //Console.WriteLine(classLeetCode.IsPalindrome(1234567899));
 
             ////(13.) Roman to Integer (EASY)
             //Console.WriteLine(leetCodeAll.RomanToInt("MCMXCIV"));
+            ////OR
+            //LeetCode_13 classLeetCode = new LeetCode_13();
+            //Console.WriteLine(classLeetCode.RomanToInt("MCMXCIV"));
 
             ////(14.) Longest Common Prefix (EASY)
             //Console.WriteLine(leetCodeAll.LongestCommonPrefix(["flower", "flow", "flight"]));
+            ////OR
+            //LeetCode_14 classLeetCode = new LeetCode_14();
+            //Console.WriteLine(classLeetCode.LongestCommonPrefix(["flower", "flow", "flight"]));
 
             ////(20.) Valid Parentheses (EASY)
             //Console.WriteLine(leetCodeAll.IsValid("()[]{}"));
+            ////OR
+            //LeetCode_20 classLeetCode = new LeetCode_20();
+            //Console.WriteLine(classLeetCode.IsValid("()[]{}"));
 
             ////(21.) Merge Two Sorted Lists (EASY)
             //ListNode list1 = new ListNode(1);
@@ -532,19 +544,25 @@ namespace ProblemSolving
             //    where b.id is null
             //    ";
 
-            ////(190.) Reverse Bits
+            ////(190.) Reverse Bits (EASY)
             //uint n = 43261596;
             //Console.WriteLine(leetCodeAll.reverseBits(n));
             ////OR
             //LeetCode_190 classLeetCode = new LeetCode_190();
             //Console.WriteLine(classLeetCode.reverseBits(n));
 
-            ////(191.) Number of 1 Bits
-            int n = 3;
-            Console.WriteLine(leetCodeAll.HammingWeight(n));
-            //OR
-            LeetCode_191 classLeetCode = new LeetCode_191();
-            Console.WriteLine(classLeetCode.HammingWeight(n));
+            ////(191.) Number of 1 Bits (EASY)
+            //int n = 3;
+            //Console.WriteLine(leetCodeAll.HammingWeight(n));
+            ////OR
+            //LeetCode_191 classLeetCode = new LeetCode_191();
+            //Console.WriteLine(classLeetCode.HammingWeight(n));
+
+            ////(196.) Delete Duplicate Emails (EASY)
+            string SqlQuery = @"DELETE a
+                FROM Person  as a 
+                inner join Person  as b
+                on a.email = b.email and a.id > b.id";
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
