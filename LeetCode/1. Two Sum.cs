@@ -8,7 +8,7 @@ namespace ProblemSolving.LeetCode
 {
     internal class LeetCode_1
     {
-        //// (1.) Two Sum(EASY)
+        //// (1.) Two Sum (EASY)
         public int[] TwoSum(int[] nums, int target)
         {
             int[] printOutput = [0];

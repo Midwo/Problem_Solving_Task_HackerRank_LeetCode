@@ -8,7 +8,7 @@ namespace ProblemSolving.LeetCode
 {
     internal class LeetCode_190
     {
-        ////(190.) Reverse Bits
+        ////(190.) Reverse Bits (EASY)
         public uint reverseBits(uint n)
         {
             string tempString = Convert.ToString(n, 2).PadLeft(32, '0');

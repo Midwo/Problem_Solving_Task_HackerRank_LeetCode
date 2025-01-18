@@ -8,7 +8,7 @@ namespace ProblemSolving.LeetCode
 {
     internal class LeetCode_196
     {
-        ////(196.) Delete Duplicate Emails(EASY)
+        ////(196.) Delete Duplicate Emails (EASY)
         string SqlQuery = @"DELETE a
                 FROM Person  as a 
                 inner join Person  as b

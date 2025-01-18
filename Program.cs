@@ -1,6 +1,7 @@
 ﻿using ProblemSolving.LeetCode;
 using System.ComponentModel;
 using System.Data.SqlTypes;
+using System.Linq;
 using System.Net;
 
 namespace ProblemSolving
@@ -559,10 +560,37 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.HammingWeight(n));
 
             ////(196.) Delete Duplicate Emails (EASY)
-            string SqlQuery = @"DELETE a
-                FROM Person  as a 
-                inner join Person  as b
-                on a.email = b.email and a.id > b.id";
+            //string SqlQuery = @"
+            //    DELETE a
+            //    FROM Person  as a 
+            //    inner join Person  as b
+            //    on a.email = b.email and a.id > b.id";
+
+            ////(197.) Rising Temperature (EASY)
+            //string SqlQuery = @"
+            //    WITH CTE 
+            //    AS
+            //    (
+            //        SELECT [id]
+            //        ,[temperature]
+            //        ,recordDate
+	           //     ,lag(temperature) OVER (ORDER BY [recordDate]) as b
+            //        ,DATEDIFF(day, lag(recordDate) OVER (ORDER BY [recordDate]), [recordDate]) as c
+            //        FROM Weather
+            //    )
+            //    SELECT id 
+            //    FROM CTE Where temperature > b 
+            //    and c = 1
+            //    order by [recordDate];";
+
+            ////(202.) Happy Number (EASY)
+            int n = 19;
+            Console.WriteLine(leetCodeAll.IsHappy(n));
+            //OR
+            LeetCode_202 classLeetCode = new LeetCode_202();
+            Console.WriteLine(classLeetCode.IsHappy(n));
+
+
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 

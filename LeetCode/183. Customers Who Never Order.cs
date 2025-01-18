@@ -9,7 +9,7 @@ namespace ProblemSolving.LeetCode
 {
     internal class LeetCode_183
     {
-        //(183.) Customers Who Never Order
+        //(183.) Customers Who Never Order (EASY)
 
         string SqlQuery = @"
                 Select 

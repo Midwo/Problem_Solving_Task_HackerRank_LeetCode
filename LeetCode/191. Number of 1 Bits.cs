@@ -8,7 +8,7 @@ namespace ProblemSolving.LeetCode
 {
     internal class LeetCode_191
     {
-        ////(191.) Number of 1 Bits
+        ////(191.) Number of 1 Bits (EASY)
         public int HammingWeight(int n)
         {
             string tempStringBinary = Convert.ToString(n, 2);
