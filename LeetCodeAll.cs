@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.Design.Serialization;
+﻿using System.Collections.Generic;
+using System.ComponentModel.Design.Serialization;
 using System.Globalization;
 using System.Runtime.CompilerServices;
 using System.Security;
@@ -849,13 +850,28 @@ namespace ProblemSolving
                 curr = 0;
                 nString = n.ToString();
                 howLong = nString.Length;
-                if (n > 2147483647)
-                {
-                    return false;
-                }
                 list.Add(n);
             }
             return true;
+        }
+        public ListNode RemoveElements(ListNode head, int val)
+        {
+            ListNode copyHeadWithAddFirstRecord = new ListNode(0);
+            copyHeadWithAddFirstRecord.next = head;
+            ListNode correctedList = copyHeadWithAddFirstRecord;
+            
+            while(correctedList.next != null)
+            {
+                if (correctedList.next.val == val)
+                {
+                    correctedList.next = correctedList.next.next;
+                }
+                else
+                {
+                    correctedList = correctedList.next;
+                }
+            }
+            return copyHeadWithAddFirstRecord.next;
         }
     }
 
