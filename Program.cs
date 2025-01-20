@@ -591,28 +591,41 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.IsHappy(n));
 
             ////(203.) Remove Linked List Elements (EASY)
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(2);
-            head.next.next = new ListNode(6);
-            head.next.next.next = new ListNode(3);
-            head.next.next.next.next = new ListNode(4);
-            head.next.next.next.next.next = new ListNode(5);
-            head.next.next.next.next.next.next = new ListNode(6);
-            int val = 6;
-            ListNode returnedListNode = leetCodeAll.RemoveElements(head, val);
-            while(returnedListNode != null)
-            {
-                Console.WriteLine(returnedListNode.val);
-                returnedListNode = returnedListNode.next;
-            }
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(2);
+            //head.next.next = new ListNode(6);
+            //head.next.next.next = new ListNode(3);
+            //head.next.next.next.next = new ListNode(4);
+            //head.next.next.next.next.next = new ListNode(5);
+            //head.next.next.next.next.next.next = new ListNode(6);
+            //int val = 6;
+            //ListNode returnedListNode = leetCodeAll.RemoveElements(head, val);
+            //while(returnedListNode != null)
+            //{
+            //    Console.WriteLine(returnedListNode.val);
+            //    returnedListNode = returnedListNode.next;
+            //}
+            ////OR
+            //LeetCode_203 classLeetCode = new LeetCode_203();
+            //ListNode returnedListNode1 = classLeetCode.RemoveElements(head, val);
+            //while (returnedListNode1 != null)
+            //{
+            //    Console.WriteLine(returnedListNode1.val);
+            //    returnedListNode1 = returnedListNode1.next;
+            //}
+
+            ////(205. Isomorphic Strings) (EASY)
+            string s = "badc";
+            string t = "baba";
+            Console.WriteLine(leetCodeAll.IsIsomorphic(s, t));
             //OR
-            LeetCode_203 classLeetCode = new LeetCode_203();
-            ListNode returnedListNode1 = classLeetCode.RemoveElements(head, val);
-            while (returnedListNode1 != null)
-            {
-                Console.WriteLine(returnedListNode1.val);
-                returnedListNode1 = returnedListNode1.next;
-            }
+            LeetCode_205 classLeetCode = new LeetCode_205();
+            Console.WriteLine(classLeetCode.IsIsomorphic(s, t));
+
+
+
+
+
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
