@@ -614,17 +614,35 @@ namespace ProblemSolving
             //    returnedListNode1 = returnedListNode1.next;
             //}
 
-            ////(205. Isomorphic Strings) (EASY)
-            string s = "badc";
-            string t = "baba";
-            Console.WriteLine(leetCodeAll.IsIsomorphic(s, t));
+            ////(205.) Isomorphic Strings (EASY)
+            //string s = "badc";
+            //string t = "baba";
+            //Console.WriteLine(leetCodeAll.IsIsomorphic(s, t));
+            ////OR
+            //LeetCode_205 classLeetCode = new LeetCode_205();
+            //Console.WriteLine(classLeetCode.IsIsomorphic(s, t));
+
+            ////(206.) Reverse Linked List (EASY)
+            ListNode head = new ListNode(1);
+            head.next = new ListNode(2);
+            head.next.next = new ListNode(3);
+            head.next.next.next = new ListNode(4);
+            head.next.next.next.next = new ListNode(5);
+
+            ListNode returnedList = leetCodeAll.ReverseList(head);
+            while (returnedList != null)
+            {
+                Console.WriteLine(returnedList.val);
+                returnedList = returnedList.next;
+            }
             //OR
-            LeetCode_205 classLeetCode = new LeetCode_205();
-            Console.WriteLine(classLeetCode.IsIsomorphic(s, t));
-
-
-
-
+            LeetCode_206 classLeetCode = new LeetCode_206();
+            ListNode returnedList1 = classLeetCode.ReverseList(head);
+            while (returnedList1 != null)
+            {
+                Console.WriteLine(returnedList1.val);
+                returnedList1 = returnedList1.next;
+            }
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 

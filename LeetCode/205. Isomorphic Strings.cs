@@ -8,7 +8,7 @@ namespace ProblemSolving.LeetCode
 {
     internal class LeetCode_205
     {
-        ////(205. Isomorphic Strings) (EASY)
+        ////(205.) Isomorphic Strings (EASY)
         public bool IsIsomorphic(string s, string t)
         {
             bool result = true;
