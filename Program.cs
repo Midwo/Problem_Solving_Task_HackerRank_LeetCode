@@ -623,26 +623,37 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.IsIsomorphic(s, t));
 
             ////(206.) Reverse Linked List (EASY)
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(2);
-            head.next.next = new ListNode(3);
-            head.next.next.next = new ListNode(4);
-            head.next.next.next.next = new ListNode(5);
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(2);
+            //head.next.next = new ListNode(3);
+            //head.next.next.next = new ListNode(4);
+            //head.next.next.next.next = new ListNode(5);
 
-            ListNode returnedList = leetCodeAll.ReverseList(head);
-            while (returnedList != null)
-            {
-                Console.WriteLine(returnedList.val);
-                returnedList = returnedList.next;
-            }
-            //OR
-            LeetCode_206 classLeetCode = new LeetCode_206();
-            ListNode returnedList1 = classLeetCode.ReverseList(head);
-            while (returnedList1 != null)
-            {
-                Console.WriteLine(returnedList1.val);
-                returnedList1 = returnedList1.next;
-            }
+            //ListNode returnedList = leetCodeAll.ReverseList(head);
+            //while (returnedList != null)
+            //{
+            //    Console.WriteLine(returnedList.val);
+            //    returnedList = returnedList.next;
+            //}
+            ////OR
+            //LeetCode_206 classLeetCode = new LeetCode_206();
+            //ListNode returnedList1 = classLeetCode.ReverseList(head);
+            //while (returnedList1 != null)
+            //{
+            //    Console.WriteLine(returnedList1.val);
+            //    returnedList1 = returnedList1.next;
+            //}
+
+            ////(217.) Contains Deplicate (EASY)
+            int[] nums = [1, 2, 3, 1];
+            Console.WriteLine(leetCodeAll.ContainsDuplicate(nums));
+            ////OR
+            //LeetCode_217 classLeetCode = new LeetCode_217();
+            //Console.WriteLine(classLeetCode.ContainsDuplicate(nums));
+
+
+
+
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
