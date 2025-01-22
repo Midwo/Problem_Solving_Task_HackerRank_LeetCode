@@ -645,15 +645,19 @@ namespace ProblemSolving
             //}
 
             ////(217.) Contains Deplicate (EASY)
-            int[] nums = [1, 2, 3, 1];
-            Console.WriteLine(leetCodeAll.ContainsDuplicate(nums));
+            //int[] nums = [1, 2, 3, 1];
+            //Console.WriteLine(leetCodeAll.ContainsDuplicate(nums));
             ////OR
             //LeetCode_217 classLeetCode = new LeetCode_217();
             //Console.WriteLine(classLeetCode.ContainsDuplicate(nums));
 
-
-
-
+            ////(219.) Contains Duplicate II (EASY)
+            int[] nums = [1, 2, 3, 1];
+            int k = 3;
+            Console.WriteLine(leetCodeAll.ContainsNearbyDuplicate(nums, k));
+            ////OR
+            //LeetCode_219 classLeetCode = new LeetCode_219();
+            //Console.WriteLine(classLeetCode.ContainsNearbyDuplicate(nums, k));
 
             //LEETCODE INTERVIEW 150  //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150
             //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 //LEETCODE INTERVIEW 150 
