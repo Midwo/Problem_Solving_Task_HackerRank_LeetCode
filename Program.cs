@@ -199,7 +199,13 @@ namespace ProblemSolving
             //ListNode list2 = new ListNode(1);
             //list2.next = new ListNode(3);
             //list2.next.next = new ListNode(3);
+
             //var x = leetCodeAll.MergeTwoLists(list1, list2);
+
+            ////OR
+
+            //LeetCode_21 classLeetCode = new LeetCode_21();
+            //var x = classLeetCode.MergeTwoLists(list1, list2);
 
             //bool endLoop = true;
             //do
@@ -212,8 +218,13 @@ namespace ProblemSolving
             //    }
             //} while (endLoop);
 
-            ////(26.) Remove Duplicates from Sorted Array (EASY)
+            //(26.) Remove Duplicates from Sorted Array (EASY)
             //Console.WriteLine(leetCodeAll.RemoveDuplicates([1, 1, 2]));
+
+            ////OR
+            
+            //LeetCode_26 classLeetCode = new LeetCode_26();
+            //Console.WriteLine(classLeetCode.RemoveDuplicates([1, 1, 2]));
 
             ////(27.) Remove Element (EASY)
             //Console.WriteLine(leetCodeAll.RemoveElement([3,2,2,3], 3));
@@ -652,10 +663,12 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.ContainsDuplicate(nums));
 
             ////(219.) Contains Duplicate II (EASY)
-            int[] nums = [1, 2, 3, 1];
-            int k = 3;
-            Console.WriteLine(leetCodeAll.ContainsNearbyDuplicate(nums, k));
+            //int[] nums = [1, 2, 3, 1];
+            //int k = 3;
+            //Console.WriteLine(leetCodeAll.ContainsNearbyDuplicate(nums, k));
+
             ////OR
+            
             //LeetCode_219 classLeetCode = new LeetCode_219();
             //Console.WriteLine(classLeetCode.ContainsNearbyDuplicate(nums, k));
 
