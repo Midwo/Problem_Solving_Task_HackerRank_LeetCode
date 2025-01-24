@@ -222,7 +222,7 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.RemoveDuplicates([1, 1, 2]));
 
             ////OR
-            
+
             //LeetCode_26 classLeetCode = new LeetCode_26();
             //Console.WriteLine(classLeetCode.RemoveDuplicates([1, 1, 2]));
 
@@ -668,7 +668,7 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ContainsNearbyDuplicate(nums, k));
 
             ////OR
-            
+
             //LeetCode_219 classLeetCode = new LeetCode_219();
             //Console.WriteLine(classLeetCode.ContainsNearbyDuplicate(nums, k));
 
@@ -684,7 +684,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
             //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
+            ////(222.) Count Complete Tree Nodes (EASY)
+            TreeNode root = new TreeNode(1);
+            root.left = new TreeNode(2);
+            root.right = new TreeNode(3);
+            root.left.left = new TreeNode(4);
+            root.left.right = new TreeNode(5);
+            root.right.left = new TreeNode(6);
+
+            Console.WriteLine(leetCodeAll.CountNodes(root));
+            
+            ////OR
+
+            LeetCode_222 classLeetCode = new LeetCode_222();
+            Console.WriteLine(classLeetCode.CountNodes(root));
+
+
         }
+
         //public class ListNode
         //{
         //    public int val;

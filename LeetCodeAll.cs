@@ -778,9 +778,9 @@ namespace ProblemSolving
         {
             int tempResult = 0;
             int howLength = columnTitle.Length;
-            for (int i = howLength-1; i >= 0; i--)
+            for (int i = howLength - 1; i >= 0; i--)
             {
-                tempResult += ((int)columnTitle[i] - 64)* (int)Math.Pow(26, howLength-i-1);        
+                tempResult += ((int)columnTitle[i] - 64) * (int)Math.Pow(26, howLength - i - 1);
             }
             return tempResult;
         }
@@ -859,8 +859,8 @@ namespace ProblemSolving
             ListNode copyHeadWithAddFirstRecord = new ListNode(0);
             copyHeadWithAddFirstRecord.next = head;
             ListNode correctedList = copyHeadWithAddFirstRecord;
-            
-            while(correctedList.next != null)
+
+            while (correctedList.next != null)
             {
                 if (correctedList.next.val == val)
                 {
@@ -877,7 +877,7 @@ namespace ProblemSolving
         {
             bool result = true;
             int lenghtStringS = s.Length;
-            if(lenghtStringS != t.Length)
+            if (lenghtStringS != t.Length)
             {
                 return false;
             }
@@ -892,13 +892,13 @@ namespace ProblemSolving
                     }
                 }
                 else
-                {   
+                {
                     if (dictionaryMapping.ContainsValue(t[i]))
                     {
                         return false;
                     }
                     dictionaryMapping.Add(s[i], t[i]);
-                    
+
                 }
             }
             return result;
@@ -906,7 +906,7 @@ namespace ProblemSolving
         public ListNode ReverseList(ListNode head)
         {
             ListNode prev = null;
-            ListNode next; 
+            ListNode next;
 
             while (head != null)
             {
@@ -995,6 +995,17 @@ namespace ProblemSolving
             //    }
             //}
             //return false;
+        }
+        public int CountNodes(TreeNode root)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+            int leftCount = CountNodes(root.left);
+            int rightCount = CountNodes(root.right);
+
+            return leftCount + rightCount+1;
         }
     }
 
