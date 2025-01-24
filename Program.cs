@@ -3,6 +3,8 @@ using System.ComponentModel;
 using System.Data.SqlTypes;
 using System.Linq;
 using System.Net;
+using static ProblemSolving.LeetCode.LeetCode_225;
+using static ProblemSolving.LeetCodeAll;
 
 namespace ProblemSolving
 {
@@ -685,20 +687,43 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
             ////(222.) Count Complete Tree Nodes (EASY)
-            TreeNode root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
-            root.left.left = new TreeNode(4);
-            root.left.right = new TreeNode(5);
-            root.right.left = new TreeNode(6);
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(2);
+            //root.right = new TreeNode(3);
+            //root.left.left = new TreeNode(4);
+            //root.left.right = new TreeNode(5);
+            //root.right.left = new TreeNode(6);
 
-            Console.WriteLine(leetCodeAll.CountNodes(root));
+            //Console.WriteLine(leetCodeAll.CountNodes(root));
+
+            //////OR
+
+            //LeetCode_222 classLeetCode = new LeetCode_222();
+            //Console.WriteLine(classLeetCode.CountNodes(root));
+
+            ////(225.) Implement Stack using Queues (EASY)
+            LeetCode_225_MyStack obj = new LeetCode_225_MyStack();
+            obj.Push(1);
+            obj.Push(2);
+            int param_2 = obj.Top();
+            int param_3 = obj.Pop();
+            bool param_4 = obj.Empty();
             
-            ////OR
+            Console.WriteLine(param_2);
+            Console.WriteLine(param_3);
+            Console.WriteLine(param_4);
 
-            LeetCode_222 classLeetCode = new LeetCode_222();
-            Console.WriteLine(classLeetCode.CountNodes(root));
+            //OR
+            LeetCodeAll_225_MyStack obj1 = new LeetCodeAll_225_MyStack();
+            obj1.Push(1);
+            obj1.Push(2);
+            int parameter_2 = obj1.Top();
+            int parameter_3 = obj1.Pop();
+            bool parameter_4 = obj1.Empty();
 
+            Console.WriteLine(parameter_2);
+            Console.WriteLine(parameter_3);
+            Console.WriteLine(parameter_4);
 
         }
 

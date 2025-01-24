@@ -1007,6 +1007,48 @@ namespace ProblemSolving
 
             return leftCount + rightCount+1;
         }
+        public class LeetCodeAll_225_MyStack
+        {
+
+            //void push(int x) Pushes element x to the top of the stack.
+            //int pop() Removes the element on the top of the stack and returns it.
+            //int top() Returns the element on the top of the stack.
+            //boolean empty() Returns true if the stack is empty, false otherwise.
+
+            Queue<int> stackUsingQueues;
+
+            public LeetCodeAll_225_MyStack()
+            {
+                stackUsingQueues = new Queue<int>();
+            }
+
+            public void Push(int x)
+            {
+                stackUsingQueues.Enqueue(x);
+                int sizeStackUsingQueues = stackUsingQueues.Count;
+                while (sizeStackUsingQueues-- > 1)
+                {
+                    //sizeStackUsingQueues--;
+                    int returnValueOnStack = stackUsingQueues.Dequeue();
+                    stackUsingQueues.Enqueue(returnValueOnStack);
+                }
+            }
+
+            public int Pop()
+            {
+                return stackUsingQueues.Dequeue();
+            }
+
+            public int Top()
+            {
+                return stackUsingQueues.Peek();
+            }
+
+            public bool Empty()
+            {
+                return stackUsingQueues.Count == 0;
+            }
+        }
     }
 
     public class ListNode
