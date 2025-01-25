@@ -1049,6 +1049,22 @@ namespace ProblemSolving
                 return stackUsingQueues.Count == 0;
             }
         }
+        public TreeNode InvertTree(TreeNode root)
+        {
+            if (root == null)
+            {
+                return null;
+            }
+
+            TreeNode invertRoot = root.left;
+            root.left = root.right;
+            root.right = invertRoot;
+
+            InvertTree(root.left);
+            InvertTree(root.right);
+
+            return root;
+        }
     }
 
     public class ListNode
