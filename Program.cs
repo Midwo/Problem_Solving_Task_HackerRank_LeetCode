@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Data.SqlTypes;
 using System.Linq;
 using System.Net;
+using System.Numerics;
 using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCodeAll;
 
@@ -739,14 +740,37 @@ namespace ProblemSolving
             //Console.WriteLine(returnedRoot.right.val);
 
             ////OR
-            TreeNode root = new TreeNode(2);
-            root.left = new TreeNode(1);
-            root.right = new TreeNode(3);
+            //TreeNode root = new TreeNode(2);
+            //root.left = new TreeNode(1);
+            //root.right = new TreeNode(3);
 
-            TreeNode returnedRoot = leetCodeAll.InvertTree(root);
-            Console.WriteLine(returnedRoot.val);
-            Console.WriteLine(returnedRoot.left.val);
-            Console.WriteLine(returnedRoot.right.val);
+            //TreeNode returnedRoot = leetCodeAll.InvertTree(root);
+            //Console.WriteLine(returnedRoot.val);
+            //Console.WriteLine(returnedRoot.left.val);
+            //Console.WriteLine(returnedRoot.right.val);
+
+
+            ////(228.) Summary Ranges (EASY)
+            int[] nums = [0, 2, 3, 4, 6, 8, 9];
+
+            LeetCode_228 classLeetCode = new LeetCode_228();
+            var result = classLeetCode.SummaryRanges(nums);
+            foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            }
+
+            //OR
+
+            var result1 = leetCodeAll.SummaryRanges(nums);
+            foreach (var item in result1) 
+            {
+                Console.WriteLine(item);
+            }
+
+            
+
+
         }
 
         //public class ListNode
