@@ -1125,6 +1125,41 @@ namespace ProblemSolving
             //return (n > 0) && ((n & (n - 1)) == 0);
         }
 
+        public class LeetCodeAll_232_MyQueue
+        {
+            Queue<int> queueStacks;
+            public LeetCodeAll_232_MyQueue()
+            {
+                queueStacks = new Queue<int>();
+            }
+
+            public void Push(int x)
+            {
+                queueStacks.Enqueue(x);
+            }
+
+            public int Pop()
+            {
+                var x = queueStacks.Dequeue();
+                return x;
+            }
+
+            public int Peek()
+            {
+                var x = queueStacks.Peek();
+                return x;
+            }
+
+            public bool Empty()
+            {
+                if (queueStacks.Count == 0)
+                {
+                    return true;
+                };
+                return false;
+            }
+        }
+
     }
 
     public class ListNode

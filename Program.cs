@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Numerics;
 using static ProblemSolving.LeetCode.LeetCode_225;
+using static ProblemSolving.LeetCode.LeetCode_232;
 using static ProblemSolving.LeetCodeAll;
 
 namespace ProblemSolving
@@ -769,13 +770,28 @@ namespace ProblemSolving
             //}
 
             ////(231.) Power of Two (EASY)
-            int n = -2147483648;
-            LeetCode_231 classCodeAll = new LeetCode_231();
-            Console.WriteLine(classCodeAll.IsPowerOfTwo(n));
+            //int n = -2147483648;
+            //LeetCode_231 classCodeAll = new LeetCode_231();
+            //Console.WriteLine(classCodeAll.IsPowerOfTwo(n));
 
             ////OR
-            Console.WriteLine(leetCodeAll.IsPowerOfTwo(n));
+            //Console.WriteLine(leetCodeAll.IsPowerOfTwo(n));
 
+            ////(232.) Implement Queue using Stacks (EASY)
+            LeetCode_232_MyQueue myQueue = new LeetCode_232_MyQueue();
+            myQueue.Push(1); // queue is: [1]
+            myQueue.Push(2); // queue is: [1, 2] (leftmost is front of the queue)
+            myQueue.Peek(); // return 1
+            myQueue.Pop(); // return 1, queue is [2]
+            myQueue.Empty(); // return false
+
+            //OR
+            LeetCodeAll_232_MyQueue myQueue1 = new LeetCodeAll_232_MyQueue();
+            myQueue1.Push(1); // queue is: [1]
+            myQueue1.Push(2); // queue is: [1, 2] (leftmost is front of the queue)
+            myQueue1.Peek(); // return 1
+            myQueue1.Pop(); // return 1, queue is [2]
+            myQueue1.Empty(); // return false
 
 
         }
