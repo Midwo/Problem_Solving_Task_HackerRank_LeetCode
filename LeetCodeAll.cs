@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
 using System.Globalization;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Security;
 using System.Text;
@@ -1113,9 +1114,16 @@ namespace ProblemSolving
             }
             return resultList;
         }
+        public bool IsPowerOfTwo(int n)
+        {
+            //Solution only for net 6 and newer.
+            return BitOperations.IsPow2(n);
 
-
-
+            ////OR
+            ////Standard way to solve without using BitOperations.IsPow2(n) from NET
+            
+            //return (n > 0) && ((n & (n - 1)) == 0);
+        }
 
     }
 

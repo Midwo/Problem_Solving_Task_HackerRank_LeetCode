@@ -751,24 +751,31 @@ namespace ProblemSolving
 
 
             ////(228.) Summary Ranges (EASY)
-            int[] nums = [0, 2, 3, 4, 6, 8, 9];
+            //int[] nums = [0, 2, 3, 4, 6, 8, 9];
 
-            LeetCode_228 classLeetCode = new LeetCode_228();
-            var result = classLeetCode.SummaryRanges(nums);
-            foreach (var item in result)
-            {
-                Console.WriteLine(item);
-            }
+            //LeetCode_228 classLeetCode = new LeetCode_228();
+            //var result = classLeetCode.SummaryRanges(nums);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            //OR
+            ////OR
 
-            var result1 = leetCodeAll.SummaryRanges(nums);
-            foreach (var item in result1) 
-            {
-                Console.WriteLine(item);
-            }
+            //var result1 = leetCodeAll.SummaryRanges(nums);
+            //foreach (var item in result1) 
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            
+            ////(231.) Power of Two (EASY)
+            int n = -2147483648;
+            LeetCode_231 classCodeAll = new LeetCode_231();
+            Console.WriteLine(classCodeAll.IsPowerOfTwo(n));
+
+            ////OR
+            Console.WriteLine(leetCodeAll.IsPowerOfTwo(n));
+
 
 
         }
