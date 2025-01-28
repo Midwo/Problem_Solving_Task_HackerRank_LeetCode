@@ -1124,7 +1124,6 @@ namespace ProblemSolving
             
             //return (n > 0) && ((n & (n - 1)) == 0);
         }
-
         public class LeetCodeAll_232_MyQueue
         {
             Queue<int> queueStacks;
@@ -1158,6 +1157,25 @@ namespace ProblemSolving
                 };
                 return false;
             }
+        }
+        public bool IsPalindrome(ListNode head)
+        {
+            if (head == null) return false;
+            List<int> list = new List<int>();
+            while (head != null)
+            {
+                list.Add(head.val);
+                head = head.next;
+            }
+            int countList = list.Count;
+            for (int i = 0; i < countList; i++)
+            {
+                if (list[i] != list[countList - i - 1])
+                {
+                    return false;
+                }
+            }
+            return true;
         }
 
     }

@@ -778,22 +778,32 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsPowerOfTwo(n));
 
             ////(232.) Implement Queue using Stacks (EASY)
-            LeetCode_232_MyQueue myQueue = new LeetCode_232_MyQueue();
-            myQueue.Push(1); // queue is: [1]
-            myQueue.Push(2); // queue is: [1, 2] (leftmost is front of the queue)
-            myQueue.Peek(); // return 1
-            myQueue.Pop(); // return 1, queue is [2]
-            myQueue.Empty(); // return false
+            //LeetCode_232_MyQueue myQueue = new LeetCode_232_MyQueue();
+            //myQueue.Push(1); // queue is: [1]
+            //myQueue.Push(2); // queue is: [1, 2] (leftmost is front of the queue)
+            //myQueue.Peek(); // return 1
+            //myQueue.Pop(); // return 1, queue is [2]
+            //myQueue.Empty(); // return false
 
-            //OR
-            LeetCodeAll_232_MyQueue myQueue1 = new LeetCodeAll_232_MyQueue();
-            myQueue1.Push(1); // queue is: [1]
-            myQueue1.Push(2); // queue is: [1, 2] (leftmost is front of the queue)
-            myQueue1.Peek(); // return 1
-            myQueue1.Pop(); // return 1, queue is [2]
-            myQueue1.Empty(); // return false
+            ////OR
+            //LeetCodeAll_232_MyQueue myQueue1 = new LeetCodeAll_232_MyQueue();
+            //myQueue1.Push(1); // queue is: [1]
+            //myQueue1.Push(2); // queue is: [1, 2] (leftmost is front of the queue)
+            //myQueue1.Peek(); // return 1
+            //myQueue1.Pop(); // return 1, queue is [2]
+            //myQueue1.Empty(); // return false
 
+            ////(234.) Palindrome Linked List (EASY)
+            LeetCode_234 classLeetCode = new LeetCode_234();
+            ListNode head = new ListNode(1);
+            head.next = new ListNode(2);
+            head.next.next = new ListNode(2);
+            head.next.next.next = new ListNode(1);
+            
+            Console.WriteLine(classLeetCode.IsPalindrome(head));
 
+            ////OR
+            Console.WriteLine(leetCodeAll.IsPalindrome(head));
         }
 
         //public class ListNode
