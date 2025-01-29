@@ -794,16 +794,29 @@ namespace ProblemSolving
             //myQueue1.Empty(); // return false
 
             ////(234.) Palindrome Linked List (EASY)
-            LeetCode_234 classLeetCode = new LeetCode_234();
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(2);
-            head.next.next = new ListNode(2);
-            head.next.next.next = new ListNode(1);
+            //LeetCode_234 classLeetCode = new LeetCode_234();
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(2);
+            //head.next.next = new ListNode(2);
+            //head.next.next.next = new ListNode(1);
+
+            //Console.WriteLine(classLeetCode.IsPalindrome(head));
+
+            //////OR
+            //Console.WriteLine(leetCodeAll.IsPalindrome(head));
+
+            ////(242.) Valid Anagram
+            string s = "anagram";
+            string t = "nagaram";
             
-            Console.WriteLine(classLeetCode.IsPalindrome(head));
+            LeetCode_242 classLeetCode = new LeetCode_242();
+            Console.WriteLine(classLeetCode.IsAnagram(s, t));
 
             ////OR
-            Console.WriteLine(leetCodeAll.IsPalindrome(head));
+            Console.WriteLine(leetCodeAll.IsAnagram(s, t));
+
+
+
         }
 
         //public class ListNode
@@ -824,7 +837,7 @@ namespace ProblemSolving
         //    public TreeNode right;
         //    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
         //    {
-        //        this.val = val;
+        //        this.val = val;   
         //        this.left = left;
         //        this.right = right;
         //    }
