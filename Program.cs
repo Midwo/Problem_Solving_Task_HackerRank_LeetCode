@@ -806,14 +806,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsPalindrome(head));
 
             ////(242.) Valid Anagram
-            string s = "anagram";
-            string t = "nagaram";
-            
-            LeetCode_242 classLeetCode = new LeetCode_242();
-            Console.WriteLine(classLeetCode.IsAnagram(s, t));
+            //string s = "anagram";
+            //string t = "nagaram";
+
+            //LeetCode_242 classLeetCode = new LeetCode_242();
+            //Console.WriteLine(classLeetCode.IsAnagram(s, t));
+
+            //////OR
+            //Console.WriteLine(leetCodeAll.IsAnagram(s, t));
+
+            ////(263.) Ugly Number (EASY)
+            int n = 6;
+            LeetCode_263 classLeetCode = new LeetCode_263();
+            Console.WriteLine(classLeetCode.IsUgly(n));
 
             ////OR
-            Console.WriteLine(leetCodeAll.IsAnagram(s, t));
+            Console.WriteLine(leetCodeAll.IsUgly(n));
 
 
 
