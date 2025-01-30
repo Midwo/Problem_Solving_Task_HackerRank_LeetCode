@@ -816,13 +816,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsAnagram(s, t));
 
             ////(263.) Ugly Number (EASY)
-            int n = 6;
-            LeetCode_263 classLeetCode = new LeetCode_263();
-            Console.WriteLine(classLeetCode.IsUgly(n));
+            //int n = 6;
+            //LeetCode_263 classLeetCode = new LeetCode_263();
+            //Console.WriteLine(classLeetCode.IsUgly(n));
+
+            //////OR
+            //Console.WriteLine(leetCodeAll.IsUgly(n));
+
+            ////(268.) Missing Number (EASY)
+            int[] nums = [3, 0, 1];
+            LeetCode_268 classLeetCode = new LeetCode_268();
+            Console.WriteLine(classLeetCode.MissingNumber(nums));
 
             ////OR
-            Console.WriteLine(leetCodeAll.IsUgly(n));
-
+            
+            Console.WriteLine(leetCodeAll.MissingNumber(nums));
 
 
         }
