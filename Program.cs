@@ -824,14 +824,32 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsUgly(n));
 
             ////(268.) Missing Number (EASY)
-            int[] nums = [3, 0, 1];
-            LeetCode_268 classLeetCode = new LeetCode_268();
-            Console.WriteLine(classLeetCode.MissingNumber(nums));
+            //int[] nums = [3, 0, 1];
+            //LeetCode_268 classLeetCode = new LeetCode_268();
+            //Console.WriteLine(classLeetCode.MissingNumber(nums));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.MissingNumber(nums));
+
+            ////(257.) Binary Tree Paths (EASY)
+            TreeNode root = new TreeNode(1);
+            root.left = new TreeNode(2);
+            root.right = new TreeNode(3);
+            root.left.left = new TreeNode(5);
+            root.left.right = new TreeNode(6);
+
+            LeetCode_257 classLeetCode = new LeetCode_257();
+            var resultList = classLeetCode.BinaryTreePaths(root);
 
             ////OR
-            
-            Console.WriteLine(leetCodeAll.MissingNumber(nums));
+           
+            //var resultList = leetCodeAll.BinaryTreePaths(root);
 
+            foreach (var item in resultList)
+            {
+                Console.WriteLine(item);
+            }
 
         }
 
