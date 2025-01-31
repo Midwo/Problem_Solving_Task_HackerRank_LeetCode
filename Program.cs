@@ -815,6 +815,36 @@ namespace ProblemSolving
             //////OR
             //Console.WriteLine(leetCodeAll.IsAnagram(s, t));
 
+            ////(257.) Binary Tree Paths (EASY)
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(2);
+            //root.right = new TreeNode(3);
+            //root.left.left = new TreeNode(5);
+            //root.left.right = new TreeNode(6);
+
+            //LeetCode_257 classLeetCode = new LeetCode_257();
+            //var resultList = classLeetCode.BinaryTreePaths(root);
+
+            //////OR
+
+            ////var resultList = leetCodeAll.BinaryTreePaths(root);
+
+            //foreach (var item in resultList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            ////(258.) Add Digits (EASY)
+            int num = 18;
+
+            LeetCode_258 classLeetCode = new LeetCode_258();
+            Console.WriteLine(classLeetCode.AddDigits(num));
+
+            ////OR
+
+            Console.WriteLine(leetCodeAll.AddDigits(num));
+
+
             ////(263.) Ugly Number (EASY)
             //int n = 6;
             //LeetCode_263 classLeetCode = new LeetCode_263();
@@ -832,24 +862,6 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MissingNumber(nums));
 
-            ////(257.) Binary Tree Paths (EASY)
-            TreeNode root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
-            root.left.left = new TreeNode(5);
-            root.left.right = new TreeNode(6);
-
-            LeetCode_257 classLeetCode = new LeetCode_257();
-            var resultList = classLeetCode.BinaryTreePaths(root);
-
-            ////OR
-           
-            //var resultList = leetCodeAll.BinaryTreePaths(root);
-
-            foreach (var item in resultList)
-            {
-                Console.WriteLine(item);
-            }
 
         }
 
