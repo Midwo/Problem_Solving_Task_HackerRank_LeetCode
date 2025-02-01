@@ -862,14 +862,26 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MissingNumber(nums));
 
             ////(278.) First Bad Version (EASY)
-            int n = 2;
-            LeetCode_278 classLeetCode = new LeetCode_278();
-           
-            Console.WriteLine(classLeetCode.FirstBadVersion(n));
+            //int n = 2;
+            //LeetCode_278 classLeetCode = new LeetCode_278();
+
+            //Console.WriteLine(classLeetCode.FirstBadVersion(n));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.FirstBadVersion(n));
+
+            ////(283.) Move Zeroes (EASY)
+            int[] nums = [0, 1, 0, 3, 12];
+            LeetCode_283 classLeetCode = new LeetCode_283();
+
+            classLeetCode.MoveZeroes(nums);
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.FirstBadVersion(n));
+            leetCodeAll.MoveZeroes(nums);
+
+
         }
 
         //public class ListNode
