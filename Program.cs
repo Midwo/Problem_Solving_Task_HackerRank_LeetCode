@@ -835,15 +835,14 @@ namespace ProblemSolving
             //}
 
             ////(258.) Add Digits (EASY)
-            int num = 18;
+            //int num = 18;
 
-            LeetCode_258 classLeetCode = new LeetCode_258();
-            Console.WriteLine(classLeetCode.AddDigits(num));
+            //LeetCode_258 classLeetCode = new LeetCode_258();
+            //Console.WriteLine(classLeetCode.AddDigits(num));
 
-            ////OR
+            //////OR
 
-            Console.WriteLine(leetCodeAll.AddDigits(num));
-
+            //Console.WriteLine(leetCodeAll.AddDigits(num));
 
             ////(263.) Ugly Number (EASY)
             //int n = 6;
@@ -862,7 +861,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MissingNumber(nums));
 
+            ////(278.) First Bad Version (EASY)
+            int n = 2;
+            LeetCode_278 classLeetCode = new LeetCode_278();
+           
+            Console.WriteLine(classLeetCode.FirstBadVersion(n));
 
+            ////OR
+
+            Console.WriteLine(leetCodeAll.FirstBadVersion(n));
         }
 
         //public class ListNode

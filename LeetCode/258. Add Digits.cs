@@ -19,7 +19,7 @@ namespace ProblemSolving.LeetCode
             }
             while (num > 9)
             {
-                for (int i = 0; i < numString.Length; i++) 
+                for (int i = 0; i < numString.Length; i++)
                 {
                     currNum += Convert.ToInt32(numString[i].ToString());
                 }
