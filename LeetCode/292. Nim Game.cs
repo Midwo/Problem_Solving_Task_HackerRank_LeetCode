@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ProblemSolving.LeetCode
+{
+    internal class LeetCode_292
+    {
+        ////(292.) Nim Game (EASY)
+        public bool CanWinNim(int n)
+        {
+
+        }
+    }
+}

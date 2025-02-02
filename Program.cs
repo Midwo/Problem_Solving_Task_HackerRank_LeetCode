@@ -872,15 +872,28 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FirstBadVersion(n));
 
             ////(283.) Move Zeroes (EASY)
-            int[] nums = [0, 1, 0, 3, 12];
-            LeetCode_283 classLeetCode = new LeetCode_283();
+            //int[] nums = [0, 1, 0, 3, 12];
+            //LeetCode_283 classLeetCode = new LeetCode_283();
 
-            classLeetCode.MoveZeroes(nums);
+            //classLeetCode.MoveZeroes(nums);
+
+            //////OR
+
+            //leetCodeAll.MoveZeroes(nums);
+
+            //(290.) Word Pattern (EASY)
+            string pattern = "aa";
+            string s = "aaa aaa";
+
+            LeetCode_290 classLeetCode = new LeetCode_290();
+            Console.WriteLine(classLeetCode.WordPattern(pattern, s));
 
             ////OR
 
-            leetCodeAll.MoveZeroes(nums);
+            Console.WriteLine(leetCodeAll.WordPattern(pattern, s));
 
+            //(292.) Nim Game (EASY)
+            int n = 4;
 
         }
 
