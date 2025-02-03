@@ -11,7 +11,14 @@ namespace ProblemSolving.LeetCode
         ////(292.) Nim Game (EASY)
         public bool CanWinNim(int n)
         {
-
+            if (n % 4 == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

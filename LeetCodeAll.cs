@@ -1439,7 +1439,57 @@ namespace ProblemSolving
             }
             return result;
         }
-
+        public bool CanWinNim(int n)
+        {
+            if (n % 4 == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        public class NumArrayLeetCodeAll
+        {
+            List<int> numsValues;
+            public NumArrayLeetCodeAll(int[] nums)
+            {
+                numsValues = new List<int>();
+                int lastValue = 0;
+                for (int i = 0; i < nums.Length; i++)
+                {
+                    lastValue = nums[i] + lastValue;
+                    numsValues.Add(lastValue);
+                }
+            }
+            public int SumRange(int left, int right)
+            {
+                if (left == 0)
+                {
+                    return numsValues[right];
+                }
+                return numsValues[right] - numsValues[left - 1];
+            }
+        }
+        public bool IsPowerOfThree(int n)
+        {
+            if (n == 0) return false;
+            bool endLoop = false;
+            while (!endLoop)
+            {
+                if (n == 1)
+                {
+                    return true;
+                }
+                if (n % 3 != 0)
+                {
+                    return false;
+                }
+                n = n / 3;
+            }
+            return true;
+        }
     }
 
     public class ListNode

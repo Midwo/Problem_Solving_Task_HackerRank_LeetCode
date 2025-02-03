@@ -6,6 +6,7 @@ using System.Net;
 using System.Numerics;
 using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
+using static ProblemSolving.LeetCode.LeetCode_303;
 using static ProblemSolving.LeetCodeAll;
 
 namespace ProblemSolving
@@ -881,19 +882,51 @@ namespace ProblemSolving
 
             //leetCodeAll.MoveZeroes(nums);
 
-            //(290.) Word Pattern (EASY)
-            string pattern = "aa";
-            string s = "aaa aaa";
+            ////(290.) Word Pattern (EASY)
+            //string pattern = "aa";
+            //string s = "aaa aaa";
 
-            LeetCode_290 classLeetCode = new LeetCode_290();
-            Console.WriteLine(classLeetCode.WordPattern(pattern, s));
+            //LeetCode_290 classLeetCode = new LeetCode_290();
+            //Console.WriteLine(classLeetCode.WordPattern(pattern, s));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.WordPattern(pattern, s));
+
+            ////(292.) Nim Game (EASY)
+            //int n = 5;
+
+            //LeetCode_292 classLeetCode = new LeetCode_292();
+            //Console.WriteLine(classLeetCode.CanWinNim(n));
+
+            //////OR
+            //Console.WriteLine(leetCodeAll.CanWinNim(n));
+
+            ////(303.) Range Sum Query - Immutable (EASY)
+            //int[] nums = [-2, 0, 3, -5, 2, -1];
+
+            //NumArray numArray = new NumArray(nums);
+            //Console.WriteLine(numArray.SumRange(0,2));
+            //Console.WriteLine(numArray.SumRange(2,5));
+            //Console.WriteLine(numArray.SumRange(0,5));
+
+            //////OR
+
+            //NumArrayLeetCodeAll numArrayLeetCodeAll = new NumArrayLeetCodeAll(nums);
+            //Console.WriteLine(numArrayLeetCodeAll.SumRange(0, 2));
+            //Console.WriteLine(numArrayLeetCodeAll.SumRange(2, 5));
+            //Console.WriteLine(numArrayLeetCodeAll.SumRange(0, 5));
+
+            ////(326.) Power of Three (EASY)
+            int n = 27;
+
+            LeetCode_326 classLeetCode = new LeetCode_326();
+            Console.WriteLine(classLeetCode.IsPowerOfThree(n));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.WordPattern(pattern, s));
+            Console.WriteLine(leetCodeAll.IsPowerOfThree(n));
 
-            //(292.) Nim Game (EASY)
-            int n = 4;
 
         }
 
