@@ -928,15 +928,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsPowerOfThree(n));
 
             ////(338.) Counting Bits (EASY)
-            int n = 5;
+            //int n = 5;
 
-            LeetCode_338 classLeetCode = new LeetCode_338();
-            Console.WriteLine(string.Join(",", classLeetCode.CountBits(n)));
+            //LeetCode_338 classLeetCode = new LeetCode_338();
+            //Console.WriteLine(string.Join(",", classLeetCode.CountBits(n)));
+
+            //////OR
+            //Console.WriteLine(string.Join(",", leetCodeAll.CountBits(n)));
+
+            ////(342.) Power of Four (EASY)
+            int n = 1;
+            
+            LeetCode_342 classLeetCode = new LeetCode_342();
+            Console.WriteLine(classLeetCode.IsPowerOfFour(n));
 
             ////OR
-            Console.WriteLine(string.Join(",", leetCodeAll.CountBits(n)));
 
-            ////(.)
+            Console.WriteLine(leetCodeAll.IsPowerOfFour(n));
+
+
 
         }
 
