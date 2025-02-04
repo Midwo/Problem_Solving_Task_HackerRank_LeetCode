@@ -1490,6 +1490,27 @@ namespace ProblemSolving
             }
             return true;
         }
+        public int[] CountBits(int n)
+        {
+            List<int> result = new List<int>();
+            int howManyOne = 0;
+            for (int i = 0; i <= n; i++)
+            {
+                howManyOne = 0;
+                foreach (var item in Convert.ToString(i, 2))
+                {
+                    if (item == (char)49)
+                    {
+                        howManyOne++;
+                    }
+                }
+                result.Add(howManyOne);
+            }
+            return result.ToArray();
+        }
+
+
+
     }
 
     public class ListNode

@@ -918,15 +918,25 @@ namespace ProblemSolving
             //Console.WriteLine(numArrayLeetCodeAll.SumRange(0, 5));
 
             ////(326.) Power of Three (EASY)
-            int n = 27;
+            //int n = 27;
 
-            LeetCode_326 classLeetCode = new LeetCode_326();
-            Console.WriteLine(classLeetCode.IsPowerOfThree(n));
+            //LeetCode_326 classLeetCode = new LeetCode_326();
+            //Console.WriteLine(classLeetCode.IsPowerOfThree(n));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.IsPowerOfThree(n));
+
+            ////(338.) Counting Bits (EASY)
+            int n = 5;
+
+            LeetCode_338 classLeetCode = new LeetCode_338();
+            Console.WriteLine(string.Join(",", classLeetCode.CountBits(n)));
 
             ////OR
+            Console.WriteLine(string.Join(",", leetCodeAll.CountBits(n)));
 
-            Console.WriteLine(leetCodeAll.IsPowerOfThree(n));
-
+            ////(.)
 
         }
 
