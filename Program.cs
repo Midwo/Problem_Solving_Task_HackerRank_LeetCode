@@ -937,14 +937,25 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(",", leetCodeAll.CountBits(n)));
 
             ////(342.) Power of Four (EASY)
-            int n = 1;
+            //int n = 1;
+
+            //LeetCode_342 classLeetCode = new LeetCode_342();
+            //Console.WriteLine(classLeetCode.IsPowerOfFour(n));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.IsPowerOfFour(n));
+
+            ////(344.) REverse String (EASY)
+            char[] s = ['h', 'e', 'l', 'l', 'o'];
+            //char[] s = ['H', 'a', 'n', 'n', 'a', 'h'];
             
-            LeetCode_342 classLeetCode = new LeetCode_342();
-            Console.WriteLine(classLeetCode.IsPowerOfFour(n));
+            LeetCode_344 classLeetCode = new LeetCode_344();
+            classLeetCode.ReverseString(s);
 
             ////OR
-
-            Console.WriteLine(leetCodeAll.IsPowerOfFour(n));
+            
+            leetCodeAll.ReverseString(s);
 
 
 
