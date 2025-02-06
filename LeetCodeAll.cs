@@ -1562,6 +1562,39 @@ namespace ProblemSolving
             ////optional output
             Console.WriteLine(string.Join(",", s));
         }
+        public string ReverseVowels(string s)
+        {
+            List<char> listVowels = new List<char>() { 'a', 'A', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u' };
+
+            int howLongS = s.Length;
+
+            char[] charsStringS = s.ToCharArray();
+
+            for (int i = 0; i < howLongS; i++)
+            {
+                if (listVowels.Contains(charsStringS[i]))
+                {
+                    for (int j = howLongS - 1; j > i; j--)
+                    {
+                        howLongS--;
+                        if (listVowels.Contains(charsStringS[j]))
+                        {
+                            char tempChar = charsStringS[i];
+                            charsStringS[i] = charsStringS[j];
+                            charsStringS[j] = tempChar;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            return string.Join("", charsStringS);
+        }
+        public int[] Intersection(int[] nums1, int[] nums2)
+        {
+            return nums1.Intersect(nums2).ToArray();
+        }
+
 
     }
 

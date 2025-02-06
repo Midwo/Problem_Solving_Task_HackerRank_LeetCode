@@ -8,7 +8,7 @@ namespace ProblemSolving.LeetCode
 {
     internal class LeetCode_344
     {
-        ////(344.) REverse String (EASY)
+        ////(344.) Reverse String (EASY)
         public void ReverseString(char[] s) 
         {
             int howLong = s.Length;

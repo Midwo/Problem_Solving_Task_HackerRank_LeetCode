@@ -946,18 +946,37 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsPowerOfFour(n));
 
-            ////(344.) REverse String (EASY)
-            char[] s = ['h', 'e', 'l', 'l', 'o'];
-            //char[] s = ['H', 'a', 'n', 'n', 'a', 'h'];
-            
-            LeetCode_344 classLeetCode = new LeetCode_344();
-            classLeetCode.ReverseString(s);
+            ////(344.) Reverse String (EASY)
+            //char[] s = ['h', 'e', 'l', 'l', 'o'];
+            ////char[] s = ['H', 'a', 'n', 'n', 'a', 'h'];
+
+            //LeetCode_344 classLeetCode = new LeetCode_344();
+            //classLeetCode.ReverseString(s);
+
+            //////OR
+
+            //leetCodeAll.ReverseString(s);
+
+            ////(345.) Reverse Vowels of a String (EASY)
+            //string s = "IceCreAm";
+
+            //LeetCode_345 classLeetCode = new LeetCode_345();
+            //Console.WriteLine(classLeetCode.ReverseVowels(s));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.ReverseVowels(s));
+
+            ////(349.) Intersection of Two Arrays (EASY)
+            int[] nums1 = [1, 2, 2, 1];
+            int[] nums2 = [2, 2];
+
+            LeetCode_349 classLeetCode = new LeetCode_349();
+            Console.WriteLine(string.Join(",", classLeetCode.Intersection(nums1, nums2)));
 
             ////OR
-            
-            leetCodeAll.ReverseString(s);
 
-
+            Console.WriteLine(string.Join(",", leetCodeAll.Intersection(nums1, nums2)));
 
         }
 
