@@ -4,6 +4,7 @@ using System.Data.SqlTypes;
 using System.Linq;
 using System.Net;
 using System.Numerics;
+using System.Runtime.InteropServices;
 using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
 using static ProblemSolving.LeetCode.LeetCode_303;
@@ -979,18 +980,24 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(",", leetCodeAll.Intersection(nums1, nums2)));
 
             ////(350.) Intersection of Two Arrays II (EASY)
-            int[] nums1 = [1, 2, 2, 1];
-            int[] nums2 = [2, 2];
-            
-            LeetCode_350 classLeetCode = new LeetCode_350();
-            Console.WriteLine(string.Join(",", classLeetCode.Intersect(nums1, nums2)));
+            //int[] nums1 = [1, 2, 2, 1];
+            //int[] nums2 = [2, 2];
+
+            //LeetCode_350 classLeetCode = new LeetCode_350();
+            //Console.WriteLine(string.Join(",", classLeetCode.Intersect(nums1, nums2)));
+
+            //////OR
+
+            //Console.WriteLine(string.Join(",", leetCodeAll.Intersect(nums1, nums2)));
+
+            ////(367.) Valid Perfect Square (EASY)
+            int num = 808201;
+
+            LeetCode_367 classLeetCode = new LeetCode_367();
+            Console.WriteLine(classLeetCode.IsPerfectSquare(num));
 
             ////OR
-
-            Console.WriteLine(string.Join(",", leetCodeAll.Intersect(nums1, nums2)));
-
-
-
+            Console.WriteLine(leetCodeAll.IsPerfectSquare(num));
         }
 
         //public class ListNode
