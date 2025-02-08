@@ -991,13 +991,25 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(",", leetCodeAll.Intersect(nums1, nums2)));
 
             ////(367.) Valid Perfect Square (EASY)
-            int num = 808201;
+            //int num = 808201;
 
-            LeetCode_367 classLeetCode = new LeetCode_367();
-            Console.WriteLine(classLeetCode.IsPerfectSquare(num));
+            //LeetCode_367 classLeetCode = new LeetCode_367();
+            //Console.WriteLine(classLeetCode.IsPerfectSquare(num));
 
             ////OR
-            Console.WriteLine(leetCodeAll.IsPerfectSquare(num));
+            //Console.WriteLine(leetCodeAll.IsPerfectSquare(num));
+
+            ////(374.) Guess Number Higher or Lower (EASY)
+            int n = 6;
+
+            LeetCode_374 classLeetCode = new LeetCode_374();
+            Console.WriteLine(classLeetCode.GuessNumber(n));
+
+            ////OR
+            Console.WriteLine(leetCodeAll.GuessNumber(n));
+
+
+
         }
 
         //public class ListNode
