@@ -1020,14 +1020,26 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanConstruct(ransomNote, magazine));
 
             ////(387.) First Unique Character in a String (EASY)
-            string s = "loveleetcode";
+            //string s = "loveleetcode";
 
-            LeetCode_387 classLeetCode = new LeetCode_387();
-            Console.WriteLine(classLeetCode.FirstUniqChar(s));
+            //LeetCode_387 classLeetCode = new LeetCode_387();
+            //Console.WriteLine(classLeetCode.FirstUniqChar(s));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.FirstUniqChar(s));
+
+            ////(389.) Find the Difference (EASY)
+            string s = "abcd";
+            string t = "abcde";
+
+            LeetCode_389 classLeetCode = new LeetCode_389();
+            Console.WriteLine(classLeetCode.FindTheDifference(s, t));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.FirstUniqChar(s));
+            Console.WriteLine(leetCodeAll.FindTheDifference(s, t));
+
 
 
 
