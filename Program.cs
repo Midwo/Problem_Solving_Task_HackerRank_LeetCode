@@ -1000,13 +1000,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsPerfectSquare(num));
 
             ////(374.) Guess Number Higher or Lower (EASY)
-            int n = 6;
+            //int n = 6;
 
-            LeetCode_374 classLeetCode = new LeetCode_374();
-            Console.WriteLine(classLeetCode.GuessNumber(n));
+            //LeetCode_374 classLeetCode = new LeetCode_374();
+            //Console.WriteLine(classLeetCode.GuessNumber(n));
+
+            //////OR
+            //Console.WriteLine(leetCodeAll.GuessNumber(n));
+
+            ////(383.) Ransom Note (EASY)
+            string ransomNote = "fihjjjjei";
+            string magazine = "hjibagacbhadfaefdjaeaebgi";
+
+            LeetCode_383 classLeetCode = new LeetCode_383();
+            Console.WriteLine(classLeetCode.CanConstruct(ransomNote, magazine));
 
             ////OR
-            Console.WriteLine(leetCodeAll.GuessNumber(n));
+
+            Console.WriteLine(leetCodeAll.CanConstruct(ransomNote, magazine));
 
 
 
