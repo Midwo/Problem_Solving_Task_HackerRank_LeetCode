@@ -1009,15 +1009,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GuessNumber(n));
 
             ////(383.) Ransom Note (EASY)
-            string ransomNote = "fihjjjjei";
-            string magazine = "hjibagacbhadfaefdjaeaebgi";
+            //string ransomNote = "fihjjjjei";
+            //string magazine = "hjibagacbhadfaefdjaeaebgi";
 
-            LeetCode_383 classLeetCode = new LeetCode_383();
-            Console.WriteLine(classLeetCode.CanConstruct(ransomNote, magazine));
+            //LeetCode_383 classLeetCode = new LeetCode_383();
+            //Console.WriteLine(classLeetCode.CanConstruct(ransomNote, magazine));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.CanConstruct(ransomNote, magazine));
+
+            ////(387.) First Unique Character in a String (EASY)
+            string s = "loveleetcode";
+
+            LeetCode_387 classLeetCode = new LeetCode_387();
+            Console.WriteLine(classLeetCode.FirstUniqChar(s));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.CanConstruct(ransomNote, magazine));
+            Console.WriteLine(leetCodeAll.FirstUniqChar(s));
 
 
 
