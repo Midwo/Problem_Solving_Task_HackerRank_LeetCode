@@ -1030,18 +1030,45 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FirstUniqChar(s));
 
             ////(389.) Find the Difference (EASY)
-            string s = "abcd";
-            string t = "abcde";
+            //string s = "abcd";
+            //string t = "abcde";
 
-            LeetCode_389 classLeetCode = new LeetCode_389();
-            Console.WriteLine(classLeetCode.FindTheDifference(s, t));
+            //LeetCode_389 classLeetCode = new LeetCode_389();
+            //Console.WriteLine(classLeetCode.FindTheDifference(s, t));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.FindTheDifference(s, t));
+
+            ////(392.) Is Subsequence (EASY)
+            //string s = "abc";
+            //string t = "ahbgdc";
+
+            //LeetCode_392 classLeetCode = new LeetCode_392();
+            //Console.WriteLine(classLeetCode.IsSubsequence(s, t));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.IsSubsequence(s, t));
+
+            ////(401.) Binary Watch (EASY)
+            int turnedOn = 1;
+            LeetCode_401 classLeetCode = new LeetCode_401();
+            var result1 = classLeetCode.ReadBinaryWatch(turnedOn);
+
+            foreach (var item in result1)
+            {
+                Console.WriteLine(item.ToString());
+            }
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.FindTheDifference(s, t));
+            var result2 = leetCodeAll.ReadBinaryWatch(turnedOn);
 
-
-
+            foreach (var item in result2) 
+            {
+                Console.WriteLine(item.ToString());
+            }
 
         }
 

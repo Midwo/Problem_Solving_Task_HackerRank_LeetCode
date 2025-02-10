@@ -1850,6 +1850,65 @@ namespace ProblemSolving
             }
             return (char)(sumASCIforStringT - sumASCIforStringS);
         }
+        public bool IsSubsequence(string s, string t)
+        {
+            int indexStringT = 0;
+            char currChar = '1';
+            bool result = false;
+            for (int i = 0; i < s.Length; i++)
+            {
+                result = false;
+                currChar = s[i];
+                for (int j = indexStringT; j < t.Length; j++)
+                {
+                    if (currChar == t[j])
+                    {
+                        indexStringT++;
+                        result = true;
+                        break;
+                    }
+                    indexStringT++;
+                }
+                if (result == false)
+                {
+                    return false;
+                }
+            }
+            if (s.Length == 0)
+            {
+                return true;
+            }
+            return result;
+        }
+        public IList<string> ReadBinaryWatch(int turnedOn)
+        {
+            IList<String> result = new List<string>();
+            for (int h = 0; h < 12; h++)
+            {
+                for (int m = 0; m < 60; m++)
+                {
+                    if (BitCount(h) + BitCount(m) == turnedOn)
+                    {
+                        result.Add($"{h}:{m:00}");
+                    }
+                }
+            }
+            return result;
+
+        }
+        private static int BitCount(int num)
+        {
+            var result = 0;
+            while (num > 0)
+            {
+                result++;
+                num &= num - 1;
+            }
+            return result;
+        }
+
+
+
     }
 
     public class ListNode
