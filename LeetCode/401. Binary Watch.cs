@@ -24,7 +24,6 @@ namespace ProblemSolving.LeetCode
                 }
             }
             return result;
-
         }
         private static int BitCount(int num)
         {

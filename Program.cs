@@ -1052,23 +1052,44 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsSubsequence(s, t));
 
             ////(401.) Binary Watch (EASY)
-            int turnedOn = 1;
-            LeetCode_401 classLeetCode = new LeetCode_401();
-            var result1 = classLeetCode.ReadBinaryWatch(turnedOn);
+            //int turnedOn = 1;
+            //LeetCode_401 classLeetCode = new LeetCode_401();
+            //var result1 = classLeetCode.ReadBinaryWatch(turnedOn);
 
-            foreach (var item in result1)
-            {
-                Console.WriteLine(item.ToString());
-            }
+            //foreach (var item in result1)
+            //{
+            //    Console.WriteLine(item.ToString());
+            //}
+
+            //////OR
+
+            //var result2 = leetCodeAll.ReadBinaryWatch(turnedOn);
+
+            //foreach (var item in result2) 
+            //{
+            //    Console.WriteLine(item.ToString());
+            //}
+
+            ////(404.) Sum of Left Leaves (EASY)
+            TreeNode root = new TreeNode(20);
+            root.left = new TreeNode(9);
+            root.right = new TreeNode(20);
+            root.left.left = null;
+            root.left.right = null;
+            root.right.left = new TreeNode(15);
+            root.right.right = new TreeNode(7);    
+
+            LeetCode_404 classLeetCode = new LeetCode_404();
+            Console.WriteLine(classLeetCode.SumOfLeftLeaves(root));
 
             ////OR
 
-            var result2 = leetCodeAll.ReadBinaryWatch(turnedOn);
+            Console.WriteLine(leetCodeAll.SumOfLeftLeaves(root));
 
-            foreach (var item in result2) 
-            {
-                Console.WriteLine(item.ToString());
-            }
+
+
+
+
 
         }
 
