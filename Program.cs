@@ -1071,23 +1071,30 @@ namespace ProblemSolving
             //}
 
             ////(404.) Sum of Left Leaves (EASY)
-            TreeNode root = new TreeNode(20);
-            root.left = new TreeNode(9);
-            root.right = new TreeNode(20);
-            root.left.left = null;
-            root.left.right = null;
-            root.right.left = new TreeNode(15);
-            root.right.right = new TreeNode(7);    
+            //TreeNode root = new TreeNode(20);
+            //root.left = new TreeNode(9);
+            //root.right = new TreeNode(20);
+            //root.left.left = null;
+            //root.left.right = null;
+            //root.right.left = new TreeNode(15);
+            //root.right.right = new TreeNode(7);    
 
-            LeetCode_404 classLeetCode = new LeetCode_404();
-            Console.WriteLine(classLeetCode.SumOfLeftLeaves(root));
+            //LeetCode_404 classLeetCode = new LeetCode_404();
+            //Console.WriteLine(classLeetCode.SumOfLeftLeaves(root));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.SumOfLeftLeaves(root));
+
+            ////(405.) Convert a Number to Hexadecimal (EASY)
+            int num = 26;
+
+            LeetCode_405 classLeetCode = new LeetCode_405();
+            Console.WriteLine(classLeetCode.ToHex(num));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.SumOfLeftLeaves(root));
-
-
-
+            Console.WriteLine(leetCodeAll.ToHex(num));
 
 
 
