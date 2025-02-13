@@ -1087,14 +1087,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumOfLeftLeaves(root));
 
             ////(405.) Convert a Number to Hexadecimal (EASY)
-            int num = 26;
+            //int num = 26;
 
-            LeetCode_405 classLeetCode = new LeetCode_405();
-            Console.WriteLine(classLeetCode.ToHex(num));
+            //LeetCode_405 classLeetCode = new LeetCode_405();
+            //Console.WriteLine(classLeetCode.ToHex(num));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.ToHex(num));
+            ////(409.) Longest Palindrome (EASY)
+            string s = "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth";
+            
+            LeetCode_409 classLeetCode = new LeetCode_409();
+            Console.WriteLine(classLeetCode.LongestPalindrome(s));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.ToHex(num));
+            Console.WriteLine(leetCodeAll.LongestPalindrome(s));
+
+
 
 
 
