@@ -1097,7 +1097,7 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ToHex(num));
             ////(409.) Longest Palindrome (EASY)
             //string s = "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth";
-            
+
             //LeetCode_409 classLeetCode = new LeetCode_409();
             //Console.WriteLine(classLeetCode.LongestPalindrome(s));
 
@@ -1106,12 +1106,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LongestPalindrome(s));
 
             ////(412.) Fizz Buzz (EASY)
-            int n = 15;
-            LeetCode_412 classLeetCode = new LeetCode_412();
-            Console.WriteLine(string.Join(",", classLeetCode.FizzBuzz(n)));
+            //int n = 15;
+            //LeetCode_412 classLeetCode = new LeetCode_412();
+            //Console.WriteLine(string.Join(",", classLeetCode.FizzBuzz(n)));
+
+            //////OR
+            //Console.WriteLine(string.Join(",",leetCodeAll.FizzBuzz(n)));
+
+            ////(414.) Third Maximum Number (EASY)
+            int[] nums = [1,1,2];
+
+            LeetCode_414 classLeetCode = new LeetCode_414();
+            Console.WriteLine(classLeetCode.ThirdMax(nums));
 
             ////OR
-            Console.WriteLine(string.Join(",",leetCodeAll.FizzBuzz(n)));
+            Console.WriteLine(leetCodeAll.ThirdMax(nums));
+            
+
+
 
 
 
