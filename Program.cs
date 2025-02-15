@@ -1114,14 +1114,25 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(",",leetCodeAll.FizzBuzz(n)));
 
             ////(414.) Third Maximum Number (EASY)
-            int[] nums = [1,1,2];
+            //int[] nums = [1,1,2];
 
-            LeetCode_414 classLeetCode = new LeetCode_414();
-            Console.WriteLine(classLeetCode.ThirdMax(nums));
+            //LeetCode_414 classLeetCode = new LeetCode_414();
+            //Console.WriteLine(classLeetCode.ThirdMax(nums));
+
+            //////OR
+            //Console.WriteLine(leetCodeAll.ThirdMax(nums));
+
+            ////(415.) Add Strings (EASY)
+            string num1 = "9";
+            string num2 = "9";
+
+            LeetCode_415 classLeetCode = new LeetCode_415();
+            Console.WriteLine(classLeetCode.AddStrings(num1, num2));
 
             ////OR
-            Console.WriteLine(leetCodeAll.ThirdMax(nums));
-            
+
+            Console.WriteLine(leetCodeAll.AddStrings(num1, num2));
+
 
 
 
