@@ -1134,15 +1134,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.AddStrings(num1, num2));
 
             ////(434.) Number of Segments in a String (EASY)
-            string s = "";
+            //string s = "";
 
-            LeetCode_434 classLeetCode = new LeetCode_434();
-            Console.WriteLine(classLeetCode.CountSegments(s));
+            //LeetCode_434 classLeetCode = new LeetCode_434();
+            //Console.WriteLine(classLeetCode.CountSegments(s));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.CountSegments(s));
+
+            ////(441.) Arranging Coins (EASY)
+            int n = 5;
+
+            LeetCode_441 classLeetCode = new LeetCode_441();
+            Console.WriteLine(classLeetCode.ArrangeCoins(n));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.CountSegments(s));
-
+            Console.WriteLine(leetCodeAll.ArrangeCoins(n));
 
 
         }

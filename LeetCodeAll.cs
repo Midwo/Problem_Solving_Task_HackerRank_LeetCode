@@ -2192,6 +2192,18 @@ namespace ProblemSolving
             }
             return result;
         }
+        public int ArrangeCoins(int n)
+        {
+            int result = 0;
+            int currValue = 1;
+            while (n > 0)
+            {
+                n = n - currValue++;
+                if (n > 0) { result++; }
+            }
+            return result;
+        }
+
 
 
 
