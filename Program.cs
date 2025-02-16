@@ -1123,19 +1123,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ThirdMax(nums));
 
             ////(415.) Add Strings (EASY)
-            string num1 = "9";
-            string num2 = "9";
+            //string num1 = "9";
+            //string num2 = "9";
 
-            LeetCode_415 classLeetCode = new LeetCode_415();
-            Console.WriteLine(classLeetCode.AddStrings(num1, num2));
+            //LeetCode_415 classLeetCode = new LeetCode_415();
+            //Console.WriteLine(classLeetCode.AddStrings(num1, num2));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.AddStrings(num1, num2));
+
+            ////(434.) Number of Segments in a String (EASY)
+            string s = "";
+
+            LeetCode_434 classLeetCode = new LeetCode_434();
+            Console.WriteLine(classLeetCode.CountSegments(s));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.AddStrings(num1, num2));
-
-
-
-
+            Console.WriteLine(leetCodeAll.CountSegments(s));
 
 
 
