@@ -1144,14 +1144,36 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountSegments(s));
 
             ////(441.) Arranging Coins (EASY)
-            int n = 5;
+            //int n = 5;
 
-            LeetCode_441 classLeetCode = new LeetCode_441();
-            Console.WriteLine(classLeetCode.ArrangeCoins(n));
+            //LeetCode_441 classLeetCode = new LeetCode_441();
+            //Console.WriteLine(classLeetCode.ArrangeCoins(n));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.ArrangeCoins(n));
+
+            ////(448.) Find All Numbers Disappeared in an Array (EASY)
+            int[] nums = [4, 3, 2, 7, 7, 2, 3, 1];
+
+            LeetCode_448 classLeetCode = new LeetCode_448();
+            var result = classLeetCode.FindDisappearedNumbers(nums);
+
+            foreach (var i in result) 
+            {
+                Console.WriteLine(i);
+            }
 
             ////OR
+            var result1 = leetCodeAll.FindDisappearedNumbers(nums);
 
-            Console.WriteLine(leetCodeAll.ArrangeCoins(n));
+            foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            }
+
+
+
 
 
         }
