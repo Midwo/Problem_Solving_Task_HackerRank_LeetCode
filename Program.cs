@@ -1154,23 +1154,35 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ArrangeCoins(n));
 
             ////(448.) Find All Numbers Disappeared in an Array (EASY)
-            int[] nums = [4, 3, 2, 7, 7, 2, 3, 1];
+            //int[] nums = [4, 3, 2, 7, 7, 2, 3, 1];
 
-            LeetCode_448 classLeetCode = new LeetCode_448();
-            var result = classLeetCode.FindDisappearedNumbers(nums);
+            //LeetCode_448 classLeetCode = new LeetCode_448();
+            //var result = classLeetCode.FindDisappearedNumbers(nums);
 
-            foreach (var i in result) 
-            {
-                Console.WriteLine(i);
-            }
+            //foreach (var i in result) 
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //////OR
+            //var result1 = leetCodeAll.FindDisappearedNumbers(nums);
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            ////(455.) Assign Cookies (EASY)
+            int[] g = [1, 2];
+            int[] s = [1, 2, 3];
+
+            LeetCode_455 classLeetCode = new LeetCode_455();
+            Console.WriteLine(classLeetCode.FindContentChildren(g, s));
 
             ////OR
-            var result1 = leetCodeAll.FindDisappearedNumbers(nums);
 
-            foreach (var item in result)
-            {
-                Console.WriteLine(item);
-            }
+            Console.WriteLine(leetCodeAll.FindContentChildren(g, s));
+
 
 
 
