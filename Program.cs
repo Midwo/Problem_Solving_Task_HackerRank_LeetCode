@@ -1173,18 +1173,36 @@ namespace ProblemSolving
             //}
 
             ////(455.) Assign Cookies (EASY)
-            int[] g = [1, 2];
-            int[] s = [1, 2, 3];
+            //int[] g = [1, 2];
+            //int[] s = [1, 2, 3];
 
-            LeetCode_455 classLeetCode = new LeetCode_455();
-            Console.WriteLine(classLeetCode.FindContentChildren(g, s));
+            //LeetCode_455 classLeetCode = new LeetCode_455();
+            //Console.WriteLine(classLeetCode.FindContentChildren(g, s));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.FindContentChildren(g, s));
+
+            ////(459.) Repeated Substring Pattern (EASY)
+            //string s = "abcabcabcabc";
+
+            //LeetCode_459 classLeetCode = new LeetCode_459();
+            //Console.WriteLine(classLeetCode.RepeatedSubstringPattern(s));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.RepeatedSubstringPattern(s));
+
+            ////(461.) Hamming Distance (EASY)
+            int x = 4;
+            int y = 14;
+
+            LeetCode_461 classLeetCode = new LeetCode_461();
+            Console.WriteLine(classLeetCode.HammingDistance(x, y));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.FindContentChildren(g, s));
-
-
-
+            Console.WriteLine(leetCodeAll.HammingDistance(x, y));
 
 
 
