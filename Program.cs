@@ -1194,15 +1194,29 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.RepeatedSubstringPattern(s));
 
             ////(461.) Hamming Distance (EASY)
-            int x = 4;
-            int y = 14;
+            //int x = 4;
+            //int y = 14;
 
-            LeetCode_461 classLeetCode = new LeetCode_461();
-            Console.WriteLine(classLeetCode.HammingDistance(x, y));
+            //LeetCode_461 classLeetCode = new LeetCode_461();
+            //Console.WriteLine(classLeetCode.HammingDistance(x, y));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.HammingDistance(x, y));
+
+            ////(463.) Island Perimeter (EASY)
+            int[][] grid = [[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]];
+
+            LeetCode_463 classLeetcode = new LeetCode_463();
+            Console.WriteLine(classLeetcode.IslandPerimeter(grid));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.HammingDistance(x, y));
+            Console.WriteLine(leetCodeAll.IslandPerimeter(grid));
+
+
+
+
 
 
 
