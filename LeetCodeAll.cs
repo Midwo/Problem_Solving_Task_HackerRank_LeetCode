@@ -2392,8 +2392,19 @@ namespace ProblemSolving
             }
             return result;
         }
-
-
+        public int FindComplement(int num)
+        {
+            string stringByteNum = Convert.ToString(num, 2);
+            int result = 0;
+            for (int i = stringByteNum.Length - 1; i >= 0; i--)
+            {
+                if (stringByteNum[i] == '0')
+                {
+                    result += (int)Math.Pow(2, stringByteNum.Length - 1 - i);
+                }
+            }
+            return result;
+        }
 
 
 

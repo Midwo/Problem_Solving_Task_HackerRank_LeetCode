@@ -1205,14 +1205,26 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.HammingDistance(x, y));
 
             ////(463.) Island Perimeter (EASY)
-            int[][] grid = [[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]];
+            //int[][] grid = [[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]];
 
-            LeetCode_463 classLeetcode = new LeetCode_463();
-            Console.WriteLine(classLeetcode.IslandPerimeter(grid));
+            //LeetCode_463 classLeetcode = new LeetCode_463();
+            //Console.WriteLine(classLeetcode.IslandPerimeter(grid));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.IslandPerimeter(grid));
+
+            ////(476.) Number Complement (EASY)
+            int num = 2;
+
+            LeetCode_476 classLeetCode = new LeetCode_476();
+            Console.WriteLine(classLeetCode.FindComplement(num));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.IslandPerimeter(grid));
+            Console.WriteLine(leetCodeAll.FindComplement(num));
+
+
 
 
 
