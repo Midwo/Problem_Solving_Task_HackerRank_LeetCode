@@ -1225,17 +1225,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindComplement(num));
 
             ////(482.) License Key Formatting (EASY)
-            string s = "2-5g-3-J";
-            int k = 2;
+            //string s = "2-5g-3-J";
+            //int k = 2;
 
-            LeetCode_482 classLeetCode = new LeetCode_482();
-            Console.WriteLine(classLeetCode.LicenseKeyFormatting(s, k));
+            //LeetCode_482 classLeetCode = new LeetCode_482();
+            //Console.WriteLine(classLeetCode.LicenseKeyFormatting(s, k));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.LicenseKeyFormatting(s, k));
+
+            ////(485.) Max Consecutive Ones (EASY)
+            int[] nums = [1, 1, 0, 1, 1, 1];
+
+            LeetCode_485 classLeetCode = new LeetCode_485();
+            Console.WriteLine(classLeetCode.FindMaxConsecutiveOnes(nums));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.LicenseKeyFormatting(s, k));
-
-
+            Console.WriteLine(leetCodeAll.FindMaxConsecutiveOnes(nums));
 
 
 
