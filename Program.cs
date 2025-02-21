@@ -1215,17 +1215,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IslandPerimeter(grid));
 
             ////(476.) Number Complement (EASY)
-            int num = 2;
+            //int num = 2;
 
-            LeetCode_476 classLeetCode = new LeetCode_476();
-            Console.WriteLine(classLeetCode.FindComplement(num));
+            //LeetCode_476 classLeetCode = new LeetCode_476();
+            //Console.WriteLine(classLeetCode.FindComplement(num));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.FindComplement(num));
+
+            ////(482.) License Key Formatting (EASY)
+            string s = "2-5g-3-J";
+            int k = 2;
+
+            LeetCode_482 classLeetCode = new LeetCode_482();
+            Console.WriteLine(classLeetCode.LicenseKeyFormatting(s, k));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.FindComplement(num));
-
-
-
+            Console.WriteLine(leetCodeAll.LicenseKeyFormatting(s, k));
 
 
 
