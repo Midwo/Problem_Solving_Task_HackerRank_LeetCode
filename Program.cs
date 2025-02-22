@@ -1236,14 +1236,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LicenseKeyFormatting(s, k));
 
             ////(485.) Max Consecutive Ones (EASY)
-            int[] nums = [1, 1, 0, 1, 1, 1];
+            //int[] nums = [1, 1, 0, 1, 1, 1];
 
-            LeetCode_485 classLeetCode = new LeetCode_485();
-            Console.WriteLine(classLeetCode.FindMaxConsecutiveOnes(nums));
+            //LeetCode_485 classLeetCode = new LeetCode_485();
+            //Console.WriteLine(classLeetCode.FindMaxConsecutiveOnes(nums));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.FindMaxConsecutiveOnes(nums));
+
+            ////(492.) Construct the Rectangle (EASY)
+            int area = 4;
+
+            LeetCode_492 classLeetCode = new LeetCode_492();
+            Console.WriteLine(string.Join(",", classLeetCode.ConstructRectangle(area)));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.FindMaxConsecutiveOnes(nums));
+            Console.WriteLine(string.Join(",", leetCodeAll.ConstructRectangle(area)));
+
 
 
 

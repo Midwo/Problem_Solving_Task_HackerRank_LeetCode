@@ -2452,6 +2452,22 @@ namespace ProblemSolving
 
             return result;
         }
+        public int[] ConstructRectangle(int area)
+        {
+            int l = 1;
+            int w = 1;
+            for (int i = 1; i <= Math.Sqrt(area); i++)
+            {
+                if (area % i == 0)
+                {
+                    l = area / i;
+                    w = i;
+                }
+            }
+            return new int[] { l, w };
+        }
+
+
 
 
 
