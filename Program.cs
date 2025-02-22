@@ -1246,14 +1246,30 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindMaxConsecutiveOnes(nums));
 
             ////(492.) Construct the Rectangle (EASY)
-            int area = 4;
+            //int area = 4;
 
-            LeetCode_492 classLeetCode = new LeetCode_492();
-            Console.WriteLine(string.Join(",", classLeetCode.ConstructRectangle(area)));
+            //LeetCode_492 classLeetCode = new LeetCode_492();
+            //Console.WriteLine(string.Join(",", classLeetCode.ConstructRectangle(area)));
+
+            //////OR
+
+            //Console.WriteLine(string.Join(",", leetCodeAll.ConstructRectangle(area)));
+
+            ////(495.) Teemo Attacking (EASY)
+            int[] timeSeries = [1, 4];
+            int duration = 2;
+
+            LeetCode_495 classLeetCode = new LeetCode_495();
+            Console.WriteLine(classLeetCode.FindPoisonedDuration(timeSeries, duration));
 
             ////OR
 
-            Console.WriteLine(string.Join(",", leetCodeAll.ConstructRectangle(area)));
+            Console.WriteLine(leetCodeAll.FindPoisonedDuration(timeSeries, duration));
+
+
+
+
+
 
 
 
