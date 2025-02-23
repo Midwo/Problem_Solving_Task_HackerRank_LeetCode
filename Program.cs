@@ -1256,15 +1256,26 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(",", leetCodeAll.ConstructRectangle(area)));
 
             ////(495.) Teemo Attacking (EASY)
-            int[] timeSeries = [1, 4];
-            int duration = 2;
+            //int[] timeSeries = [1, 4];
+            //int duration = 2;
 
-            LeetCode_495 classLeetCode = new LeetCode_495();
-            Console.WriteLine(classLeetCode.FindPoisonedDuration(timeSeries, duration));
+            //LeetCode_495 classLeetCode = new LeetCode_495();
+            //Console.WriteLine(classLeetCode.FindPoisonedDuration(timeSeries, duration));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.FindPoisonedDuration(timeSeries, duration));
+
+            ////(496.) Next Greater Element I (EASY)
+            int[] nums1 = [4, 1, 2];
+            int[] nums2 = [1, 3, 4, 2];
+
+            LeetCode_496 classLeetCode = new LeetCode_496();
+            Console.WriteLine(string.Join(",", classLeetCode.NextGreaterElement(nums1, nums2)));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.FindPoisonedDuration(timeSeries, duration));
+            Console.WriteLine(string.Join(",", leetCodeAll.NextGreaterElement(nums1, nums2)));
 
 
 
