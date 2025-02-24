@@ -1267,15 +1267,26 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindPoisonedDuration(timeSeries, duration));
 
             ////(496.) Next Greater Element I (EASY)
-            int[] nums1 = [4, 1, 2];
-            int[] nums2 = [1, 3, 4, 2];
+            //int[] nums1 = [4, 1, 2];
+            //int[] nums2 = [1, 3, 4, 2];
 
-            LeetCode_496 classLeetCode = new LeetCode_496();
-            Console.WriteLine(string.Join(",", classLeetCode.NextGreaterElement(nums1, nums2)));
+            //LeetCode_496 classLeetCode = new LeetCode_496();
+            //Console.WriteLine(string.Join(",", classLeetCode.NextGreaterElement(nums1, nums2)));
+
+            //////OR
+
+            //Console.WriteLine(string.Join(",", leetCodeAll.NextGreaterElement(nums1, nums2)));
+
+            ////(500.) Keyboard Row (EASY)
+            string[] words = ["Hello", "Alaska", "Dad", "Peace"];
+
+            LeetCode_500 classLeetCode = new LeetCode_500();
+            Console.WriteLine(string.Join(",", classLeetCode.FindWords(words)));
 
             ////OR
 
-            Console.WriteLine(string.Join(",", leetCodeAll.NextGreaterElement(nums1, nums2)));
+            Console.WriteLine(string.Join(",", leetCodeAll.FindWords(words)));
+
 
 
 
