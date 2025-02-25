@@ -1278,17 +1278,37 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(",", leetCodeAll.NextGreaterElement(nums1, nums2)));
 
             ////(500.) Keyboard Row (EASY)
-            string[] words = ["Hello", "Alaska", "Dad", "Peace"];
+            //string[] words = ["Hello", "Alaska", "Dad", "Peace"];
 
-            LeetCode_500 classLeetCode = new LeetCode_500();
-            Console.WriteLine(string.Join(",", classLeetCode.FindWords(words)));
+            //LeetCode_500 classLeetCode = new LeetCode_500();
+            //Console.WriteLine(string.Join(",", classLeetCode.FindWords(words)));
+
+            //////OR
+
+            //Console.WriteLine(string.Join(",", leetCodeAll.FindWords(words)));
+
+            ////(501.) Find Mode in Binary Search Tree (EASY)
+            TreeNode root = new TreeNode(1);
+            root.right = new TreeNode(2);
+            root.left = null;
+            root.right.left = new TreeNode(2);
+            
+            LeetCode_501 classLeetCode = new LeetCode_501();
+            Console.WriteLine(string.Join(",", classLeetCode.FindMode(root)));
 
             ////OR
 
-            Console.WriteLine(string.Join(",", leetCodeAll.FindWords(words)));
+            Console.WriteLine(String.Join(",", leetCodeAll.FindMode(root)));
 
+            ////(504.) Base 7 (EASY)
+            //int num = 49;
 
+            //LeetCode_504 classLeetCode = new LeetCode_504();
+            //Console.WriteLine(classLeetCode.ConvertToBase7(num));
 
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.ConvertToBase7(num));
 
 
 
