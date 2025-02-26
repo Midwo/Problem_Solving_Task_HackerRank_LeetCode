@@ -1,4 +1,5 @@
 ﻿using ProblemSolving.LeetCode;
+using System;
 using System.ComponentModel;
 using System.Data.SqlTypes;
 using System.Linq;
@@ -1288,17 +1289,17 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(",", leetCodeAll.FindWords(words)));
 
             ////(501.) Find Mode in Binary Search Tree (EASY)
-            TreeNode root = new TreeNode(1);
-            root.right = new TreeNode(2);
-            root.left = null;
-            root.right.left = new TreeNode(2);
-            
-            LeetCode_501 classLeetCode = new LeetCode_501();
-            Console.WriteLine(string.Join(",", classLeetCode.FindMode(root)));
+            //TreeNode root = new TreeNode(1);
+            //root.right = new TreeNode(2);
+            //root.left = null;
+            //root.right.left = new TreeNode(2);
 
-            ////OR
+            //LeetCode_501 classLeetCode = new LeetCode_501();
+            //Console.WriteLine(string.Join(",", classLeetCode.FindMode(root)));
 
-            Console.WriteLine(String.Join(",", leetCodeAll.FindMode(root)));
+            //////OR
+
+            //Console.WriteLine(String.Join(",", leetCodeAll.FindMode(root)));
 
             ////(504.) Base 7 (EASY)
             //int num = 49;
@@ -1309,6 +1310,16 @@ namespace ProblemSolving
             //////OR
 
             //Console.WriteLine(leetCodeAll.ConvertToBase7(num));
+
+            ////(506.) Relative Ranks (EASY)
+            int[] score = [10, 3, 8, 9, 4];
+
+            LeetCode_506 classLeetCode = new LeetCode_506();
+            Console.WriteLine(string.Join(",", classLeetCode.FindRelativeRanks(score)));
+
+            ////OR
+
+            Console.WriteLine(string.Join(",", leetCodeAll.FindRelativeRanks(score)));
 
 
 
