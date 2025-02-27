@@ -1312,15 +1312,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ConvertToBase7(num));
 
             ////(506.) Relative Ranks (EASY)
-            int[] score = [10, 3, 8, 9, 4];
+            //int[] score = [10, 3, 8, 9, 4];
 
-            LeetCode_506 classLeetCode = new LeetCode_506();
-            Console.WriteLine(string.Join(",", classLeetCode.FindRelativeRanks(score)));
+            //LeetCode_506 classLeetCode = new LeetCode_506();
+            //Console.WriteLine(string.Join(",", classLeetCode.FindRelativeRanks(score)));
+
+            //////OR
+
+            //Console.WriteLine(string.Join(",", leetCodeAll.FindRelativeRanks(score)));
+
+            ////(507.) Perfect Number (EASY)
+            int num = 28;
+
+            LeetCode_507 classLeetCode = new LeetCode_507();
+            Console.WriteLine(classLeetCode.CheckPerfectNumber(num));
 
             ////OR
 
-            Console.WriteLine(string.Join(",", leetCodeAll.FindRelativeRanks(score)));
-
+            Console.WriteLine(leetCodeAll.CheckPerfectNumber(num));
 
 
 
