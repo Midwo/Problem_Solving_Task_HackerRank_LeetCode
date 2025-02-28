@@ -2720,7 +2720,17 @@ namespace ProblemSolving
 
             return result;
         }
+        public void LeetCode511()
+        {
+            ////(511.) Game Play Analysis I (EASY)
 
+            ////T-SQL query CODE - MS SQL */
+            //Select
+            //[player_id],
+            //MIN(event_date) as [first_login]
+            //From Activity
+            //GROUP BY[player_id]
+        }
 
 
 
