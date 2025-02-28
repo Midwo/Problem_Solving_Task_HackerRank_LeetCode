@@ -1322,14 +1322,29 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(",", leetCodeAll.FindRelativeRanks(score)));
 
             ////(507.) Perfect Number (EASY)
-            int num = 28;
+            //int num = 28;
 
-            LeetCode_507 classLeetCode = new LeetCode_507();
-            Console.WriteLine(classLeetCode.CheckPerfectNumber(num));
+            //LeetCode_507 classLeetCode = new LeetCode_507();
+            //Console.WriteLine(classLeetCode.CheckPerfectNumber(num));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.CheckPerfectNumber(num));
+
+            ////(509.) Fibonacci Number (EASY)
+            int n = 4;
+
+            LeetCode_509 classLeetCode = new LeetCode_509();
+            Console.WriteLine(classLeetCode.Fib(n));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.CheckPerfectNumber(num));
+            Console.WriteLine(leetCodeAll.Fib(n));
+
+
+
+
+
 
 
 

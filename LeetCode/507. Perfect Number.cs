@@ -11,10 +11,6 @@ namespace ProblemSolving.LeetCode
         ////(507.) Perfect Number (EASY)
         public bool CheckPerfectNumber(int num)
         {
-            if (num <= 2) 
-            {
-                return false;
-            }
             int result = 0;
             if (num % 2 == 0)
             {
