@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data.SqlTypes;
 using System.Linq;
 using System.Net;
+using System.Net.WebSockets;
 using System.Numerics;
 using System.Runtime.InteropServices;
 using static ProblemSolving.LeetCode.LeetCode_225;
@@ -1343,14 +1344,24 @@ namespace ProblemSolving
 
             ////(511.) Game Play Analysis I (EASY)
             //// DATABASE TASK
-            
-            LeetCode_511 classLeetCode = new LeetCode_511();
-            classLeetCode.Task511();
+
+            //LeetCode_511 classLeetCode = new LeetCode_511();
+            //classLeetCode.Task511();
+
+            //////OR
+
+            //leetCodeAll.LeetCode511();
+
+            ////(520.) Detect Capital (EASY)
+            string word = "usa";
+
+            LeetCode_520 classLeetCode = new LeetCode_520();
+            Console.WriteLine(classLeetCode.DetectCapitalUse(word));
 
             ////OR
-            
-            leetCodeAll.LeetCode511();
-            
+
+            Console.WriteLine(leetCodeAll.DetectCapitalUse(word));
+
 
 
 
