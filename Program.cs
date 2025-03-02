@@ -1353,16 +1353,25 @@ namespace ProblemSolving
             //leetCodeAll.LeetCode511();
 
             ////(520.) Detect Capital (EASY)
-            string word = "usa";
+            //string word = "usa";
 
-            LeetCode_520 classLeetCode = new LeetCode_520();
-            Console.WriteLine(classLeetCode.DetectCapitalUse(word));
+            //LeetCode_520 classLeetCode = new LeetCode_520();
+            //Console.WriteLine(classLeetCode.DetectCapitalUse(word));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.DetectCapitalUse(word));
+
+            ////(521.) Longest Uncommon Subsequence I (EASY)
+            string a = "aaa";
+            string b = "aaa";
+
+            LeetCode_521 classLeetCode = new LeetCode_521();
+            Console.WriteLine(classLeetCode.FindLUSlength(a, b));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.DetectCapitalUse(word));
-
-
+            Console.WriteLine(leetCodeAll.FindLUSlength(a, b));
 
 
 
