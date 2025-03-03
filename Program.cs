@@ -1363,15 +1363,31 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DetectCapitalUse(word));
 
             ////(521.) Longest Uncommon Subsequence I (EASY)
-            string a = "aaa";
-            string b = "aaa";
+            //string a = "aaa";
+            //string b = "aaa";
 
-            LeetCode_521 classLeetCode = new LeetCode_521();
-            Console.WriteLine(classLeetCode.FindLUSlength(a, b));
+            //LeetCode_521 classLeetCode = new LeetCode_521();
+            //Console.WriteLine(classLeetCode.FindLUSlength(a, b));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.FindLUSlength(a, b));
+
+            ////(530.) Minimum Absolute Difference in BST (EASY)
+            TreeNode root = new TreeNode(4);
+            root.left = new TreeNode(2);
+            root.right = new TreeNode(6);
+            root.left.left = new TreeNode(1);
+            root.left.right = new TreeNode(3);
+
+            LeetCode_530 classLeetCode = new LeetCode_530();
+            Console.WriteLine(classLeetCode.GetMinimumDifference(root));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.FindLUSlength(a, b));
+            Console.WriteLine(leetCodeAll.GetMinimumDifference(root));
+
+
 
 
 
