@@ -2814,8 +2814,33 @@ namespace ProblemSolving
             listValueRoot.Add(root.val);
             InTree(listValueRoot, root.right);
         }
+        public string ReverseStr(string s, int k)
+        {
+            char[] arrayCharS = s.ToCharArray();
+            int sLength = s.Length;
+            for (int i = 0; i < arrayCharS.Length; i += 2 * k)
+            {
+                int curLeftIndex = i;
+                int curRightIndex = i + k - 1;
 
+                if (curRightIndex >= sLength)
+                {
+                    curRightIndex = sLength - 1;
+                }
 
+                while (curLeftIndex < curRightIndex)
+                {
+                    char temp = arrayCharS[curLeftIndex];
+                    arrayCharS[curLeftIndex] = arrayCharS[curRightIndex];
+                    arrayCharS[curRightIndex] = temp;
+
+                    curLeftIndex++;
+                    curRightIndex--;
+                }
+            }
+
+            return new String(arrayCharS);
+        }
 
 
 

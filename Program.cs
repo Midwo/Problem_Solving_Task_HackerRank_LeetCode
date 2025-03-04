@@ -1374,23 +1374,30 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindLUSlength(a, b));
 
             ////(530.) Minimum Absolute Difference in BST (EASY)
-            TreeNode root = new TreeNode(4);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(6);
-            root.left.left = new TreeNode(1);
-            root.left.right = new TreeNode(3);
+            //TreeNode root = new TreeNode(4);
+            //root.left = new TreeNode(2);
+            //root.right = new TreeNode(6);
+            //root.left.left = new TreeNode(1);
+            //root.left.right = new TreeNode(3);
 
-            LeetCode_530 classLeetCode = new LeetCode_530();
-            Console.WriteLine(classLeetCode.GetMinimumDifference(root));
+            //LeetCode_530 classLeetCode = new LeetCode_530();
+            //Console.WriteLine(classLeetCode.GetMinimumDifference(root));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.GetMinimumDifference(root));
+
+            ////(541.) Reverse String II (EASY)
+            //string s = "iopmkexxpatqgmwjlhvexiyjiqyorbjwikszxqzntfxskcpgybgzvhvewrghibivfmydhtydnltopuoakiepttaxubwhfemiagxhjtpbaifvmcskrphrgrqunvcpeshooqzbclaejvdpkgzbiahdaxmyplrkouzzejujzjeytgdzgofqpyxizwqkxujpmucflrzmrccoufdjzngufntzqhgwsxuehysvokgaxbrcbyotivchfwvrzrtcwfjnzbymfeixqtvhwxxwwmgsqgpslwvpdbubsdwfxawjmowvxxlyetytaqqpazhxeyohrahruyjjpzqwrtluzuhcrueagadobkxqgvrgmgebjlvunhjddqbvwggjteyxuvsiqqezhxuocfqgnltadrvrkeibhgxwlwgqzxxhedbtzkneqjpzddogkazbvkfnrgeuhuffrjipiwwgkxklvfdextixvrsrfowwijxcgkwhbkmqgtnzmddadiktodydidabimamfjddjiityanoijqahtzglelgzqauekwhjchlbcmuptbiqsoknjnqrxoczsytpaniysfpxqhydefssttjccauittoicxolnqavlajapbsuubpwfrwgwezujsieqcjldwmsggclqiujfkluzybctmcropkjwqmefxaqaqbwsnvsyepthpwrevblkfedcnryruevewbtyqgocrizztkquanvbrqjrxafproapyituyblxdkerpafemensocnealjckjvwxixdcrqiqikdlkyyjzstealbgjjtrzshupkdnrtzoecgysayjzmszmuidnegshmbdctnwhelopfhfyelgfingqgdgaedadbbxcsfionwhpomgeyoldukqyojjfeybmoihheofztalnpfptqosytucjyaqgaenjuffxpsembaemaajfbceaaxlotzqcueejltfqfugkvvctgjtlvfflymragubfyndirsxsmlsx";
+            //int k = 183;
+            string s = "abcdefg";
+            int k = 2;
+            LeetCode_541 classLeetCode = new LeetCode_541();
+            Console.WriteLine(classLeetCode.ReverseStr(s, k));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.GetMinimumDifference(root));
-
-
-
-
-
+            Console.WriteLine(leetCodeAll.ReverseStr(s, k));
 
 
 
