@@ -1400,18 +1400,48 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReverseStr(s, k));
 
             ////(543.) Diameter of Binary Tree (EASY)
-            TreeNode root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
-            root.left.left = new TreeNode(4);
-            root.left.right = new TreeNode(5);
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(2);
+            //root.right = new TreeNode(3);
+            //root.left.left = new TreeNode(4);
+            //root.left.right = new TreeNode(5);
 
-            LeetCode_543 classLeetCode = new LeetCode_543();
-            Console.WriteLine(classLeetCode.DiameterOfBinaryTree(root));
+            //LeetCode_543 classLeetCode = new LeetCode_543();
+            //Console.WriteLine(classLeetCode.DiameterOfBinaryTree(root));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.DiameterOfBinaryTree(root));
+
+            ////(551.) Student Attendance Record I (EASY)
+            //string s = "LPLPLPLPLPL";
+
+            //LeetCode_551 classLeetCode = new LeetCode_551();
+            //Console.WriteLine(classLeetCode.CheckRecord(s));
+
+            //////OR
+
+            //Console.WriteLine(classLeetCode.CheckRecord(s));
+
+            ////(557.) Reverse Words in a String III (EASY)
+            string s = "Let's take LeetCode contest";
+
+            LeetCode_557 classLeetCode = new LeetCode_557();
+            Console.WriteLine(classLeetCode.ReverseWords(s));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.DiameterOfBinaryTree(root));
+            Console.WriteLine(leetCodeAll.ReverseWords(s));
+
+
+
+
+
+
+
+
+
+
 
 
 

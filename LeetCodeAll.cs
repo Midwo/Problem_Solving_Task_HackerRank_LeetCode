@@ -2861,6 +2861,67 @@ namespace ProblemSolving
 
             return 1 + Math.Max(left, right);
         }
+        public bool CheckRecord(string s)
+        {
+            int howManyTimesAbsent = 0;
+            int howManyTimesConsecutiveLate = 0;
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == 'A')
+                {
+                    howManyTimesConsecutiveLate = 0;
+                    howManyTimesAbsent++;
+                    if (howManyTimesAbsent == 2)
+                    {
+                        return false;
+                    }
+                }
+                else if (s[i] == 'L')
+                {
+                    howManyTimesConsecutiveLate++;
+                    if (howManyTimesConsecutiveLate == 3)
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    howManyTimesConsecutiveLate = 0;
+                }
+            }
+            return true;
+        }
+        public string ReverseWords(string s)
+        {
+            int start = 0;
+            char[] resultChars = s.ToCharArray();
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == ' ' || i == s.Length - 1)
+                {
+                    if (i == s.Length - 1)
+                    {
+                        for (int j = start; j < start + (s.Length - start) / 2; j++)
+                        {
+                            char tempChar = resultChars[j];
+                            resultChars[j] = resultChars[start - j + s.Length - 1];
+                            resultChars[start - j + s.Length - 1] = tempChar;
+                        }
+                    }
+                    else
+                    {
+                        for (int j = start; j < start + (i - start) / 2; j++)
+                        {
+                            char tempChar = resultChars[j];
+                            resultChars[j] = resultChars[i - (j - start) - 1];
+                            resultChars[i - (j - start) - 1] = tempChar;
+                        }
+                    }
+                    start = i + 1;
+                }
+            }
+            return new string(resultChars);
+        }
 
 
 
