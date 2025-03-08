@@ -1,5 +1,6 @@
 ﻿using ProblemSolving.LeetCode;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.SqlTypes;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Net;
 using System.Net.WebSockets;
 using System.Numerics;
 using System.Runtime.InteropServices;
+using System.Xml.Linq;
 using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
 using static ProblemSolving.LeetCode.LeetCode_303;
@@ -1424,16 +1426,30 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.CheckRecord(s));
 
             ////(557.) Reverse Words in a String III (EASY)
-            string s = "Let's take LeetCode contest";
+            //string s = "Let's take LeetCode contest";
 
-            LeetCode_557 classLeetCode = new LeetCode_557();
-            Console.WriteLine(classLeetCode.ReverseWords(s));
+            //LeetCode_557 classLeetCode = new LeetCode_557();
+            //Console.WriteLine(classLeetCode.ReverseWords(s));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.ReverseWords(s));
+
+            ////(559.) Maximum Depth of N-ary Tree (EASY)
+            Node root = new Node(1);
+            root.children.Add(new Node(3));
+            root.children.Add(new Node(2));
+            root.children.Add(new Node(4));
+            root.children[0].children.Add(new Node(5));
+            root.children[0].children.Add(new Node(6));
+
+            LeetCode_559 classLeetCode = new LeetCode_559();
+            Console.WriteLine(classLeetCode.MaxDepth(root));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.ReverseWords(s));
-
-
+            Console.WriteLine(leetCodeAll.MaxDepth(root));
+            
 
 
 
