@@ -1436,23 +1436,29 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReverseWords(s));
 
             ////(559.) Maximum Depth of N-ary Tree (EASY)
-            Node root = new Node(1);
-            root.children.Add(new Node(3));
-            root.children.Add(new Node(2));
-            root.children.Add(new Node(4));
-            root.children[0].children.Add(new Node(5));
-            root.children[0].children.Add(new Node(6));
+            //Node root = new Node(1);
+            //root.children.Add(new Node(3));
+            //root.children.Add(new Node(2));
+            //root.children.Add(new Node(4));
+            //root.children[0].children.Add(new Node(5));
+            //root.children[0].children.Add(new Node(6));
 
-            LeetCode_559 classLeetCode = new LeetCode_559();
-            Console.WriteLine(classLeetCode.MaxDepth(root));
+            //LeetCode_559 classLeetCode = new LeetCode_559();
+            //Console.WriteLine(classLeetCode.MaxDepth(root));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.MaxDepth(root));
+
+            ////(561.) Array Partition (EASY)
+            int[] nums = [1, 4, 3, 2];
+
+            LeetCode_561 classLeetCode = new LeetCode_561();
+            Console.WriteLine(classLeetCode.ArrayPairSum(nums));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.MaxDepth(root));
-            
-
-
-
+            Console.WriteLine(leetCodeAll.ArrayPairSum(nums));
 
 
 

@@ -2939,7 +2939,18 @@ namespace ProblemSolving
             return resultDepth + 1;
 
         }
-
+        public int ArrayPairSum(int[] nums)
+        {
+            Array.Sort(nums);
+            int i = 0;
+            int result = 0;
+            while (i < nums.Length)
+            {
+                result += nums[i];
+                i += 2;
+            }
+            return result;
+        }
 
 
 
