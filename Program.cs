@@ -178,6 +178,35 @@ namespace ProblemSolving
             //LeetCode_1 classLeetCode = new LeetCode_1();
             //Console.WriteLine(String.Join("", classLeetCode.TwoSum([2, 7, 11, 15], 9)));
 
+            /////(2.) Add Two Numbers (MEDIUM)
+            ListNode l1 = new ListNode(2);
+            l1.next = new ListNode(4);
+            l1.next.next = new ListNode(3);
+
+            ListNode l2 = new ListNode(5);
+            l2.next = new ListNode(6);
+            l2.next.next = new ListNode(4);
+
+            LeetCode_2 classLeetCode = new LeetCode_2();
+            var result = classLeetCode.AddTwoNumbers(l1, l2);
+
+            while (result != null) 
+            {
+                Console.WriteLine(result.val);
+                result = result.next;
+            }
+
+            //OR
+
+            var result1 = classLeetCode.AddTwoNumbers(l1, l2);
+
+            while (result1 != null)
+            {
+                Console.WriteLine(result1.val);
+                result1 = result1.next;
+            }
+
+
             ////(9.) Palindrome Number (EASY)
             //Console.WriteLine(leetCodeAll.IsPalindrome(1234567899));
             ////OR
@@ -1451,14 +1480,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDepth(root));
 
             ////(561.) Array Partition (EASY)
-            int[] nums = [1, 4, 3, 2];
+            //int[] nums = [1, 4, 3, 2];
 
-            LeetCode_561 classLeetCode = new LeetCode_561();
-            Console.WriteLine(classLeetCode.ArrayPairSum(nums));
+            //LeetCode_561 classLeetCode = new LeetCode_561();
+            //Console.WriteLine(classLeetCode.ArrayPairSum(nums));
 
-            ////OR
+            //////OR
 
-            Console.WriteLine(leetCodeAll.ArrayPairSum(nums));
+            //Console.WriteLine(leetCodeAll.ArrayPairSum(nums));
+
+
 
 
 
