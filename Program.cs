@@ -179,32 +179,55 @@ namespace ProblemSolving
             //Console.WriteLine(String.Join("", classLeetCode.TwoSum([2, 7, 11, 15], 9)));
 
             /////(2.) Add Two Numbers (MEDIUM)
-            ListNode l1 = new ListNode(2);
-            l1.next = new ListNode(4);
-            l1.next.next = new ListNode(3);
+            //ListNode l1 = new ListNode(2);
+            //l1.next = new ListNode(4);
+            //l1.next.next = new ListNode(3);
 
-            ListNode l2 = new ListNode(5);
-            l2.next = new ListNode(6);
-            l2.next.next = new ListNode(4);
+            //ListNode l2 = new ListNode(5);
+            //l2.next = new ListNode(6);
+            //l2.next.next = new ListNode(4);
 
-            LeetCode_2 classLeetCode = new LeetCode_2();
-            var result = classLeetCode.AddTwoNumbers(l1, l2);
+            //LeetCode_2 classLeetCode = new LeetCode_2();
+            //var result = classLeetCode.AddTwoNumbers(l1, l2);
 
-            while (result != null) 
-            {
-                Console.WriteLine(result.val);
-                result = result.next;
-            }
+            //while (result != null) 
+            //{
+            //    Console.WriteLine(result.val);
+            //    result = result.next;
+            //}
 
-            //OR
+            ////OR
 
-            var result1 = classLeetCode.AddTwoNumbers(l1, l2);
+            //var result1 = classLeetCode.AddTwoNumbers(l1, l2);
 
-            while (result1 != null)
-            {
-                Console.WriteLine(result1.val);
-                result1 = result1.next;
-            }
+            //while (result1 != null)
+            //{
+            //    Console.WriteLine(result1.val);
+            //    result1 = result1.next;
+            //}
+
+            ////(3.) Longest Substring Without Repeating Characters (MEDIUM)
+            //string s = "abcabcbb";
+            
+            //LeetCode_3 classLeetCode = new LeetCode_3();
+            //Console.WriteLine(classLeetCode.LengthOfLongestSubstring(s));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.LengthOfLongestSubstring(s));
+
+            /////(4.) Median of Two Sorted Arrays (HARD)
+            int[] nums1 = [1, 2];
+            int[] nums2 = [3, 4];
+
+            LeetCode_4  classLeetCode1 = new LeetCode_4();
+            Console.WriteLine(classLeetCode1.FindMedianSortedArrays(nums1, nums2));
+
+            ////OR
+
+            Console.WriteLine(leetCodeAll.FindMedianSortedArrays(nums1, nums2));
+
+            ////(5.) Longest Palindromic Substring (MEDIUM)
 
 
             ////(9.) Palindrome Number (EASY)
