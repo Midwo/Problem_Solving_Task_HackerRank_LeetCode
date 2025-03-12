@@ -228,13 +228,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindMedianSortedArrays(nums1, nums2));
 
             ////(5.) Longest Palindromic Substring (MEDIUM)
-            string s = "bacabab";
-            LeetCode_5 classLeetCode = new LeetCode_5();
-            Console.WriteLine(classLeetCode.LongestPalindrome(s));
+            //string s = "bacabab";
+            //LeetCode_5 classLeetCode = new LeetCode_5();
+            //Console.WriteLine(classLeetCode.LongestPalindrome(s));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.LongestPalindromeMedium(s));
+
+            ////(6.) Zigzag Conversion (MEDIUM)
+            string s = "PAYPALISHIRING";
+            int numRows = 4;
+
+            LeetCode_6 classLeetCode = new LeetCode_6();
+            Console.WriteLine(classLeetCode.Convert(s, numRows));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.LongestPalindromeMedium(s));
+            Console.WriteLine(leetCodeAll.ConvertZigZag(s, numRows));
+
 
 
             ////(9.) Palindrome Number (EASY)
