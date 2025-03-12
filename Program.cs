@@ -208,7 +208,7 @@ namespace ProblemSolving
 
             ////(3.) Longest Substring Without Repeating Characters (MEDIUM)
             //string s = "abcabcbb";
-            
+
             //LeetCode_3 classLeetCode = new LeetCode_3();
             //Console.WriteLine(classLeetCode.LengthOfLongestSubstring(s));
 
@@ -217,17 +217,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LengthOfLongestSubstring(s));
 
             /////(4.) Median of Two Sorted Arrays (HARD)
-            int[] nums1 = [1, 2];
-            int[] nums2 = [3, 4];
+            //int[] nums1 = [1, 2];
+            //int[] nums2 = [3, 4];
 
-            LeetCode_4  classLeetCode1 = new LeetCode_4();
-            Console.WriteLine(classLeetCode1.FindMedianSortedArrays(nums1, nums2));
+            //LeetCode_4  classLeetCode1 = new LeetCode_4();
+            //Console.WriteLine(classLeetCode1.FindMedianSortedArrays(nums1, nums2));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.FindMedianSortedArrays(nums1, nums2));
+
+            ////(5.) Longest Palindromic Substring (MEDIUM)
+            string s = "bacabab";
+            LeetCode_5 classLeetCode = new LeetCode_5();
+            Console.WriteLine(classLeetCode.LongestPalindrome(s));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.FindMedianSortedArrays(nums1, nums2));
-
-            ////(5.) Longest Palindromic Substring (MEDIUM)
+            Console.WriteLine(leetCodeAll.LongestPalindromeMedium(s));
 
 
             ////(9.) Palindrome Number (EASY)
