@@ -248,14 +248,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ConvertZigZag(s, numRows));
 
             ////(7.) Reverse Integer (MEDIUM)
-            int x = 1534236469;
+            //int x = 1534236469;
 
-            LeetCode_7 classLeetCode = new LeetCode_7();
-            Console.WriteLine(classLeetCode.Reverse(x));
+            //LeetCode_7 classLeetCode = new LeetCode_7();
+            //Console.WriteLine(classLeetCode.Reverse(x));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.Reverse(x));
+
+            ////(8.) String to Integer (atoi) (MEDIUM)
+            string s = "  244446656565645645645645645645645645645645645645645444440000000000012345678";
+
+            LeetCode_8 classLeetCode = new LeetCode_8();
+            Console.WriteLine(classLeetCode.MyAtoi(s));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.Reverse(x));
+            Console.WriteLine(leetCodeAll.MyAtoi(s));
+
 
 
             ////(9.) Palindrome Number (EASY)
