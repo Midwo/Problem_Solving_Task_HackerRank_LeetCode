@@ -237,16 +237,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LongestPalindromeMedium(s));
 
             ////(6.) Zigzag Conversion (MEDIUM)
-            string s = "PAYPALISHIRING";
-            int numRows = 4;
+            //string s = "PAYPALISHIRING";
+            //int numRows = 4;
 
-            LeetCode_6 classLeetCode = new LeetCode_6();
-            Console.WriteLine(classLeetCode.Convert(s, numRows));
+            //LeetCode_6 classLeetCode = new LeetCode_6();
+            //Console.WriteLine(classLeetCode.Convert(s, numRows));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.ConvertZigZag(s, numRows));
+
+            ////(7.) Reverse Integer (MEDIUM)
+            int x = 1534236469;
+
+            LeetCode_7 classLeetCode = new LeetCode_7();
+            Console.WriteLine(classLeetCode.Reverse(x));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.ConvertZigZag(s, numRows));
-
+            Console.WriteLine(leetCodeAll.Reverse(x));
 
 
             ////(9.) Palindrome Number (EASY)
