@@ -258,22 +258,30 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.Reverse(x));
 
             ////(8.) String to Integer (atoi) (MEDIUM)
-            string s = "  244446656565645645645645645645645645645645645645645444440000000000012345678";
+            //string s = "  244446656565645645645645645645645645645645645645645444440000000000012345678";
 
-            LeetCode_8 classLeetCode = new LeetCode_8();
-            Console.WriteLine(classLeetCode.MyAtoi(s));
+            //LeetCode_8 classLeetCode = new LeetCode_8();
+            //Console.WriteLine(classLeetCode.MyAtoi(s));
 
-            ////OR
+            //////OR
 
-            Console.WriteLine(leetCodeAll.MyAtoi(s));
-
-
+            //Console.WriteLine(leetCodeAll.MyAtoi(s));
 
             ////(9.) Palindrome Number (EASY)
             //Console.WriteLine(leetCodeAll.IsPalindrome(1234567899));
             ////OR
             //LeetCode_9 classLeetCode = new LeetCode_9();
             //Console.WriteLine(classLeetCode.IsPalindrome(1234567899));
+
+            ////(11.) Container With Most Water (MEDIUM)
+            int[] height = [1, 8, 6, 2, 5, 4, 8, 3, 7];
+
+            LeetCode_11 classLeetCode = new LeetCode_11();
+            Console.WriteLine(classLeetCode.MaxArea(height));
+
+            ////OR
+
+            Console.WriteLine(leetCodeAll.MaxArea(height));
 
             ////(13.) Roman to Integer (EASY)
             //Console.WriteLine(leetCodeAll.RomanToInt("MCMXCIV"));
