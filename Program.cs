@@ -274,14 +274,24 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.IsPalindrome(1234567899));
 
             ////(11.) Container With Most Water (MEDIUM)
-            int[] height = [1, 8, 6, 2, 5, 4, 8, 3, 7];
+            //int[] height = [1, 8, 6, 2, 5, 4, 8, 3, 7];
 
-            LeetCode_11 classLeetCode = new LeetCode_11();
-            Console.WriteLine(classLeetCode.MaxArea(height));
+            //LeetCode_11 classLeetCode = new LeetCode_11();
+            //Console.WriteLine(classLeetCode.MaxArea(height));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.MaxArea(height));
+
+            ////(12.) Integer to Roman (MEDIUM)
+            int num = 58;
+
+            LeetCode_12 classLeetCode = new LeetCode_12();
+            Console.WriteLine(classLeetCode.IntToRoman(num));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.MaxArea(height));
+            Console.WriteLine(leetCodeAll.IntToRoman(num));
 
             ////(13.) Roman to Integer (EASY)
             //Console.WriteLine(leetCodeAll.RomanToInt("MCMXCIV"));
@@ -294,6 +304,11 @@ namespace ProblemSolving
             ////OR
             //LeetCode_14 classLeetCode = new LeetCode_14();
             //Console.WriteLine(classLeetCode.LongestCommonPrefix(["flower", "flow", "flight"]));
+
+            ////(15.) 3Sum (MEDIUM)
+
+
+
 
             ////(20.) Valid Parentheses (EASY)
             //Console.WriteLine(leetCodeAll.IsValid("()[]{}"));
