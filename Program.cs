@@ -316,6 +316,14 @@ namespace ProblemSolving
                 Console.WriteLine(string.Join(",", item));
             }
 
+            ////OR
+
+            IList<IList<int>> result1 = leetCodeAll.ThreeSum(nums);
+            foreach (var item in result1) 
+            {
+                Console.WriteLine(string.Join(",", item));
+            }
+
             ////(16.) 3Sum Closest (MEDIUM)
             //int[] nums = [-1, 2, 1, -4];
             //int target = 1;
