@@ -284,14 +284,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxArea(height));
 
             ////(12.) Integer to Roman (MEDIUM)
-            int num = 58;
+            //int num = 58;
 
-            LeetCode_12 classLeetCode = new LeetCode_12();
-            Console.WriteLine(classLeetCode.IntToRoman(num));
+            //LeetCode_12 classLeetCode = new LeetCode_12();
+            //Console.WriteLine(classLeetCode.IntToRoman(num));
 
-            ////OR
+            //////OR
 
-            Console.WriteLine(leetCodeAll.IntToRoman(num));
+            //Console.WriteLine(leetCodeAll.IntToRoman(num));
 
             ////(13.) Roman to Integer (EASY)
             //Console.WriteLine(leetCodeAll.RomanToInt("MCMXCIV"));
@@ -306,6 +306,24 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.LongestCommonPrefix(["flower", "flow", "flight"]));
 
             ////(15.) 3Sum (MEDIUM)
+            int[] nums = [2, -3, 0, -2, -5, -5, -4, 1, 2, -2, 2, 0, 2, -4, 5, 5, -10]; 
+            ////int[] nums = [0, 0, 0, 0];
+            LeetCode_15 classLeetCode = new LeetCode_15();
+            IList<IList<int>> result = classLeetCode.ThreeSum(nums);
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(string.Join(",", item));
+            }
+
+            ////(16.) 3Sum Closest (MEDIUM)
+            //int[] nums = [-1, 2, 1, -4];
+            //int target = 1;
+
+            //LeetCode_16 classLeetCode = new LeetCode_16();
+            //Console.WriteLine(classLeetCode.ThreeSumClosest(nums, target));
+
+            //////OR
 
 
 

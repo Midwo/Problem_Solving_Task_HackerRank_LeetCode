@@ -3381,6 +3381,48 @@ namespace ProblemSolving
             //}
             //return new string(sb.ToString().Reverse().ToArray());
         }
+        public IList<IList<int>> ThreeSum(int[] nums)
+        {
+            Array.Sort(nums);
+            IList<IList<int>> result = new List<IList<int>>();
+
+            int prevInt = int.MinValue;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (prevInt == nums[i]) continue;
+                prevInt = nums[i];
+                ////OR
+                //if (i > 0 && nums[i] == nums[i - 1]) continue;
+
+                if (nums[i] > 0) break;
+                int leftPointer = i + 1;
+                int rightPointer = nums.Length - 1;
+
+                while (leftPointer < rightPointer)
+                {
+                    int sum = nums[i] + nums[leftPointer] + nums[rightPointer];
+                    if (sum < 0)
+                    {
+                        leftPointer++;
+                    }
+                    else if (sum > 0)
+                    {
+                        rightPointer--;
+                    }
+                    else
+                    {
+                        result.Add(new List<int> { nums[i], nums[leftPointer], nums[rightPointer] });
+                        leftPointer++;
+                        rightPointer--;
+                        while (leftPointer < rightPointer && nums[leftPointer] == nums[leftPointer - 1])
+                        {
+                            leftPointer++;
+                        }
+                    }
+                }
+            }
+            return result;
+        }
 
 
 
@@ -3402,7 +3444,8 @@ namespace ProblemSolving
 
 
 
-    }
+
+        }
 
     public class ListNode
     {
