@@ -1006,7 +1006,7 @@ namespace ProblemSolving
             int leftCount = CountNodes(root.left);
             int rightCount = CountNodes(root.right);
 
-            return leftCount + rightCount+1;
+            return leftCount + rightCount + 1;
         }
         public class LeetCodeAll_225_MyStack
         {
@@ -1121,7 +1121,7 @@ namespace ProblemSolving
 
             ////OR
             ////Standard way to solve without using BitOperations.IsPow2(n) from NET
-            
+
             //return (n > 0) && ((n & (n - 1)) == 0);
         }
         public class LeetCodeAll_232_MyQueue
@@ -1787,7 +1787,7 @@ namespace ProblemSolving
                     return false;
                 }
             }
-            EndOfLoop:
+        EndOfLoop:
             return result;
         }
         public int FirstUniqChar(string s)
@@ -3423,30 +3423,73 @@ namespace ProblemSolving
             }
             return result;
         }
+        public int ThreeSumClosest(int[] nums, int target)
+        {
+            int resultSumCloset = int.MaxValue;
+            int lengthNums = nums.Length;
 
+            for (int i = 0; i < lengthNums; i++)
+            {
+                int leftPointerIndex = i + 1;
+                int rightPointerIndex = nums.Length - 1;
 
+                while (leftPointerIndex < rightPointerIndex)
+                {
+                    int currTempSum = nums[i] + nums[leftPointerIndex] + nums[rightPointerIndex];
 
+                    if (target == currTempSum)
+                    {
+                        return currTempSum;
+                    }
+                    else if (Math.Abs(currTempSum - target) < Math.Abs(resultSumCloset - target))
+                    {
+                        resultSumCloset = currTempSum;
+                    }
 
+                    if (currTempSum > target)
+                    {
+                        rightPointerIndex--;
+                    }
+                    else
+                    {
+                        leftPointerIndex++;
+                    }
+                }
+            }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            return resultSumCloset;
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
     public class ListNode
     {
         public int val;
