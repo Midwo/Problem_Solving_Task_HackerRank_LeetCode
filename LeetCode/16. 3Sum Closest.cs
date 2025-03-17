@@ -13,6 +13,7 @@ namespace ProblemSolving.LeetCode
         ////Two Pointer Ver. - Fast
         public int ThreeSumClosest(int[] nums, int target)
         {
+            Array.Sort(nums);   
             int resultSumCloset = int.MaxValue;
             int lengthNums = nums.Length;
 
