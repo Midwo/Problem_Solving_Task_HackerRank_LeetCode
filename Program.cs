@@ -325,16 +325,33 @@ namespace ProblemSolving
             //}
 
             ////(16.) 3Sum Closest (MEDIUM)
-            int[] nums = [-1, 2, 1, -4];
-            int target = 1;
+            //int[] nums = [-1, 2, 1, -4];
+            //int target = 1;
 
-            LeetCode_16 classLeetCode = new LeetCode_16();
-            Console.WriteLine(classLeetCode.ThreeSumClosest(nums, target));
+            //LeetCode_16 classLeetCode = new LeetCode_16();
+            //Console.WriteLine(classLeetCode.ThreeSumClosest(nums, target));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.ThreeSumClosest(nums, target));
+            //Console.WriteLine(leetCodeAll.ThreeSumClosest(nums, target));
 
+            ////(17.) Letter Combinations of a Phone Number (MEDIUM)
+            string digits = "5678";
+            
+            LeetCode_17 classLeetCode = new LeetCode_17();
+            IList<string> result = classLeetCode.LetterCombinations(digits);
+
+            foreach (string resultItem in result) 
+            {
+                Console.WriteLine(string.Join(",", resultItem));
+            }
+
+            ////OR 
+            IList<string> result1 = leetCodeAll.LetterCombinations(digits);
+            foreach (string resultItem in result1)
+            {
+                Console.WriteLine(string.Join(",", resultItem));
+            }
 
 
             ////(20.) Valid Parentheses (EASY)
