@@ -336,21 +336,49 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ThreeSumClosest(nums, target));
 
             ////(17.) Letter Combinations of a Phone Number (MEDIUM)
-            string digits = "5678";
-            
-            LeetCode_17 classLeetCode = new LeetCode_17();
-            IList<string> result = classLeetCode.LetterCombinations(digits);
+            //string digits = "5678";
 
-            foreach (string resultItem in result) 
+            //LeetCode_17 classLeetCode = new LeetCode_17();
+            //IList<string> result = classLeetCode.LetterCombinations(digits);
+
+            //foreach (string resultItem in result) 
+            //{
+            //    Console.WriteLine(string.Join(",", resultItem));
+            //}
+
+            //////OR 
+            //IList<string> result1 = leetCodeAll.LetterCombinations(digits);
+            //foreach (string resultItem in result1)
+            //{
+            //    Console.WriteLine(string.Join(",", resultItem));
+            //}
+
+            ////(19.) Remove Nth Node From End of List (MEDIUM)
+            int n = 2;
+            ListNode head = new ListNode(1);
+            head.next = new ListNode(2);
+            head.next.next = new ListNode(3);
+            head.next.next.next = new ListNode(4);
+            head.next.next.next.next = new ListNode(5);
+
+            LeetCode_19 classLeetCode = new LeetCode_19();
+
+            ListNode result = classLeetCode.RemoveNthFromEnd(head, n);
+
+            while (result != null)
             {
-                Console.WriteLine(string.Join(",", resultItem));
+                Console.WriteLine(result.val);
+                result = result.next;
             }
 
-            ////OR 
-            IList<string> result1 = leetCodeAll.LetterCombinations(digits);
-            foreach (string resultItem in result1)
+            ////OR
+
+            ListNode result1 = leetCodeAll.RemoveNthFromEnd(head, n);
+
+            while (result1 != null) 
             {
-                Console.WriteLine(string.Join(",", resultItem));
+                Console.WriteLine(result1.val);
+                result1 = result1.next;
             }
 
 
