@@ -354,32 +354,32 @@ namespace ProblemSolving
             //}
 
             ////(19.) Remove Nth Node From End of List (MEDIUM)
-            int n = 2;
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(2);
-            head.next.next = new ListNode(3);
-            head.next.next.next = new ListNode(4);
-            head.next.next.next.next = new ListNode(5);
+            //int n = 2;
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(2);
+            //head.next.next = new ListNode(3);
+            //head.next.next.next = new ListNode(4);
+            //head.next.next.next.next = new ListNode(5);
 
-            LeetCode_19 classLeetCode = new LeetCode_19();
+            //LeetCode_19 classLeetCode = new LeetCode_19();
 
-            ListNode result = classLeetCode.RemoveNthFromEnd(head, n);
+            //ListNode result = classLeetCode.RemoveNthFromEnd(head, n);
 
-            while (result != null)
-            {
-                Console.WriteLine(result.val);
-                result = result.next;
-            }
+            //while (result != null)
+            //{
+            //    Console.WriteLine(result.val);
+            //    result = result.next;
+            //}
 
-            ////OR
+            //////OR
 
-            ListNode result1 = leetCodeAll.RemoveNthFromEnd(head, n);
+            //ListNode result1 = leetCodeAll.RemoveNthFromEnd(head, n);
 
-            while (result1 != null) 
-            {
-                Console.WriteLine(result1.val);
-                result1 = result1.next;
-            }
+            //while (result1 != null) 
+            //{
+            //    Console.WriteLine(result1.val);
+            //    result1 = result1.next;
+            //}
 
 
             ////(20.) Valid Parentheses (EASY)
@@ -421,6 +421,26 @@ namespace ProblemSolving
 
             //LeetCode_26 classLeetCode = new LeetCode_26();
             //Console.WriteLine(classLeetCode.RemoveDuplicates([1, 1, 2]));
+
+            ////(22.) Generate Parentheses (MEDIUM)
+            int n = 5;
+            
+            LeetCode_22 classLeetCode = new LeetCode_22();
+            IList<string> result = classLeetCode.GenerateParenthesis(n);
+
+            foreach (string s in result) 
+            {
+                Console.WriteLine(s);
+            }
+
+            ////OR
+
+            IList<string> result1 = leetCodeAll.GenerateParenthesis(n);
+
+            foreach (string s in result1) 
+            {
+                Console.WriteLine(s);
+            }
 
             ////(27.) Remove Element (EASY)
             //Console.WriteLine(leetCodeAll.RemoveElement([3,2,2,3], 3));
