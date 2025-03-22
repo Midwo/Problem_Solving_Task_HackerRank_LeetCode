@@ -479,30 +479,56 @@ namespace ProblemSolving
             //}
 
             ////(24.) Swap Nodes in Pairs (MEDIUM)
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(2);
+            //head.next.next = new ListNode(3);
+            //head.next.next.next = new ListNode(4);
+
+            //LeetCode_24 classLeetCode = new LeetCode_24();  
+
+            //ListNode result = classLeetCode.SwapPairs(head);
+
+            //while (result != null)
+            //{
+            //    Console.WriteLine(result.val);
+            //    result = result.next;   
+            //}
+
+            //////OR
+
+            //ListNode result1 = leetCodeAll.SwapPairs(head);
+            //while (result1 != null)
+            //{
+            //    Console.WriteLine(result1.val);
+            //    result1 = result1.next;
+            //}
+
+            ////(25.) Reverse Nodes in k-Group (HARD)
+
             ListNode head = new ListNode(1);
             head.next = new ListNode(2);
             head.next.next = new ListNode(3);
             head.next.next.next = new ListNode(4);
+            int k = 2;
 
-            LeetCode_24 classLeetCode = new LeetCode_24();  
-            
-            ListNode result = classLeetCode.SwapPairs(head);
+            LeetCode_25 classLeetCode = new LeetCode_25();
+
+            ListNode result = classLeetCode.ReverseKGroup(head, 2);
 
             while (result != null)
             {
                 Console.WriteLine(result.val);
-                result = result.next;   
+                result = result.next;
             }
 
             ////OR
-            
-            ListNode result1 = leetCodeAll.SwapPairs(head);
-            while (result1 != null)
+
+            ListNode result1 = leetCodeAll.ReverseKGroup(head, 2);
+            while(result1 != null)
             {
                 Console.WriteLine(result1.val);
                 result1 = result1.next;
             }
-
 
 
             ////(27.) Remove Element (EASY)

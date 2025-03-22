@@ -3672,7 +3672,41 @@ namespace ProblemSolving
 
             return currResult.next;
         }
+        public ListNode ReverseKGroup(ListNode head, int k)
+        {
+            ListNode result = new ListNode(0, head);
+            ListNode currResult = result;
+            int counter = 0;
+            List<int> listValueHead = new List<int>();
 
+            while (head != null)
+            {
+                counter++;
+                listValueHead.Add(head.val);
+                head = head.next;
+
+                if (counter == k)
+                {
+                    counter = 0;
+                    for (int i = 0; i < k; i++)
+                    {
+                        result.next = new ListNode(listValueHead[k - 1 - i]);
+                        result = result.next;
+                    }
+                    listValueHead.Clear();
+                }
+            }
+            if (listValueHead.Count > 0)
+            {
+                for (int i = 0; i < listValueHead.Count; i++)
+                {
+                    result.next = new ListNode(listValueHead[i]);
+                    result = result.next;
+                }
+            }
+
+            return currResult.next;
+        }
 
 
 
