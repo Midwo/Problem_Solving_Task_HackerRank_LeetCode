@@ -443,40 +443,67 @@ namespace ProblemSolving
             //}
 
             ////(23.) Merge k Sorted Lists (HARD)
-            ListNode listNode1 = new ListNode(1);
-            listNode1.next = new ListNode(4);
-            listNode1.next.next = new ListNode(5);
+            //ListNode listNode1 = new ListNode(1);
+            //listNode1.next = new ListNode(4);
+            //listNode1.next.next = new ListNode(5);
 
-            ListNode listNode2 = new ListNode(1);
-            listNode2.next = new ListNode(3);
-            listNode2.next.next = new ListNode(4);
+            //ListNode listNode2 = new ListNode(1);
+            //listNode2.next = new ListNode(3);
+            //listNode2.next.next = new ListNode(4);
 
-            ListNode listNode3 = new ListNode(2);
-            listNode3.next = new ListNode(6);
+            //ListNode listNode3 = new ListNode(2);
+            //listNode3.next = new ListNode(6);
 
-            ListNode[] lists = { listNode1, listNode2, listNode3 };
+            //ListNode[] lists = { listNode1, listNode2, listNode3 };
 
-            LeetCode_23 classLeetCode = new LeetCode_23();
+            //LeetCode_23 classLeetCode = new LeetCode_23();
 
-            ListNode result = classLeetCode.MergeKLists(lists);
+            //ListNode result = classLeetCode.MergeKLists(lists);
+
+            //while (result != null)
+            //{
+            //    Console.WriteLine(result.val);
+
+            //    result = result.next;
+            //}
+
+            //////OR
+
+            //ListNode result1 = leetCodeAll.MergeKLists(lists);
+
+            //while (result1 != null)
+            //{
+            //    Console.WriteLine(result1.val);
+
+            //    result1 = result1.next;
+            //}
+
+            ////(24.) Swap Nodes in Pairs (MEDIUM)
+            ListNode head = new ListNode(1);
+            head.next = new ListNode(2);
+            head.next.next = new ListNode(3);
+            head.next.next.next = new ListNode(4);
+
+            LeetCode_24 classLeetCode = new LeetCode_24();  
+            
+            ListNode result = classLeetCode.SwapPairs(head);
 
             while (result != null)
             {
                 Console.WriteLine(result.val);
-
-                result = result.next;
+                result = result.next;   
             }
 
             ////OR
-
-            ListNode result1 = leetCodeAll.MergeKLists(lists);
-
+            
+            ListNode result1 = leetCodeAll.SwapPairs(head);
             while (result1 != null)
             {
                 Console.WriteLine(result1.val);
-
                 result1 = result1.next;
             }
+
+
 
             ////(27.) Remove Element (EASY)
             //Console.WriteLine(leetCodeAll.RemoveElement([3,2,2,3], 3));
