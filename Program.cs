@@ -414,14 +414,6 @@ namespace ProblemSolving
             //    }
             //} while (endLoop);
 
-            //(26.) Remove Duplicates from Sorted Array (EASY)
-            //Console.WriteLine(leetCodeAll.RemoveDuplicates([1, 1, 2]));
-
-            ////OR
-
-            //LeetCode_26 classLeetCode = new LeetCode_26();
-            //Console.WriteLine(classLeetCode.RemoveDuplicates([1, 1, 2]));
-
             ////(22.) Generate Parentheses (MEDIUM)
             //int n = 5;
 
@@ -504,38 +496,62 @@ namespace ProblemSolving
             //}
 
             ////(25.) Reverse Nodes in k-Group (HARD)
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(2);
+            //head.next.next = new ListNode(3);
+            //head.next.next.next = new ListNode(4);
+            //int k = 2;
 
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(2);
-            head.next.next = new ListNode(3);
-            head.next.next.next = new ListNode(4);
-            int k = 2;
+            //LeetCode_25 classLeetCode = new LeetCode_25();
 
-            LeetCode_25 classLeetCode = new LeetCode_25();
+            //ListNode result = classLeetCode.ReverseKGroup(head, 2);
 
-            ListNode result = classLeetCode.ReverseKGroup(head, 2);
+            //while (result != null)
+            //{
+            //    Console.WriteLine(result.val);
+            //    result = result.next;
+            //}
 
-            while (result != null)
-            {
-                Console.WriteLine(result.val);
-                result = result.next;
-            }
+            //////OR
+
+            //ListNode result1 = leetCodeAll.ReverseKGroup(head, 2);
+            //while(result1 != null)
+            //{
+            //    Console.WriteLine(result1.val);
+            //    result1 = result1.next;
+            //}
+
+            //(26.) Remove Duplicates from Sorted Array (EASY)
+            //Console.WriteLine(leetCodeAll.RemoveDuplicates([1, 1, 2]));
 
             ////OR
 
-            ListNode result1 = leetCodeAll.ReverseKGroup(head, 2);
-            while(result1 != null)
-            {
-                Console.WriteLine(result1.val);
-                result1 = result1.next;
-            }
-
+            //LeetCode_26 classLeetCode = new LeetCode_26();
+            //Console.WriteLine(classLeetCode.RemoveDuplicates([1, 1, 2]));
 
             ////(27.) Remove Element (EASY)
             //Console.WriteLine(leetCodeAll.RemoveElement([3,2,2,3], 3));
 
             ////(28.) Find the Index of the First Occurrence in a String (EASY)
             //Console.WriteLine(leetCodeAll.StrStr("aaa", "aa"));
+
+            ////(29.) Divide Two Integers (MEDIUM)
+            int dividend = -1;
+            int divisor = 1;
+
+            LeetCode_29 classLeetCode = new LeetCode_29();
+
+            Console.WriteLine(classLeetCode.Divide(dividend, divisor));
+
+            ////OR
+
+            Console.WriteLine(leetCodeAll.Divide(dividend, divisor));
+
+
+
+
+
+
 
             ////(35.) Search Insert Position (EASY)
             //Console.WriteLine(leetCodeAll.SearchInsert([1, 3, 5, 6], 7));
