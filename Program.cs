@@ -423,23 +423,59 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.RemoveDuplicates([1, 1, 2]));
 
             ////(22.) Generate Parentheses (MEDIUM)
-            int n = 5;
-            
-            LeetCode_22 classLeetCode = new LeetCode_22();
-            IList<string> result = classLeetCode.GenerateParenthesis(n);
+            //int n = 5;
 
-            foreach (string s in result) 
+            //LeetCode_22 classLeetCode = new LeetCode_22();
+            //IList<string> result = classLeetCode.GenerateParenthesis(n);
+
+            //foreach (string s in result) 
+            //{
+            //    Console.WriteLine(s);
+            //}
+
+            //////OR
+
+            //IList<string> result1 = leetCodeAll.GenerateParenthesis(n);
+
+            //foreach (string s in result1) 
+            //{
+            //    Console.WriteLine(s);
+            //}
+
+            ////(23.) Merge k Sorted Lists (HARD)
+            ListNode listNode1 = new ListNode(1);
+            listNode1.next = new ListNode(4);
+            listNode1.next.next = new ListNode(5);
+
+            ListNode listNode2 = new ListNode(1);
+            listNode2.next = new ListNode(3);
+            listNode2.next.next = new ListNode(4);
+
+            ListNode listNode3 = new ListNode(2);
+            listNode3.next = new ListNode(6);
+
+            ListNode[] lists = { listNode1, listNode2, listNode3 };
+
+            LeetCode_23 classLeetCode = new LeetCode_23();
+
+            ListNode result = classLeetCode.MergeKLists(lists);
+
+            while (result != null)
             {
-                Console.WriteLine(s);
+                Console.WriteLine(result.val);
+
+                result = result.next;
             }
 
             ////OR
 
-            IList<string> result1 = leetCodeAll.GenerateParenthesis(n);
+            ListNode result1 = leetCodeAll.MergeKLists(lists);
 
-            foreach (string s in result1) 
+            while (result1 != null)
             {
-                Console.WriteLine(s);
+                Console.WriteLine(result1.val);
+
+                result1 = result1.next;
             }
 
             ////(27.) Remove Element (EASY)
