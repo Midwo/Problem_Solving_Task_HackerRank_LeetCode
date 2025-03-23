@@ -536,21 +536,38 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.StrStr("aaa", "aa"));
 
             ////(29.) Divide Two Integers (MEDIUM)
-            int dividend = -1;
-            int divisor = 1;
+            //int dividend = -1;
+            //int divisor = 1;
 
-            LeetCode_29 classLeetCode = new LeetCode_29();
+            //LeetCode_29 classLeetCode = new LeetCode_29();
 
-            Console.WriteLine(classLeetCode.Divide(dividend, divisor));
+            //Console.WriteLine(classLeetCode.Divide(dividend, divisor));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.Divide(dividend, divisor));
+
+            ////(30.) Substring with Concatenation of All Words (HARD)
+            string s = "barfoothefoobarman";
+            string[] words = ["foo", "bar"];
+
+            LeetCode_30 classLeetCode = new LeetCode_30();
+
+            IList<int> result = classLeetCode.FindSubstring(s, words);
+
+            foreach (int i in result) 
+            {
+                Console.WriteLine(i);
+            }
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.Divide(dividend, divisor));
+            IList<int> result1 = leetCodeAll.FindSubstring(s, words);
 
-
-
-
-
+            foreach (int i in result1)
+            {
+                Console.WriteLine(i);
+            }
 
 
             ////(35.) Search Insert Position (EASY)
