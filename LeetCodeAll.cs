@@ -3846,7 +3846,133 @@ namespace ProblemSolving
             }
             return result;
         }
+        public void NextPermutation(int[] nums)
+        {
+            int countNums = nums.Length;
+            bool noChanges = true;
+            if (countNums > 1)
+            {
+                int lastIndexValue = nums.Length - 1;
 
+                int maxValue = nums[lastIndexValue];
+                int indexMaxValue = lastIndexValue;
+
+                int minValue = nums[lastIndexValue];
+                int indexMinValue = lastIndexValue;
+                int howManyNoChanges = 0;
+                bool newMinValue = false;
+                bool none = false;
+
+                for (int i = lastIndexValue - 1; i >= 0; i--)
+                {
+                    if (nums[i + 1] > nums[i])
+                    {
+                        if (nums[i + 1] >= maxValue)
+                        {
+                            maxValue = nums[i + 1];
+                            indexMaxValue = i + 1;
+                            for (int j = lastIndexValue; j >= i; j--)
+                            {
+                                if (nums[i] < nums[j])
+                                {
+                                    if (nums[j] <= maxValue)
+                                    {
+                                        minValue = nums[j];
+                                        indexMaxValue = j;
+                                        none = true;
+                                    }
+                                }
+                            }
+                        }
+                        noChanges = false;
+                        if (howManyNoChanges > 0 && none)
+                        {
+                            for (int j = lastIndexValue; j >= i; j--)
+                            {
+                                if (nums[i] < nums[j])
+                                {
+                                    if (nums[j] <= minValue)
+                                    {
+                                        minValue = nums[j];
+                                        indexMinValue = j;
+                                        newMinValue = true;
+                                    }
+                                }
+                            }
+                            if (newMinValue)
+                            {
+                                nums[indexMinValue] = nums[i];
+                                nums[i] = minValue;
+                                Array.Sort(nums, i + 1, lastIndexValue - i);
+                                break;
+                            }
+                        }
+                        nums[indexMaxValue] = nums[i];
+                        nums[i] = maxValue;
+                        Array.Sort(nums, i + 1, countNums - (i + 1));
+                        break;
+                    }
+                    else
+                    {
+                        howManyNoChanges++;
+                    }
+                }
+                if (noChanges)
+                {
+                    Array.Sort(nums);
+                }
+                Console.WriteLine(string.Join(',', nums));
+            }
+        }
+        public int LongestValidParentheses(string s)
+        {
+            ////"(()"
+            //// string s = ")()())"; 
+            int maxValue = 0;
+            int maxValueFromBehind = 0;
+            int leftBracket = 0;
+            int leftBracketFromBehind = 0;
+            int rightBracket = 0;
+            int rightBracketFromBehind = 0;
+            int lastIndexS = s.Length - 1;
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == '(')
+                {
+                    leftBracket++;
+                }
+                else
+                {
+                    rightBracket++;
+                }
+                if (leftBracket == rightBracket)
+                {
+                    maxValue = Math.Max(maxValue, rightBracket * 2);
+                }
+                else if (rightBracket > leftBracket)
+                {
+                    leftBracket = rightBracket = 0;
+                }
+
+                if (s[lastIndexS - i] == '(')
+                {
+                    leftBracketFromBehind++;
+                }
+                else
+                {
+                    rightBracketFromBehind++;
+                }
+                if (leftBracketFromBehind == rightBracketFromBehind)
+                {
+                    maxValueFromBehind = Math.Max(maxValueFromBehind, leftBracketFromBehind * 2);
+                }
+                else if (leftBracketFromBehind > rightBracketFromBehind)
+                {
+                    leftBracketFromBehind = rightBracketFromBehind = 0;
+                }
+            }
+            return Math.Max(maxValue, maxValueFromBehind);
+        }
 
 
 

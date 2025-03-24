@@ -548,26 +548,48 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.Divide(dividend, divisor));
 
             ////(30.) Substring with Concatenation of All Words (HARD)
-            string s = "barfoothefoobarman";
-            string[] words = ["foo", "bar"];
+            //string s = "barfoothefoobarman";
+            //string[] words = ["foo", "bar"];
 
-            LeetCode_30 classLeetCode = new LeetCode_30();
+            //LeetCode_30 classLeetCode = new LeetCode_30();
 
-            IList<int> result = classLeetCode.FindSubstring(s, words);
+            //IList<int> result = classLeetCode.FindSubstring(s, words);
 
-            foreach (int i in result) 
-            {
-                Console.WriteLine(i);
-            }
+            //foreach (int i in result) 
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //////OR
+
+            //IList<int> result1 = leetCodeAll.FindSubstring(s, words);
+
+            //foreach (int i in result1)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            ////(31.) Next Permutation (MEDIUM)
+            //int[] nums = [1, 2, 3];
+
+            //LeetCode_31 classLeetCode = new LeetCode_31();
+
+            //classLeetCode.NextPermutation(nums);
+
+            //////OR
+            
+            //leetCodeAll.NextPermutation(nums);
+
+            ////(32.) Longest Valid Parentheses (HARD)
+            string s = "(()";            
+            
+            LeetCode_32 classLeetCode = new LeetCode_32();
+            Console.WriteLine(classLeetCode.LongestValidParentheses(s));
 
             ////OR
 
-            IList<int> result1 = leetCodeAll.FindSubstring(s, words);
+            Console.WriteLine(leetCodeAll.LongestValidParentheses(s));
 
-            foreach (int i in result1)
-            {
-                Console.WriteLine(i);
-            }
 
 
             ////(35.) Search Insert Position (EASY)
