@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.SqlTypes;
+using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Net.WebSockets;
@@ -577,18 +578,69 @@ namespace ProblemSolving
             //classLeetCode.NextPermutation(nums);
 
             //////OR
-            
+
             //leetCodeAll.NextPermutation(nums);
 
             ////(32.) Longest Valid Parentheses (HARD)
-            string s = "(()";            
-            
-            LeetCode_32 classLeetCode = new LeetCode_32();
-            Console.WriteLine(classLeetCode.LongestValidParentheses(s));
+            //string s = "(()";            
+
+            //LeetCode_32 classLeetCode = new LeetCode_32();
+            //Console.WriteLine(classLeetCode.LongestValidParentheses(s));
+
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.LongestValidParentheses(s));
+
+            ////(33.) Search in Rotated Sorted Array (MEDIUM)
+            ////int[] nums = [0, 1, 2, 4, 5, 6, 7];
+            //int[] nums = [283, 287, 288, 294, 295, 299, 0, 1, 2, 6, 12, 14, 17, 20, 24, 26, 33, 35, 38, 42, 46, 48, 50, 53, 56, 57, 58, 64, 66, 67, 69, 72, 75, 76, 78, 80, 81, 82, 83, 84, 90, 92, 93, 95, 99, 104, 108, 109, 112, 117, 122, 123, 124, 126, 130, 144, 145, 147, 152, 160, 164, 166, 168, 172, 173, 174, 176, 180, 181, 182, 183, 187, 188, 192, 195, 196, 197, 199, 200, 203, 207, 208, 212, 214, 217, 219, 222, 234, 239, 240, 241, 242, 245, 246, 248, 252, 254, 255, 256, 258, 262, 264, 266, 267, 269, 272, 273, 274, 280, 281];
+            //////[4, 5, 6, 7, 0, 1, 2];
+            ////int target = 5;
+            //int target = 144;
+            //LeetCode_33 classLeetCode = new LeetCode_33();
+
+            //Console.WriteLine(classLeetCode.Search(nums, target));
 
             ////OR
 
-            Console.WriteLine(leetCodeAll.LongestValidParentheses(s));
+            //Console.WriteLine(leetCodeAll.Search(nums, target));
+
+
+            ////(34.) Find First and Last Position of Element in Sorted Array (MEDIUM)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
