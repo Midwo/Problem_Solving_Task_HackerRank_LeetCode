@@ -50,6 +50,19 @@ namespace ProblemSolving.LeetCode
             {
                 return -1;
             }
+
+            List<int> list = new List<int>(nums);
+
+            ////OR solution: 
+            //int result = list.IndexOf(target);
+            //if (result != -1) 
+            //{
+            //    return result;
+            //}
+            //else
+            //{
+            //    return -1;
+            //}
         }
     }
 }

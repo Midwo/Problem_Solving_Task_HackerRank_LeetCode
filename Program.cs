@@ -601,17 +601,33 @@ namespace ProblemSolving
 
             //Console.WriteLine(classLeetCode.Search(nums, target));
 
-            ////OR
+            //////OR
 
-            //Console.WriteLine(leetCodeAll.Search(nums, target));
+            ////Console.WriteLine(leetCodeAll.Search(nums, target));
 
 
             ////(34.) Find First and Last Position of Element in Sorted Array (MEDIUM)
 
+            int[] nums = [5, 7, 7, 8, 8, 10];
+            int target = 8;
 
+            LeetCode_34 classLeetCode = new LeetCode_34();
 
+            int[] result = classLeetCode.SearchRange(nums, target);
 
+            foreach (int i in result)
+            {
+                Console.WriteLine(i);
+            }
 
+            ////OR
+
+            int[] result1 = leetCodeAll.SearchRange(nums, target);
+
+            foreach (int i in result1)
+            {
+                Console.WriteLine(i);
+            }
 
 
 
