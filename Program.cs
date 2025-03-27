@@ -608,57 +608,26 @@ namespace ProblemSolving
 
             ////(34.) Find First and Last Position of Element in Sorted Array (MEDIUM)
 
-            int[] nums = [5, 7, 7, 8, 8, 10];
-            int target = 8;
+            //int[] nums = [5, 7, 7, 8, 8, 10];
+            //int target = 8;
 
-            LeetCode_34 classLeetCode = new LeetCode_34();
+            //LeetCode_34 classLeetCode = new LeetCode_34();
 
-            int[] result = classLeetCode.SearchRange(nums, target);
+            //int[] result = classLeetCode.SearchRange(nums, target);
 
-            foreach (int i in result)
-            {
-                Console.WriteLine(i);
-            }
+            //foreach (int i in result)
+            //{
+            //    Console.WriteLine(i);
+            //}
 
-            ////OR
+            //////OR
 
-            int[] result1 = leetCodeAll.SearchRange(nums, target);
+            //int[] result1 = leetCodeAll.SearchRange(nums, target);
 
-            foreach (int i in result1)
-            {
-                Console.WriteLine(i);
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            //foreach (int i in result1)
+            //{
+            //    Console.WriteLine(i);
+            //}
 
             ////(35.) Search Insert Position (EASY)
             //Console.WriteLine(leetCodeAll.SearchInsert([1, 3, 5, 6], 7));
@@ -1878,8 +1847,30 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ArrayPairSum(nums));
 
+            ////(566.) Reshape the Matrix (EASY)
+            //int[][] mat = [[1, 2], [3, 4]];
+            //int r = 1;
+            //int c = 4;
 
+            //int[][] mat = [[1, 2], [3, 4]];
+            //int r = 4;
+            //int c = 1;
+            //LeetCode_566 classLeetCode = new LeetCode_566();
 
+            //int[][] result = classLeetCode.MatrixReshape(mat, r, c);
+
+            //foreach (var item in result) 
+            //{
+            //    Console.WriteLine(string.Join(",", item));
+            //}
+
+            //////OR
+            //int[][] result1 = leetCodeAll.MatrixReshape(mat, r, c);
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(string.Join(",", item));
+            //}
 
 
 
