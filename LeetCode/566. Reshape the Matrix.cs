@@ -15,31 +15,30 @@ namespace ProblemSolving.LeetCode
             //Console.WriteLine(countMat);
             int lengthMat = mat[0].Length;
 
-            if (countMat*lengthMat != r * c)
+            if (countMat * lengthMat != r * c)
             {
                 return mat;
             }
-            int[][] resultTable = new int [r][];
-            
-            int CurrR = 0;
-            int CurrC = 0;
+            int[][] resultTable = new int[r][];
+
+            int currR = 0;
+            int currC = 0;
 
             for (int i = 0; i < r; i++)
             {
                 int[] currTable = new int[c];
                 for (int j = 0; j < c; j++)
                 {
-                    currTable[j] = mat[CurrR][CurrC];
-                    CurrC++;
-                    if (CurrC == lengthMat)
+                    currTable[j] = mat[currR][currC];
+                    currC++;
+                    if (currC == lengthMat)
                     {
-                        CurrR++;
-                        CurrC = 0;
+                        currR++;
+                        currC = 0;
                     }
                 }
                 resultTable[i] = currTable;
             }
-
             return resultTable;
         }
     }
