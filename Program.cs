@@ -1872,9 +1872,16 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(",", item));
             //}
 
+            ////(575.) Distribute Candies (EASY)
+            int[] candyType = [1, 1, 2, 2, 3, 3];
 
+            LeetCode_575 classLeetCode = new LeetCode_575();
 
+            Console.WriteLine(classLeetCode.DistributeCandies(candyType));
 
+            ////OR
+
+            Console.WriteLine(leetCodeAll.DistributeCandies(candyType));
 
 
 
