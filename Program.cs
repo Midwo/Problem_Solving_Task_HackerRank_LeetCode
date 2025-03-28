@@ -1873,17 +1873,21 @@ namespace ProblemSolving
             //}
 
             ////(575.) Distribute Candies (EASY)
-            int[] candyType = [1, 1, 2, 2, 3, 3];
+            //int[] candyType = [1, 1, 2, 2, 3, 3];
 
-            LeetCode_575 classLeetCode = new LeetCode_575();
+            //LeetCode_575 classLeetCode = new LeetCode_575();
 
-            Console.WriteLine(classLeetCode.DistributeCandies(candyType));
+            //Console.WriteLine(classLeetCode.DistributeCandies(candyType));
 
-            ////OR
+            //////OR
 
-            Console.WriteLine(leetCodeAll.DistributeCandies(candyType));
+            //Console.WriteLine(leetCodeAll.DistributeCandies(candyType));
 
-
+            ///(577.) Employee Bonus (EASY)
+            LeetCode_577 classLeetCode = new LeetCode_577();
+            //OR
+            leetCodeAll.LeetCode_577();
+ 
 
 
 
