@@ -1894,9 +1894,36 @@ namespace ProblemSolving
             //leetCodeAll.LeetCode_584();
 
             ////(586.) Customer Placing the Largest Number of Orders (EASY)
-            LeetCode_586 classLeetCode = new LeetCode_586();
+            //LeetCode_586 classLeetCode = new LeetCode_586();
+            //////OR
+            //leetCodeAll.LeetCode_586();
+
+            ////(594.) Longest Harmonious Subsequence (EASY)
+            ////int[] nums = [1, 3, 2, 2, 5, 2, 3, 7];
+            ////int[] nums = [1, 2, 3, 3, 1, -14, 13, 4];
+            int[] nums = [1, 2, 3, 4, 6, 5, -5, 10, -1, -2, 5, 4, 4, -1, 7];
+            ////int[] nums = [1, 4, 1, 3, 1, -14, 1, -13];
+            LeetCode_594 classLeetCode = new LeetCode_594();
+
+            Console.WriteLine(classLeetCode.FindLHS(nums));
+
             ////OR
-            leetCodeAll.LeetCode_586();
+
+            Console.WriteLine(leetCodeAll.FindLHS(nums));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
