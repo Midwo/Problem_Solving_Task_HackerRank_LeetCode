@@ -1889,9 +1889,19 @@ namespace ProblemSolving
             //leetCodeAll.LeetCode_577();
 
             ////(584.) Find Customer Referee (EASY)
-            LeetCode_584 classLeetCode = new LeetCode_584();
-            //OR
-            leetCodeAll.LeetCode_584();
+            //LeetCode_584 classLeetCode = new LeetCode_584();
+            ////OR
+            //leetCodeAll.LeetCode_584();
+
+            ////(586.) Customer Placing the Largest Number of Orders (EASY)
+            LeetCode_586 classLeetCode = new LeetCode_586();
+            ////OR
+            leetCodeAll.LeetCode_586();
+
+
+
+
+
 
 
 
