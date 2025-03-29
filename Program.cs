@@ -1883,12 +1883,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.DistributeCandies(candyType));
 
-            ///(577.) Employee Bonus (EASY)
-            LeetCode_577 classLeetCode = new LeetCode_577();
-            //OR
-            leetCodeAll.LeetCode_577();
- 
+            ////(577.) Employee Bonus (EASY)
+            //LeetCode_577 classLeetCode = new LeetCode_577();
+            ////OR
+            //leetCodeAll.LeetCode_577();
 
+            ////(584.) Find Customer Referee (EASY)
+            LeetCode_584 classLeetCode = new LeetCode_584();
+            //OR
+            leetCodeAll.LeetCode_584();
 
 
 

@@ -4119,7 +4119,17 @@ namespace ProblemSolving
             //On a.empId = b.empId
             //where a.bonus< 1000 or a.bonus is null
         }
+        public void LeetCode_584()
+        {
+            ////(584.) Find Customer Referee (EASY)
 
+            ////T-SQL query CODE - MS SQL */
+
+            //Select
+            //    name
+            //From Customer
+            //Where referee_id != 2 or referee_id is null
+        }
 
 
 
