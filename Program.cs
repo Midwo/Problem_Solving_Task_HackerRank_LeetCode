@@ -1918,13 +1918,23 @@ namespace ProblemSolving
             ////OR
             //leetCodeAll.LeetCode_595();
 
-            ////(596.) Classes More Than 5 Students (EASY)
-            LeetCode_596 classLeetCode = new LeetCode_596();
-            //OR
-            leetCodeAll.LeetCode_596();
+            //////(596.) Classes More Than 5 Students (EASY)
+            //LeetCode_596 classLeetCode = new LeetCode_596();
+            ////OR
+            //leetCodeAll.LeetCode_596();
 
+            ////(598.) Range Addition II (EASY)
 
+            int m = 3;
+            int n = 3;
+            int[][] ops = [[2, 2], [3, 3], [3, 3], [3, 3], [2, 2], [3, 3], [3, 3], [3, 3], [2, 2], [3, 3], [3, 3], [3, 3]];
 
+            LeetCode_598 classLeetCode = new LeetCode_598();
+            Console.WriteLine(classLeetCode.MaxCount(m, n, ops));
+
+            ////OR
+
+            Console.WriteLine(leetCodeAll.MaxCount(m, n, ops));
 
 
 
