@@ -1901,18 +1901,21 @@ namespace ProblemSolving
             ////(594.) Longest Harmonious Subsequence (EASY)
             ////int[] nums = [1, 3, 2, 2, 5, 2, 3, 7];
             ////int[] nums = [1, 2, 3, 3, 1, -14, 13, 4];
-            int[] nums = [1, 2, 3, 4, 6, 5, -5, 10, -1, -2, 5, 4, 4, -1, 7];
-            ////int[] nums = [1, 4, 1, 3, 1, -14, 1, -13];
-            LeetCode_594 classLeetCode = new LeetCode_594();
+            //int[] nums = [1, 2, 3, 4, 6, 5, -5, 10, -1, -2, 5, 4, 4, -1, 7];
+            //////int[] nums = [1, 4, 1, 3, 1, -14, 1, -13];
+            //LeetCode_594 classLeetCode = new LeetCode_594();
 
-            Console.WriteLine(classLeetCode.FindLHS(nums));
+            //Console.WriteLine(classLeetCode.FindLHS(nums));
 
-            ////OR
+            //////OR
 
-            Console.WriteLine(leetCodeAll.FindLHS(nums));
+            //Console.WriteLine(leetCodeAll.FindLHS(nums));
 
+            ////(595.) Big Countries (EASY)
 
-
+            LeetCode_595 classLeetCode = new LeetCode_595();
+            //OR
+            leetCodeAll.LeetCode_595();
 
 
 
