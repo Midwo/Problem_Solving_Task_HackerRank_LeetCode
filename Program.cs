@@ -1,5 +1,6 @@
 ﻿using ProblemSolving.LeetCode;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.SqlTypes;
@@ -1925,16 +1926,40 @@ namespace ProblemSolving
 
             ////(598.) Range Addition II (EASY)
 
-            int m = 3;
-            int n = 3;
-            int[][] ops = [[2, 2], [3, 3], [3, 3], [3, 3], [2, 2], [3, 3], [3, 3], [3, 3], [2, 2], [3, 3], [3, 3], [3, 3]];
+            //int m = 3;
+            //int n = 3;
+            //int[][] ops = [[2, 2], [3, 3], [3, 3], [3, 3], [2, 2], [3, 3], [3, 3], [3, 3], [2, 2], [3, 3], [3, 3], [3, 3]];
 
-            LeetCode_598 classLeetCode = new LeetCode_598();
-            Console.WriteLine(classLeetCode.MaxCount(m, n, ops));
+            //LeetCode_598 classLeetCode = new LeetCode_598();
+            //Console.WriteLine(classLeetCode.MaxCount(m, n, ops));
 
-            ////OR
+            //////OR
 
-            Console.WriteLine(leetCodeAll.MaxCount(m, n, ops));
+            //Console.WriteLine(leetCodeAll.MaxCount(m, n, ops));
+
+            ////(599.) Minimum Index Sum of Two Lists (EASY)
+            string[] list1 = ["happy", "sad", "good"];
+            string[] list2 = ["sad", "happy", "good"];
+
+            LeetCode_599 classLeetCode = new LeetCode_599();
+
+            string[] result = classLeetCode.FindRestaurant(list1, list2);
+
+            foreach (string s in result)
+            {
+                Console.WriteLine(s);
+            }
+
+            //OR 
+
+            string[] result1 = leetCodeAll.FindRestaurant(list1, list2);
+
+            foreach (string s in result1)
+            {
+                Console.WriteLine(s);
+            }
+
+
 
 
 
