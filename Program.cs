@@ -9,6 +9,7 @@ using System.Net;
 using System.Net.WebSockets;
 using System.Numerics;
 using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
@@ -1913,9 +1914,20 @@ namespace ProblemSolving
 
             ////(595.) Big Countries (EASY)
 
-            LeetCode_595 classLeetCode = new LeetCode_595();
+            //LeetCode_595 classLeetCode = new LeetCode_595();
+            ////OR
+            //leetCodeAll.LeetCode_595();
+
+            ////(596.) Classes More Than 5 Students (EASY)
+            LeetCode_596 classLeetCode = new LeetCode_596();
             //OR
-            leetCodeAll.LeetCode_595();
+            leetCodeAll.LeetCode_596();
+
+
+
+
+
+
 
 
 

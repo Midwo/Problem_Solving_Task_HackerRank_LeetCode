@@ -4286,6 +4286,36 @@ namespace ProblemSolving
             //From World
             //Where[population] >= 25000000 or[area] >= 3000000
         }
+        public void LeetCode_596()
+        {
+            ////(596.) Classes More Than 5 Students (EASY)
+
+            ////T-SQL query CODE - MS SQL */
+
+            //Select
+            //    [class]
+            //FROM(
+            //     Select
+            //        [class],
+            //        COUNT([class]) as [howMany]
+            //     From Courses
+            //     Group by[class] ) as a
+            //Where[howMany] >= 5
+
+
+            ////OR 
+
+            //Select
+            //    [class]
+            //FROM Courses
+            //GROUP BY class
+            //HAVING COUNT(DISTINCT student) >= 5
+
+        }
+
+
+
+
 
 
 
