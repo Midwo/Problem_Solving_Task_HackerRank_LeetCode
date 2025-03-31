@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.SqlTypes;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Net;
@@ -1938,29 +1939,44 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxCount(m, n, ops));
 
             ////(599.) Minimum Index Sum of Two Lists (EASY)
-            string[] list1 = ["happy", "sad", "good"];
-            string[] list2 = ["sad", "happy", "good"];
+            //string[] list1 = ["happy", "sad", "good"];
+            //string[] list2 = ["sad", "happy", "good"];
 
-            LeetCode_599 classLeetCode = new LeetCode_599();
+            //LeetCode_599 classLeetCode = new LeetCode_599();
 
-            string[] result = classLeetCode.FindRestaurant(list1, list2);
+            //string[] result = classLeetCode.FindRestaurant(list1, list2);
 
-            foreach (string s in result)
-            {
-                Console.WriteLine(s);
-            }
+            //foreach (string s in result)
+            //{
+            //    Console.WriteLine(s);
+            //}
 
-            //OR 
+            ////OR 
 
-            string[] result1 = leetCodeAll.FindRestaurant(list1, list2);
+            //string[] result1 = leetCodeAll.FindRestaurant(list1, list2);
 
-            foreach (string s in result1)
-            {
-                Console.WriteLine(s);
-            }
+            //foreach (string s in result1)
+            //{
+            //    Console.WriteLine(s);
+            //}
 
+            ////(605.) Can Place Flowers (EASY)
+            //int[] flowerbed = [0];
+            //int n = 1;
 
+            //LeetCode_605 classLeetCode = new LeetCode_605();
+            //Console.WriteLine(classLeetCode.CanPlaceFlowers(flowerbed, n));
 
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.CanPlaceFlowers(flowerbed, n));
+
+            ////(607.) Sales Person (EASY)
+            LeetCode_607 classLeetCode = new LeetCode_607();
+
+            //OR
+
+            leetCodeAll.LeetCode_607();
 
 
 

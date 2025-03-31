@@ -4386,10 +4386,83 @@ namespace ProblemSolving
             }
             return resultList.ToArray();
         }
+        public bool CanPlaceFlowers(int[] flowerbed, int n)
+        {
+            bool firstEmpty = flowerbed[0] == 0 ? true : false;
+            int emptyDistance = 0;
+            for (int i = 0; i < flowerbed.Length; i++)
+            {
+                if (flowerbed[i] == 1)
+                {
+                    if (firstEmpty)
+                    {
+                        n -= emptyDistance / 2;
+                        emptyDistance = 0;
+                        firstEmpty = false;
+                    }
+                    else
+                    {
+                        if (emptyDistance >= 3)
+                        {
+                            while (emptyDistance >= 3)
+                            {
+                                --n;
+                                emptyDistance -= 2;
+                            }
+                            //n -= emptyDistance / 3;                       
+                        }
+                        emptyDistance = 0;
+                    }
+                }
+                else
+                {
+                    emptyDistance++;
+                    if (i >= 1 && firstEmpty)
+                    {
+                        emptyDistance = 1;
+                        --n;
+                        firstEmpty = false;
+                    }
+                }
+                if (n <= 0)
+                {
+                    return true;
+                }
+            }
+            if (emptyDistance > 0 && firstEmpty)
+            {
+                if (flowerbed.Length == 1)
+                {
+                    return true;
+                }
+            }
+            if (emptyDistance >= 2)
+            {
+                n -= emptyDistance / 2;
+                if (n <= 0)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public void LeetCode_607()
+        {
+            ////(607.) Sales Person (EASY)
 
+            ////T-SQL query CODE - MS SQL */
 
-
-
+            //Select
+            //    a.name
+            //    FROM SalesPerson as a
+            //    Where sales_id NOT IN
+            //                       (Select
+            //                            a.sales_id
+            //                        FROM Orders as a
+            //                        INNER JOIN Company as b
+            //                        ON b.com_id = a.com_id
+            //                        Where b.name = 'RED')
+        }
 
 
 
