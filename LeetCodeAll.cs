@@ -4463,6 +4463,21 @@ namespace ProblemSolving
             //                        ON b.com_id = a.com_id
             //                        Where b.name = 'RED')
         }
+        public void LeetCode_610()
+        {
+            ////(610.) Triangle Judgement (EASY)
+
+            ////T-SQL query CODE - MS SQL */
+
+            //SELECT
+            //    x,
+            //    y,
+            //    z,
+            //    iif(x+y>z and x+z > y and y+z>x, 'Yes', 'No') as triangle
+            //FROM Triangl
+
+        }
+
 
 
 

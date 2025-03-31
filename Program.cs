@@ -1972,11 +1972,18 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanPlaceFlowers(flowerbed, n));
 
             ////(607.) Sales Person (EASY)
-            LeetCode_607 classLeetCode = new LeetCode_607();
+            //LeetCode_607 classLeetCode = new LeetCode_607();
+
+            ////OR
+
+            //leetCodeAll.LeetCode_607();
+
+            //(610.) Triangle Judgement (EASY)
+            LeetCode_610 classLeetCode = new LeetCode_610();
 
             //OR
 
-            leetCodeAll.LeetCode_607();
+            leetCodeAll.LeetCode_610();
 
 
 
