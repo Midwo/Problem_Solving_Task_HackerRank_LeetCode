@@ -1979,11 +1979,20 @@ namespace ProblemSolving
             //leetCodeAll.LeetCode_607();
 
             //(610.) Triangle Judgement (EASY)
-            LeetCode_610 classLeetCode = new LeetCode_610();
+            //LeetCode_610 classLeetCode = new LeetCode_610();
+
+            ////OR
+
+            //leetCodeAll.LeetCode_610();
+
+            ////(619.) Biggest Single Number (EASY)
+
+            LeetCode_619 classLeetCode = new LeetCode_619();
 
             //OR
 
-            leetCodeAll.LeetCode_610();
+            leetCodeAll.LeetCode_619();
+
 
 
 

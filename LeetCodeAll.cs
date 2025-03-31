@@ -4477,8 +4477,23 @@ namespace ProblemSolving
             //FROM Triangl
 
         }
+        public void LeetCode_619()
+        {
+            ////(619.) Biggest Single Number (EASY)
 
+            ////T-SQL query CODE - MS SQL */
 
+            //SELECT
+            //    max(num) as num
+            //FROM(
+            //    SELECT
+            //        num
+            //    FROM MyNumbers
+            //    GROUP BY num
+            //    HAVING count(num) = 1
+            //    ) as a
+
+        }
 
 
 
