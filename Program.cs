@@ -17,6 +17,7 @@ using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
 using static ProblemSolving.LeetCode.LeetCode_303;
 using static ProblemSolving.LeetCodeAll;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProblemSolving
 {
@@ -1987,11 +1988,21 @@ namespace ProblemSolving
 
             ////(619.) Biggest Single Number (EASY)
 
-            LeetCode_619 classLeetCode = new LeetCode_619();
+            //LeetCode_619 classLeetCode = new LeetCode_619();
+
+            ////OR
+
+            //leetCodeAll.LeetCode_619();
+
+            ////(620.) Not Boring Movies (EASY)
+            LeetCode_620 classLeetCode = new LeetCode_620();
 
             //OR
 
-            leetCodeAll.LeetCode_619();
+            leetCodeAll.LeetCode_620();
+
+
+
 
 
 

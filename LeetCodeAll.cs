@@ -4494,6 +4494,26 @@ namespace ProblemSolving
             //    ) as a
 
         }
+        public void LeetCode_620()
+        {
+            ////(620.) Not Boring Movies (EASY)
+
+            ////T-SQL query CODE - MS SQL */
+
+            //SELECT
+            //    id,
+            //    movie,
+            //    description,
+            //    rating
+            //FROM Cinema
+            //Where description != 'boring' and id%2=1
+            //order by rating desc
+
+        }
+
+
+
+
 
 
 
