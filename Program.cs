@@ -2020,16 +2020,34 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumProduct(nums));
 
             ////643.Maximum Average Subarray I (EASY)
-            int[] nums = [1, 12, -5, -6, 50, 3];
-            int k = 4;
+            //int[] nums = [1, 12, -5, -6, 50, 3];
+            //int k = 4;
 
-            LeetCode_643 classLeetCode = new LeetCode_643();
+            //LeetCode_643 classLeetCode = new LeetCode_643();
 
-            Console.WriteLine(classLeetCode.FindMaxAverage(nums, k));
+            //Console.WriteLine(classLeetCode.FindMaxAverage(nums, k));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.FindMaxAverage(nums, k));
+
+            ////(645.) Set Mismatch (EASY)
+            int[] nums = [2, 2];
+
+            LeetCode_645 classLeetCode = new LeetCode_645();
+
+            int[] result = classLeetCode.FindErrorNums(nums);
+   
+            Console.WriteLine(string.Join(',', result));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.FindMaxAverage(nums, k));
+            int[] result1 = leetCodeAll.FindErrorNums(nums);
+
+            Console.WriteLine(string.Join(',', result1));
+            
+
+
 
 
 
