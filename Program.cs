@@ -1995,11 +1995,20 @@ namespace ProblemSolving
             //leetCodeAll.LeetCode_619();
 
             ////(620.) Not Boring Movies (EASY)
-            LeetCode_620 classLeetCode = new LeetCode_620();
+            //LeetCode_620 classLeetCode = new LeetCode_620();
+
+            ////OR
+
+            //leetCodeAll.LeetCode_620();
+
+            ////(627.) Swap Salary (EASY)
+            LeetCode_627 classLeetCode = new LeetCode_627();
 
             //OR
 
-            leetCodeAll.LeetCode_620();
+            leetCodeAll.LeetCode_627();
+
+
 
 
 
