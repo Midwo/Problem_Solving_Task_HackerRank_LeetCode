@@ -2009,19 +2009,27 @@ namespace ProblemSolving
             //leetCodeAll.LeetCode_627();
 
             ////(628.) Maximum Product of Three Numbers (EASY)
-            int[] nums = [-4, -3, -2, -1, 60];
+            //int[] nums = [-4, -3, -2, -1, 60];
 
-            LeetCode_628 classLeetCode = new LeetCode_628();
+            //LeetCode_628 classLeetCode = new LeetCode_628();
 
-            Console.WriteLine(classLeetCode.MaximumProduct(nums));
+            //Console.WriteLine(classLeetCode.MaximumProduct(nums));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaximumProduct(nums));
+
+            ////643.Maximum Average Subarray I (EASY)
+            int[] nums = [1, 12, -5, -6, 50, 3];
+            int k = 4;
+
+            LeetCode_643 classLeetCode = new LeetCode_643();
+
+            Console.WriteLine(classLeetCode.FindMaxAverage(nums, k));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MaximumProduct(nums));
-
-
-
-
+            Console.WriteLine(leetCodeAll.FindMaxAverage(nums, k));
 
 
 
