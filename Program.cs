@@ -2002,11 +2002,27 @@ namespace ProblemSolving
             //leetCodeAll.LeetCode_620();
 
             ////(627.) Swap Salary (EASY)
-            LeetCode_627 classLeetCode = new LeetCode_627();
+            //LeetCode_627 classLeetCode = new LeetCode_627();
+
+            ////OR
+
+            //leetCodeAll.LeetCode_627();
+
+            ////(628.) Maximum Product of Three Numbers (EASY)
+            int[] nums = [-4, -3, -2, -1, 60];
+
+            LeetCode_628 classLeetCode = new LeetCode_628();
+
+            Console.WriteLine(classLeetCode.MaximumProduct(nums));
 
             //OR
 
-            leetCodeAll.LeetCode_627();
+            Console.WriteLine(leetCodeAll.MaximumProduct(nums));
+
+
+
+
+
 
 
 
