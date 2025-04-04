@@ -2032,20 +2032,36 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindMaxAverage(nums, k));
 
             ////(645.) Set Mismatch (EASY)
-            int[] nums = [2, 2];
+            //int[] nums = [2, 2];
 
-            LeetCode_645 classLeetCode = new LeetCode_645();
+            //LeetCode_645 classLeetCode = new LeetCode_645();
 
-            int[] result = classLeetCode.FindErrorNums(nums);
-   
-            Console.WriteLine(string.Join(',', result));
+            //int[] result = classLeetCode.FindErrorNums(nums);
+
+            //Console.WriteLine(string.Join(',', result));
+
+            ////OR
+
+            //int[] result1 = leetCodeAll.FindErrorNums(nums);
+
+            //Console.WriteLine(string.Join(',', result1));
+
+            ////(657.) Robot Return to Origin (EASY)
+            string moves = "UD";
+
+            LeetCode_657 classLeetCode = new LeetCode_657();
+
+            Console.WriteLine(classLeetCode.JudgeCircle(moves));
 
             //OR
 
-            int[] result1 = leetCodeAll.FindErrorNums(nums);
+            Console.WriteLine(leetCodeAll.JudgeCircle(moves));
 
-            Console.WriteLine(string.Join(',', result1));
-            
+
+
+
+
+
 
 
 
