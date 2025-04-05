@@ -2100,15 +2100,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ValidPalindrome(s));
 
             ////(682.) Baseball Game (EASY)
-            string[] ops = ["5", "2", "C", "D", "+"];
+            //string[] ops = ["5", "2", "C", "D", "+"];
 
-            LeetCode_682 classLeetCode = new LeetCode_682();
+            //LeetCode_682 classLeetCode = new LeetCode_682();
 
-            Console.WriteLine(classLeetCode.CalPoints(ops));
+            //Console.WriteLine(classLeetCode.CalPoints(ops));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.CalPoints(ops));
+ 
+            ////(693.) Binary Number with Alternating Bits (EASY)
+            int n = 5;
+
+            LeetCode_693 classLeetCode = new LeetCode_693();
+            Console.WriteLine(classLeetCode.HasAlternatingBits(n));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.CalPoints(ops));
+            Console.WriteLine(leetCodeAll.HasAlternatingBits(n));
 
 
 
