@@ -2080,17 +2080,24 @@ namespace ProblemSolving
             //}
 
             ////(674.) Longest Continuous Increasing Subsequence (EASY)
-            int[] nums = [1, 3, 5, 4, 7];
+            //int[] nums = [1, 3, 5, 4, 7];
 
-            LeetCode_674 classLeetCode = new LeetCode_674();
-            Console.WriteLine(classLeetCode.FindLengthOfLCIS(nums));
+            //LeetCode_674 classLeetCode = new LeetCode_674();
+            //Console.WriteLine(classLeetCode.FindLengthOfLCIS(nums));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.FindLengthOfLCIS(nums)); 
+
+            ////(680.) Valid Palindrome II (EASY)
+            string s = "adffdslcupuupuculsdffda";
+
+            LeetCode_680 classLeetCode = new LeetCode_680();
+            Console.WriteLine(classLeetCode.ValidPalindrome(s));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.FindLengthOfLCIS(nums)); 
-
-
-
+            Console.WriteLine(leetCodeAll.ValidPalindrome(s));
 
 
 
