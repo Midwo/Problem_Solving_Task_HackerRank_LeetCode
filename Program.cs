@@ -2059,25 +2059,36 @@ namespace ProblemSolving
 
             ////(661.) Image Smoother (EASY)
             //int[][] img = [[100, 200, 100], [200, 50, 200], [100, 200, 100]];
-            int[][] img = [[100, 200, 100], [200, 50, 200], [100, 200, 100]];
+            //int[][] img = [[100, 200, 100], [200, 50, 200], [100, 200, 100]];
 
-            LeetCode_661 classLeetCode = new LeetCode_661();
+            //LeetCode_661 classLeetCode = new LeetCode_661();
 
-            int[][] result = classLeetCode.ImageSmoother(img);
+            //int[][] result = classLeetCode.ImageSmoother(img);
 
-            foreach (var item in result)
-            {
-                Console.WriteLine(string.Join(',',item));
-            }
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(string.Join(',',item));
+            //}
+
+            ////OR
+
+            //int[][] result1 = leetCodeAll.ImageSmoother(img);
+
+            //foreach (var item in result1) 
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
+
+            ////(674.) Longest Continuous Increasing Subsequence (EASY)
+            int[] nums = [1, 3, 5, 4, 7];
+
+            LeetCode_674 classLeetCode = new LeetCode_674();
+            Console.WriteLine(classLeetCode.FindLengthOfLCIS(nums));
 
             //OR
 
-            int[][] result1 = leetCodeAll.ImageSmoother(img);
+            Console.WriteLine(leetCodeAll.FindLengthOfLCIS(nums)); 
 
-            foreach (var item in result1) 
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
 
 
 
