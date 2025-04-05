@@ -2090,16 +2090,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindLengthOfLCIS(nums)); 
 
             ////(680.) Valid Palindrome II (EASY)
-            string s = "adffdslcupuupuculsdffda";
+            //string s = "adffdslcupuupuculsdffda";
 
-            LeetCode_680 classLeetCode = new LeetCode_680();
-            Console.WriteLine(classLeetCode.ValidPalindrome(s));
+            //LeetCode_680 classLeetCode = new LeetCode_680();
+            //Console.WriteLine(classLeetCode.ValidPalindrome(s));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.ValidPalindrome(s));
+
+            ////(682.) Baseball Game (EASY)
+            string[] ops = ["5", "2", "C", "D", "+"];
+
+            LeetCode_682 classLeetCode = new LeetCode_682();
+
+            Console.WriteLine(classLeetCode.CalPoints(ops));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.ValidPalindrome(s));
-
-
+            Console.WriteLine(leetCodeAll.CalPoints(ops));
 
 
 
