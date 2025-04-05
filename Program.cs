@@ -2047,20 +2047,37 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', result1));
 
             ////(657.) Robot Return to Origin (EASY)
-            string moves = "UD";
+            //string moves = "UD";
 
-            LeetCode_657 classLeetCode = new LeetCode_657();
+            //LeetCode_657 classLeetCode = new LeetCode_657();
 
-            Console.WriteLine(classLeetCode.JudgeCircle(moves));
+            //Console.WriteLine(classLeetCode.JudgeCircle(moves));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.JudgeCircle(moves));
+
+            ////(661.) Image Smoother (EASY)
+            //int[][] img = [[100, 200, 100], [200, 50, 200], [100, 200, 100]];
+            int[][] img = [[100, 200, 100], [200, 50, 200], [100, 200, 100]];
+
+            LeetCode_661 classLeetCode = new LeetCode_661();
+
+            int[][] result = classLeetCode.ImageSmoother(img);
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(string.Join(',',item));
+            }
 
             //OR
 
-            Console.WriteLine(leetCodeAll.JudgeCircle(moves));
+            int[][] result1 = leetCodeAll.ImageSmoother(img);
 
-
-
-
-
+            foreach (var item in result1) 
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
 
 
