@@ -2109,16 +2109,28 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CalPoints(ops));
- 
-            ////(693.) Binary Number with Alternating Bits (EASY)
-            int n = 5;
 
-            LeetCode_693 classLeetCode = new LeetCode_693();
-            Console.WriteLine(classLeetCode.HasAlternatingBits(n));
+            ////(693.) Binary Number with Alternating Bits (EASY)
+            //int n = 5;
+
+            //LeetCode_693 classLeetCode = new LeetCode_693();
+            //Console.WriteLine(classLeetCode.HasAlternatingBits(n));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.HasAlternatingBits(n));
+
+            ////(696.) Count Binary Substrings (EASY)
+            string s = "000111000";
+
+            LeetCode_696 classLeetCode = new LeetCode_696();
+            Console.WriteLine(classLeetCode.CountBinarySubstrings(s));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.HasAlternatingBits(n));
+            Console.WriteLine(leetCodeAll.CountBinarySubstrings(s));
+            
+
 
 
 
