@@ -2121,17 +2121,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.HasAlternatingBits(n));
 
             ////(696.) Count Binary Substrings (EASY)
-            string s = "000111000";
+            //string s = "000111000";
 
-            LeetCode_696 classLeetCode = new LeetCode_696();
-            Console.WriteLine(classLeetCode.CountBinarySubstrings(s));
+            //LeetCode_696 classLeetCode = new LeetCode_696();
+            //Console.WriteLine(classLeetCode.CountBinarySubstrings(s));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.CountBinarySubstrings(s));
+
+            ////(697.) Degree of an Array (EASY)
+            int[] nums = [1, 2, 2, 3, 1, 4, 2];
+            
+            LeetCode_697 classLeetCode = new LeetCode_697();
+            Console.WriteLine(classLeetCode.FindShortestSubArray(nums));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.CountBinarySubstrings(s));
-            
-
-
+            Console.WriteLine(leetCodeAll.FindShortestSubArray(nums));
 
 
 
