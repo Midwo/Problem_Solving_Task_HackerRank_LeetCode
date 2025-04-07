@@ -18,6 +18,7 @@ using static ProblemSolving.LeetCode.LeetCode_232;
 using static ProblemSolving.LeetCode.LeetCode_303;
 using static ProblemSolving.LeetCode.LeetCode_703;
 using static ProblemSolving.LeetCode.LeetCode_705;
+using static ProblemSolving.LeetCode.LeetCode_706;
 using static ProblemSolving.LeetCodeAll;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -2173,29 +2174,49 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.Search704(nums, target));
 
             ////(705.) Design HashSet (EASY)
-            MyHashSet classLeetCode = new MyHashSet();
-            classLeetCode.Add(1);
-            classLeetCode.Add(2);
-            classLeetCode.Contains(1);
-            classLeetCode.Contains(3);
-            classLeetCode.Add(2);
-            classLeetCode.Contains(2);
+            //MyHashSet classLeetCode = new MyHashSet();
+            //classLeetCode.Add(1);
+            //classLeetCode.Add(2);
+            //classLeetCode.Contains(1);
+            //classLeetCode.Contains(3);
+            //classLeetCode.Add(2);
+            //classLeetCode.Contains(2);
+            //classLeetCode.Remove(2);
+            //classLeetCode.Contains(2);
+
+            ////OR
+
+            //MyHashSet1 leetCodeAllDoc = new MyHashSet1();
+            //leetCodeAllDoc.Add(1);
+            //leetCodeAllDoc.Add(2);
+            //leetCodeAllDoc.Contains(1);
+            //leetCodeAllDoc.Contains(3);
+            //leetCodeAllDoc.Add(2);
+            //leetCodeAllDoc.Contains(2);
+            //leetCodeAllDoc.Remove(2);
+            //leetCodeAllDoc.Contains(2);
+
+            ////(706.) Design HashMap (EASY)
+            MyHashMap classLeetCode = new MyHashMap();
+            classLeetCode.Put(1, 1);
+            classLeetCode.Put(2, 2);
+            classLeetCode.Get(1);
+            classLeetCode.Get(3);
+            classLeetCode.Put(2, 1);
+            classLeetCode.Get(2);
             classLeetCode.Remove(2);
-            classLeetCode.Contains(2);
+            classLeetCode.Get(2);
 
             //OR
-
-            MyHashSet1 leetCodeAllDoc = new MyHashSet1();
-            leetCodeAllDoc.Add(1);
-            leetCodeAllDoc.Add(2);
-            leetCodeAllDoc.Contains(1);
-            leetCodeAllDoc.Contains(3);
-            leetCodeAllDoc.Add(2);
-            leetCodeAllDoc.Contains(2);
+            MyHashMap1 leetCodeAllDoc = new MyHashMap1();
+            leetCodeAllDoc.Put(1, 1);
+            leetCodeAllDoc.Put(2, 2);
+            leetCodeAllDoc.Get(1);
+            leetCodeAllDoc.Get(3);
+            leetCodeAllDoc.Put(2, 1);
+            leetCodeAllDoc.Get(2);
             leetCodeAllDoc.Remove(2);
-            leetCodeAllDoc.Contains(2);
-
-            ////
+            leetCodeAllDoc.Get(2);
 
 
 
