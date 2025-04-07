@@ -17,6 +17,7 @@ using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
 using static ProblemSolving.LeetCode.LeetCode_303;
 using static ProblemSolving.LeetCode.LeetCode_703;
+using static ProblemSolving.LeetCode.LeetCode_705;
 using static ProblemSolving.LeetCodeAll;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -2161,18 +2162,40 @@ namespace ProblemSolving
             //}
 
             ////(704.) Binary Search (EASY)
-            int[] nums = [-1, 0, 3, 5, 9, 12];
-            int target = 9;
+            //int[] nums = [-1, 0, 3, 5, 9, 12];
+            //int target = 9;
 
-            LeetCode_704 classLeetCode = new LeetCode_704();
-            Console.WriteLine(classLeetCode.Search(nums, target));
+            //LeetCode_704 classLeetCode = new LeetCode_704();
+            //Console.WriteLine(classLeetCode.Search(nums, target));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.Search704(nums, target));
+
+            ////(705.) Design HashSet (EASY)
+            MyHashSet classLeetCode = new MyHashSet();
+            classLeetCode.Add(1);
+            classLeetCode.Add(2);
+            classLeetCode.Contains(1);
+            classLeetCode.Contains(3);
+            classLeetCode.Add(2);
+            classLeetCode.Contains(2);
+            classLeetCode.Remove(2);
+            classLeetCode.Contains(2);
 
             //OR
 
-            Console.WriteLine(leetCodeAll.Search704(nums, target));
+            MyHashSet1 leetCodeAllDoc = new MyHashSet1();
+            leetCodeAllDoc.Add(1);
+            leetCodeAllDoc.Add(2);
+            leetCodeAllDoc.Contains(1);
+            leetCodeAllDoc.Contains(3);
+            leetCodeAllDoc.Add(2);
+            leetCodeAllDoc.Contains(2);
+            leetCodeAllDoc.Remove(2);
+            leetCodeAllDoc.Contains(2);
 
-
-
+            ////
 
 
 

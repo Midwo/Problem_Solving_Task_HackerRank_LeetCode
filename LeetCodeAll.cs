@@ -5129,6 +5129,40 @@ namespace ProblemSolving
             return -1;
 
         }
+        public class MyHashSet1
+        {
+            private HashSet<int> _hashset;
+            public MyHashSet1()
+            {
+                _hashset = new HashSet<int>();
+            }
+
+            public void Add(int key)
+            {
+                _hashset.Add(key);
+            }
+
+            public void Remove(int key)
+            {
+                _hashset.Remove(key);
+            }
+
+            public bool Contains(int key)
+            {
+                if (_hashset.Contains(key))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
+
+
+
 
 
 
