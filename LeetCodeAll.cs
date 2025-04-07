@@ -2593,6 +2593,7 @@ namespace ProblemSolving
             return new string(resultList.ToArray());
         }
         public int[] FindMode(TreeNode root)
+
         {
             ////(501.) Find Mode in Binary Search Tree (EASY)
 
@@ -5103,8 +5104,31 @@ namespace ProblemSolving
                 return priorityQueue.Peek();
             }
         }
+        public int Search704(int[] nums, int target)
+        {
+            int length = nums.Length;
+            int left = 0;
+            int right = length - 1;
 
+            while (left < right)
+            {
+                int targetIndex = left + (right - left) / 2;
+                if (target > nums[targetIndex])
+                {
+                    left = targetIndex + 1;
+                }
+                else
+                {
+                    right = targetIndex;
+                }
+            }
+            if (nums[left] == target)
+            {
+                return left;
+            }
+            return -1;
 
+        }
 
 
 

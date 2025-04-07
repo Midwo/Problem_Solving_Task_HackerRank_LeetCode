@@ -2142,23 +2142,44 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindShortestSubArray(nums));
 
             //703. Kth Largest Element in a Stream (EASY)
-            int k = 2;
-            int[] nums = [0];
-            KthLargest kthLargest = new KthLargest(k, nums);
-            int[] addNums = [-1, 1, -2, -4, 3];
-            foreach (int num in addNums)
-            {
-                kthLargest.Add(num);
-            }
+            //int k = 2;
+            //int[] nums = [0];
+            //KthLargest kthLargest = new KthLargest(k, nums);
+            //int[] addNums = [-1, 1, -2, -4, 3];
+            //foreach (int num in addNums)
+            //{
+            //    kthLargest.Add(num);
+            //}
+
+            ////OR
+
+            //KthLargest1 kthLargest1 = new KthLargest1(k, nums);
+
+            //foreach (int num in addNums)
+            //{
+            //    kthLargest1.Add(num);
+            //}
+
+            ////(704.) Binary Search (EASY)
+            int[] nums = [-1, 0, 3, 5, 9, 12];
+            int target = 9;
+
+            LeetCode_704 classLeetCode = new LeetCode_704();
+            Console.WriteLine(classLeetCode.Search(nums, target));
 
             //OR
 
-            KthLargest1 kthLargest1 = new KthLargest1(k, nums);
+            Console.WriteLine(leetCodeAll.Search704(nums, target));
 
-            foreach (int num in addNums)
-            {
-                kthLargest1.Add(num);
-            }
+
+
+
+
+
+
+
+
+
 
 
 
