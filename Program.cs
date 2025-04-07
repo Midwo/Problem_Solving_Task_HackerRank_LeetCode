@@ -2197,28 +2197,36 @@ namespace ProblemSolving
             //leetCodeAllDoc.Contains(2);
 
             ////(706.) Design HashMap (EASY)
-            MyHashMap classLeetCode = new MyHashMap();
-            classLeetCode.Put(1, 1);
-            classLeetCode.Put(2, 2);
-            classLeetCode.Get(1);
-            classLeetCode.Get(3);
-            classLeetCode.Put(2, 1);
-            classLeetCode.Get(2);
-            classLeetCode.Remove(2);
-            classLeetCode.Get(2);
+            //MyHashMap classLeetCode = new MyHashMap();
+            //classLeetCode.Put(1, 1);
+            //classLeetCode.Put(2, 2);
+            //classLeetCode.Get(1);
+            //classLeetCode.Get(3);
+            //classLeetCode.Put(2, 1);
+            //classLeetCode.Get(2);
+            //classLeetCode.Remove(2);
+            //classLeetCode.Get(2);
+
+            ////OR
+            //MyHashMap1 leetCodeAllDoc = new MyHashMap1();
+            //leetCodeAllDoc.Put(1, 1);
+            //leetCodeAllDoc.Put(2, 2);
+            //leetCodeAllDoc.Get(1);
+            //leetCodeAllDoc.Get(3);
+            //leetCodeAllDoc.Put(2, 1);
+            //leetCodeAllDoc.Get(2);
+            //leetCodeAllDoc.Remove(2);
+            //leetCodeAllDoc.Get(2);
+
+            ////(709.) To Lower Case (EASY)
+            string s = "LOVELY";
+
+            LeetCode_709 classLeetCode = new LeetCode_709();
+            Console.WriteLine(classLeetCode.ToLowerCase(s));
 
             //OR
-            MyHashMap1 leetCodeAllDoc = new MyHashMap1();
-            leetCodeAllDoc.Put(1, 1);
-            leetCodeAllDoc.Put(2, 2);
-            leetCodeAllDoc.Get(1);
-            leetCodeAllDoc.Get(3);
-            leetCodeAllDoc.Put(2, 1);
-            leetCodeAllDoc.Get(2);
-            leetCodeAllDoc.Remove(2);
-            leetCodeAllDoc.Get(2);
 
-
+            Console.WriteLine(leetCodeAll.ToLowerCase(s));
 
 
 
