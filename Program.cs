@@ -16,6 +16,7 @@ using System.Xml.Linq;
 using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
 using static ProblemSolving.LeetCode.LeetCode_303;
+using static ProblemSolving.LeetCode.LeetCode_703;
 using static ProblemSolving.LeetCodeAll;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -2131,20 +2132,33 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountBinarySubstrings(s));
 
             ////(697.) Degree of an Array (EASY)
-            int[] nums = [1, 2, 2, 3, 1, 4, 2];
-            
-            LeetCode_697 classLeetCode = new LeetCode_697();
-            Console.WriteLine(classLeetCode.FindShortestSubArray(nums));
+            //int[] nums = [1, 2, 2, 3, 1, 4, 2];
+
+            //LeetCode_697 classLeetCode = new LeetCode_697();
+            //Console.WriteLine(classLeetCode.FindShortestSubArray(nums));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.FindShortestSubArray(nums));
+
+            //703. Kth Largest Element in a Stream (EASY)
+            int k = 2;
+            int[] nums = [0];
+            KthLargest kthLargest = new KthLargest(k, nums);
+            int[] addNums = [-1, 1, -2, -4, 3];
+            foreach (int num in addNums)
+            {
+                kthLargest.Add(num);
+            }
 
             //OR
 
-            Console.WriteLine(leetCodeAll.FindShortestSubArray(nums));
+            KthLargest1 kthLargest1 = new KthLargest1(k, nums);
 
-
-
-
-
-
+            foreach (int num in addNums)
+            {
+                kthLargest1.Add(num);
+            }
 
 
 

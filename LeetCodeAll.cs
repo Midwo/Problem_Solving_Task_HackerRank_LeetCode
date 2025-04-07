@@ -5075,8 +5075,34 @@ namespace ProblemSolving
 
             return result;
         }
+        public class KthLargest1
+        {
+            private int k { get; set; }
+            private PriorityQueue<int, int> priorityQueue { get; set; }
 
+            public KthLargest1(int k, int[] nums)
+            {
+                this.k = k;
+                priorityQueue = new PriorityQueue<int, int>();
 
+                foreach (var num in nums)
+                {
+                    Add(num);
+                }
+            }
+
+            public int Add(int val)
+            {
+                priorityQueue.Enqueue(val, val);
+
+                while (priorityQueue.Count > this.k)
+                {
+                    priorityQueue.Dequeue();
+                }
+
+                return priorityQueue.Peek();
+            }
+        }
 
 
 
