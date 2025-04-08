@@ -2219,14 +2219,38 @@ namespace ProblemSolving
             //leetCodeAllDoc.Get(2);
 
             ////(709.) To Lower Case (EASY)
-            string s = "LOVELY";
+            //string s = "LOVELY";
 
-            LeetCode_709 classLeetCode = new LeetCode_709();
-            Console.WriteLine(classLeetCode.ToLowerCase(s));
+            //LeetCode_709 classLeetCode = new LeetCode_709();
+            //Console.WriteLine(classLeetCode.ToLowerCase(s));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.ToLowerCase(s));
+
+            ////(717.) 1-bit and 2-bit Characters 
+            //int[] bits = [1, 1, 1, 0];
+
+            //LeetCode_717 classLeetCode = new LeetCode_717();
+            //Console.WriteLine(classLeetCode.IsOneBitCharacter(bits));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.IsOneBitCharacter(bits));
+
+            ////(724.) Find Pivot Index (EASY) 
+            //    int[] nums = [1, 7, 3, 6, 5, 6];
+            int[] nums = [2, 1, -1];
+
+            LeetCode_724 classLeetCode = new LeetCode_724();
+            Console.WriteLine(classLeetCode.PivotIndex(nums));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.ToLowerCase(s));
+            Console.WriteLine(leetCodeAll.PivotIndex(nums));
+
+
+
 
 
 

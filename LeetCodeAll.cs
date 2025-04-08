@@ -5220,9 +5220,51 @@ namespace ProblemSolving
             //slow option
             //return s.ToLower();
         }
+        public bool IsOneBitCharacter(int[] bits)
+        {
+            int lenght = bits.Length - 1;
 
+            if (bits[lenght] == 1)
+            {
+                return false;
+            }
+            int howManyRest = lenght;
 
+            for (int i = 0; i < lenght; i++)
+            {
+                if (bits[i] == 1)
+                {
+                    i++;
+                    if (i == lenght)
+                    {
+                        return false;
+                    }
+                }
+            }
 
+            return true;
+        }
+        public int PivotIndex(int[] nums)
+        {
+            int sumNums = 0;
+            foreach (int num in nums)
+            {
+                sumNums += num;
+            }
+            int sumLeft = 0;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                sumNums -= nums[i];
+                if (sumLeft == sumNums)
+                {
+                    return i;
+                }
+                sumLeft += nums[i];
+            }
+
+            return -1;
+        }
 
 
 

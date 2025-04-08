@@ -8,7 +8,7 @@ namespace ProblemSolving.LeetCode
 {
     internal class LeetCode_709
     {
-        ////(709.) To Lower Case(EASY)
+        ////(709.) To Lower Case (EASY)
         public string ToLowerCase(string s)
         {
             char[] result = new char[s.Length];
