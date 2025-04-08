@@ -2240,15 +2240,33 @@ namespace ProblemSolving
 
             ////(724.) Find Pivot Index (EASY) 
             //    int[] nums = [1, 7, 3, 6, 5, 6];
-            int[] nums = [2, 1, -1];
+            //int[] nums = [2, 1, -1];
 
-            LeetCode_724 classLeetCode = new LeetCode_724();
-            Console.WriteLine(classLeetCode.PivotIndex(nums));
+            //LeetCode_724 classLeetCode = new LeetCode_724();
+            //Console.WriteLine(classLeetCode.PivotIndex(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PivotIndex(nums));
+            //Console.WriteLine(leetCodeAll.PivotIndex(nums));
 
+            ////(728.) Self Dividing Numbers (EASY)
+            int left = 1;
+            int right = 22;
+
+            LeetCode_728 classLeetCode = new LeetCode_728();
+            IList<int> result = classLeetCode.SelfDividingNumbers(left, right);
+
+            foreach (int i in result) 
+            {
+                Console.WriteLine(i);
+            }
+
+            IList<int> result1 = leetCodeAll.SelfDividingNumbers(left, right);
+
+            foreach (int i in result1)
+            {
+                Console.WriteLine(i);
+            }
 
 
 
