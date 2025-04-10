@@ -2250,33 +2250,58 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PivotIndex(nums));
 
             ////(728.) Self Dividing Numbers (EASY)
-            int left = 1;
-            int right = 22;
+            //int left = 1;
+            //int right = 22;
 
-            LeetCode_728 classLeetCode = new LeetCode_728();
-            IList<int> result = classLeetCode.SelfDividingNumbers(left, right);
+            //LeetCode_728 classLeetCode = new LeetCode_728();
+            //IList<int> result = classLeetCode.SelfDividingNumbers(left, right);
 
-            foreach (int i in result) 
-            {
-                Console.WriteLine(i);
-            }
+            //foreach (int i in result) 
+            //{
+            //    Console.WriteLine(i);
+            //}
 
-            IList<int> result1 = leetCodeAll.SelfDividingNumbers(left, right);
+            //IList<int> result1 = leetCodeAll.SelfDividingNumbers(left, right);
 
-            foreach (int i in result1)
-            {
-                Console.WriteLine(i);
-            }
+            //foreach (int i in result1)
+            //{
+            //    Console.WriteLine(i);
+            //}
 
+            ////(733.) Flood Fill (EASY)
 
+            //int[][] image = [[1, 1, 1], [1, 1, 0], [1, 0, 1]];
+            //int sr = 1;
+            //int sc = 1;
+            //int color = 2;
 
+            //LeetCode_733 classLeetCode = new LeetCode_733();
+            //int[][] result = classLeetCode.FloodFill(image, sr, sc, color);
 
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
+            ////OR
 
+            //int[][] result1 = leetCodeAll.FloodFill(image, sr, sc, color);
 
+            //foreach (var item in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
+            ////(744.) Find Smallest Letter Greater Than Target (EASY)
+            //char[] letters = ['c', 'f', 'j'];
+            //char target = 'g';
 
+            //LeetCode_744 classLeetCode = new LeetCode_744();
+            //Console.WriteLine(classLeetCode.NextGreatestLetter(letters, target));
 
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.NextGreatestLetter(letters, target));
 
 
 

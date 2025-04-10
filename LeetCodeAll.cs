@@ -5298,10 +5298,63 @@ namespace ProblemSolving
 
             return result;
         }
+       
+        private int _height733;
+        private int _width733;
+        public int[][] FloodFill(int[][] image, int sr, int sc, int color)
+        {
+            _height733 = image.Length;
+            _width733 = image[0].Length;
 
+            if (image[sr][sc] != color)
+            {
+                Fill733(image, sr, sc, image[sr][sc], color);
+            }
 
+            return image;
+        }
 
+        private void Fill733(int[][] image, int sr, int sc, int previousColor, int newColor)
+        {
+            if (sr >= 0 && sc >= 0 && sr < _height733 && sc < _width733)
+            {
+                if (image[sr][sc] == previousColor)
+                {
+                    image[sr][sc] = newColor;
+                    Fill733(image, sr + 1, sc, previousColor, newColor);
+                    Fill733(image, sr - 1, sc, previousColor, newColor);
+                    Fill733(image, sr, sc + 1, previousColor, newColor);
+                    Fill733(image, sr, sc - 1, previousColor, newColor);
+                }
+            }
+        }
 
+        public char NextGreatestLetter(char[] letters, char target)
+        {
+            int length = letters.Length;
+            int left = 0;
+            int right = length;
+
+            if (letters[length - 1] < target)
+            {
+                return letters[0];
+            }
+
+            while (left < right)
+            {
+                int temp = left + (right - left) / 2;
+                if (letters[temp] > target)
+                {
+                    right = temp;
+                }
+                else
+                {
+                    left = temp + 1;
+                }
+            }
+
+            return letters[right];
+        }
 
 
 
