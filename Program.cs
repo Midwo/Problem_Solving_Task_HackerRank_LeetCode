@@ -2315,18 +2315,26 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinCostClimbingStairs(cost));
 
             ////(747.) Largest Number At Least Twice of Others (EASY)
-            int[] nums = nums = [3, 6, 5, 0];
+            //int[] nums = nums = [3, 6, 5, 0];
 
-            LeetCode_747 classLeetCode = new LeetCode_747();
+            //LeetCode_747 classLeetCode = new LeetCode_747();
 
-            Console.WriteLine(classLeetCode.DominantIndex(nums));
+            //Console.WriteLine(classLeetCode.DominantIndex(nums));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.DominantIndex(nums));
+
+            ////(748.) Shortest Completing Word (EASY)
+            string licensePlate = "1s3 PSt";
+            string[] words = ["step", "steps", "stripe", "stepple"];
+
+            LeetCode_748 classLeetCode = new LeetCode_748();
+            Console.WriteLine(classLeetCode.ShortestCompletingWord(licensePlate, words));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.DominantIndex(nums));
-
-
-
+            Console.WriteLine(leetCodeAll.ShortestCompletingWord(licensePlate, words));
 
 
 
