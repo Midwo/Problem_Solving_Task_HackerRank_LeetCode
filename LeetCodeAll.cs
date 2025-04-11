@@ -5313,7 +5313,6 @@ namespace ProblemSolving
 
             return image;
         }
-
         private void Fill733(int[][] image, int sr, int sc, int previousColor, int newColor)
         {
             if (sr >= 0 && sc >= 0 && sr < _height733 && sc < _width733)
@@ -5328,7 +5327,6 @@ namespace ProblemSolving
                 }
             }
         }
-
         public char NextGreatestLetter(char[] letters, char target)
         {
             int length = letters.Length;
@@ -5355,6 +5353,61 @@ namespace ProblemSolving
 
             return letters[right];
         }
+        public int MinCostClimbingStairs(int[] cost)
+        {
+            int startIndex0 = cost[0];
+            int startIndex1 = cost[1];
+            int minStepCost = 0;
+
+            for (int i = 2; i < cost.Length; i++)
+            {
+                minStepCost = cost[i] + Math.Min(startIndex0, startIndex1);
+
+                startIndex0 = startIndex1;
+                startIndex1 = minStepCost;
+
+            }
+
+            return Math.Min(startIndex0, startIndex1);
+        }
+        public int DominantIndex(int[] nums)
+        {
+            int indexHighestNumber = int.MinValue;
+            int highestNumber = int.MinValue;
+            int secondHighestNumber = int.MinValue;
+            bool newFoundMax = false;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                newFoundMax = false;
+                if (highestNumber < nums[i])
+                {
+                    if (secondHighestNumber < highestNumber)
+                    {
+                        secondHighestNumber = highestNumber;
+                    }
+                    highestNumber = nums[i];
+                    indexHighestNumber = i;
+                    newFoundMax = true;
+                }
+                if (secondHighestNumber < nums[i] && newFoundMax == false)
+                {
+                    secondHighestNumber = nums[i];
+                }
+            }
+            if (secondHighestNumber >= int.MinValue && highestNumber >= int.MinValue && secondHighestNumber * 2 <= highestNumber)
+            {
+                return indexHighestNumber;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
+
+
+
 
 
 

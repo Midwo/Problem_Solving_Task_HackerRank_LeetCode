@@ -2303,6 +2303,37 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NextGreatestLetter(letters, target));
 
+            ////(746.) Min Cost Climbing Stairs (EASY)
+            //int[] cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1];
+
+            //LeetCode_746 classLeetCode = new LeetCode_746();
+
+            //Console.WriteLine(classLeetCode.MinCostClimbingStairs(cost));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MinCostClimbingStairs(cost));
+
+            ////(747.) Largest Number At Least Twice of Others (EASY)
+            int[] nums = nums = [3, 6, 5, 0];
+
+            LeetCode_747 classLeetCode = new LeetCode_747();
+
+            Console.WriteLine(classLeetCode.DominantIndex(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DominantIndex(nums));
+
+
+
+
+
+
+
+
+
+
 
 
 
