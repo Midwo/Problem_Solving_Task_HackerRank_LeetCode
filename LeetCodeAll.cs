@@ -5510,11 +5510,9 @@ namespace ProblemSolving
             return true;
         }
 
-
         private int _height766;
         private int _width766;
         private int[][] _matrix766;
-
         public bool IsToeplitzMatrix(int[][] matrix)
         {
             _matrix766 = matrix;
@@ -5562,8 +5560,18 @@ namespace ProblemSolving
 
             return true;
         }
-
-
+        public int NumJewelsInStones(string jewels, string stones)
+        {
+            int result = 0;
+            for (int i = 0; i < stones.Length; i++)
+            {
+                if (jewels.Contains(stones[i]))
+                {
+                    result++;
+                }
+            }
+            return result;
+        }
 
 
 

@@ -2349,17 +2349,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountPrimeSetBits(left, right));
 
             ////(766.) Toeplitz Matrix (EASY)
-            int[][] matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]];
-            
-            LeetCode_766 classLeetCode = new LeetCode_766();
-            Console.WriteLine(classLeetCode.IsToeplitzMatrix(matrix));
+            //int[][] matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]];
+
+            //LeetCode_766 classLeetCode = new LeetCode_766();
+            //Console.WriteLine(classLeetCode.IsToeplitzMatrix(matrix));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.IsToeplitzMatrix(matrix));
+
+            ////(771.) Jewels and Stones (EASY)
+            string jewels = "aA";
+            string stones = "aAAbbbb";
+
+            LeetCode_771 classLeetCode = new LeetCode_771();
+            Console.WriteLine(classLeetCode.NumJewelsInStones(jewels, stones));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.IsToeplitzMatrix(matrix));
-
-
-
+            Console.WriteLine(leetCodeAll.NumJewelsInStones(jewels, stones));
 
 
 
