@@ -2337,16 +2337,31 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ShortestCompletingWord(licensePlate, words));
 
             ////(762.) Prime Number of Set Bits in Binary Representation (EASY)
-            int left = 6;
-            int right = 10;
+            //int left = 6;
+            //int right = 10;
 
-            LeetCode_762 classLeetCode = new LeetCode_762();
+            //LeetCode_762 classLeetCode = new LeetCode_762();
 
-            Console.WriteLine(classLeetCode.CountPrimeSetBits(left, right));
+            //Console.WriteLine(classLeetCode.CountPrimeSetBits(left, right));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.CountPrimeSetBits(left, right));
+
+            ////(766.) Toeplitz Matrix (EASY)
+            int[][] matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]];
+            
+            LeetCode_766 classLeetCode = new LeetCode_766();
+            Console.WriteLine(classLeetCode.IsToeplitzMatrix(matrix));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.CountPrimeSetBits(left, right));
+            Console.WriteLine(leetCodeAll.IsToeplitzMatrix(matrix));
+
+
+
+
+
 
 
 

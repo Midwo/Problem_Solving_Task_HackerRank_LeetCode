@@ -5511,6 +5511,57 @@ namespace ProblemSolving
         }
 
 
+        private int _height766;
+        private int _width766;
+        private int[][] _matrix766;
+
+        public bool IsToeplitzMatrix(int[][] matrix)
+        {
+            _matrix766 = matrix;
+            _height766 = matrix.Length;
+            if (_height766 == 0)
+            {
+                return false;
+            }
+            _width766 = matrix[0].Length;
+
+            for (int i = 1; i < _height766 - 1; i++)
+            {
+                if (!IsCorrectLine766(i, 0))
+                {
+                    return false;
+                }
+            }
+
+            for (int i = 0; i < _width766; i++)
+            {
+                if (!IsCorrectLine766(0, i))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+        private bool IsCorrectLine766(int row, int column)
+        {
+            int currValue = _matrix766[row++][column++];
+            for (int i = row; i < _height766; i++)
+            {
+                if (column > _width766 - 1)
+                {
+                    continue;
+                }
+                if (currValue != _matrix766[row][column])
+                {
+                    return false;
+                }
+                row++;
+                column++;
+            }
+
+            return true;
+        }
 
 
 
