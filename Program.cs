@@ -2326,18 +2326,27 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DominantIndex(nums));
 
             ////(748.) Shortest Completing Word (EASY)
-            string licensePlate = "1s3 PSt";
-            string[] words = ["step", "steps", "stripe", "stepple"];
+            //string licensePlate = "1s3 PSt";
+            //string[] words = ["step", "steps", "stripe", "stepple"];
 
-            LeetCode_748 classLeetCode = new LeetCode_748();
-            Console.WriteLine(classLeetCode.ShortestCompletingWord(licensePlate, words));
+            //LeetCode_748 classLeetCode = new LeetCode_748();
+            //Console.WriteLine(classLeetCode.ShortestCompletingWord(licensePlate, words));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.ShortestCompletingWord(licensePlate, words));
+
+            ////(762.) Prime Number of Set Bits in Binary Representation (EASY)
+            int left = 6;
+            int right = 10;
+
+            LeetCode_762 classLeetCode = new LeetCode_762();
+
+            Console.WriteLine(classLeetCode.CountPrimeSetBits(left, right));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.ShortestCompletingWord(licensePlate, words));
-
-
-
+            Console.WriteLine(leetCodeAll.CountPrimeSetBits(left, right));
 
 
 
