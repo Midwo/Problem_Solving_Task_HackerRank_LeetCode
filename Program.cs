@@ -2396,16 +2396,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.RotateString(s, goal));
 
             ////(804.) Unique Morse Code Words (EASY)
-            string[] words = ["gin", "zen", "gig", "msg"];
+            //string[] words = ["gin", "zen", "gig", "msg"];
 
-            LeetCode_804 classLeetCode = new LeetCode_804();
-            Console.WriteLine(classLeetCode.UniqueMorseRepresentations(words));
+            //LeetCode_804 classLeetCode = new LeetCode_804();
+            //Console.WriteLine(classLeetCode.UniqueMorseRepresentations(words));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.UniqueMorseRepresentations(words));
+
+            ////(806.) Number of Lines To Write String (EASY)
+            int[] widths = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
+            string s = "abcdefghijklmnopqrstuvwxyz";
+
+            LeetCode_806 classLeetCode = new LeetCode_806();
+            Console.WriteLine(string.Join(',',classLeetCode.NumberOfLines(widths, s)));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.UniqueMorseRepresentations(words));
-
-
+            Console.WriteLine(string.Join(',', leetCodeAll.NumberOfLines(widths, s)));
 
 
 
