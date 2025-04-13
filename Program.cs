@@ -2406,18 +2406,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.UniqueMorseRepresentations(words));
 
             ////(806.) Number of Lines To Write String (EASY)
-            int[] widths = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
-            string s = "abcdefghijklmnopqrstuvwxyz";
+            //int[] widths = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
+            //string s = "abcdefghijklmnopqrstuvwxyz";
 
-            LeetCode_806 classLeetCode = new LeetCode_806();
-            Console.WriteLine(string.Join(',',classLeetCode.NumberOfLines(widths, s)));
+            //LeetCode_806 classLeetCode = new LeetCode_806();
+            //Console.WriteLine(string.Join(',',classLeetCode.NumberOfLines(widths, s)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.NumberOfLines(widths, s)));
+
+            ////(812.) Largest Triangle Area (EASY)
+            int[][] points = [[8, 3], [5, 6], [3, 5]];
+
+            LeetCode_812 classLeetCode = new LeetCode_812();
+            Console.WriteLine(classLeetCode.LargestTriangleArea(points));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.NumberOfLines(widths, s)));
-
-
-
+            Console.WriteLine(leetCodeAll.LargestTriangleArea(points));
 
 
 
