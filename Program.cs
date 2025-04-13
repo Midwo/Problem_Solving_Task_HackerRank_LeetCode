@@ -2385,15 +2385,64 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinDiffInBST(root));
 
             ////796. Rotate String (EASY)
-            string s = "bbbacddceeb";
-            string goal = "ceebbbbacdd";
+            //string s = "bbbacddceeb";
+            //string goal = "ceebbbbacdd";
 
-            LeetCode_796 classLeetCode = new LeetCode_796();
-            Console.WriteLine(classLeetCode.RotateString(s, goal));
+            //LeetCode_796 classLeetCode = new LeetCode_796();
+            //Console.WriteLine(classLeetCode.RotateString(s, goal));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.RotateString(s, goal));
+
+            ////(804.) Unique Morse Code Words (EASY)
+            string[] words = ["gin", "zen", "gig", "msg"];
+
+            LeetCode_804 classLeetCode = new LeetCode_804();
+            Console.WriteLine(classLeetCode.UniqueMorseRepresentations(words));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.RotateString(s, goal));
+            Console.WriteLine(leetCodeAll.UniqueMorseRepresentations(words));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
