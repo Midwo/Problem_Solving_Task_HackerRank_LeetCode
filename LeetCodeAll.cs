@@ -5572,8 +5572,61 @@ namespace ProblemSolving
             }
             return result;
         }
+        private PriorityQueue<int, int> _priorityQueue783;
+        public int MinDiffInBST(TreeNode root)
+        {
+            _priorityQueue783 = new PriorityQueue<int, int>();
 
+            if (root != null)
+            {
+                GiveMeValueFromTreeNode783(root);
+            }
 
+            int result = _priorityQueue783.Dequeue();
+            int nextValue = _priorityQueue783.Dequeue();
+
+            if (result > nextValue)
+            {
+                result = result - nextValue;
+            }
+            else
+            {
+                result = nextValue - result;
+            }
+
+            while (_priorityQueue783.Count != 0)
+            {
+                int currTempValue = _priorityQueue783.Dequeue();
+                int currTempDiff = 0;
+                if (nextValue > currTempValue)
+                {
+                    currTempDiff = nextValue - currTempValue;
+                }
+                else
+                {
+                    currTempDiff = currTempValue - nextValue;
+                }
+                result = Math.Min(result, currTempDiff);
+                nextValue = currTempValue;
+            }
+
+            return result;
+        }
+        private void GiveMeValueFromTreeNode783(TreeNode root)
+        {
+            if (root != null)
+            {
+                _priorityQueue783.Enqueue(root.val, root.val);
+            }
+            if (root.left != null)
+            {
+                GiveMeValueFromTreeNode783(root.left);
+            }
+            if (root.right != null)
+            {
+                GiveMeValueFromTreeNode783(root.right);
+            }
+        }
 
 
 

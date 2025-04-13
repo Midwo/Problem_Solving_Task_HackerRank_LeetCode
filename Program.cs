@@ -2359,18 +2359,30 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsToeplitzMatrix(matrix));
 
             ////(771.) Jewels and Stones (EASY)
-            string jewels = "aA";
-            string stones = "aAAbbbb";
+            //string jewels = "aA";
+            //string stones = "aAAbbbb";
 
-            LeetCode_771 classLeetCode = new LeetCode_771();
-            Console.WriteLine(classLeetCode.NumJewelsInStones(jewels, stones));
+            //LeetCode_771 classLeetCode = new LeetCode_771();
+            //Console.WriteLine(classLeetCode.NumJewelsInStones(jewels, stones));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.NumJewelsInStones(jewels, stones));
+
+            ////(783.) Minimum Distance Between BST Nodes (EASY)
+            TreeNode root = new TreeNode(4);
+            root.left = new TreeNode(2);
+            root.right = new TreeNode(6);
+            root.left.left = new TreeNode(1);
+            root.left.right = new TreeNode(3);
+
+            LeetCode_783 classLeetCode = new LeetCode_783();
+
+            Console.WriteLine(classLeetCode.MinDiffInBST(root));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.NumJewelsInStones(jewels, stones));
-
-
-
+            Console.WriteLine(leetCodeAll.MinDiffInBST(root));
 
 
 
