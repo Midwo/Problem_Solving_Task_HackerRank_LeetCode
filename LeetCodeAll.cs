@@ -5627,8 +5627,60 @@ namespace ProblemSolving
                 GiveMeValueFromTreeNode783(root.right);
             }
         }
+        
+        private int _goalLength796;
+        private string _s796;
+        private string _goal796;
+        public bool RotateString(string s, string goal)
+        {
+            int sLength = s.Length;
+            _goalLength796 = goal.Length;
+            _s796 = s;
+            _goal796 = goal;
 
+            if (sLength != _goalLength796)
+            {
+                return false;
+            }
 
+            char firstCharS = s[0];
+
+            for (int i = 0; i < _goalLength796; i++)
+            {
+                //Console.WriteLine(goal[i]);
+                //Console.WriteLine(s[0]);
+                if (s[0] == goal[i])
+                {
+                    if (isRotateString796(1, i + 1))
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+        private bool isRotateString796(int indexS, int indexGoal)
+        {
+            while (indexS < _goalLength796)
+            {
+                if (indexGoal == _goalLength796)
+                {
+                    indexGoal = 0;
+                    //Console.WriteLine(_goal[indexGoal]);
+                }
+                //Console.WriteLine(_goal[indexGoal]);
+                //Console.WriteLine(_s[indexS]);
+                if (_s796[indexS] != _goal796[indexGoal])
+                {
+                    return false;
+                }
+                indexS++;
+                indexGoal++;
+            }
+
+            return true;
+        }
 
 
 

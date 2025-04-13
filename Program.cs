@@ -2370,26 +2370,30 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumJewelsInStones(jewels, stones));
 
             ////(783.) Minimum Distance Between BST Nodes (EASY)
-            TreeNode root = new TreeNode(4);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(6);
-            root.left.left = new TreeNode(1);
-            root.left.right = new TreeNode(3);
+            //TreeNode root = new TreeNode(4);
+            //root.left = new TreeNode(2);
+            //root.right = new TreeNode(6);
+            //root.left.left = new TreeNode(1);
+            //root.left.right = new TreeNode(3);
 
-            LeetCode_783 classLeetCode = new LeetCode_783();
+            //LeetCode_783 classLeetCode = new LeetCode_783();
 
-            Console.WriteLine(classLeetCode.MinDiffInBST(root));
+            //Console.WriteLine(classLeetCode.MinDiffInBST(root));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MinDiffInBST(root));
+
+            ////796. Rotate String (EASY)
+            string s = "bbbacddceeb";
+            string goal = "ceebbbbacdd";
+
+            LeetCode_796 classLeetCode = new LeetCode_796();
+            Console.WriteLine(classLeetCode.RotateString(s, goal));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MinDiffInBST(root));
-
-
-
-
-
-
-
+            Console.WriteLine(leetCodeAll.RotateString(s, goal));
 
 
 
