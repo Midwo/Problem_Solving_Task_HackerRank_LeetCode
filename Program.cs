@@ -2426,24 +2426,27 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.LargestTriangleArea(points));
 
-            ////(819.) Most Common Word (EASY)
-            string paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
-            string[] banned = ["hit"];
+            //////(819.) Most Common Word (EASY)
+            //string paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
+            //string[] banned = ["hit"];
 
-            LeetCode_819 classLeetCode = new LeetCode_819();
-            Console.WriteLine(classLeetCode.MostCommonWord(paragraph, banned));
+            //LeetCode_819 classLeetCode = new LeetCode_819();
+            //Console.WriteLine(classLeetCode.MostCommonWord(paragraph, banned));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MostCommonWord(paragraph, banned));
+
+            ////(821.) Shortest Distance to a Character (EASY)
+            string s = "loveleetcode";
+            char c = 'e';
+
+            LeetCode_821 classLeetCode = new LeetCode_821();
+            Console.WriteLine(string.Join(',', classLeetCode.ShortestToChar(s, c)));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MostCommonWord(paragraph, banned));
-
-
-
-
-
-
-
-
+            Console.WriteLine(string.Join(',', leetCodeAll.ShortestToChar(s, c)));
 
 
 
