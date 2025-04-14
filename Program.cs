@@ -2417,16 +2417,25 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.NumberOfLines(widths, s)));
 
             ////(812.) Largest Triangle Area (EASY)
-            int[][] points = [[8, 3], [5, 6], [3, 5]];
+            //int[][] points = [[8, 3], [5, 6], [3, 5]];
 
-            LeetCode_812 classLeetCode = new LeetCode_812();
-            Console.WriteLine(classLeetCode.LargestTriangleArea(points));
+            //LeetCode_812 classLeetCode = new LeetCode_812();
+            //Console.WriteLine(classLeetCode.LargestTriangleArea(points));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.LargestTriangleArea(points));
+
+            ////(819.) Most Common Word (EASY)
+            string paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
+            string[] banned = ["hit"];
+
+            LeetCode_819 classLeetCode = new LeetCode_819();
+            Console.WriteLine(classLeetCode.MostCommonWord(paragraph, banned));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.LargestTriangleArea(points));
-
-
+            Console.WriteLine(leetCodeAll.MostCommonWord(paragraph, banned));
 
 
 
