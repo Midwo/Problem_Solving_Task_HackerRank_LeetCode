@@ -2438,16 +2438,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MostCommonWord(paragraph, banned));
 
             ////(821.) Shortest Distance to a Character (EASY)
-            string s = "loveleetcode";
-            char c = 'e';
+            //string s = "loveleetcode";
+            //char c = 'e';
 
-            LeetCode_821 classLeetCode = new LeetCode_821();
-            Console.WriteLine(string.Join(',', classLeetCode.ShortestToChar(s, c)));
+            //LeetCode_821 classLeetCode = new LeetCode_821();
+            //Console.WriteLine(string.Join(',', classLeetCode.ShortestToChar(s, c)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.ShortestToChar(s, c)));
+
+            ////(824.) Goat Latin (EASY)
+            string sentence = "I speak Goat Latin";
+
+            LeetCode_824 classLeetCode = new LeetCode_824();
+            Console.WriteLine(classLeetCode.ToGoatLatin(sentence));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ShortestToChar(s, c)));
-
+            Console.WriteLine(leetCodeAll.ToGoatLatin(sentence));
 
 
 
