@@ -2449,18 +2449,34 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.ShortestToChar(s, c)));
 
             ////(824.) Goat Latin (EASY)
-            string sentence = "I speak Goat Latin";
+            //string sentence = "I speak Goat Latin";
 
-            LeetCode_824 classLeetCode = new LeetCode_824();
-            Console.WriteLine(classLeetCode.ToGoatLatin(sentence));
+            //LeetCode_824 classLeetCode = new LeetCode_824();
+            //Console.WriteLine(classLeetCode.ToGoatLatin(sentence));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.ToGoatLatin(sentence));
+
+            ////(830.) Positions of Large Groups (EASY)
+            string s = "abcdddeeeeaabbbcd";
+
+            LeetCode_830 classLeetCode = new LeetCode_830();
+            IList<IList<int>> result = classLeetCode.LargeGroupPositions(s);
+
+            foreach (IList<int> list in result)
+            {
+                Console.WriteLine(string.Join(',', list));
+            }
 
             //OR
 
-            Console.WriteLine(leetCodeAll.ToGoatLatin(sentence));
+            IList<IList<int>> result1 = leetCodeAll.LargeGroupPositions(s);
 
-
-
-
+            foreach(IList<int> list in result1)
+            {
+                Console.WriteLine(string.Join(',', list));
+            }
 
 
 
