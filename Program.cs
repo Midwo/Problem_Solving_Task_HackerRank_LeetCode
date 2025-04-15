@@ -2459,29 +2459,45 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ToGoatLatin(sentence));
 
             ////(830.) Positions of Large Groups (EASY)
-            string s = "abcdddeeeeaabbbcd";
+            //string s = "abcdddeeeeaabbbcd";
 
-            LeetCode_830 classLeetCode = new LeetCode_830();
-            IList<IList<int>> result = classLeetCode.LargeGroupPositions(s);
+            //LeetCode_830 classLeetCode = new LeetCode_830();
+            //IList<IList<int>> result = classLeetCode.LargeGroupPositions(s);
 
-            foreach (IList<int> list in result)
+            //foreach (IList<int> list in result)
+            //{
+            //    Console.WriteLine(string.Join(',', list));
+            //}
+
+            ////OR
+
+            //IList<IList<int>> result1 = leetCodeAll.LargeGroupPositions(s);
+
+            //foreach(IList<int> list in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', list));
+            //}
+
+            ////(832.) Flipping an Image (EASY)
+            int[][] image = [[1, 1, 0], [1, 0, 1], [0, 0, 0]];
+
+            LeetCode_832 classLeetCode = new LeetCode_832();
+
+            int[][] result = classLeetCode.FlipAndInvertImage(image);
+
+            foreach (var item in result)
             {
-                Console.WriteLine(string.Join(',', list));
+                Console.WriteLine(string.Join(',', item));
             }
 
-            //OR
+            ////OR
 
-            IList<IList<int>> result1 = leetCodeAll.LargeGroupPositions(s);
+            int[][] result1 = leetCodeAll.FlipAndInvertImage(image);
 
-            foreach(IList<int> list in result1)
+            foreach (var item in result1)
             {
-                Console.WriteLine(string.Join(',', list));
+                Console.WriteLine(string.Join(',', item));
             }
-
-
-
-
-
 
 
 
