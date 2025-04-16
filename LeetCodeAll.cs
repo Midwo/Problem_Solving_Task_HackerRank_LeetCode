@@ -5976,10 +5976,107 @@ namespace ProblemSolving
             }
             return image;
         }
+        public bool IsRectangleOverlap(int[] rec1, int[] rec2)
+        {
+            ////rec1 = [0,0,2,2], rec2 = [1,1,3,3]
 
+            int minX1 = rec1[0];
+            int maxX1 = rec1[2];
+            int minY1 = rec1[1];
+            int maxY1 = rec1[3];
 
+            //Console.WriteLine(minX1);
+            //Console.WriteLine(maxX1);
+            //Console.WriteLine(minY1);
+            //Console.WriteLine(maxY2);
 
+            int minX2 = rec2[0];
+            int maxX2 = rec2[2];
+            int minY2 = rec2[1];
+            int maxY2 = rec2[3];
 
+            if (maxX2 > minX1 && maxY2 > minY1 && minX2 < maxX1 && minY2 < maxY1)
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool BackspaceCompare(string s, string t)
+        {
+            string newString = string.Empty;
+            int lenghtS = s.Length;
+            int lengthT = t.Length;
+            bool result = false;
+
+            if (lenghtS >= lengthT)
+            {
+                result = BackspaceCompareChangeSOnT(s, t, lenghtS, lengthT);
+            }
+            else
+            {
+                result = BackspaceCompareChangeSOnT(t, s, lengthT, lenghtS);
+            }
+
+            return result;
+        }
+        private bool BackspaceCompareChangeSOnT(string s, string t, int lengthS, int lengthT)
+        {
+            string newString = string.Empty;
+            bool result = false;
+
+            string sbS = string.Empty;
+            string sbT = string.Empty;
+            int indexS = 0;
+            int indexT = 0;
+            for (int i = 0; i < lengthS; i++)
+            {
+                if (i < lengthT)
+                {
+                    if (t[i] == '#')
+                    {
+                        if (indexT < 2)
+                        {
+                            indexT = 0;
+                            sbT = string.Empty;
+                        }
+                        else
+                        {
+                            sbT = sbT.Remove(indexT - 1, 1);
+                            indexT -= 1;
+                        }
+                    }
+                    else
+                    {
+                        sbT += t[i];
+                        indexT++;
+                    }
+                }
+                if (s[i] == '#')
+                {
+                    if (indexS < 2)
+                    {
+                        indexS = 0;
+                        sbS = string.Empty;
+                    }
+                    else
+                    {
+                        sbS = sbS.Remove(indexS - 1, 1);
+                        indexS -= 1;
+                    }
+                }
+                else
+                {
+                    sbS += s[i];
+                    indexS++;
+                }
+            }
+            if (sbS == sbT)
+            {
+                return true;
+            }
+
+            return result;
+        }
 
 
 

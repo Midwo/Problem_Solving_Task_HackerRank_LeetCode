@@ -2479,30 +2479,47 @@ namespace ProblemSolving
             //}
 
             ////(832.) Flipping an Image (EASY)
-            int[][] image = [[1, 1, 0], [1, 0, 1], [0, 0, 0]];
+            //int[][] image = [[1, 1, 0], [1, 0, 1], [0, 0, 0]];
 
-            LeetCode_832 classLeetCode = new LeetCode_832();
+            //LeetCode_832 classLeetCode = new LeetCode_832();
 
-            int[][] result = classLeetCode.FlipAndInvertImage(image);
+            //int[][] result = classLeetCode.FlipAndInvertImage(image);
 
-            foreach (var item in result)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
+
+            //////OR
+
+            //int[][] result1 = leetCodeAll.FlipAndInvertImage(image);
+
+            //foreach (var item in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
+
+            ////(836.) Rectangle Overlap (EASY)
+            //int[] rec1 = [0, 0, 2, 2];
+            //int[] rec2 = [1, 1, 3, 3];
+
+            //LeetCode_836 classLeetCode = new LeetCode_836();
+            //Console.WriteLine(classLeetCode.IsRectangleOverlap(rec1, rec2));
 
             ////OR
 
-            int[][] result1 = leetCodeAll.FlipAndInvertImage(image);
+            //Console.WriteLine(leetCodeAll.IsRectangleOverlap(rec1,rec2));
 
-            foreach (var item in result1)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            ////(844.) Backspace String Compare (EASY)
+            string s = "ab##";
+            string t = "c#d#";
 
+            LeetCode_844 classLeetCode = new LeetCode_844();
+            Console.WriteLine(classLeetCode.BackspaceCompare(s, t));
 
+            //OR
 
-
-
+            Console.WriteLine(leetCodeAll.BackspaceCompare(s, t));
 
 
 
