@@ -2511,15 +2511,39 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsRectangleOverlap(rec1,rec2));
 
             ////(844.) Backspace String Compare (EASY)
-            string s = "ab##";
-            string t = "c#d#";
+            //string s = "ab##";
+            //string t = "c#d#";
 
-            LeetCode_844 classLeetCode = new LeetCode_844();
-            Console.WriteLine(classLeetCode.BackspaceCompare(s, t));
+            //LeetCode_844 classLeetCode = new LeetCode_844();
+            //Console.WriteLine(classLeetCode.BackspaceCompare(s, t));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.BackspaceCompare(s, t));
+
+            ////(859.) Buddy Strings (EASY)
+            string s = "ab";
+            string goal = "ab";
+
+            LeetCode_859 classLeetCode = new LeetCode_859();
+            Console.WriteLine(classLeetCode.BuddyStrings(s, goal));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.BackspaceCompare(s, t));
+            Console.WriteLine(leetCodeAll.BuddyStrings(s, goal));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
