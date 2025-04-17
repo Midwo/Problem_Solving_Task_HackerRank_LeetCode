@@ -2522,17 +2522,26 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BackspaceCompare(s, t));
 
             ////(859.) Buddy Strings (EASY)
-            string s = "ab";
-            string goal = "ab";
+            //string s = "ab";
+            //string goal = "ab";
 
-            LeetCode_859 classLeetCode = new LeetCode_859();
-            Console.WriteLine(classLeetCode.BuddyStrings(s, goal));
+            //LeetCode_859 classLeetCode = new LeetCode_859();
+            //Console.WriteLine(classLeetCode.BuddyStrings(s, goal));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.BuddyStrings(s, goal));
+
+            ////(860.) Lemonade Change (EASY)
+            int[] bills = [5, 5, 5, 5, 10, 5, 10, 10, 10, 20];
+
+
+            LeetCode_860 classLeetCode = new LeetCode_860();
+            Console.WriteLine(classLeetCode.LemonadeChange(bills));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.BuddyStrings(s, goal));
-
-
+            Console.WriteLine(leetCodeAll.LemonadeChange(bills));
 
 
 
