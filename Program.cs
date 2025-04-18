@@ -2533,15 +2533,36 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BuddyStrings(s, goal));
 
             ////(860.) Lemonade Change (EASY)
-            int[] bills = [5, 5, 5, 5, 10, 5, 10, 10, 10, 20];
+            //int[] bills = [5, 5, 5, 5, 10, 5, 10, 10, 10, 20];
 
 
-            LeetCode_860 classLeetCode = new LeetCode_860();
-            Console.WriteLine(classLeetCode.LemonadeChange(bills));
+            //LeetCode_860 classLeetCode = new LeetCode_860();
+            //Console.WriteLine(classLeetCode.LemonadeChange(bills));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.LemonadeChange(bills));
+
+            ////(867.) Transpose Matrix (EASY)
+            int[][] matrix = [[1, 2, 3], [4, 5, 6]];
+
+            LeetCode_867 classLeetCode = new LeetCode_867();
+
+            int[][] result = classLeetCode.Transpose(matrix);
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             //OR
 
-            Console.WriteLine(leetCodeAll.LemonadeChange(bills));
+            int[][] result1 = classLeetCode.Transpose(matrix);
+
+            foreach (var item in result1) 
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
 
 
@@ -2582,7 +2603,12 @@ namespace ProblemSolving
 
 
 
-        }
+
+
+
+
+
+    }
 
         //public class ListNode
         //{
