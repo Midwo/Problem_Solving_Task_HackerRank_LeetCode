@@ -2575,36 +2575,59 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BinaryGap(n));
 
             ////(872.) Leaf-Similar Trees (EASY)
-            TreeNode root1 = new TreeNode(3);
-            root1.left = new TreeNode(5);
-            root1.left.left = new TreeNode(6);
-            root1.left.right = new TreeNode(2);
-            root1.left.right.left = new TreeNode(7);
-            root1.left.right.right = new TreeNode(4);
-            root1.right = new TreeNode(1);
-            root1.right.left = new TreeNode(9);
-            root1.right.right = new TreeNode(8);
+            //TreeNode root1 = new TreeNode(3);
+            //root1.left = new TreeNode(5);
+            //root1.left.left = new TreeNode(6);
+            //root1.left.right = new TreeNode(2);
+            //root1.left.right.left = new TreeNode(7);
+            //root1.left.right.right = new TreeNode(4);
+            //root1.right = new TreeNode(1);
+            //root1.right.left = new TreeNode(9);
+            //root1.right.right = new TreeNode(8);
 
-            TreeNode root2 = new TreeNode(3);
-            root2.left = new TreeNode(5);
-            root2.left.left = new TreeNode(6);
-            root2.left.right = new TreeNode(7);
-            root2.right = new TreeNode(1);
-            root2.right.left = new TreeNode(4);
-            root2.right.right = new TreeNode(2);
-            root2.right.right.left = new TreeNode(9);
-            root2.right.right.right =new TreeNode(8);
+            //TreeNode root2 = new TreeNode(3);
+            //root2.left = new TreeNode(5);
+            //root2.left.left = new TreeNode(6);
+            //root2.left.right = new TreeNode(7);
+            //root2.right = new TreeNode(1);
+            //root2.right.left = new TreeNode(4);
+            //root2.right.right = new TreeNode(2);
+            //root2.right.right.left = new TreeNode(9);
+            //root2.right.right.right =new TreeNode(8);
 
-            LeetCode_872 classLeetCode = new LeetCode_872();
+            //LeetCode_872 classLeetCode = new LeetCode_872();
 
-            Console.WriteLine(classLeetCode.LeafSimilar(root1, root2));
+            //Console.WriteLine(classLeetCode.LeafSimilar(root1, root2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LeafSimilar(root1, root2));
+            //Console.WriteLine(leetCodeAll.LeafSimilar(root1, root2));
 
+            ////(876.) Middle of the Linked List (EASY)
+            ListNode head = new ListNode(1);
+            head.next = new ListNode(2);
+            head.next.next = new ListNode(3);
+            head.next.next.next = new ListNode(4);
+            head.next.next.next.next = new ListNode(5);
+            head.next.next.next.next.next = new ListNode(6);
 
+            LeetCode_876 classLeetCode = new LeetCode_876();
+            
+            ListNode result = classLeetCode.MiddleNode(head);
 
+            while (result != null) 
+            {
+                Console.WriteLine(result.val);
+                result = result.next;
+            }
+
+            ListNode result1 = leetCodeAll.MiddleNode(head);
+
+            while (result1 != null)
+            {
+                Console.WriteLine(result1.val);
+                result1 = result1.next;
+            }
 
 
 

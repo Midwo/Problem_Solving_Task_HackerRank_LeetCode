@@ -6295,6 +6295,28 @@ namespace ProblemSolving
                 }
             }
         }
+        public ListNode MiddleNode(ListNode head)
+        {
+            ListNode ordinaryCopyHead = head;
+            int countValue = 0;
+
+            while (head != null)
+            {
+                countValue++;
+                head = head.next;
+            }
+            int middle = countValue / 2;
+
+            while (middle != 0)
+            {
+                ordinaryCopyHead = ordinaryCopyHead.next;
+                middle--;
+            }
+
+            return ordinaryCopyHead;
+        }
+
+
 
 
 
