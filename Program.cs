@@ -2604,34 +2604,41 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LeafSimilar(root1, root2));
 
             ////(876.) Middle of the Linked List (EASY)
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(2);
-            head.next.next = new ListNode(3);
-            head.next.next.next = new ListNode(4);
-            head.next.next.next.next = new ListNode(5);
-            head.next.next.next.next.next = new ListNode(6);
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(2);
+            //head.next.next = new ListNode(3);
+            //head.next.next.next = new ListNode(4);
+            //head.next.next.next.next = new ListNode(5);
+            //head.next.next.next.next.next = new ListNode(6);
 
-            LeetCode_876 classLeetCode = new LeetCode_876();
-            
-            ListNode result = classLeetCode.MiddleNode(head);
+            //LeetCode_876 classLeetCode = new LeetCode_876();
 
-            while (result != null) 
-            {
-                Console.WriteLine(result.val);
-                result = result.next;
-            }
+            //ListNode result = classLeetCode.MiddleNode(head);
 
-            ListNode result1 = leetCodeAll.MiddleNode(head);
+            //while (result != null) 
+            //{
+            //    Console.WriteLine(result.val);
+            //    result = result.next;
+            //}
 
-            while (result1 != null)
-            {
-                Console.WriteLine(result1.val);
-                result1 = result1.next;
-            }
+            //ListNode result1 = leetCodeAll.MiddleNode(head);
 
+            //while (result1 != null)
+            //{
+            //    Console.WriteLine(result1.val);
+            //    result1 = result1.next;
+            //}
 
+            ////(883.) Projection Area of 3D Shapes (EASY)
+            int[][] grid = [[1, 2], [3, 4]];
 
+            LeetCode_883 classLeetCode = new LeetCode_883();
 
+            Console.WriteLine(classLeetCode.ProjectionArea(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ProjectionArea(grid));
 
 
 
