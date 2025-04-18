@@ -2544,25 +2544,64 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LemonadeChange(bills));
 
             ////(867.) Transpose Matrix (EASY)
-            int[][] matrix = [[1, 2, 3], [4, 5, 6]];
+            //int[][] matrix = [[1, 2, 3], [4, 5, 6]];
 
-            LeetCode_867 classLeetCode = new LeetCode_867();
+            //LeetCode_867 classLeetCode = new LeetCode_867();
 
-            int[][] result = classLeetCode.Transpose(matrix);
+            //int[][] result = classLeetCode.Transpose(matrix);
 
-            foreach (var item in result)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
+
+            ////OR
+
+            //int[][] result1 = classLeetCode.Transpose(matrix);
+
+            //foreach (var item in result1) 
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
+
+            ////(868.) Binary Gap (EASY)
+            //int n = 22;
+
+            //LeetCode_868 classLeetCode = new LeetCode_868();
+            //Console.WriteLine(classLeetCode.BinaryGap(n));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.BinaryGap(n));
+
+            ////(872.) Leaf-Similar Trees (EASY)
+            TreeNode root1 = new TreeNode(3);
+            root1.left = new TreeNode(5);
+            root1.left.left = new TreeNode(6);
+            root1.left.right = new TreeNode(2);
+            root1.left.right.left = new TreeNode(7);
+            root1.left.right.right = new TreeNode(4);
+            root1.right = new TreeNode(1);
+            root1.right.left = new TreeNode(9);
+            root1.right.right = new TreeNode(8);
+
+            TreeNode root2 = new TreeNode(3);
+            root2.left = new TreeNode(5);
+            root2.left.left = new TreeNode(6);
+            root2.left.right = new TreeNode(7);
+            root2.right = new TreeNode(1);
+            root2.right.left = new TreeNode(4);
+            root2.right.right = new TreeNode(2);
+            root2.right.right.left = new TreeNode(9);
+            root2.right.right.right =new TreeNode(8);
+
+            LeetCode_872 classLeetCode = new LeetCode_872();
+
+            Console.WriteLine(classLeetCode.LeafSimilar(root1, root2));
 
             //OR
 
-            int[][] result1 = classLeetCode.Transpose(matrix);
-
-            foreach (var item in result1) 
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            Console.WriteLine(leetCodeAll.LeafSimilar(root1, root2));
 
 
 
@@ -2601,14 +2640,7 @@ namespace ProblemSolving
 
 
 
-
-
-
-
-
-
-
-    }
+        }
 
         //public class ListNode
         //{

@@ -6224,6 +6224,82 @@ namespace ProblemSolving
 
             return result;
         }
+        public int BinaryGap(int n)
+        {
+            string binaryString = Convert.ToString(n, 2);
+            int result = 0;
+            int indexFor1 = -1;
+            for (int i = 0; i < binaryString.Length; i++)
+            {
+                if (binaryString[i] == '1')
+                {
+                    if (indexFor1 >= 0)
+                    {
+                        result = Math.Max(result, i - indexFor1);
+                        indexFor1 = i;
+                    }
+                    else
+                    {
+                        indexFor1 = i;
+                    }
+                }
+            }
+
+            return result;
+        }
+        private string _resultRoot1String872;
+        private string _resultRoot2String872;
+        public bool LeafSimilar(TreeNode root1, TreeNode root2)
+        {
+            _resultRoot1String872 = string.Empty;
+            _resultRoot2String872 = string.Empty;
+
+            if (root1 != null)
+            {
+                DeepLeafSimilar(root1, 1);
+            }
+            if (root2 != null)
+            {
+                DeepLeafSimilar(root2, 2);
+            }
+
+            if (_resultRoot1String872 == _resultRoot2String872)
+            {
+                return true;
+            }
+            return false;
+        }
+        private void DeepLeafSimilar(TreeNode root, int numberRoot)
+        {
+            if (root == null)
+            {
+                return;
+            }
+            if (root.left != null)
+            {
+                DeepLeafSimilar(root.left, numberRoot);
+            }
+            if (root.right != null)
+            {
+                DeepLeafSimilar(root.right, numberRoot);
+            }
+            if (root.right == null && root.left == null)
+            {
+                if (numberRoot == 1)
+                {
+                    _resultRoot1String872 += root.val + ',';
+                }
+                else
+                {
+                    _resultRoot2String872 += root.val + ',';
+                }
+            }
+        }
+
+
+
+
+
 
 
 
