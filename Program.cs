@@ -2630,19 +2630,26 @@ namespace ProblemSolving
             //}
 
             ////(883.) Projection Area of 3D Shapes (EASY)
-            int[][] grid = [[1, 2], [3, 4]];
+            //int[][] grid = [[1, 2], [3, 4]];
 
-            LeetCode_883 classLeetCode = new LeetCode_883();
+            //LeetCode_883 classLeetCode = new LeetCode_883();
 
-            Console.WriteLine(classLeetCode.ProjectionArea(grid));
+            //Console.WriteLine(classLeetCode.ProjectionArea(grid));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.ProjectionArea(grid));
+
+            ////(884.) Uncommon Words from Two Sentences (EASY)
+            string s1 = "this apple is sweet";
+            string s2 = "this apple is sour";
+
+            LeetCode_884 classLeetCode = new LeetCode_884();
+            Console.WriteLine(string.Join(',', classLeetCode.UncommonFromSentences(s1, s2)));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.ProjectionArea(grid));
-
-
-
-
+            Console.WriteLine(string.Join(',', leetCodeAll.UncommonFromSentences(s1, s2)));
 
 
 
