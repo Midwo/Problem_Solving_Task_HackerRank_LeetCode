@@ -2641,15 +2641,58 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ProjectionArea(grid));
 
             ////(884.) Uncommon Words from Two Sentences (EASY)
-            string s1 = "this apple is sweet";
-            string s2 = "this apple is sour";
+            //string s1 = "this apple is sweet";
+            //string s2 = "this apple is sour";
 
-            LeetCode_884 classLeetCode = new LeetCode_884();
-            Console.WriteLine(string.Join(',', classLeetCode.UncommonFromSentences(s1, s2)));
+            //LeetCode_884 classLeetCode = new LeetCode_884();
+            //Console.WriteLine(string.Join(',', classLeetCode.UncommonFromSentences(s1, s2)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.UncommonFromSentences(s1, s2)));
+
+            ////(888.) Fair Candy Swap (EASY)
+            int[] aliceSizes = [1, 2, 5];
+            int[] bobSizes = [2, 4];
+
+            LeetCode_888 classLeetCode = new LeetCode_888();
+            Console.WriteLine(string.Join(',', classLeetCode.FairCandySwap(aliceSizes, bobSizes)));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.UncommonFromSentences(s1, s2)));
+            Console.WriteLine(string.Join(',', leetCodeAll.FairCandySwap(aliceSizes, bobSizes)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
