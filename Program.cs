@@ -2663,17 +2663,24 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FairCandySwap(aliceSizes, bobSizes)));
 
             ////(892.) Surface Area of 3D Shapes (EASY)
-            int[][] grid = [[1, 2], [3, 4]];
+            //int[][] grid = [[1, 2], [3, 4]];
 
-            LeetCode_892 classLeetCode = new LeetCode_892();
-            Console.WriteLine(classLeetCode.SurfaceArea(grid));
+            //LeetCode_892 classLeetCode = new LeetCode_892();
+            //Console.WriteLine(classLeetCode.SurfaceArea(grid));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.SurfaceArea(grid));
+
+            ////(896.) Monotonic Array (EASY)
+            int[] nums = [1, 3, 2];
+
+            LeetCode_896 classLeetCode = new LeetCode_896();
+            Console.WriteLine(classLeetCode.IsMonotonic(nums));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.SurfaceArea(grid));
-
-
-
+            Console.WriteLine(leetCodeAll.IsMonotonic(nums));
 
 
 
