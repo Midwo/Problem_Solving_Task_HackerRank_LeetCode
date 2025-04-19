@@ -2652,18 +2652,25 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.UncommonFromSentences(s1, s2)));
 
             ////(888.) Fair Candy Swap (EASY)
-            int[] aliceSizes = [1, 2, 5];
-            int[] bobSizes = [2, 4];
+            //int[] aliceSizes = [1, 2, 5];
+            //int[] bobSizes = [2, 4];
 
-            LeetCode_888 classLeetCode = new LeetCode_888();
-            Console.WriteLine(string.Join(',', classLeetCode.FairCandySwap(aliceSizes, bobSizes)));
+            //LeetCode_888 classLeetCode = new LeetCode_888();
+            //Console.WriteLine(string.Join(',', classLeetCode.FairCandySwap(aliceSizes, bobSizes)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.FairCandySwap(aliceSizes, bobSizes)));
+
+            ////(892.) Surface Area of 3D Shapes (EASY)
+            int[][] grid = [[1, 2], [3, 4]];
+
+            LeetCode_892 classLeetCode = new LeetCode_892();
+            Console.WriteLine(classLeetCode.SurfaceArea(grid));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FairCandySwap(aliceSizes, bobSizes)));
-
-
-
+            Console.WriteLine(leetCodeAll.SurfaceArea(grid));
 
 
 
