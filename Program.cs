@@ -2729,18 +2729,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.HasGroupsSizeX(deck));
 
             ////(917.) Reverse Only Letters (EASY)
-            string s = "Test1ng-Leet=code-Q!";
+            //string s = "Test1ng-Leet=code-Q!";
 
-            LeetCode_917 classLeetCode = new LeetCode_917();
-            Console.WriteLine(classLeetCode.ReverseOnlyLetters(s));
+            //LeetCode_917 classLeetCode = new LeetCode_917();
+            //Console.WriteLine(classLeetCode.ReverseOnlyLetters(s));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.ReverseOnlyLetters(s));
+
+            ////(922.) Sort Array By Parity II (EASY)
+            int[] nums = [4, 2, 5, 7];
+
+            LeetCode_922 classLeetCode = new LeetCode_922();
+            Console.WriteLine(string.Join(',', classLeetCode.SortArrayByParityII(nums)));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.ReverseOnlyLetters(s));
-
-
-
-
+            Console.WriteLine(string.Join(',', leetCodeAll.SortArrayByParityII(nums)));
 
 
 
