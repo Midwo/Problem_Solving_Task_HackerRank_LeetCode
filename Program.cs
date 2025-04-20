@@ -2677,6 +2677,8 @@ namespace ProblemSolving
 
             //LeetCode_896 classLeetCode = new LeetCode_896();
             //Console.WriteLine(classLeetCode.IsMonotonic(nums));
+<<<<<<< HEAD
+=======
 
             ////OR
 
@@ -2701,14 +2703,47 @@ namespace ProblemSolving
 
             LeetCode_905 classLeetCode = new LeetCode_905();
             Console.WriteLine(string.Join(',', classLeetCode.SortArrayByParity(nums)));
+>>>>>>> origin/master
 
-            //OR
+            ////OR
 
+<<<<<<< HEAD
+            //Console.WriteLine(leetCodeAll.IsMonotonic(nums));
+
+            ////(897.) Increasing Order Search Tree (EASY)
+            //TreeNode root = new TreeNode(5);
+            //root.left = new TreeNode(3);
+            //root.right = new TreeNode(6);
+            //root.left.left = new TreeNode(2);
+            //root.left.right = new TreeNode(4);
+            //root.left.left.left = new TreeNode(1);
+            //root.right.right = new TreeNode(8);
+            //root.right.right.left = new TreeNode(7);
+            //root.right.right.right = new TreeNode(9);
+=======
             Console.WriteLine(string.Join(',', leetCodeAll.SortArrayByParity(nums)));
+>>>>>>> origin/master
 
+            //LeetCode_897 classLeetCode = new LeetCode_897();
+            //TreeNode result = classLeetCode.IncreasingBST(root);
+            
+            ////OR
 
+            //TreeNode result1 = leetCodeAll.IncreasingBST(root);
 
+            ////(905.) Sort Array By Parity (EASY)
+            //int[] nums = [3, 1, 2, 4];
 
+            //LeetCode_905 classLeetCode = new LeetCode_905();
+            //Console.WriteLine(string.Join(',', classLeetCode.SortArrayByParity(nums)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.SortArrayByParity(nums)));
+
+            //
+
+            //s
 
 
 
