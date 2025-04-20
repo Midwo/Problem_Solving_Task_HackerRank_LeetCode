@@ -2739,14 +2739,35 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReverseOnlyLetters(s));
 
             ////(922.) Sort Array By Parity II (EASY)
-            int[] nums = [4, 2, 5, 7];
+            //int[] nums = [4, 2, 5, 7];
 
-            LeetCode_922 classLeetCode = new LeetCode_922();
-            Console.WriteLine(string.Join(',', classLeetCode.SortArrayByParityII(nums)));
+            //LeetCode_922 classLeetCode = new LeetCode_922();
+            //Console.WriteLine(string.Join(',', classLeetCode.SortArrayByParityII(nums)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.SortArrayByParityII(nums)));
+
+            ////(925.) Long Pressed Name (EASY)
+            string name = "alex";
+            string typed = "aaleex";
+
+            LeetCode_925 classLeetCode = new LeetCode_925();
+            Console.WriteLine(classLeetCode.IsLongPressedName(name, typed));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SortArrayByParityII(nums)));
+            Console.WriteLine(leetCodeAll.IsLongPressedName(name, typed));
+
+
+
+
+
+
+
+
+
+
 
 
 
