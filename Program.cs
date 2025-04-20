@@ -2707,18 +2707,26 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SortArrayByParity(nums)));
 
             ////(908.) Smallest Range I (EASY)
-            int[] nums = [1, 3, 6];
-            int k = 3;
+            //int[] nums = [1, 3, 6];
+            //int k = 3;
 
-            LeetCode_908 classLeetCode = new LeetCode_908();
-            Console.WriteLine(classLeetCode.SmallestRangeI(nums, k));
+            //LeetCode_908 classLeetCode = new LeetCode_908();
+            //Console.WriteLine(classLeetCode.SmallestRangeI(nums, k));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.SmallestRangeI(nums, k));
+
+
+            ////(914.) X of a Kind in a Deck of Cards (EASY)
+            int[] deck = [1, 2, 3, 4, 4, 3, 2, 1];
+
+            LeetCode_914 classLeetCode = new LeetCode_914();
+            Console.WriteLine(classLeetCode.HasGroupsSizeX(deck));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.SmallestRangeI(nums, k));
-
-
-
+            Console.WriteLine(leetCodeAll.HasGroupsSizeX(deck));
 
 
 
