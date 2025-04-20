@@ -2719,16 +2719,24 @@ namespace ProblemSolving
 
 
             ////(914.) X of a Kind in a Deck of Cards (EASY)
-            int[] deck = [1, 2, 3, 4, 4, 3, 2, 1];
+            //int[] deck = [1, 2, 3, 4, 4, 3, 2, 1];
 
-            LeetCode_914 classLeetCode = new LeetCode_914();
-            Console.WriteLine(classLeetCode.HasGroupsSizeX(deck));
+            //LeetCode_914 classLeetCode = new LeetCode_914();
+            //Console.WriteLine(classLeetCode.HasGroupsSizeX(deck));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.HasGroupsSizeX(deck));
+
+            ////(917.) Reverse Only Letters (EASY)
+            string s = "Test1ng-Leet=code-Q!";
+
+            LeetCode_917 classLeetCode = new LeetCode_917();
+            Console.WriteLine(classLeetCode.ReverseOnlyLetters(s));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.HasGroupsSizeX(deck));
-
-
+            Console.WriteLine(leetCodeAll.ReverseOnlyLetters(s));
 
 
 
