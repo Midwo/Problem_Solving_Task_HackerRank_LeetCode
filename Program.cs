@@ -2673,15 +2673,38 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SurfaceArea(grid));
 
             ////(896.) Monotonic Array (EASY)
-            int[] nums = [1, 3, 2];
+            //int[] nums = [1, 3, 2];
 
-            LeetCode_896 classLeetCode = new LeetCode_896();
-            Console.WriteLine(classLeetCode.IsMonotonic(nums));
+            //LeetCode_896 classLeetCode = new LeetCode_896();
+            //Console.WriteLine(classLeetCode.IsMonotonic(nums));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.IsMonotonic(nums));
+
+            ////(897.) Increasing Order Search Tree (EASY)
+            //TreeNode root = new TreeNode(5);
+            //root.left = new TreeNode(3);
+            //root.right = new TreeNode(6);
+            //root.left.left = new TreeNode(2);
+            //root.left.right = new TreeNode(4);
+            //root.left.left.left = new TreeNode(1);
+            //root.right.right = new TreeNode(8);
+            //root.right.right.left = new TreeNode(7);
+            //root.right.right.right = new TreeNode(9);
+
+            //LeetCode_897 classLeetCode = new LeetCode_897();
+            //TreeNode result = classLeetCode.IncreasingBST(root);
+
+            ////(905.) Sort Array By Parity (EASY)
+            int[] nums = [3, 1, 2, 4];
+
+            LeetCode_905 classLeetCode = new LeetCode_905();
+            Console.WriteLine(string.Join(',', classLeetCode.SortArrayByParity(nums)));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.IsMonotonic(nums));
-
+            Console.WriteLine(string.Join(',', leetCodeAll.SortArrayByParity(nums)));
 
 
 

@@ -6574,14 +6574,51 @@ namespace ProblemSolving
 
             return true;
         }
+        public int[] SortArrayByParity(int[] nums)
+        {
+            int length = nums.Length;
+            int howManyEvenNumbers = 0;
 
+            for (int i = 0; i < length; i++)
+            {
+                if (nums[i] % 2 == 0)
+                {
+                    int tempValue = nums[howManyEvenNumbers];
+                    nums[howManyEvenNumbers] = nums[i];
+                    nums[i] = tempValue;
+                    howManyEvenNumbers++;
+                }
+            }
 
 
+            return nums;
+        }       
 
+        private TreeNode currentRoot897;
+        public TreeNode IncreasingBST(TreeNode root)
+        {
+            TreeNode newDummyRoot = new TreeNode(-1);
+            currentRoot897 = newDummyRoot;
 
+            IncreasingBSTIn(root);
+            return newDummyRoot.right;
+        }
+        private void IncreasingBSTIn(TreeNode root)
+        {
+            if (root == null)
+            {
+                return;
+            }
 
+            IncreasingBSTIn(root.left);
 
+            root.left = null;
+            currentRoot897.right = root;
+            currentRoot897 = root;
 
+            IncreasingBSTIn(root.right);
+        }
+    
 
 
 
@@ -6645,7 +6682,15 @@ namespace ProblemSolving
 
 
 
-    }
+
+
+
+
+
+
+
+
+}
     public class ListNode
     {
         public int val;
