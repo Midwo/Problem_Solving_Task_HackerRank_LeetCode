@@ -6618,7 +6618,6 @@ namespace ProblemSolving
 
             IncreasingBSTIn(root.right);
         }
-    
 
 
 
@@ -6690,7 +6689,7 @@ namespace ProblemSolving
 
 
 
-}
+    }
     public class ListNode
     {
         public int val;
