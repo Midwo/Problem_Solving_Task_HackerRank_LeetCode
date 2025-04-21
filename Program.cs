@@ -2749,15 +2749,26 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SortArrayByParityII(nums)));
 
             ////(925.) Long Pressed Name (EASY)
-            string name = "alex";
-            string typed = "aaleex";
+            //string name = "alex";
+            //string typed = "aaleex";
 
-            LeetCode_925 classLeetCode = new LeetCode_925();
-            Console.WriteLine(classLeetCode.IsLongPressedName(name, typed));
+            //LeetCode_925 classLeetCode = new LeetCode_925();
+            //Console.WriteLine(classLeetCode.IsLongPressedName(name, typed));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.IsLongPressedName(name, typed));
+
+            ////(929.) Unique Email Addresses (EASY)
+            string[] emails = ["test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"];
+
+            LeetCode_929 classLeetCode = new LeetCode_929();
+            Console.WriteLine(classLeetCode.NumUniqueEmails(emails));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.IsLongPressedName(name, typed));
+            Console.WriteLine(leetCodeAll.NumUniqueEmails(emails));
+
 
 
 
