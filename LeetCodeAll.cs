@@ -6896,8 +6896,30 @@ namespace ProblemSolving
             if (changeTrend && trendGrow) { return true; }
             return false;
         }
+        public int[] DiStringMatch(string s)
+        {
+            int length = s.Length;
+            int minValue = 0;
+            int maxValue = length;
+            List<int> resultList = new List<int>();
 
+            for (int i = 0; i < length; i++)
+            {
+                if (s[i] == 'I')
+                {
+                    resultList.Add(minValue);
+                    minValue++;
+                }
+                else
+                {
+                    resultList.Add(maxValue);
+                    maxValue--;
+                }
+            }
+            resultList.Add(minValue);
 
+            return resultList.ToArray();
+        }
 
 
 

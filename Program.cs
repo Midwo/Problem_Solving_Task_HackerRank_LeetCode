@@ -2787,15 +2787,24 @@ namespace ProblemSolving
             //Console.WriteLine(recentCounter1.Ping(3002));
 
             ////(941.) Valid Mountain Array (EASY)
-            int[] arr = [0, 3, 2, 1];
+            //int[] arr = [0, 3, 2, 1];
 
-            LeetCode_941 classLeetCode = new LeetCode_941();
-            Console.WriteLine(classLeetCode.ValidMountainArray(arr));
+            //LeetCode_941 classLeetCode = new LeetCode_941();
+            //Console.WriteLine(classLeetCode.ValidMountainArray(arr));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.ValidMountainArray(arr));
+
+            ////(942.) DI String Match (EASY)
+            string s = "IDID";
+
+            LeetCode_942 classLeetCode = new LeetCode_942();
+            Console.WriteLine(string.Join(',',classLeetCode.DiStringMatch(s)));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.ValidMountainArray(arr));
-
+            Console.WriteLine(string.Join(',', classLeetCode.DiStringMatch(s)));
 
 
 
