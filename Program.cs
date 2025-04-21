@@ -2797,18 +2797,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ValidMountainArray(arr));
 
             ////(942.) DI String Match (EASY)
-            string s = "IDID";
+            //string s = "IDID";
 
-            LeetCode_942 classLeetCode = new LeetCode_942();
-            Console.WriteLine(string.Join(',',classLeetCode.DiStringMatch(s)));
+            //LeetCode_942 classLeetCode = new LeetCode_942();
+            //Console.WriteLine(string.Join(',',classLeetCode.DiStringMatch(s)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', classLeetCode.DiStringMatch(s)));
+
+            ////(944.) Delete Columns to Make Sorted (EASY)
+            string[] strs = ["zyx", "wvu", "tsr"];
+
+            LeetCode_944 classLeetCode = new LeetCode_944();
+            Console.WriteLine(classLeetCode.MinDeletionSize(strs));
 
             //OR
 
-            Console.WriteLine(string.Join(',', classLeetCode.DiStringMatch(s)));
-
-
-
-
+            Console.WriteLine(leetCodeAll.MinDeletionSize(strs));
 
 
 

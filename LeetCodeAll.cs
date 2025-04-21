@@ -6920,6 +6920,32 @@ namespace ProblemSolving
 
             return resultList.ToArray();
         }
+        public int MinDeletionSize(string[] strs)
+        {
+            int result = 0;
+
+            for (int i = 0; i < strs[0].Length; i++)
+            {
+                for (int j = 1; j < strs.Length; j++)
+                {
+                    if (strs[j - 1][i] > strs[j][i])
+                    {
+                        result++;
+                        break;
+                    }
+                }
+            }
+
+            return result;
+        }
+
+
+
+       
+
+
+
+
 
 
 
