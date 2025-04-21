@@ -6840,8 +6840,28 @@ namespace ProblemSolving
 
             return result.Count;
         }
+        public class RecentCounter933
+        {
+            private List<int> _list;
+            private int _startIndex;
+            public RecentCounter933()
+            {
+                _list = new List<int>();
+                _startIndex = 0;
+            }
 
+            public int Ping(int t)
+            {
+                _list.Add(t);
 
+                while (_list[_startIndex] < t - 3000)
+                {
+                    _startIndex++;
+                }
+                //Console.WriteLine(_list.Count - _startIndex);
+                return _list.Count - _startIndex;
+            }
+        }
 
 
 

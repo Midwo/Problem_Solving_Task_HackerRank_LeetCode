@@ -19,6 +19,7 @@ using static ProblemSolving.LeetCode.LeetCode_303;
 using static ProblemSolving.LeetCode.LeetCode_703;
 using static ProblemSolving.LeetCode.LeetCode_705;
 using static ProblemSolving.LeetCode.LeetCode_706;
+using static ProblemSolving.LeetCode.LeetCode_933;
 using static ProblemSolving.LeetCodeAll;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -2760,14 +2761,31 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsLongPressedName(name, typed));
 
             ////(929.) Unique Email Addresses (EASY)
-            string[] emails = ["test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"];
+            //string[] emails = ["test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"];
 
-            LeetCode_929 classLeetCode = new LeetCode_929();
-            Console.WriteLine(classLeetCode.NumUniqueEmails(emails));
+            //LeetCode_929 classLeetCode = new LeetCode_929();
+            //Console.WriteLine(classLeetCode.NumUniqueEmails(emails));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.NumUniqueEmails(emails));
+
+            ////(933.) Number of Recent Calls (EASY)
+
+            RecentCounter recentCounter = new RecentCounter();
+            Console.WriteLine(recentCounter.Ping(1));
+            Console.WriteLine(recentCounter.Ping(100));
+            Console.WriteLine(recentCounter.Ping(3001));
+            Console.WriteLine(recentCounter.Ping(3002));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.NumUniqueEmails(emails));
+            RecentCounter933 recentCounter1 = new RecentCounter933();
+            Console.WriteLine(recentCounter1.Ping(1));
+            Console.WriteLine(recentCounter1.Ping(100));
+            Console.WriteLine(recentCounter1.Ping(3001));
+            Console.WriteLine(recentCounter1.Ping(3002));
+
 
 
 
