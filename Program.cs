@@ -2772,21 +2772,29 @@ namespace ProblemSolving
 
             ////(933.) Number of Recent Calls (EASY)
 
-            RecentCounter recentCounter = new RecentCounter();
-            Console.WriteLine(recentCounter.Ping(1));
-            Console.WriteLine(recentCounter.Ping(100));
-            Console.WriteLine(recentCounter.Ping(3001));
-            Console.WriteLine(recentCounter.Ping(3002));
+            //RecentCounter recentCounter = new RecentCounter();
+            //Console.WriteLine(recentCounter.Ping(1));
+            //Console.WriteLine(recentCounter.Ping(100));
+            //Console.WriteLine(recentCounter.Ping(3001));
+            //Console.WriteLine(recentCounter.Ping(3002));
+
+            ////OR
+
+            //RecentCounter933 recentCounter1 = new RecentCounter933();
+            //Console.WriteLine(recentCounter1.Ping(1));
+            //Console.WriteLine(recentCounter1.Ping(100));
+            //Console.WriteLine(recentCounter1.Ping(3001));
+            //Console.WriteLine(recentCounter1.Ping(3002));
+
+            ////(941.) Valid Mountain Array (EASY)
+            int[] arr = [0, 3, 2, 1];
+
+            LeetCode_941 classLeetCode = new LeetCode_941();
+            Console.WriteLine(classLeetCode.ValidMountainArray(arr));
 
             //OR
 
-            RecentCounter933 recentCounter1 = new RecentCounter933();
-            Console.WriteLine(recentCounter1.Ping(1));
-            Console.WriteLine(recentCounter1.Ping(100));
-            Console.WriteLine(recentCounter1.Ping(3001));
-            Console.WriteLine(recentCounter1.Ping(3002));
-
-
+            Console.WriteLine(leetCodeAll.ValidMountainArray(arr));
 
 
 
