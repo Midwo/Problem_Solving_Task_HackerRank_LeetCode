@@ -6993,7 +6993,32 @@ namespace ProblemSolving
             return 0;
         }
 
+        private bool _result965;
+        public bool IsUnivalTree(TreeNode root)
+        {
+            if (root == null) return false;
+            _result965 = true;
+            DeepIsUnivalTree(root, root.val);
 
+            return _result965;
+        }
+        private void DeepIsUnivalTree(TreeNode root, int rootValue)
+        {
+            if (root == null)
+            {
+                return;
+            }
+            if (root.val != rootValue)
+            {
+                _result965 = false;
+                return;
+            }
+            else
+            {
+                DeepIsUnivalTree(root.left, rootValue);
+                DeepIsUnivalTree(root.right, rootValue);
+            }
+        }
 
 
 

@@ -2828,17 +2828,28 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsAlienSorted(words, order));
 
             ////(961.) N-Repeated Element in Size 2N Array (EASY)
-            int[] nums = [5, 1, 5, 2, 5, 3, 5, 4];
+            //int[] nums = [5, 1, 5, 2, 5, 3, 5, 4];
 
-            LeetCode_961 classLeetCode = new LeetCode_961();
-            Console.WriteLine(classLeetCode.RepeatedNTimes(nums));
+            //LeetCode_961 classLeetCode = new LeetCode_961();
+            //Console.WriteLine(classLeetCode.RepeatedNTimes(nums));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.RepeatedNTimes(nums));
+
+            ////(965.) Univalued Binary Tree (EASY)
+            TreeNode root = new TreeNode(2);
+            root.right = new TreeNode(2);
+            root.left = new TreeNode(2);
+            root.left.right = new TreeNode(2);
+            root.left.left = new TreeNode(5);
+
+            LeetCode_965 classLeetCode = new LeetCode_965();
+            Console.WriteLine(classLeetCode.IsUnivalTree(root));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.RepeatedNTimes(nums));
-
-
-
+            Console.WriteLine(leetCodeAll.IsUnivalTree(root));
 
 
 
