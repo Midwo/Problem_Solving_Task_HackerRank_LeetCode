@@ -2853,14 +2853,33 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsUnivalTree(root));
 
             ////(976.) Largest Perimeter Triangle (EASY)
-            int[] nums = [2, 1, 2];
+            //int[] nums = [2, 1, 2];
 
-            LeetCode_976 classLeetCode = new LeetCode_976();
-            Console.WriteLine(classLeetCode.LargestPerimeter(nums));
+            //LeetCode_976 classLeetCode = new LeetCode_976();
+            //Console.WriteLine(classLeetCode.LargestPerimeter(nums));
 
-            //OR 
+            ////OR 
 
-            Console.WriteLine(leetCodeAll.LargestPerimeter(nums));
+            //Console.WriteLine(leetCodeAll.LargestPerimeter(nums));
+
+            ////(977.) Squares of a Sorted Array (EASY)
+            int[] nums = [-4, -1, 0, 3, 10];
+
+            LeetCode_977 classLeetCode = new LeetCode_977();
+            Console.WriteLine(string.Join(',', classLeetCode.SortedSquares(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SortedSquares(nums)));
+
+
+
+
+
+
+
+
+
 
 
 
