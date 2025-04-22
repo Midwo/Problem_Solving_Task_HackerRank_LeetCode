@@ -10,6 +10,7 @@ using System.Linq;
 using System.Net;
 using System.Net.WebSockets;
 using System.Numerics;
+using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
@@ -2838,18 +2839,33 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.RepeatedNTimes(nums));
 
             ////(965.) Univalued Binary Tree (EASY)
-            TreeNode root = new TreeNode(2);
-            root.right = new TreeNode(2);
-            root.left = new TreeNode(2);
-            root.left.right = new TreeNode(2);
-            root.left.left = new TreeNode(5);
+            //TreeNode root = new TreeNode(2);
+            //root.right = new TreeNode(2);
+            //root.left = new TreeNode(2);
+            //root.left.right = new TreeNode(2);
+            //root.left.left = new TreeNode(5);
 
-            LeetCode_965 classLeetCode = new LeetCode_965();
-            Console.WriteLine(classLeetCode.IsUnivalTree(root));
+            //LeetCode_965 classLeetCode = new LeetCode_965();
+            //Console.WriteLine(classLeetCode.IsUnivalTree(root));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsUnivalTree(root));
+            //Console.WriteLine(leetCodeAll.IsUnivalTree(root));
+
+            ////(976.) Largest Perimeter Triangle (EASY)
+            int[] nums = [2, 1, 2];
+
+            LeetCode_976 classLeetCode = new LeetCode_976();
+            Console.WriteLine(classLeetCode.LargestPerimeter(nums));
+
+            //OR 
+
+            Console.WriteLine(leetCodeAll.LargestPerimeter(nums));
+
+
+
+
+
 
 
 

@@ -7019,8 +7019,21 @@ namespace ProblemSolving
                 DeepIsUnivalTree(root.right, rootValue);
             }
         }
+        public int LargestPerimeter(int[] nums)
+        {
+            int maxArea = 0;
+            int length = nums.Length;
 
-
+            Array.Sort(nums);
+            for (int i = length - 1; i >= 2; i--)
+            {
+                if (nums[i] < nums[i - 1] + nums[i - 2])
+                {
+                    return nums[i] + nums[i - 1] + nums[i - 2];
+                }
+            }
+            return maxArea;
+        }
 
 
 
