@@ -2807,17 +2807,27 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', classLeetCode.DiStringMatch(s)));
 
             ////(944.) Delete Columns to Make Sorted (EASY)
-            string[] strs = ["zyx", "wvu", "tsr"];
+            //string[] strs = ["zyx", "wvu", "tsr"];
 
-            LeetCode_944 classLeetCode = new LeetCode_944();
-            Console.WriteLine(classLeetCode.MinDeletionSize(strs));
+            //LeetCode_944 classLeetCode = new LeetCode_944();
+            //Console.WriteLine(classLeetCode.MinDeletionSize(strs));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MinDeletionSize(strs));
+
+            ////(953.) Verifying an Alien Dictionary (EASY)
+            string[] words = ["hello", "leetcode"];
+            string order = "hlabcdefgijkmnopqrstuvwxyz";
+
+            LeetCode_953 classLeetCode = new LeetCode_953();
+            Console.WriteLine(classLeetCode.IsAlienSorted(words, order));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MinDeletionSize(strs));
+            Console.WriteLine(leetCodeAll.IsAlienSorted(words, order));
 
-
-
+            ////
 
 
 
