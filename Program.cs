@@ -2897,23 +2897,31 @@ namespace ProblemSolving
 
             ////(999.) Available Captures for Rook (EASY)
 
-            char[][] board = [['.','.','.','.','.','.','.','.'],
-                              ['p','.','.','p','.','.','.','p'],
-                              ['p','p','.','.','.','.','p','p'],
-                              ['p','p','p','.','R','p','p','p'],
-                              ['p','p','.','.','.','.','p','p'],
-                              ['p','.','.','p','.','.','.','p'],
-                              ['.','.','.','.','.','.','.','.'],
-                              ['.','.','.','.','.','.','.','.']];
+            //char[][] board = [['.','.','.','.','.','.','.','.'],
+            //                  ['p','.','.','p','.','.','.','p'],
+            //                  ['p','p','.','.','.','.','p','p'],
+            //                  ['p','p','p','.','R','p','p','p'],
+            //                  ['p','p','.','.','.','.','p','p'],
+            //                  ['p','.','.','p','.','.','.','p'],
+            //                  ['.','.','.','.','.','.','.','.'],
+            //                  ['.','.','.','.','.','.','.','.']];
 
-            LeetCode_999 classLeetCode = new LeetCode_999();
-            Console.WriteLine(classLeetCode.NumRookCaptures(board));
+            //LeetCode_999 classLeetCode = new LeetCode_999();
+            //Console.WriteLine(classLeetCode.NumRookCaptures(board));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.NumRookCaptures(board));
+
+            /////(1002.) Find Common Characters (EASY)
+            string[] words = ["bella", "label", "roller"];
+
+            LeetCode_1002 classLeetCode = new LeetCode_1002();
+            Console.WriteLine(string.Join(',', classLeetCode.CommonChars(words)));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.NumRookCaptures(board));
-
-            ////
+            Console.WriteLine(string.Join(',', leetCodeAll.CommonChars(words)));
 
 
 
@@ -2944,8 +2952,7 @@ namespace ProblemSolving
 
 
 
-
-    }
+        }
 
         //public class ListNode
         //{
