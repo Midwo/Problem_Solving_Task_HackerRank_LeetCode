@@ -2914,14 +2914,40 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumRookCaptures(board));
 
             /////(1002.) Find Common Characters (EASY)
-            string[] words = ["bella", "label", "roller"];
+            //string[] words = ["bella", "label", "roller"];
 
-            LeetCode_1002 classLeetCode = new LeetCode_1002();
-            Console.WriteLine(string.Join(',', classLeetCode.CommonChars(words)));
+            //LeetCode_1002 classLeetCode = new LeetCode_1002();
+            //Console.WriteLine(string.Join(',', classLeetCode.CommonChars(words)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.CommonChars(words)));
+
+            ////(1005.) Maximize Sum Of Array After K Negations (EASY)
+            int[] nums = [-4, -2, -3];
+            int k = 4;
+
+            LeetCode_1005 classLeetCode = new LeetCode_1005();
+            Console.WriteLine(classLeetCode.LargestSumAfterKNegations(nums, k));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.CommonChars(words)));
+            Console.WriteLine(leetCodeAll.LargestSumAfterKNegations(nums, k));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
