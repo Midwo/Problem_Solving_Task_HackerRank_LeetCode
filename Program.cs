@@ -2863,19 +2863,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LargestPerimeter(nums));
 
             ////(977.) Squares of a Sorted Array (EASY)
-            int[] nums = [-4, -1, 0, 3, 10];
+            //int[] nums = [-4, -1, 0, 3, 10];
 
-            LeetCode_977 classLeetCode = new LeetCode_977();
-            Console.WriteLine(string.Join(',', classLeetCode.SortedSquares(nums)));
+            //LeetCode_977 classLeetCode = new LeetCode_977();
+            //Console.WriteLine(string.Join(',', classLeetCode.SortedSquares(nums)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.SortedSquares(nums)));
+
+            ////(989.) Add to Array-Form of Integer (EASY)
+            int[] num = [1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 0, 6, 3];
+            int k = 516;
+
+            LeetCode_989 classLeetCode = new LeetCode_989();
+            Console.WriteLine(string.Join(',', classLeetCode.AddToArrayForm(num, k)));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SortedSquares(nums)));
-
-
-
-
-
+            Console.WriteLine(string.Join(',', leetCodeAll.AddToArrayForm(num, k)));
 
 
 
