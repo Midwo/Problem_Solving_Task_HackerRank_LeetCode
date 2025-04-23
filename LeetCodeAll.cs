@@ -7394,8 +7394,21 @@ namespace ProblemSolving
 
             return nums.Sum();
         }
+        public int BitwiseComplement(int n)
+        {
+            string convertNtoString = Convert.ToString(n, 2);
+            int result = 0;
 
+            for (int i = convertNtoString.Length - 1; i >= 0; i--)
+            {
+                if (convertNtoString[i] == '0')
+                {
+                    result += (int)Math.Pow(2, convertNtoString.Length - 1 - i);
+                }
+            }
 
+            return result;
+        }
 
 
 

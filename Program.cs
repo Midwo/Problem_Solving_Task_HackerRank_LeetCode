@@ -2924,16 +2924,25 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.CommonChars(words)));
 
             ////(1005.) Maximize Sum Of Array After K Negations (EASY)
-            int[] nums = [-4, -2, -3];
-            int k = 4;
+            //int[] nums = [-4, -2, -3];
+            //int k = 4;
 
-            LeetCode_1005 classLeetCode = new LeetCode_1005();
-            Console.WriteLine(classLeetCode.LargestSumAfterKNegations(nums, k));
+            //LeetCode_1005 classLeetCode = new LeetCode_1005();
+            //Console.WriteLine(classLeetCode.LargestSumAfterKNegations(nums, k));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.LargestSumAfterKNegations(nums, k));
+
+            ////(1009.) Complement of Base 10 Integer (EASY)
+            int n = 5;
+
+            LeetCode_1009 classLeetCode = new LeetCode_1009();
+            Console.WriteLine(classLeetCode.BitwiseComplement(n));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.LargestSumAfterKNegations(nums, k));
-
+            Console.WriteLine(leetCodeAll.BitwiseComplement(n));
 
 
 
