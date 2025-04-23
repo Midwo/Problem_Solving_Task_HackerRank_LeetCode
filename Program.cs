@@ -12,6 +12,7 @@ using System.Net.WebSockets;
 using System.Numerics;
 using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
+using System.Security;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using static ProblemSolving.LeetCode.LeetCode_225;
@@ -2873,16 +2874,26 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SortedSquares(nums)));
 
             ////(989.) Add to Array-Form of Integer (EASY)
-            int[] num = [1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 0, 6, 3];
-            int k = 516;
+            //int[] num = [1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 0, 6, 3];
+            //int k = 516;
 
-            LeetCode_989 classLeetCode = new LeetCode_989();
-            Console.WriteLine(string.Join(',', classLeetCode.AddToArrayForm(num, k)));
+            //LeetCode_989 classLeetCode = new LeetCode_989();
+            //Console.WriteLine(string.Join(',', classLeetCode.AddToArrayForm(num, k)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.AddToArrayForm(num, k)));
+
+            ///(997.) Find the Town Judge (EASY)
+            int n = 3;
+            int[][] trust = [[1, 2], [2, 3]];
+
+            LeetCode_997 classLeetCode = new LeetCode_997();
+            Console.WriteLine(classLeetCode.FindJudge(n, trust));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.AddToArrayForm(num, k)));
-
+            Console.WriteLine(leetCodeAll.FindJudge(n, trust));
 
 
 
