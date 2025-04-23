@@ -2885,15 +2885,35 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.AddToArrayForm(num, k)));
 
             ///(997.) Find the Town Judge (EASY)
-            int n = 3;
-            int[][] trust = [[1, 2], [2, 3]];
+            //int n = 3;
+            //int[][] trust = [[1, 2], [2, 3]];
 
-            LeetCode_997 classLeetCode = new LeetCode_997();
-            Console.WriteLine(classLeetCode.FindJudge(n, trust));
+            //LeetCode_997 classLeetCode = new LeetCode_997();
+            //Console.WriteLine(classLeetCode.FindJudge(n, trust));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.FindJudge(n, trust));
+
+            ////(999.) Available Captures for Rook (EASY)
+
+            char[][] board = [['.','.','.','.','.','.','.','.'],
+                              ['p','.','.','p','.','.','.','p'],
+                              ['p','p','.','.','.','.','p','p'],
+                              ['p','p','p','.','R','p','p','p'],
+                              ['p','p','.','.','.','.','p','p'],
+                              ['p','.','.','p','.','.','.','p'],
+                              ['.','.','.','.','.','.','.','.'],
+                              ['.','.','.','.','.','.','.','.']];
+
+            LeetCode_999 classLeetCode = new LeetCode_999();
+            Console.WriteLine(classLeetCode.NumRookCaptures(board));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.FindJudge(n, trust));
+            Console.WriteLine(leetCodeAll.NumRookCaptures(board));
+
+            ////
 
 
 
@@ -2925,13 +2945,7 @@ namespace ProblemSolving
 
 
 
-
-
-
-
-
-
-        }
+    }
 
         //public class ListNode
         //{
