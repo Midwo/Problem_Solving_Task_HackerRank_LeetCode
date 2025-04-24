@@ -2956,15 +2956,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanThreePartsEqualSum(arr));
 
             ////(1018.) Binary Prefix Divisible By 5 (EASY)
-            int[] nums = [1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0];
+            //int[] nums = [1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0];
 
-            LeetCode_1018 classLeetCode = new LeetCode_1018();
-            Console.WriteLine(string.Join(',', classLeetCode.PrefixesDivBy5(nums)));
+            //LeetCode_1018 classLeetCode = new LeetCode_1018();
+            //Console.WriteLine(string.Join(',', classLeetCode.PrefixesDivBy5(nums)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.PrefixesDivBy5(nums)));
+
+            ////(1021.) Remove Outermost Parentheses (EASY)
+            string s = "(()())(())";
+
+            LeetCode_1021 classLeetCode = new LeetCode_1021();
+            Console.WriteLine(classLeetCode.RemoveOuterParentheses(s));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.PrefixesDivBy5(nums)));
-
+            Console.WriteLine(leetCodeAll.RemoveOuterParentheses(s));
 
 
 

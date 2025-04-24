@@ -7498,8 +7498,28 @@ namespace ProblemSolving
             }
             return result;
         }
+        public string RemoveOuterParentheses(string s)
+        {
 
+            int howMany = 0;
+            StringBuilder result = new StringBuilder();
 
+            foreach (char c in s)
+            {
+                if (c == '(')
+                {
+                    if (howMany > 0) result.Append('(');
+                    howMany++;
+                }
+                else
+                {
+                    howMany--;
+                    if (howMany > 0) result.Append(')');
+                }
+            }
+
+            return result.ToString();
+        }
 
 
 
