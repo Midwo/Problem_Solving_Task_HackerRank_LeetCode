@@ -14,6 +14,7 @@ using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Xml.Linq;
 using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
@@ -2935,16 +2936,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LargestSumAfterKNegations(nums, k));
 
             ////(1009.) Complement of Base 10 Integer (EASY)
-            int n = 5;
+            //int n = 5;
 
-            LeetCode_1009 classLeetCode = new LeetCode_1009();
-            Console.WriteLine(classLeetCode.BitwiseComplement(n));
+            //LeetCode_1009 classLeetCode = new LeetCode_1009();
+            //Console.WriteLine(classLeetCode.BitwiseComplement(n));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.BitwiseComplement(n));
+
+            ////(1013.) Partition Array Into Three Parts With Equal Sum (EASY)
+            int[] arr = [18, 12, -18, 18, -19, -1, 10, 10];
+
+            LeetCode_1013 classLeetCode = new LeetCode_1013();
+            Console.WriteLine(classLeetCode.CanThreePartsEqualSum(arr));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.BitwiseComplement(n));
-
-
+            Console.WriteLine(leetCodeAll.CanThreePartsEqualSum(arr));
 
 
 
