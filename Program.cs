@@ -2946,17 +2946,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BitwiseComplement(n));
 
             ////(1013.) Partition Array Into Three Parts With Equal Sum (EASY)
-            int[] arr = [18, 12, -18, 18, -19, -1, 10, 10];
+            //int[] arr = [18, 12, -18, 18, -19, -1, 10, 10];
 
-            LeetCode_1013 classLeetCode = new LeetCode_1013();
-            Console.WriteLine(classLeetCode.CanThreePartsEqualSum(arr));
+            //LeetCode_1013 classLeetCode = new LeetCode_1013();
+            //Console.WriteLine(classLeetCode.CanThreePartsEqualSum(arr));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.CanThreePartsEqualSum(arr));
+
+            ////(1018.) Binary Prefix Divisible By 5 (EASY)
+            int[] nums = [1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0];
+
+            LeetCode_1018 classLeetCode = new LeetCode_1018();
+            Console.WriteLine(string.Join(',', classLeetCode.PrefixesDivBy5(nums)));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.CanThreePartsEqualSum(arr));
-
-
-
+            Console.WriteLine(string.Join(',', leetCodeAll.PrefixesDivBy5(nums)));
 
 
 
