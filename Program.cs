@@ -2966,14 +2966,30 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.PrefixesDivBy5(nums)));
 
             ////(1021.) Remove Outermost Parentheses (EASY)
-            string s = "(()())(())";
+            //string s = "(()())(())";
 
-            LeetCode_1021 classLeetCode = new LeetCode_1021();
-            Console.WriteLine(classLeetCode.RemoveOuterParentheses(s));
+            //LeetCode_1021 classLeetCode = new LeetCode_1021();
+            //Console.WriteLine(classLeetCode.RemoveOuterParentheses(s));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.RemoveOuterParentheses(s));
+
+            ////(1022.) Sum of Root To Leaf Binary Numbers (EASY)
+            TreeNode root = new TreeNode(1);
+            root.left = new TreeNode(0);
+            root.left.left = new TreeNode(0);
+            root.left.right = new TreeNode(1);
+            root.right = new TreeNode(1);
+            root.right.left = new TreeNode(0);
+            root.right.right = new TreeNode(1);
+
+            LeetCode_1022 classLeetCode = new LeetCode_1022();
+            Console.WriteLine(classLeetCode.SumRootToLeaf(root));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.RemoveOuterParentheses(s));
+            Console.WriteLine(leetCodeAll.SumRootToLeaf(root));
 
 
 

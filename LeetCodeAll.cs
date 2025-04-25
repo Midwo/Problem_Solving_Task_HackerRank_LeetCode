@@ -7521,7 +7521,33 @@ namespace ProblemSolving
             return result.ToString();
         }
 
+        private int _sum1022;
+        public int SumRootToLeaf(TreeNode root)
+        {
+            _sum1022 = 0;
+            if (root != null)
+            {
+                DeepSumSumRootToLeaf(root, 0);
+            }
+            return _sum1022;
+        }
+        private void DeepSumSumRootToLeaf(TreeNode root, int target)
+        {
+            if (root == null)
+            {
+                return;
+            }
 
+            target = target * 2 + root.val;
+
+            if (root.left == null && root.right == null)
+            {
+                _sum1022 += target;
+            }
+
+            DeepSumSumRootToLeaf(root.left, target);
+            DeepSumSumRootToLeaf(root.right, target);
+        }
 
 
 
