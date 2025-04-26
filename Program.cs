@@ -2976,23 +2976,30 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.RemoveOuterParentheses(s));
 
             ////(1022.) Sum of Root To Leaf Binary Numbers (EASY)
-            TreeNode root = new TreeNode(1);
-            root.left = new TreeNode(0);
-            root.left.left = new TreeNode(0);
-            root.left.right = new TreeNode(1);
-            root.right = new TreeNode(1);
-            root.right.left = new TreeNode(0);
-            root.right.right = new TreeNode(1);
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(0);
+            //root.left.left = new TreeNode(0);
+            //root.left.right = new TreeNode(1);
+            //root.right = new TreeNode(1);
+            //root.right.left = new TreeNode(0);
+            //root.right.right = new TreeNode(1);
 
-            LeetCode_1022 classLeetCode = new LeetCode_1022();
-            Console.WriteLine(classLeetCode.SumRootToLeaf(root));
+            //LeetCode_1022 classLeetCode = new LeetCode_1022();
+            //Console.WriteLine(classLeetCode.SumRootToLeaf(root));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.SumRootToLeaf(root));
+
+            ////(1025.) Divisor Game (EASY)
+            int n = 2;
+
+            LeetCode_1025 classLeetCode = new LeetCode_1025();
+            Console.WriteLine(classLeetCode.DivisorGame(n));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.SumRootToLeaf(root));
-
-
-
+            Console.WriteLine(leetCodeAll.DivisorGame(n));
 
 
 

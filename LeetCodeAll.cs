@@ -7548,8 +7548,35 @@ namespace ProblemSolving
             DeepSumSumRootToLeaf(root.left, target);
             DeepSumSumRootToLeaf(root.right, target);
         }
+        public bool DivisorGame(int n)
+        {
+            bool AliceWin = false;
+            bool outLoop = false;
+            int x = 1;
 
+            while (n > 1)
+            {
+                while (x < n)
+                {
+                    if (n % x == 0)
+                    {
+                        if (AliceWin)
+                        {
+                            AliceWin = false;
+                        }
+                        else
+                        {
+                            AliceWin = true;
+                        }
+                        n -= x;
+                        break;
+                    }
+                    x++;
+                }
+            }
 
+            return AliceWin;
+        }
 
 
 
