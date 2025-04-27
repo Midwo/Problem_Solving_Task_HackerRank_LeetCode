@@ -2992,17 +2992,37 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumRootToLeaf(root));
 
             ////(1025.) Divisor Game (EASY)
-            int n = 2;
+            //int n = 2;
 
-            LeetCode_1025 classLeetCode = new LeetCode_1025();
-            Console.WriteLine(classLeetCode.DivisorGame(n));
+            //LeetCode_1025 classLeetCode = new LeetCode_1025();
+            //Console.WriteLine(classLeetCode.DivisorGame(n));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.DivisorGame(n));
+
+            ////(1030.) Matrix Cells in Distance Order (EASY)
+            int rows = 2;
+            int cols = 3;
+            int rCenter = 1;
+            int cCenter = 2;
+
+            LeetCode_1030 classLeetCode = new LeetCode_1030();
+            int[][] result = classLeetCode.AllCellsDistOrder(rows, cols, rCenter, cCenter);
+
+            foreach (var row in result)
+            {
+                Console.WriteLine(string.Join(',', row));
+            }
 
             //OR
 
-            Console.WriteLine(leetCodeAll.DivisorGame(n));
+            int[][] result1 = leetCodeAll.AllCellsDistOrder(rows, cols, rCenter, cCenter);
 
-
-
+            foreach (var row in result1)
+            {
+                Console.WriteLine(string.Join(',', row));
+            }
 
 
 
