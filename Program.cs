@@ -3036,17 +3036,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsBoomerang(points));
 
             ////(1046.) Last Stone Weight (EASY)
-            int[] stones = [2, 2];
+            //int[] stones = [2, 2];
 
-            LeetCode_1046 classLeetCode = new LeetCode_1046();
-            Console.WriteLine(classLeetCode.LastStoneWeight(stones));
+            //LeetCode_1046 classLeetCode = new LeetCode_1046();
+            //Console.WriteLine(classLeetCode.LastStoneWeight(stones));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.LastStoneWeight(stones));
+
+            ////(1047.) Remove All Adjacent Duplicates In String (EASY)
+            string s = "abbaca";
+
+            LeetCode_1047 classLeetCode = new LeetCode_1047();
+            Console.WriteLine(string.Join(',', classLeetCode.RemoveDuplicates(s)));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.LastStoneWeight(stones));
-
-            ////
-
+            Console.WriteLine(string.Join(',', leetCodeAll.RemoveDuplicates(s)));
 
 
 

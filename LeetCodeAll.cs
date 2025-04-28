@@ -7649,6 +7649,23 @@ namespace ProblemSolving
 
             return listWeight[0];
         }
+        public string RemoveDuplicates(string s)
+        {
+            char[] charS = s.ToCharArray();
+            int index = 0;
+
+            for (int i = 0; i < charS.Length; i++)
+            {
+                charS[index] = charS[i];
+                if (index > 0 && charS[index] == charS[index - 1])
+                {
+                    index -= 2;
+                }
+                index++;
+            }
+
+            return new String(charS, 0, index);
+        }
 
 
 
