@@ -3026,14 +3026,28 @@ namespace ProblemSolving
 
             ////(1037.) Valid Boomerang (EASY)
 
-            int[][] points = [[1, 1], [2, 2], [7, 7]];
+            //int[][] points = [[1, 1], [2, 2], [7, 7]];
 
-            LeetCode_1037 classLeetCode = new LeetCode_1037();
-            Console.WriteLine(classLeetCode.IsBoomerang(points));
+            //LeetCode_1037 classLeetCode = new LeetCode_1037();
+            //Console.WriteLine(classLeetCode.IsBoomerang(points));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.IsBoomerang(points));
+
+            ////(1046.) Last Stone Weight (EASY)
+            int[] stones = [2, 2];
+
+            LeetCode_1046 classLeetCode = new LeetCode_1046();
+            Console.WriteLine(classLeetCode.LastStoneWeight(stones));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.IsBoomerang(points));
+            Console.WriteLine(leetCodeAll.LastStoneWeight(stones));
+
+            ////
+
+
 
 
 
