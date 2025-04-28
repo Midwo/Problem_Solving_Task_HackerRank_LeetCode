@@ -3002,31 +3002,38 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DivisorGame(n));
 
             ////(1030.) Matrix Cells in Distance Order (EASY)
-            int rows = 2;
-            int cols = 3;
-            int rCenter = 1;
-            int cCenter = 2;
+            //int rows = 2;
+            //int cols = 3;
+            //int rCenter = 1;
+            //int cCenter = 2;
 
-            LeetCode_1030 classLeetCode = new LeetCode_1030();
-            int[][] result = classLeetCode.AllCellsDistOrder(rows, cols, rCenter, cCenter);
+            //LeetCode_1030 classLeetCode = new LeetCode_1030();
+            //int[][] result = classLeetCode.AllCellsDistOrder(rows, cols, rCenter, cCenter);
 
-            foreach (var row in result)
-            {
-                Console.WriteLine(string.Join(',', row));
-            }
+            //foreach (var row in result)
+            //{
+            //    Console.WriteLine(string.Join(',', row));
+            //}
+
+            ////OR
+
+            //int[][] result1 = leetCodeAll.AllCellsDistOrder(rows, cols, rCenter, cCenter);
+
+            //foreach (var row in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', row));
+            //}
+
+            ////(1037.) Valid Boomerang (EASY)
+
+            int[][] points = [[1, 1], [2, 2], [7, 7]];
+
+            LeetCode_1037 classLeetCode = new LeetCode_1037();
+            Console.WriteLine(classLeetCode.IsBoomerang(points));
 
             //OR
 
-            int[][] result1 = leetCodeAll.AllCellsDistOrder(rows, cols, rCenter, cCenter);
-
-            foreach (var row in result1)
-            {
-                Console.WriteLine(string.Join(',', row));
-            }
-
-
-
-
+            Console.WriteLine(leetCodeAll.IsBoomerang(points));
 
 
 
