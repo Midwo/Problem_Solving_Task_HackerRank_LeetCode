@@ -7666,6 +7666,24 @@ namespace ProblemSolving
 
             return new String(charS, 0, index);
         }
+        public int HeightChecker(int[] heights)
+        {
+            List<int> sortedHeights = heights.ToList();
+            sortedHeights.Sort();
+
+            int result = 0;
+
+            for (int i = 0; i < heights.Length; i++)
+            {
+                if (heights[i] != sortedHeights[i])
+                {
+                    result++;
+                }
+            }
+
+            return result;
+        }
+
 
 
 

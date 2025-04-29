@@ -3046,15 +3046,43 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LastStoneWeight(stones));
 
             ////(1047.) Remove All Adjacent Duplicates In String (EASY)
-            string s = "abbaca";
+            //string s = "abbaca";
 
-            LeetCode_1047 classLeetCode = new LeetCode_1047();
-            Console.WriteLine(string.Join(',', classLeetCode.RemoveDuplicates(s)));
+            //LeetCode_1047 classLeetCode = new LeetCode_1047();
+            //Console.WriteLine(string.Join(',', classLeetCode.RemoveDuplicates(s)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.RemoveDuplicates(s)));
+
+            ////(1050.) Actors and Directors Who Cooperated At Least Three Times (EASY);
+            //string SqlQuery = 
+            //    @"
+            //         Select
+            //            actor_id,
+            //            director_id
+            //         FROM (Select
+            //                  actor_id,
+            //                  director_id,
+            //                  count(director_id) as HowMany
+            //                  FROM ActorDirector 
+            //                  GROUP BY  actor_id, director_id) a
+            //         Where HowMany > 2;
+            //    ";
+
+            ////OR
+
+            //LeetCode_1050 classLeetCode = new LeetCode_1050();
+
+            ////(1051.) Height Checker (EASY)
+            int[] heights = [1, 1, 4, 2, 1, 3];
+
+            LeetCode_1051 classLeetCode= new LeetCode_1051();
+            Console.WriteLine(classLeetCode.HeightChecker(heights));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.RemoveDuplicates(s)));
-
+            Console.WriteLine(leetCodeAll.HeightChecker(heights));
 
 
 
