@@ -3075,14 +3075,35 @@ namespace ProblemSolving
             //LeetCode_1050 classLeetCode = new LeetCode_1050();
 
             ////(1051.) Height Checker (EASY)
-            int[] heights = [1, 1, 4, 2, 1, 3];
+            //int[] heights = [1, 1, 4, 2, 1, 3];
 
-            LeetCode_1051 classLeetCode= new LeetCode_1051();
-            Console.WriteLine(classLeetCode.HeightChecker(heights));
+            //LeetCode_1051 classLeetCode= new LeetCode_1051();
+            //Console.WriteLine(classLeetCode.HeightChecker(heights));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.HeightChecker(heights));
+
+            ////(1068.) Product Sales Analysis I (EASY)
+            string SqlQuery =
+                @"
+                    Select
+                        b.product_name,
+                        a.year,
+                        a.price
+                    FROM Sales as a
+                    left JOIN Product as b
+                    ON a.product_id = b.product_id 
+                ";
 
             //OR
 
-            Console.WriteLine(leetCodeAll.HeightChecker(heights));
+            LeetCode_1068 classLeetCode = new LeetCode_1068();
+
+
+
+
+
 
 
 
