@@ -3101,17 +3101,37 @@ namespace ProblemSolving
             //LeetCode_1068 classLeetCode = new LeetCode_1068();
 
             ////(1071.) Greatest Common Divisor of Strings (EASY)
-            string str1 = "TAUXXTAUXXTAUXXTAUXXTAUXX";
-            string str2 = "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX";
+            //string str1 = "TAUXXTAUXXTAUXXTAUXXTAUXX";
+            //string str2 = "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX";
 
-            LeetCode_1071 classLeetCode = new LeetCode_1071();
-            Console.WriteLine(classLeetCode.GcdOfStrings(str1, str2));
+            //LeetCode_1071 classLeetCode = new LeetCode_1071();
+            //Console.WriteLine(classLeetCode.GcdOfStrings(str1, str2));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.GcdOfStrings(str1, str2));
+
+            ////(1075.) Project Employees I (EASY)
+            string SqlQuery =
+                @"
+                    Select 
+                        a.project_id,
+                        ROUND(CAST(a.Sum_Years AS decimal)/CAST(a.How_Many_Peoples AS decimal),2) as average_years 
+                    FROM (
+                            Select 
+                                a.project_id,
+                                SUM(b.experience_years) as Sum_Years, 
+                                Count(a.employee_id) as How_Many_Peoples
+                            From Project as a
+                            left join Employee as b
+                            ON a.employee_id  = b.employee_id 
+                            GROUP BY a.project_id
+                         ) a
+                ";
 
             //OR
 
-            Console.WriteLine(leetCodeAll.GcdOfStrings(str1, str2));
-
-
+            LeetCode_1075 classLeetCode = new LeetCode_1075();
 
 
 
