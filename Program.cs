@@ -3085,27 +3085,31 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.HeightChecker(heights));
 
             ////(1068.) Product Sales Analysis I (EASY)
-            string SqlQuery =
-                @"
-                    Select
-                        b.product_name,
-                        a.year,
-                        a.price
-                    FROM Sales as a
-                    left JOIN Product as b
-                    ON a.product_id = b.product_id 
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            b.product_name,
+            //            a.year,
+            //            a.price
+            //        FROM Sales as a
+            //        left JOIN Product as b
+            //        ON a.product_id = b.product_id 
+            //    ";
+
+            ////OR
+
+            //LeetCode_1068 classLeetCode = new LeetCode_1068();
+
+            ////(1071.) Greatest Common Divisor of Strings (EASY)
+            string str1 = "TAUXXTAUXXTAUXXTAUXXTAUXX";
+            string str2 = "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX";
+
+            LeetCode_1071 classLeetCode = new LeetCode_1071();
+            Console.WriteLine(classLeetCode.GcdOfStrings(str1, str2));
 
             //OR
 
-            LeetCode_1068 classLeetCode = new LeetCode_1068();
-
-
-
-
-
-
-
+            Console.WriteLine(leetCodeAll.GcdOfStrings(str1, str2));
 
 
 
