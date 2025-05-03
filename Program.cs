@@ -3112,26 +3112,49 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GcdOfStrings(str1, str2));
 
             ////(1075.) Project Employees I (EASY)
-            string SqlQuery =
-                @"
-                    Select 
-                        a.project_id,
-                        ROUND(CAST(a.Sum_Years AS decimal)/CAST(a.How_Many_Peoples AS decimal),2) as average_years 
-                    FROM (
-                            Select 
-                                a.project_id,
-                                SUM(b.experience_years) as Sum_Years, 
-                                Count(a.employee_id) as How_Many_Peoples
-                            From Project as a
-                            left join Employee as b
-                            ON a.employee_id  = b.employee_id 
-                            GROUP BY a.project_id
-                         ) a
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            a.project_id,
+            //            ROUND(CAST(a.Sum_Years AS decimal)/CAST(a.How_Many_Peoples AS decimal),2) as average_years 
+            //        FROM (
+            //                Select 
+            //                    a.project_id,
+            //                    SUM(b.experience_years) as Sum_Years, 
+            //                    Count(a.employee_id) as How_Many_Peoples
+            //                From Project as a
+            //                left join Employee as b
+            //                ON a.employee_id  = b.employee_id 
+            //                GROUP BY a.project_id
+            //             ) a
+            //    ";
+
+            ////OR
+
+            //LeetCode_1075 classLeetCode = new LeetCode_1075();
+
+            ////(1078.) Occurrences After Bigram (EASY)
+            string text = "we we we we will rock you";
+            string first = "we";
+            string second = "we";
+
+            LeetCode_1078 classLeetCode = new LeetCode_1078();
+            Console.WriteLine(string.Join(",", classLeetCode.FindOcurrences(text, first, second)));
 
             //OR
 
-            LeetCode_1075 classLeetCode = new LeetCode_1075();
+            Console.WriteLine(string.Join(",", leetCodeAll.FindOcurrences(text, first, second)));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
