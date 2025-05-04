@@ -7836,8 +7836,10 @@ namespace ProblemSolving
 
             return result;
         }
-
-
+        public string DefangIPaddr(string address)
+        {
+            return address.Replace(".", "[.]");
+        }
 
 
 

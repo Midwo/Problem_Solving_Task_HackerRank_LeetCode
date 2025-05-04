@@ -3177,15 +3177,44 @@ namespace ProblemSolving
             //leetCodeAll.DuplicateZeros(arr);
 
             ////(1103.) Distribute Candies to People (EASY)
-            int candies = 10;
-            int num_people = 3;
+            //int candies = 10;
+            //int num_people = 3;
 
-            LeetCode_1103 classLeetCode = new LeetCode_1103();
-            Console.WriteLine(string.Join(",",classLeetCode.DistributeCandies(candies, num_people)));
+            //LeetCode_1103 classLeetCode = new LeetCode_1103();
+            //Console.WriteLine(string.Join(",",classLeetCode.DistributeCandies(candies, num_people)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(",", leetCodeAll.DistributeCandies(candies, num_people)));
+
+            ////(1108.) Defanging an IP Address (EASY)
+            string address = "255.100.50.0";
+
+            LeetCode_1108 classLeetCode = new LeetCode_1108();
+            Console.WriteLine(classLeetCode.DefangIPaddr(address));
 
             //OR
 
-            Console.WriteLine(string.Join(",", leetCodeAll.DistributeCandies(candies, num_people)));
+            Console.WriteLine(leetCodeAll.DefangIPaddr(address));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
