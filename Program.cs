@@ -3166,20 +3166,26 @@ namespace ProblemSolving
             //LeetCode_1084 classLeetCode = new LeetCode_1084();
 
             ////(1089.) Duplicate Zeros (EASY)
-            int[] arr = [0, 0, 0, 0, 0, 0, 0];
+            //int[] arr = [0, 0, 0, 0, 0, 0, 0];
 
-            LeetCode_1089 classLeetCode = new LeetCode_1089();
+            //LeetCode_1089 classLeetCode = new LeetCode_1089();
 
-            classLeetCode.DuplicateZeros(arr);
+            //classLeetCode.DuplicateZeros(arr);
+
+            ////OR
+
+            //leetCodeAll.DuplicateZeros(arr);
+
+            ////(1103.) Distribute Candies to People (EASY)
+            int candies = 10;
+            int num_people = 3;
+
+            LeetCode_1103 classLeetCode = new LeetCode_1103();
+            Console.WriteLine(string.Join(",",classLeetCode.DistributeCandies(candies, num_people)));
 
             //OR
 
-            leetCodeAll.DuplicateZeros(arr);
-
-
-
-
-
+            Console.WriteLine(string.Join(",", leetCodeAll.DistributeCandies(candies, num_people)));
 
 
 
