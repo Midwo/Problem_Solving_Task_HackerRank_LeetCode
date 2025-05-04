@@ -3133,20 +3133,37 @@ namespace ProblemSolving
 
             //LeetCode_1075 classLeetCode = new LeetCode_1075();
 
-            ////(1078.) Occurrences After Bigram (EASY)
-            string text = "we we we we will rock you";
-            string first = "we";
-            string second = "we";
+            //////(1078.) Occurrences After Bigram (EASY)
+            //string text = "we we we we will rock you";
+            //string first = "we";
+            //string second = "we";
 
-            LeetCode_1078 classLeetCode = new LeetCode_1078();
-            Console.WriteLine(string.Join(",", classLeetCode.FindOcurrences(text, first, second)));
+            //LeetCode_1078 classLeetCode = new LeetCode_1078();
+            //Console.WriteLine(string.Join(",", classLeetCode.FindOcurrences(text, first, second)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(",", leetCodeAll.FindOcurrences(text, first, second)));
+
+            ////(1084.) Sales Analysis III (EASY)
+            string SqlQuery =
+                @"
+                    Select
+                        DISTINCT a.product_id,
+                        b.product_name 
+                    From Sales as a
+                    Left Join Product as b
+                    ON a.product_id = b.product_id
+                    Where a.sale_date between '2019-01-01' and '2019-03-31' and a.product_id Not IN 
+                        (Select
+                            product_id
+                         From Sales 
+                         Where sale_date < '2019-01-01' or sale_date > '2019-03-31' )  
+                ";
 
             //OR
 
-            Console.WriteLine(string.Join(",", leetCodeAll.FindOcurrences(text, first, second)));
-
-
-
+            LeetCode_1084 classLeetCode = new LeetCode_1084();
 
 
 
