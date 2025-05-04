@@ -7781,8 +7781,32 @@ namespace ProblemSolving
 
             return result.ToArray();
         }
-
-
+        public void DuplicateZeros(int[] arr)
+        {
+            int[] dudeArr = arr.ToArray();
+            int currDudeArrLength = dudeArr.Length;
+            int indexArr = 0;
+            int arrLength = arr.Length;
+            for (int i = 0; i < currDudeArrLength; i++)
+            {
+                if (dudeArr[i] == 0)
+                {
+                    arr[indexArr] = 0;
+                    if (arrLength > indexArr + 1)
+                    {
+                        arr[indexArr + 1] = 0;
+                    }
+                    indexArr += 2;
+                    currDudeArrLength--;
+                }
+                else
+                {
+                    arr[indexArr] = dudeArr[i];
+                    indexArr++;
+                }
+            }
+            //Console.WriteLine(string.Join(",", arr));
+        }
 
 
 
