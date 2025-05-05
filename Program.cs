@@ -3205,18 +3205,25 @@ namespace ProblemSolving
             //OR
 
             ////(1122.) Relative Sort Array (EASY)
-            int[] arr1 = [2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19];
-            int[] arr2 = [2, 1, 4, 3, 9, 6];
+            //int[] arr1 = [2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19];
+            //int[] arr2 = [2, 1, 4, 3, 9, 6];
 
-            LeetCode_1122 classLeetCode = new LeetCode_1122();
-            Console.WriteLine(string.Join(',',classLeetCode.RelativeSortArray(arr1, arr2)));
+            //LeetCode_1122 classLeetCode = new LeetCode_1122();
+            //Console.WriteLine(string.Join(',',classLeetCode.RelativeSortArray(arr1, arr2)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.RelativeSortArray(arr1, arr2)));
+
+            ////(1128.) Number of Equivalent Domino Pairs (EASY)
+            int[][] dominoes = [[1, 1], [2, 2], [1, 1], [1, 2], [1, 2], [1, 1]];
+
+            LeetCode_1128 classLeetCode = new LeetCode_1128();
+            Console.WriteLine(classLeetCode.NumEquivDominoPairs(dominoes));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.RelativeSortArray(arr1, arr2)));
-
-
-
+            Console.WriteLine(leetCodeAll.NumEquivDominoPairs(dominoes));
 
 
 
