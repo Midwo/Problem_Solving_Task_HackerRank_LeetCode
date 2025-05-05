@@ -3188,17 +3188,32 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(",", leetCodeAll.DistributeCandies(candies, num_people)));
 
             ////(1108.) Defanging an IP Address (EASY)
-            string address = "255.100.50.0";
+            //string address = "255.100.50.0";
 
-            LeetCode_1108 classLeetCode = new LeetCode_1108();
-            Console.WriteLine(classLeetCode.DefangIPaddr(address));
+            //LeetCode_1108 classLeetCode = new LeetCode_1108();
+            //Console.WriteLine(classLeetCode.DefangIPaddr(address));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.DefangIPaddr(address));
+
+
+            ////(1114.) Print in Order (EASY)
+
+            //LeetCode_1114.Foo123 classLeetCode = new LeetCode_1114.Foo123();
 
             //OR
 
-            Console.WriteLine(leetCodeAll.DefangIPaddr(address));
+            ////(1122.) Relative Sort Array (EASY)
+            int[] arr1 = [2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19];
+            int[] arr2 = [2, 1, 4, 3, 9, 6];
 
+            LeetCode_1122 classLeetCode = new LeetCode_1122();
+            Console.WriteLine(string.Join(',',classLeetCode.RelativeSortArray(arr1, arr2)));
 
+            //OR
 
+            Console.WriteLine(string.Join(',', leetCodeAll.RelativeSortArray(arr1, arr2)));
 
 
 
