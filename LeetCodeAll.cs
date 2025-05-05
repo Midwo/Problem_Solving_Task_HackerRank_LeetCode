@@ -7909,8 +7909,33 @@ namespace ProblemSolving
 
             return result;
         }
+        public int Tribonacci(int n)
+        {
+            int prev = 0;
+            int prevprev = 0;
+            int prevprevprev = 0;
+            int result = 0;
 
+            if (n > 2)
+            {
+                prev = 1;
+            }
+            else
+            {
+                return 0;
+            }
 
+            while (n > 1)
+            {
+                result = prev + prevprev + prevprevprev;
+                prevprevprev = prevprev;
+                prevprev = prev;
+                prev = result;
+                n--;
+            }
+
+            return result;
+        }
 
 
 

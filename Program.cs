@@ -3216,16 +3216,24 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.RelativeSortArray(arr1, arr2)));
 
             ////(1128.) Number of Equivalent Domino Pairs (EASY)
-            int[][] dominoes = [[1, 1], [2, 2], [1, 1], [1, 2], [1, 2], [1, 1]];
+            //int[][] dominoes = [[1, 1], [2, 2], [1, 1], [1, 2], [1, 2], [1, 1]];
 
-            LeetCode_1128 classLeetCode = new LeetCode_1128();
-            Console.WriteLine(classLeetCode.NumEquivDominoPairs(dominoes));
+            //LeetCode_1128 classLeetCode = new LeetCode_1128();
+            //Console.WriteLine(classLeetCode.NumEquivDominoPairs(dominoes));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.NumEquivDominoPairs(dominoes));
+
+            ////(1137.) N-th Tribonacci Number (EASY)
+            int n = 25;
+
+            LeetCode_1137 classLeetCode = new LeetCode_1137();
+            Console.WriteLine(classLeetCode.Tribonacci(n));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.NumEquivDominoPairs(dominoes));
-
-
+            Console.WriteLine(leetCodeAll.Tribonacci(n));
 
 
 
