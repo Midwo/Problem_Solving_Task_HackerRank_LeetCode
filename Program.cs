@@ -3236,19 +3236,46 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.Tribonacci(n));
 
             ////(1141.) User Activity for the Past 30 Days I (EASY)
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            activity_date as day,
+            //            COUNT(distinct user_id)  as active_users 
+            //        FROM Activity 
+            //        Where activity_date > DATEADD(Day, -30, '2019-07-27') and activity_date <= '2019-07-27'
+            //        GROUP BY activity_date
+            //    ";
+
+            ////OR
+
+            //LeetCode_1141 classLeetCode = new LeetCode_1141();
+
+
+            ////(1148.) Article Views I (EASY)
+
             string SqlQuery =
                 @"
-                    Select
-                        activity_date as day,
-                        COUNT(distinct user_id)  as active_users 
-                    FROM Activity 
-                    Where activity_date > DATEADD(Day, -30, '2019-07-27') and activity_date <= '2019-07-27'
-                    GROUP BY activity_date
+                    WITH Views_CTE
+                    AS 
+                    (
+                        Select 
+                            article_id,
+                            author_id,
+                            viewer_id 
+                        From Views
+                        Where author_id = viewer_id
+                    )
+
+                    Select 
+                        DISTINCT a.author_id as id
+                    From Views_CTE as a
                 ";
 
             //OR
 
-            LeetCode_1141 classLeetCode = new LeetCode_1141();
+            LeetCode_1148 classLeetCode = new LeetCode_1148();
+            
+
 
 
 
