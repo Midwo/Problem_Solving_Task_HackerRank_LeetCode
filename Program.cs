@@ -3226,17 +3226,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumEquivDominoPairs(dominoes));
 
             ////(1137.) N-th Tribonacci Number (EASY)
-            int n = 25;
+            //int n = 25;
 
-            LeetCode_1137 classLeetCode = new LeetCode_1137();
-            Console.WriteLine(classLeetCode.Tribonacci(n));
+            //LeetCode_1137 classLeetCode = new LeetCode_1137();
+            //Console.WriteLine(classLeetCode.Tribonacci(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.Tribonacci(n));
+            //Console.WriteLine(leetCodeAll.Tribonacci(n));
 
-
-
+            ////(1141.) User Activity for the Past 30 Days I (EASY)
+            string SqlQuery =
+                @"
+                    Select
+                        activity_date as day,
+                        COUNT(distinct user_id)  as active_users 
+                    FROM Activity 
+                    Where activity_date > DATEADD(Day, -30, '2019-07-27') and activity_date <= '2019-07-27'
+                    GROUP BY activity_date
+                ";
 
 
 
