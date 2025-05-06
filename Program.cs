@@ -3246,6 +3246,11 @@ namespace ProblemSolving
                     GROUP BY activity_date
                 ";
 
+            //OR
+
+            LeetCode_1141 classLeetCode = new LeetCode_1141();
+
+
 
 
 
