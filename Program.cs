@@ -3276,14 +3276,27 @@ namespace ProblemSolving
             //LeetCode_1148 classLeetCode = new LeetCode_1148();
 
             ////(1154.) Day of the Year (EASY)
-            string date = "2019-01-09";
+            //string date = "2019-01-09";
 
-            LeetCode_1154 classLeetCode = new LeetCode_1154();
-            Console.WriteLine(classLeetCode.DayOfYear(date));
+            //LeetCode_1154 classLeetCode = new LeetCode_1154();
+            //Console.WriteLine(classLeetCode.DayOfYear(date));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.DayOfYear(date));
+
+            ////(1160.) Find Words That Can Be Formed by Characters (EASY)
+            string[] words = ["cat", "bt", "hat", "tree"];
+            string chars = "atach";
+
+            LeetCode_1160 classLeetCode = new LeetCode_1160();
+            Console.WriteLine(classLeetCode.CountCharacters(words, chars));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.DayOfYear(date));
+            Console.WriteLine(leetCodeAll.CountCharacters(words, chars));
+
+
 
 
 
