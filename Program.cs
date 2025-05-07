@@ -1,4 +1,5 @@
-﻿using ProblemSolving.LeetCode;
+﻿using Newtonsoft.Json;
+using ProblemSolving.LeetCode;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -3252,32 +3253,37 @@ namespace ProblemSolving
 
 
             ////(1148.) Article Views I (EASY)
+            //string SqlQuery =
+            //    @"
+            //        WITH Views_CTE
+            //        AS 
+            //        (
+            //            Select 
+            //                article_id,
+            //                author_id,
+            //                viewer_id 
+            //            From Views
+            //            Where author_id = viewer_id
+            //        )
 
-            string SqlQuery =
-                @"
-                    WITH Views_CTE
-                    AS 
-                    (
-                        Select 
-                            article_id,
-                            author_id,
-                            viewer_id 
-                        From Views
-                        Where author_id = viewer_id
-                    )
+            //        Select 
+            //            DISTINCT a.author_id as id
+            //        From Views_CTE as a
+            //    ";
 
-                    Select 
-                        DISTINCT a.author_id as id
-                    From Views_CTE as a
-                ";
+            ////OR
+
+            //LeetCode_1148 classLeetCode = new LeetCode_1148();
+
+            ////(1154.) Day of the Year (EASY)
+            string date = "2019-01-09";
+
+            LeetCode_1154 classLeetCode = new LeetCode_1154();
+            Console.WriteLine(classLeetCode.DayOfYear(date));
 
             //OR
 
-            LeetCode_1148 classLeetCode = new LeetCode_1148();
-            
-
-
-
+            Console.WriteLine(leetCodeAll.DayOfYear(date));
 
 
 

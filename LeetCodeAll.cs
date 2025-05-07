@@ -7936,7 +7936,12 @@ namespace ProblemSolving
 
             return result;
         }
+        public int DayOfYear(string date)
+        {
+            DateTime stringToDateTime = DateTime.Parse(date);
 
+            return stringToDateTime.DayOfYear;
+        }
 
 
 
