@@ -3286,15 +3286,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DayOfYear(date));
 
             ////(1160.) Find Words That Can Be Formed by Characters (EASY)
-            string[] words = ["cat", "bt", "hat", "tree"];
-            string chars = "atach";
+            //string[] words = ["cat", "bt", "hat", "tree"];
+            //string chars = "atach";
 
-            LeetCode_1160 classLeetCode = new LeetCode_1160();
-            Console.WriteLine(classLeetCode.CountCharacters(words, chars));
+            //LeetCode_1160 classLeetCode = new LeetCode_1160();
+            //Console.WriteLine(classLeetCode.CountCharacters(words, chars));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.CountCharacters(words, chars));
+
+            ////(1175.) Prime Arrangements (EASY)
+            int n = 5;
+            
+            LeetCode_1175 classLeetCode = new LeetCode_1175();
+            Console.WriteLine(classLeetCode.NumPrimeArrangements(n));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.CountCharacters(words, chars));
+            Console.WriteLine(leetCodeAll.NumPrimeArrangements(n));
 
 
 
