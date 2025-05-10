@@ -3327,6 +3327,11 @@ namespace ProblemSolving
                     Group by id
                 ";
 
+            //OR
+
+            LeetCode_1179 classLeetCode = new LeetCode_1179();
+
+
 
 
 
