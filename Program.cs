@@ -3307,29 +3307,41 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumPrimeArrangements(n));
 
             /////1179. Reformat Department Table (EASY)
-            string SqlQuery =
-                @"
-                    Select 
-                        id,
-                        SUM(IIF(month ='Jan', Revenue, null)) as Jan_Revenue,
-                        SUM(IIF(month ='Feb', Revenue, null)) as Feb_Revenue,
-                        SUM(IIF(month ='Mar', Revenue, null)) as Mar_Revenue,
-                        SUM(IIF(month ='Apr', Revenue, null)) as Apr_Revenue,
-                        SUM(IIF(month ='May', Revenue, null)) as May_Revenue,
-                        SUM(IIF(month ='Jun', Revenue, null)) as Jun_Revenue,
-                        SUM(IIF(month ='Jul', Revenue, null)) as Jul_Revenue,
-                        SUM(IIF(month ='Aug', Revenue, null)) as Aug_Revenue,
-                        SUM(IIF(month ='Sep', Revenue, null)) as Sep_Revenue,
-                        SUM(IIF(month ='Oct', Revenue, null)) as Oct_Revenue,
-                        SUM(IIF(month ='Nov', Revenue, null)) as Nov_Revenue,
-                        SUM(IIF(month ='Dec', Revenue, null)) as Dec_Revenue
-                    From Department 
-                    Group by id
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            id,
+            //            SUM(IIF(month ='Jan', Revenue, null)) as Jan_Revenue,
+            //            SUM(IIF(month ='Feb', Revenue, null)) as Feb_Revenue,
+            //            SUM(IIF(month ='Mar', Revenue, null)) as Mar_Revenue,
+            //            SUM(IIF(month ='Apr', Revenue, null)) as Apr_Revenue,
+            //            SUM(IIF(month ='May', Revenue, null)) as May_Revenue,
+            //            SUM(IIF(month ='Jun', Revenue, null)) as Jun_Revenue,
+            //            SUM(IIF(month ='Jul', Revenue, null)) as Jul_Revenue,
+            //            SUM(IIF(month ='Aug', Revenue, null)) as Aug_Revenue,
+            //            SUM(IIF(month ='Sep', Revenue, null)) as Sep_Revenue,
+            //            SUM(IIF(month ='Oct', Revenue, null)) as Oct_Revenue,
+            //            SUM(IIF(month ='Nov', Revenue, null)) as Nov_Revenue,
+            //            SUM(IIF(month ='Dec', Revenue, null)) as Dec_Revenue
+            //        From Department 
+            //        Group by id
+            //    ";
+
+            ////OR
+
+            //LeetCode_1179 classLeetCode = new LeetCode_1179();
+
+            ////(1184.) Distance Between Bus Stops (EASY)
+            int[] distance = [14, 13, 4, 7, 10, 17, 8, 3, 2, 13];
+            int start = 2;
+            int destination = 9;
+
+            LeetCode_1184 classLeetCode = new LeetCode_1184();
+            Console.WriteLine(classLeetCode.DistanceBetweenBusStops(distance, start, destination));
 
             //OR
 
-            LeetCode_1179 classLeetCode = new LeetCode_1179();
+            Console.WriteLine(leetCodeAll.DistanceBetweenBusStops(distance, start, destination));
 
 
 
@@ -3364,7 +3376,22 @@ namespace ProblemSolving
 
 
 
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 
         //public class ListNode
         //{
