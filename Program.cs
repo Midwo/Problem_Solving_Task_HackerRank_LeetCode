@@ -25,6 +25,7 @@ using static ProblemSolving.LeetCode.LeetCode_705;
 using static ProblemSolving.LeetCode.LeetCode_706;
 using static ProblemSolving.LeetCode.LeetCode_933;
 using static ProblemSolving.LeetCodeAll;
+using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProblemSolving
@@ -3332,16 +3333,28 @@ namespace ProblemSolving
             //LeetCode_1179 classLeetCode = new LeetCode_1179();
 
             ////(1184.) Distance Between Bus Stops (EASY)
-            int[] distance = [14, 13, 4, 7, 10, 17, 8, 3, 2, 13];
-            int start = 2;
-            int destination = 9;
+            //int[] distance = [14, 13, 4, 7, 10, 17, 8, 3, 2, 13];
+            //int start = 2;
+            //int destination = 9;
 
-            LeetCode_1184 classLeetCode = new LeetCode_1184();
-            Console.WriteLine(classLeetCode.DistanceBetweenBusStops(distance, start, destination));
+            //LeetCode_1184 classLeetCode = new LeetCode_1184();
+            //Console.WriteLine(classLeetCode.DistanceBetweenBusStops(distance, start, destination));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.DistanceBetweenBusStops(distance, start, destination));
+
+            ////(1185.) Day of the Week (EASY)
+            int day = 31;
+            int month = 8;
+            int year = 2019;
+
+            LeetCode_1185 classLeetCode = new LeetCode_1185();
+            Console.WriteLine(classLeetCode.DayOfTheWeek(day, month, year));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.DistanceBetweenBusStops(distance, start, destination));
+            Console.WriteLine(leetCodeAll.DayOfTheWeek(day, month, year));
 
 
 
@@ -3389,9 +3402,7 @@ namespace ProblemSolving
 
 
 
-
-
-    }
+        }
 
         //public class ListNode
         //{

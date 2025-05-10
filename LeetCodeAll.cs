@@ -8150,8 +8150,12 @@ namespace ProblemSolving
 
             return Math.Min(reverseRouteDistance, routeDistance);
         }
+        public string DayOfTheWeek(int day, int month, int year)
+        {
+            DateTime dateTime = new DateTime(year, month, day);
 
-
+            return dateTime.DayOfWeek.ToString();
+        }
 
 
 
