@@ -3357,20 +3357,35 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DayOfTheWeek(day, month, year));
 
             ////(1189.) Maximum Number of Balloons (EASY)
-            string text = "loonbalxballpoon";
+            //string text = "loonbalxballpoon";
 
-            LeetCode_1189 classLeetCode = new LeetCode_1189();
-            Console.WriteLine(classLeetCode.MaxNumberOfBalloons(text));
+            //LeetCode_1189 classLeetCode = new LeetCode_1189();
+            //Console.WriteLine(classLeetCode.MaxNumberOfBalloons(text));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaxNumberOfBalloons(text));
+
+            ////(1200.) Minimum Absolute Difference (EASY)
+            int[] arr = [4, 2, 1, 3];
+
+            LeetCode_1200 classLeetCode = new LeetCode_1200();
+            
+            IList<IList<int>> list = classLeetCode.MinimumAbsDifference(arr);
+
+            foreach (var item in list) 
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MaxNumberOfBalloons(text));
+            IList<IList<int>> list1 = leetCodeAll.MinimumAbsDifference(arr);
 
-
-
-
-
-
+            foreach (var item in list1)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
 
 
