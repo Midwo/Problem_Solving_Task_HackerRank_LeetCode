@@ -3345,18 +3345,26 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DistanceBetweenBusStops(distance, start, destination));
 
             ////(1185.) Day of the Week (EASY)
-            int day = 31;
-            int month = 8;
-            int year = 2019;
+            //int day = 31;
+            //int month = 8;
+            //int year = 2019;
 
-            LeetCode_1185 classLeetCode = new LeetCode_1185();
-            Console.WriteLine(classLeetCode.DayOfTheWeek(day, month, year));
+            //LeetCode_1185 classLeetCode = new LeetCode_1185();
+            //Console.WriteLine(classLeetCode.DayOfTheWeek(day, month, year));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.DayOfTheWeek(day, month, year));
+
+            ////(1189.) Maximum Number of Balloons (EASY)
+            string text = "loonbalxballpoon";
+
+            LeetCode_1189 classLeetCode = new LeetCode_1189();
+            Console.WriteLine(classLeetCode.MaxNumberOfBalloons(text));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.DayOfTheWeek(day, month, year));
-
-
+            Console.WriteLine(leetCodeAll.MaxNumberOfBalloons(text));
 
 
 
