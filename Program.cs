@@ -3425,17 +3425,24 @@ namespace ProblemSolving
             //LeetCode_1211 classLeetCode = new LeetCode_1211();
 
             ////(1217.) Minimum Cost to Move Chips to The Same Position (EASY)
-            int[] position = [2, 2, 2, 3, 3];
+            //int[] position = [2, 2, 2, 3, 3];
 
-            LeetCode_1217 classLeetCode = new LeetCode_1217();
-            Console.WriteLine(classLeetCode.MinCostToMoveChips(position));
+            //LeetCode_1217 classLeetCode = new LeetCode_1217();
+            //Console.WriteLine(classLeetCode.MinCostToMoveChips(position));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MinCostToMoveChips(position));
+
+            ////(1221.) Split a String in Balanced Strings (EASY)
+            string s = "RLRRRLLRLL";
+
+            LeetCode_1221 classLeetCode = new LeetCode_1221();
+            Console.WriteLine(classLeetCode.BalancedStringSplit(s));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MinCostToMoveChips(position));
-
-
-
+            Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
 
 
 

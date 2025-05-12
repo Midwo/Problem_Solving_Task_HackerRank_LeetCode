@@ -8272,6 +8272,32 @@ namespace ProblemSolving
 
             return Math.Min(howManyDivisibleByOne, howManyDivisibleByTwo);
         }
+        public int BalancedStringSplit(string s)
+        {
+            int result = 0;
+            int balance = 0;
+
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == 'L')
+                {
+                    balance--;
+                }
+                else
+                {
+                    balance++;
+                }
+
+                if (balance == 0)
+                {
+                    result++;
+                }
+            }
+
+            return result;
+        }
+
+
 
 
 
