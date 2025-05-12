@@ -3445,6 +3445,20 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
 
             ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            unique_id,
+            //            b.name
+            //        From EmployeeUNI as a
+            //        right Join Employees as b
+            //        ON a.id = b.id      
+            //    ";
+
+            ////OR
+            //LeetCode_1378 classLeetCode = new LeetCode_1378();
+
+            ////(1581.) Customer Who Visited but Did Not Make Any Transactions (EASY)
             string SqlQuery =
                 @"
                     Select
@@ -3454,9 +3468,10 @@ namespace ProblemSolving
                     right Join Employees as b
                     ON a.id = b.id      
                 ";
-            
-            //OR
-            LeetCode_1378 classLeetCode = new LeetCode_1378();
+
+            ////OR
+            LeetCode_1581 classLeetCode = new LeetCode_1581();
+
 
             ////1683. Invalid Tweets (EASY)
             //string SqlQuery =
