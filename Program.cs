@@ -3444,17 +3444,30 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
 
-            ////(1757.) Recyclable and Low Fat Products (EASY)
+            ////1683. Invalid Tweets (EASY)
             string SqlQuery =
                 @"
                     Select 
-                        product_id  
-                    From Products 
-                    Where low_fats = 'Y' and recyclable = 'Y'
+                        tweet_id 
+                    From Tweets 
+                    Where Length(content) > 15        
                 ";
 
             //OR
-            LeetCode_1757 classLeetCode = new LeetCode_1757();
+            LeetCode_1683 classLeetCode = new LeetCode_1683();
+
+            ////(1757.) Recyclable and Low Fat Products (EASY)
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            product_id  
+            //        From Products 
+            //        Where low_fats = 'Y' and recyclable = 'Y'
+            //    ";
+
+            ////OR
+            //LeetCode_1757 classLeetCode = new LeetCode_1757();
+
 
 
 
