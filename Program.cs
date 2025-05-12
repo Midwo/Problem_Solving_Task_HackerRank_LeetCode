@@ -3435,14 +3435,30 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinCostToMoveChips(position));
 
             ////(1221.) Split a String in Balanced Strings (EASY)
-            string s = "RLRRRLLRLL";
+            //string s = "RLRRRLLRLL";
 
-            LeetCode_1221 classLeetCode = new LeetCode_1221();
-            Console.WriteLine(classLeetCode.BalancedStringSplit(s));
+            //LeetCode_1221 classLeetCode = new LeetCode_1221();
+            //Console.WriteLine(classLeetCode.BalancedStringSplit(s));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
+
+            ////(1757.) Recyclable and Low Fat Products (EASY)
+            string SqlQuery =
+                @"
+                    Select 
+                        product_id  
+                    From Products 
+                    Where low_fats = 'Y' and recyclable = 'Y'
+                ";
 
             //OR
+            LeetCode_1757 classLeetCode = new LeetCode_1757();
 
-            Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
+
+
+
 
 
 
