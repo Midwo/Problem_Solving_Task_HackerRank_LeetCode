@@ -3459,19 +3459,44 @@ namespace ProblemSolving
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
 
             ////(1581.) Customer Who Visited but Did Not Make Any Transactions (EASY)
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            unique_id,
+            //            b.name
+            //        From EmployeeUNI as a
+            //        right Join Employees as b
+            //        ON a.id = b.id      
+            //    ";
+
+            //////OR
+            //LeetCode_1581 classLeetCode = new LeetCode_1581();
+
+            ////(1661.) Average Time of Process per Machine (EASY)
             string SqlQuery =
                 @"
-                    Select
-                        unique_id,
-                        b.name
-                    From EmployeeUNI as a
-                    right Join Employees as b
-                    ON a.id = b.id      
+                    With CTE AS
+                    (
+                        Select
+                            machine_id,
+                            process_id,
+                            timestamp as start
+                        From Activity 
+                        Where activity_type = 'start'
+                    )
+                    
+                    Select 
+                        a.machine_id,
+                        Round(AVG(timestamp - start),3) as processing_time 
+                    FROM CTE as a
+                    Left Join Activity as b
+                    ON a.machine_id = b.machine_id and a.process_id  = b.process_id 
+                    where activity_type = 'end'
+                    Group by a.machine_id   
                 ";
 
-            ////OR
-            LeetCode_1581 classLeetCode = new LeetCode_1581();
-
+            //OR
+            LeetCode_1661 classLeetCode = new LeetCode_1661();
 
             ////1683. Invalid Tweets (EASY)
             //string SqlQuery =
