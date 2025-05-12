@@ -3444,17 +3444,31 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
 
-            ////1683. Invalid Tweets (EASY)
+            ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
             string SqlQuery =
                 @"
-                    Select 
-                        tweet_id 
-                    From Tweets 
-                    Where Length(content) > 15        
+                    Select
+                        unique_id,
+                        b.name
+                    From EmployeeUNI as a
+                    right Join Employees as b
+                    ON a.id = b.id      
                 ";
-
+            
             //OR
-            LeetCode_1683 classLeetCode = new LeetCode_1683();
+            LeetCode_1378 classLeetCode = new LeetCode_1378();
+
+            ////1683. Invalid Tweets (EASY)
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            tweet_id 
+            //        From Tweets 
+            //        Where Length(content) > 15        
+            //    ";
+
+            ////OR
+            //LeetCode_1683 classLeetCode = new LeetCode_1683();
 
             ////(1757.) Recyclable and Low Fat Products (EASY)
             //string SqlQuery =
