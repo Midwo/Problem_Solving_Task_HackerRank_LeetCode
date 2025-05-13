@@ -3444,6 +3444,35 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
 
+            ////(1280.) Students and Examinations (EASY)
+            string SqlQuery =
+                @"
+                    With CTE AS 
+                    (
+                        Select
+                            a.student_id,
+                            a.student_name,
+                            subject_name
+                        From Students as a
+                        CROSS JOIN Subjects 
+                    )
+                    
+                    Select 
+                        b.student_id, 
+                        b.student_name,
+                        b.subject_name,
+                        Count(a.subject_name) as attended_exams 
+                    From Examinations as a
+                    right join CTE as b
+                    ON a.student_id = b.student_id and a.subject_name = b.subject_name
+                    Group by b.student_id, b.student_name, b.subject_name
+                    order by b.student_id, b.subject_name    
+                ";
+
+            //OR
+            LeetCode_1280 classLeetCode = new LeetCode_1280();
+
+
             ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
             //string SqlQuery =
             //    @"
@@ -3473,30 +3502,30 @@ namespace ProblemSolving
             //LeetCode_1581 classLeetCode = new LeetCode_1581();
 
             ////(1661.) Average Time of Process per Machine (EASY)
-            string SqlQuery =
-                @"
-                    With CTE AS
-                    (
-                        Select
-                            machine_id,
-                            process_id,
-                            timestamp as start
-                        From Activity 
-                        Where activity_type = 'start'
-                    )
-                    
-                    Select 
-                        a.machine_id,
-                        Round(AVG(timestamp - start),3) as processing_time 
-                    FROM CTE as a
-                    Left Join Activity as b
-                    ON a.machine_id = b.machine_id and a.process_id  = b.process_id 
-                    where activity_type = 'end'
-                    Group by a.machine_id   
-                ";
+            //string SqlQuery =
+            //    @"
+            //        With CTE AS
+            //        (
+            //            Select
+            //                machine_id,
+            //                process_id,
+            //                timestamp as start
+            //            From Activity 
+            //            Where activity_type = 'start'
+            //        )
 
-            //OR
-            LeetCode_1661 classLeetCode = new LeetCode_1661();
+            //        Select 
+            //            a.machine_id,
+            //            Round(AVG(timestamp - start),3) as processing_time 
+            //        FROM CTE as a
+            //        Left Join Activity as b
+            //        ON a.machine_id = b.machine_id and a.process_id  = b.process_id 
+            //        where activity_type = 'end'
+            //        Group by a.machine_id   
+            //    ";
+
+            ////OR
+            //LeetCode_1661 classLeetCode = new LeetCode_1661();
 
             ////1683. Invalid Tweets (EASY)
             //string SqlQuery =
