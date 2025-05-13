@@ -1885,6 +1885,27 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(",", item));
             //}
 
+            ////(570.) Managers with at Least 5 Direct Reports (Medium)
+            string SqlQuery =
+                @"
+                    With CTE AS 
+                    (
+                        Select
+                            managerId
+                        From Employee
+                        GROUP BY managerId
+                        HAVING Count(*) >= 5
+                    )
+                    
+                    Select 
+                        a.name
+                    From Employee as a
+                    Where ID in (Select managerId From CTE)
+                ";
+
+            //OR
+            LeetCode_570 classLeetCode = new LeetCode_570();
+
             ////(575.) Distribute Candies (EASY)
             //int[] candyType = [1, 1, 2, 2, 3, 3];
 
@@ -3445,33 +3466,32 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
 
             ////(1280.) Students and Examinations (EASY)
-            string SqlQuery =
-                @"
-                    With CTE AS 
-                    (
-                        Select
-                            a.student_id,
-                            a.student_name,
-                            subject_name
-                        From Students as a
-                        CROSS JOIN Subjects 
-                    )
-                    
-                    Select 
-                        b.student_id, 
-                        b.student_name,
-                        b.subject_name,
-                        Count(a.subject_name) as attended_exams 
-                    From Examinations as a
-                    right join CTE as b
-                    ON a.student_id = b.student_id and a.subject_name = b.subject_name
-                    Group by b.student_id, b.student_name, b.subject_name
-                    order by b.student_id, b.subject_name    
-                ";
+            //string SqlQuery =
+            //    @"
+            //        With CTE AS 
+            //        (
+            //            Select
+            //                a.student_id,
+            //                a.student_name,
+            //                subject_name
+            //            From Students as a
+            //            CROSS JOIN Subjects 
+            //        )
 
-            //OR
-            LeetCode_1280 classLeetCode = new LeetCode_1280();
+            //        Select 
+            //            b.student_id, 
+            //            b.student_name,
+            //            b.subject_name,
+            //            Count(a.subject_name) as attended_exams 
+            //        From Examinations as a
+            //        right join CTE as b
+            //        ON a.student_id = b.student_id and a.subject_name = b.subject_name
+            //        Group by b.student_id, b.student_name, b.subject_name
+            //        order by b.student_id, b.subject_name    
+            //    ";
 
+            ////OR
+            //LeetCode_1280 classLeetCode = new LeetCode_1280();
 
             ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
             //string SqlQuery =
