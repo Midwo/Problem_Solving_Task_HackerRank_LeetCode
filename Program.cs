@@ -3466,32 +3466,32 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
 
             ////(1251.) Average Selling Price (EASY)
-            string SqlQuery =
-                @"
-                    Select 
-                        c.product_id,
-                        IIF(c.average_price is null, 0, c.average_price) as average_price
-                    From (
-                            Select
-                                b.product_id,
-                                ROUND(SUM(a.unitAndPrice*1.0)/SUM(a.units*1.0), 2) as average_price 
-                            From (
-                                    Select
-                                        a.product_id, 
-                                        a.units * b.price as unitAndPrice,
-                                        a.units
-                                    From UnitsSold as a
-                                    left Join Prices as b
-                                    ON a.product_id = b.product_id and a.purchase_date between b.start_date and b.end_date 
-                                 ) AS a
-                            Right join Prices  as b
-                            ON b.product_id = a.product_id
-                            Group by b.product_id
-                         ) as c   
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            c.product_id,
+            //            IIF(c.average_price is null, 0, c.average_price) as average_price
+            //        From (
+            //                Select
+            //                    b.product_id,
+            //                    ROUND(SUM(a.unitAndPrice*1.0)/SUM(a.units*1.0), 2) as average_price 
+            //                From (
+            //                        Select
+            //                            a.product_id, 
+            //                            a.units * b.price as unitAndPrice,
+            //                            a.units
+            //                        From UnitsSold as a
+            //                        left Join Prices as b
+            //                        ON a.product_id = b.product_id and a.purchase_date between b.start_date and b.end_date 
+            //                     ) AS a
+            //                Right join Prices  as b
+            //                ON b.product_id = a.product_id
+            //                Group by b.product_id
+            //             ) as c   
+            //    ";
 
-            //OR
-            LeetCode_1251 classLeetCode = new LeetCode_1251();
+            ////OR
+            //LeetCode_1251 classLeetCode = new LeetCode_1251();
 
             ////(1280.) Students and Examinations (EASY)
             //string SqlQuery =
@@ -3548,6 +3548,20 @@ namespace ProblemSolving
 
             //////OR
             //LeetCode_1581 classLeetCode = new LeetCode_1581();
+
+            ////(1633.) Percentage of Users Attended a Contest (EASY)
+            string SqlQuery =
+                @"
+                    Select 
+                        contest_id,
+                        Round(Count(Distinct user_id)*1.0 / (Select Count(distinct user_id ) from Users)*100,2) as percentage  
+                    From Register 
+                    Group by contest_id
+                    order by percentage desc, contest_id asc  
+                ";
+
+            //OR
+            LeetCode_1633 classLeetCode = new LeetCode_1633();
 
             ////(1661.) Average Time of Process per Machine (EASY)
             //string SqlQuery =
