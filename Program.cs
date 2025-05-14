@@ -1886,25 +1886,25 @@ namespace ProblemSolving
             //}
 
             ////(570.) Managers with at Least 5 Direct Reports (Medium)
-            string SqlQuery =
-                @"
-                    With CTE AS 
-                    (
-                        Select
-                            managerId
-                        From Employee
-                        GROUP BY managerId
-                        HAVING Count(*) >= 5
-                    )
-                    
-                    Select 
-                        a.name
-                    From Employee as a
-                    Where ID in (Select managerId From CTE)
-                ";
+            //string SqlQuery =
+            //    @"
+            //        With CTE AS 
+            //        (
+            //            Select
+            //                managerId
+            //            From Employee
+            //            GROUP BY managerId
+            //            HAVING Count(*) >= 5
+            //        )
 
-            //OR
-            LeetCode_570 classLeetCode = new LeetCode_570();
+            //        Select 
+            //            a.name
+            //        From Employee as a
+            //        Where ID in (Select managerId From CTE)
+            //    ";
+
+            ////OR
+            //LeetCode_570 classLeetCode = new LeetCode_570();
 
             ////(575.) Distribute Candies (EASY)
             //int[] candyType = [1, 1, 2, 2, 3, 3];
@@ -3571,7 +3571,32 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1757 classLeetCode = new LeetCode_1757();
 
+            ////(1934.) Confirmation Rate (MEDIUM)
+            string SqlQuery =
+                @"
+                    With CTE AS
+                    (
+                        Select
+                            user_id,
+                            (SUM(IIF([action] = 'timeout', 1, 0))) as countTimeout,
+                            (SUM(IIF([action] = 'confirmed', 1, 0))) as countConfirmed
+                        From Confirmations 
+                        GROUP BY user_id
+                    )
+                    
+                    Select 
+                        a.user_id,
+                        IIF(b.confirmation_rate is null, 0, b.confirmation_rate) as confirmation_rate
+                    From Signups as a
+                    Left Join (Select 
+                                user_id,
+                                ROUND(countConfirmed*1.0 / (countTimeout*1.0 + countConfirmed*1.0),2) as confirmation_rate 
+                              From CTE ) as b
+                    ON a.user_id = b.user_id
+                ";
 
+            //OR
+            LeetCode_1934 classLeetCode = new LeetCode_1934();
 
 
 
