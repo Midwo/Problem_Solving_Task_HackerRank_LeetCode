@@ -3387,6 +3387,34 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxNumberOfBalloons(text));
 
+            ////(1193.) Monthly Transactions I (MEDIUM)
+            string SqlQuery =
+                @"
+                    Select
+                        a.month,
+                        a.country,
+                        Count(*) as trans_count,
+                        SUM(a.approved_count) as approved_count,
+                        SUM(a.trans_total_amount) as trans_total_amount,
+                        SUM(a.approved_total_amount) as approved_total_amount
+                    From (Select
+                            FORMAT(trans_date, 'yyyy-MM') as month,
+                            country,
+                            IIF(state = 'approved', 1, 0) as approved_count,
+                            amount as  trans_total_amount,
+                            IIF(state = 'approved', amount, 0) as approved_total_amount 
+                          From Transactions 
+                         ) as a
+                    Group by a.month, a.country
+                    order by a.month   
+                ";
+
+            ////OR
+
+            LeetCode_1193 classLeetCode = new LeetCode_1193();
+
+
+
             ////(1200.) Minimum Absolute Difference (EASY)
             //int[] arr = [4, 2, 1, 3];
 
@@ -3550,18 +3578,18 @@ namespace ProblemSolving
             //LeetCode_1581 classLeetCode = new LeetCode_1581();
 
             ////(1633.) Percentage of Users Attended a Contest (EASY)
-            string SqlQuery =
-                @"
-                    Select 
-                        contest_id,
-                        Round(Count(Distinct user_id)*1.0 / (Select Count(distinct user_id ) from Users)*100,2) as percentage  
-                    From Register 
-                    Group by contest_id
-                    order by percentage desc, contest_id asc  
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            contest_id,
+            //            Round(Count(Distinct user_id)*1.0 / (Select Count(distinct user_id ) from Users)*100,2) as percentage  
+            //        From Register 
+            //        Group by contest_id
+            //        order by percentage desc, contest_id asc  
+            //    ";
 
-            //OR
-            LeetCode_1633 classLeetCode = new LeetCode_1633();
+            ////OR
+            //LeetCode_1633 classLeetCode = new LeetCode_1633();
 
             ////(1661.) Average Time of Process per Machine (EASY)
             //string SqlQuery =
