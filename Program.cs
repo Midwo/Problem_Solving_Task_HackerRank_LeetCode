@@ -3465,6 +3465,34 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
 
+            ////(1251.) Average Selling Price (EASY)
+            string SqlQuery =
+                @"
+                    Select 
+                        c.product_id,
+                        IIF(c.average_price is null, 0, c.average_price) as average_price
+                    From (
+                            Select
+                                b.product_id,
+                                ROUND(SUM(a.unitAndPrice*1.0)/SUM(a.units*1.0), 2) as average_price 
+                            From (
+                                    Select
+                                        a.product_id, 
+                                        a.units * b.price as unitAndPrice,
+                                        a.units
+                                    From UnitsSold as a
+                                    left Join Prices as b
+                                    ON a.product_id = b.product_id and a.purchase_date between b.start_date and b.end_date 
+                                 ) AS a
+                            Right join Prices  as b
+                            ON b.product_id = a.product_id
+                            Group by b.product_id
+                         ) as c   
+                ";
+
+            //OR
+            LeetCode_1251 classLeetCode = new LeetCode_1251();
+
             ////(1280.) Students and Examinations (EASY)
             //string SqlQuery =
             //    @"
@@ -3572,31 +3600,31 @@ namespace ProblemSolving
             //LeetCode_1757 classLeetCode = new LeetCode_1757();
 
             ////(1934.) Confirmation Rate (MEDIUM)
-            string SqlQuery =
-                @"
-                    With CTE AS
-                    (
-                        Select
-                            user_id,
-                            (SUM(IIF([action] = 'timeout', 1, 0))) as countTimeout,
-                            (SUM(IIF([action] = 'confirmed', 1, 0))) as countConfirmed
-                        From Confirmations 
-                        GROUP BY user_id
-                    )
-                    
-                    Select 
-                        a.user_id,
-                        IIF(b.confirmation_rate is null, 0, b.confirmation_rate) as confirmation_rate
-                    From Signups as a
-                    Left Join (Select 
-                                user_id,
-                                ROUND(countConfirmed*1.0 / (countTimeout*1.0 + countConfirmed*1.0),2) as confirmation_rate 
-                              From CTE ) as b
-                    ON a.user_id = b.user_id
-                ";
+            //string SqlQuery =
+            //    @"
+            //        With CTE AS
+            //        (
+            //            Select
+            //                user_id,
+            //                (SUM(IIF([action] = 'timeout', 1, 0))) as countTimeout,
+            //                (SUM(IIF([action] = 'confirmed', 1, 0))) as countConfirmed
+            //            From Confirmations 
+            //            GROUP BY user_id
+            //        )
 
-            //OR
-            LeetCode_1934 classLeetCode = new LeetCode_1934();
+            //        Select 
+            //            a.user_id,
+            //            IIF(b.confirmation_rate is null, 0, b.confirmation_rate) as confirmation_rate
+            //        From Signups as a
+            //        Left Join (Select 
+            //                    user_id,
+            //                    ROUND(countConfirmed*1.0 / (countTimeout*1.0 + countConfirmed*1.0),2) as confirmation_rate 
+            //                  From CTE ) as b
+            //        ON a.user_id = b.user_id
+            //    ";
+
+            ////OR
+            //LeetCode_1934 classLeetCode = new LeetCode_1934();
 
 
 
