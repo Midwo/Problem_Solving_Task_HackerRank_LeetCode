@@ -3318,6 +3318,37 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountCharacters(words, chars));
 
+            ////(1174.) Immediate Food Delivery II (MEDIUM)
+            string SqlQuery =
+                @"
+                    Select
+                        ROUND((d.immediate*1.0/d.allDelivery)*100,2) as immediate_percentage
+                    From
+                    ( 
+                        Select
+                            --b.customer_id,
+                            SUM(IIF(c.order_date = c.customer_pref_delivery_date, 1, 0)) as immediate,
+                            COUNT(*) as allDelivery
+                        From (
+                                Select 
+                                a.customer_id,
+                                (Select top 1 delivery_id From Delivery Where a.customer_id = customer_id Order by order_date) as firstBuyID
+                                From 
+                                (   
+                                    Select
+                                        Distinct customer_id
+                                    From Delivery 
+                                ) as a
+                        ) as b
+                        Left join Delivery as c
+                        On c.delivery_id  = b.firstBuyID
+                    ) as d
+                ";
+
+            //OR
+
+            LeetCode_1174 classLeetCode = new LeetCode_1174();
+
             ////(1175.) Prime Arrangements (EASY)
             //int n = 5;
 
@@ -3388,32 +3419,30 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxNumberOfBalloons(text));
 
             ////(1193.) Monthly Transactions I (MEDIUM)
-            string SqlQuery =
-                @"
-                    Select
-                        a.month,
-                        a.country,
-                        Count(*) as trans_count,
-                        SUM(a.approved_count) as approved_count,
-                        SUM(a.trans_total_amount) as trans_total_amount,
-                        SUM(a.approved_total_amount) as approved_total_amount
-                    From (Select
-                            FORMAT(trans_date, 'yyyy-MM') as month,
-                            country,
-                            IIF(state = 'approved', 1, 0) as approved_count,
-                            amount as  trans_total_amount,
-                            IIF(state = 'approved', amount, 0) as approved_total_amount 
-                          From Transactions 
-                         ) as a
-                    Group by a.month, a.country
-                    order by a.month   
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            a.month,
+            //            a.country,
+            //            Count(*) as trans_count,
+            //            SUM(a.approved_count) as approved_count,
+            //            SUM(a.trans_total_amount) as trans_total_amount,
+            //            SUM(a.approved_total_amount) as approved_total_amount
+            //        From (Select
+            //                FORMAT(trans_date, 'yyyy-MM') as month,
+            //                country,
+            //                IIF(state = 'approved', 1, 0) as approved_count,
+            //                amount as  trans_total_amount,
+            //                IIF(state = 'approved', amount, 0) as approved_total_amount 
+            //              From Transactions 
+            //             ) as a
+            //        Group by a.month, a.country
+            //        order by a.month   
+            //    ";
 
-            ////OR
+            //////OR
 
-            LeetCode_1193 classLeetCode = new LeetCode_1193();
-
-
+            //LeetCode_1193 classLeetCode = new LeetCode_1193();
 
             ////(1200.) Minimum Absolute Difference (EASY)
             //int[] arr = [4, 2, 1, 3];
