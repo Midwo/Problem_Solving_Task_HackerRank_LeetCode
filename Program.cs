@@ -3319,35 +3319,35 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountCharacters(words, chars));
 
             ////(1174.) Immediate Food Delivery II (MEDIUM)
-            string SqlQuery =
-                @"
-                    Select
-                        ROUND((d.immediate*1.0/d.allDelivery)*100,2) as immediate_percentage
-                    From
-                    ( 
-                        Select
-                            --b.customer_id,
-                            SUM(IIF(c.order_date = c.customer_pref_delivery_date, 1, 0)) as immediate,
-                            COUNT(*) as allDelivery
-                        From (
-                                Select 
-                                a.customer_id,
-                                (Select top 1 delivery_id From Delivery Where a.customer_id = customer_id Order by order_date) as firstBuyID
-                                From 
-                                (   
-                                    Select
-                                        Distinct customer_id
-                                    From Delivery 
-                                ) as a
-                        ) as b
-                        Left join Delivery as c
-                        On c.delivery_id  = b.firstBuyID
-                    ) as d
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            ROUND((d.immediate*1.0/d.allDelivery)*100,2) as immediate_percentage
+            //        From
+            //        ( 
+            //            Select
+            //                --b.customer_id,
+            //                SUM(IIF(c.order_date = c.customer_pref_delivery_date, 1, 0)) as immediate,
+            //                COUNT(*) as allDelivery
+            //            From (
+            //                    Select 
+            //                    a.customer_id,
+            //                    (Select top 1 delivery_id From Delivery Where a.customer_id = customer_id Order by order_date) as firstBuyID
+            //                    From 
+            //                    (   
+            //                        Select
+            //                            Distinct customer_id
+            //                        From Delivery 
+            //                    ) as a
+            //            ) as b
+            //            Left join Delivery as c
+            //            On c.delivery_id  = b.firstBuyID
+            //        ) as d
+            //    ";
 
-            //OR
+            ////OR
 
-            LeetCode_1174 classLeetCode = new LeetCode_1174();
+            //LeetCode_1174 classLeetCode = new LeetCode_1174();
 
             ////(1175.) Prime Arrangements (EASY)
             //int n = 5;
@@ -3697,7 +3697,18 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1934 classLeetCode = new LeetCode_1934();
 
+            ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
+            string SqlQuery =
+                @"
+                    Select 
+                        teacher_id,
+                        Count(distinct subject_id) as cnt 
+                    From Teacher 
+                    Group by teacher_id
+                ";
 
+            //OR
+            LeetCode_1934 classLeetCode = new LeetCode_1934();
 
 
 
