@@ -3658,6 +3658,20 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1683 classLeetCode = new LeetCode_1683();
 
+            ////(1729.) Find Followers Count (EASY)
+            string SqlQuery =
+                @"
+                    Select
+                        user_id,
+                        Count(*) as followers_count
+                    From Followers 
+                    Group by user_id
+                ";
+
+            //OR
+            LeetCode_1729 classLeetCode = new LeetCode_1729();
+
+
             ////(1757.) Recyclable and Low Fat Products (EASY)
             //string SqlQuery =
             //    @"
@@ -3698,17 +3712,17 @@ namespace ProblemSolving
             //LeetCode_1934 classLeetCode = new LeetCode_1934();
 
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
-            string SqlQuery =
-                @"
-                    Select 
-                        teacher_id,
-                        Count(distinct subject_id) as cnt 
-                    From Teacher 
-                    Group by teacher_id
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            teacher_id,
+            //            Count(distinct subject_id) as cnt 
+            //        From Teacher 
+            //        Group by teacher_id
+            //    ";
 
-            //OR
-            LeetCode_1934 classLeetCode = new LeetCode_1934();
+            ////OR
+            //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
 
 
