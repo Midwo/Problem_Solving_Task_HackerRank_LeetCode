@@ -3659,18 +3659,17 @@ namespace ProblemSolving
             //LeetCode_1683 classLeetCode = new LeetCode_1683();
 
             ////(1729.) Find Followers Count (EASY)
-            string SqlQuery =
-                @"
-                    Select
-                        user_id,
-                        Count(*) as followers_count
-                    From Followers 
-                    Group by user_id
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            user_id,
+            //            Count(*) as followers_count
+            //        From Followers 
+            //        Group by user_id
+            //    ";
 
-            //OR
-            LeetCode_1729 classLeetCode = new LeetCode_1729();
-
+            ////OR
+            //LeetCode_1729 classLeetCode = new LeetCode_1729();
 
             ////(1757.) Recyclable and Low Fat Products (EASY)
             //string SqlQuery =
