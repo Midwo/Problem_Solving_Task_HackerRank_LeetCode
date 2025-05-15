@@ -3592,6 +3592,20 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
 
+            ////(1527.) Patients With a Condition (EASY)
+            string SqlQuery =
+                @"
+                    Select 
+                        patient_id,
+                        patient_name,
+                        conditions
+                    From Patients 
+                    Where conditions like 'DIAB1%' OR conditions like '% DIAB1%'     
+                ";
+
+            //OR
+            LeetCode_1527 classLeetCode = new LeetCode_1527();
+
             ////(1581.) Customer Who Visited but Did Not Make Any Transactions (EASY)
             //string SqlQuery =
             //    @"
@@ -3647,17 +3661,17 @@ namespace ProblemSolving
             //LeetCode_1661 classLeetCode = new LeetCode_1661();
 
             ////(1667.) Fix Names in a Table (EASY)
-            string SqlQuery =
-                @"
-                    Select 
-                        user_id,
-                        Concat(UPPER(SUBSTRING(name, 1, 1)),LOWER(SUBSTRING(name, 2, LEN(name)))) as name  
-                    From Users 
-                    order by user_id     
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            user_id,
+            //            Concat(UPPER(SUBSTRING(name, 1, 1)),LOWER(SUBSTRING(name, 2, LEN(name)))) as name  
+            //        From Users 
+            //        order by user_id     
+            //    ";
 
-            //OR
-            LeetCode_1667 classLeetCode = new LeetCode_1667();
+            ////OR
+            //LeetCode_1667 classLeetCode = new LeetCode_1667();
 
             ////1683. Invalid Tweets (EASY)
             //string SqlQuery =
