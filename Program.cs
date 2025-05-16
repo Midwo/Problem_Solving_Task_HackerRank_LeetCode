@@ -3592,19 +3592,41 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
 
-            ////(1527.) Patients With a Condition (EASY)
+            ////(1484.) Group Sold Products By The Date (EASY)
             string SqlQuery =
                 @"
+                    With my_CTE as 
+                    (
+                        Select
+                            distinct sell_date,
+                            product  
+                        From Activities 
+                    )
+                    
                     Select 
-                        patient_id,
-                        patient_name,
-                        conditions
-                    From Patients 
-                    Where conditions like 'DIAB1%' OR conditions like '% DIAB1%'     
+                        sell_date,
+                        Count(*) as num_sold , 
+                        String_AGG(product, ',') as products   
+                    From my_CTE
+                    Group by sell_date     
                 ";
 
             //OR
-            LeetCode_1527 classLeetCode = new LeetCode_1527();
+            LeetCode_1484 classLeetCode = new LeetCode_1484();
+
+            ////(1527.) Patients With a Condition (EASY)
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            patient_id,
+            //            patient_name,
+            //            conditions
+            //        From Patients 
+            //        Where conditions like 'DIAB1%' OR conditions like '% DIAB1%'     
+            //    ";
+
+            ////OR
+            //LeetCode_1527 classLeetCode = new LeetCode_1527();
 
             ////(1581.) Customer Who Visited but Did Not Make Any Transactions (EASY)
             //string SqlQuery =
