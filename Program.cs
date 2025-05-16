@@ -3578,6 +3578,29 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1280 classLeetCode = new LeetCode_1280();
 
+            /////(1327.) List the Products Ordered in a Period (EASY)
+            string SqlQuery =
+                @"
+                    Select
+                        product_name,
+                        a.unit
+                    From 
+                    (
+                        Select  
+                        product_id,
+                        SUM(unit) as unit        
+                        From Orders 
+                        Where Year(order_date) = 2020 and Month(order_Date) = 2 
+                        Group by product_id
+                        Having SUM(unit) >= 100
+                    ) as a
+                    left join Products as b
+                    ON a.product_id = b.product_id  
+                ";
+
+            //OR
+            LeetCode_1327 classLeetCode = new LeetCode_1327();
+
             ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
             //string SqlQuery =
             //    @"
@@ -3593,26 +3616,26 @@ namespace ProblemSolving
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
 
             ////(1484.) Group Sold Products By The Date (EASY)
-            string SqlQuery =
-                @"
-                    With my_CTE as 
-                    (
-                        Select
-                            distinct sell_date,
-                            product  
-                        From Activities 
-                    )
-                    
-                    Select 
-                        sell_date,
-                        Count(*) as num_sold , 
-                        String_AGG(product, ',') as products   
-                    From my_CTE
-                    Group by sell_date     
-                ";
+            //string SqlQuery =
+            //    @"
+            //        With my_CTE as 
+            //        (
+            //            Select
+            //                distinct sell_date,
+            //                product  
+            //            From Activities 
+            //        )
 
-            //OR
-            LeetCode_1484 classLeetCode = new LeetCode_1484();
+            //        Select 
+            //            sell_date,
+            //            Count(*) as num_sold , 
+            //            String_AGG(product, ',') as products   
+            //        From my_CTE
+            //        Group by sell_date     
+            //    ";
+
+            ////OR
+            //LeetCode_1484 classLeetCode = new LeetCode_1484();
 
             ////(1527.) Patients With a Condition (EASY)
             //string SqlQuery =
