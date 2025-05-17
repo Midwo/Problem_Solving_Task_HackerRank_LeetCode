@@ -3579,27 +3579,27 @@ namespace ProblemSolving
             //LeetCode_1280 classLeetCode = new LeetCode_1280();
 
             /////(1327.) List the Products Ordered in a Period (EASY)
-            string SqlQuery =
-                @"
-                    Select
-                        product_name,
-                        a.unit
-                    From 
-                    (
-                        Select  
-                        product_id,
-                        SUM(unit) as unit        
-                        From Orders 
-                        Where Year(order_date) = 2020 and Month(order_Date) = 2 
-                        Group by product_id
-                        Having SUM(unit) >= 100
-                    ) as a
-                    left join Products as b
-                    ON a.product_id = b.product_id  
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            product_name,
+            //            a.unit
+            //        From 
+            //        (
+            //            Select  
+            //            product_id,
+            //            SUM(unit) as unit        
+            //            From Orders 
+            //            Where Year(order_date) = 2020 and Month(order_Date) = 2 
+            //            Group by product_id
+            //            Having SUM(unit) >= 100
+            //        ) as a
+            //        left join Products as b
+            //        ON a.product_id = b.product_id  
+            //    ";
 
-            //OR
-            LeetCode_1327 classLeetCode = new LeetCode_1327();
+            ////OR
+            //LeetCode_1327 classLeetCode = new LeetCode_1327();
 
             ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
             //string SqlQuery =
@@ -3636,6 +3636,21 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1484 classLeetCode = new LeetCode_1484();
+
+            ////(1517.) Find Users With Valid E-Mails (EASY)
+            string SqlQuery =
+                @"
+                    Select
+                        user_id,
+                        name,
+                        mail
+                    From Users
+                    Where mail LIKE '[a-zA-Z]%@leetcode.com'
+                    and mail NOT LIKE '%[!#()$^%=*@+&]%@leetcode.com'   
+                ";
+
+            //OR
+            LeetCode_1517 classLeetCode = new LeetCode_1517();
 
             ////(1527.) Patients With a Condition (EASY)
             //string SqlQuery =
