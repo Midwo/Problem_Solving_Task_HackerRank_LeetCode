@@ -3638,19 +3638,19 @@ namespace ProblemSolving
             //LeetCode_1484 classLeetCode = new LeetCode_1484();
 
             ////(1517.) Find Users With Valid E-Mails (EASY)
-            string SqlQuery =
-                @"
-                    Select
-                        user_id,
-                        name,
-                        mail
-                    From Users
-                    Where mail LIKE '[a-zA-Z]%@leetcode.com'
-                    and mail NOT LIKE '%[!#()$^%=*@+&]%@leetcode.com'   
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            user_id,
+            //            name,
+            //            mail
+            //        From Users
+            //        Where mail LIKE '[a-zA-Z]%@leetcode.com'
+            //        and mail NOT LIKE '%[!#()$^%=*@+&]%@leetcode.com'   
+            //    ";
 
-            //OR
-            LeetCode_1517 classLeetCode = new LeetCode_1517();
+            ////OR
+            //LeetCode_1517 classLeetCode = new LeetCode_1517();
 
             ////(1527.) Patients With a Condition (EASY)
             //string SqlQuery =
@@ -3796,6 +3796,25 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1934 classLeetCode = new LeetCode_1934();
+
+            ///(1978.) Employees Whose Manager Left the Company (EASY)
+            string SqlQuery =
+                @"
+                    Select 
+                        a.employee_id
+                    --    a.name, 
+                    --    a.manager_id, 
+                    --    a.salary,
+                    --    b.employee_id 
+                    From Employees as a 
+                    Left join Employees b
+                    ON a.manager_id = b.employee_id 
+                    Where a.salary < 30000 and  b.employee_id is null and a.manager_id is not null
+                    order by a.employee_id
+                ";
+
+            //OR
+            LeetCode_1978 classLeetCode = new LeetCode_1978();
 
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
             //string SqlQuery =
