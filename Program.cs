@@ -933,6 +933,25 @@ namespace ProblemSolving
             //left join Address
             //on Person.personId = Address.personId";
 
+            ////(176.) Second Highest Salary (MEDIUM)
+            string SqlQuery =
+                @"
+                    Select 
+                        a.employee_id
+                    --    a.name, 
+                    --    a.manager_id, 
+                    --    a.salary,
+                    --    b.employee_id 
+                    From Employees as a 
+                    Left join Employees b
+                    ON a.manager_id = b.employee_id 
+                    Where a.salary < 30000 and  b.employee_id is null and a.manager_id is not null
+                    order by a.employee_id
+                ";
+
+            //OR
+            LeetCode_176 classLeetCode = new LeetCode_176();
+
             ////(181.) Employees Earning More Than Their Managers (EASY)
             //string SqlQuery1 = @"
             //    SELECT
@@ -3798,23 +3817,23 @@ namespace ProblemSolving
             //LeetCode_1934 classLeetCode = new LeetCode_1934();
 
             ///(1978.) Employees Whose Manager Left the Company (EASY)
-            string SqlQuery =
-                @"
-                    Select 
-                        a.employee_id
-                    --    a.name, 
-                    --    a.manager_id, 
-                    --    a.salary,
-                    --    b.employee_id 
-                    From Employees as a 
-                    Left join Employees b
-                    ON a.manager_id = b.employee_id 
-                    Where a.salary < 30000 and  b.employee_id is null and a.manager_id is not null
-                    order by a.employee_id
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            a.employee_id
+            //        --    a.name, 
+            //        --    a.manager_id, 
+            //        --    a.salary,
+            //        --    b.employee_id 
+            //        From Employees as a 
+            //        Left join Employees b
+            //        ON a.manager_id = b.employee_id 
+            //        Where a.salary < 30000 and  b.employee_id is null and a.manager_id is not null
+            //        order by a.employee_id
+            //    ";
 
-            //OR
-            LeetCode_1978 classLeetCode = new LeetCode_1978();
+            ////OR
+            //LeetCode_1978 classLeetCode = new LeetCode_1978();
 
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
             //string SqlQuery =
