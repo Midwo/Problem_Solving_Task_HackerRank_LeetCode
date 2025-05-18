@@ -934,23 +934,23 @@ namespace ProblemSolving
             //on Person.personId = Address.personId";
 
             ////(176.) Second Highest Salary (MEDIUM)
-            string SqlQuery =
-                @"
-                    Select 
-                        a.employee_id
-                    --    a.name, 
-                    --    a.manager_id, 
-                    --    a.salary,
-                    --    b.employee_id 
-                    From Employees as a 
-                    Left join Employees b
-                    ON a.manager_id = b.employee_id 
-                    Where a.salary < 30000 and  b.employee_id is null and a.manager_id is not null
-                    order by a.employee_id
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            a.employee_id
+            //        --    a.name, 
+            //        --    a.manager_id, 
+            //        --    a.salary,
+            //        --    b.employee_id 
+            //        From Employees as a 
+            //        Left join Employees b
+            //        ON a.manager_id = b.employee_id 
+            //        Where a.salary < 30000 and  b.employee_id is null and a.manager_id is not null
+            //        order by a.employee_id
+            //    ";
 
-            //OR
-            LeetCode_176 classLeetCode = new LeetCode_176();
+            ////OR
+            //LeetCode_176 classLeetCode = new LeetCode_176();
 
             ////(181.) Employees Earning More Than Their Managers (EASY)
             //string SqlQuery1 = @"
@@ -1833,6 +1833,50 @@ namespace ProblemSolving
             //////OR
 
             //Console.WriteLine(leetCodeAll.DiameterOfBinaryTree(root));
+
+            ////(550.) Game Play Analysis IV (MEDIUM)
+            string SqlQuery =
+                @"
+                    Select
+                        Round(Count(b.player_id)*1.0/(Select Count(distinct player_id) from Activity),2) as fraction 
+                    From
+                    (
+                        Select     
+                            a.player_id, 
+                            a.event_date,
+                            a.Row_numberResult
+                        From 
+                        (
+                            Select 
+                                player_id, 
+                                event_date,
+                                Row_number () OVER (PARTITION BY player_id ORDER BY event_date) as Row_numberResult
+                            From Activity
+                        ) as a
+                        Where a.Row_numberResult = 1
+                    ) b
+                    left join 
+                    (
+                        Select     
+                            a.player_id, 
+                            a.event_date,
+                            a.Row_numberResult
+                        From 
+                        (
+                            Select 
+                                player_id, 
+                                event_date,
+                                Row_number () OVER (PARTITION BY player_id ORDER BY event_date) as Row_numberResult
+                            From Activity
+                        ) as a
+                        Where a.Row_numberResult = 2
+                    ) c
+                    ON b.player_id = c.player_id
+                    Where DateDiff(day, b.event_date, c.event_date) = 1
+                ";
+
+            //OR
+            LeetCode_550 classLeetCode = new LeetCode_550();
 
             ////(551.) Student Attendance Record I (EASY)
             //string s = "LPLPLPLPLPL";
@@ -3816,7 +3860,7 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1934 classLeetCode = new LeetCode_1934();
 
-            ///(1978.) Employees Whose Manager Left the Company (EASY)
+            ////(1978.) Employees Whose Manager Left the Company (EASY)
             //string SqlQuery =
             //    @"
             //        Select 
