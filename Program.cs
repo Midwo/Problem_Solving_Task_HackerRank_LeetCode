@@ -1835,48 +1835,48 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DiameterOfBinaryTree(root));
 
             ////(550.) Game Play Analysis IV (MEDIUM)
-            string SqlQuery =
-                @"
-                    Select
-                        Round(Count(b.player_id)*1.0/(Select Count(distinct player_id) from Activity),2) as fraction 
-                    From
-                    (
-                        Select     
-                            a.player_id, 
-                            a.event_date,
-                            a.Row_numberResult
-                        From 
-                        (
-                            Select 
-                                player_id, 
-                                event_date,
-                                Row_number () OVER (PARTITION BY player_id ORDER BY event_date) as Row_numberResult
-                            From Activity
-                        ) as a
-                        Where a.Row_numberResult = 1
-                    ) b
-                    left join 
-                    (
-                        Select     
-                            a.player_id, 
-                            a.event_date,
-                            a.Row_numberResult
-                        From 
-                        (
-                            Select 
-                                player_id, 
-                                event_date,
-                                Row_number () OVER (PARTITION BY player_id ORDER BY event_date) as Row_numberResult
-                            From Activity
-                        ) as a
-                        Where a.Row_numberResult = 2
-                    ) c
-                    ON b.player_id = c.player_id
-                    Where DateDiff(day, b.event_date, c.event_date) = 1
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            Round(Count(b.player_id)*1.0/(Select Count(distinct player_id) from Activity),2) as fraction 
+            //        From
+            //        (
+            //            Select     
+            //                a.player_id, 
+            //                a.event_date,
+            //                a.Row_numberResult
+            //            From 
+            //            (
+            //                Select 
+            //                    player_id, 
+            //                    event_date,
+            //                    Row_number () OVER (PARTITION BY player_id ORDER BY event_date) as Row_numberResult
+            //                From Activity
+            //            ) as a
+            //            Where a.Row_numberResult = 1
+            //        ) b
+            //        left join 
+            //        (
+            //            Select     
+            //                a.player_id, 
+            //                a.event_date,
+            //                a.Row_numberResult
+            //            From 
+            //            (
+            //                Select 
+            //                    player_id, 
+            //                    event_date,
+            //                    Row_number () OVER (PARTITION BY player_id ORDER BY event_date) as Row_numberResult
+            //                From Activity
+            //            ) as a
+            //            Where a.Row_numberResult = 2
+            //        ) c
+            //        ON b.player_id = c.player_id
+            //        Where DateDiff(day, b.event_date, c.event_date) = 1
+            //    ";
 
-            //OR
-            LeetCode_550 classLeetCode = new LeetCode_550();
+            ////OR
+            //LeetCode_550 classLeetCode = new LeetCode_550();
 
             ////(551.) Student Attendance Record I (EASY)
             //string s = "LPLPLPLPLPL";
@@ -3820,6 +3820,31 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1729 classLeetCode = new LeetCode_1729();
+
+            ////(1731.) Recyclable and Low Fat Products (EASY)
+            string SqlQuery =
+                @"
+                    Select 
+                        a.reports_to as employee_id, 
+                        b.name,
+                        a.reports_count,
+                        ROUND(a.sumAge*1.0/reports_count,0) as average_age 
+                    FROM
+                    (
+                        Select 
+                            reports_to,
+                            SUM(age) as sumAge,
+                            Count(*) as reports_count
+                        From Employees 
+                        Where reports_to is not null
+                        Group by reports_to
+                    ) as a 
+                    left join Employees as b 
+                    ON a.reports_to = b.employee_id 
+                ";
+
+            //OR
+            LeetCode_1731 classLeetCode = new LeetCode_1731();
 
             ////(1757.) Recyclable and Low Fat Products (EASY)
             //string SqlQuery =
