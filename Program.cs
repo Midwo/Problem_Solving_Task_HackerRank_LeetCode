@@ -3822,29 +3822,29 @@ namespace ProblemSolving
             //LeetCode_1729 classLeetCode = new LeetCode_1729();
 
             ////(1731.) Recyclable and Low Fat Products (EASY)
-            string SqlQuery =
-                @"
-                    Select 
-                        a.reports_to as employee_id, 
-                        b.name,
-                        a.reports_count,
-                        ROUND(a.sumAge*1.0/reports_count,0) as average_age 
-                    FROM
-                    (
-                        Select 
-                            reports_to,
-                            SUM(age) as sumAge,
-                            Count(*) as reports_count
-                        From Employees 
-                        Where reports_to is not null
-                        Group by reports_to
-                    ) as a 
-                    left join Employees as b 
-                    ON a.reports_to = b.employee_id 
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            a.reports_to as employee_id, 
+            //            b.name,
+            //            a.reports_count,
+            //            ROUND(a.sumAge*1.0/reports_count,0) as average_age 
+            //        FROM
+            //        (
+            //            Select 
+            //                reports_to,
+            //                SUM(age) as sumAge,
+            //                Count(*) as reports_count
+            //            From Employees 
+            //            Where reports_to is not null
+            //            Group by reports_to
+            //        ) as a 
+            //        left join Employees as b 
+            //        ON a.reports_to = b.employee_id 
+            //    ";
 
-            //OR
-            LeetCode_1731 classLeetCode = new LeetCode_1731();
+            ////OR
+            //LeetCode_1731 classLeetCode = new LeetCode_1731();
 
             ////(1757.) Recyclable and Low Fat Products (EASY)
             //string SqlQuery =
@@ -3857,6 +3857,50 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1757 classLeetCode = new LeetCode_1757();
+
+            ////(1789.) Primary Department for Each Employee (EASY)
+            string SqlQuery =
+                @"
+                    With CTE AS 
+                    (
+                        Select 
+                            employee_id,
+                            Count(*) as howManyDepartment
+                        From Employee 
+                        Group by employee_id
+                    )
+                    
+                    Select
+                        a.employee_id,
+                        a.department_id  
+                    From 
+                    (
+                        Select
+                            a.employee_id,
+                            b.department_id  
+                        From CTE a
+                        Left join Employee b
+                        On a.employee_id = b.employee_id
+                        Where howManyDepartment > 1 and b.primary_flag = 'Y'
+                    ) a
+                    Union
+                    Select
+                        b.employee_id,
+                        b.department_id
+                    From
+                    (
+                        Select
+                            a.employee_id,
+                            b.department_id 
+                        From CTE a
+                        Left join Employee b
+                        On a.employee_id = b.employee_id
+                        Where howManyDepartment = 1
+                    ) b
+                ";
+
+            //OR
+            LeetCode_1789 classLeetCode = new LeetCode_1789();
 
             ////(1934.) Confirmation Rate (MEDIUM)
             //string SqlQuery =
