@@ -3186,6 +3186,30 @@ namespace ProblemSolving
 
             //LeetCode_1068 classLeetCode = new LeetCode_1068();
 
+            ////(1070.) Product Sales Analysis III (MEDIUM)
+            string SqlQuery =
+                @"
+                    Select 
+                        a.product_id,
+                        a.first_year,
+                        a.quantity,
+                        a.price
+                    FROM
+                    (
+                        Select
+                            product_id,
+                            year as first_year,
+                            quantity,
+                            price,
+                            RANK() OVER (PARTITION BY product_id ORDER BY year) AS Rank
+                        FROM Sales 
+                    ) a
+                    Where Rank = 1;
+                ";
+
+            //OR
+            LeetCode_1070 classLeetCode = new LeetCode_1070();
+
             ////(1071.) Greatest Common Divisor of Strings (EASY)
             //string str1 = "TAUXXTAUXXTAUXXTAUXXTAUXX";
             //string str2 = "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX";
@@ -3859,48 +3883,48 @@ namespace ProblemSolving
             //LeetCode_1757 classLeetCode = new LeetCode_1757();
 
             ////(1789.) Primary Department for Each Employee (EASY)
-            string SqlQuery =
-                @"
-                    With CTE AS 
-                    (
-                        Select 
-                            employee_id,
-                            Count(*) as howManyDepartment
-                        From Employee 
-                        Group by employee_id
-                    )
-                    
-                    Select
-                        a.employee_id,
-                        a.department_id  
-                    From 
-                    (
-                        Select
-                            a.employee_id,
-                            b.department_id  
-                        From CTE a
-                        Left join Employee b
-                        On a.employee_id = b.employee_id
-                        Where howManyDepartment > 1 and b.primary_flag = 'Y'
-                    ) a
-                    Union
-                    Select
-                        b.employee_id,
-                        b.department_id
-                    From
-                    (
-                        Select
-                            a.employee_id,
-                            b.department_id 
-                        From CTE a
-                        Left join Employee b
-                        On a.employee_id = b.employee_id
-                        Where howManyDepartment = 1
-                    ) b
-                ";
+            //string SqlQuery =
+            //    @"
+            //        With CTE AS 
+            //        (
+            //            Select 
+            //                employee_id,
+            //                Count(*) as howManyDepartment
+            //            From Employee 
+            //            Group by employee_id
+            //        )
 
-            //OR
-            LeetCode_1789 classLeetCode = new LeetCode_1789();
+            //        Select
+            //            a.employee_id,
+            //            a.department_id  
+            //        From 
+            //        (
+            //            Select
+            //                a.employee_id,
+            //                b.department_id  
+            //            From CTE a
+            //            Left join Employee b
+            //            On a.employee_id = b.employee_id
+            //            Where howManyDepartment > 1 and b.primary_flag = 'Y'
+            //        ) a
+            //        Union
+            //        Select
+            //            b.employee_id,
+            //            b.department_id
+            //        From
+            //        (
+            //            Select
+            //                a.employee_id,
+            //                b.department_id 
+            //            From CTE a
+            //            Left join Employee b
+            //            On a.employee_id = b.employee_id
+            //            Where howManyDepartment = 1
+            //        ) b
+            //    ";
+
+            ////OR
+            //LeetCode_1789 classLeetCode = new LeetCode_1789();
 
             ////(1934.) Confirmation Rate (MEDIUM)
             //string SqlQuery =
