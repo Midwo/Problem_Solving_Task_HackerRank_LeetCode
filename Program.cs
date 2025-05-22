@@ -952,6 +952,29 @@ namespace ProblemSolving
             ////OR
             //LeetCode_176 classLeetCode = new LeetCode_176();
 
+            ////(180.) Consecutive Numbers (MEDIUM)
+            string SqlQuery =
+                @"
+                    Select
+                        distinct a.num as ConsecutiveNums 
+                    From
+                    (
+                        Select
+                            id,
+                            num,
+                            LAG(num)
+                            OVER (ORDER BY [id]) AS PrevNum,
+                            LEAD(num) 
+                            OVER (ORDER BY [id]) AS NextNum
+                        From Logs 
+                    ) a
+                    where a.num = a.PrevNum and a.num = a.NextNum
+                ";
+
+            //OR
+
+            LeetCode_180 classLeetCode = new LeetCode_180();
+
             ////(181.) Employees Earning More Than Their Managers (EASY)
             //string SqlQuery1 = @"
             //    SELECT
@@ -3122,31 +3145,31 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsBoomerang(points));
 
             ////(1045.) Customers Who Bought All Products (MEDIUM)
-            string SqlQuery =
-                @"
-                    With CTE as 
-                    (
-                        Select
-                            Count(distinct product_key) as howMany
-                        From Product 
-                    )
-                    
-                    Select
-                        customer_id
-                    From 
-                    (
-                        Select
-                            customer_id,
-                            Count(distinct product_key) as howMany
-                        From Customer 
-                        Group by customer_id
-                    ) as a 
-                    Where howMany = (select howMany from CTE)
-                ";
+            //string SqlQuery =
+            //    @"
+            //        With CTE as 
+            //        (
+            //            Select
+            //                Count(distinct product_key) as howMany
+            //            From Product 
+            //        )
 
-            //OR
+            //        Select
+            //            customer_id
+            //        From 
+            //        (
+            //            Select
+            //                customer_id,
+            //                Count(distinct product_key) as howMany
+            //            From Customer 
+            //            Group by customer_id
+            //        ) as a 
+            //        Where howMany = (select howMany from CTE)
+            //    ";
 
-            LeetCode_1045 classLeetCode = new LeetCode_1045();
+            ////OR
+
+            //LeetCode_1045 classLeetCode = new LeetCode_1045();
 
 
             ////(1046.) Last Stone Weight (EASY)
