@@ -3121,6 +3121,34 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsBoomerang(points));
 
+            ////(1045.) Customers Who Bought All Products (MEDIUM)
+            string SqlQuery =
+                @"
+                    With CTE as 
+                    (
+                        Select
+                            Count(distinct product_key) as howMany
+                        From Product 
+                    )
+                    
+                    Select
+                        customer_id
+                    From 
+                    (
+                        Select
+                            customer_id,
+                            Count(distinct product_key) as howMany
+                        From Customer 
+                        Group by customer_id
+                    ) as a 
+                    Where howMany = (select howMany from CTE)
+                ";
+
+            //OR
+
+            LeetCode_1045 classLeetCode = new LeetCode_1045();
+
+
             ////(1046.) Last Stone Weight (EASY)
             //int[] stones = [2, 2];
 
@@ -3187,28 +3215,28 @@ namespace ProblemSolving
             //LeetCode_1068 classLeetCode = new LeetCode_1068();
 
             ////(1070.) Product Sales Analysis III (MEDIUM)
-            string SqlQuery =
-                @"
-                    Select 
-                        a.product_id,
-                        a.first_year,
-                        a.quantity,
-                        a.price
-                    FROM
-                    (
-                        Select
-                            product_id,
-                            year as first_year,
-                            quantity,
-                            price,
-                            RANK() OVER (PARTITION BY product_id ORDER BY year) AS Rank
-                        FROM Sales 
-                    ) a
-                    Where Rank = 1;
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            a.product_id,
+            //            a.first_year,
+            //            a.quantity,
+            //            a.price
+            //        FROM
+            //        (
+            //            Select
+            //                product_id,
+            //                year as first_year,
+            //                quantity,
+            //                price,
+            //                RANK() OVER (PARTITION BY product_id ORDER BY year) AS Rank
+            //            FROM Sales 
+            //        ) a
+            //        Where Rank = 1;
+            //    ";
 
-            //OR
-            LeetCode_1070 classLeetCode = new LeetCode_1070();
+            ////OR
+            //LeetCode_1070 classLeetCode = new LeetCode_1070();
 
             ////(1071.) Greatest Common Divisor of Strings (EASY)
             //string str1 = "TAUXXTAUXXTAUXXTAUXXTAUXX";
