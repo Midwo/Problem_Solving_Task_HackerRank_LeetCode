@@ -953,27 +953,27 @@ namespace ProblemSolving
             //LeetCode_176 classLeetCode = new LeetCode_176();
 
             ////(180.) Consecutive Numbers (MEDIUM)
-            string SqlQuery =
-                @"
-                    Select
-                        distinct a.num as ConsecutiveNums 
-                    From
-                    (
-                        Select
-                            id,
-                            num,
-                            LAG(num)
-                            OVER (ORDER BY [id]) AS PrevNum,
-                            LEAD(num) 
-                            OVER (ORDER BY [id]) AS NextNum
-                        From Logs 
-                    ) a
-                    where a.num = a.PrevNum and a.num = a.NextNum
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            distinct a.num as ConsecutiveNums 
+            //        From
+            //        (
+            //            Select
+            //                id,
+            //                num,
+            //                LAG(num)
+            //                OVER (ORDER BY [id]) AS PrevNum,
+            //                LEAD(num) 
+            //                OVER (ORDER BY [id]) AS NextNum
+            //            From Logs 
+            //        ) a
+            //        where a.num = a.PrevNum and a.num = a.NextNum
+            //    ";
 
-            //OR
+            ////OR
 
-            LeetCode_180 classLeetCode = new LeetCode_180();
+            //LeetCode_180 classLeetCode = new LeetCode_180();
 
             ////(181.) Employees Earning More Than Their Managers (EASY)
             //string SqlQuery1 = @"
@@ -1007,6 +1007,31 @@ namespace ProblemSolving
             //    on a.id = b.customerId
             //    where b.id is null
             //    ";
+
+            ////(185.) Department Top Three Salaries (HARD)
+            string SqlQuery =
+                @"
+                     Select 
+                         b.Name as Department,
+                         a.Name as Employee,
+                         a.Salary
+                     From 
+                     (
+                         Select
+                             id,
+                             name,
+                             salary,
+                             departmentId,
+                             Dense_Rank() OVER (PARTITION BY departmentId ORDER BY [salary] desc) as Rank
+                         From Employee
+                     ) a
+                     left join Department as b
+                     On a.departmentId = b.id
+                     Where a.Rank < 4
+                ";
+
+            ////OR
+            //LeetCode_185 classLeetCode = new LeetCode_185();
 
             ////(190.) Reverse Bits (EASY)
             //uint n = 43261596;
