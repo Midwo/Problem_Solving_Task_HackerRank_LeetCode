@@ -2142,6 +2142,22 @@ namespace ProblemSolving
 
             //leetCodeAll.LeetCode_620();
 
+            ////(626.) Exchange Seats (MEDIUM)
+            string SqlQuery =
+                @"
+                     Select
+                         id,
+                         IIF(id % 2 = 0, 
+                     LAG(student, 1, student) OVER (order by id), 
+                     LEAD(student, 1, student) OVER (order by id)
+                         ) as student 
+                     From Seat 
+                ";
+
+            //OR
+
+            LeetCode_626 classLeetCode = new LeetCode_626();
+
             ////(627.) Swap Salary (EASY)
             //LeetCode_627 classLeetCode = new LeetCode_627();
 
@@ -4063,44 +4079,44 @@ namespace ProblemSolving
             //LeetCode_1789 classLeetCode = new LeetCode_1789();
 
             ////(1907.) Count Salary Categories (MEDIUM)
-            string SqlQuery =
-                @"
-                    Select
-                        'High Salary' as category,
-                        Count(account_id) as accounts_count
-                    From 
-                    (
-                        Select 
-                            account_id
-                        From Accounts 
-                        Where income > 50000
-                    ) a 
-                    UNION ALL
-                    Select
-                        'Average Salary' as category,
-                        Count(account_id) as accounts_count
-                    From 
-                    (
-                        Select 
-                            account_id
-                        From Accounts 
-                        Where income >= 20000 and income <= 50000
-                    ) a 
-                    UNION ALL
-                    Select
-                        'Low Salary' as category,
-                        Count(account_id) as accounts_count
-                    From 
-                    (
-                        Select 
-                            account_id
-                        From Accounts 
-                        Where income < 20000
-                    ) a 
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            'High Salary' as category,
+            //            Count(account_id) as accounts_count
+            //        From 
+            //        (
+            //            Select 
+            //                account_id
+            //            From Accounts 
+            //            Where income > 50000
+            //        ) a 
+            //        UNION ALL
+            //        Select
+            //            'Average Salary' as category,
+            //            Count(account_id) as accounts_count
+            //        From 
+            //        (
+            //            Select 
+            //                account_id
+            //            From Accounts 
+            //            Where income >= 20000 and income <= 50000
+            //        ) a 
+            //        UNION ALL
+            //        Select
+            //            'Low Salary' as category,
+            //            Count(account_id) as accounts_count
+            //        From 
+            //        (
+            //            Select 
+            //                account_id
+            //            From Accounts 
+            //            Where income < 20000
+            //        ) a 
+            //    ";
 
-            //OR
-            LeetCode_1907 classLeetCode = new LeetCode_1907();
+            ////OR
+            //LeetCode_1907 classLeetCode = new LeetCode_1907();
 
             ////(1934.) Confirmation Rate (MEDIUM)
             //string SqlQuery =
