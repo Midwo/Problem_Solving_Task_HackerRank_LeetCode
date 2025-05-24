@@ -3817,6 +3817,40 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1280 classLeetCode = new LeetCode_1280();
 
+            ////(1321.) Restaurant Growth (MEDIUM)
+            string SqlQuery =
+                @"
+                     Select 
+                         b.visited_on,
+                         --b.startCalc,
+                         --b.YES_NO,
+                         (Select SUM(amount) From Customer Where visited_on >= b.startCalc and visited_on <= b.visited_on) as amount, 
+                         (Select ROUND(AVG(f.amount*1.0),2) From (Select 
+                     	                                            visited_on,
+                     	                                            SUM(amount) as amount
+                                                                 From Customer 
+                                                                 Group by visited_on) f Where f.visited_on >= b.startCalc and f.visited_on <= b.visited_on) as average_amount
+                     From
+                     (
+                     Select
+                         distinct a.end_date as visited_on,
+                         a.startCalc,
+                         a.YES_NO
+                     From
+                     (
+                         Select
+                             visited_on as startCalc,
+                             IIF(DATEADD(DAY, 6, visited_on) <= (Select max(visited_on) From Customer), 1, 0) as YES_NO,
+                             DATEADD(DAY, 6, visited_on) as end_date
+                         From Customer
+                     ) a
+                     Where a.YES_NO = 1
+                     ) b  
+                ";
+
+            //OR
+            LeetCode_1321 classLeetCode = new LeetCode_1321();
+
             /////(1327.) List the Products Ordered in a Period (EASY)
             //string SqlQuery =
             //    @"
@@ -3841,64 +3875,64 @@ namespace ProblemSolving
             //LeetCode_1327 classLeetCode = new LeetCode_1327();
 
             ////(1341.) Movie Rating  (MEDIUM)
-            string SqlQuery =
-                @"
-                    Select
-                        f.results
-                    From (
-                    Select top 1
-                        c.name as results             
-                    From
-                    (
-                        Select 
-                            user_id,
-                            COUNT(user_id) as howManyTimes
-                        From MovieRating 
-                        Group by user_id 
-                    ) as a
-                    left join Users as c
-                    On c.user_id = a.user_id 
-                    Where a.howManyTimes = (Select Max(b.howManyTimes) From (Select 
-                            user_id,
-                            COUNT(user_id) as howManyTimes
-                            From MovieRating 
-                            Group by user_id ) b)
-                    order by c.name
-                    ) f
-                    
-                    UNION ALL 
-                    
-                    Select
-                        g.results
-                    From 
-                    ( 
-                        Select top 1
-                        d.title as results
-                    From
-                    (
-                        Select
-                            movie_id,
-                            AVG(rating*1.0) as averageRating
-                        From MovieRating 
-                        Where MONTH(created_at) = 2 and YEAR(created_at) = 2020
-                        Group by movie_id
-                    ) as a
-                    Left join Movies as d
-                    On d.movie_id = a.movie_id
-                    Where a.averageRating = (Select MAX(b.averageRating) FROM 
-                                    (Select
-                                        movie_id,
-                                        AVG(rating*1.0) as averageRating
-                                    From MovieRating 
-                                    Where MONTH(created_at) = 2 and YEAR(created_at) = 2020
-                                    Group by movie_id) b
-                                    ) 
-                    order by d.title
-                    ) g
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            f.results
+            //        From (
+            //        Select top 1
+            //            c.name as results             
+            //        From
+            //        (
+            //            Select 
+            //                user_id,
+            //                COUNT(user_id) as howManyTimes
+            //            From MovieRating 
+            //            Group by user_id 
+            //        ) as a
+            //        left join Users as c
+            //        On c.user_id = a.user_id 
+            //        Where a.howManyTimes = (Select Max(b.howManyTimes) From (Select 
+            //                user_id,
+            //                COUNT(user_id) as howManyTimes
+            //                From MovieRating 
+            //                Group by user_id ) b)
+            //        order by c.name
+            //        ) f
 
-            //OR
-            LeetCode_1341 classLeetCode = new LeetCode_1341();
+            //        UNION ALL 
+
+            //        Select
+            //            g.results
+            //        From 
+            //        ( 
+            //            Select top 1
+            //            d.title as results
+            //        From
+            //        (
+            //            Select
+            //                movie_id,
+            //                AVG(rating*1.0) as averageRating
+            //            From MovieRating 
+            //            Where MONTH(created_at) = 2 and YEAR(created_at) = 2020
+            //            Group by movie_id
+            //        ) as a
+            //        Left join Movies as d
+            //        On d.movie_id = a.movie_id
+            //        Where a.averageRating = (Select MAX(b.averageRating) FROM 
+            //                        (Select
+            //                            movie_id,
+            //                            AVG(rating*1.0) as averageRating
+            //                        From MovieRating 
+            //                        Where MONTH(created_at) = 2 and YEAR(created_at) = 2020
+            //                        Group by movie_id) b
+            //                        ) 
+            //        order by d.title
+            //        ) g
+            //    ";
+
+            ////OR
+            //LeetCode_1341 classLeetCode = new LeetCode_1341();
 
             ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
             //string SqlQuery =
