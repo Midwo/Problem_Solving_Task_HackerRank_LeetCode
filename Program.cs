@@ -2038,6 +2038,46 @@ namespace ProblemSolving
             ////OR
             //leetCodeAll.LeetCode_584();
 
+            ////(585.) Investments in 2016 (MEDIUM)
+            string SqlQuery =
+                @"
+                     Select 
+                         ROUND(SUM(a.tiv_2016), 2) as tiv_2016 
+                     From
+                     (
+                         Select 
+                             tiv_2016,
+                             CONCAT(lat, lon) as latlon
+                         From Insurance
+                         Where tiv_2015 in 
+                             (
+                                 Select
+                                     tiv_2015
+                                     --Count(*) as howMany
+                                 From Insurance 
+                                 Group by tiv_2015
+                                 Having Count(*) > 1
+                             )
+                     ) a
+                     Where a.latlon in 
+                     (
+                         Select
+                             b.latlon
+                             --Count(*)
+                         From
+                         (
+                             Select 
+                                 CONCAT(lat, lon) as latlon
+                             From Insurance 
+                         ) b
+                         Group by b.latlon
+                         Having Count(*) = 1
+                     )
+                ";
+
+            //OR
+            LeetCode_585 classLeetCode = new LeetCode_585();
+
             ////(586.) Customer Placing the Largest Number of Orders (EASY)
             //LeetCode_586 classLeetCode = new LeetCode_586();
             //////OR
@@ -2103,53 +2143,53 @@ namespace ProblemSolving
             //}
 
             ////(602.) Friend Requests II: Who Has the Most Friends (MEDIUM)
-            string SqlQuery =
-                @"
-                      With CTE AS
-                      (
-                          Select
-                              a.id,
-                              IIF(b.howMany is null, 0, b.howMany)+IIF(c.howMany is null, 0, c.howMany) as num
-                          From
-                          (
-                              Select
-                                  distinct requester_id as id
-                              From RequestAccepted 
-                              UNION 
-                              Select
-                                  distinct accepter_id  as id
-                              From RequestAccepted
-                          ) a
-                          left join 
-                          (
-                              Select
-                                  accepter_id,
-                                  count(*) as howMany
-                              From RequestAccepted 
-                              Group by accepter_id
-                          ) b
-                          ON a.id = b.accepter_id
-                          left join 
-                          (
-                              Select
-                                  requester_id,
-                                  count(*) as howMany
-                              From RequestAccepted 
-                              Group by requester_id
-                          ) c 
-                          ON a.id = c.requester_id
-                      )
-                      
-                      Select top 1
-                          id,
-                          num
-                      From CTE
-                      Order by num desc
-                ";
+            //string SqlQuery =
+            //    @"
+            //          With CTE AS
+            //          (
+            //              Select
+            //                  a.id,
+            //                  IIF(b.howMany is null, 0, b.howMany)+IIF(c.howMany is null, 0, c.howMany) as num
+            //              From
+            //              (
+            //                  Select
+            //                      distinct requester_id as id
+            //                  From RequestAccepted 
+            //                  UNION 
+            //                  Select
+            //                      distinct accepter_id  as id
+            //                  From RequestAccepted
+            //              ) a
+            //              left join 
+            //              (
+            //                  Select
+            //                      accepter_id,
+            //                      count(*) as howMany
+            //                  From RequestAccepted 
+            //                  Group by accepter_id
+            //              ) b
+            //              ON a.id = b.accepter_id
+            //              left join 
+            //              (
+            //                  Select
+            //                      requester_id,
+            //                      count(*) as howMany
+            //                  From RequestAccepted 
+            //                  Group by requester_id
+            //              ) c 
+            //              ON a.id = c.requester_id
+            //          )
 
-            //OR
+            //          Select top 1
+            //              id,
+            //              num
+            //          From CTE
+            //          Order by num desc
+            //    ";
 
-            LeetCode_602 classLeetCode = new LeetCode_602();
+            ////OR
+
+            //LeetCode_602 classLeetCode = new LeetCode_602();
 
             ////(605.) Can Place Flowers (EASY)
             //int[] flowerbed = [0];
