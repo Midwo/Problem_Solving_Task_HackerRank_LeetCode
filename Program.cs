@@ -2102,6 +2102,55 @@ namespace ProblemSolving
             //    Console.WriteLine(s);
             //}
 
+            ////(602.) Friend Requests II: Who Has the Most Friends (MEDIUM)
+            string SqlQuery =
+                @"
+                      With CTE AS
+                      (
+                          Select
+                              a.id,
+                              IIF(b.howMany is null, 0, b.howMany)+IIF(c.howMany is null, 0, c.howMany) as num
+                          From
+                          (
+                              Select
+                                  distinct requester_id as id
+                              From RequestAccepted 
+                              UNION 
+                              Select
+                                  distinct accepter_id  as id
+                              From RequestAccepted
+                          ) a
+                          left join 
+                          (
+                              Select
+                                  accepter_id,
+                                  count(*) as howMany
+                              From RequestAccepted 
+                              Group by accepter_id
+                          ) b
+                          ON a.id = b.accepter_id
+                          left join 
+                          (
+                              Select
+                                  requester_id,
+                                  count(*) as howMany
+                              From RequestAccepted 
+                              Group by requester_id
+                          ) c 
+                          ON a.id = c.requester_id
+                      )
+                      
+                      Select top 1
+                          id,
+                          num
+                      From CTE
+                      Order by num desc
+                ";
+
+            //OR
+
+            LeetCode_602 classLeetCode = new LeetCode_602();
+
             ////(605.) Can Place Flowers (EASY)
             //int[] flowerbed = [0];
             //int n = 1;
@@ -3818,38 +3867,38 @@ namespace ProblemSolving
             //LeetCode_1280 classLeetCode = new LeetCode_1280();
 
             ////(1321.) Restaurant Growth (MEDIUM)
-            string SqlQuery =
-                @"
-                     Select 
-                         b.visited_on,
-                         --b.startCalc,
-                         --b.YES_NO,
-                         (Select SUM(amount) From Customer Where visited_on >= b.startCalc and visited_on <= b.visited_on) as amount, 
-                         (Select ROUND(AVG(f.amount*1.0),2) From (Select 
-                     	                                            visited_on,
-                     	                                            SUM(amount) as amount
-                                                                 From Customer 
-                                                                 Group by visited_on) f Where f.visited_on >= b.startCalc and f.visited_on <= b.visited_on) as average_amount
-                     From
-                     (
-                     Select
-                         distinct a.end_date as visited_on,
-                         a.startCalc,
-                         a.YES_NO
-                     From
-                     (
-                         Select
-                             visited_on as startCalc,
-                             IIF(DATEADD(DAY, 6, visited_on) <= (Select max(visited_on) From Customer), 1, 0) as YES_NO,
-                             DATEADD(DAY, 6, visited_on) as end_date
-                         From Customer
-                     ) a
-                     Where a.YES_NO = 1
-                     ) b  
-                ";
+            //string SqlQuery =
+            //    @"
+            //         Select 
+            //             b.visited_on,
+            //             --b.startCalc,
+            //             --b.YES_NO,
+            //             (Select SUM(amount) From Customer Where visited_on >= b.startCalc and visited_on <= b.visited_on) as amount, 
+            //             (Select ROUND(AVG(f.amount*1.0),2) From (Select 
+            //         	                                            visited_on,
+            //         	                                            SUM(amount) as amount
+            //                                                     From Customer 
+            //                                                     Group by visited_on) f Where f.visited_on >= b.startCalc and f.visited_on <= b.visited_on) as average_amount
+            //         From
+            //         (
+            //         Select
+            //             distinct a.end_date as visited_on,
+            //             a.startCalc,
+            //             a.YES_NO
+            //         From
+            //         (
+            //             Select
+            //                 visited_on as startCalc,
+            //                 IIF(DATEADD(DAY, 6, visited_on) <= (Select max(visited_on) From Customer), 1, 0) as YES_NO,
+            //                 DATEADD(DAY, 6, visited_on) as end_date
+            //             From Customer
+            //         ) a
+            //         Where a.YES_NO = 1
+            //         ) b  
+            //    ";
 
-            //OR
-            LeetCode_1321 classLeetCode = new LeetCode_1321();
+            ////OR
+            //LeetCode_1321 classLeetCode = new LeetCode_1321();
 
             /////(1327.) List the Products Ordered in a Period (EASY)
             //string SqlQuery =
