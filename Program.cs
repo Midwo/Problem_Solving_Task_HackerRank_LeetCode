@@ -663,14 +663,13 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ClimbStairs(5));
 
             ////(80.) Remove Duplicates from Sorted Array II  (MEDIUM)
-            int[] nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
+            //int[] nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
 
-            LeetCode_80 classLeetCode = new LeetCode_80();
-            Console.WriteLine(classLeetCode.RemoveDuplicates(nums));
+            //LeetCode_80 classLeetCode = new LeetCode_80();
+            //Console.WriteLine(classLeetCode.RemoveDuplicates(nums));
 
-            //OR
-            Console.WriteLine(leetCodeAll.RemoveDuplicatesTask80(nums));
-
+            ////OR
+            //Console.WriteLine(leetCodeAll.RemoveDuplicatesTask80(nums));
 
             ////(83.) Remove Duplicates from Sorted List (EASY)
             //ListNode head = new ListNode(1);
@@ -1042,6 +1041,17 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_185 classLeetCode = new LeetCode_185();
+
+            ////(189.) Rotate Array (MEDIUM)
+            int[] nums = [1, 2, 3, 4, 5, 6, 7];
+            int k = 3;
+
+            LeetCode_189 classLeetCode = new LeetCode_189();
+            classLeetCode.Rotate(nums, k);
+
+            //OR
+
+            leetCodeAll.Rotate(nums, k);
 
             ////(190.) Reverse Bits (EASY)
             //uint n = 43261596;
