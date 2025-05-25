@@ -645,6 +645,16 @@ namespace ProblemSolving
             ////(35.) Search Insert Position (EASY)
             //Console.WriteLine(leetCodeAll.SearchInsert([1, 3, 5, 6], 7));
 
+            ////(55.) Jump Game (MEDIUM)
+            int[] nums = [2, 3, 1, 1, 4];
+
+            LeetCode_55 classLeetCode = new LeetCode_55();
+            Console.WriteLine(classLeetCode.CanJump(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CanJump(nums));
+
             ////(58.) Lenght of Last Word (EASY)
             //Console.WriteLine(leetCodeAll.LengthOfLastWord(" fly me   to   the moon  "));
 
@@ -838,15 +848,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxProfit(prices));
 
             ////(122.) Best Time to Buy and Sell Stock II (MEDIUM)
-            int[] prices = [7, 1, 5, 3, 6, 4];
+            //int[] prices = [7, 1, 5, 3, 6, 4];
 
-            LeetCode_122 classLeetCode = new LeetCode_122();
-            Console.WriteLine(classLeetCode.MaxProfit(prices));
+            //LeetCode_122 classLeetCode = new LeetCode_122();
+            //Console.WriteLine(classLeetCode.MaxProfit(prices));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxProfitTask122(prices));
-
+            //Console.WriteLine(leetCodeAll.MaxProfitTask122(prices));
 
             ////(125.) Valid Palindrome (EASY)
             //string s = "A man, a plan, a canal: Panama";
