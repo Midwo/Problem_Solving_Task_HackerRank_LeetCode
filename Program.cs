@@ -837,6 +837,17 @@ namespace ProblemSolving
             //int[] prices = [7, 1, 5, 3, 6, 4];
             //Console.WriteLine(leetCodeAll.MaxProfit(prices));
 
+            ////(122.) Best Time to Buy and Sell Stock II (MEDIUM)
+            int[] prices = [7, 1, 5, 3, 6, 4];
+
+            LeetCode_122 classLeetCode = new LeetCode_122();
+            Console.WriteLine(classLeetCode.MaxProfit(prices));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxProfitTask122(prices));
+
+
             ////(125.) Valid Palindrome (EASY)
             //string s = "A man, a plan, a canal: Panama";
             //Console.WriteLine(leetCodeAll.IsPalindrome(s));
@@ -1043,15 +1054,15 @@ namespace ProblemSolving
             //LeetCode_185 classLeetCode = new LeetCode_185();
 
             ////(189.) Rotate Array (MEDIUM)
-            int[] nums = [1, 2, 3, 4, 5, 6, 7];
-            int k = 3;
+            //int[] nums = [1, 2, 3, 4, 5, 6, 7];
+            //int k = 3;
 
-            LeetCode_189 classLeetCode = new LeetCode_189();
-            classLeetCode.Rotate(nums, k);
+            //LeetCode_189 classLeetCode = new LeetCode_189();
+            //classLeetCode.Rotate(nums, k);
 
-            //OR
+            ////OR
 
-            leetCodeAll.Rotate(nums, k);
+            //leetCodeAll.Rotate(nums, k);
 
             ////(190.) Reverse Bits (EASY)
             //uint n = 43261596;

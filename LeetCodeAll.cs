@@ -8357,8 +8357,26 @@ namespace ProblemSolving
             ////Only for test
             Console.WriteLine(string.Join(',', nums));
         }
+        public int MaxProfitTask122(int[] prices)
+        {
+            int result = 0;
+            int buy = prices[0];
 
+            for (int i = 1; i < prices.Length; i++)
+            {
+                if (prices[i] < buy)
+                {
+                    buy = prices[i];
+                }
+                else
+                {
+                    result += prices[i] - buy;
+                    buy = prices[i];
+                }
+            }
 
+            return result;
+        }
 
 
 
