@@ -645,15 +645,27 @@ namespace ProblemSolving
             ////(35.) Search Insert Position (EASY)
             //Console.WriteLine(leetCodeAll.SearchInsert([1, 3, 5, 6], 7));
 
-            ////(55.) Jump Game (MEDIUM)
+            ////(45.) Jump Game II (MEDIUM)
             int[] nums = [2, 3, 1, 1, 4];
 
-            LeetCode_55 classLeetCode = new LeetCode_55();
-            Console.WriteLine(classLeetCode.CanJump(nums));
+            LeetCode_45 classLeetCode = new LeetCode_45();
+            Console.WriteLine(classLeetCode.Jump(nums));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.CanJump(nums));
+            Console.WriteLine(classLeetCode.Jump(nums));
+
+
+
+            ////(55.) Jump Game (MEDIUM)
+            //int[] nums = [2, 3, 1, 1, 4];
+
+            //LeetCode_55 classLeetCode = new LeetCode_55();
+            //Console.WriteLine(classLeetCode.CanJump(nums));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.CanJump(nums));
 
             ////(58.) Lenght of Last Word (EASY)
             //Console.WriteLine(leetCodeAll.LengthOfLastWord(" fly me   to   the moon  "));
