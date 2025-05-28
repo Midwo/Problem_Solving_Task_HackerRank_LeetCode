@@ -1329,6 +1329,16 @@ namespace ProblemSolving
             //////OR
             //Console.WriteLine(leetCodeAll.IsPalindrome(head));
 
+            ////(238.) Product of Array Except Self (MEDIUM)
+            int[] nums = [1, 2  , 3 ,  4];
+
+            LeetCode_238 classLeetCode = new LeetCode_238();
+            Console.WriteLine(string.Join(',', classLeetCode.ProductExceptSelf(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ProductExceptSelf(nums)));
+
             ////(242.) Valid Anagram
             //string s = "anagram";
             //string t = "nagaram";
@@ -1541,25 +1551,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GuessNumber(n));
 
             ////(380.) Insert Delete GetRandom O(1) (MEDIUM)
-            LeetCode_380.RandomizedSet randomizedSet1 = new RandomizedSet();
-            randomizedSet1.Insert(1); 
-            randomizedSet1.Remove(2);
-            randomizedSet1.Insert(2);
-            randomizedSet1.GetRandom();
-            randomizedSet1.Remove(1);
-            randomizedSet1.Insert(2); 
-            randomizedSet1.GetRandom();
+            //LeetCode_380.RandomizedSet randomizedSet1 = new RandomizedSet();
+            //randomizedSet1.Insert(1); 
+            //randomizedSet1.Remove(2);
+            //randomizedSet1.Insert(2);
+            //randomizedSet1.GetRandom();
+            //randomizedSet1.Remove(1);
+            //randomizedSet1.Insert(2); 
+            //randomizedSet1.GetRandom();
 
-            //OR
+            ////OR
 
-            RandomizedSetTask380 randomizedSet2 = new RandomizedSetTask380();
-            randomizedSet2.Insert(1);
-            randomizedSet2.Remove(2);
-            randomizedSet2.Insert(2);
-            randomizedSet2.GetRandom();
-            randomizedSet2.Remove(1);
-            randomizedSet2.Insert(2);
-            randomizedSet2.GetRandom();
+            //RandomizedSetTask380 randomizedSet2 = new RandomizedSetTask380();
+            //randomizedSet2.Insert(1);
+            //randomizedSet2.Remove(2);
+            //randomizedSet2.Insert(2);
+            //randomizedSet2.GetRandom();
+            //randomizedSet2.Remove(1);
+            //randomizedSet2.Insert(2);
+            //randomizedSet2.GetRandom();
 
             ////(383.) Ransom Note (EASY)
             //string ransomNote = "fihjjjjei";
