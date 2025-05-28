@@ -8421,11 +8421,71 @@ namespace ProblemSolving
 
             return jumpCount;
         }
+        public int HIndex(int[] citations)
+        {
+            Array.Sort(citations);
+            int count = 0;
+            int publication = 1;
+            for (int i = citations.Length; i > 0; i--)
+            {
+                if (citations[i - 1] >= publication)
+                {
+                    publication++;
+                    count++;
+                }
+                else
+                {
+                    return count;
+                }
+            }
 
+            return publication - 1;
+        }
+        public class RandomizedSetTask380
+        {
+            private Dictionary<int, int> dictionaryValue;
+            private List<int> listValue;
+            private Random rnd;
 
+            public RandomizedSetTask380()
+            {
+                listValue = new List<int>();
+                dictionaryValue = new Dictionary<int, int>();
+                rnd = new Random();
+            }
 
+            public bool Insert(int val)
+            {
+                if (dictionaryValue.ContainsKey(val))
+                {
+                    return false;
+                }
 
+                dictionaryValue[val] = dictionaryValue.Count;
+                listValue.Add(val);
+                return true;
+            }
 
+            public bool Remove(int val)
+            {
+                if (!dictionaryValue.ContainsKey(val)) return false;
+
+                int indexListValue = dictionaryValue[val];
+                int lastElementValue = listValue[listValue.Count - 1];
+                listValue[indexListValue] = lastElementValue;
+                dictionaryValue[lastElementValue] = indexListValue;
+
+                listValue.RemoveAt(listValue.Count - 1);
+                dictionaryValue.Remove(val);
+
+                return true;
+            }
+
+            public int GetRandom()
+            {
+                return listValue[rnd.Next(listValue.Count)];
+            }
+        }
 
 
 

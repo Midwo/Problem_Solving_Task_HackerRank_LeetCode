@@ -20,6 +20,7 @@ using System.Xml.Linq;
 using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
 using static ProblemSolving.LeetCode.LeetCode_303;
+using static ProblemSolving.LeetCode.LeetCode_380;
 using static ProblemSolving.LeetCode.LeetCode_703;
 using static ProblemSolving.LeetCode.LeetCode_705;
 using static ProblemSolving.LeetCode.LeetCode_706;
@@ -646,16 +647,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SearchInsert([1, 3, 5, 6], 7));
 
             ////(45.) Jump Game II (MEDIUM)
-            int[] nums = [2, 3, 1, 1, 4];
+            //int[] nums = [2, 3, 1, 1, 4];
 
-            LeetCode_45 classLeetCode = new LeetCode_45();
-            Console.WriteLine(classLeetCode.Jump(nums));
+            //LeetCode_45 classLeetCode = new LeetCode_45();
+            //Console.WriteLine(classLeetCode.Jump(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(classLeetCode.Jump(nums));
-
-
+            //Console.WriteLine(classLeetCode.Jump(nums));
 
             ////(55.) Jump Game (MEDIUM)
             //int[] nums = [2, 3, 1, 1, 4];
@@ -1386,6 +1385,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MissingNumber(nums));
 
+            ////(274.) H-Index (MEDIUM)
+            //int[] citations = [0, 0, 2];
+
+            //LeetCode_274 classLeetCode = new LeetCode_274();
+            //Console.WriteLine(classLeetCode.HIndex(citations));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.HIndex(citations));
+
             ////(278.) First Bad Version (EASY)
             //int n = 2;
             //LeetCode_278 classLeetCode = new LeetCode_278();
@@ -1530,6 +1539,27 @@ namespace ProblemSolving
 
             //////OR
             //Console.WriteLine(leetCodeAll.GuessNumber(n));
+
+            ////(380.) Insert Delete GetRandom O(1) (MEDIUM)
+            LeetCode_380.RandomizedSet randomizedSet1 = new RandomizedSet();
+            randomizedSet1.Insert(1); 
+            randomizedSet1.Remove(2);
+            randomizedSet1.Insert(2);
+            randomizedSet1.GetRandom();
+            randomizedSet1.Remove(1);
+            randomizedSet1.Insert(2); 
+            randomizedSet1.GetRandom();
+
+            //OR
+
+            RandomizedSetTask380 randomizedSet2 = new RandomizedSetTask380();
+            randomizedSet2.Insert(1);
+            randomizedSet2.Remove(2);
+            randomizedSet2.Insert(2);
+            randomizedSet2.GetRandom();
+            randomizedSet2.Remove(1);
+            randomizedSet2.Insert(2);
+            randomizedSet2.GetRandom();
 
             ////(383.) Ransom Note (EASY)
             //string ransomNote = "fihjjjjei";
