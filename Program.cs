@@ -872,6 +872,17 @@ namespace ProblemSolving
             //string s = "A man, a plan, a canal: Panama";
             //Console.WriteLine(leetCodeAll.IsPalindrome(s));
 
+            ////(134.) Gas Station (MEDIUM)
+            int[] gas = [2, 0, 1, 2, 3, 4, 0];
+            int[] cost = [0, 1, 0, 0, 0, 0, 11];
+
+            LeetCode_134 classLeetCode = new LeetCode_134();
+            Console.WriteLine(classLeetCode.CanCompleteCircuit(gas, cost));
+
+            //OR
+
+            Console.WriteLine(classLeetCode.CanCompleteCircuit(gas, cost));
+
             ////(136.) Single Number (EASY)
             //int[] nums = [4, 1, 2, 1, 2];
             //Console.WriteLine(leetCodeAll.SingleNumber(nums));
@@ -1330,14 +1341,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsPalindrome(head));
 
             ////(238.) Product of Array Except Self (MEDIUM)
-            int[] nums = [1, 2  , 3 ,  4];
+            //int[] nums = [1, 2  , 3 ,  4];
 
-            LeetCode_238 classLeetCode = new LeetCode_238();
-            Console.WriteLine(string.Join(',', classLeetCode.ProductExceptSelf(nums)));
+            //LeetCode_238 classLeetCode = new LeetCode_238();
+            //Console.WriteLine(string.Join(',', classLeetCode.ProductExceptSelf(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ProductExceptSelf(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ProductExceptSelf(nums)));
 
             ////(242.) Valid Anagram
             //string s = "anagram";
