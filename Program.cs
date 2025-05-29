@@ -873,15 +873,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsPalindrome(s));
 
             ////(134.) Gas Station (MEDIUM)
-            int[] gas = [2, 0, 1, 2, 3, 4, 0];
-            int[] cost = [0, 1, 0, 0, 0, 0, 11];
+            //int[] gas = [2, 0, 1, 2, 3, 4, 0];
+            //int[] cost = [0, 1, 0, 0, 0, 0, 11];
 
-            LeetCode_134 classLeetCode = new LeetCode_134();
-            Console.WriteLine(classLeetCode.CanCompleteCircuit(gas, cost));
+            //LeetCode_134 classLeetCode = new LeetCode_134();
+            //Console.WriteLine(classLeetCode.CanCompleteCircuit(gas, cost));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(classLeetCode.CanCompleteCircuit(gas, cost));
+            //Console.WriteLine(classLeetCode.CanCompleteCircuit(gas, cost));
 
             ////(136.) Single Number (EASY)
             //int[] nums = [4, 1, 2, 1, 2];
@@ -918,6 +918,16 @@ namespace ProblemSolving
             //root.right.right = new TreeNode(8);
             //root.right.right.left = new TreeNode(9);
             //Console.WriteLine(string.Join(" ", leetCodeAll.PostorderTraversal(root)));
+
+            ////(151.) Reverse Words in a String (MEDIUM)
+            string s = "a good   example";
+
+            LeetCode_151 classLeetCode = new LeetCode_151();
+            Console.WriteLine(classLeetCode.ReverseWords(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ReverseWordsTask151(s));
 
             ////(160.) Intersection of Two Linked List (EASY)
             //ListNode headA = new ListNode(4);
