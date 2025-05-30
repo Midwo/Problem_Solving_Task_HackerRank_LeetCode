@@ -8641,6 +8641,48 @@ namespace ProblemSolving
             return string.Join(' ', splitWords.ToArray());
 
         }
+        
+        Dictionary<int, long[]> dictSumCountTask637;
+        public IList<double> AverageOfLevels(TreeNode root)
+        {
+            IList<double> result = new List<double>();
+            dictSumCountTask637 = new Dictionary<int, long[]>();
+            int level = 0;
+            if (root != null)
+            {
+                AverageOfLevelsDeep(root, 0);
+            }
+
+            foreach (var item in dictSumCountTask637)
+            {
+                //double temp = (double)(Convert.ToDouble(item.Value[0]) / Convert.ToDouble(item.Value[1]));
+                result.Add(Convert.ToDouble(item.Value[0]) / Convert.ToDouble(item.Value[1]));
+            }
+
+            return result;
+        }
+        private void AverageOfLevelsDeep(TreeNode root, int level)
+        {
+            if (root == null)
+            {
+                return;
+            }
+            if (dictSumCountTask637.ContainsKey(level))
+            {
+                long[] temp = dictSumCountTask637[level];
+                temp[0] += root.val;
+                temp[1]++;
+                dictSumCountTask637[level] = temp;
+            }
+            else
+            {
+                dictSumCountTask637.Add(level, [root.val, 1]);
+            }
+            level++;
+            AverageOfLevelsDeep(root.left, level);
+            AverageOfLevelsDeep(root.right, level);
+        }
+
 
 
 

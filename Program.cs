@@ -919,15 +919,15 @@ namespace ProblemSolving
             //root.right.right.left = new TreeNode(9);
             //Console.WriteLine(string.Join(" ", leetCodeAll.PostorderTraversal(root)));
 
-            ////(151.) Reverse Words in a String (MEDIUM)
-            string s = "a good   example";
+            //////(151.) Reverse Words in a String (MEDIUM)
+            //string s = "a good   example";
 
-            LeetCode_151 classLeetCode = new LeetCode_151();
-            Console.WriteLine(classLeetCode.ReverseWords(s));
+            //LeetCode_151 classLeetCode = new LeetCode_151();
+            //Console.WriteLine(classLeetCode.ReverseWords(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ReverseWordsTask151(s));
+            //Console.WriteLine(leetCodeAll.ReverseWordsTask151(s));
 
             ////(160.) Intersection of Two Linked List (EASY)
             //ListNode headA = new ListNode(4);
@@ -2377,6 +2377,25 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumProduct(nums));
+
+            ////(637.) Average of Levels in Binary Tree (EASY)
+            TreeNode root = new TreeNode(3);
+            root.left = new TreeNode(9);
+            root.right = new TreeNode(20);
+            root.right.left = new TreeNode(15);
+            root.right.right = new TreeNode(7);
+
+            LeetCode_637 classLeetCode = new LeetCode_637();
+            IList<double> result = classLeetCode.AverageOfLevels(root);
+
+            Console.WriteLine(string.Join(',', result));
+
+            //OR
+            
+            IList<double> result1 = classLeetCode.AverageOfLevels(root);
+
+            Console.WriteLine(string.Join(',', result1));
+
 
             ////643.Maximum Average Subarray I (EASY)
             //int[] nums = [1, 12, -5, -6, 50, 3];
