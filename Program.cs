@@ -972,6 +972,17 @@ namespace ProblemSolving
             //}
             #endregion
 
+            ////(167.) Two Sum II - Input Array Is Sorted (MEDIUM)
+            int[] numbers = [2, 7, 11, 15];
+            int target = 9;
+
+            LeetCode_167 classLeetCode = new LeetCode_167();
+            Console.WriteLine(string.Join(" ", classLeetCode.TwoSum(numbers, target)));
+
+            ////OR
+
+            Console.WriteLine(string.Join(" ", leetCodeAll.TwoSumTask167(numbers, target)));
+
             ////(168.) Excel Sheet Column Title (EASY)
             //int columnNumber = 704;
             //Console.WriteLine(leetCodeAll.ConvertToTitle(columnNumber));
@@ -2379,23 +2390,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumProduct(nums));
 
             ////(637.) Average of Levels in Binary Tree (EASY)
-            TreeNode root = new TreeNode(3);
-            root.left = new TreeNode(9);
-            root.right = new TreeNode(20);
-            root.right.left = new TreeNode(15);
-            root.right.right = new TreeNode(7);
+            //TreeNode root = new TreeNode(3);
+            //root.left = new TreeNode(9);
+            //root.right = new TreeNode(20);
+            //root.right.left = new TreeNode(15);
+            //root.right.right = new TreeNode(7);
 
-            LeetCode_637 classLeetCode = new LeetCode_637();
-            IList<double> result = classLeetCode.AverageOfLevels(root);
+            //LeetCode_637 classLeetCode = new LeetCode_637();
+            //IList<double> result = classLeetCode.AverageOfLevels(root);
 
-            Console.WriteLine(string.Join(',', result));
+            //Console.WriteLine(string.Join(',', result));
 
-            //OR
-            
-            IList<double> result1 = classLeetCode.AverageOfLevels(root);
+            ////OR
 
-            Console.WriteLine(string.Join(',', result1));
+            //IList<double> result1 = classLeetCode.AverageOfLevels(root);
 
+            //Console.WriteLine(string.Join(',', result1));
 
             ////643.Maximum Average Subarray I (EASY)
             //int[] nums = [1, 12, -5, -6, 50, 3];

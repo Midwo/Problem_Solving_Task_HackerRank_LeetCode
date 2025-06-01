@@ -8682,6 +8682,48 @@ namespace ProblemSolving
             AverageOfLevelsDeep(root.left, level);
             AverageOfLevelsDeep(root.right, level);
         }
+        public int[] TwoSumTask167(int[] numbers, int target)
+        {
+            bool end = false;
+            int L = 0;
+            int R = numbers.Length - 1;
+            while (!end)
+            {
+                if (numbers[L] + numbers[R] < target)
+                {
+                    L++;
+                }
+                else if (numbers[L] + numbers[R] > target)
+                {
+                    R--;
+                }
+                else if (numbers[L] + numbers[R] == target)
+                {
+                    return new int[] { L + 1, R + 1 };
+                }
+            }
+
+            return numbers;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
