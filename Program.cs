@@ -973,15 +973,15 @@ namespace ProblemSolving
             #endregion
 
             ////(167.) Two Sum II - Input Array Is Sorted (MEDIUM)
-            int[] numbers = [2, 7, 11, 15];
-            int target = 9;
+            //int[] numbers = [2, 7, 11, 15];
+            //int target = 9;
 
-            LeetCode_167 classLeetCode = new LeetCode_167();
-            Console.WriteLine(string.Join(" ", classLeetCode.TwoSum(numbers, target)));
+            //LeetCode_167 classLeetCode = new LeetCode_167();
+            //Console.WriteLine(string.Join(" ", classLeetCode.TwoSum(numbers, target)));
 
             ////OR
 
-            Console.WriteLine(string.Join(" ", leetCodeAll.TwoSumTask167(numbers, target)));
+            //Console.WriteLine(string.Join(" ", leetCodeAll.TwoSumTask167(numbers, target)));
 
             ////(168.) Excel Sheet Column Title (EASY)
             //int columnNumber = 704;
@@ -1214,6 +1214,17 @@ namespace ProblemSolving
             //    Console.WriteLine(returnedList1.val);
             //    returnedList1 = returnedList1.next;
             //}
+
+            ////(209.) Minimum Size Subarray Sum (MEDIUM)
+            int target = 7;
+            int[] nums = [5];
+
+            LeetCode_209 classLeetCode = new LeetCode_209();
+            Console.WriteLine(classLeetCode.MinSubArrayLen(target, nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinSubArrayLen(target, nums));
 
             ////(217.) Contains Deplicate (EASY)
             //int[] nums = [1, 2, 3, 1];
