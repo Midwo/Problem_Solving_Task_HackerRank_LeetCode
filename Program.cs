@@ -656,6 +656,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(classLeetCode.Jump(nums));
 
+            ////(48.) Rotate Image (MEDIUM)
+            int[][] matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+            LeetCode_48 classLeetCode = new LeetCode_48();
+            classLeetCode.Rotate(matrix);
+
+            //OR
+
+            leetCodeAll.Rotate(matrix);
+
             ////(55.) Jump Game (MEDIUM)
             //int[] nums = [2, 3, 1, 1, 4];
 
@@ -1216,15 +1226,15 @@ namespace ProblemSolving
             //}
 
             ////(209.) Minimum Size Subarray Sum (MEDIUM)
-            int target = 7;
-            int[] nums = [5];
+            //int target = 7;
+            //int[] nums = [5];
 
-            LeetCode_209 classLeetCode = new LeetCode_209();
-            Console.WriteLine(classLeetCode.MinSubArrayLen(target, nums));
+            //LeetCode_209 classLeetCode = new LeetCode_209();
+            //Console.WriteLine(classLeetCode.MinSubArrayLen(target, nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinSubArrayLen(target, nums));
+            //Console.WriteLine(leetCodeAll.MinSubArrayLen(target, nums));
 
             ////(217.) Contains Deplicate (EASY)
             //int[] nums = [1, 2, 3, 1];
