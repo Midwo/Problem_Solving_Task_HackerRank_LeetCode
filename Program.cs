@@ -864,6 +864,16 @@ namespace ProblemSolving
             //    Console.Write(i + " ");
             //}
 
+            ////(120.) Triangle (MEDIUM)
+            IList<IList<int>> triangle = [[-1], [3, 2], [-3, 1, -1]];
+
+            LeetCode_120 classLeetCode = new LeetCode_120();
+            Console.WriteLine(classLeetCode.MinimumTotal(triangle));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumTotal(triangle));
+
             ////(121.) Best Time to Boy and Sell Stock (EASY)
             //int[] prices = [7, 1, 5, 3, 6, 4];
             //Console.WriteLine(leetCodeAll.MaxProfit(prices));
@@ -930,25 +940,25 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(" ", leetCodeAll.PostorderTraversal(root)));
 
             ////(146.) LRU Cache (MEDIUM)
-            LeetCode_146.LRUCache lRUCache = new LeetCode_146.LRUCache(2);
-            lRUCache.Get(2);
-            lRUCache.Put(2, 6);
-            lRUCache.Get(1);
-            lRUCache.Put(1, 5);
-            lRUCache.Put(1, 2);
-            lRUCache.Get(1);
-            lRUCache.Get(2);
+            //LeetCode_146.LRUCache lRUCache = new LeetCode_146.LRUCache(2);
+            //lRUCache.Get(2);
+            //lRUCache.Put(2, 6);
+            //lRUCache.Get(1);
+            //lRUCache.Put(1, 5);
+            //lRUCache.Put(1, 2);
+            //lRUCache.Get(1);
+            //lRUCache.Get(2);
 
-            //OR
+            ////OR
 
-            LRUCache lRUCache1 = new LRUCache(2);
-            lRUCache1.Get(2);
-            lRUCache1.Put(2, 6);
-            lRUCache1.Get(1);
-            lRUCache1.Put(1, 5);
-            lRUCache1.Put(1, 2);
-            lRUCache1.Get(1);
-            lRUCache1.Get(2);
+            //LRUCache lRUCache1 = new LRUCache(2);
+            //lRUCache1.Get(2);
+            //lRUCache1.Put(2, 6);
+            //lRUCache1.Get(1);
+            //lRUCache1.Put(1, 5);
+            //lRUCache1.Put(1, 2);
+            //lRUCache1.Get(1);
+            //lRUCache1.Get(2);
 
             //////(151.) Reverse Words in a String (MEDIUM)
             //string s = "a good   example";

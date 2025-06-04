@@ -8874,8 +8874,22 @@ namespace ProblemSolving
                 }
             }
         }
+        public int MinimumTotal(IList<IList<int>> triangle)
+        {
+            int height = triangle.Count;
+            int[] sum = new int[height + 1];
 
+            for (int i = height - 1; i >= 0; i--)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    sum[j] = Math.Min(sum[j], sum[j + 1]) + triangle[i][j];
+                    //Console.WriteLine(triangle[i][j]);
+                }
+            }
 
+            return sum[0];
+        }
 
 
 
