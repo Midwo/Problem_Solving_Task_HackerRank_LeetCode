@@ -657,14 +657,14 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.Jump(nums));
 
             ////(48.) Rotate Image (MEDIUM)
-            int[][] matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+            //int[][] matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
-            LeetCode_48 classLeetCode = new LeetCode_48();
-            classLeetCode.Rotate(matrix);
+            //LeetCode_48 classLeetCode = new LeetCode_48();
+            //classLeetCode.Rotate(matrix);
 
-            //OR
+            ////OR
 
-            leetCodeAll.Rotate(matrix);
+            //leetCodeAll.Rotate(matrix);
 
             ////(55.) Jump Game (MEDIUM)
             //int[] nums = [2, 3, 1, 1, 4];
@@ -928,6 +928,27 @@ namespace ProblemSolving
             //root.right.right = new TreeNode(8);
             //root.right.right.left = new TreeNode(9);
             //Console.WriteLine(string.Join(" ", leetCodeAll.PostorderTraversal(root)));
+
+            ////(146.) LRU Cache (MEDIUM)
+            LeetCode_146.LRUCache lRUCache = new LeetCode_146.LRUCache(2);
+            lRUCache.Get(2);
+            lRUCache.Put(2, 6);
+            lRUCache.Get(1);
+            lRUCache.Put(1, 5);
+            lRUCache.Put(1, 2);
+            lRUCache.Get(1);
+            lRUCache.Get(2);
+
+            //OR
+
+            LRUCache lRUCache1 = new LRUCache(2);
+            lRUCache1.Get(2);
+            lRUCache1.Put(2, 6);
+            lRUCache1.Get(1);
+            lRUCache1.Put(1, 5);
+            lRUCache1.Put(1, 2);
+            lRUCache1.Get(1);
+            lRUCache1.Get(2);
 
             //////(151.) Reverse Words in a String (MEDIUM)
             //string s = "a good   example";
