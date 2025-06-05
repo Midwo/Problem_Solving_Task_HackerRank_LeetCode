@@ -679,6 +679,16 @@ namespace ProblemSolving
             ////(58.) Lenght of Last Word (EASY)
             //Console.WriteLine(leetCodeAll.LengthOfLastWord(" fly me   to   the moon  "));
 
+            ////(64.) Minimum Path Sum (MEDIUM)
+            int[][] grid = [[1, 3, 1], [1, 5, 1], [4, 2, 1]];
+
+            LeetCode_64 classLeetCode = new LeetCode_64();
+            Console.WriteLine(classLeetCode.MinPathSum(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinPathSum(grid));
+
             ////(66.) Plus One (EASY)
             //Console.WriteLine(String.Join("",leetCodeAll.PlusOne([9, 9, 9, 9])));
 
@@ -865,14 +875,14 @@ namespace ProblemSolving
             //}
 
             ////(120.) Triangle (MEDIUM)
-            IList<IList<int>> triangle = [[-1], [3, 2], [-3, 1, -1]];
+            //IList<IList<int>> triangle = [[-1], [3, 2], [-3, 1, -1]];
 
-            LeetCode_120 classLeetCode = new LeetCode_120();
-            Console.WriteLine(classLeetCode.MinimumTotal(triangle));
+            //LeetCode_120 classLeetCode = new LeetCode_120();
+            //Console.WriteLine(classLeetCode.MinimumTotal(triangle));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumTotal(triangle));
+            //Console.WriteLine(leetCodeAll.MinimumTotal(triangle));
 
             ////(121.) Best Time to Boy and Sell Stock (EASY)
             //int[] prices = [7, 1, 5, 3, 6, 4];
