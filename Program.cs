@@ -679,15 +679,26 @@ namespace ProblemSolving
             ////(58.) Lenght of Last Word (EASY)
             //Console.WriteLine(leetCodeAll.LengthOfLastWord(" fly me   to   the moon  "));
 
-            ////(64.) Minimum Path Sum (MEDIUM)
-            int[][] grid = [[1, 3, 1], [1, 5, 1], [4, 2, 1]];
+            ////(63.) Unique Paths II (MEDIUM)
+            int[][] obstacleGrid = [[0, 1, 0, 0]];
 
-            LeetCode_64 classLeetCode = new LeetCode_64();
-            Console.WriteLine(classLeetCode.MinPathSum(grid));
+            LeetCode_63 classLeetCode = new LeetCode_63();
+            Console.WriteLine(classLeetCode.UniquePathsWithObstacles(obstacleGrid));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MinPathSum(grid));
+            Console.WriteLine(leetCodeAll.UniquePathsWithObstacles(obstacleGrid));
+
+
+            ////(64.) Minimum Path Sum (MEDIUM)
+            //int[][] grid = [[1, 3, 1], [1, 5, 1], [4, 2, 1]];
+
+            //LeetCode_64 classLeetCode = new LeetCode_64();
+            //Console.WriteLine(classLeetCode.MinPathSum(grid));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MinPathSum(grid));
 
             ////(66.) Plus One (EASY)
             //Console.WriteLine(String.Join("",leetCodeAll.PlusOne([9, 9, 9, 9])));
