@@ -14,6 +14,7 @@ using System.Numerics;
 using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 using System.Security;
+using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Xml.Linq;
@@ -680,14 +681,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LengthOfLastWord(" fly me   to   the moon  "));
 
             ////(63.) Unique Paths II (MEDIUM)
-            int[][] obstacleGrid = [[0, 1, 0, 0]];
+            //int[][] obstacleGrid = [[0, 1, 0, 0]];
 
-            LeetCode_63 classLeetCode = new LeetCode_63();
-            Console.WriteLine(classLeetCode.UniquePathsWithObstacles(obstacleGrid));
+            //LeetCode_63 classLeetCode = new LeetCode_63();
+            //Console.WriteLine(classLeetCode.UniquePathsWithObstacles(obstacleGrid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.UniquePathsWithObstacles(obstacleGrid));
+            //Console.WriteLine(leetCodeAll.UniquePathsWithObstacles(obstacleGrid));
 
 
             ////(64.) Minimum Path Sum (MEDIUM)
@@ -756,6 +757,18 @@ namespace ProblemSolving
             //root.left.right.right = new TreeNode(7);
             //root.right.right.left = new TreeNode(9);
             //Console.WriteLine(string.Join("", leetCodeAll.InorderTraversal(root)));
+
+            ////(97.) Interleaving String (MEDIUM)
+            //string s1 = "aabcc";
+            //string s2 = "dbbca";
+            //string s3 = "aadbbcbcac";
+
+            //LeetCode_97 classLeetCode = new LeetCode_97();
+            //Console.WriteLine(classLeetCode.IsInterleave(s1, s2, s3));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.IsInterleave(s1, s2, s3));
 
             ////(100.) Same Tree (EASY)
             //TreeNode p = new TreeNode(1);
@@ -4574,6 +4587,16 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
+
+            ////(3442.) Maximum Difference Between Even and Odd Frequency I (EASY)
+            string s = "aaaaabbc";
+
+            LeetCode_3442 classLeetCode = new LeetCode_3442();
+            Console.WriteLine(classLeetCode.MaxDifference(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxDifference(s));
 
 
 
