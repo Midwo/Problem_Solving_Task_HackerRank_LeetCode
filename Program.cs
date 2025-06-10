@@ -4588,15 +4588,25 @@ namespace ProblemSolving
             ////OR
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
-            ////(3442.) Maximum Difference Between Even and Odd Frequency I (EASY)
-            string s = "aaaaabbc";
+            ////(3151.) Special Array I (EASY)
+            int[] nums = [4, 3, 1, 6];
 
-            LeetCode_3442 classLeetCode = new LeetCode_3442();
-            Console.WriteLine(classLeetCode.MaxDifference(s));
+            LeetCode_3151 classLeetCode = new LeetCode_3151();
+            Console.WriteLine(classLeetCode.IsArraySpecial(nums));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MaxDifference(s));
+            Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
+
+            ////(3442.) Maximum Difference Between Even and Odd Frequency I (EASY)
+            //string s = "aaaaabbc";
+
+            //LeetCode_3442 classLeetCode = new LeetCode_3442();
+            //Console.WriteLine(classLeetCode.MaxDifference(s));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaxDifference(s));
 
 
 
