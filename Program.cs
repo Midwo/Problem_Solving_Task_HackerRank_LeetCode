@@ -4434,14 +4434,14 @@ namespace ProblemSolving
             //LeetCode_1731 classLeetCode = new LeetCode_1731();
 
             ////(1752.) Check if Array Is Sorted and Rotated (EASY)
-            int[] nums = [2, 1, 3, 4];
+            //int[] nums = [2, 1, 3, 4];
 
-            LeetCode_1752 classLeetCode = new LeetCode_1752();
-            Console.WriteLine(classLeetCode.Check(nums));
+            //LeetCode_1752 classLeetCode = new LeetCode_1752();
+            //Console.WriteLine(classLeetCode.Check(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.Check(nums));
+            //Console.WriteLine(leetCodeAll.Check(nums));
 
             ////(1757.) Recyclable and Low Fat Products (EASY)
             //string SqlQuery =
@@ -4597,6 +4597,15 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
+
+            ////(3024.) Type of Triangle (EASY)
+            int[] nums = [8, 4, 2];
+
+            LeetCode_3024 classLeetCode = new LeetCode_3024();
+            Console.WriteLine(classLeetCode.TriangleType(nums));
+
+            //OR
+            Console.WriteLine(leetCodeAll.TriangleType(nums));
 
             ////(3151.) Special Array I (EASY)
             //int[] nums = [4, 3, 1, 6];

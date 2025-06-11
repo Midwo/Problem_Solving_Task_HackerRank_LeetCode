@@ -9396,8 +9396,113 @@ namespace ProblemSolving
                 return true;
             }
         }
-
-
+        public string TriangleType(int[] nums)
+        {
+            if (nums[0] == nums[1] && nums[0] == nums[2])
+            {
+                return "equilateral";
+            }
+            else if (nums[0] == nums[1] || nums[1] == nums[2] || nums[0] == nums[2])
+            {
+                if (IsTriangleTask3024(nums))
+                {
+                    return "isosceles";
+                }
+                else
+                {
+                    return "none";
+                }
+            }
+            else
+            {
+                if (IsTriangleTask3024(nums))
+                {
+                    return "scalene";
+                }
+                else
+                {
+                    return "none";
+                }
+            }
+        }
+        public bool IsTriangleTask3024(int[] nums)
+        {
+            if (nums[0] <= nums[1] && nums[0] <= nums[2])
+            {
+                if (nums[1] <= nums[2])
+                {
+                    if (nums[2] < nums[1] + nums[0])
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    if (nums[1] < nums[0] + nums[2])
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            else if (nums[1] <= nums[2] && nums[1] <= nums[0])
+            {
+                if (nums[0] <= nums[2])
+                {
+                    if (nums[2] < nums[0] + nums[1])
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    if (nums[0] < nums[1] + nums[2])
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            else
+            {
+                if (nums[1] <= nums[0])
+                {
+                    if (nums[0] < nums[1] + nums[2])
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    if (nums[1] < nums[0] + nums[2])
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
 
 
 
