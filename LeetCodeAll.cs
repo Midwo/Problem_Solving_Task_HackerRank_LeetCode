@@ -9362,6 +9362,42 @@ namespace ProblemSolving
 
             return true;
         }
+        public bool Check(int[] nums)
+        {
+            int lastValue = nums[0];
+            bool statusBreak = false;
+
+            for (int i = 1; i < nums.Length; i++)
+            {
+                if (lastValue > nums[i])
+                {
+                    if (statusBreak)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        statusBreak = true;
+                    }
+                }
+                lastValue = nums[i];
+            }
+
+            if (statusBreak)
+            {
+                if (nums[0] >= nums[nums.Length - 1])
+                {
+                    return true;
+                }
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+
 
 
 

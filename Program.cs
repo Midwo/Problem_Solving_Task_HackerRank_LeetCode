@@ -4433,6 +4433,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1731 classLeetCode = new LeetCode_1731();
 
+            ////(1752.) Check if Array Is Sorted and Rotated (EASY)
+            int[] nums = [2, 1, 3, 4];
+
+            LeetCode_1752 classLeetCode = new LeetCode_1752();
+            Console.WriteLine(classLeetCode.Check(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.Check(nums));
+
             ////(1757.) Recyclable and Low Fat Products (EASY)
             //string SqlQuery =
             //    @"
@@ -4589,14 +4599,14 @@ namespace ProblemSolving
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
             ////(3151.) Special Array I (EASY)
-            int[] nums = [4, 3, 1, 6];
+            //int[] nums = [4, 3, 1, 6];
 
-            LeetCode_3151 classLeetCode = new LeetCode_3151();
-            Console.WriteLine(classLeetCode.IsArraySpecial(nums));
+            //LeetCode_3151 classLeetCode = new LeetCode_3151();
+            //Console.WriteLine(classLeetCode.IsArraySpecial(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
+            //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
 
             ////(3442.) Maximum Difference Between Even and Odd Frequency I (EASY)
             //string s = "aaaaabbc";
