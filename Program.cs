@@ -715,6 +715,17 @@ namespace ProblemSolving
             ////(70.) Climbing Stairs (EASY)
             //Console.WriteLine(leetCodeAll.ClimbStairs(5));
 
+            ////(72.) Edit Distance (MEDIUM)
+            string word1 = "zoologicoarchaeologist";
+            string word2 = "zoogeologist";
+
+            LeetCode_72 classLeetCode = new LeetCode_72();
+            Console.WriteLine(classLeetCode.MinDistance(word1, word2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinDistance(word1, word2));
+
             ////(80.) Remove Duplicates from Sorted Array II  (MEDIUM)
             //int[] nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
 
@@ -4618,15 +4629,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
 
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
-            int[] nums = [-5, -10, -5];
+            //int[] nums = [-5, -10, -5];
 
-            LeetCode_3423 classLeetCode = new LeetCode_3423();
-            Console.WriteLine(classLeetCode.MaxAdjacentDistance(nums));
+            //LeetCode_3423 classLeetCode = new LeetCode_3423();
+            //Console.WriteLine(classLeetCode.MaxAdjacentDistance(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxAdjacentDistance(nums));
-
+            //Console.WriteLine(leetCodeAll.MaxAdjacentDistance(nums));
 
             ////(3442.) Maximum Difference Between Even and Odd Frequency I (EASY)
             //string s = "aaaaabbc";
