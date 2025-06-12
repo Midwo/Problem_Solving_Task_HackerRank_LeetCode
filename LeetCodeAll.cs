@@ -9503,8 +9503,17 @@ namespace ProblemSolving
                 }
             }
         }
+        public int MaxAdjacentDistance(int[] nums)
+        {
+            int max = Math.Abs(nums[0] - nums[nums.Length - 1]);
 
+            for (int i = 0; i < nums.Length - 1; i++)
+            {
+                max = Math.Max(max, Math.Abs(nums[i] - nums[i + 1]));
+            }
 
+            return max;
+        }
 
 
 

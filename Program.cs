@@ -4599,13 +4599,13 @@ namespace ProblemSolving
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
             ////(3024.) Type of Triangle (EASY)
-            int[] nums = [8, 4, 2];
+            //int[] nums = [8, 4, 2];
 
-            LeetCode_3024 classLeetCode = new LeetCode_3024();
-            Console.WriteLine(classLeetCode.TriangleType(nums));
+            //LeetCode_3024 classLeetCode = new LeetCode_3024();
+            //Console.WriteLine(classLeetCode.TriangleType(nums));
 
-            //OR
-            Console.WriteLine(leetCodeAll.TriangleType(nums));
+            ////OR
+            //Console.WriteLine(leetCodeAll.TriangleType(nums));
 
             ////(3151.) Special Array I (EASY)
             //int[] nums = [4, 3, 1, 6];
@@ -4616,6 +4616,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
+
+            ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
+            int[] nums = [-5, -10, -5];
+
+            LeetCode_3423 classLeetCode = new LeetCode_3423();
+            Console.WriteLine(classLeetCode.MaxAdjacentDistance(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxAdjacentDistance(nums));
+
 
             ////(3442.) Maximum Difference Between Even and Odd Frequency I (EASY)
             //string s = "aaaaabbc";
