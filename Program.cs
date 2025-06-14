@@ -716,15 +716,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ClimbStairs(5));
 
             ////(72.) Edit Distance (MEDIUM)
-            string word1 = "zoologicoarchaeologist";
-            string word2 = "zoogeologist";
+            //string word1 = "zoologicoarchaeologist";
+            //string word2 = "zoogeologist";
 
-            LeetCode_72 classLeetCode = new LeetCode_72();
-            Console.WriteLine(classLeetCode.MinDistance(word1, word2));
+            //LeetCode_72 classLeetCode = new LeetCode_72();
+            //Console.WriteLine(classLeetCode.MinDistance(word1, word2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinDistance(word1, word2));
+            //Console.WriteLine(leetCodeAll.MinDistance(word1, word2));
 
             ////(80.) Remove Duplicates from Sorted Array II  (MEDIUM)
             //int[] nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
@@ -4608,6 +4608,17 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
+
+            ////(2616.) Minimize the Maximum Difference of Pairs (MEDIUM)
+            int[] nums = [10,1,2,7,1,3];
+            int p = 2;
+
+            LeetCode_2616 classLeetCode = new LeetCode_2616();
+            Console.WriteLine(classLeetCode.MinimizeMax(nums, p));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
             ////(3024.) Type of Triangle (EASY)
             //int[] nums = [8, 4, 2];

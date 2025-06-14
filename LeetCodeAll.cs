@@ -9550,8 +9550,50 @@ namespace ProblemSolving
 
             return dp[lengthWord2][lengthWord1];
         }
+        public int MinimizeMax(int[] nums, int p)
+        {
+            Array.Sort(nums);
 
+            int lengthNums = nums.Length;
 
+            int left = 0;
+            int right = nums[lengthNums - 1] - nums[0];
+
+            while (left < right)
+            {
+                int middle = left + (right - left) / 2;
+
+                if (countValidPairsTask2616(nums, middle, lengthNums) >= p)
+                {
+                    right = middle;
+                }
+                else
+                {
+                    left = middle + 1;
+                }
+            }
+            return left;
+
+        }
+        private int countValidPairsTask2616(int[] nums, int middle, int lengthNums)
+        {
+            int count = 0;
+            int i = 0;
+
+            while (i < lengthNums - 1)
+            {
+                if (nums[i + 1] - nums[i] <= middle)
+                {
+                    count++;
+                    i += 2;
+                }
+                else
+                {
+                    i++;
+                }
+            }
+            return count;
+        }
 
 
 
