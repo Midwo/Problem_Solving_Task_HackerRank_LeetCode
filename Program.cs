@@ -4609,16 +4609,26 @@ namespace ProblemSolving
             ////OR
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
-            ////(2616.) Minimize the Maximum Difference of Pairs (MEDIUM)
-            int[] nums = [10,1,2,7,1,3];
-            int p = 2;
-
-            LeetCode_2616 classLeetCode = new LeetCode_2616();
-            Console.WriteLine(classLeetCode.MinimizeMax(nums, p));
+            ////(2566.) Maximum Difference by Remapping a Digit (EASY)
+            int num = 11891;
+            
+            LeetCode_2566 classLeetCode = new LeetCode_2566();
+            Console.WriteLine(classLeetCode.MinMaxDifference(num));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
+            Console.WriteLine(leetCodeAll.MinMaxDifference(num));
+
+            ////(2616.) Minimize the Maximum Difference of Pairs (MEDIUM)
+            //int[] nums = [10,1,2,7,1,3];
+            //int p = 2;
+
+            //LeetCode_2616 classLeetCode = new LeetCode_2616();
+            //Console.WriteLine(classLeetCode.MinimizeMax(nums, p));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
             ////(3024.) Type of Triangle (EASY)
             //int[] nums = [8, 4, 2];
