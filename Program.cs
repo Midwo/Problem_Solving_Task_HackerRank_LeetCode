@@ -1341,6 +1341,41 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
             //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
+            ////(221.) Maximal Square (MEDIUM)
+            //char[][] matrix = [['1', '0', '1', '0', '0'], ['1', '0', '1', '1', '1'], ['1', '1', '1', '1', '1'], ['1', '0', '0', '1', '0']];
+
+            //char[][] matrix = [['1', '1', '1', '1', '0'], ['1', '1', '1', '1', '0'], ['1', '1', '1', '1', '1'], ['1', '1', '1', '1', '1'], ['0', '0', '1', '1', '1']];
+
+            //char[][] matrix = 
+            //    [
+            //        ['1', '0', '1', '0', '0', '1', '1', '1', '0'],
+            //        ['1', '1', '1', '0', '0', '0', '0', '0', '1'],
+            //        ['0', '0', '1', '1', '0', '0', '0', '1', '1'],
+            //        ['0', '1', '1', '0', '0', '1', '0', '0', '1'],
+            //        ['1', '1', '0', '1', '1', '0', '0', '1', '0'],
+            //        ['0', '1', '1', '1', '1', '1', '1', '0', '1'],
+            //        ['1', '0', '1', '1', '1', '0', '0', '1', '0'],
+            //        ['1', '1', '1', '0', '1', '0', '0', '0', '1'],
+            //        ['0', '1', '1', '1', '1', '0', '0', '1', '0'],
+            //        ['1', '0', '0', '1', '1', '1', '0', '0', '0']
+            //    ];
+
+            char[][] matrix =
+                [
+                    ['1','1','1','1','1','1','1','1'],
+                    ['1','1','1','1','1','1','1','0'],
+                    ['1','1','1','1','1','1','1','0'],
+                    ['1','1','1','1','1','0','0','0'],
+                    ['0','1','1','1','1','0','0','0']
+                ];
+
+            LeetCode_221 classLeetCode = new LeetCode_221();
+            Console.WriteLine(classLeetCode.MaximalSquare(matrix));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximalSquare(matrix));
+
             ////(222.) Count Complete Tree Nodes (EASY)
             //TreeNode root = new TreeNode(1);
             //root.left = new TreeNode(2);
@@ -4610,14 +4645,14 @@ namespace ProblemSolving
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
             ////(2566.) Maximum Difference by Remapping a Digit (EASY)
-            int num = 11891;
-            
-            LeetCode_2566 classLeetCode = new LeetCode_2566();
-            Console.WriteLine(classLeetCode.MinMaxDifference(num));
+            //int num = 11891;
 
-            //OR
+            //LeetCode_2566 classLeetCode = new LeetCode_2566();
+            //Console.WriteLine(classLeetCode.MinMaxDifference(num));
 
-            Console.WriteLine(leetCodeAll.MinMaxDifference(num));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MinMaxDifference(num));
 
             ////(2616.) Minimize the Maximum Difference of Pairs (MEDIUM)
             //int[] nums = [10,1,2,7,1,3];
