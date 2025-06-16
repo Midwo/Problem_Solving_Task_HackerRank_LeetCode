@@ -933,6 +933,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxProfitTask122(prices));
 
+            ////(123.) Best Time to Buy and Sell Stock III (HARD)
+            int[] prices = [3, 3, 5, 0, 0, 3, 1, 4];
+
+            LeetCode_123 classLeetCode = new LeetCode_123();
+            Console.WriteLine(classLeetCode.MaxProfit(prices));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxProfitTask123(prices));
+
             ////(125.) Valid Palindrome (EASY)
             //string s = "A man, a plan, a canal: Panama";
             //Console.WriteLine(leetCodeAll.IsPalindrome(s));
@@ -4312,14 +4322,14 @@ namespace ProblemSolving
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
 
             ////(1432.) Max Difference You Can Get From Changing an Integer (MEDIUM)
-            int num = 90270580;
+            //int num = 90270580;
 
-            LeetCode_1432 classLeetCode = new LeetCode_1432();
-            Console.WriteLine(classLeetCode.MaxDiff(num));
+            //LeetCode_1432 classLeetCode = new LeetCode_1432();
+            //Console.WriteLine(classLeetCode.MaxDiff(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxDiff(num));
+            //Console.WriteLine(leetCodeAll.MaxDiff(num));
 
             ////(1484.) Group Sold Products By The Date (EASY)
             //string SqlQuery =
