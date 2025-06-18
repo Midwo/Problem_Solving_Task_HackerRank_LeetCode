@@ -1251,15 +1251,15 @@ namespace ProblemSolving
             //    order by [recordDate];";
 
             ////(198.) House Robber (MEDIUM)
-            int[] nums = [2, 1, 1, 2];
+            //int[] nums = [2, 1, 1, 2];
 
-            LeetCode_198 classLeetCode = new LeetCode_198();
-            Console.WriteLine(classLeetCode.Rob(nums));
+            //LeetCode_198 classLeetCode = new LeetCode_198();
+            //Console.WriteLine(classLeetCode.Rob(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.Rob(nums));
-            
+            //Console.WriteLine(leetCodeAll.Rob(nums));
+
             ////(202.) Happy Number (EASY)
             //int n = 19;
             //Console.WriteLine(leetCodeAll.IsHappy(n));
@@ -4704,6 +4704,28 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
+
+            ////(2966.) Divide Array Into Arrays With Max Difference (MEDIUM)
+            int[] nums = [1, 3, 4, 8, 7, 9, 3, 5, 1];
+            int k = 2;
+
+            LeetCode_2966 classLeetCode = new LeetCode_2966();
+            int[][] result = classLeetCode.DivideArray(nums, k);
+
+            foreach (int[] num in result) 
+            {
+                Console.WriteLine(string.Join(',', num));
+            }
+
+            //OR
+
+            int[][] result1 = leetCodeAll.DivideArray(nums, k);
+
+            foreach (int[] num in result1)
+            {
+                Console.WriteLine(string.Join(',', num));
+            }
+
 
             ////(3024.) Type of Triangle (EASY)
             //int[] nums = [8, 4, 2];
