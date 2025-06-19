@@ -4671,6 +4671,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
+            ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
+            int[] nums = [3, 6, 1, 2, 5];
+            int k = 2;
+
+            LeetCode_2294 classLeetCode = new LeetCode_2294();
+            Console.WriteLine(classLeetCode.PartitionArray(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.PartitionArray(nums, k));
+
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
             //string SqlQuery =
             //    @"
@@ -4706,26 +4717,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
             ////(2966.) Divide Array Into Arrays With Max Difference (MEDIUM)
-            int[] nums = [1, 3, 4, 8, 7, 9, 3, 5, 1];
-            int k = 2;
+            //int[] nums = [1, 3, 4, 8, 7, 9, 3, 5, 1];
+            //int k = 2;
 
-            LeetCode_2966 classLeetCode = new LeetCode_2966();
-            int[][] result = classLeetCode.DivideArray(nums, k);
+            //LeetCode_2966 classLeetCode = new LeetCode_2966();
+            //int[][] result = classLeetCode.DivideArray(nums, k);
 
-            foreach (int[] num in result) 
-            {
-                Console.WriteLine(string.Join(',', num));
-            }
+            //foreach (int[] num in result) 
+            //{
+            //    Console.WriteLine(string.Join(',', num));
+            //}
 
-            //OR
+            ////OR
 
-            int[][] result1 = leetCodeAll.DivideArray(nums, k);
+            //int[][] result1 = leetCodeAll.DivideArray(nums, k);
 
-            foreach (int[] num in result1)
-            {
-                Console.WriteLine(string.Join(',', num));
-            }
-
+            //foreach (int[] num in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', num));
+            //}
 
             ////(3024.) Type of Triangle (EASY)
             //int[] nums = [8, 4, 2];

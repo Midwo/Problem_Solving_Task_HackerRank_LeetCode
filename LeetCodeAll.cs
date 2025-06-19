@@ -10003,6 +10003,23 @@ namespace ProblemSolving
                 return new int[][] { };
             }
         }
+        public int PartitionArray(int[] nums, int k)
+        {
+            Array.Sort(nums);
+            int result = 1;
+            int start = nums[0];
+            int length = nums.Length;
+
+            for (int i = 1; i < length; i++)
+            {
+                if (k < nums[i] - start)
+                {
+                    result++;
+                    start = nums[i];
+                }
+            }
+            return result;
+        }
 
 
 
