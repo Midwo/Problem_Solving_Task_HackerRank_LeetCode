@@ -4672,15 +4672,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
-            int[] nums = [3, 6, 1, 2, 5];
-            int k = 2;
+            //int[] nums = [3, 6, 1, 2, 5];
+            //int k = 2;
 
-            LeetCode_2294 classLeetCode = new LeetCode_2294();
-            Console.WriteLine(classLeetCode.PartitionArray(nums, k));
+            //LeetCode_2294 classLeetCode = new LeetCode_2294();
+            //Console.WriteLine(classLeetCode.PartitionArray(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PartitionArray(nums, k));
+            //Console.WriteLine(leetCodeAll.PartitionArray(nums, k));
 
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
             //string SqlQuery =
@@ -4776,9 +4776,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxDifference(s));
 
+            ////(3443.) Maximum Manhattan Distance After K Changes (MEDIUM)
+            string s = "NWSE";
+            int k = 1;
 
+            LeetCode_3443 classLeetCode = new LeetCode_3443();
+            Console.WriteLine(classLeetCode.MaxDistance(s, k));
 
+            //OR
 
+            Console.WriteLine(leetCodeAll.MaxDistance(s, k));
 
 
 
