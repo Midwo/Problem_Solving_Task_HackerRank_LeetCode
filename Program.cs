@@ -4746,6 +4746,17 @@ namespace ProblemSolving
             ////OR
             //Console.WriteLine(leetCodeAll.TriangleType(nums));
 
+            ////(3085). Minimum Deletions to Make String K-Special (MEDIUM)
+            string word = "gzpgogrg";
+            int k = 1;
+
+            LeetCode_3085 classLeetCode = new LeetCode_3085();
+            Console.WriteLine(classLeetCode.MinimumDeletions(word, k));
+
+            //OR
+
+            Console.WriteLine(classLeetCode.MinimumDeletions(word, k));
+
             ////(3151.) Special Array I (EASY)
             //int[] nums = [4, 3, 1, 6];
 
@@ -4777,15 +4788,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDifference(s));
 
             ////(3443.) Maximum Manhattan Distance After K Changes (MEDIUM)
-            string s = "NWSE";
-            int k = 1;
+            //string s = "NWSE";
+            //int k = 1;
 
-            LeetCode_3443 classLeetCode = new LeetCode_3443();
-            Console.WriteLine(classLeetCode.MaxDistance(s, k));
+            //LeetCode_3443 classLeetCode = new LeetCode_3443();
+            //Console.WriteLine(classLeetCode.MaxDistance(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxDistance(s, k));
+            //Console.WriteLine(leetCodeAll.MaxDistance(s, k));
 
 
 
