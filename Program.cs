@@ -4671,6 +4671,21 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
+            ////(2138.) Divide a String Into Groups of Size k (EASY)
+            string s = "abcdefghij";
+            int k = 3;
+            char fill = 'x';
+
+            LeetCode_2138 classLeetCode = new LeetCode_2138();
+            string[] result = classLeetCode.DivideString(s, k, fill);
+
+            Console.WriteLine(string.Join(',', result));
+
+            //OR
+
+            string[] result1 = leetCodeAll.DivideString(s, k, fill);
+            Console.WriteLine(string.Join(',', result1));
+
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];
             //int k = 2;
@@ -4747,15 +4762,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TriangleType(nums));
 
             ////(3085). Minimum Deletions to Make String K-Special (MEDIUM)
-            string word = "gzpgogrg";
-            int k = 1;
+            //string word = "gzpgogrg";
+            //int k = 1;
 
-            LeetCode_3085 classLeetCode = new LeetCode_3085();
-            Console.WriteLine(classLeetCode.MinimumDeletions(word, k));
+            //LeetCode_3085 classLeetCode = new LeetCode_3085();
+            //Console.WriteLine(classLeetCode.MinimumDeletions(word, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(classLeetCode.MinimumDeletions(word, k));
+            //Console.WriteLine(classLeetCode.MinimumDeletions(word, k));
 
             ////(3151.) Special Array I (EASY)
             //int[] nums = [4, 3, 1, 6];
