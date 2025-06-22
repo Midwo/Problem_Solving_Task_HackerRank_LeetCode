@@ -4672,19 +4672,19 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
             ////(2138.) Divide a String Into Groups of Size k (EASY)
-            string s = "abcdefghij";
-            int k = 3;
-            char fill = 'x';
+            //string s = "abcdefghij";
+            //int k = 3;
+            //char fill = 'x';
 
-            LeetCode_2138 classLeetCode = new LeetCode_2138();
-            string[] result = classLeetCode.DivideString(s, k, fill);
+            //LeetCode_2138 classLeetCode = new LeetCode_2138();
+            //string[] result = classLeetCode.DivideString(s, k, fill);
 
-            Console.WriteLine(string.Join(',', result));
+            //Console.WriteLine(string.Join(',', result));
 
-            //OR
+            ////OR
 
-            string[] result1 = leetCodeAll.DivideString(s, k, fill);
-            Console.WriteLine(string.Join(',', result1));
+            //string[] result1 = leetCodeAll.DivideString(s, k, fill);
+            //Console.WriteLine(string.Join(',', result1));
 
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];
@@ -4730,6 +4730,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
+
+            ////(2894.) Divisible and Non-divisible Sums Difference (EASY)
+            int n = 10;
+            int m = 3;
+
+            LeetCode_2894 classLeetCode = new LeetCode_2894();
+            Console.WriteLine(classLeetCode.DifferenceOfSums(n, m));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DifferenceOfSums(n, m));
 
             ////(2966.) Divide Array Into Arrays With Max Difference (MEDIUM)
             //int[] nums = [1, 3, 4, 8, 7, 9, 3, 5, 1];

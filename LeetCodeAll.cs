@@ -10191,8 +10191,25 @@ namespace ProblemSolving
             //    return resultList.ToArray();
             //}
         }
+        public int DifferenceOfSums(int n, int m)
+        {
+            int sumNum1 = 0;
+            int sumNum2 = 0;
 
+            for (int i = 1; i <= n; i++)
+            {
+                if (i % m > 0)
+                {
+                    sumNum1 += i;
+                }
+                else
+                {
+                    sumNum2 += i;
+                }
+            }
 
+            return sumNum1 - sumNum2;
+        }
 
 
 
