@@ -10210,8 +10210,20 @@ namespace ProblemSolving
 
             return sumNum1 - sumNum2;
         }
+        public IList<int> FindWordsContaining(string[] words, char x)
+        {
+            List<int> result = new List<int>();
 
+            for (int j = 0; j < words.Length; j++)
+            {
+                if (words[j].Contains(x))
+                {
+                    result.Add(j);
+                }
+            }
 
+            return result.ToArray();
+        }
 
 
 

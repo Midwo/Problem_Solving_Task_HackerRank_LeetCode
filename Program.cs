@@ -4732,15 +4732,26 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
             ////(2894.) Divisible and Non-divisible Sums Difference (EASY)
-            int n = 10;
-            int m = 3;
+            //int n = 10;
+            //int m = 3;
 
-            LeetCode_2894 classLeetCode = new LeetCode_2894();
-            Console.WriteLine(classLeetCode.DifferenceOfSums(n, m));
+            //LeetCode_2894 classLeetCode = new LeetCode_2894();
+            //Console.WriteLine(classLeetCode.DifferenceOfSums(n, m));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.DifferenceOfSums(n, m));
+
+            ////(2942.) Find Words Containing Character (EASY)
+            string[] words = ["leet", "code"];
+            char x = 'e';
+
+            LeetCode_2942 classLeetCode = new LeetCode_2942();
+            Console.WriteLine(string.Join(',', classLeetCode.FindWordsContaining(words, x)));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.DifferenceOfSums(n, m));
+            Console.WriteLine(string.Join(',', leetCodeAll.FindWordsContaining(words, x)));
 
             ////(2966.) Divide Array Into Arrays With Max Difference (MEDIUM)
             //int[] nums = [1, 3, 4, 8, 7, 9, 3, 5, 1];
