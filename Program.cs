@@ -1361,16 +1361,26 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
             //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
-            ////(215.) Kth Largest Element in an Array (MEDIUM)
-            int[] nums = [3, 2, 1, 5, 6, 4];
-            int k = 2;
+            ////(128.) Longest Consecutive Sequence (MEDIUM)
+            int[] nums = [100, 4, 200, 1, 3, 2];
 
-            LeetCode_215 classLeetCode = new LeetCode_215();
-            Console.WriteLine(classLeetCode.FindKthLargest(nums, k));
+            LeetCode_128 classLeetCode = new LeetCode_128();
+            Console.WriteLine(classLeetCode.LongestConsecutive(nums));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.FindKthLargest(nums, k));
+            Console.WriteLine(leetCodeAll.LongestConsecutive(nums));
+
+            ////(215.) Kth Largest Element in an Array (MEDIUM)
+            //int[] nums = [3, 2, 1, 5, 6, 4];
+            //int k = 2;
+
+            //LeetCode_215 classLeetCode = new LeetCode_215();
+            //Console.WriteLine(classLeetCode.FindKthLargest(nums, k));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.FindKthLargest(nums, k));
 
             ////(221.) Maximal Square (MEDIUM)
             ////char[][] matrix = [['1', '0', '1', '0', '0'], ['1', '0', '1', '1', '1'], ['1', '1', '1', '1', '1'], ['1', '0', '0', '1', '0']];
