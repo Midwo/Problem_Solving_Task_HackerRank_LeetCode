@@ -1361,6 +1361,17 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeInterview150.Merge(nums1, m, nums2, n));
             //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
+            ////(215.) Kth Largest Element in an Array (MEDIUM)
+            int[] nums = [3, 2, 1, 5, 6, 4];
+            int k = 2;
+
+            LeetCode_215 classLeetCode = new LeetCode_215();
+            Console.WriteLine(classLeetCode.FindKthLargest(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindKthLargest(nums, k));
+
             ////(221.) Maximal Square (MEDIUM)
             ////char[][] matrix = [['1', '0', '1', '0', '0'], ['1', '0', '1', '1', '1'], ['1', '1', '1', '1', '1'], ['1', '0', '0', '1', '0']];
 
@@ -4687,16 +4698,16 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', result1));
 
             ////(2200.) Find All K-Distant Indices in an Array (EASY)
-            int[] nums = [2, 1, 1, 1, 2];
-            int key = 2;
-            int k = 1;
+            //int[] nums = [2, 1, 1, 1, 2];
+            //int key = 2;
+            //int k = 1;
 
-            LeetCode_2200 classLeetCode = new LeetCode_2200();
-            Console.WriteLine(string.Join(',', classLeetCode.FindKDistantIndices(nums, key, k)));
+            //LeetCode_2200 classLeetCode = new LeetCode_2200();
+            //Console.WriteLine(string.Join(',', classLeetCode.FindKDistantIndices(nums, key, k)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindKDistantIndices(nums, key, k)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindKDistantIndices(nums, key, k)));
 
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];
