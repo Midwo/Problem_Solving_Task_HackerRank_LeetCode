@@ -4686,6 +4686,18 @@ namespace ProblemSolving
             //string[] result1 = leetCodeAll.DivideString(s, k, fill);
             //Console.WriteLine(string.Join(',', result1));
 
+            ////(2200.) Find All K-Distant Indices in an Array (EASY)
+            int[] nums = [2, 1, 1, 1, 2];
+            int key = 2;
+            int k = 1;
+
+            LeetCode_2200 classLeetCode = new LeetCode_2200();
+            Console.WriteLine(string.Join(',', classLeetCode.FindKDistantIndices(nums, key, k)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindKDistantIndices(nums, key, k)));
+
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];
             //int k = 2;
@@ -4743,15 +4755,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DifferenceOfSums(n, m));
 
             ////(2942.) Find Words Containing Character (EASY)
-            string[] words = ["leet", "code"];
-            char x = 'e';
+            //string[] words = ["leet", "code"];
+            //char x = 'e';
 
-            LeetCode_2942 classLeetCode = new LeetCode_2942();
-            Console.WriteLine(string.Join(',', classLeetCode.FindWordsContaining(words, x)));
+            //LeetCode_2942 classLeetCode = new LeetCode_2942();
+            //Console.WriteLine(string.Join(',', classLeetCode.FindWordsContaining(words, x)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindWordsContaining(words, x)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindWordsContaining(words, x)));
 
             ////(2966.) Divide Array Into Arrays With Max Difference (MEDIUM)
             //int[] nums = [1, 3, 4, 8, 7, 9, 3, 5, 1];

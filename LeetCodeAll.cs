@@ -10224,8 +10224,58 @@ namespace ProblemSolving
 
             return result.ToArray();
         }
+        public IList<int> FindKDistantIndices(int[] nums, int key, int k)
+        {
+            List<int> result = new List<int>();
+            int length = nums.Length;
+            List<int> listFindIndex = new List<int>();
 
+            for (int i = 0; i < length; i++)
+            {
+                if (nums[i] == key)
+                {
+                    listFindIndex.Add(i);
+                }
+            }
+            int startIndex = listFindIndex[0] - k;
+            if (startIndex < 0)
+            {
+                startIndex = 0;
+            }
 
+            int howManyFind = listFindIndex.Count;
+            int indexlist = 0;
+
+            for (int i = startIndex; i < length; i++)
+            {
+                if (Math.Abs(listFindIndex[indexlist] - i) <= k)
+                {
+                    result.Add(i);
+                }
+                else
+                {
+                    if (indexlist < howManyFind - 1)
+                    {
+                        indexlist++;
+                        if (Math.Abs(listFindIndex[indexlist] - i) <= k)
+                        {
+                            i--;
+                        }
+                        else
+                        {
+                            i = listFindIndex[indexlist] - 2;
+                        }
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
+            }
+
+            return result;
+        }
 
 
 
