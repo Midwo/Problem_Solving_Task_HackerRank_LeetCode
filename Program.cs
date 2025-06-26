@@ -1362,14 +1362,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeInterview150.Merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
             ////(128.) Longest Consecutive Sequence (MEDIUM)
-            int[] nums = [100, 4, 200, 1, 3, 2];
+            //int[] nums = [100, 4, 200, 1, 3, 2];
 
-            LeetCode_128 classLeetCode = new LeetCode_128();
-            Console.WriteLine(classLeetCode.LongestConsecutive(nums));
+            //LeetCode_128 classLeetCode = new LeetCode_128();
+            //Console.WriteLine(classLeetCode.LongestConsecutive(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LongestConsecutive(nums));
+            //Console.WriteLine(leetCodeAll.LongestConsecutive(nums));
 
             ////(215.) Kth Largest Element in an Array (MEDIUM)
             //int[] nums = [3, 2, 1, 5, 6, 4];
@@ -4729,6 +4729,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.PartitionArray(nums, k));
+
+            ////(2311.) Longest Binary Subsequence Less Than or Equal to K (MEDIUM)
+            string s = "1001010";
+            int k = 5;
+
+            LeetCode_2311 classLeetCode = new LeetCode_2311();
+            Console.WriteLine(classLeetCode.LongestSubsequence(s, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LongestSubsequence(s, k));
 
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
             //string SqlQuery =
