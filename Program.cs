@@ -668,23 +668,23 @@ namespace ProblemSolving
             //leetCodeAll.Rotate(matrix);
 
             ////(49.) Group Anagrams (MEDIUM)
-            string[] strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
+            //string[] strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
 
-            LeetCode_49 classLeetCode = new LeetCode_49();
-            IList<IList<string>> result = classLeetCode.GroupAnagrams(strs);
+            //LeetCode_49 classLeetCode = new LeetCode_49();
+            //IList<IList<string>> result = classLeetCode.GroupAnagrams(strs);
 
-            foreach (List<string> str in result) 
-            {
-                Console.WriteLine(string.Join(',', str));
-            }
+            //foreach (List<string> str in result) 
+            //{
+            //    Console.WriteLine(string.Join(',', str));
+            //}
 
-            //OR
+            ////OR
 
-            IList<IList<string>> result1 = classLeetCode.GroupAnagrams(strs);
-            foreach (List<string> str in result1)
-            {
-                Console.WriteLine(string.Join(',', str));
-            }
+            //IList<IList<string>> result1 = classLeetCode.GroupAnagrams(strs);
+            //foreach (List<string> str in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', str));
+            //}
 
             ////(55.) Jump Game (MEDIUM)
             //int[] nums = [2, 3, 1, 1, 4];
@@ -4710,6 +4710,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
+
+            ////(2099.) Find Subsequence of Length K With the Largest Sum (EASY)
+            int[] nums = [-1, -2, 3, 4];
+            int k = 3;
+
+            LeetCode_2099 classLeetCode = new LeetCode_2099();
+            Console.WriteLine(string.Join(',', classLeetCode.MaxSubsequence(nums, k)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.MaxSubsequence(nums, k)));
 
             ////(2138.) Divide a String Into Groups of Size k (EASY)
             //string s = "abcdefghij";
