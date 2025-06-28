@@ -667,6 +667,25 @@ namespace ProblemSolving
 
             //leetCodeAll.Rotate(matrix);
 
+            ////(49.) Group Anagrams (MEDIUM)
+            string[] strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
+
+            LeetCode_49 classLeetCode = new LeetCode_49();
+            IList<IList<string>> result = classLeetCode.GroupAnagrams(strs);
+
+            foreach (List<string> str in result) 
+            {
+                Console.WriteLine(string.Join(',', str));
+            }
+
+            //OR
+
+            IList<IList<string>> result1 = classLeetCode.GroupAnagrams(strs);
+            foreach (List<string> str in result1)
+            {
+                Console.WriteLine(string.Join(',', str));
+            }
+
             ////(55.) Jump Game (MEDIUM)
             //int[] nums = [2, 3, 1, 1, 4];
 
@@ -4731,15 +4750,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PartitionArray(nums, k));
 
             ////(2311.) Longest Binary Subsequence Less Than or Equal to K (MEDIUM)
-            string s = "1001010";
-            int k = 5;
+            //string s = "1001010";
+            //int k = 5;
 
-            LeetCode_2311 classLeetCode = new LeetCode_2311();
-            Console.WriteLine(classLeetCode.LongestSubsequence(s, k));
+            //LeetCode_2311 classLeetCode = new LeetCode_2311();
+            //Console.WriteLine(classLeetCode.LongestSubsequence(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LongestSubsequence(s, k));
+            //Console.WriteLine(leetCodeAll.LongestSubsequence(s, k));
 
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
             //string SqlQuery =
