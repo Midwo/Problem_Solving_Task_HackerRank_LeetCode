@@ -745,6 +745,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinDistance(word1, word2));
 
+            ////(76.) Minimum Window Substring (HARD)
+            string s = "ADOBECODEBANC";
+            string t = "ABC";
+
+            LeetCode_76 classLeetCode = new LeetCode_76();
+            Console.WriteLine(classLeetCode.MinWindow(s, t));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinWindow(s, t));
+
             ////(80.) Remove Duplicates from Sorted Array II  (MEDIUM)
             //int[] nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
 
@@ -4712,15 +4723,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
             ////(2099.) Find Subsequence of Length K With the Largest Sum (EASY)
-            int[] nums = [-1, -2, 3, 4];
-            int k = 3;
+            //int[] nums = [-1, -2, 3, 4];
+            //int k = 3;
 
-            LeetCode_2099 classLeetCode = new LeetCode_2099();
-            Console.WriteLine(string.Join(',', classLeetCode.MaxSubsequence(nums, k)));
+            //LeetCode_2099 classLeetCode = new LeetCode_2099();
+            //Console.WriteLine(string.Join(',', classLeetCode.MaxSubsequence(nums, k)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.MaxSubsequence(nums, k)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.MaxSubsequence(nums, k)));
 
             ////(2138.) Divide a String Into Groups of Size k (EASY)
             //string s = "abcdefghij";
