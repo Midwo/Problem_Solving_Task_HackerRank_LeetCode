@@ -746,15 +746,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinDistance(word1, word2));
 
             ////(76.) Minimum Window Substring (HARD)
-            string s = "ADOBECODEBANC";
-            string t = "ABC";
+            //string s = "ADOBECODEBANC";
+            //string t = "ABC";
 
-            LeetCode_76 classLeetCode = new LeetCode_76();
-            Console.WriteLine(classLeetCode.MinWindow(s, t));
+            //LeetCode_76 classLeetCode = new LeetCode_76();
+            //Console.WriteLine(classLeetCode.MinWindow(s, t));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinWindow(s, t));
+            //Console.WriteLine(leetCodeAll.MinWindow(s, t));
 
             ////(80.) Remove Duplicates from Sorted Array II  (MEDIUM)
             //int[] nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
@@ -4413,6 +4413,17 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1484 classLeetCode = new LeetCode_1484();
+
+            ////(1498.) Number of Subsequences That Satisfy the Given Sum Condition (MEDIUM)
+            int[] nums = [5, 2, 4, 1, 7, 6, 8];
+            int target = 16;
+
+            LeetCode_1498 classLeetCode = new LeetCode_1498();
+            Console.WriteLine(classLeetCode.NumSubseq(nums, target));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumSubseq(nums, target));
 
             ////(1517.) Find Users With Valid E-Mails (EASY)
             //string SqlQuery =
