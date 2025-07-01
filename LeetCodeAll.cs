@@ -10663,8 +10663,22 @@ namespace ProblemSolving
 
             return result;
         }
+        public int PossibleStringCount(string word)
+        {
+            int result = 1;
+            char prevChar = word[0];
 
+            for (int i = 1; i < word.Length; i++)
+            {
+                if (word[i] == prevChar)
+                {
+                    result++;
+                }
+                prevChar = word[i];
+            }
 
+            return result;
+        }
 
 
 

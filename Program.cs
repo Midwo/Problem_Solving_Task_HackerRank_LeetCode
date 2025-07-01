@@ -648,22 +648,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SearchInsert([1, 3, 5, 6], 7));
 
             ////(36.) Valid Sudoku (MEDIUM)
-            char[][] board = [['5','3','.','.','7','.','.','.','.']
-                             ,['6','.','.','1','9','5','.','.','.']
-                             ,['.','9','8','.','.','.','.','6','.']
-                             ,['8','.','.','.','6','.','.','.','3']
-                             ,['4','.','.','8','.','3','.','.','1']
-                             ,['7','.','.','.','2','.','.','.','6']
-                             ,['.','6','.','.','.','.','2','8','.']
-                             ,['.','.','.','4','1','9','.','.','5']
-                             ,['.','.','.','.','8','.','.','7','9']];
+            //char[][] board = [['5','3','.','.','7','.','.','.','.']
+            //                 ,['6','.','.','1','9','5','.','.','.']
+            //                 ,['.','9','8','.','.','.','.','6','.']
+            //                 ,['8','.','.','.','6','.','.','.','3']
+            //                 ,['4','.','.','8','.','3','.','.','1']
+            //                 ,['7','.','.','.','2','.','.','.','6']
+            //                 ,['.','6','.','.','.','.','2','8','.']
+            //                 ,['.','.','.','4','1','9','.','.','5']
+            //                 ,['.','.','.','.','8','.','.','7','9']];
 
-            LeetCode_36 classLeetCode = new LeetCode_36();
-            Console.WriteLine(classLeetCode.IsValidSudoku(board));
+            //LeetCode_36 classLeetCode = new LeetCode_36();
+            //Console.WriteLine(classLeetCode.IsValidSudoku(board));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsValidSudoku(board));
+            //Console.WriteLine(leetCodeAll.IsValidSudoku(board));
 
             ////(45.) Jump Game II (MEDIUM)
             //int[] nums = [2, 3, 1, 1, 4];
@@ -4917,6 +4917,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
+
+            ////(3330.) Find the Original Typed String I (EASY)
+            string word = "abbcccc";
+
+            LeetCode_3330 classLeetCode = new LeetCode_3330();
+            Console.WriteLine(classLeetCode.PossibleStringCount(word));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.PossibleStringCount(word));
 
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
             //int[] nums = [-5, -10, -5];
