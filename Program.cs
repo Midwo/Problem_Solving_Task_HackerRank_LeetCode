@@ -647,6 +647,24 @@ namespace ProblemSolving
             ////(35.) Search Insert Position (EASY)
             //Console.WriteLine(leetCodeAll.SearchInsert([1, 3, 5, 6], 7));
 
+            ////(36.) Valid Sudoku (MEDIUM)
+            char[][] board = [['5','3','.','.','7','.','.','.','.']
+                             ,['6','.','.','1','9','5','.','.','.']
+                             ,['.','9','8','.','.','.','.','6','.']
+                             ,['8','.','.','.','6','.','.','.','3']
+                             ,['4','.','.','8','.','3','.','.','1']
+                             ,['7','.','.','.','2','.','.','.','6']
+                             ,['.','6','.','.','.','.','2','8','.']
+                             ,['.','.','.','4','1','9','.','.','5']
+                             ,['.','.','.','.','8','.','.','7','9']];
+
+            LeetCode_36 classLeetCode = new LeetCode_36();
+            Console.WriteLine(classLeetCode.IsValidSudoku(board));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsValidSudoku(board));
+
             ////(45.) Jump Game II (MEDIUM)
             //int[] nums = [2, 3, 1, 1, 4];
 
@@ -4415,15 +4433,15 @@ namespace ProblemSolving
             //LeetCode_1484 classLeetCode = new LeetCode_1484();
 
             ////(1498.) Number of Subsequences That Satisfy the Given Sum Condition (MEDIUM)
-            int[] nums = [5, 2, 4, 1, 7, 6, 8];
-            int target = 16;
+            //int[] nums = [5, 2, 4, 1, 7, 6, 8];
+            //int target = 16;
 
-            LeetCode_1498 classLeetCode = new LeetCode_1498();
-            Console.WriteLine(classLeetCode.NumSubseq(nums, target));
+            //LeetCode_1498 classLeetCode = new LeetCode_1498();
+            //Console.WriteLine(classLeetCode.NumSubseq(nums, target));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumSubseq(nums, target));
+            //Console.WriteLine(leetCodeAll.NumSubseq(nums, target));
 
             ////(1517.) Find Users With Valid E-Mails (EASY)
             //string SqlQuery =
