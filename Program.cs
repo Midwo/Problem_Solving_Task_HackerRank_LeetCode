@@ -705,15 +705,14 @@ namespace ProblemSolving
             //}
 
             ////(54.) Spiral Matrix (MEDIUM)
-            int[][] matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]];
+            //int[][] matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]];
 
-            LeetCode_54 classLeetCode = new LeetCode_54();
-            Console.WriteLine(string.Join(',', classLeetCode.SpiralOrder(matrix)));
+            //LeetCode_54 classLeetCode = new LeetCode_54();
+            //Console.WriteLine(string.Join(',', classLeetCode.SpiralOrder(matrix)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SpiralOrder(matrix)));
-
+            //Console.WriteLine(string.Join(',', leetCodeAll.SpiralOrder(matrix)));
 
             ////(55.) Jump Game (MEDIUM)
             //int[] nums = [2, 3, 1, 1, 4];
@@ -773,6 +772,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinDistance(word1, word2));
+
+            ////(73.) Set Matrix Zeroes (MEDIUM)
+            int[][] matrix = [[1, 1, 1], [1, 0, 1], [1, 1, 1]];
+            
+            LeetCode_73 classLeetCode = new LeetCode_73();
+            classLeetCode.SetZeroes(matrix);
+
+            //OR
+
+            classLeetCode.SetZeroes(matrix);
 
             ////(76.) Minimum Window Substring (HARD)
             //string s = "ADOBECODEBANC";
