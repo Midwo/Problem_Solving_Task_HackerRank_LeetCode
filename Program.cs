@@ -704,6 +704,17 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', str));
             //}
 
+            ////(54.) Spiral Matrix (MEDIUM)
+            int[][] matrix = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]];
+
+            LeetCode_54 classLeetCode = new LeetCode_54();
+            Console.WriteLine(string.Join(',', classLeetCode.SpiralOrder(matrix)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SpiralOrder(matrix)));
+
+
             ////(55.) Jump Game (MEDIUM)
             //int[] nums = [2, 3, 1, 1, 4];
 
@@ -4919,14 +4930,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
 
             ////(3330.) Find the Original Typed String I (EASY)
-            string word = "abbcccc";
+            //string word = "abbcccc";
 
-            LeetCode_3330 classLeetCode = new LeetCode_3330();
-            Console.WriteLine(classLeetCode.PossibleStringCount(word));
+            //LeetCode_3330 classLeetCode = new LeetCode_3330();
+            //Console.WriteLine(classLeetCode.PossibleStringCount(word));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PossibleStringCount(word));
+            //Console.WriteLine(leetCodeAll.PossibleStringCount(word));
 
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
             //int[] nums = [-5, -10, -5];
