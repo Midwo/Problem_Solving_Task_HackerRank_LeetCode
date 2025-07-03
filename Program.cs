@@ -1698,6 +1698,17 @@ namespace ProblemSolving
 
             //leetCodeAll.MoveZeroes(nums);
 
+            ////(289.) Game of Life (MEDIUM)
+            int[][] board = [[0, 1]];
+
+            LeetCode_289 classLeetCode = new LeetCode_289();
+            classLeetCode.GameOfLife(board);
+
+            //OR
+
+            leetCodeAll.GameOfLife(board);
+
+
             ////(290.) Word Pattern (EASY)
             //string pattern = "aa";
             //string s = "aaa aaa";
@@ -4939,14 +4950,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
 
             ////(3304.) Find the K-th Character in String Game I (EASY)
-            int k = 5;
+            //int k = 5;
 
-            LeetCode_3304 classLeetCode = new LeetCode_3304();
-            Console.WriteLine(classLeetCode.KthCharacter(k));
+            //LeetCode_3304 classLeetCode = new LeetCode_3304();
+            //Console.WriteLine(classLeetCode.KthCharacter(k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.KthCharacter(k));
+            //Console.WriteLine(leetCodeAll.KthCharacter(k));
 
             ////(3330.) Find the Original Typed String I (EASY)
             //string word = "abbcccc";
