@@ -774,14 +774,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinDistance(word1, word2));
 
             ////(73.) Set Matrix Zeroes (MEDIUM)
-            int[][] matrix = [[1, 1, 1], [1, 0, 1], [1, 1, 1]];
-            
-            LeetCode_73 classLeetCode = new LeetCode_73();
-            classLeetCode.SetZeroes(matrix);
+            //int[][] matrix = [[1, 1, 1], [1, 0, 1], [1, 1, 1]];
 
-            //OR
+            //LeetCode_73 classLeetCode = new LeetCode_73();
+            //classLeetCode.SetZeroes(matrix);
 
-            classLeetCode.SetZeroes(matrix);
+            ////OR
+
+            //classLeetCode.SetZeroes(matrix);
 
             ////(76.) Minimum Window Substring (HARD)
             //string s = "ADOBECODEBANC";
@@ -4937,6 +4937,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
+
+            ////(3304.) Find the K-th Character in String Game I (EASY)
+            int k = 5;
+
+            LeetCode_3304 classLeetCode = new LeetCode_3304();
+            Console.WriteLine(classLeetCode.KthCharacter(k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.KthCharacter(k));
 
             ////(3330.) Find the Original Typed String I (EASY)
             //string word = "abbcccc";
