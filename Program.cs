@@ -762,6 +762,16 @@ namespace ProblemSolving
             ////(70.) Climbing Stairs (EASY)
             //Console.WriteLine(leetCodeAll.ClimbStairs(5));
 
+            ////(71.) Simplify Path (MEDIUM)
+            string path = "/.hidden";
+
+            LeetCode_71 classLeetCode = new LeetCode_71();
+            Console.WriteLine(classLeetCode.SimplifyPath(path));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SimplifyPath(path));
+
             ////(72.) Edit Distance (MEDIUM)
             //string word1 = "zoologicoarchaeologist";
             //string word2 = "zoogeologist";
@@ -1699,15 +1709,14 @@ namespace ProblemSolving
             //leetCodeAll.MoveZeroes(nums);
 
             ////(289.) Game of Life (MEDIUM)
-            int[][] board = [[0, 1]];
+            //int[][] board = [[0, 1]];
 
-            LeetCode_289 classLeetCode = new LeetCode_289();
-            classLeetCode.GameOfLife(board);
+            //LeetCode_289 classLeetCode = new LeetCode_289();
+            //classLeetCode.GameOfLife(board);
 
-            //OR
+            ////OR
 
-            leetCodeAll.GameOfLife(board);
-
+            //leetCodeAll.GameOfLife(board);
 
             ////(290.) Word Pattern (EASY)
             //string pattern = "aa";
