@@ -763,14 +763,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ClimbStairs(5));
 
             ////(71.) Simplify Path (MEDIUM)
-            string path = "/.hidden";
+            //string path = "/.hidden";
 
-            LeetCode_71 classLeetCode = new LeetCode_71();
-            Console.WriteLine(classLeetCode.SimplifyPath(path));
+            //LeetCode_71 classLeetCode = new LeetCode_71();
+            //Console.WriteLine(classLeetCode.SimplifyPath(path));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SimplifyPath(path));
+            //Console.WriteLine(leetCodeAll.SimplifyPath(path));
 
             ////(72.) Edit Distance (MEDIUM)
             //string word1 = "zoologicoarchaeologist";
@@ -4439,6 +4439,16 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
+
+            ////(1394.) Find Lucky Integer in an Array (EASY)
+            int[] arr = [1, 2, 2, 3, 3, 3];
+
+            LeetCode_1394 classLeetCode = new LeetCode_1394();
+            Console.WriteLine(classLeetCode.FindLucky(arr));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindLucky(arr));
 
             ////(1432.) Max Difference You Can Get From Changing an Integer (MEDIUM)
             //int num = 90270580;
