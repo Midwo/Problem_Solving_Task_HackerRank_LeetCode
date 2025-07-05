@@ -1753,6 +1753,17 @@ namespace ProblemSolving
             //Console.WriteLine(numArrayLeetCodeAll.SumRange(2, 5));
             //Console.WriteLine(numArrayLeetCodeAll.SumRange(0, 5));
 
+            ////(322.) Coin Change (MEDIUM)
+            int[] coins = [1, 2, 5];
+            int amount = 11;
+
+            LeetCode_322 classLeetCode = new LeetCode_322();
+            Console.WriteLine(classLeetCode.CoinChange(coins, amount));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CoinChange(coins, amount));
+
             ////(326.) Power of Three (EASY)
             //int n = 27;
 
@@ -4441,14 +4452,14 @@ namespace ProblemSolving
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
 
             ////(1394.) Find Lucky Integer in an Array (EASY)
-            int[] arr = [1, 2, 2, 3, 3, 3];
+            //int[] arr = [1, 2, 2, 3, 3, 3];
 
-            LeetCode_1394 classLeetCode = new LeetCode_1394();
-            Console.WriteLine(classLeetCode.FindLucky(arr));
+            //LeetCode_1394 classLeetCode = new LeetCode_1394();
+            //Console.WriteLine(classLeetCode.FindLucky(arr));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindLucky(arr));
+            //Console.WriteLine(leetCodeAll.FindLucky(arr));
 
             ////(1432.) Max Difference You Can Get From Changing an Integer (MEDIUM)
             //int num = 90270580;

@@ -11322,6 +11322,31 @@ namespace ProblemSolving
 
             //return maxLuckyNumber;
         }
+        public int CoinChange(int[] coins, int amount)
+        {
+            int howManyCoins = coins.Length;
+            int[] dp = new int[amount + 1];
+            Array.Fill(dp, amount + 1);
+            dp[0] = 0;
+
+            for (int i = 1; i <= amount; i++)
+            {
+                foreach (int item in coins)
+                {
+                    if (i - item >= 0)
+                    {
+                        dp[i] = Math.Min(dp[i], dp[i - item] + 1);
+                    }
+                }
+            }
+
+            if (dp[amount] == amount + 1)
+            {
+                return -1;
+            }
+
+            return dp[amount];
+        }
 
 
 
