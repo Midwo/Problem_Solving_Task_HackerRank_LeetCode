@@ -1754,15 +1754,15 @@ namespace ProblemSolving
             //Console.WriteLine(numArrayLeetCodeAll.SumRange(0, 5));
 
             ////(322.) Coin Change (MEDIUM)
-            int[] coins = [1, 2, 5];
-            int amount = 11;
+            //int[] coins = [1, 2, 5];
+            //int amount = 11;
 
-            LeetCode_322 classLeetCode = new LeetCode_322();
-            Console.WriteLine(classLeetCode.CoinChange(coins, amount));
+            //LeetCode_322 classLeetCode = new LeetCode_322();
+            //Console.WriteLine(classLeetCode.CoinChange(coins, amount));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CoinChange(coins, amount));
+            //Console.WriteLine(leetCodeAll.CoinChange(coins, amount));
 
             ////(326.) Power of Three (EASY)
             //int n = 27;
@@ -4715,6 +4715,28 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1789 classLeetCode = new LeetCode_1789();
+
+            ////(1865.) Finding Pairs With a Certain Sum (MEDIUM)
+            
+            LeetCode_1865.FindSumPairs classLeetCode = new LeetCode_1865.FindSumPairs([1, 1, 2, 2, 2, 3], [1, 4, 5, 2, 5, 4]);
+            Console.WriteLine(classLeetCode.Count(7));
+            classLeetCode.Add(3, 2);
+            Console.WriteLine(classLeetCode.Count(8));
+            Console.WriteLine(classLeetCode.Count(4));
+            classLeetCode.Add(0, 1);
+            classLeetCode.Add(1, 1);
+            Console.WriteLine(classLeetCode.Count(7));
+
+            //OR
+
+            FindSumPairsTask_1865 leetCodeTask = new FindSumPairsTask_1865([1, 1, 2, 2, 2, 3], [1, 4, 5, 2, 5, 4]);
+            Console.WriteLine(leetCodeTask.Count(7));
+            leetCodeTask.Add(3, 2);
+            Console.WriteLine(leetCodeTask.Count(8));
+            Console.WriteLine(leetCodeTask.Count(4));
+            leetCodeTask.Add(0, 1);
+            leetCodeTask.Add(1, 1);
+            Console.WriteLine(leetCodeTask.Count(7));
 
             ////(1907.) Count Salary Categories (MEDIUM)
             //string SqlQuery =
