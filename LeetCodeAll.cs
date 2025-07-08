@@ -11415,52 +11415,69 @@ namespace ProblemSolving
                 return count;
             }
         }
+        public int MinTimeToVisitAllPoints(int[][] points)
+        {
+            int resultTime = 0;
+            int positionX = points[0][0];
+            int positionY = points[0][1];
 
+            for (int i = 1; i < points.Length; i++)
+            {
+                int currX = points[i][0];
+                int currY = points[i][1];
 
+                resultTime += Math.Max(Math.Abs(currX - positionX), Math.Abs(currY - positionY));
 
+                positionX = currX;
+                positionY = currY;
+            }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            return resultTime;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 
 
 
@@ -11504,11 +11521,11 @@ namespace ProblemSolving
             children = new List<Node>();
         }
 
-        //public Node(int _val, IList<Node> _children)
-        //{
-        //    val = _val;
-        //    children = _children;
-        //}
+        public Node(int _val, IList<Node> _children)
+        {
+            val = _val;
+            children = _children;
+        }
     }
 
     public class TreeNode

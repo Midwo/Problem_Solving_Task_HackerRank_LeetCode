@@ -2479,6 +2479,9 @@ namespace ProblemSolving
             //////OR
             //leetCodeAll.LeetCode_586();
 
+            ////(590.) N-ary Tree Postorder Traversal (EASY)
+
+
             ////(594.) Longest Harmonious Subsequence (EASY)
             ////int[] nums = [1, 3, 2, 2, 5, 2, 3, 7];
             ////int[] nums = [1, 2, 3, 3, 1, -14, 13, 4];
@@ -4292,6 +4295,26 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1251 classLeetCode = new LeetCode_1251();
 
+            ////(1266.) Minimum Time Visiting All Points (EASY)
+            int[][] points = [[559, 511], [932, 618], [-623, -443], 
+            [431, 91], [838, -127], [773, -917], [-500, -910], [830, -417], 
+            [-870, 73], [-864, -600], [450, 535], [-479, -370], [856, 573],
+            [-549, 369], [529, -462], [-839, -856], [-515, -447], [652, 197],
+            [-83, 345], [-69, 423], [310, -737], [78, -201], [443, 958], 
+            [-311, 988], [-477, 30], [-376, -153], [-272, 451], [322, -125],
+            [-114, -214], [495, 33], [371, -533], [-393, -224], [-405, -633],
+            [-693, 297], [504, 210], [-427, -231], [315, 27], [991, 322], [811, -746], 
+            [252, 373], [-737, -867], [-137, 130], [507, 380], [100, -638], [-296, 700],
+            [341, 671], [-944, 982], [937, -440], [40, -929], [-334, 60], [-722, -92],
+            [-35, -852], [25, -495], [185, 671], [149, -452]];
+
+            LeetCode_1266 classLeetCode = new LeetCode_1266();
+            Console.WriteLine(classLeetCode.MinTimeToVisitAllPoints(points));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinTimeToVisitAllPoints(points));
+
             ////(1280.) Students and Examinations (EASY)
             //string SqlQuery =
             //    @"
@@ -4717,26 +4740,26 @@ namespace ProblemSolving
             //LeetCode_1789 classLeetCode = new LeetCode_1789();
 
             ////(1865.) Finding Pairs With a Certain Sum (MEDIUM)
-            
-            LeetCode_1865.FindSumPairs classLeetCode = new LeetCode_1865.FindSumPairs([1, 1, 2, 2, 2, 3], [1, 4, 5, 2, 5, 4]);
-            Console.WriteLine(classLeetCode.Count(7));
-            classLeetCode.Add(3, 2);
-            Console.WriteLine(classLeetCode.Count(8));
-            Console.WriteLine(classLeetCode.Count(4));
-            classLeetCode.Add(0, 1);
-            classLeetCode.Add(1, 1);
-            Console.WriteLine(classLeetCode.Count(7));
 
-            //OR
+            //LeetCode_1865.FindSumPairs classLeetCode = new LeetCode_1865.FindSumPairs([1, 1, 2, 2, 2, 3], [1, 4, 5, 2, 5, 4]);
+            //Console.WriteLine(classLeetCode.Count(7));
+            //classLeetCode.Add(3, 2);
+            //Console.WriteLine(classLeetCode.Count(8));
+            //Console.WriteLine(classLeetCode.Count(4));
+            //classLeetCode.Add(0, 1);
+            //classLeetCode.Add(1, 1);
+            //Console.WriteLine(classLeetCode.Count(7));
 
-            FindSumPairsTask_1865 leetCodeTask = new FindSumPairsTask_1865([1, 1, 2, 2, 2, 3], [1, 4, 5, 2, 5, 4]);
-            Console.WriteLine(leetCodeTask.Count(7));
-            leetCodeTask.Add(3, 2);
-            Console.WriteLine(leetCodeTask.Count(8));
-            Console.WriteLine(leetCodeTask.Count(4));
-            leetCodeTask.Add(0, 1);
-            leetCodeTask.Add(1, 1);
-            Console.WriteLine(leetCodeTask.Count(7));
+            ////OR
+
+            //FindSumPairsTask_1865 leetCodeTask = new FindSumPairsTask_1865([1, 1, 2, 2, 2, 3], [1, 4, 5, 2, 5, 4]);
+            //Console.WriteLine(leetCodeTask.Count(7));
+            //leetCodeTask.Add(3, 2);
+            //Console.WriteLine(leetCodeTask.Count(8));
+            //Console.WriteLine(leetCodeTask.Count(4));
+            //leetCodeTask.Add(0, 1);
+            //leetCodeTask.Add(1, 1);
+            //Console.WriteLine(leetCodeTask.Count(7));
 
             ////(1907.) Count Salary Categories (MEDIUM)
             //string SqlQuery =
