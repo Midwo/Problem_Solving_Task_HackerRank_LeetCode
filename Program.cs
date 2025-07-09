@@ -5025,14 +5025,14 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.MinimumDeletions(word, k));
 
             ////(3110.) Score of a String (EASY)
-            string s = "hello";
+            //string s = "hello";
 
-            LeetCode_3110 classLeetCode = new LeetCode_3110();
-            Console.WriteLine(classLeetCode.ScoreOfString(s));
+            //LeetCode_3110 classLeetCode = new LeetCode_3110();
+            //Console.WriteLine(classLeetCode.ScoreOfString(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ScoreOfString(s));
+            //Console.WriteLine(leetCodeAll.ScoreOfString(s));
 
             ////(3151.) Special Array I (EASY)
             //int[] nums = [4, 3, 1, 6];
@@ -5073,6 +5073,19 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxAdjacentDistance(nums));
+
+            ////(3439.) Reschedule Meetings for Maximum Free Time I (MEDIUM)
+            int eventTime = 99;
+            int k = 1;
+            int[] startTime = [7, 21, 25];
+            int[] endTime = [13, 25, 78];
+
+            LeetCode_3439 classleetCode = new LeetCode_3439();
+            Console.WriteLine(classleetCode.MaxFreeTime(eventTime, k, startTime, endTime));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxFreeTime(eventTime, k, startTime, endTime));
 
             ////(3442.) Maximum Difference Between Even and Odd Frequency I (EASY)
             //string s = "aaaaabbc";
