@@ -4344,15 +4344,14 @@ namespace ProblemSolving
             //LeetCode_1280 classLeetCode = new LeetCode_1280();
 
             ////(1309.) Decrypt String from Alphabet to Integer Mapping (EASY)
-            string s = "1326#";
+            //string s = "1326#";
 
-            LeetCode_1309 classLeetCode = new LeetCode_1309();
-            Console.WriteLine(classLeetCode.FreqAlphabets(s));
+            //LeetCode_1309 classLeetCode = new LeetCode_1309();
+            //Console.WriteLine(classLeetCode.FreqAlphabets(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FreqAlphabets(s));
-
+            //Console.WriteLine(leetCodeAll.FreqAlphabets(s));
 
             ////(1321.) Restaurant Growth (MEDIUM)
             //string SqlQuery =
@@ -5024,6 +5023,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(classLeetCode.MinimumDeletions(word, k));
+
+            ////(3110.) Score of a String (EASY)
+            string s = "hello";
+
+            LeetCode_3110 classLeetCode = new LeetCode_3110();
+            Console.WriteLine(classLeetCode.ScoreOfString(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ScoreOfString(s));
 
             ////(3151.) Special Array I (EASY)
             //int[] nums = [4, 3, 1, 6];
