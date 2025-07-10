@@ -5075,17 +5075,30 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxAdjacentDistance(nums));
 
             ////(3439.) Reschedule Meetings for Maximum Free Time I (MEDIUM)
-            int eventTime = 99;
-            int k = 1;
-            int[] startTime = [7, 21, 25];
-            int[] endTime = [13, 25, 78];
+            //int eventTime = 99;
+            //int k = 1;
+            //int[] startTime = [7, 21, 25];
+            //int[] endTime = [13, 25, 78];
 
-            LeetCode_3439 classleetCode = new LeetCode_3439();
-            Console.WriteLine(classleetCode.MaxFreeTime(eventTime, k, startTime, endTime));
+            //LeetCode_3439 classleetCode = new LeetCode_3439();
+            //Console.WriteLine(classleetCode.MaxFreeTime(eventTime, k, startTime, endTime));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaxFreeTime(eventTime, k, startTime, endTime));
+
+            ////(3440.) Reschedule Meetings for Maximum Free Time II (MEDIUM)
+            int eventTime = 84;
+            int[] startTime = [4, 6, 9, 10, 22, 48, 78];
+            int[] endTime = [6, 7, 10, 11, 46, 60, 84];
+
+            LeetCode_3440 classLeetCode = new LeetCode_3440();
+            Console.WriteLine(classLeetCode.MaxFreeTime(eventTime, startTime, endTime));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MaxFreeTime(eventTime, k, startTime, endTime));
+            Console.WriteLine(leetCodeAll.MaxFreeTime(eventTime, startTime, endTime));
+
 
             ////(3442.) Maximum Difference Between Even and Odd Frequency I (EASY)
             //string s = "aaaaabbc";
