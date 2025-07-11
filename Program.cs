@@ -4961,6 +4961,31 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
+            ////(2807.) Insert Greatest Common Divisors in Linked List (MEDIUM)
+            ListNode head = new ListNode(18);
+            head.next = new ListNode(6);
+            head.next.next = new ListNode(10);
+            head.next.next.next = new ListNode(3);
+
+            LeetCode_2807 classLeetCode = new LeetCode_2807();
+            var result = classLeetCode.InsertGreatestCommonDivisors(head);
+
+            while (result != null) 
+            {
+                Console.WriteLine(result.val);
+                result = result.next;
+            }
+
+            //OR
+
+            var result1 = leetCodeAll.InsertGreatestCommonDivisors(head);
+
+            while (result1 != null)
+            {
+                Console.WriteLine(result1.val);
+                result1 = result1.next;
+            }
+
             ////(2894.) Divisible and Non-divisible Sums Difference (EASY)
             //int n = 10;
             //int m = 3;
@@ -5088,17 +5113,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxFreeTime(eventTime, k, startTime, endTime));
 
             ////(3440.) Reschedule Meetings for Maximum Free Time II (MEDIUM)
-            int eventTime = 84;
-            int[] startTime = [4, 6, 9, 10, 22, 48, 78];
-            int[] endTime = [6, 7, 10, 11, 46, 60, 84];
+            //int eventTime = 84;
+            //int[] startTime = [4, 6, 9, 10, 22, 48, 78];
+            //int[] endTime = [6, 7, 10, 11, 46, 60, 84];
 
-            LeetCode_3440 classLeetCode = new LeetCode_3440();
-            Console.WriteLine(classLeetCode.MaxFreeTime(eventTime, startTime, endTime));
+            //LeetCode_3440 classLeetCode = new LeetCode_3440();
+            //Console.WriteLine(classLeetCode.MaxFreeTime(eventTime, startTime, endTime));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxFreeTime(eventTime, startTime, endTime));
-
+            //Console.WriteLine(leetCodeAll.MaxFreeTime(eventTime, startTime, endTime));
 
             ////(3442.) Maximum Difference Between Even and Odd Frequency I (EASY)
             //string s = "aaaaabbc";
