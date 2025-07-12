@@ -4811,6 +4811,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1907 classLeetCode = new LeetCode_1907();
 
+            ////(1929.) Concatenation of Array (EASY)
+            int[] nums = [1, 2, 1];
+            
+            LeetCode_1929 classLeetCode = new LeetCode_1929();
+            Console.WriteLine(string.Join(',', classLeetCode.GetConcatenation(nums)));
+
+            //OR
+            
+            Console.WriteLine(string.Join(',', classLeetCode.GetConcatenation(nums)));
+
             ////(1934.) Confirmation Rate (MEDIUM)
             //string SqlQuery =
             //    @"
@@ -4962,29 +4972,29 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
             ////(2807.) Insert Greatest Common Divisors in Linked List (MEDIUM)
-            ListNode head = new ListNode(18);
-            head.next = new ListNode(6);
-            head.next.next = new ListNode(10);
-            head.next.next.next = new ListNode(3);
+            //ListNode head = new ListNode(18);
+            //head.next = new ListNode(6);
+            //head.next.next = new ListNode(10);
+            //head.next.next.next = new ListNode(3);
 
-            LeetCode_2807 classLeetCode = new LeetCode_2807();
-            var result = classLeetCode.InsertGreatestCommonDivisors(head);
+            //LeetCode_2807 classLeetCode = new LeetCode_2807();
+            //var result = classLeetCode.InsertGreatestCommonDivisors(head);
 
-            while (result != null) 
-            {
-                Console.WriteLine(result.val);
-                result = result.next;
-            }
+            //while (result != null) 
+            //{
+            //    Console.WriteLine(result.val);
+            //    result = result.next;
+            //}
 
-            //OR
+            ////OR
 
-            var result1 = leetCodeAll.InsertGreatestCommonDivisors(head);
+            //var result1 = leetCodeAll.InsertGreatestCommonDivisors(head);
 
-            while (result1 != null)
-            {
-                Console.WriteLine(result1.val);
-                result1 = result1.next;
-            }
+            //while (result1 != null)
+            //{
+            //    Console.WriteLine(result1.val);
+            //    result1 = result1.next;
+            //}
 
             ////(2894.) Divisible and Non-divisible Sums Difference (EASY)
             //int n = 10;
