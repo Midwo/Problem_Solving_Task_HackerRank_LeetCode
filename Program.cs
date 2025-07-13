@@ -4812,14 +4812,14 @@ namespace ProblemSolving
             //LeetCode_1907 classLeetCode = new LeetCode_1907();
 
             ////(1929.) Concatenation of Array (EASY)
-            int[] nums = [1, 2, 1];
-            
-            LeetCode_1929 classLeetCode = new LeetCode_1929();
-            Console.WriteLine(string.Join(',', classLeetCode.GetConcatenation(nums)));
+            //int[] nums = [1, 2, 1];
 
-            //OR
-            
-            Console.WriteLine(string.Join(',', classLeetCode.GetConcatenation(nums)));
+            //LeetCode_1929 classLeetCode = new LeetCode_1929();
+            //Console.WriteLine(string.Join(',', classLeetCode.GetConcatenation(nums)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', classLeetCode.GetConcatenation(nums)));
 
             ////(1934.) Confirmation Rate (MEDIUM)
             //string SqlQuery =
@@ -4949,6 +4949,17 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
+
+            ////(2410.) Maximum Matching of Players With Trainers (MEDIUM)
+            int[] players = [4, 7, 9];
+            int[] trainers = [8, 2, 5, 8];
+
+            LeetCode_2410 classLeetCode = new LeetCode_2410();
+            Console.WriteLine(classLeetCode.MatchPlayersAndTrainers(players, trainers));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MatchPlayersAndTrainers(players, trainers));
 
             ////(2566.) Maximum Difference by Remapping a Digit (EASY)
             //int num = 11891;
