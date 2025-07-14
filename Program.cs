@@ -4343,6 +4343,18 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1280 classLeetCode = new LeetCode_1280();
 
+            ////(1290.) Convert Binary Number in a Linked List to Integer (EASY)
+            ListNode head = new ListNode(1);
+            head.next = new ListNode(0);
+            head.next.next = new ListNode(1);
+
+            LeetCode_1290 classLeetCode = new LeetCode_1290();
+            Console.WriteLine(classLeetCode.GetDecimalValue(head));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GetDecimalValue(head));
+
             ////(1309.) Decrypt String from Alphabet to Integer Mapping (EASY)
             //string s = "1326#";
 
@@ -4951,15 +4963,15 @@ namespace ProblemSolving
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
             ////(2410.) Maximum Matching of Players With Trainers (MEDIUM)
-            int[] players = [4, 7, 9];
-            int[] trainers = [8, 2, 5, 8];
+            //int[] players = [4, 7, 9];
+            //int[] trainers = [8, 2, 5, 8];
 
-            LeetCode_2410 classLeetCode = new LeetCode_2410();
-            Console.WriteLine(classLeetCode.MatchPlayersAndTrainers(players, trainers));
+            //LeetCode_2410 classLeetCode = new LeetCode_2410();
+            //Console.WriteLine(classLeetCode.MatchPlayersAndTrainers(players, trainers));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MatchPlayersAndTrainers(players, trainers));
+            //Console.WriteLine(leetCodeAll.MatchPlayersAndTrainers(players, trainers));
 
             ////(2566.) Maximum Difference by Remapping a Digit (EASY)
             //int num = 11891;
