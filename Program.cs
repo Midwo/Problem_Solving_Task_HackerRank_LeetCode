@@ -4717,6 +4717,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1757 classLeetCode = new LeetCode_1757();
 
+            ////(1769.) Minimum Number of Operations to Move All Balls to Each Box (MEDIUM)
+            string boxes = "001011";
+
+            LeetCode_1769 classLeetCode = new LeetCode_1769();
+            Console.WriteLine(string.Join(',', classLeetCode.MinOperations(boxes)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.MinOperations(boxes)));
+
             ////(1789.) Primary Department for Each Employee (EASY)
             //string SqlQuery =
             //    @"
@@ -4984,14 +4994,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MatchPlayersAndTrainers(players, trainers));
 
             ////(2469.) Convert the Temperature (EASY)
-            double celsius = 36.5;
+            //double celsius = 36.5;
 
-            LeetCode_2469 classLeetCode = new LeetCode_2469();
-            Console.WriteLine(string.Join((':'), classLeetCode.ConvertTemperature(celsius)));
+            //LeetCode_2469 classLeetCode = new LeetCode_2469();
+            //Console.WriteLine(string.Join((':'), classLeetCode.ConvertTemperature(celsius)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
+            //Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
 
             ////(2566.) Maximum Difference by Remapping a Digit (EASY)
             //int num = 11891;
