@@ -4344,16 +4344,16 @@ namespace ProblemSolving
             //LeetCode_1280 classLeetCode = new LeetCode_1280();
 
             ////(1290.) Convert Binary Number in a Linked List to Integer (EASY)
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(0);
-            head.next.next = new ListNode(1);
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(0);
+            //head.next.next = new ListNode(1);
 
-            LeetCode_1290 classLeetCode = new LeetCode_1290();
-            Console.WriteLine(classLeetCode.GetDecimalValue(head));
+            //LeetCode_1290 classLeetCode = new LeetCode_1290();
+            //Console.WriteLine(classLeetCode.GetDecimalValue(head));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GetDecimalValue(head));
+            //Console.WriteLine(leetCodeAll.GetDecimalValue(head));
 
             ////(1309.) Decrypt String from Alphabet to Integer Mapping (EASY)
             //string s = "1326#";
@@ -4822,6 +4822,16 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1907 classLeetCode = new LeetCode_1907();
+
+            ////(1920.) Build Array from Permutation (EASY)
+            int[] nums = [0,2,1,5,3,4];
+
+            LeetCode_1920 classLeetCode = new LeetCode_1920();
+            Console.WriteLine(string.Join(',', classLeetCode.BuildArray(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.BuildArray(nums)));
 
             ////(1929.) Concatenation of Array (EASY)
             //int[] nums = [1, 2, 1];
