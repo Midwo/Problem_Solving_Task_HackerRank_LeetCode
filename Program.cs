@@ -4824,14 +4824,14 @@ namespace ProblemSolving
             //LeetCode_1907 classLeetCode = new LeetCode_1907();
 
             ////(1920.) Build Array from Permutation (EASY)
-            int[] nums = [0,2,1,5,3,4];
+            //int[] nums = [0,2,1,5,3,4];
 
-            LeetCode_1920 classLeetCode = new LeetCode_1920();
-            Console.WriteLine(string.Join(',', classLeetCode.BuildArray(nums)));
+            //LeetCode_1920 classLeetCode = new LeetCode_1920();
+            //Console.WriteLine(string.Join(',', classLeetCode.BuildArray(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.BuildArray(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.BuildArray(nums)));
 
             ////(1929.) Concatenation of Array (EASY)
             //int[] nums = [1, 2, 1];
@@ -4982,6 +4982,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MatchPlayersAndTrainers(players, trainers));
+
+            ////(2469.) Convert the Temperature (EASY)
+            double celsius = 36.5;
+
+            LeetCode_2469 classLeetCode = new LeetCode_2469();
+            Console.WriteLine(string.Join((':'), classLeetCode.ConvertTemperature(celsius)));
+
+            //OR
+
+            Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
 
             ////(2566.) Maximum Difference by Remapping a Digit (EASY)
             //int num = 11891;
