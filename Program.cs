@@ -4718,14 +4718,14 @@ namespace ProblemSolving
             //LeetCode_1757 classLeetCode = new LeetCode_1757();
 
             ////(1769.) Minimum Number of Operations to Move All Balls to Each Box (MEDIUM)
-            string boxes = "001011";
+            //string boxes = "001011";
 
-            LeetCode_1769 classLeetCode = new LeetCode_1769();
-            Console.WriteLine(string.Join(',', classLeetCode.MinOperations(boxes)));
+            //LeetCode_1769 classLeetCode = new LeetCode_1769();
+            //Console.WriteLine(string.Join(',', classLeetCode.MinOperations(boxes)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.MinOperations(boxes)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.MinOperations(boxes)));
 
             ////(1789.) Primary Department for Each Employee (EASY)
             //string SqlQuery =
@@ -4770,6 +4770,16 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1789 classLeetCode = new LeetCode_1789();
+
+            ////(1863.) Sum of All Subset XOR Totals (EASY)
+            int[] nums = [5, 1, 6];
+
+            LeetCode_1863 classLeetCode = new LeetCode_1863();
+            Console.WriteLine(classLeetCode.SubsetXORSum(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SubsetXORSum(nums));
 
             ////(1865.) Finding Pairs With a Certain Sum (MEDIUM)
 

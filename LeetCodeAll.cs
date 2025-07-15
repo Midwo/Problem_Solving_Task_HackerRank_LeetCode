@@ -11857,7 +11857,28 @@ namespace ProblemSolving
 
             return result;
         }
+        private int sumXor;
+        public int SubsetXORSum(int[] nums)
+        {
+            dfsSubsetXORSum(nums, 0, 0);
 
+            return sumXor;
+        }
+        private void dfsSubsetXORSum(int[] nums, int index, int currentXor)
+        {
+            sumXor += currentXor;
+
+
+            for (int i = index; i < nums.Length; i++)
+            {
+                currentXor ^= nums[i];
+
+                dfsSubsetXORSum(nums, i + 1, currentXor);
+
+                currentXor ^= nums[i];
+            }
+
+        }
 
 
 
