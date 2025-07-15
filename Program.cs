@@ -4772,14 +4772,14 @@ namespace ProblemSolving
             //LeetCode_1789 classLeetCode = new LeetCode_1789();
 
             ////(1863.) Sum of All Subset XOR Totals (EASY)
-            int[] nums = [5, 1, 6];
+            //int[] nums = [5, 1, 6];
 
-            LeetCode_1863 classLeetCode = new LeetCode_1863();
-            Console.WriteLine(classLeetCode.SubsetXORSum(nums));
+            //LeetCode_1863 classLeetCode = new LeetCode_1863();
+            //Console.WriteLine(classLeetCode.SubsetXORSum(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SubsetXORSum(nums));
+            //Console.WriteLine(leetCodeAll.SubsetXORSum(nums));
 
             ////(1865.) Finding Pairs With a Certain Sum (MEDIUM)
 
@@ -5131,6 +5131,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ScoreOfString(s));
+
+            ////(3136.) Valid Word (EASY)
+            string word = "PO@w8FWZ";
+
+            LeetCode_3136 classLeetCode = new LeetCode_3136();
+            Console.WriteLine(classLeetCode.IsValid(word));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsValid_Task3136(word));
 
             ////(3151.) Special Array I (EASY)
             //int[] nums = [4, 3, 1, 6];
