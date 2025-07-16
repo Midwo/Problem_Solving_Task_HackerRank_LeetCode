@@ -5133,14 +5133,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ScoreOfString(s));
 
             ////(3136.) Valid Word (EASY)
-            string word = "PO@w8FWZ";
+            //string word = "PO@w8FWZ";
 
-            LeetCode_3136 classLeetCode = new LeetCode_3136();
-            Console.WriteLine(classLeetCode.IsValid(word));
+            //LeetCode_3136 classLeetCode = new LeetCode_3136();
+            //Console.WriteLine(classLeetCode.IsValid(word));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsValid_Task3136(word));
+            //Console.WriteLine(leetCodeAll.IsValid_Task3136(word));
 
             ////(3151.) Special Array I (EASY)
             //int[] nums = [4, 3, 1, 6];
@@ -5151,6 +5151,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
+
+            ////(3201.) Find the Maximum Length of Valid Subsequence I (MEDIUM)
+            int[] nums = [1, 2, 1, 1, 2, 1, 2];
+
+            LeetCode_3201 classLeetCode = new LeetCode_3201();
+            Console.WriteLine(classLeetCode.MaximumLength(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumLength(nums));
 
             ////(3304.) Find the K-th Character in String Game I (EASY)
             //int k = 5;
