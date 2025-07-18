@@ -22,7 +22,6 @@ namespace ProblemSolving.LeetCode
         {
             sumXor += currentXor;
 
-
             for (int i = index; i < nums.Length; i++)
             {
                 currentXor ^= nums[i];

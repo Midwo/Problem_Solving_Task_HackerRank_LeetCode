@@ -4771,7 +4771,7 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1789 classLeetCode = new LeetCode_1789();
 
-            ////(1863.) Sum of All Subset XOR Totals (EASY)
+            //(1863.) Sum of All Subset XOR Totals (EASY)
             //int[] nums = [5, 1, 6];
 
             //LeetCode_1863 classLeetCode = new LeetCode_1863();
@@ -5153,14 +5153,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
 
             ////(3201.) Find the Maximum Length of Valid Subsequence I (MEDIUM)
-            int[] nums = [1, 2, 1, 1, 2, 1, 2];
+            //int[] nums = [1, 2, 1, 1, 2, 1, 2];
 
-            LeetCode_3201 classLeetCode = new LeetCode_3201();
-            Console.WriteLine(classLeetCode.MaximumLength(nums));
+            //LeetCode_3201 classLeetCode = new LeetCode_3201();
+            //Console.WriteLine(classLeetCode.MaximumLength(nums));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaximumLength(nums));
+
+            ////3202. Find the Maximum Length of Valid Subsequence II
+            int[] nums = [1, 4, 2, 3, 1, 4];
+            int k = 3;
+
+            LeetCode_3202 classLeetCode = new LeetCode_3202();
+            Console.WriteLine(classLeetCode.MaximumLength(nums, k));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MaximumLength(nums));
+            Console.WriteLine(leetCodeAll.MaximumLength(nums, k));
 
             ////(3304.) Find the K-th Character in String Game I (EASY)
             //int k = 5;

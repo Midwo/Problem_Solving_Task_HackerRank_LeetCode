@@ -11957,8 +11957,30 @@ namespace ProblemSolving
 
             return Math.Max(wrongSequenceCount + 1, Math.Max(even, odd));
         }
+        public int MaximumLength(int[] nums, int k)
+        {
+            int[,] dp = new int[k, k];
+            int resultMax = 0;
+            int currResultMod = 0;
 
+            //for (int i = 0; i < k; i++)
+            //{
+            //    dp[i] = new int[k];
+            //}
 
+            foreach (int number in nums)
+            {
+                currResultMod = number % k;
+
+                for (int i = 0; i < k; i++)
+                {
+                    dp[i, currResultMod] = dp[currResultMod, i] + 1;
+                    resultMax = Math.Max(resultMax, dp[i, currResultMod]);
+                }
+            }
+
+            return resultMax;
+        }
 
 
 
