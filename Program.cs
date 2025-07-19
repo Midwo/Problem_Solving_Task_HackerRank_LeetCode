@@ -4267,6 +4267,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
 
+            ////(1233.) Remove Sub-Folders from the Filesystem (MEDIUM)
+            string[] folder = ["/a", "/a/b", "/a/c", "/a/b/a", "/c/d", "/c/d/e", "/c/f"];
+
+            LeetCode_1233 classLeetCode = new LeetCode_1233();
+
+            Console.WriteLine(string.Join(',', classLeetCode.RemoveSubfolders(folder)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.RemoveSubfolders(folder)));
+
             ////(1251.) Average Selling Price (EASY)
             //string SqlQuery =
             //    @"
@@ -5163,15 +5174,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumLength(nums));
 
             ////3202. Find the Maximum Length of Valid Subsequence II
-            int[] nums = [1, 4, 2, 3, 1, 4];
-            int k = 3;
+            //int[] nums = [1, 4, 2, 3, 1, 4];
+            //int k = 3;
 
-            LeetCode_3202 classLeetCode = new LeetCode_3202();
-            Console.WriteLine(classLeetCode.MaximumLength(nums, k));
+            //LeetCode_3202 classLeetCode = new LeetCode_3202();
+            //Console.WriteLine(classLeetCode.MaximumLength(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumLength(nums, k));
+            //Console.WriteLine(leetCodeAll.MaximumLength(nums, k));
 
             ////(3304.) Find the K-th Character in String Game I (EASY)
             //int k = 5;
