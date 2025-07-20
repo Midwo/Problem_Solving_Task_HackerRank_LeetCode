@@ -4956,6 +4956,17 @@ namespace ProblemSolving
             //string[] result1 = leetCodeAll.DivideString(s, k, fill);
             //Console.WriteLine(string.Join(',', result1));
 
+            ////(2161.) Partition Array According to Given Pivot (MEDIUM)
+            int[] nums = [9,12,5,10,14,3,10];
+            int pivot = 10;
+
+            LeetCode_2161 classLeetCode = new LeetCode_2161();
+            Console.WriteLine(string.Join(',', classLeetCode.PivotArray(nums, pivot)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.PivotArray(nums, pivot)));
+
             ////(2200.) Find All K-Distant Indices in an Array (EASY)
             //int[] nums = [2, 1, 1, 1, 2];
             //int key = 2;
@@ -5046,15 +5057,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
-            int num = 3;
-            int t = 2;
+            //int num = 3;
+            //int t = 2;
 
-            LeetCode_2769 classLeetCode = new LeetCode_2769();
-            Console.WriteLine(classLeetCode.TheMaximumAchievableX(num, t));
+            //LeetCode_2769 classLeetCode = new LeetCode_2769();
+            //Console.WriteLine(classLeetCode.TheMaximumAchievableX(num, t));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.TheMaximumAchievableX(num, t));
+            //Console.WriteLine(leetCodeAll.TheMaximumAchievableX(num, t));
 
             ////(2807.) Insert Greatest Common Divisors in Linked List (MEDIUM)
             //ListNode head = new ListNode(18);
