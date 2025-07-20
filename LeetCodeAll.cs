@@ -12009,8 +12009,10 @@ namespace ProblemSolving
             }
             return result;
         }
-
-
+        public int TheMaximumAchievableX(int num, int t)
+        {
+            return num + t + t;
+        }
 
 
 

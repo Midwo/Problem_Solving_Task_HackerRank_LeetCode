@@ -4268,15 +4268,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
 
             ////(1233.) Remove Sub-Folders from the Filesystem (MEDIUM)
-            string[] folder = ["/a", "/a/b", "/a/c", "/a/b/a", "/c/d", "/c/d/e", "/c/f"];
+            //string[] folder = ["/a", "/a/b", "/a/c", "/a/b/a", "/c/d", "/c/d/e", "/c/f"];
 
-            LeetCode_1233 classLeetCode = new LeetCode_1233();
+            //LeetCode_1233 classLeetCode = new LeetCode_1233();
 
-            Console.WriteLine(string.Join(',', classLeetCode.RemoveSubfolders(folder)));
+            //Console.WriteLine(string.Join(',', classLeetCode.RemoveSubfolders(folder)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.RemoveSubfolders(folder)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.RemoveSubfolders(folder)));
 
             ////(1251.) Average Selling Price (EASY)
             //string SqlQuery =
@@ -5044,6 +5044,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
+
+            ////(2769.) Find the Maximum Achievable Number (EASY)
+            int num = 3;
+            int t = 2;
+
+            LeetCode_2769 classLeetCode = new LeetCode_2769();
+            Console.WriteLine(classLeetCode.TheMaximumAchievableX(num, t));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.TheMaximumAchievableX(num, t));
 
             ////(2807.) Insert Greatest Common Divisors in Linked List (MEDIUM)
             //ListNode head = new ListNode(18);
