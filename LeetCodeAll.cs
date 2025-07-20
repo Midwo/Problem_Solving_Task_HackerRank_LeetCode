@@ -12051,6 +12051,34 @@ namespace ProblemSolving
             return result;
 
         }
+        public int NumIdenticalPairs(int[] nums)
+        {
+            Dictionary<int, int> countNumbersDictionary = new Dictionary<int, int>();
+            int result = 0;
+
+            foreach (int i in nums)
+            {
+                if (countNumbersDictionary.ContainsKey(i))
+                {
+                    countNumbersDictionary[i]++;
+                }
+                else
+                {
+                    countNumbersDictionary.Add(i, 1);
+                }
+            }
+
+            foreach (int i in countNumbersDictionary.Values)
+            {
+                if (i > 1)
+                {
+                    result += i * (i - 1) / 2;
+                }
+            }
+
+            return result;
+
+        }
 
 
 

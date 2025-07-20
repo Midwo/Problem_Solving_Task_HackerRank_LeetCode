@@ -4560,6 +4560,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumSubseq(nums, target));
 
+            ////(1512.) Number of Good Pairs (EASY)
+            int[] nums = [1, 2, 3, 1, 1, 3];
+
+            LeetCode_1512 classLeetCode = new LeetCode_1512();
+            Console.WriteLine(classLeetCode.NumIdenticalPairs(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumIdenticalPairs(nums));
+
             ////(1517.) Find Users With Valid E-Mails (EASY)
             //string SqlQuery =
             //    @"
@@ -4957,15 +4967,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', result1));
 
             ////(2161.) Partition Array According to Given Pivot (MEDIUM)
-            int[] nums = [9,12,5,10,14,3,10];
-            int pivot = 10;
+            //int[] nums = [9,12,5,10,14,3,10];
+            //int pivot = 10;
 
-            LeetCode_2161 classLeetCode = new LeetCode_2161();
-            Console.WriteLine(string.Join(',', classLeetCode.PivotArray(nums, pivot)));
+            //LeetCode_2161 classLeetCode = new LeetCode_2161();
+            //Console.WriteLine(string.Join(',', classLeetCode.PivotArray(nums, pivot)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.PivotArray(nums, pivot)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.PivotArray(nums, pivot)));
 
             ////(2200.) Find All K-Distant Indices in an Array (EASY)
             //int[] nums = [2, 1, 1, 1, 2];
