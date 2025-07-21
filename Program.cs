@@ -4561,14 +4561,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumSubseq(nums, target));
 
             ////(1512.) Number of Good Pairs (EASY)
-            int[] nums = [1, 2, 3, 1, 1, 3];
+            //int[] nums = [1, 2, 3, 1, 1, 3];
 
-            LeetCode_1512 classLeetCode = new LeetCode_1512();
-            Console.WriteLine(classLeetCode.NumIdenticalPairs(nums));
+            //LeetCode_1512 classLeetCode = new LeetCode_1512();
+            //Console.WriteLine(classLeetCode.NumIdenticalPairs(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumIdenticalPairs(nums));
+            //Console.WriteLine(leetCodeAll.NumIdenticalPairs(nums));
 
             ////(1517.) Find Users With Valid E-Mails (EASY)
             //string SqlQuery =
@@ -4910,6 +4910,16 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1934 classLeetCode = new LeetCode_1934();
+
+            ////(1957.) Delete Characters to Make Fancy String (EASY)
+            string s = "leeetcode";
+
+            LeetCode_1957 classLeetCode = new LeetCode_1957();
+            Console.WriteLine(classLeetCode.MakeFancyString(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MakeFancyString(s));
 
             ////(1978.) Employees Whose Manager Left the Company (EASY)
             //string SqlQuery =
