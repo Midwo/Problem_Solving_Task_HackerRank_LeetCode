@@ -4678,6 +4678,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1683 classLeetCode = new LeetCode_1683();
 
+            ////(1695.) Maximum Erasure Value (MEDIUM)
+            int[] nums = [5, 2, 1, 2, 5, 2, 1, 2, 5];
+
+            LeetCode_1695 classLeetCode = new LeetCode_1695();
+            Console.WriteLine(classLeetCode.MaximumUniqueSubarray(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumUniqueSubarray(nums));
+
             ////(1729.) Find Followers Count (EASY)
             //string SqlQuery =
             //    @"
@@ -4912,14 +4922,14 @@ namespace ProblemSolving
             //LeetCode_1934 classLeetCode = new LeetCode_1934();
 
             ////(1957.) Delete Characters to Make Fancy String (EASY)
-            string s = "leeetcode";
+            //string s = "leeetcode";
 
-            LeetCode_1957 classLeetCode = new LeetCode_1957();
-            Console.WriteLine(classLeetCode.MakeFancyString(s));
+            //LeetCode_1957 classLeetCode = new LeetCode_1957();
+            //Console.WriteLine(classLeetCode.MakeFancyString(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MakeFancyString(s));
+            //Console.WriteLine(leetCodeAll.MakeFancyString(s));
 
             ////(1978.) Employees Whose Manager Left the Company (EASY)
             //string SqlQuery =

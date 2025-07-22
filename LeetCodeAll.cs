@@ -12106,6 +12106,28 @@ namespace ProblemSolving
 
             return new string(sb.ToString());
         }
+        public int MaximumUniqueSubarray(int[] nums)
+        {
+            int maxSum = 0;
+            int currSum = 0;
+            HashSet<int> hashSetValues = new HashSet<int>();
+
+            for (int l = 0, r = 0; r < nums.Length; r++)
+            {
+                while (!hashSetValues.Add(nums[r]))
+                {
+                    currSum -= nums[l];
+                    hashSetValues.Remove(nums[l]);
+                    l++;
+                }
+                currSum += nums[r];
+                maxSum = Math.Max(maxSum, currSum);
+            }
+
+            return maxSum;
+        }
+
+
 
 
 
