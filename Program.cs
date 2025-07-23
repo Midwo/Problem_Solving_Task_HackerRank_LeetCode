@@ -4679,14 +4679,26 @@ namespace ProblemSolving
             //LeetCode_1683 classLeetCode = new LeetCode_1683();
 
             ////(1695.) Maximum Erasure Value (MEDIUM)
-            int[] nums = [5, 2, 1, 2, 5, 2, 1, 2, 5];
+            //int[] nums = [5, 2, 1, 2, 5, 2, 1, 2, 5];
 
-            LeetCode_1695 classLeetCode = new LeetCode_1695();
-            Console.WriteLine(classLeetCode.MaximumUniqueSubarray(nums));
+            //LeetCode_1695 classLeetCode = new LeetCode_1695();
+            //Console.WriteLine(classLeetCode.MaximumUniqueSubarray(nums));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaximumUniqueSubarray(nums));
+
+            ////(1717.) Maximum Score From Removing Substrings (MEDIUM)
+            string s = "abbmzgaabtaabsbabhaahabnaeabdbaababbbiabaavababtabwbababzbdabbaaabhbyabdvabbaabbquapaaaaqbbblbuaawlnbbaxaubbbbbpbabbbpaaaacbbaabaaaahbbcoyaauabanqaabpbbbgaawbhabbbbaobsaaababbafbababbbbaaaqbabsbsmabbxqylbbbba";
+            int x = 9421;
+            int y = 8003;
+
+            LeetCode_1717 classLeetCode = new LeetCode_1717();
+            Console.WriteLine(classLeetCode.MaximumGain(s, x, y));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MaximumUniqueSubarray(nums));
+            Console.WriteLine(leetCodeAll.MaximumGain(s, x, y));
 
             ////(1729.) Find Followers Count (EASY)
             //string SqlQuery =
