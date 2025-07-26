@@ -4689,16 +4689,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumUniqueSubarray(nums));
 
             ////(1717.) Maximum Score From Removing Substrings (MEDIUM)
-            string s = "abbmzgaabtaabsbabhaahabnaeabdbaababbbiabaavababtabwbababzbdabbaaabhbyabdvabbaabbquapaaaaqbbblbuaawlnbbaxaubbbbbpbabbbpaaaacbbaabaaaahbbcoyaauabanqaabpbbbgaawbhabbbbaobsaaababbafbababbbbaaaqbabsbsmabbxqylbbbba";
-            int x = 9421;
-            int y = 8003;
+            //string s = "abbmzgaabtaabsbabhaahabnaeabdbaababbbiabaavababtabwbababzbdabbaaabhbyabdvabbaabbquapaaaaqbbblbuaawlnbbaxaubbbbbpbabbbpaaaacbbaabaaaahbbcoyaauabanqaabpbbbgaawbhabbbbaobsaaababbafbababbbbaaaqbabsbsmabbxqylbbbba";
+            //int x = 9421;
+            //int y = 8003;
 
-            LeetCode_1717 classLeetCode = new LeetCode_1717();
-            Console.WriteLine(classLeetCode.MaximumGain(s, x, y));
+            //LeetCode_1717 classLeetCode = new LeetCode_1717();
+            //Console.WriteLine(classLeetCode.MaximumGain(s, x, y));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumGain(s, x, y));
+            //Console.WriteLine(leetCodeAll.MaximumGain(s, x, y));
 
             ////(1729.) Find Followers Count (EASY)
             //string SqlQuery =
@@ -5324,12 +5324,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxDistance(s, k));
 
+            ////(3487.) Maximum Unique Subarray Sum After Deletion (EASY)
+            int[] nums = [-10, 18, 1, 18, -5];
 
+            LeetCode_3487 classLeetCode = new LeetCode_3487();
+            Console.WriteLine(classLeetCode.MaxSum(nums));
 
+            //OR
 
-
-
-
+            Console.WriteLine(leetCodeAll.MaxSum(nums));
 
 
 
