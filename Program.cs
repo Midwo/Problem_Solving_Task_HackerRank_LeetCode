@@ -5021,6 +5021,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindKDistantIndices(nums, key, k)));
 
+            ////(2210.) Count Hills and Valleys in an Array (EASY)
+            int[] nums = [2, 4, 1, 1, 6, 5];
+
+            LeetCode_2210 classLeetCode = new LeetCode_2210();
+            Console.WriteLine(classLeetCode.CountHillValley(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountHillValley(nums));
+
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];
             //int k = 2;
@@ -5325,14 +5335,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDistance(s, k));
 
             ////(3487.) Maximum Unique Subarray Sum After Deletion (EASY)
-            int[] nums = [-10, 18, 1, 18, -5];
+            //int[] nums = [-10, 18, 1, 18, -5];
 
-            LeetCode_3487 classLeetCode = new LeetCode_3487();
-            Console.WriteLine(classLeetCode.MaxSum(nums));
+            //LeetCode_3487 classLeetCode = new LeetCode_3487();
+            //Console.WriteLine(classLeetCode.MaxSum(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxSum(nums));
+            //Console.WriteLine(leetCodeAll.MaxSum(nums));
 
 
 
