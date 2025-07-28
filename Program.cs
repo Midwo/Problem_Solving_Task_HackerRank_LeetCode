@@ -4972,6 +4972,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
+            //(2044.) Count Number of Maximum Bitwise-OR Subsets (MEDIUM)
+            int[] nums = [3, 2, 1, 5];
+
+            LeetCode_2044 classLeetCode = new LeetCode_2044();
+            Console.WriteLine(classLeetCode.CountMaxOrSubsets(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountMaxOrSubsets(nums));
+
             ////(2099.) Find Subsequence of Length K With the Largest Sum (EASY)
             //int[] nums = [-1, -2, 3, 4];
             //int k = 3;
@@ -5022,14 +5032,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindKDistantIndices(nums, key, k)));
 
             ////(2210.) Count Hills and Valleys in an Array (EASY)
-            int[] nums = [2, 4, 1, 1, 6, 5];
+            //int[] nums = [2, 4, 1, 1, 6, 5];
 
-            LeetCode_2210 classLeetCode = new LeetCode_2210();
-            Console.WriteLine(classLeetCode.CountHillValley(nums));
+            //LeetCode_2210 classLeetCode = new LeetCode_2210();
+            //Console.WriteLine(classLeetCode.CountHillValley(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountHillValley(nums));
+            //Console.WriteLine(leetCodeAll.CountHillValley(nums));
 
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];

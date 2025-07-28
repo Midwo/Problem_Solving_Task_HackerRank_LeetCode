@@ -12305,7 +12305,39 @@ namespace ProblemSolving
             return sum;
         }
 
+        private int[] _numsTask2044;
+        private int _countMaxValueTask2044;
+        private int _allBitwiseORTask2044;
+        public int CountMaxOrSubsets(int[] nums)
+        {
+            _allBitwiseORTask2044 = 0;
+            _numsTask2044 = nums;
+            _countMaxValueTask2044 = 0;
 
+            foreach (int item in nums)
+            {
+                _allBitwiseORTask2044 |= item;
+            }
+
+            generatePairs(0, 0);
+
+            return _countMaxValueTask2044;
+        }
+        private void generatePairs(int index, int currentBitwiseOR)
+        {
+            if (index == _numsTask2044.Length)
+            {
+                if (currentBitwiseOR == _allBitwiseORTask2044)
+                {
+                    _countMaxValueTask2044++;
+                }
+                return;
+            }
+
+            generatePairs(index + 1, currentBitwiseOR);
+
+            generatePairs(index + 1, currentBitwiseOR | _numsTask2044[index]);
+        }
 
 
 
