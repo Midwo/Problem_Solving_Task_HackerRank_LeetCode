@@ -4973,14 +4973,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
             //(2044.) Count Number of Maximum Bitwise-OR Subsets (MEDIUM)
-            int[] nums = [3, 2, 1, 5];
+            //int[] nums = [3, 2, 1, 5];
 
-            LeetCode_2044 classLeetCode = new LeetCode_2044();
-            Console.WriteLine(classLeetCode.CountMaxOrSubsets(nums));
+            //LeetCode_2044 classLeetCode = new LeetCode_2044();
+            //Console.WriteLine(classLeetCode.CountMaxOrSubsets(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountMaxOrSubsets(nums));
+            //Console.WriteLine(leetCodeAll.CountMaxOrSubsets(nums));
 
             ////(2099.) Find Subsequence of Length K With the Largest Sum (EASY)
             //int[] nums = [-1, -2, 3, 4];
@@ -5086,6 +5086,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MatchPlayersAndTrainers(players, trainers));
+
+            ////(2419.) Longest Subarray With Maximum Bitwise AND (MEDIUM)
+            int[] nums = [100, 5, 5];
+
+            LeetCode_2419 classLeetCode = new LeetCode_2419();
+            Console.WriteLine(classLeetCode.LongestSubarray(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LongestSubarray(nums));
 
             ////(2469.) Convert the Temperature (EASY)
             //double celsius = 36.5;
