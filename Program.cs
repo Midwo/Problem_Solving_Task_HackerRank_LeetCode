@@ -3356,6 +3356,16 @@ namespace ProblemSolving
             //LeetCode_897 classLeetCode = new LeetCode_897();
             //TreeNode result = classLeetCode.IncreasingBST(root);
 
+            ////(898.) Bitwise ORs of Subarrays (MEDIUM) 
+            int[] arr = [1, 1, 2];
+
+            LeetCode_898 classLeetCode = new LeetCode_898();
+            Console.WriteLine(classLeetCode.SubarrayBitwiseORs(arr));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SubarrayBitwiseORs(arr));
+
             ////(905.) Sort Array By Parity (EASY)
             //int[] nums = [3, 1, 2, 4];
 
@@ -5088,14 +5098,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MatchPlayersAndTrainers(players, trainers));
 
             ////(2419.) Longest Subarray With Maximum Bitwise AND (MEDIUM)
-            int[] nums = [100, 5, 5];
+            //int[] nums = [100, 5, 5];
 
-            LeetCode_2419 classLeetCode = new LeetCode_2419();
-            Console.WriteLine(classLeetCode.LongestSubarray(nums));
+            //LeetCode_2419 classLeetCode = new LeetCode_2419();
+            //Console.WriteLine(classLeetCode.LongestSubarray(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LongestSubarray(nums));
+            //Console.WriteLine(leetCodeAll.LongestSubarray(nums));
 
             ////(2469.) Convert the Temperature (EASY)
             //double celsius = 36.5;
