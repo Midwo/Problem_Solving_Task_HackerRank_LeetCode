@@ -3357,14 +3357,14 @@ namespace ProblemSolving
             //TreeNode result = classLeetCode.IncreasingBST(root);
 
             ////(898.) Bitwise ORs of Subarrays (MEDIUM) 
-            int[] arr = [1, 1, 2];
+            //int[] arr = [1, 1, 2];
 
-            LeetCode_898 classLeetCode = new LeetCode_898();
-            Console.WriteLine(classLeetCode.SubarrayBitwiseORs(arr));
+            //LeetCode_898 classLeetCode = new LeetCode_898();
+            //Console.WriteLine(classLeetCode.SubarrayBitwiseORs(arr));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SubarrayBitwiseORs(arr));
+            //Console.WriteLine(leetCodeAll.SubarrayBitwiseORs(arr));
 
             ////(905.) Sort Array By Parity (EASY)
             //int[] nums = [3, 1, 2, 4];
@@ -5116,6 +5116,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
+
+            ////(2561.) Rearranging Fruits (HARD)
+            int[] basket1 = [4, 2, 2, 2];
+            int[] basket2 = [1, 4, 1, 2];
+
+            LeetCode_2561 classLeetCode = new LeetCode_2561();
+            Console.WriteLine(classLeetCode.MinCost(basket1, basket2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinCost(basket1, basket2));
 
             ////(2566.) Maximum Difference by Remapping a Digit (EASY)
             //int num = 11891;
