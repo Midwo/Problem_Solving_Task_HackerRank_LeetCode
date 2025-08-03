@@ -5003,6 +5003,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.MaxSubsequence(nums, k)));
 
+            ////(2106.) Maximum Fruits Harvested After at Most K Steps (HARD)
+            int[][] fruits = [[2, 8], [6, 3], [8, 6]];
+            int startPos = 5;
+            int k = 4;
+
+            LeetCode_2106 classLeetCode = new LeetCode_2106();
+            Console.WriteLine(classLeetCode.MaxTotalFruits(fruits, startPos, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxTotalFruits(fruits, startPos, k));
+
             ////(2138.) Divide a String Into Groups of Size k (EASY)
             //string s = "abcdefghij";
             //int k = 3;
@@ -5118,15 +5130,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
 
             ////(2561.) Rearranging Fruits (HARD)
-            int[] basket1 = [4, 2, 2, 2];
-            int[] basket2 = [1, 4, 1, 2];
+            //int[] basket1 = [4, 2, 2, 2];
+            //int[] basket2 = [1, 4, 1, 2];
 
-            LeetCode_2561 classLeetCode = new LeetCode_2561();
-            Console.WriteLine(classLeetCode.MinCost(basket1, basket2));
+            //LeetCode_2561 classLeetCode = new LeetCode_2561();
+            //Console.WriteLine(classLeetCode.MinCost(basket1, basket2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinCost(basket1, basket2));
+            //Console.WriteLine(leetCodeAll.MinCost(basket1, basket2));
 
             ////(2566.) Maximum Difference by Remapping a Digit (EASY)
             //int num = 11891;
