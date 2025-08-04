@@ -12579,8 +12579,31 @@ namespace ProblemSolving
 
             return maxCount;
         }
+        public int FinalValueAfterOperations(string[] operations)
+        {
+            int result = 0;
 
+            for (int i = 0; i < operations.Length; i++)
+            {
+                switch (operations[i])
+                {
+                    case "++X":
+                        result++;
+                        break;
+                    case "X++":
+                        result++;
+                        break;
+                    case "--X":
+                        result--;
+                        break;
+                    case "X--":
+                        result--;
+                        break;
+                }
+            }
 
+            return result;
+        }
 
 
 

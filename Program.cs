@@ -3367,14 +3367,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SubarrayBitwiseORs(arr));
 
             ////(904.) Fruit Into Baskets (MEDIUM)
-            int[] fruits = [0, 1, 1, 5, 1, 5, 5, 1, 5, 5, 1, 5, 11, 5, 11, 11, 5, 5, 11, 5, 11, 11, 11, 11, 11, 11, 22, 11, 11, 11];
-            
-            LeetCode_904 classLeetCode = new LeetCode_904();
-            Console.WriteLine(classLeetCode.TotalFruit(fruits));
+            //int[] fruits = [0, 1, 1, 5, 1, 5, 5, 1, 5, 5, 1, 5, 11, 5, 11, 11, 5, 5, 11, 5, 11, 11, 11, 11, 11, 11, 22, 11, 11, 11];
 
-            //OR
+            //LeetCode_904 classLeetCode = new LeetCode_904();
+            //Console.WriteLine(classLeetCode.TotalFruit(fruits));
 
-            Console.WriteLine(leetCodeAll.TotalFruit(fruits));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.TotalFruit(fruits));
 
             ////(905.) Sort Array By Parity (EASY)
             //int[] nums = [3, 1, 2, 4];
@@ -4981,6 +4981,16 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1978 classLeetCode = new LeetCode_1978();
+
+            ////(2011.) Final Value of Variable After Performing Operations (EASY)
+            string[] operations = ["X++", "++X", "--X", "X--"];
+
+            LeetCode_2011 classLeetCode = new LeetCode_2011();
+            Console.WriteLine(classLeetCode.FinalValueAfterOperations(operations));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FinalValueAfterOperations(operations));
 
             ////(2016.) Maximum Difference Between Increasing Elements (EASY)
             //int[] nums = [999, 997, 980, 976, 948, 940, 938, 928, 924, 917, 907, 907, 881, 878, 864, 862, 859, 857, 848, 840, 824, 824, 824, 805, 802, 798, 788, 777, 775, 766, 755, 748, 735, 732, 727, 705, 700, 697, 693, 679, 676, 644, 634, 624, 599, 596, 588, 583, 562, 558, 553, 539, 537, 536, 509, 491, 485, 483, 454, 449, 438, 425, 403, 368, 345, 327, 287, 285, 270, 263, 255, 248, 235, 234, 224, 221, 201, 189, 187, 183, 179, 168, 155, 153, 150, 144, 107, 102, 102, 87, 80, 57, 55, 49, 48, 45, 26, 26, 23, 15];
