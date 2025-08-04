@@ -3366,6 +3366,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SubarrayBitwiseORs(arr));
 
+            ////(904.) Fruit Into Baskets (MEDIUM)
+            int[] fruits = [0, 1, 1, 5, 1, 5, 5, 1, 5, 5, 1, 5, 11, 5, 11, 11, 5, 5, 11, 5, 11, 11, 11, 11, 11, 11, 22, 11, 11, 11];
+            
+            LeetCode_904 classLeetCode = new LeetCode_904();
+            Console.WriteLine(classLeetCode.TotalFruit(fruits));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.TotalFruit(fruits));
+
             ////(905.) Sort Array By Parity (EASY)
             //int[] nums = [3, 1, 2, 4];
 
@@ -5004,16 +5014,16 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.MaxSubsequence(nums, k)));
 
             ////(2106.) Maximum Fruits Harvested After at Most K Steps (HARD)
-            int[][] fruits = [[2, 8], [6, 3], [8, 6]];
-            int startPos = 5;
-            int k = 4;
+            //int[][] fruits = [[2, 8], [6, 3], [8, 6]];
+            //int startPos = 5;
+            //int k = 4;
 
-            LeetCode_2106 classLeetCode = new LeetCode_2106();
-            Console.WriteLine(classLeetCode.MaxTotalFruits(fruits, startPos, k));
+            //LeetCode_2106 classLeetCode = new LeetCode_2106();
+            //Console.WriteLine(classLeetCode.MaxTotalFruits(fruits, startPos, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxTotalFruits(fruits, startPos, k));
+            //Console.WriteLine(leetCodeAll.MaxTotalFruits(fruits, startPos, k));
 
             ////(2138.) Divide a String Into Groups of Size k (EASY)
             //string s = "abcdefghij";
