@@ -4983,14 +4983,14 @@ namespace ProblemSolving
             //LeetCode_1978 classLeetCode = new LeetCode_1978();
 
             ////(2011.) Final Value of Variable After Performing Operations (EASY)
-            string[] operations = ["X++", "++X", "--X", "X--"];
+            //string[] operations = ["X++", "++X", "--X", "X--"];
 
-            LeetCode_2011 classLeetCode = new LeetCode_2011();
-            Console.WriteLine(classLeetCode.FinalValueAfterOperations(operations));
+            //LeetCode_2011 classLeetCode = new LeetCode_2011();
+            //Console.WriteLine(classLeetCode.FinalValueAfterOperations(operations));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FinalValueAfterOperations(operations));
+            //Console.WriteLine(leetCodeAll.FinalValueAfterOperations(operations));
 
             ////(2016.) Maximum Difference Between Increasing Elements (EASY)
             //int[] nums = [999, 997, 980, 976, 948, 940, 938, 928, 924, 917, 907, 907, 881, 878, 864, 862, 859, 857, 848, 840, 824, 824, 824, 805, 802, 798, 788, 777, 775, 766, 755, 748, 735, 732, 727, 705, 700, 697, 693, 679, 676, 644, 634, 624, 599, 596, 588, 583, 562, 558, 553, 539, 537, 536, 509, 491, 485, 483, 454, 449, 438, 425, 403, 368, 345, 327, 287, 285, 270, 263, 255, 248, 235, 234, 224, 221, 201, 189, 187, 183, 179, 168, 155, 153, 150, 144, 107, 102, 102, 87, 80, 57, 55, 49, 48, 45, 26, 26, 23, 15];
@@ -5060,6 +5060,39 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.PivotArray(nums, pivot)));
+
+            ////(2181.) Merge Nodes in Between Zeros (MEDIUM)
+            //ListNode head = new ListNode(0);
+            //head.next = new ListNode(3);
+            //head.next.next = new ListNode(1);
+            //head.next.next.next = new ListNode(0);
+            //head.next.next.next.next = new ListNode(4);
+            //head.next.next.next.next.next = new ListNode(5);
+            //head.next.next.next.next.next.next = new ListNode(2);
+            //head.next.next.next.next.next.next.next = new ListNode(0);
+            
+            ListNode head = new ListNode(0);
+            head.next = new ListNode(24);
+            head.next.next = new ListNode(14);
+            head.next.next.next = new ListNode(0);
+
+            LeetCode_2181 classLeetCode = new LeetCode_2181();
+            ListNode result = classLeetCode.MergeNodes(head);
+
+            while (result != null) 
+            {
+                Console.WriteLine(result.val);
+                result = result.next;
+            }
+
+            //OR
+
+            ListNode result1 = leetCodeAll.MergeNodes(head);
+            while (result1 != null)
+            {
+                Console.WriteLine(result1.val);
+                result1 = result1.next;
+            }
 
             ////(2200.) Find All K-Distant Indices in an Array (EASY)
             //int[] nums = [2, 1, 1, 1, 2];
