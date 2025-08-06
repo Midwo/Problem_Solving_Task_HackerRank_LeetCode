@@ -5070,29 +5070,29 @@ namespace ProblemSolving
             //head.next.next.next.next.next = new ListNode(5);
             //head.next.next.next.next.next.next = new ListNode(2);
             //head.next.next.next.next.next.next.next = new ListNode(0);
-            
-            ListNode head = new ListNode(0);
-            head.next = new ListNode(24);
-            head.next.next = new ListNode(14);
-            head.next.next.next = new ListNode(0);
 
-            LeetCode_2181 classLeetCode = new LeetCode_2181();
-            ListNode result = classLeetCode.MergeNodes(head);
+            //ListNode head = new ListNode(0);
+            //head.next = new ListNode(24);
+            //head.next.next = new ListNode(14);
+            //head.next.next.next = new ListNode(0);
 
-            while (result != null) 
-            {
-                Console.WriteLine(result.val);
-                result = result.next;
-            }
+            //LeetCode_2181 classLeetCode = new LeetCode_2181();
+            //ListNode result = classLeetCode.MergeNodes(head);
 
-            //OR
+            //while (result != null) 
+            //{
+            //    Console.WriteLine(result.val);
+            //    result = result.next;
+            //}
 
-            ListNode result1 = leetCodeAll.MergeNodes(head);
-            while (result1 != null)
-            {
-                Console.WriteLine(result1.val);
-                result1 = result1.next;
-            }
+            ////OR
+
+            //ListNode result1 = leetCodeAll.MergeNodes(head);
+            //while (result1 != null)
+            //{
+            //    Console.WriteLine(result1.val);
+            //    result1 = result1.next;
+            //}
 
             ////(2200.) Find All K-Distant Indices in an Array (EASY)
             //int[] nums = [2, 1, 1, 1, 2];
@@ -5439,6 +5439,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxDistance(s, k));
+
+            ////(3477.) Fruits Into Baskets II (EASY)
+            int[] fruits = [4, 2, 5];
+            int[] baskets = [3, 5, 4];
+
+            LeetCode_3477 classLeetCode = new LeetCode_3477();
+            Console.WriteLine(classLeetCode.NumOfUnplacedFruits(fruits, baskets));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumOfUnplacedFruits(fruits, baskets));
 
             ////(3487.) Maximum Unique Subarray Sum After Deletion (EASY)
             //int[] nums = [-10, 18, 1, 18, -5];

@@ -12651,8 +12651,36 @@ namespace ProblemSolving
 
             return head;
         }
+        public int NumOfUnplacedFruits(int[] fruits, int[] baskets)
+        {
+            int result = fruits.Length;
+            int lengthBaskets = baskets.Length;
 
+            int indexBaskets = 0;
+            int currFruit = 0;
 
+            for (int i = 0; i < fruits.Length; i++)
+            {
+                currFruit = fruits[i];
+                indexBaskets = 0;
+                while (indexBaskets < lengthBaskets)
+                {
+                    if (currFruit <= baskets[indexBaskets])
+                    {
+                        result--;
+                        baskets[indexBaskets] = int.MinValue;
+                        break;
+                    }
+                    else
+                    {
+                        indexBaskets++;
+                    }
+                }
+
+            }
+
+            return result;
+        }
 
 
 
