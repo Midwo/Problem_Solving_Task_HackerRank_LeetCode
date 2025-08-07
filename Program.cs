@@ -5441,10 +5441,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDistance(s, k));
 
             ////(3477.) Fruits Into Baskets II (EASY)
+            //int[] fruits = [4, 2, 5];
+            //int[] baskets = [3, 5, 4];
+
+            //LeetCode_3477 classLeetCode = new LeetCode_3477();
+            //Console.WriteLine(classLeetCode.NumOfUnplacedFruits(fruits, baskets));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.NumOfUnplacedFruits(fruits, baskets));
+
+            ////(3479.) Fruits Into Baskets III (MEDIUM)
             int[] fruits = [4, 2, 5];
             int[] baskets = [3, 5, 4];
 
-            LeetCode_3477 classLeetCode = new LeetCode_3477();
+            LeetCode_3479 classLeetCode = new LeetCode_3479();
             Console.WriteLine(classLeetCode.NumOfUnplacedFruits(fruits, baskets));
 
             //OR
