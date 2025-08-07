@@ -5440,6 +5440,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxDistance(s, k));
 
+            ////(3467.) Transform Array by Parity (EASY)
+            int[] nums = [4, 3, 2, 1];
+
+            LeetCode_3467 classLeetCode = new LeetCode_3467();
+            int[] result = classLeetCode.TransformArray(nums);
+
+            Console.WriteLine(string.Join(',', result));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.TransformArray(nums)));
+            
             ////(3477.) Fruits Into Baskets II (EASY)
             //int[] fruits = [4, 2, 5];
             //int[] baskets = [3, 5, 4];
@@ -5452,15 +5464,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumOfUnplacedFruits(fruits, baskets));
 
             ////(3479.) Fruits Into Baskets III (MEDIUM)
-            int[] fruits = [4, 2, 5];
-            int[] baskets = [3, 5, 4];
+            //int[] fruits = [4, 2, 5];
+            //int[] baskets = [3, 5, 4];
 
-            LeetCode_3479 classLeetCode = new LeetCode_3479();
-            Console.WriteLine(classLeetCode.NumOfUnplacedFruits(fruits, baskets));
+            //LeetCode_3479 classLeetCode = new LeetCode_3479();
+            //Console.WriteLine(classLeetCode.NumOfUnplacedFruits(fruits, baskets));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumOfUnplacedFruits(fruits, baskets));
+            //Console.WriteLine(leetCodeAll.NumOfUnplacedFruits(fruits, baskets));
 
             ////(3487.) Maximum Unique Subarray Sum After Deletion (EASY)
             //int[] nums = [-10, 18, 1, 18, -5];

@@ -12681,8 +12681,24 @@ namespace ProblemSolving
 
             return result;
         }
+        public int[] TransformArray(int[] nums)
+        {
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] % 2 != 0)
+                {
+                    nums[i] = 1;
+                }
+                else
+                {
+                    nums[i] = 0;
+                }
+            }
 
+            Array.Sort(nums);
 
+            return nums;
+        }
 
 
 
