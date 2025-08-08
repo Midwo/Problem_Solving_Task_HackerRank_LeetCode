@@ -12700,7 +12700,39 @@ namespace ProblemSolving
             return nums;
         }
 
+        private double[][] cacheTask808;
+        public double SoupServings(int n)
+        {
+            if (n > 4800)
+            {
+                return 1;
+            }
+            else
+            {
+                cacheTask808 = new double[192][];
+                for (int i = 0; i < 192; i++)
+                {
+                    cacheTask808[i] = new double[192];
+                }
 
+                return SoupServingsDFS((n + 24) / 25, (n + 24) / 25);
+            }
+        }
+
+        private double SoupServingsDFS(int typeA, int typeB)
+        {
+            if (typeA <= 0 && typeB <= 0)
+                return 0.5;
+            if (typeA <= 0)
+                return 1.0;
+            if (typeB <= 0)
+                return 0.0;
+            if (cacheTask808[typeA][typeB] > 0)
+                return cacheTask808[typeA][typeB];
+            return cacheTask808[typeA][typeB] =
+                       0.25 * (SoupServingsDFS(typeA - 4, typeB) + SoupServingsDFS(typeA - 3, typeB - 1) +
+                       SoupServingsDFS(typeA - 2, typeB - 2) + SoupServingsDFS(typeA - 1, typeB - 3));
+        }
 
 
 

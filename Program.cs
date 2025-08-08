@@ -3076,6 +3076,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.NumberOfLines(widths, s)));
 
+            ////(808.) Soup Servings (MEDIUM)
+            int n = 100;
+
+            LeetCode_808 classLeetCode = new LeetCode_808();
+            Console.WriteLine(classLeetCode.SoupServings(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SoupServings(n));
+
             ////(812.) Largest Triangle Area (EASY)
             //int[][] points = [[8, 3], [5, 6], [3, 5]];
 
@@ -5441,17 +5451,17 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDistance(s, k));
 
             ////(3467.) Transform Array by Parity (EASY)
-            int[] nums = [4, 3, 2, 1];
+            //int[] nums = [4, 3, 2, 1];
 
-            LeetCode_3467 classLeetCode = new LeetCode_3467();
-            int[] result = classLeetCode.TransformArray(nums);
+            //LeetCode_3467 classLeetCode = new LeetCode_3467();
+            //int[] result = classLeetCode.TransformArray(nums);
 
-            Console.WriteLine(string.Join(',', result));
+            //Console.WriteLine(string.Join(',', result));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.TransformArray(nums)));
-            
+            //Console.WriteLine(string.Join(',', leetCodeAll.TransformArray(nums)));
+
             ////(3477.) Fruits Into Baskets II (EASY)
             //int[] fruits = [4, 2, 5];
             //int[] baskets = [3, 5, 4];
