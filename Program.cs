@@ -3077,14 +3077,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.NumberOfLines(widths, s)));
 
             ////(808.) Soup Servings (MEDIUM)
-            int n = 100;
+            //int n = 100;
 
-            LeetCode_808 classLeetCode = new LeetCode_808();
-            Console.WriteLine(classLeetCode.SoupServings(n));
+            //LeetCode_808 classLeetCode = new LeetCode_808();
+            //Console.WriteLine(classLeetCode.SoupServings(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SoupServings(n));
+            //Console.WriteLine(leetCodeAll.SoupServings(n));
 
             ////(812.) Largest Triangle Area (EASY)
             //int[][] points = [[8, 3], [5, 6], [3, 5]];
@@ -5191,6 +5191,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
+
+            ////(2529.) Maximum Count of Positive Integer and Negative Integer (EASY)
+            int[] nums = [-2, -1, -1, 0, 0, 0];
+
+            LeetCode_2529 classLeetCode = new LeetCode_2529();
+            Console.WriteLine(classLeetCode.MaximumCount(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumCount(nums));
 
             ////(2561.) Rearranging Fruits (HARD)
             //int[] basket1 = [4, 2, 2, 2];
