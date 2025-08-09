@@ -1576,13 +1576,13 @@ namespace ProblemSolving
             //    Console.WriteLine(item);
             //}
 
-            ////(231.) Power of Two (EASY)
-            //int n = -2147483648;
-            //LeetCode_231 classCodeAll = new LeetCode_231();
-            //Console.WriteLine(classCodeAll.IsPowerOfTwo(n));
+            //(231.) Power of Two (EASY)
+            int n = -2147483648;
+            LeetCode_231 classCodeAll = new LeetCode_231();
+            Console.WriteLine(classCodeAll.IsPowerOfTwo(n));
 
-            ////OR
-            //Console.WriteLine(leetCodeAll.IsPowerOfTwo(n));
+            //OR
+            Console.WriteLine(leetCodeAll.IsPowerOfTwo(n));
 
             ////(232.) Implement Queue using Stacks (EASY)
             //LeetCode_232_MyQueue myQueue = new LeetCode_232_MyQueue();
@@ -5193,14 +5193,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
 
             ////(2529.) Maximum Count of Positive Integer and Negative Integer (EASY)
-            int[] nums = [-2, -1, -1, 0, 0, 0];
+            //int[] nums = [-2, -1, -1, 0, 0, 0];
 
-            LeetCode_2529 classLeetCode = new LeetCode_2529();
-            Console.WriteLine(classLeetCode.MaximumCount(nums));
+            //LeetCode_2529 classLeetCode = new LeetCode_2529();
+            //Console.WriteLine(classLeetCode.MaximumCount(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumCount(nums));
+            //Console.WriteLine(leetCodeAll.MaximumCount(nums));
 
             ////(2561.) Rearranging Fruits (HARD)
             //int[] basket1 = [4, 2, 2, 2];
