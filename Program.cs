@@ -1577,12 +1577,12 @@ namespace ProblemSolving
             //}
 
             //(231.) Power of Two (EASY)
-            int n = -2147483648;
-            LeetCode_231 classCodeAll = new LeetCode_231();
-            Console.WriteLine(classCodeAll.IsPowerOfTwo(n));
+            //int n = -2147483648;
+            //LeetCode_231 classCodeAll = new LeetCode_231();
+            //Console.WriteLine(classCodeAll.IsPowerOfTwo(n));
 
-            //OR
-            Console.WriteLine(leetCodeAll.IsPowerOfTwo(n));
+            ////OR
+            //Console.WriteLine(leetCodeAll.IsPowerOfTwo(n));
 
             ////(232.) Implement Queue using Stacks (EASY)
             //LeetCode_232_MyQueue myQueue = new LeetCode_232_MyQueue();
@@ -3331,6 +3331,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FairCandySwap(aliceSizes, bobSizes)));
+
+            ////(869.) Reordered Power of 2 (MEDIUM)
+            int n = 111;
+
+            LeetCode_869 classLeetCode = new LeetCode_869();
+            Console.WriteLine(classLeetCode.ReorderedPowerOf2(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ReorderedPowerOf2(n));
 
             ////(892.) Surface Area of 3D Shapes (EASY)
             //int[][] grid = [[1, 2], [3, 4]];
