@@ -3333,14 +3333,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FairCandySwap(aliceSizes, bobSizes)));
 
             ////(869.) Reordered Power of 2 (MEDIUM)
-            int n = 111;
+            //int n = 111;
 
-            LeetCode_869 classLeetCode = new LeetCode_869();
-            Console.WriteLine(classLeetCode.ReorderedPowerOf2(n));
+            //LeetCode_869 classLeetCode = new LeetCode_869();
+            //Console.WriteLine(classLeetCode.ReorderedPowerOf2(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ReorderedPowerOf2(n));
+            //Console.WriteLine(leetCodeAll.ReorderedPowerOf2(n));
 
             ////(892.) Surface Area of 3D Shapes (EASY)
             //int[][] grid = [[1, 2], [3, 4]];
@@ -5191,6 +5191,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.LongestSubarray(nums));
+
+            ////(2438.) Range Product Queries of Powers (MEDIUM)
+            int n = 15;
+            int[][] queries = [[0,1],[2, 2],[0,3]];
+
+            LeetCode_2438 classLeetCode = new LeetCode_2438();
+            Console.WriteLine(string.Join(',', classLeetCode.ProductQueries(n, queries)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ProductQueries(n, queries)));
+
 
             ////(2469.) Convert the Temperature (EASY)
             //double celsius = 36.5;
