@@ -5193,16 +5193,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LongestSubarray(nums));
 
             ////(2438.) Range Product Queries of Powers (MEDIUM)
-            int n = 15;
-            int[][] queries = [[0,1],[2, 2],[0,3]];
+            //int n = 15;
+            //int[][] queries = [[0,1],[2, 2],[0,3]];
 
-            LeetCode_2438 classLeetCode = new LeetCode_2438();
-            Console.WriteLine(string.Join(',', classLeetCode.ProductQueries(n, queries)));
+            //LeetCode_2438 classLeetCode = new LeetCode_2438();
+            //Console.WriteLine(string.Join(',', classLeetCode.ProductQueries(n, queries)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ProductQueries(n, queries)));
-
+            //Console.WriteLine(string.Join(',', leetCodeAll.ProductQueries(n, queries)));
 
             ////(2469.) Convert the Temperature (EASY)
             //double celsius = 36.5;
@@ -5384,6 +5383,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
+
+            ////(3190.) Find Minimum Operations to Make All Elements Divisible by Three (EASY)
+            int[] nums = [1, 2, 3, 4];
+
+            LeetCode_3190 classLeetCode = new LeetCode_3190();
+            Console.WriteLine(classLeetCode.MinimumOperations(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumOperations(nums));
 
             ////(3201.) Find the Maximum Length of Valid Subsequence I (MEDIUM)
             //int[] nums = [1, 2, 1, 1, 2, 1, 2];
