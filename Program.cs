@@ -4568,15 +4568,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDiff(num));
 
             ////(1470.) Shuffle the Array (EASY)
-            int[] nums = [1, 2, 3, 4, 4, 3, 2, 1];
-            int n = 4;
+            //int[] nums = [1, 2, 3, 4, 4, 3, 2, 1];
+            //int n = 4;
 
-            LeetCode_1470 classLeetCode = new LeetCode_1470();
-            Console.WriteLine(string.Join(',', classLeetCode.Shuffle(nums, n)));
+            //LeetCode_1470 classLeetCode = new LeetCode_1470();
+            //Console.WriteLine(string.Join(',', classLeetCode.Shuffle(nums, n)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.Shuffle(nums, n)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.Shuffle(nums, n)));
 
             ////(1484.) Group Sold Products By The Date (EASY)
             //string SqlQuery =
@@ -5146,6 +5146,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountHillValley(nums));
+
+            ////(2264.) Largest 3-Same-Digit Number in String (EASY)
+            string num = "42352338";
+
+            LeetCode_2264 classLeetCode = new LeetCode_2264();
+            Console.WriteLine(classLeetCode.LargestGoodInteger(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LargestGoodInteger(num));
 
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];
