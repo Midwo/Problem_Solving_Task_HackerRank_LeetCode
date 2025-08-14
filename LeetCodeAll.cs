@@ -12880,8 +12880,22 @@ namespace ProblemSolving
 
             return result;
         }
+        public int[] Shuffle(int[] nums, int n)
+        {
+            int[] result = new int[nums.Length];
+            int index = n;
+            int indexInsert = 0;
 
+            for (int i = 0; i < n; i++)
+            {
+                result[indexInsert] = nums[i];
+                result[indexInsert + 1] = nums[index];
+                indexInsert += 2;
+                index++;
+            }
 
+            return result;
+        }
 
 
 

@@ -4567,6 +4567,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxDiff(num));
 
+            ////(1470.) Shuffle the Array (EASY)
+            int[] nums = [1, 2, 3, 4, 4, 3, 2, 1];
+            int n = 4;
+
+            LeetCode_1470 classLeetCode = new LeetCode_1470();
+            Console.WriteLine(string.Join(',', classLeetCode.Shuffle(nums, n)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.Shuffle(nums, n)));
+
             ////(1484.) Group Sold Products By The Date (EASY)
             //string SqlQuery =
             //    @"
@@ -5385,14 +5396,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
 
             ////(3190.) Find Minimum Operations to Make All Elements Divisible by Three (EASY)
-            int[] nums = [1, 2, 3, 4];
+            //int[] nums = [1, 2, 3, 4];
 
-            LeetCode_3190 classLeetCode = new LeetCode_3190();
-            Console.WriteLine(classLeetCode.MinimumOperations(nums));
+            //LeetCode_3190 classLeetCode = new LeetCode_3190();
+            //Console.WriteLine(classLeetCode.MinimumOperations(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumOperations(nums));
+            //Console.WriteLine(leetCodeAll.MinimumOperations(nums));
 
             ////(3201.) Find the Maximum Length of Valid Subsequence I (MEDIUM)
             //int[] nums = [1, 2, 1, 1, 2, 1, 2];
