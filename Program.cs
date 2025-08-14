@@ -4729,6 +4729,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1683 classLeetCode = new LeetCode_1683();
 
+            ////(1689.) Partitioning Into Minimum Number Of Deci-Binary Numbers (MEDIUM)
+            string n = "32";
+
+            LeetCode_1689 classLeetCode = new LeetCode_1689();
+            Console.WriteLine(classLeetCode.MinPartitions(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinPartitions(n));
+
             ////(1695.) Maximum Erasure Value (MEDIUM)
             //int[] nums = [5, 2, 1, 2, 5, 2, 1, 2, 5];
 
@@ -5148,14 +5158,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountHillValley(nums));
 
             ////(2264.) Largest 3-Same-Digit Number in String (EASY)
-            string num = "42352338";
+            //string num = "42352338";
 
-            LeetCode_2264 classLeetCode = new LeetCode_2264();
-            Console.WriteLine(classLeetCode.LargestGoodInteger(num));
+            //LeetCode_2264 classLeetCode = new LeetCode_2264();
+            //Console.WriteLine(classLeetCode.LargestGoodInteger(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LargestGoodInteger(num));
+            //Console.WriteLine(leetCodeAll.LargestGoodInteger(num));
 
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];

@@ -12946,8 +12946,24 @@ namespace ProblemSolving
 
             return new string(bestChar, 3);
         }
+        public int MinPartitions(string n)
+        {
+            char currHighChar = n[0];
 
+            for (int i = 1; i < n.Length; i++)
+            {
+                if (n[i] > currHighChar)
+                {
+                    currHighChar = n[i];
+                    if (currHighChar == '9')
+                    {
+                        return 9;
+                    }
+                }
+            }
 
+            return currHighChar - '0';
+        }
 
 
 
