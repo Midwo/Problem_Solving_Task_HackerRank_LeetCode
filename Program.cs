@@ -4717,6 +4717,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1667 classLeetCode = new LeetCode_1667();
 
+            ////(1672.) Richest Customer Wealth (EASY)
+            int[][] accounts = [[1,2,3], [3,2,1]];
+
+            LeetCode_1672 classLeetCode = new LeetCode_1672();
+            Console.WriteLine(classLeetCode.MaximumWealth(accounts));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumWealth(accounts));
+
             ////1683. Invalid Tweets (EASY)
             //string SqlQuery =
             //    @"
@@ -4730,14 +4740,14 @@ namespace ProblemSolving
             //LeetCode_1683 classLeetCode = new LeetCode_1683();
 
             ////(1689.) Partitioning Into Minimum Number Of Deci-Binary Numbers (MEDIUM)
-            string n = "32";
+            //string n = "32";
 
-            LeetCode_1689 classLeetCode = new LeetCode_1689();
-            Console.WriteLine(classLeetCode.MinPartitions(n));
+            //LeetCode_1689 classLeetCode = new LeetCode_1689();
+            //Console.WriteLine(classLeetCode.MinPartitions(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinPartitions(n));
+            //Console.WriteLine(leetCodeAll.MinPartitions(n));
 
             ////(1695.) Maximum Erasure Value (MEDIUM)
             //int[] nums = [5, 2, 1, 2, 5, 2, 1, 2, 5];

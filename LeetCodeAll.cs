@@ -12964,8 +12964,24 @@ namespace ProblemSolving
 
             return currHighChar - '0';
         }
+        public int MaximumWealth(int[][] accounts)
+        {
+            int maxWealth = int.MinValue;
+            int currWealth = 0;
 
+            for (int i = 0; i < accounts.Length; i++)
+            {
+                currWealth = 0;
+                for (int j = 0; j < accounts[i].Length; j++)
+                {
+                    currWealth += accounts[i][j];
+                }
 
+                maxWealth = Math.Max(maxWealth, currWealth);
+            }
+
+            return maxWealth;
+        }
 
 
 
