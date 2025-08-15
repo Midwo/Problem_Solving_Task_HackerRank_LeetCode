@@ -5456,15 +5456,25 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumLength(nums, k));
 
-            ////(3289.) The Two Sneaky Numbers of Digitville (EASY)
-            int[] nums = [7, 1, 5, 4, 3, 4, 6, 0, 9, 5, 8, 2];
+            ////(3280.) Convert Date to Binary (EASY)
+            string date = "2080-02-29";
 
-            LeetCode_3289 classLeetCode = new LeetCode_3289();
-            Console.WriteLine(string.Join(',',classLeetCode.GetSneakyNumbers(nums)));
+            LeetCode_3280 classLeetCode = new LeetCode_3280();
+            Console.WriteLine(classLeetCode.ConvertDateToBinary(date));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.GetSneakyNumbers(nums)));
+            Console.WriteLine(leetCodeAll.ConvertDateToBinary(date));
+
+            ////(3289.) The Two Sneaky Numbers of Digitville (EASY)
+            //int[] nums = [7, 1, 5, 4, 3, 4, 6, 0, 9, 5, 8, 2];
+
+            //LeetCode_3289 classLeetCode = new LeetCode_3289();
+            //Console.WriteLine(string.Join(',',classLeetCode.GetSneakyNumbers(nums)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.GetSneakyNumbers(nums)));
 
             ////(3304.) Find the K-th Character in String Game I (EASY)
             //int k = 5;
