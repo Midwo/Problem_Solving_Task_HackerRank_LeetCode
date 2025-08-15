@@ -13018,6 +13018,38 @@ namespace ProblemSolving
 
             return sb.ToString();
         }
+        public int CountConsistentStrings(string allowed, string[] words)
+        {
+            List<char> allowedCharList = allowed.ToList();
+            int result = 0;
+            bool allGood = true;
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                allGood = true;
+                for (int j = 0; j < words[i].Length; j++)
+                {
+                    if (!allowedCharList.Contains(words[i][j]))
+                    {
+                        allGood = false;
+                        break;
+                    }
+                }
+                if (allGood)
+                {
+                    result++;
+                }
+            }
+
+            return result;
+        }
+
+
+
+
+
+
+
 
 
 

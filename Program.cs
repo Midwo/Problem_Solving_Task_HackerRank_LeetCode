@@ -4739,6 +4739,17 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1683 classLeetCode = new LeetCode_1683();
 
+            ////(1684.) Count the Number of Consistent Strings (EASY)
+            string allowed = "ab";
+            string[] words = ["ad","bd","aaab","baa","badab"];
+
+            LeetCode_1684 classLeetCode = new LeetCode_1684();
+            Console.WriteLine(classLeetCode.CountConsistentStrings(allowed, words));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountConsistentStrings(allowed, words));
+
             ////(1689.) Partitioning Into Minimum Number Of Deci-Binary Numbers (MEDIUM)
             //string n = "32";
 
@@ -5457,14 +5468,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumLength(nums, k));
 
             ////(3280.) Convert Date to Binary (EASY)
-            string date = "2080-02-29";
+            //string date = "2080-02-29";
 
-            LeetCode_3280 classLeetCode = new LeetCode_3280();
-            Console.WriteLine(classLeetCode.ConvertDateToBinary(date));
+            //LeetCode_3280 classLeetCode = new LeetCode_3280();
+            //Console.WriteLine(classLeetCode.ConvertDateToBinary(date));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ConvertDateToBinary(date));
+            //Console.WriteLine(leetCodeAll.ConvertDateToBinary(date));
 
             ////(3289.) The Two Sneaky Numbers of Digitville (EASY)
             //int[] nums = [7, 1, 5, 4, 3, 4, 6, 0, 9, 5, 8, 2];
