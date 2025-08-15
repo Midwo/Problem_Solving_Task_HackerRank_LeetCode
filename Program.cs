@@ -4718,14 +4718,14 @@ namespace ProblemSolving
             //LeetCode_1667 classLeetCode = new LeetCode_1667();
 
             ////(1672.) Richest Customer Wealth (EASY)
-            int[][] accounts = [[1,2,3], [3,2,1]];
+            //int[][] accounts = [[1,2,3], [3,2,1]];
 
-            LeetCode_1672 classLeetCode = new LeetCode_1672();
-            Console.WriteLine(classLeetCode.MaximumWealth(accounts));
+            //LeetCode_1672 classLeetCode = new LeetCode_1672();
+            //Console.WriteLine(classLeetCode.MaximumWealth(accounts));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumWealth(accounts));
+            //Console.WriteLine(leetCodeAll.MaximumWealth(accounts));
 
             ////1683. Invalid Tweets (EASY)
             //string SqlQuery =
@@ -5455,6 +5455,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumLength(nums, k));
+
+            ////(3289.) The Two Sneaky Numbers of Digitville (EASY)
+            int[] nums = [7, 1, 5, 4, 3, 4, 6, 0, 9, 5, 8, 2];
+
+            LeetCode_3289 classLeetCode = new LeetCode_3289();
+            Console.WriteLine(string.Join(',',classLeetCode.GetSneakyNumbers(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.GetSneakyNumbers(nums)));
 
             ////(3304.) Find the K-th Character in String Game I (EASY)
             //int k = 5;
