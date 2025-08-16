@@ -13061,6 +13061,37 @@ namespace ProblemSolving
             return int.Parse(result);
         }
 
+        private int _currValueTask1038;
+        public TreeNode BstToGst(TreeNode root)
+        {
+            _currValueTask1038 = 0;
+            TreeNode dummyRoot = root;
+
+            UpdateRootTask1038(root);
+
+            return dummyRoot;
+        }
+        public void UpdateRootTask1038(TreeNode root)
+        {
+            if (root == null)
+            {
+                return;
+            }
+
+            UpdateRootTask1038(root.right);
+            //_listValue.Add(root.val);
+            if (_currValueTask1038 == 0)
+            {
+                _currValueTask1038 += root.val;
+            }
+            else
+            {
+                _currValueTask1038 += root.val;
+                root.val = _currValueTask1038;
+            }
+            //Console.WriteLine(root.val);
+            UpdateRootTask1038(root.left);
+        }
 
 
 

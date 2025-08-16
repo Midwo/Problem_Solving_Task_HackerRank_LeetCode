@@ -3731,6 +3731,24 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsBoomerang(points));
 
+            ////(1038.) Binary Search Tree to Greater Sum Tree (MEDIUM)
+            TreeNode root = new TreeNode(4);
+            root.left = new TreeNode(1);
+            root.right = new TreeNode(6);
+            root.left.left = new TreeNode(0);
+            root.left.right = new TreeNode(2);
+            root.left.right.right = new TreeNode(3);
+            root.right.left = new TreeNode(5);
+            root.right.right = new TreeNode(7);
+            root.right.right.right = new TreeNode(8);
+
+            LeetCode_1038 classLeetCode = new LeetCode_1038();
+            classLeetCode.BstToGst(root);
+
+            //OR
+
+            leetCodeAll.BstToGst(root);
+
             ////(1045.) Customers Who Bought All Products (MEDIUM)
             //string SqlQuery =
             //    @"
@@ -4451,14 +4469,14 @@ namespace ProblemSolving
             //LeetCode_1321 classLeetCode = new LeetCode_1321();
 
             ////(1323.) Maximum 69 Number (EASY)
-            int num = 9996;
+            //int num = 9996;
 
-            LeetCode_1323 classLeetCode = new LeetCode_1323();
-            Console.WriteLine(classLeetCode.Maximum69Number(num));
+            //LeetCode_1323 classLeetCode = new LeetCode_1323();
+            //Console.WriteLine(classLeetCode.Maximum69Number(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.Maximum69Number(num));
+            //Console.WriteLine(leetCodeAll.Maximum69Number(num));
 
             /////(1327.) List the Products Ordered in a Period (EASY)
             //string SqlQuery =
