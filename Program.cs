@@ -3732,22 +3732,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsBoomerang(points));
 
             ////(1038.) Binary Search Tree to Greater Sum Tree (MEDIUM)
-            TreeNode root = new TreeNode(4);
-            root.left = new TreeNode(1);
-            root.right = new TreeNode(6);
-            root.left.left = new TreeNode(0);
-            root.left.right = new TreeNode(2);
-            root.left.right.right = new TreeNode(3);
-            root.right.left = new TreeNode(5);
-            root.right.right = new TreeNode(7);
-            root.right.right.right = new TreeNode(8);
+            //TreeNode root = new TreeNode(4);
+            //root.left = new TreeNode(1);
+            //root.right = new TreeNode(6);
+            //root.left.left = new TreeNode(0);
+            //root.left.right = new TreeNode(2);
+            //root.left.right.right = new TreeNode(3);
+            //root.right.left = new TreeNode(5);
+            //root.right.right = new TreeNode(7);
+            //root.right.right.right = new TreeNode(8);
 
-            LeetCode_1038 classLeetCode = new LeetCode_1038();
-            classLeetCode.BstToGst(root);
+            //LeetCode_1038 classLeetCode = new LeetCode_1038();
+            //classLeetCode.BstToGst(root);
 
-            //OR
+            ////OR
 
-            leetCodeAll.BstToGst(root);
+            //leetCodeAll.BstToGst(root);
 
             ////(1045.) Customers Who Bought All Products (MEDIUM)
             //string SqlQuery =
@@ -5250,6 +5250,16 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
+
+            ////(2396.) Strictly Palindromic Number (MEDIUM)
+            int n = 9;
+
+            LeetCode_2396 classLeetCode = new LeetCode_2396();
+            Console.WriteLine(classLeetCode.IsStrictlyPalindromic(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsStrictlyPalindromic(n));
 
             ////(2410.) Maximum Matching of Players With Trainers (MEDIUM)
             //int[] players = [4, 7, 9];

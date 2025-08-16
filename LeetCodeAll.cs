@@ -13092,8 +13092,24 @@ namespace ProblemSolving
             //Console.WriteLine(root.val);
             UpdateRootTask1038(root.left);
         }
+        public bool IsStrictlyPalindromic(int n)
+        {
+            bool result = true;
 
+            for (int i = 2; i <= n - 2; i++)
+            {
+                string temp = Convert.ToString(n, i);
 
+                if (temp != temp.Reverse())
+                {
+                    result = false;
+                    break;
+                }
+
+            }
+
+            return result;
+        }
 
 
 
