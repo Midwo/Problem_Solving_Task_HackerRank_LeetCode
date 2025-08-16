@@ -5252,14 +5252,14 @@ namespace ProblemSolving
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
             ////(2396.) Strictly Palindromic Number (MEDIUM)
-            int n = 9;
+            //int n = 9;
 
-            LeetCode_2396 classLeetCode = new LeetCode_2396();
-            Console.WriteLine(classLeetCode.IsStrictlyPalindromic(n));
+            //LeetCode_2396 classLeetCode = new LeetCode_2396();
+            //Console.WriteLine(classLeetCode.IsStrictlyPalindromic(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsStrictlyPalindromic(n));
+            //Console.WriteLine(leetCodeAll.IsStrictlyPalindromic(n));
 
             ////(2410.) Maximum Matching of Players With Trainers (MEDIUM)
             //int[] players = [4, 7, 9];
@@ -5281,6 +5281,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.LongestSubarray(nums));
+
+            ////(2433.) Find The Original Array of Prefix Xor (MEDIUM)
+            int[] pref = [5, 2, 0, 3, 1];
+
+            LeetCode_2433 classLeetCode = new LeetCode_2433();
+            Console.WriteLine(string.Join(',', classLeetCode.FindArray(pref)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindArray(pref)));
 
             ////(2438.) Range Product Queries of Powers (MEDIUM)
             //int n = 15;
