@@ -4450,6 +4450,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1321 classLeetCode = new LeetCode_1321();
 
+            ////(1323.) Maximum 69 Number (EASY)
+            int num = 9996;
+
+            LeetCode_1323 classLeetCode = new LeetCode_1323();
+            Console.WriteLine(classLeetCode.Maximum69Number(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.Maximum69Number(num));
+
             /////(1327.) List the Products Ordered in a Period (EASY)
             //string SqlQuery =
             //    @"
@@ -4740,15 +4750,15 @@ namespace ProblemSolving
             //LeetCode_1683 classLeetCode = new LeetCode_1683();
 
             ////(1684.) Count the Number of Consistent Strings (EASY)
-            string allowed = "ab";
-            string[] words = ["ad","bd","aaab","baa","badab"];
+            //string allowed = "ab";
+            //string[] words = ["ad","bd","aaab","baa","badab"];
 
-            LeetCode_1684 classLeetCode = new LeetCode_1684();
-            Console.WriteLine(classLeetCode.CountConsistentStrings(allowed, words));
+            //LeetCode_1684 classLeetCode = new LeetCode_1684();
+            //Console.WriteLine(classLeetCode.CountConsistentStrings(allowed, words));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountConsistentStrings(allowed, words));
+            //Console.WriteLine(leetCodeAll.CountConsistentStrings(allowed, words));
 
             ////(1689.) Partitioning Into Minimum Number Of Deci-Binary Numbers (MEDIUM)
             //string n = "32";
