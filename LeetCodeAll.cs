@@ -13228,8 +13228,22 @@ namespace ProblemSolving
 
             return newResultGrid;
         }
+        public int MinBitFlips(int start, int goal)
+        {
+            int resultSumHowManyFlip = 0;
 
+            string resultXOR = Convert.ToString(start ^ goal, 2);
 
+            for (int i = 0; i < resultXOR.Length; i++)
+            {
+                if (resultXOR[i] == '1')
+                {
+                    resultSumHowManyFlip++;
+                }
+            }
+
+            return resultSumHowManyFlip;
+        }
 
 
 

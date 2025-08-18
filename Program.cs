@@ -5113,6 +5113,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
+            ////(2220.) Minimum Bit Flips to Convert Number (EASY)
+            int start = 10;
+            int goal = 7;
+
+            LeetCode_2220 classLeetCode = new LeetCode_2220();
+            Console.WriteLine(classLeetCode.MinBitFlips(start, goal));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinBitFlips(start, goal));
+
             //(2044.) Count Number of Maximum Bitwise-OR Subsets (MEDIUM)
             //int[] nums = [3, 2, 1, 5];
 
@@ -5285,22 +5296,22 @@ namespace ProblemSolving
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
             ////(2373.) Largest Local Values in a Matrix (EASY)
-            int[][] grid = [[1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 2, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1]];
+            //int[][] grid = [[1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 2, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1]];
 
-            LeetCode_2373 classLeetCode = new LeetCode_2373();
-            int[][] result = classLeetCode.LargestLocal(grid);
-            foreach (var item in result)
-            {
-                Console.WriteLine(string.Join(',', item));    
-            }
+            //LeetCode_2373 classLeetCode = new LeetCode_2373();
+            //int[][] result = classLeetCode.LargestLocal(grid);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(string.Join(',', item));    
+            //}
 
-            //OR
+            ////OR
 
-            int[][] result1 = leetCodeAll.LargestLocal(grid);
-            foreach (var item in result1)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //int[][] result1 = leetCodeAll.LargestLocal(grid);
+            //foreach (var item in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(2396.) Strictly Palindromic Number (MEDIUM)
             //int n = 9;
