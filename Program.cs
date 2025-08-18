@@ -5272,6 +5272,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MatchPlayersAndTrainers(players, trainers));
 
+            ////(2413.) Smallest Even Multiple (EASY)
+            int n = 6;
+
+            LeetCode_2413 classLeetCode = new LeetCode_2413();
+            Console.WriteLine(classLeetCode.SmallestEvenMultiple(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SmallestEvenMultiple(n));
+
             ////(2419.) Longest Subarray With Maximum Bitwise AND (MEDIUM)
             //int[] nums = [100, 5, 5];
 
@@ -5283,14 +5293,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LongestSubarray(nums));
 
             ////(2433.) Find The Original Array of Prefix Xor (MEDIUM)
-            int[] pref = [5, 2, 0, 3, 1];
+            //int[] pref = [5, 2, 0, 3, 1];
 
-            LeetCode_2433 classLeetCode = new LeetCode_2433();
-            Console.WriteLine(string.Join(',', classLeetCode.FindArray(pref)));
+            //LeetCode_2433 classLeetCode = new LeetCode_2433();
+            //Console.WriteLine(string.Join(',', classLeetCode.FindArray(pref)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindArray(pref)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindArray(pref)));
 
             ////(2438.) Range Product Queries of Powers (MEDIUM)
             //int n = 15;
