@@ -4585,6 +4585,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindLucky(arr));
 
+            ////(1431.) Kids With the Greatest Number of Candies (EASY)
+            int[] candies = [2, 3, 5, 1, 3];
+            int extraCandies = 3;
+
+            LeetCode_1431 classLeetCode = new LeetCode_1431();
+            Console.WriteLine(string.Join(',', classLeetCode.KidsWithCandies(candies, extraCandies)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.KidsWithCandies(candies, extraCandies)));
+
             ////(1432.) Max Difference You Can Get From Changing an Integer (MEDIUM)
             //int num = 90270580;
 
@@ -5273,14 +5284,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MatchPlayersAndTrainers(players, trainers));
 
             ////(2413.) Smallest Even Multiple (EASY)
-            int n = 6;
+            //int n = 6;
 
-            LeetCode_2413 classLeetCode = new LeetCode_2413();
-            Console.WriteLine(classLeetCode.SmallestEvenMultiple(n));
+            //LeetCode_2413 classLeetCode = new LeetCode_2413();
+            //Console.WriteLine(classLeetCode.SmallestEvenMultiple(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SmallestEvenMultiple(n));
+            //Console.WriteLine(leetCodeAll.SmallestEvenMultiple(n));
 
             ////(2419.) Longest Subarray With Maximum Bitwise AND (MEDIUM)
             //int[] nums = [100, 5, 5];
