@@ -5114,15 +5114,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
             ////(2220.) Minimum Bit Flips to Convert Number (EASY)
-            int start = 10;
-            int goal = 7;
+            //int start = 10;
+            //int goal = 7;
 
-            LeetCode_2220 classLeetCode = new LeetCode_2220();
-            Console.WriteLine(classLeetCode.MinBitFlips(start, goal));
+            //LeetCode_2220 classLeetCode = new LeetCode_2220();
+            //Console.WriteLine(classLeetCode.MinBitFlips(start, goal));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinBitFlips(start, goal));
+            //Console.WriteLine(leetCodeAll.MinBitFlips(start, goal));
 
             //(2044.) Count Number of Maximum Bitwise-OR Subsets (MEDIUM)
             //int[] nums = [3, 2, 1, 5];
@@ -5726,6 +5726,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxSum(nums));
+
+            ////(3541.) Find Most Frequent Vowel and Consonant (EASY)
+            string s = "cz";
+
+            LeetCode_3541 classLeetCode = new LeetCode_3541();
+            Console.WriteLine(classLeetCode.MaxFreqSum(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxFreqSum(s));
 
 
 
