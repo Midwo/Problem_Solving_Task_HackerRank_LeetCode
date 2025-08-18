@@ -4766,7 +4766,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumWealth(accounts));
 
-            ////1683. Invalid Tweets (EASY)
+            ////(1678.) Goal Parser Interpretation (EASY)
+            string command = "(al)G(al)()()G";
+
+            LeetCode_1678 classLeetCode = new LeetCode_1678();
+            Console.WriteLine(classLeetCode.Interpret(command));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.Interpret(command));
+
+            ////(1683.) Invalid Tweets (EASY)
             //string SqlQuery =
             //    @"
             //        Select 
@@ -5218,15 +5228,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountHillValley(nums));
 
             ////(2235.) Add Two Integers (EASY)
-            int num1 = 12;
-            int num2 = 5;
+            //int num1 = 12;
+            //int num2 = 5;
 
-            LeetCode_2235 classLeetCode = new LeetCode_2235();
-            Console.WriteLine(classLeetCode.Sum(num1, num2));
+            //LeetCode_2235 classLeetCode = new LeetCode_2235();
+            //Console.WriteLine(classLeetCode.Sum(num1, num2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.Sum(num1, num2));
+            //Console.WriteLine(leetCodeAll.Sum(num1, num2));
 
             ////(2264.) Largest 3-Same-Digit Number in String (EASY)
             //string num = "42352338";
