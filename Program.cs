@@ -4767,14 +4767,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumWealth(accounts));
 
             ////(1678.) Goal Parser Interpretation (EASY)
-            string command = "(al)G(al)()()G";
+            //string command = "(al)G(al)()()G";
 
-            LeetCode_1678 classLeetCode = new LeetCode_1678();
-            Console.WriteLine(classLeetCode.Interpret(command));
+            //LeetCode_1678 classLeetCode = new LeetCode_1678();
+            //Console.WriteLine(classLeetCode.Interpret(command));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.Interpret(command));
+            //Console.WriteLine(leetCodeAll.Interpret(command));
 
             ////(1683.) Invalid Tweets (EASY)
             //string SqlQuery =
@@ -5281,7 +5281,26 @@ namespace ProblemSolving
             //    ";
 
             ////OR
+
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
+
+            ////(2373.) Largest Local Values in a Matrix (EASY)
+            int[][] grid = [[1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 2, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1]];
+
+            LeetCode_2373 classLeetCode = new LeetCode_2373();
+            int[][] result = classLeetCode.LargestLocal(grid);
+            foreach (var item in result)
+            {
+                Console.WriteLine(string.Join(',', item));    
+            }
+
+            //OR
+
+            int[][] result1 = leetCodeAll.LargestLocal(grid);
+            foreach (var item in result1)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             ////(2396.) Strictly Palindromic Number (MEDIUM)
             //int n = 9;
