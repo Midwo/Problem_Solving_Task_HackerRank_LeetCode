@@ -4586,15 +4586,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindLucky(arr));
 
             ////(1431.) Kids With the Greatest Number of Candies (EASY)
-            int[] candies = [2, 3, 5, 1, 3];
-            int extraCandies = 3;
+            //int[] candies = [2, 3, 5, 1, 3];
+            //int extraCandies = 3;
 
-            LeetCode_1431 classLeetCode = new LeetCode_1431();
-            Console.WriteLine(string.Join(',', classLeetCode.KidsWithCandies(candies, extraCandies)));
+            //LeetCode_1431 classLeetCode = new LeetCode_1431();
+            //Console.WriteLine(string.Join(',', classLeetCode.KidsWithCandies(candies, extraCandies)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.KidsWithCandies(candies, extraCandies)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.KidsWithCandies(candies, extraCandies)));
 
             ////(1432.) Max Difference You Can Get From Changing an Integer (MEDIUM)
             //int num = 90270580;
@@ -5216,6 +5216,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountHillValley(nums));
+
+            ////(2235.) Add Two Integers (EASY)
+            int num1 = 12;
+            int num2 = 5;
+
+            LeetCode_2235 classLeetCode = new LeetCode_2235();
+            Console.WriteLine(classLeetCode.Sum(num1, num2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.Sum(num1, num2));
 
             ////(2264.) Largest 3-Same-Digit Number in String (EASY)
             //string num = "42352338";
