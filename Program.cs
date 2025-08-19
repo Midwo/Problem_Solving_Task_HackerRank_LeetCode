@@ -5281,6 +5281,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.LongestSubsequence(s, k));
 
+            ////(2348.) Number of Zero-Filled Subarrays (MEDIUM)
+            int[] nums = [0, 0, 0, 2, 0, 0];
+
+            LeetCode_2348 classLeetCode = new LeetCode_2348();
+            Console.WriteLine(classLeetCode.ZeroFilledSubarray(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ZeroFilledSubarray(nums));
+
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
             //string SqlQuery =
             //    @"
@@ -5728,14 +5738,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxSum(nums));
 
             ////(3541.) Find Most Frequent Vowel and Consonant (EASY)
-            string s = "cz";
+            //string s = "cz";
 
-            LeetCode_3541 classLeetCode = new LeetCode_3541();
-            Console.WriteLine(classLeetCode.MaxFreqSum(s));
+            //LeetCode_3541 classLeetCode = new LeetCode_3541();
+            //Console.WriteLine(classLeetCode.MaxFreqSum(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxFreqSum(s));
+            //Console.WriteLine(leetCodeAll.MaxFreqSum(s));
 
 
 
