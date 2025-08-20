@@ -5505,16 +5505,16 @@ namespace ProblemSolving
             //}
 
             ////(2824.) Count Pairs Whose Sum is Less than Target (EASY)
-            IList<int> nums = [-1, 1, 2, 3, 1];
-            int target = 2;
+            //IList<int> nums = [-1, 1, 2, 3, 1];
+            //int target = 2;
 
-            LeetCode_2824 classLeetCode = new LeetCode_2824();
+            //LeetCode_2824 classLeetCode = new LeetCode_2824();
 
-            Console.WriteLine(classLeetCode.CountPairs(nums, target));
+            //Console.WriteLine(classLeetCode.CountPairs(nums, target));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountPairs(nums, target));
+            //Console.WriteLine(leetCodeAll.CountPairs(nums, target));
 
             ////(2894.) Divisible and Non-divisible Sums Difference (EASY)
             //int n = 10;
@@ -5790,6 +5790,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxFreqSum(s));
 
+            ////(3498.) Reverse Degree of a String (EASY)
+            string s = "abc";
+
+            LeetCode_3498 classLeetCode = new LeetCode_3498();
+            Console.WriteLine(classLeetCode.ReverseDegree(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ReverseDegree(s));
 
 
 
