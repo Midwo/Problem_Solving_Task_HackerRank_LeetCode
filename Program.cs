@@ -4385,14 +4385,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinTimeToVisitAllPoints(points));
 
             ////(1277.) Count Square Submatrices with All Ones (MEDIUM)
-            int[][] matrix = [[0, 1, 1, 1], [1, 1, 1, 1], [0, 1, 1, 1]];
+            //int[][] matrix = [[0, 1, 1, 1], [1, 1, 1, 1], [0, 1, 1, 1]];
 
-            LeetCode_1277 classLeetCode = new LeetCode_1277();
-            Console.WriteLine(classLeetCode.CountSquares(matrix));
+            //LeetCode_1277 classLeetCode = new LeetCode_1277();
+            //Console.WriteLine(classLeetCode.CountSquares(matrix));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountSquares(matrix));
+            //Console.WriteLine(leetCodeAll.CountSquares(matrix));
 
             ////(1280.) Students and Examinations (EASY)
             //string SqlQuery =
@@ -5457,6 +5457,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.TheMaximumAchievableX(num, t));
+
+            ////(2798.) Number of Employees Who Met the Target (EASY)
+            int[] hours = [0, 1, 2, 3, 4];
+            int target = 2;
+
+            LeetCode_2798 classLeetCode = new LeetCode_2798();
+            Console.WriteLine(classLeetCode.NumberOfEmployeesWhoMetTarget(hours, target));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumberOfEmployeesWhoMetTarget(hours, target));
 
             ////(2807.) Insert Greatest Common Divisors in Linked List (MEDIUM)
             //ListNode head = new ListNode(18);
