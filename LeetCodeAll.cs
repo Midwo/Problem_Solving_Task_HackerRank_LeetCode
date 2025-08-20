@@ -13397,6 +13397,38 @@ namespace ProblemSolving
 
             return nums;
         }
+        public int CountPairs(IList<int> nums, int target)
+        {
+            int leftIndex = 0;
+            int rightIndex = nums.Count - 1;
+            int result = 0;
+
+            int[] arrayInt = nums.ToArray();
+            Array.Sort(arrayInt);
+
+            while (leftIndex != rightIndex)
+            {
+                if (arrayInt[leftIndex] + arrayInt[rightIndex] < target)
+                {
+                    result += Math.Abs(rightIndex - leftIndex);
+                    leftIndex++;
+                }
+                else
+                {
+                    rightIndex--;
+                }
+            }
+
+
+            return result;
+        }
+
+
+
+
+
+
+
 
 
 

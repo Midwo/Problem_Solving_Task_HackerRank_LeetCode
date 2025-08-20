@@ -5437,14 +5437,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinMaxDifference(num));
 
             ////(2574.) Left and Right Sum Differences (EASY)
-            int[] nums = [10, 4, 8, 3];
+            //int[] nums = [10, 4, 8, 3];
 
-            LeetCode_2574 classLeetCode = new LeetCode_2574();
-            Console.WriteLine(string.Join(',', classLeetCode.LeftRightDifference(nums)));
+            //LeetCode_2574 classLeetCode = new LeetCode_2574();
+            //Console.WriteLine(string.Join(',', classLeetCode.LeftRightDifference(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
 
             ////(2616.) Minimize the Maximum Difference of Pairs (MEDIUM)
             //int[] nums = [10,1,2,7,1,3];
@@ -5503,6 +5503,18 @@ namespace ProblemSolving
             //    Console.WriteLine(result1.val);
             //    result1 = result1.next;
             //}
+
+            ////(2824.) Count Pairs Whose Sum is Less than Target (EASY)
+            IList<int> nums = [-1, 1, 2, 3, 1];
+            int target = 2;
+
+            LeetCode_2824 classLeetCode = new LeetCode_2824();
+
+            Console.WriteLine(classLeetCode.CountPairs(nums, target));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountPairs(nums, target));
 
             ////(2894.) Divisible and Non-divisible Sums Difference (EASY)
             //int n = 10;
