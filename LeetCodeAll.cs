@@ -13452,7 +13452,37 @@ namespace ProblemSolving
             return 0;
         }
 
+        private IList<string> _stringsListTask3211;
+        public IList<string> ValidStrings(int n)
+        {
+            _stringsListTask3211 = new List<string>();
+            char[] chars = new char[n];
 
+            GenerateStringTask3211(n, 0, chars, 'z');
+            return _stringsListTask3211;
+        }
+
+        private void GenerateStringTask3211(int length, int currLength, char[] chars, char lastChar)
+        {
+            if (currLength > length - 1)
+            {
+                _stringsListTask3211.Add(new string(chars));
+                return;
+            }
+
+            if (lastChar == '0')
+            {
+                chars[currLength] = '1';
+                GenerateStringTask3211(length, currLength + 1, chars, lastChar = chars[currLength]);
+            }
+            else
+            {
+                chars[currLength] = '0';
+                GenerateStringTask3211(length, currLength + 1, chars, lastChar = chars[currLength]);
+                chars[currLength] = '1';
+                GenerateStringTask3211(length, currLength + 1, chars, lastChar = chars[currLength]);
+            }
+        }
 
 
 

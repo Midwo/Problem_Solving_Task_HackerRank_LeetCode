@@ -5640,6 +5640,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumLength(nums, k));
 
+            ////(3211.) Generate Binary Strings Without Adjacent Zeros (MEDIUM)
+            int n = 3;
+
+            LeetCode_3211 classLeetCode = new LeetCode_3211();
+            Console.WriteLine(string.Join(',', classLeetCode.ValidStrings(n)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ValidStrings(n)));
+
             ////(3280.) Convert Date to Binary (EASY)
             //string date = "2080-02-29";
 
@@ -5801,15 +5811,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReverseDegree(s));
 
             ////(3512.) Minimum Operations to Make Array Sum Divisible by K (EASY)
-            int[] nums = [3, 9, 7];
-            int k = 5;
+            //int[] nums = [3, 9, 7];
+            //int k = 5;
 
-            LeetCode_3512 classLeetCode = new LeetCode_3512();
-            Console.WriteLine(classLeetCode.MinOperations(nums, k));
+            //LeetCode_3512 classLeetCode = new LeetCode_3512();
+            //Console.WriteLine(classLeetCode.MinOperations(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperations(nums, k));
+            //Console.WriteLine(leetCodeAll.MinOperations(nums, k));
 
 
 
