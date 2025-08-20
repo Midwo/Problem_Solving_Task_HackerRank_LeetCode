@@ -4384,6 +4384,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinTimeToVisitAllPoints(points));
 
+            ////(1277.) Count Square Submatrices with All Ones (MEDIUM)
+            int[][] matrix = [[0, 1, 1, 1], [1, 1, 1, 1], [0, 1, 1, 1]];
+
+            LeetCode_1277 classLeetCode = new LeetCode_1277();
+            Console.WriteLine(classLeetCode.CountSquares(matrix));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountSquares(matrix));
+
             ////(1280.) Students and Examinations (EASY)
             //string SqlQuery =
             //    @"
@@ -5282,14 +5292,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LongestSubsequence(s, k));
 
             ////(2348.) Number of Zero-Filled Subarrays (MEDIUM)
-            int[] nums = [0, 0, 0, 2, 0, 0];
+            //int[] nums = [0, 0, 0, 2, 0, 0];
 
-            LeetCode_2348 classLeetCode = new LeetCode_2348();
-            Console.WriteLine(classLeetCode.ZeroFilledSubarray(nums));
+            //LeetCode_2348 classLeetCode = new LeetCode_2348();
+            //Console.WriteLine(classLeetCode.ZeroFilledSubarray(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ZeroFilledSubarray(nums));
+            //Console.WriteLine(leetCodeAll.ZeroFilledSubarray(nums));
 
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
             //string SqlQuery =
