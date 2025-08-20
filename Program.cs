@@ -5791,16 +5791,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxFreqSum(s));
 
             ////(3498.) Reverse Degree of a String (EASY)
-            string s = "abc";
+            //string s = "abc";
 
-            LeetCode_3498 classLeetCode = new LeetCode_3498();
-            Console.WriteLine(classLeetCode.ReverseDegree(s));
+            //LeetCode_3498 classLeetCode = new LeetCode_3498();
+            //Console.WriteLine(classLeetCode.ReverseDegree(s));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.ReverseDegree(s));
+
+            ////(3512.) Minimum Operations to Make Array Sum Divisible by K (EASY)
+            int[] nums = [3, 9, 7];
+            int k = 5;
+
+            LeetCode_3512 classLeetCode = new LeetCode_3512();
+            Console.WriteLine(classLeetCode.MinOperations(nums, k));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.ReverseDegree(s));
-
-
+            Console.WriteLine(leetCodeAll.MinOperations(nums, k));
 
 
 
