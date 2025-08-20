@@ -5436,6 +5436,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinMaxDifference(num));
 
+            ////(2574.) Left and Right Sum Differences (EASY)
+            int[] nums = [10, 4, 8, 3];
+
+            LeetCode_2574 classLeetCode = new LeetCode_2574();
+            Console.WriteLine(string.Join(',', classLeetCode.LeftRightDifference(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
+
             ////(2616.) Minimize the Maximum Difference of Pairs (MEDIUM)
             //int[] nums = [10,1,2,7,1,3];
             //int p = 2;
@@ -5459,15 +5469,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TheMaximumAchievableX(num, t));
 
             ////(2798.) Number of Employees Who Met the Target (EASY)
-            int[] hours = [0, 1, 2, 3, 4];
-            int target = 2;
+            //int[] hours = [0, 1, 2, 3, 4];
+            //int target = 2;
 
-            LeetCode_2798 classLeetCode = new LeetCode_2798();
-            Console.WriteLine(classLeetCode.NumberOfEmployeesWhoMetTarget(hours, target));
+            //LeetCode_2798 classLeetCode = new LeetCode_2798();
+            //Console.WriteLine(classLeetCode.NumberOfEmployeesWhoMetTarget(hours, target));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumberOfEmployeesWhoMetTarget(hours, target));
+            //Console.WriteLine(leetCodeAll.NumberOfEmployeesWhoMetTarget(hours, target));
 
             ////(2807.) Insert Greatest Common Divisors in Linked List (MEDIUM)
             //ListNode head = new ListNode(18);
