@@ -4444,22 +4444,22 @@ namespace ProblemSolving
             //LeetCode_1280 classLeetCode = new LeetCode_1280();
 
             ////(1282.) Group the People Given the Group Size They Belong To (MEDIUM)
-            int[] groupSizes = [3, 3, 3, 3, 3, 1, 3];
+            //int[] groupSizes = [3, 3, 3, 3, 3, 1, 3];
 
-            LeetCode_1282 classLeetCode = new LeetCode_1282();
-            IList<IList<int>> result = classLeetCode.GroupThePeople(groupSizes);
-            foreach (var item in result)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //LeetCode_1282 classLeetCode = new LeetCode_1282();
+            //IList<IList<int>> result = classLeetCode.GroupThePeople(groupSizes);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            IList<IList<int>> result1 = leetCodeAll.GroupThePeople(groupSizes);
-            foreach (var item in result1)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //IList<IList<int>> result1 = leetCodeAll.GroupThePeople(groupSizes);
+            //foreach (var item in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(1290.) Convert Binary Number in a Linked List to Integer (EASY)
             //ListNode head = new ListNode(1);
@@ -5637,6 +5637,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsValid_Task3136(word));
+
+            ////(3146.) Permutation Difference between Two Strings (EASY)
+            string s = "abcde";
+            string t = "edbac";
+
+            LeetCode_3146 classLeetCode = new LeetCode_3146();
+            Console.WriteLine(classLeetCode.FindPermutationDifference(s, t));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindPermutationDifference(s, t));
 
             ////(3151.) Special Array I (EASY)
             //int[] nums = [4, 3, 1, 6];
