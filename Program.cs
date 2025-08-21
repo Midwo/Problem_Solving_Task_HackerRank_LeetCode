@@ -3486,25 +3486,25 @@ namespace ProblemSolving
             //Console.WriteLine(recentCounter1.Ping(3002));
 
             ////(938.) Range Sum of BST (EASY)
-            TreeNode root = new TreeNode(10);
-            root.left = new TreeNode(5);
-            root.left.left = new TreeNode(3);
-            root.left.left.left = new TreeNode(1);
-            root.left.right = new TreeNode(7);
-            root.left.right.left = new TreeNode(6);
-            root.right = new TreeNode(15);
-            root.right.left = new TreeNode(13);
-            root.right.right = new TreeNode(18);
+            //TreeNode root = new TreeNode(10);
+            //root.left = new TreeNode(5);
+            //root.left.left = new TreeNode(3);
+            //root.left.left.left = new TreeNode(1);
+            //root.left.right = new TreeNode(7);
+            //root.left.right.left = new TreeNode(6);
+            //root.right = new TreeNode(15);
+            //root.right.left = new TreeNode(13);
+            //root.right.right = new TreeNode(18);
 
-            int low = 6;
-            int high = 10;
+            //int low = 6;
+            //int high = 10;
 
-            LeetCode_938 classLeetCode = new LeetCode_938();
-            Console.WriteLine(classLeetCode.RangeSumBST(root, low, high));
+            //LeetCode_938 classLeetCode = new LeetCode_938();
+            //Console.WriteLine(classLeetCode.RangeSumBST(root, low, high));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.RangeSumBST(root, low, high));
+            //Console.WriteLine(leetCodeAll.RangeSumBST(root, low, high));
 
             ////(941.) Valid Mountain Array (EASY)
             //int[] arr = [0, 3, 2, 1];
@@ -4442,6 +4442,24 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1280 classLeetCode = new LeetCode_1280();
+
+            ////(1282.) Group the People Given the Group Size They Belong To (MEDIUM)
+            int[] groupSizes = [3, 3, 3, 3, 3, 1, 3];
+
+            LeetCode_1282 classLeetCode = new LeetCode_1282();
+            IList<IList<int>> result = classLeetCode.GroupThePeople(groupSizes);
+            foreach (var item in result)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            IList<IList<int>> result1 = leetCodeAll.GroupThePeople(groupSizes);
+            foreach (var item in result1)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             ////(1290.) Convert Binary Number in a Linked List to Integer (EASY)
             //ListNode head = new ListNode(1);
