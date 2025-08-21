@@ -3485,6 +3485,27 @@ namespace ProblemSolving
             //Console.WriteLine(recentCounter1.Ping(3001));
             //Console.WriteLine(recentCounter1.Ping(3002));
 
+            ////(938.) Range Sum of BST (EASY)
+            TreeNode root = new TreeNode(10);
+            root.left = new TreeNode(5);
+            root.left.left = new TreeNode(3);
+            root.left.left.left = new TreeNode(1);
+            root.left.right = new TreeNode(7);
+            root.left.right.left = new TreeNode(6);
+            root.right = new TreeNode(15);
+            root.right.left = new TreeNode(13);
+            root.right.right = new TreeNode(18);
+
+            int low = 6;
+            int high = 10;
+
+            LeetCode_938 classLeetCode = new LeetCode_938();
+            Console.WriteLine(classLeetCode.RangeSumBST(root, low, high));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.RangeSumBST(root, low, high));
+
             ////(941.) Valid Mountain Array (EASY)
             //int[] arr = [0, 3, 2, 1];
 
@@ -5641,14 +5662,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumLength(nums, k));
 
             ////(3211.) Generate Binary Strings Without Adjacent Zeros (MEDIUM)
-            int n = 3;
+            //int n = 3;
 
-            LeetCode_3211 classLeetCode = new LeetCode_3211();
-            Console.WriteLine(string.Join(',', classLeetCode.ValidStrings(n)));
+            //LeetCode_3211 classLeetCode = new LeetCode_3211();
+            //Console.WriteLine(string.Join(',', classLeetCode.ValidStrings(n)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ValidStrings(n)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ValidStrings(n)));
 
             ////(3280.) Convert Date to Binary (EASY)
             //string date = "2080-02-29";
