@@ -5162,6 +5162,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
+            ////(2037.) Minimum Number of Moves to Seat Everyone (EASY)
+            int[] seats = [4,1,5,9];
+            int[] students = [1, 3, 2, 6];
+
+            LeetCode_2037 classLeetCode = new LeetCode_2037();
+            Console.WriteLine(classLeetCode.MinMovesToSeat(seats, students));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinMovesToSeat(seats, students));
+
             ////(2220.) Minimum Bit Flips to Convert Number (EASY)
             //int start = 10;
             //int goal = 7;
@@ -5639,15 +5650,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsValid_Task3136(word));
 
             ////(3146.) Permutation Difference between Two Strings (EASY)
-            string s = "abcde";
-            string t = "edbac";
+            //string s = "abcde";
+            //string t = "edbac";
 
-            LeetCode_3146 classLeetCode = new LeetCode_3146();
-            Console.WriteLine(classLeetCode.FindPermutationDifference(s, t));
+            //LeetCode_3146 classLeetCode = new LeetCode_3146();
+            //Console.WriteLine(classLeetCode.FindPermutationDifference(s, t));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindPermutationDifference(s, t));
+            //Console.WriteLine(leetCodeAll.FindPermutationDifference(s, t));
 
             ////(3151.) Special Array I (EASY)
             //int[] nums = [4, 3, 1, 6];

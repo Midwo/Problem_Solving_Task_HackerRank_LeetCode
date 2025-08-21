@@ -13569,7 +13569,20 @@ namespace ProblemSolving
 
             return result;
         }
+        public int MinMovesToSeat(int[] seats, int[] students)
+        {
+            int result = 0;
 
+            Array.Sort(seats);
+            Array.Sort(students);
+
+            for (int i = 0; i < seats.Length; i++)
+            {
+                result += Math.Abs(seats[i] - students[i]);
+            }
+
+            return result;
+        }
 
 
 
