@@ -13606,9 +13606,27 @@ namespace ProblemSolving
 
             return (maxRight - minLeft + 1) * (maxDown - minUp + 1);
         }
+        public int[] SmallerNumbersThanCurrent(int[] nums)
+        {
+            int[] result = new int[nums.Length];
+            int length = nums.Length;
 
+            for (int i = 0; i < length; i++)
+            {
+                int count = 0;
+                int currValue = nums[i];
+                for (int j = 0; j < length; j++)
+                {
+                    if (currValue > nums[j])
+                    {
+                        count++;
+                    }
+                }
+                result[i] = count;
+            }
 
-
+            return result;
+        }
 
 
 

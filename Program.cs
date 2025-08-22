@@ -4610,6 +4610,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1341 classLeetCode = new LeetCode_1341();
 
+            ////(1365.) How Many Numbers Are Smaller Than the Current Number (EASY)
+            int[] nums = [8, 1, 2, 2, 3];
+
+            LeetCode_1365 classLeetCode = new LeetCode_1365();
+            Console.WriteLine(string.Join(',', classLeetCode.SmallerNumbersThanCurrent(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SmallerNumbersThanCurrent(nums)));
+
             ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
             //string SqlQuery =
             //    @"
@@ -5681,14 +5691,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumOperations(nums));
 
             ////(3195.) Find the Minimum Area to Cover All Ones I (MEDIUM)
-            int[][] grid = [[0, 1, 0], [1, 0, 1]];
+            //int[][] grid = [[0, 1, 0], [1, 0, 1]];
 
-            LeetCode_3195 classLeetCode = new LeetCode_3195();
-            Console.WriteLine(classLeetCode.MinimumArea(grid));
+            //LeetCode_3195 classLeetCode = new LeetCode_3195();
+            //Console.WriteLine(classLeetCode.MinimumArea(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumArea(grid));
+            //Console.WriteLine(leetCodeAll.MinimumArea(grid));
 
             ////(3201.) Find the Maximum Length of Valid Subsequence I (MEDIUM)
             //int[] nums = [1, 2, 1, 1, 2, 1, 2];
