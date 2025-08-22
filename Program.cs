@@ -5163,15 +5163,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
             ////(2037.) Minimum Number of Moves to Seat Everyone (EASY)
-            int[] seats = [4,1,5,9];
-            int[] students = [1, 3, 2, 6];
+            //int[] seats = [4,1,5,9];
+            //int[] students = [1, 3, 2, 6];
 
-            LeetCode_2037 classLeetCode = new LeetCode_2037();
-            Console.WriteLine(classLeetCode.MinMovesToSeat(seats, students));
+            //LeetCode_2037 classLeetCode = new LeetCode_2037();
+            //Console.WriteLine(classLeetCode.MinMovesToSeat(seats, students));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinMovesToSeat(seats, students));
+            //Console.WriteLine(leetCodeAll.MinMovesToSeat(seats, students));
 
             ////(2220.) Minimum Bit Flips to Convert Number (EASY)
             //int start = 10;
@@ -5679,6 +5679,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimumOperations(nums));
+
+            ////(3195.) Find the Minimum Area to Cover All Ones I (MEDIUM)
+            int[][] grid = [[0, 1, 0], [1, 0, 1]];
+
+            LeetCode_3195 classLeetCode = new LeetCode_3195();
+            Console.WriteLine(classLeetCode.MinimumArea(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumArea(grid));
 
             ////(3201.) Find the Maximum Length of Valid Subsequence I (MEDIUM)
             //int[] nums = [1, 2, 1, 1, 2, 1, 2];
