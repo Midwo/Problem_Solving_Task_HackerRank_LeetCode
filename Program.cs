@@ -4611,14 +4611,14 @@ namespace ProblemSolving
             //LeetCode_1341 classLeetCode = new LeetCode_1341();
 
             ////(1365.) How Many Numbers Are Smaller Than the Current Number (EASY)
-            int[] nums = [8, 1, 2, 2, 3];
+            //int[] nums = [8, 1, 2, 2, 3];
 
-            LeetCode_1365 classLeetCode = new LeetCode_1365();
-            Console.WriteLine(string.Join(',', classLeetCode.SmallerNumbersThanCurrent(nums)));
+            //LeetCode_1365 classLeetCode = new LeetCode_1365();
+            //Console.WriteLine(string.Join(',', classLeetCode.SmallerNumbersThanCurrent(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SmallerNumbersThanCurrent(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.SmallerNumbersThanCurrent(nums)));
 
             ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
             //string SqlQuery =
@@ -4775,6 +4775,16 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1633 classLeetCode = new LeetCode_1633();
+
+            ////(1637.) Widest Vertical Area Between Two Points Containing No Points (EASY)
+            int[][] points = [[3, 1], [9, 0], [1, 0], [1, 4], [5, 3], [8, 8]];
+
+            LeetCode_1637 classLeetCode = new LeetCode_1637();
+            Console.WriteLine(classLeetCode.MaxWidthOfVerticalArea(points));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxWidthOfVerticalArea(points));
 
             ////(1661.) Average Time of Process per Machine (EASY)
             //string SqlQuery =
