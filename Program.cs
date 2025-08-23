@@ -5550,15 +5550,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
             ////(2657.) Find the Prefix Common Array of Two Arrays (MEDIUM)
-            int[] A = [2, 3, 1];
-            int[] B = [3, 1, 2];
+            //int[] A = [2, 3, 1];
+            //int[] B = [3, 1, 2];
 
-            LeetCode_2657 classLeetCode = new LeetCode_2657();
-            Console.WriteLine(string.Join(',', classLeetCode.FindThePrefixCommonArray(A, B)));
+            //LeetCode_2657 classLeetCode = new LeetCode_2657();
+            //Console.WriteLine(string.Join(',', classLeetCode.FindThePrefixCommonArray(A, B)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindThePrefixCommonArray(A, B)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindThePrefixCommonArray(A, B)));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
@@ -5773,6 +5773,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ValidStrings(n)));
+
+            ////(3264.) Final Array State After K Multiplication Operations I (EASY)
+            int[] nums = [2, 1, 3, 5, 6];
+            int k = 5;
+            int multiplier = 2;
+
+            LeetCode_3264 classLeetCode = new LeetCode_3264();
+            Console.WriteLine(string.Join(',', classLeetCode.GetFinalState(nums, k, multiplier)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.GetFinalState(nums, k, multiplier)));
 
             ////(3280.) Convert Date to Binary (EASY)
             //string date = "2080-02-29";
