@@ -4777,14 +4777,14 @@ namespace ProblemSolving
             //LeetCode_1633 classLeetCode = new LeetCode_1633();
 
             ////(1637.) Widest Vertical Area Between Two Points Containing No Points (EASY)
-            int[][] points = [[3, 1], [9, 0], [1, 0], [1, 4], [5, 3], [8, 8]];
+            //int[][] points = [[3, 1], [9, 0], [1, 0], [1, 4], [5, 3], [8, 8]];
 
-            LeetCode_1637 classLeetCode = new LeetCode_1637();
-            Console.WriteLine(classLeetCode.MaxWidthOfVerticalArea(points));
+            //LeetCode_1637 classLeetCode = new LeetCode_1637();
+            //Console.WriteLine(classLeetCode.MaxWidthOfVerticalArea(points));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxWidthOfVerticalArea(points));
+            //Console.WriteLine(leetCodeAll.MaxWidthOfVerticalArea(points));
 
             ////(1661.) Average Time of Process per Machine (EASY)
             //string SqlQuery =
@@ -4899,6 +4899,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumGain(s, x, y));
+
+            ////(1720.) Decode XORed Array (EASY)
+            int[] encoded = [6, 2, 7, 3];
+            int first = 4;
+
+            LeetCode_1720 classLeetCode = new LeetCode_1720();
+            Console.WriteLine(string.Join(',', classLeetCode.Decode(encoded, first)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.Decode(encoded, first)));
 
             ////(1729.) Find Followers Count (EASY)
             //string SqlQuery =
