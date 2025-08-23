@@ -4698,6 +4698,17 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1484 classLeetCode = new LeetCode_1484();
 
+            ////(1486.) XOR Operation in an Array (EASY)
+            int n = 5;
+            int start = 0;
+
+            LeetCode_1486 classLeetCode = new LeetCode_1486();
+            Console.WriteLine(classLeetCode.XorOperation(n, start));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.XorOperation(n, start));
+
             ////(1498.) Number of Subsequences That Satisfy the Given Sum Condition (MEDIUM)
             //int[] nums = [5, 2, 4, 1, 7, 6, 8];
             //int target = 16;
@@ -4901,15 +4912,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumGain(s, x, y));
 
             ////(1720.) Decode XORed Array (EASY)
-            int[] encoded = [6, 2, 7, 3];
-            int first = 4;
+            //int[] encoded = [6, 2, 7, 3];
+            //int first = 4;
 
-            LeetCode_1720 classLeetCode = new LeetCode_1720();
-            Console.WriteLine(string.Join(',', classLeetCode.Decode(encoded, first)));
+            //LeetCode_1720 classLeetCode = new LeetCode_1720();
+            //Console.WriteLine(string.Join(',', classLeetCode.Decode(encoded, first)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.Decode(encoded, first)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.Decode(encoded, first)));
 
             ////(1729.) Find Followers Count (EASY)
             //string SqlQuery =
