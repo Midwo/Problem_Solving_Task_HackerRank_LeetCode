@@ -4773,6 +4773,25 @@ namespace ProblemSolving
             //////OR
             //LeetCode_1581 classLeetCode = new LeetCode_1581();
 
+            ////(1603.) Design Parking System (EASY)
+            int big = 1;
+            int medium = 1;
+            int small = 0;
+
+            LeetCode_1603.ParkingSystem classLeetCode = new LeetCode_1603.ParkingSystem(big, medium, small);
+            Console.WriteLine(classLeetCode.AddCar(1));
+            Console.WriteLine(classLeetCode.AddCar(2));
+            Console.WriteLine(classLeetCode.AddCar(3));
+            Console.WriteLine(classLeetCode.AddCar(1));
+
+            //OR
+
+            ParkingSystem LeetCodeAll = new ParkingSystem(big, medium, small);
+            Console.WriteLine(LeetCodeAll.AddCar(1));
+            Console.WriteLine(LeetCodeAll.AddCar(2));
+            Console.WriteLine(LeetCodeAll.AddCar(3));
+            Console.WriteLine(LeetCodeAll.AddCar(1));
+
             ////(1633.) Percentage of Users Attended a Contest (EASY)
             //string SqlQuery =
             //    @"
@@ -5775,16 +5794,16 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.ValidStrings(n)));
 
             ////(3264.) Final Array State After K Multiplication Operations I (EASY)
-            int[] nums = [2, 1, 3, 5, 6];
-            int k = 5;
-            int multiplier = 2;
+            //int[] nums = [2, 1, 3, 5, 6];
+            //int k = 5;
+            //int multiplier = 2;
 
-            LeetCode_3264 classLeetCode = new LeetCode_3264();
-            Console.WriteLine(string.Join(',', classLeetCode.GetFinalState(nums, k, multiplier)));
+            //LeetCode_3264 classLeetCode = new LeetCode_3264();
+            //Console.WriteLine(string.Join(',', classLeetCode.GetFinalState(nums, k, multiplier)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.GetFinalState(nums, k, multiplier)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.GetFinalState(nums, k, multiplier)));
 
             ////(3280.) Convert Date to Binary (EASY)
             //string date = "2080-02-29";
