@@ -4676,6 +4676,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.Shuffle(nums, n)));
 
+            ////(1480.) Running Sum of 1d Array (EASY)
+            int[] nums = [1, 1, 1, 1, 1];
+
+            LeetCode_1480 classLeetCode = new LeetCode_1480();
+            Console.WriteLine(string.Join(',', classLeetCode.RunningSum(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.RunningSum(nums)));
+
             ////(1484.) Group Sold Products By The Date (EASY)
             //string SqlQuery =
             //    @"
@@ -4774,23 +4784,23 @@ namespace ProblemSolving
             //LeetCode_1581 classLeetCode = new LeetCode_1581();
 
             ////(1603.) Design Parking System (EASY)
-            int big = 1;
-            int medium = 1;
-            int small = 0;
+            //int big = 1;
+            //int medium = 1;
+            //int small = 0;
 
-            LeetCode_1603.ParkingSystem classLeetCode = new LeetCode_1603.ParkingSystem(big, medium, small);
-            Console.WriteLine(classLeetCode.AddCar(1));
-            Console.WriteLine(classLeetCode.AddCar(2));
-            Console.WriteLine(classLeetCode.AddCar(3));
-            Console.WriteLine(classLeetCode.AddCar(1));
+            //LeetCode_1603.ParkingSystem classLeetCode = new LeetCode_1603.ParkingSystem(big, medium, small);
+            //Console.WriteLine(classLeetCode.AddCar(1));
+            //Console.WriteLine(classLeetCode.AddCar(2));
+            //Console.WriteLine(classLeetCode.AddCar(3));
+            //Console.WriteLine(classLeetCode.AddCar(1));
 
-            //OR
+            ////OR
 
-            ParkingSystem LeetCodeAll = new ParkingSystem(big, medium, small);
-            Console.WriteLine(LeetCodeAll.AddCar(1));
-            Console.WriteLine(LeetCodeAll.AddCar(2));
-            Console.WriteLine(LeetCodeAll.AddCar(3));
-            Console.WriteLine(LeetCodeAll.AddCar(1));
+            //ParkingSystem LeetCodeAll = new ParkingSystem(big, medium, small);
+            //Console.WriteLine(LeetCodeAll.AddCar(1));
+            //Console.WriteLine(LeetCodeAll.AddCar(2));
+            //Console.WriteLine(LeetCodeAll.AddCar(3));
+            //Console.WriteLine(LeetCodeAll.AddCar(1));
 
             ////(1633.) Percentage of Users Attended a Contest (EASY)
             //string SqlQuery =

@@ -13759,8 +13759,16 @@ namespace ProblemSolving
                 }
             }
         }
-
-
+        public int[] RunningSum(int[] nums)
+        {
+            int currValue = nums[0];
+            for (int i = 1; i < nums.Length; i++)
+            {
+                currValue = currValue + nums[i];
+                nums[i] = currValue;
+            }
+            return nums;
+        }
 
 
 
