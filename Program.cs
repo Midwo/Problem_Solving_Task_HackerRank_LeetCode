@@ -4699,15 +4699,15 @@ namespace ProblemSolving
             //LeetCode_1484 classLeetCode = new LeetCode_1484();
 
             ////(1486.) XOR Operation in an Array (EASY)
-            int n = 5;
-            int start = 0;
+            //int n = 5;
+            //int start = 0;
 
-            LeetCode_1486 classLeetCode = new LeetCode_1486();
-            Console.WriteLine(classLeetCode.XorOperation(n, start));
+            //LeetCode_1486 classLeetCode = new LeetCode_1486();
+            //Console.WriteLine(classLeetCode.XorOperation(n, start));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.XorOperation(n, start));
+            //Console.WriteLine(leetCodeAll.XorOperation(n, start));
 
             ////(1498.) Number of Subsequences That Satisfy the Given Sum Condition (MEDIUM)
             //int[] nums = [5, 2, 4, 1, 7, 6, 8];
@@ -5548,6 +5548,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
+
+            ////(2657.) Find the Prefix Common Array of Two Arrays (MEDIUM)
+            int[] A = [2, 3, 1];
+            int[] B = [3, 1, 2];
+
+            LeetCode_2657 classLeetCode = new LeetCode_2657();
+            Console.WriteLine(string.Join(',', classLeetCode.FindThePrefixCommonArray(A, B)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindThePrefixCommonArray(A, B)));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
