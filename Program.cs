@@ -4677,14 +4677,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.Shuffle(nums, n)));
 
             ////(1480.) Running Sum of 1d Array (EASY)
-            int[] nums = [1, 1, 1, 1, 1];
+            //int[] nums = [1, 1, 1, 1, 1];
 
-            LeetCode_1480 classLeetCode = new LeetCode_1480();
-            Console.WriteLine(string.Join(',', classLeetCode.RunningSum(nums)));
+            //LeetCode_1480 classLeetCode = new LeetCode_1480();
+            //Console.WriteLine(string.Join(',', classLeetCode.RunningSum(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.RunningSum(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.RunningSum(nums)));
 
             ////(1484.) Group Sold Products By The Date (EASY)
             //string SqlQuery =
@@ -4718,6 +4718,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.XorOperation(n, start));
+
+            ////(1493.) Longest Subarray of 1's After Deleting One Element (MEDIUM)
+            int[] nums = [0, 1, 1, 1, 0, 1, 1, 0, 1];
+
+            LeetCode_1493 classLeetCode = new LeetCode_1493();
+            Console.WriteLine(classLeetCode.LongestSubarray(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LongestSubarray1493(nums));
+
 
             ////(1498.) Number of Subsequences That Satisfy the Given Sum Condition (MEDIUM)
             //int[] nums = [5, 2, 4, 1, 7, 6, 8];
