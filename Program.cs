@@ -2144,6 +2144,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(",", leetCodeAll.NextGreaterElement(nums1, nums2)));
 
+            ///(498.) Diagonal Traverse (MEDIUM)
+            int[][] mat = [[2, 5], [8, 4], [0, -1]];
+
+            LeetCode_498 classLeetCode = new LeetCode_498();
+            Console.WriteLine(string.Join(',', classLeetCode.FindDiagonalOrder(mat)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindDiagonalOrder(mat)));
+
             ////(500.) Keyboard Row (EASY)
             //string[] words = ["Hello", "Alaska", "Dad", "Peace"];
 
@@ -4720,15 +4730,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.XorOperation(n, start));
 
             ////(1493.) Longest Subarray of 1's After Deleting One Element (MEDIUM)
-            int[] nums = [0, 1, 1, 1, 0, 1, 1, 0, 1];
+            //int[] nums = [0, 1, 1, 1, 0, 1, 1, 0, 1];
 
-            LeetCode_1493 classLeetCode = new LeetCode_1493();
-            Console.WriteLine(classLeetCode.LongestSubarray(nums));
+            //LeetCode_1493 classLeetCode = new LeetCode_1493();
+            //Console.WriteLine(classLeetCode.LongestSubarray(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LongestSubarray1493(nums));
-
+            //Console.WriteLine(leetCodeAll.LongestSubarray1493(nums));
 
             ////(1498.) Number of Subsequences That Satisfy the Given Sum Condition (MEDIUM)
             //int[] nums = [5, 2, 4, 1, 7, 6, 8];
