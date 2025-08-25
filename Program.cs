@@ -2145,14 +2145,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(",", leetCodeAll.NextGreaterElement(nums1, nums2)));
 
             ///(498.) Diagonal Traverse (MEDIUM)
-            int[][] mat = [[2, 5], [8, 4], [0, -1]];
+            //int[][] mat = [[2, 5], [8, 4], [0, -1]];
 
-            LeetCode_498 classLeetCode = new LeetCode_498();
-            Console.WriteLine(string.Join(',', classLeetCode.FindDiagonalOrder(mat)));
+            //LeetCode_498 classLeetCode = new LeetCode_498();
+            //Console.WriteLine(string.Join(',', classLeetCode.FindDiagonalOrder(mat)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindDiagonalOrder(mat)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindDiagonalOrder(mat)));
 
             ////(500.) Keyboard Row (EASY)
             //string[] words = ["Hello", "Alaska", "Dad", "Peace"];
@@ -5008,6 +5008,25 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1731 classLeetCode = new LeetCode_1731();
+
+            ////(1741.) Find Total Time Spent by Each Employee (EASY)
+            string SqlQuery =
+                @"
+                    Select  
+                        event_day as day,
+                        emp_id,
+                        SUM(total_time) as total_time
+                    From (Select
+                        event_day,
+                        emp_id,
+                        out_time - in_time as total_time
+                    From Employees ) a
+                    Group by event_day, emp_id
+                ";
+
+            //OR
+
+            LeetCode_1741 classLeetCode = new LeetCode_1741();
 
             ////(1752.) Check if Array Is Sorted and Rotated (EASY)
             //int[] nums = [2, 1, 3, 4];
