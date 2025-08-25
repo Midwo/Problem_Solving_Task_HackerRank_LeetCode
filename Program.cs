@@ -4938,6 +4938,22 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinPartitions(n));
 
+            ////(1693.) Daily Leads and Partners (EASY)
+            string SqlQuery =
+                @"
+                    Select
+                        date_id,
+                        make_name, 
+                        COUNT(DISTINCT lead_id) as unique_leads,
+                        COUNT(DISTINCT partner_id) as unique_partners 
+                    From DailySales 
+                    GROUP BY date_id, make_name
+                ";
+
+            //OR
+
+            LeetCode_1693 classLeetCode = new LeetCode_1693();
+
             ////(1695.) Maximum Erasure Value (MEDIUM)
             //int[] nums = [5, 2, 1, 2, 5, 2, 1, 2, 5];
 
@@ -5010,23 +5026,23 @@ namespace ProblemSolving
             //LeetCode_1731 classLeetCode = new LeetCode_1731();
 
             ////(1741.) Find Total Time Spent by Each Employee (EASY)
-            string SqlQuery =
-                @"
-                    Select  
-                        event_day as day,
-                        emp_id,
-                        SUM(total_time) as total_time
-                    From (Select
-                        event_day,
-                        emp_id,
-                        out_time - in_time as total_time
-                    From Employees ) a
-                    Group by event_day, emp_id
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select  
+            //            event_day as day,
+            //            emp_id,
+            //            SUM(total_time) as total_time
+            //        From (Select
+            //            event_day,
+            //            emp_id,
+            //            out_time - in_time as total_time
+            //        From Employees ) a
+            //        Group by event_day, emp_id
+            //    ";
 
-            //OR
+            ////OR
 
-            LeetCode_1741 classLeetCode = new LeetCode_1741();
+            //LeetCode_1741 classLeetCode = new LeetCode_1741();
 
             ////(1752.) Check if Array Is Sorted and Rotated (EASY)
             //int[] nums = [2, 1, 3, 4];
