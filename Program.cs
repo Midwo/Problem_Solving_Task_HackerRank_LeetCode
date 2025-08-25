@@ -4939,20 +4939,20 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinPartitions(n));
 
             ////(1693.) Daily Leads and Partners (EASY)
-            string SqlQuery =
-                @"
-                    Select
-                        date_id,
-                        make_name, 
-                        COUNT(DISTINCT lead_id) as unique_leads,
-                        COUNT(DISTINCT partner_id) as unique_partners 
-                    From DailySales 
-                    GROUP BY date_id, make_name
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            date_id,
+            //            make_name, 
+            //            COUNT(DISTINCT lead_id) as unique_leads,
+            //            COUNT(DISTINCT partner_id) as unique_partners 
+            //        From DailySales 
+            //        GROUP BY date_id, make_name
+            //    ";
 
-            //OR
+            ////OR
 
-            LeetCode_1693 classLeetCode = new LeetCode_1693();
+            //LeetCode_1693 classLeetCode = new LeetCode_1693();
 
             ////(1695.) Maximum Erasure Value (MEDIUM)
             //int[] nums = [5, 2, 1, 2, 5, 2, 1, 2, 5];
@@ -5119,6 +5119,16 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1789 classLeetCode = new LeetCode_1789();
+
+            ////(1791.) Find Center of Star Graph (EASY)
+            int[][] edges = [[1,2], [2, 3], [4, 2]];
+
+            LeetCode_1791 classLeetCode = new LeetCode_1791();
+            Console.WriteLine(classLeetCode.FindCenter(edges));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindCenter(edges));
 
             //(1863.) Sum of All Subset XOR Totals (EASY)
             //int[] nums = [5, 1, 6];
