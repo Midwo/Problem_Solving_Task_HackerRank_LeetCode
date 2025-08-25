@@ -14005,8 +14005,22 @@ namespace ProblemSolving
 
             return maxWords;
         }
+        public int SubtractProductAndSum(int n)
+        {
+            int product = 1;
+            int sum = 0;
+            int temp = int.MaxValue;
 
+            while (n != 0)
+            {
+                temp = n % 10;
+                n /= 10;
+                sum += temp;
+                product *= temp;
+            }
 
+            return product - sum;
+        }
 
 
 

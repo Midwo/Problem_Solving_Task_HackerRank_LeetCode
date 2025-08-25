@@ -4453,6 +4453,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1280 classLeetCode = new LeetCode_1280();
 
+            ////(1281.) Subtract the Product and Sum of Digits of an Integer (EASY)
+            int n = 4421;
+
+            LeetCode_1281 classLeetCode =  new LeetCode_1281();
+            Console.WriteLine(classLeetCode.SubtractProductAndSum(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SubtractProductAndSum(n));
+
             ////(1282.) Group the People Given the Group Size They Belong To (MEDIUM)
             //int[] groupSizes = [3, 3, 3, 3, 3, 1, 3];
 
@@ -5343,14 +5353,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxTotalFruits(fruits, startPos, k));
 
             ////(2114.) Maximum Number of Words Found in Sentences (EASY)
-            string[] sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"];
+            //string[] sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"];
 
-            LeetCode_2114 classLeetCode = new LeetCode_2114();
-            Console.WriteLine(classLeetCode.MostWordsFound(sentences));
+            //LeetCode_2114 classLeetCode = new LeetCode_2114();
+            //Console.WriteLine(classLeetCode.MostWordsFound(sentences));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MostWordsFound(sentences));
+            //Console.WriteLine(leetCodeAll.MostWordsFound(sentences));
 
             ////(2138.) Divide a String Into Groups of Size k (EASY)
             //string s = "abcdefghij";
