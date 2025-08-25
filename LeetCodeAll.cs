@@ -13994,6 +13994,22 @@ namespace ProblemSolving
             ReverseOddTreeNodeTask2415(leftRoot.left, rightRoot.right, level + 1);
             ReverseOddTreeNodeTask2415(leftRoot.right, rightRoot.left, level + 1);
         }
+        public int MostWordsFound(string[] sentences)
+        {
+            int maxWords = 0;
+
+            foreach (string sentence in sentences)
+            {
+                maxWords = Math.Max(maxWords, sentence.Split(' ').Count());
+            }
+
+            return maxWords;
+        }
+
+
+
+
+
 
 
 
