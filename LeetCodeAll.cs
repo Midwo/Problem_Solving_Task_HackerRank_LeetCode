@@ -13972,6 +13972,32 @@ namespace ProblemSolving
 
             //return result;
         }
+        public TreeNode ReverseOddLevels(TreeNode root)
+        {
+            ReverseOddTreeNodeTask2415(root.left, root.right, 0);
+            return root;
+        }
+        private void ReverseOddTreeNodeTask2415(TreeNode leftRoot, TreeNode rightRoot, int level)
+        {
+            if (leftRoot == null || rightRoot == null)
+            {
+                return;
+            }
+
+            if (level % 2 == 0)
+            {
+                int tempValue = rightRoot.val;
+                rightRoot.val = leftRoot.val;
+                leftRoot.val = tempValue;
+            }
+
+            ReverseOddTreeNodeTask2415(leftRoot.left, rightRoot.right, level + 1);
+            ReverseOddTreeNodeTask2415(leftRoot.right, rightRoot.left, level + 1);
+        }
+
+
+
+
 
 
 
