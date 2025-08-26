@@ -2262,6 +2262,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.GetMinimumDifference(root));
 
+            ////(535.) Encode and Decode TinyURL (MEDIUM)
+            //string url = "http://example.com/art.htm";
+
+            //LeetCode_535.Codec codec = new LeetCode_535.Codec();
+            //Console.WriteLine(codec.decode(codec.encode(url)));
+
+            ////OR
+
+            //LeetCodeAll.CodecTask535 codec1 = new LeetCodeAll.CodecTask535();
+            //Console.WriteLine(codec1.decode(codec1.encode(url)));
+
             ////(541.) Reverse String II (EASY)
             ////string s = "iopmkexxpatqgmwjlhvexiyjiqyorbjwikszxqzntfxskcpgybgzvhvewrghibivfmydhtydnltopuoakiepttaxubwhfemiagxhjtpbaifvmcskrphrgrqunvcpeshooqzbclaejvdpkgzbiahdaxmyplrkouzzejujzjeytgdzgofqpyxizwqkxujpmucflrzmrccoufdjzngufntzqhgwsxuehysvokgaxbrcbyotivchfwvrzrtcwfjnzbymfeixqtvhwxxwwmgsqgpslwvpdbubsdwfxawjmowvxxlyetytaqqpazhxeyohrahruyjjpzqwrtluzuhcrueagadobkxqgvrgmgebjlvunhjddqbvwggjteyxuvsiqqezhxuocfqgnltadrvrkeibhgxwlwgqzxxhedbtzkneqjpzddogkazbvkfnrgeuhuffrjipiwwgkxklvfdextixvrsrfowwijxcgkwhbkmqgtnzmddadiktodydidabimamfjddjiityanoijqahtzglelgzqauekwhjchlbcmuptbiqsoknjnqrxoczsytpaniysfpxqhydefssttjccauittoicxolnqavlajapbsuubpwfrwgwezujsieqcjldwmsggclqiujfkluzybctmcropkjwqmefxaqaqbwsnvsyepthpwrevblkfedcnryruevewbtyqgocrizztkquanvbrqjrxafproapyituyblxdkerpafemensocnealjckjvwxixdcrqiqikdlkyyjzstealbgjjtrzshupkdnrtzoecgysayjzmszmuidnegshmbdctnwhelopfhfyelgfingqgdgaedadbbxcsfionwhpomgeyoldukqyojjfeybmoihheofztalnpfptqosytucjyaqgaenjuffxpsembaemaajfbceaaxlotzqcueejltfqfugkvvctgjtlvfflymragubfyndirsxsmlsx";
             ////int k = 183;
@@ -4494,21 +4505,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GetDecimalValue(head));
 
             ////(1302.) Deepest Leaves Sum (MEDIUM)
-            TreeNode root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.left.right = new TreeNode(5);
-            root.left.left = new TreeNode(4);
-            root.left.left.left = new TreeNode(7);
-            root.right = new TreeNode(3);
-            root.right.right = new TreeNode(6);
-            root.right.right.right = new TreeNode(8);
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(2);
+            //root.left.right = new TreeNode(5);
+            //root.left.left = new TreeNode(4);
+            //root.left.left.left = new TreeNode(7);
+            //root.right = new TreeNode(3);
+            //root.right.right = new TreeNode(6);
+            //root.right.right.right = new TreeNode(8);
 
-            LeetCode_1302 classLeetCode = new LeetCode_1302();
-            Console.WriteLine(classLeetCode.DeepestLeavesSum(root));
+            //LeetCode_1302 classLeetCode = new LeetCode_1302();
+            //Console.WriteLine(classLeetCode.DeepestLeavesSum(root));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DeepestLeavesSum(root));
+            //Console.WriteLine(leetCodeAll.DeepestLeavesSum(root));
 
             ////(1309.) Decrypt String from Alphabet to Integer Mapping (EASY)
             //string s = "1326#";

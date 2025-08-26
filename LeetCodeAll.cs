@@ -14086,8 +14086,37 @@ namespace ProblemSolving
             SeachrDeepestLeaves(root.right, level + 1, root.val);
 
         }
+        public class CodecTask535
+        {
+            private Dictionary<string, string> _dictionaryShortTinyUrl;
 
+            public CodecTask535()
+            {
+                _dictionaryShortTinyUrl = new Dictionary<string, string>();
+            }
+            public string encode(string longUrl)
+            {
+                var newGuid = Guid.NewGuid();
+                string shortGuid = Convert.ToBase64String(newGuid.ToByteArray());
 
+                while (_dictionaryShortTinyUrl.ContainsKey(shortGuid))
+                {
+                    newGuid = Guid.NewGuid();
+                    shortGuid = Convert.ToBase64String(newGuid.ToByteArray());
+                }
+
+                _dictionaryShortTinyUrl.Add(shortGuid, longUrl);
+
+                return "http://tinyurl.com/" + shortGuid + "";
+            }
+
+            public string decode(string shortUrl)
+            {
+                string temp = shortUrl.Substring(19, shortUrl.Length - 19);
+                //return "";
+                return _dictionaryShortTinyUrl[temp];
+            }
+        }
 
 
 
