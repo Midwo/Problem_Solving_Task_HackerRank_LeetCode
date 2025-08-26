@@ -5169,15 +5169,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindCenter(edges));
 
             ////(1828.) Queries on Number of Points Inside a Circle (MEDIUM)
-            int[][] points = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5]];
-            int[][] queries = [[1, 2, 2], [2, 2, 2], [4, 3, 2], [4, 3, 3]];
+            //int[][] points = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5]];
+            //int[][] queries = [[1, 2, 2], [2, 2, 2], [4, 3, 2], [4, 3, 3]];
 
-            LeetCode_1828 classLeetCode = new LeetCode_1828();
-            Console.WriteLine(string.Join(',', classLeetCode.CountPoints(points, queries)));
+            //LeetCode_1828 classLeetCode = new LeetCode_1828();
+            //Console.WriteLine(string.Join(',', classLeetCode.CountPoints(points, queries)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.CountPoints(points, queries)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.CountPoints(points, queries)));
 
             //(1863.) Sum of All Subset XOR Totals (EASY)
             //int[] nums = [5, 1, 6];
@@ -5717,6 +5717,26 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
+
+            ////(2610.) Convert an Array Into a 2D Array With Conditions (MEDIUM)
+            int[] nums = [1, 3, 4, 1, 2, 3, 1];
+            
+            LeetCode_2610 classLeetCode = new LeetCode_2610();
+            IList<IList<int>> result = classLeetCode.FindMatrix(nums);
+
+            foreach (var item in result) 
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            IList<IList<int>> result1 = leetCodeAll.FindMatrix(nums);
+
+            foreach (var item in result1)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             ////(2616.) Minimize the Maximum Difference of Pairs (MEDIUM)
             //int[] nums = [10,1,2,7,1,3];
