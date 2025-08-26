@@ -14212,8 +14212,17 @@ namespace ProblemSolving
 
             return result;
         }
+        public int[] CreateTargetArray(int[] nums, int[] index)
+        {
+            List<int> arrayList = new List<int>();
 
+            for (int i = 0; i < index.Length; i++)
+            {
+                arrayList.Insert(index[i], nums[i]);
+            }
 
+            return arrayList.ToArray();
+        }
 
 
 

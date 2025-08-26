@@ -4682,6 +4682,17 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
 
+            ////(1389.) Create Target Array in the Given Order (EASY)
+            int[] nums = [0, 1, 2, 3, 4];
+            int[] index = [0, 1, 2, 2, 1];
+
+            LeetCode_1389 classLeetCode = new LeetCode_1389();
+            Console.WriteLine(string.Join(',', classLeetCode.CreateTargetArray(nums, index)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.CreateTargetArray(nums, index)));
+
             ////(1394.) Find Lucky Integer in an Array (EASY)
             //int[] arr = [1, 2, 2, 3, 3, 3];
 
@@ -5719,24 +5730,24 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
 
             ////(2610.) Convert an Array Into a 2D Array With Conditions (MEDIUM)
-            int[] nums = [1, 3, 4, 1, 2, 3, 1];
-            
-            LeetCode_2610 classLeetCode = new LeetCode_2610();
-            IList<IList<int>> result = classLeetCode.FindMatrix(nums);
+            //int[] nums = [1, 3, 4, 1, 2, 3, 1];
 
-            foreach (var item in result) 
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //LeetCode_2610 classLeetCode = new LeetCode_2610();
+            //IList<IList<int>> result = classLeetCode.FindMatrix(nums);
 
-            //OR
+            //foreach (var item in result) 
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            IList<IList<int>> result1 = leetCodeAll.FindMatrix(nums);
+            ////OR
 
-            foreach (var item in result1)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //IList<IList<int>> result1 = leetCodeAll.FindMatrix(nums);
+
+            //foreach (var item in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(2616.) Minimize the Maximum Difference of Pairs (MEDIUM)
             //int[] nums = [10,1,2,7,1,3];
