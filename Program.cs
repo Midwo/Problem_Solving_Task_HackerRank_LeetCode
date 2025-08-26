@@ -5316,6 +5316,17 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1978 classLeetCode = new LeetCode_1978();
 
+            ////(2000.) Reverse Prefix of Word (EASY)
+            string word = "abcdefd";
+            char ch = 'd';
+
+            LeetCode_2000 classLeetCode = new LeetCode_2000();
+            Console.WriteLine(classLeetCode.ReversePrefix(word, ch));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ReversePrefix(word, ch));
+
             ////(2011.) Final Value of Variable After Performing Operations (EASY)
             //string[] operations = ["X++", "++X", "--X", "X--"];
 
