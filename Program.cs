@@ -3097,6 +3097,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.NumberOfLines(widths, s)));
 
+            ////(807.) Max Increase to Keep City Skyline (MEDIUM)
+            int[][] grid = [[3, 0, 8, 4], [2, 4, 5, 7], [9, 2, 6, 3], [0, 3, 1, 0]];
+
+            LeetCode_807 classLeetCode = new LeetCode_807();
+            Console.WriteLine(classLeetCode.MaxIncreaseKeepingSkyline(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxIncreaseKeepingSkyline(grid));
+
             ////(808.) Soup Servings (MEDIUM)
             //int n = 100;
 
@@ -4683,15 +4693,15 @@ namespace ProblemSolving
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
 
             ////(1389.) Create Target Array in the Given Order (EASY)
-            int[] nums = [0, 1, 2, 3, 4];
-            int[] index = [0, 1, 2, 2, 1];
+            //int[] nums = [0, 1, 2, 3, 4];
+            //int[] index = [0, 1, 2, 2, 1];
 
-            LeetCode_1389 classLeetCode = new LeetCode_1389();
-            Console.WriteLine(string.Join(',', classLeetCode.CreateTargetArray(nums, index)));
+            //LeetCode_1389 classLeetCode = new LeetCode_1389();
+            //Console.WriteLine(string.Join(',', classLeetCode.CreateTargetArray(nums, index)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.CreateTargetArray(nums, index)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.CreateTargetArray(nums, index)));
 
             ////(1394.) Find Lucky Integer in an Array (EASY)
             //int[] arr = [1, 2, 2, 3, 3, 3];
