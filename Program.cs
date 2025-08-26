@@ -4493,6 +4493,23 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.GetDecimalValue(head));
 
+            ////(1302.) Deepest Leaves Sum (MEDIUM)
+            TreeNode root = new TreeNode(1);
+            root.left = new TreeNode(2);
+            root.left.right = new TreeNode(5);
+            root.left.left = new TreeNode(4);
+            root.left.left.left = new TreeNode(7);
+            root.right = new TreeNode(3);
+            root.right.right = new TreeNode(6);
+            root.right.right.right = new TreeNode(8);
+
+            LeetCode_1302 classLeetCode = new LeetCode_1302();
+            Console.WriteLine(classLeetCode.DeepestLeavesSum(root));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DeepestLeavesSum(root));
+
             ////(1309.) Decrypt String from Alphabet to Integer Mapping (EASY)
             //string s = "1326#";
 
@@ -5793,14 +5810,14 @@ namespace ProblemSolving
             //}
 
             ////(3000.) Maximum Area of Longest Diagonal Rectangle (EASY);
-            int[][] dimensions = [[6, 5], [8, 6], [2, 10], [8, 1], [9, 2], [3, 5], [3, 5]];
+            //int[][] dimensions = [[6, 5], [8, 6], [2, 10], [8, 1], [9, 2], [3, 5], [3, 5]];
 
-            LeetCode_3000 classLeetCode = new LeetCode_3000();
-            Console.WriteLine(classLeetCode.AreaOfMaxDiagonal(dimensions));
+            //LeetCode_3000 classLeetCode = new LeetCode_3000();
+            //Console.WriteLine(classLeetCode.AreaOfMaxDiagonal(dimensions));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.AreaOfMaxDiagonal(dimensions));
+            //Console.WriteLine(leetCodeAll.AreaOfMaxDiagonal(dimensions));
 
             ////(3024.) Type of Triangle (EASY)
             //int[] nums = [8, 4, 2];

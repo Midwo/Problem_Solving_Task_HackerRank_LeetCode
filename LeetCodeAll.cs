@@ -14052,7 +14052,40 @@ namespace ProblemSolving
             return maximumArea;
         }
 
+        private int _maxLevelTask1302;
+        private int _sumMaxLevelTask1302;
+        public int DeepestLeavesSum(TreeNode root)
+        {
+            _maxLevelTask1302 = 0;
+            _sumMaxLevelTask1302 = 0;
 
+            SeachrDeepestLeaves(root, 0, 0);
+
+            return _sumMaxLevelTask1302 / 2;
+        }
+        private void SeachrDeepestLeaves(TreeNode root, int level, int lastValue)
+        {
+            if (root == null)
+            {
+                if (_maxLevelTask1302 <= level)
+                {
+                    if (_maxLevelTask1302 < level)
+                    {
+                        _maxLevelTask1302 = level;
+                        _sumMaxLevelTask1302 = lastValue;
+                    }
+                    else
+                    {
+                        _sumMaxLevelTask1302 += lastValue;
+                    }
+                }
+                return;
+            }
+
+            SeachrDeepestLeaves(root.left, level + 1, root.val);
+            SeachrDeepestLeaves(root.right, level + 1, root.val);
+
+        }
 
 
 
