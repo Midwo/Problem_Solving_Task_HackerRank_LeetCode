@@ -4454,14 +4454,14 @@ namespace ProblemSolving
             //LeetCode_1280 classLeetCode = new LeetCode_1280();
 
             ////(1281.) Subtract the Product and Sum of Digits of an Integer (EASY)
-            int n = 4421;
+            //int n = 4421;
 
-            LeetCode_1281 classLeetCode =  new LeetCode_1281();
-            Console.WriteLine(classLeetCode.SubtractProductAndSum(n));
+            //LeetCode_1281 classLeetCode =  new LeetCode_1281();
+            //Console.WriteLine(classLeetCode.SubtractProductAndSum(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SubtractProductAndSum(n));
+            //Console.WriteLine(leetCodeAll.SubtractProductAndSum(n));
 
             ////(1282.) Group the People Given the Group Size They Belong To (MEDIUM)
             //int[] groupSizes = [3, 3, 3, 3, 3, 1, 3];
@@ -5791,6 +5791,16 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', num));
             //}
+
+            ////(3000.) Maximum Area of Longest Diagonal Rectangle (EASY);
+            int[][] dimensions = [[6, 5], [8, 6], [2, 10], [8, 1], [9, 2], [3, 5], [3, 5]];
+
+            LeetCode_3000 classLeetCode = new LeetCode_3000();
+            Console.WriteLine(classLeetCode.AreaOfMaxDiagonal(dimensions));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AreaOfMaxDiagonal(dimensions));
 
             ////(3024.) Type of Triangle (EASY)
             //int[] nums = [8, 4, 2];

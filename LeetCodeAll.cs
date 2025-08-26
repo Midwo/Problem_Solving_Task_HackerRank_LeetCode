@@ -14021,8 +14021,36 @@ namespace ProblemSolving
 
             return product - sum;
         }
+        public int AreaOfMaxDiagonal(int[][] dimensions)
+        {
+            int maximumArea = 0;
+            double maxValueWithoutSqrt = 0;
 
+            for (int i = 0; i < dimensions.Length; i++)
+            {
+                double forIndex0 = dimensions[i][1] * dimensions[i][1] + dimensions[i][0] * dimensions[i][0];
 
+                if (maxValueWithoutSqrt <= forIndex0)
+                {
+                    int tempArea = dimensions[i][1] * dimensions[i][0];
+
+                    if (maxValueWithoutSqrt < forIndex0)
+                    {
+                        maxValueWithoutSqrt = forIndex0;
+                        maximumArea = tempArea;
+                    }
+                    else
+                    {
+                        if (tempArea > maximumArea)
+                        {
+                            maximumArea = tempArea;
+                        }
+                    }
+                }
+            }
+
+            return maximumArea;
+        }
 
 
 
