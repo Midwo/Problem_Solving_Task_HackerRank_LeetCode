@@ -5168,6 +5168,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindCenter(edges));
 
+            ////(1828.) Queries on Number of Points Inside a Circle (MEDIUM)
+            int[][] points = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5]];
+            int[][] queries = [[1, 2, 2], [2, 2, 2], [4, 3, 2], [4, 3, 3]];
+
+            LeetCode_1828 classLeetCode = new LeetCode_1828();
+            Console.WriteLine(string.Join(',', classLeetCode.CountPoints(points, queries)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.CountPoints(points, queries)));
+
             //(1863.) Sum of All Subset XOR Totals (EASY)
             //int[] nums = [5, 1, 6];
 
@@ -5317,15 +5328,15 @@ namespace ProblemSolving
             //LeetCode_1978 classLeetCode = new LeetCode_1978();
 
             ////(2000.) Reverse Prefix of Word (EASY)
-            string word = "abcdefd";
-            char ch = 'd';
+            //string word = "abcdefd";
+            //char ch = 'd';
 
-            LeetCode_2000 classLeetCode = new LeetCode_2000();
-            Console.WriteLine(classLeetCode.ReversePrefix(word, ch));
+            //LeetCode_2000 classLeetCode = new LeetCode_2000();
+            //Console.WriteLine(classLeetCode.ReversePrefix(word, ch));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ReversePrefix(word, ch));
+            //Console.WriteLine(leetCodeAll.ReversePrefix(word, ch));
 
             ////(2011.) Final Value of Variable After Performing Operations (EASY)
             //string[] operations = ["X++", "++X", "--X", "X--"];
