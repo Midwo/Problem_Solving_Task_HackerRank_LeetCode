@@ -3098,14 +3098,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.NumberOfLines(widths, s)));
 
             ////(807.) Max Increase to Keep City Skyline (MEDIUM)
-            int[][] grid = [[3, 0, 8, 4], [2, 4, 5, 7], [9, 2, 6, 3], [0, 3, 1, 0]];
+            //int[][] grid = [[3, 0, 8, 4], [2, 4, 5, 7], [9, 2, 6, 3], [0, 3, 1, 0]];
 
-            LeetCode_807 classLeetCode = new LeetCode_807();
-            Console.WriteLine(classLeetCode.MaxIncreaseKeepingSkyline(grid));
+            //LeetCode_807 classLeetCode = new LeetCode_807();
+            //Console.WriteLine(classLeetCode.MaxIncreaseKeepingSkyline(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxIncreaseKeepingSkyline(grid));
+            //Console.WriteLine(leetCodeAll.MaxIncreaseKeepingSkyline(grid));
 
             ////(808.) Soup Servings (MEDIUM)
             //int n = 100;
@@ -4986,6 +4986,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountConsistentStrings(allowed, words));
+
+            ////(1688.) Count of Matches in Tournament (EASY)
+            int n = 7;
+
+            LeetCode_1688 classLeetCode = new LeetCode_1688();
+            Console.WriteLine(classLeetCode.NumberOfMatches(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumberOfMatches(n));
 
             ////(1689.) Partitioning Into Minimum Number Of Deci-Binary Numbers (MEDIUM)
             //string n = "32";
