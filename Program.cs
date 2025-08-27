@@ -5200,15 +5200,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindCenter(edges));
 
             ////(1816.) Truncate Sentence (EASY) 
-            string s = "Hello how are you Contestant";
-            int k = 4;
+            //string s = "Hello how are you Contestant";
+            //int k = 4;
 
-            LeetCode_1816 classLeetCode = new LeetCode_1816();
-            Console.WriteLine(classLeetCode.TruncateSentence(s, k));
+            //LeetCode_1816 classLeetCode = new LeetCode_1816();
+            //Console.WriteLine(classLeetCode.TruncateSentence(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.TruncateSentence(s, k));
+            //Console.WriteLine(leetCodeAll.TruncateSentence(s, k));
 
             ////(1828.) Queries on Number of Points Inside a Circle (MEDIUM)
             //int[][] points = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5]];
@@ -5932,6 +5932,17 @@ namespace ProblemSolving
 
             ////OR
             //Console.WriteLine(leetCodeAll.TriangleType(nums));
+
+            ////(3065.) Minimum Operations to Exceed Threshold Value I (EASY)
+            int[] nums = [2, 11, 10, 1, 3];
+            int k = 10;
+
+            LeetCode_3065 classLeetCode = new LeetCode_3065();
+            Console.WriteLine(classLeetCode.MinOperations(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperationsTask3065(nums, k));
 
             ////(3085). Minimum Deletions to Make String K-Special (MEDIUM)
             //string word = "gzpgogrg";

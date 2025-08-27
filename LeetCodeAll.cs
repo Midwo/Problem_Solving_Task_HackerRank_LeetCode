@@ -14322,8 +14322,20 @@ namespace ProblemSolving
 
             return result;
         }
+        public int MinOperationsTask3065(int[] nums, int k)
+        {
+            int result = 0;
 
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] < k)
+                {
+                    result++;
+                }
+            }
 
+            return result;
+        }
 
 
 
