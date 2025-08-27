@@ -5199,6 +5199,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindCenter(edges));
 
+            ////(1816.) Truncate Sentence (EASY) 
+            string s = "Hello how are you Contestant";
+            int k = 4;
+
+            LeetCode_1816 classLeetCode = new LeetCode_1816();
+            Console.WriteLine(classLeetCode.TruncateSentence(s, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.TruncateSentence(s, k));
+
             ////(1828.) Queries on Number of Points Inside a Circle (MEDIUM)
             //int[][] points = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5]];
             //int[][] queries = [[1, 2, 2], [2, 2, 2], [4, 3, 2], [4, 3, 3]];
@@ -6048,15 +6059,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ConvertDateToBinary(date));
 
             ////(3285.) Find Indices of Stable Mountains (EASY)
-            int[] height = [1, 2, 3, 4, 5];
-            int threshold = 2; 
+            //int[] height = [1, 2, 3, 4, 5];
+            //int threshold = 2; 
 
-            LeetCode_3285 classLeetCode = new LeetCode_3285();
-            Console.WriteLine(string.Join(',',classLeetCode.StableMountains(height, threshold)));
+            //LeetCode_3285 classLeetCode = new LeetCode_3285();
+            //Console.WriteLine(string.Join(',',classLeetCode.StableMountains(height, threshold)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.StableMountains(height, threshold)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.StableMountains(height, threshold)));
 
             ////(3289.) The Two Sneaky Numbers of Digitville (EASY)
             //int[] nums = [7, 1, 5, 4, 3, 4, 6, 0, 9, 5, 8, 2];

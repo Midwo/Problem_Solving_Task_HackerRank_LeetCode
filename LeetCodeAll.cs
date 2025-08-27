@@ -14309,8 +14309,19 @@ namespace ProblemSolving
 
             return listResult.ToArray();
         }
+        public string TruncateSentence(string s, int k)
+        {
+            string[] wordList = s.Split(' ');
 
+            string result = wordList[0];
 
+            for (int i = 1; i < k; i++)
+            {
+                result += ' ' + wordList[i];
+            }
+
+            return result;
+        }
 
 
 
