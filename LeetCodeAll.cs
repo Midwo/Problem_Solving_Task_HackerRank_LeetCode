@@ -14293,8 +14293,22 @@ namespace ProblemSolving
 
             return result;
         }
+        public IList<int> StableMountains(int[] height, int threshold)
+        {
+            List<int> listResult = new List<int>();
+            int lastValue = height[0];
 
+            for (int i = 1; i < height.Length; i++)
+            {
+                if (lastValue > threshold)
+                {
+                    listResult.Add(i);
+                }
+                lastValue = height[i];
+            }
 
+            return listResult.ToArray();
+        }
 
 
 

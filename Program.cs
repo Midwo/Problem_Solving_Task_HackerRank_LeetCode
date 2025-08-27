@@ -5459,14 +5459,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', result1));
 
             ////(2160.) Minimum Sum of Four Digit Number After Splitting Digits (EASY) 
-            int num = 2932;
-            
-            LeetCode_2160 classLeetCode =  new LeetCode_2160();
-            Console.WriteLine(classLeetCode.MinimumSum(num));
+            //int num = 2932;
 
-            //OR
+            //LeetCode_2160 classLeetCode =  new LeetCode_2160();
+            //Console.WriteLine(classLeetCode.MinimumSum(num));
 
-            Console.WriteLine(leetCodeAll.MinimumSum(num));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MinimumSum(num));
 
             ////(2161.) Partition Array According to Given Pivot (MEDIUM)
             //int[] nums = [9,12,5,10,14,3,10];
@@ -6046,6 +6046,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ConvertDateToBinary(date));
+
+            ////(3285.) Find Indices of Stable Mountains (EASY)
+            int[] height = [1, 2, 3, 4, 5];
+            int threshold = 2; 
+
+            LeetCode_3285 classLeetCode = new LeetCode_3285();
+            Console.WriteLine(string.Join(',',classLeetCode.StableMountains(height, threshold)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.StableMountains(height, threshold)));
 
             ////(3289.) The Two Sneaky Numbers of Digitville (EASY)
             //int[] nums = [7, 1, 5, 4, 3, 4, 6, 0, 9, 5, 8, 2];
