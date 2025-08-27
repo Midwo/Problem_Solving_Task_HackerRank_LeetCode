@@ -14274,8 +14274,25 @@ namespace ProblemSolving
 
             return result;
         }
+        public int MinimumSum(int num)
+        {
+            PriorityQueue<int, int> priorityQueue = new PriorityQueue<int, int>();
 
+            while (num != 0)
+            {
+                int temp = num % 10;
+                priorityQueue.Enqueue(temp, temp);
+                num /= 10;
+            }
 
+            int result = 0;
+            result += priorityQueue.Dequeue() * 10;
+            result += priorityQueue.Dequeue() * 10;
+            result += priorityQueue.Dequeue();
+            result += priorityQueue.Dequeue();
+
+            return result;
+        }
 
 
 

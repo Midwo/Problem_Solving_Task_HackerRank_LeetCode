@@ -4988,14 +4988,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountConsistentStrings(allowed, words));
 
             ////(1688.) Count of Matches in Tournament (EASY)
-            int n = 7;
+            //int n = 7;
 
-            LeetCode_1688 classLeetCode = new LeetCode_1688();
-            Console.WriteLine(classLeetCode.NumberOfMatches(n));
+            //LeetCode_1688 classLeetCode = new LeetCode_1688();
+            //Console.WriteLine(classLeetCode.NumberOfMatches(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumberOfMatches(n));
+            //Console.WriteLine(leetCodeAll.NumberOfMatches(n));
 
             ////(1689.) Partitioning Into Minimum Number Of Deci-Binary Numbers (MEDIUM)
             //string n = "32";
@@ -5457,6 +5457,16 @@ namespace ProblemSolving
 
             //string[] result1 = leetCodeAll.DivideString(s, k, fill);
             //Console.WriteLine(string.Join(',', result1));
+
+            ////(2160.) Minimum Sum of Four Digit Number After Splitting Digits (EASY) 
+            int num = 2932;
+            
+            LeetCode_2160 classLeetCode =  new LeetCode_2160();
+            Console.WriteLine(classLeetCode.MinimumSum(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumSum(num));
 
             ////(2161.) Partition Array According to Given Pivot (MEDIUM)
             //int[] nums = [9,12,5,10,14,3,10];
