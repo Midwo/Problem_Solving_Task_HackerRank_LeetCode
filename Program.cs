@@ -5934,15 +5934,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TriangleType(nums));
 
             ////(3065.) Minimum Operations to Exceed Threshold Value I (EASY)
-            int[] nums = [2, 11, 10, 1, 3];
-            int k = 10;
+            //int[] nums = [2, 11, 10, 1, 3];
+            //int k = 10;
 
-            LeetCode_3065 classLeetCode = new LeetCode_3065();
-            Console.WriteLine(classLeetCode.MinOperations(nums, k));
+            //LeetCode_3065 classLeetCode = new LeetCode_3065();
+            //Console.WriteLine(classLeetCode.MinOperations(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperationsTask3065(nums, k));
+            //Console.WriteLine(leetCodeAll.MinOperationsTask3065(nums, k));
 
             ////(3085). Minimum Deletions to Make String K-Special (MEDIUM)
             //string word = "gzpgogrg";
@@ -6165,6 +6165,26 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxDistance(s, k));
+
+            ////(3446.) Sort Matrix by Diagonals (MEDIUM)
+            int[][] grid = [[1, 2, 5, 0], [3, 4, 0, 4], [4, 1, 0, 0], [4, 2, 4, 1]];
+            
+            LeetCode_3446 classLeetCode = new LeetCode_3446();
+            int[][] result = classLeetCode.SortMatrix(grid);
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            int[][] result1 = leetCodeAll.SortMatrix(grid);
+
+            foreach (var item in result1)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             ////(3467.) Transform Array by Parity (EASY)
             //int[] nums = [4, 3, 2, 1];
