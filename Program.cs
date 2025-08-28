@@ -4966,15 +4966,15 @@ namespace ProblemSolving
             //LeetCode_1661 classLeetCode = new LeetCode_1661();
 
             ////(1662.) Check If Two String Arrays are Equivalent (EASY)
-            string[] word1 = ["ab", "c"];
-            string[] word2 = ["a", "bc"];
+            //string[] word1 = ["ab", "c"];
+            //string[] word2 = ["a", "bc"];
 
-            LeetCode_1662 classLeetCode = new LeetCode_1662();
-            Console.WriteLine(classLeetCode.ArrayStringsAreEqual(word1, word2));
+            //LeetCode_1662 classLeetCode = new LeetCode_1662();
+            //Console.WriteLine(classLeetCode.ArrayStringsAreEqual(word1, word2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ArrayStringsAreEqual(word1, word2));
+            //Console.WriteLine(leetCodeAll.ArrayStringsAreEqual(word1, word2));
 
             ////(1667.) Fix Names in a Table (EASY)
             //string SqlQuery =
@@ -5773,6 +5773,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
+
+            ////(2520.) Count the Digits That Divide a Number (EASY)
+            int num = 1248;
+
+            LeetCode_2520 classLeetCode = new LeetCode_2520();
+            Console.WriteLine(classLeetCode.CountDigits(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountDigits(num));
 
             ////(2529.) Maximum Count of Positive Integer and Negative Integer (EASY)
             //int[] nums = [-2, -1, -1, 0, 0, 0];

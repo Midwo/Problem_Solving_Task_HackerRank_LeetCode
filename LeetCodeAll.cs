@@ -14476,8 +14476,22 @@ namespace ProblemSolving
             }
             return true;
         }
+        public int CountDigits(int num)
+        {
+            int result = 0;
+            int copyNum = num;
 
+            while (copyNum > 0)
+            {
+                if (num % (copyNum % 10) == 0)
+                {
+                    result++;
+                }
+                copyNum /= 10;
+            }
 
+            return result;
+        }
 
 
 
