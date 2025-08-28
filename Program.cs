@@ -4965,6 +4965,17 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1661 classLeetCode = new LeetCode_1661();
 
+            ////(1662.) Check If Two String Arrays are Equivalent (EASY)
+            string[] word1 = ["ab", "c"];
+            string[] word2 = ["a", "bc"];
+
+            LeetCode_1662 classLeetCode = new LeetCode_1662();
+            Console.WriteLine(classLeetCode.ArrayStringsAreEqual(word1, word2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ArrayStringsAreEqual(word1, word2));
+
             ////(1667.) Fix Names in a Table (EASY)
             //string SqlQuery =
             //    @"
@@ -6031,16 +6042,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
 
             ////(3162.) Find the Number of Good Pairs I (EASY)
-            int[] nums1 = [1, 3, 4];
-            int[] nums2 = [1, 3, 4];
-            int k = 1;
+            //int[] nums1 = [1, 3, 4];
+            //int[] nums2 = [1, 3, 4];
+            //int k = 1;
 
-            LeetCode_3162 classLeetCode = new LeetCode_3162();
-            Console.WriteLine(classLeetCode.NumberOfPairs(nums1, nums2, k));
+            //LeetCode_3162 classLeetCode = new LeetCode_3162();
+            //Console.WriteLine(classLeetCode.NumberOfPairs(nums1, nums2, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumberOfPairs(nums1, nums2, k));
+            //Console.WriteLine(leetCodeAll.NumberOfPairs(nums1, nums2, k));
 
             ////(3190.) Find Minimum Operations to Make All Elements Divisible by Three (EASY)
             //int[] nums = [1, 2, 3, 4];

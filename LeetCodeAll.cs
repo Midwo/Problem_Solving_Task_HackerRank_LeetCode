@@ -14465,7 +14465,17 @@ namespace ProblemSolving
 
             return result;
         }
+        public bool ArrayStringsAreEqual(string[] word1, string[] word2)
+        {
+            string word1String = string.Join("", word1);
+            string word2String = string.Join("", word2);
 
+            if (word1String != word2String)
+            {
+                return false;
+            }
+            return true;
+        }
 
 
 
