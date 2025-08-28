@@ -4541,6 +4541,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FreqAlphabets(s));
 
+            ////(1313.) Decompress Run-Length Encoded List (EASY)
+            int[] nums = [1, 2, 3, 4];
+
+            LeetCode_1313 classLeetCode = new LeetCode_1313();
+            Console.WriteLine(string.Join(',', classLeetCode.DecompressRLElist(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.DecompressRLElist(nums)));
+
             ////(1321.) Restaurant Growth (MEDIUM)
             //string SqlQuery =
             //    @"
@@ -6167,24 +6177,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDistance(s, k));
 
             ////(3446.) Sort Matrix by Diagonals (MEDIUM)
-            int[][] grid = [[1, 2, 5, 0], [3, 4, 0, 4], [4, 1, 0, 0], [4, 2, 4, 1]];
-            
-            LeetCode_3446 classLeetCode = new LeetCode_3446();
-            int[][] result = classLeetCode.SortMatrix(grid);
+            //int[][] grid = [[1, 2, 5, 0], [3, 4, 0, 4], [4, 1, 0, 0], [4, 2, 4, 1]];
 
-            foreach (var item in result)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //LeetCode_3446 classLeetCode = new LeetCode_3446();
+            //int[][] result = classLeetCode.SortMatrix(grid);
 
-            //OR
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            int[][] result1 = leetCodeAll.SortMatrix(grid);
+            ////OR
 
-            foreach (var item in result1)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //int[][] result1 = leetCodeAll.SortMatrix(grid);
+
+            //foreach (var item in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(3467.) Transform Array by Parity (EASY)
             //int[] nums = [4, 3, 2, 1];
