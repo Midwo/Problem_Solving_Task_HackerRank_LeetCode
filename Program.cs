@@ -18,6 +18,7 @@ using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Xml.Linq;
+using static ProblemSolving.LeetCode.LeetCode_1476;
 using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
 using static ProblemSolving.LeetCode.LeetCode_303;
@@ -4542,14 +4543,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FreqAlphabets(s));
 
             ////(1313.) Decompress Run-Length Encoded List (EASY)
-            int[] nums = [1, 2, 3, 4];
+            //int[] nums = [1, 2, 3, 4];
 
-            LeetCode_1313 classLeetCode = new LeetCode_1313();
-            Console.WriteLine(string.Join(',', classLeetCode.DecompressRLElist(nums)));
+            //LeetCode_1313 classLeetCode = new LeetCode_1313();
+            //Console.WriteLine(string.Join(',', classLeetCode.DecompressRLElist(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.DecompressRLElist(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.DecompressRLElist(nums)));
 
             ////(1321.) Restaurant Growth (MEDIUM)
             //string SqlQuery =
@@ -4754,6 +4755,29 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.Shuffle(nums, n)));
+
+            ////(1476.) Subrectangle Queries (MEDIUM)
+            int[][] rectangle = [[1, 2, 1], [4, 3, 4], [3, 2, 1], [1, 1, 1]];
+
+            SubrectangleQueries subrectangleQueries = new SubrectangleQueries(rectangle);
+            Console.WriteLine(subrectangleQueries.GetValue(0, 2));
+            subrectangleQueries.UpdateSubrectangle(0, 0, 3, 2, 5);
+            Console.WriteLine(subrectangleQueries.GetValue(0, 2));
+            Console.WriteLine(subrectangleQueries.GetValue(3, 1));
+            subrectangleQueries.UpdateSubrectangle(3, 0, 3, 2, 10);
+            Console.WriteLine(subrectangleQueries.GetValue(3, 1));
+            Console.WriteLine(subrectangleQueries.GetValue(3, 1));
+
+            //OR
+
+            SubrectangleQueriesTask1476 subrectangleQueries1 = new SubrectangleQueriesTask1476(rectangle);
+            Console.WriteLine(subrectangleQueries1.GetValue(0, 2));
+            subrectangleQueries1.UpdateSubrectangle(0, 0, 3, 2, 5);
+            Console.WriteLine(subrectangleQueries1.GetValue(0, 2));
+            Console.WriteLine(subrectangleQueries1.GetValue(3, 1));
+            subrectangleQueries1.UpdateSubrectangle(3, 0, 3, 2, 10);
+            Console.WriteLine(subrectangleQueries1.GetValue(3, 1));
+            Console.WriteLine(subrectangleQueries1.GetValue(3, 1));
 
             ////(1480.) Running Sum of 1d Array (EASY)
             //int[] nums = [1, 1, 1, 1, 1];
