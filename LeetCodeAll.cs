@@ -14446,8 +14446,25 @@ namespace ProblemSolving
                 return _rectangle[row][col];
             }
         }
+        public int NumberOfPairs(int[] nums1, int[] nums2, int k)
+        {
+            int result = 0;
 
+            for (int i = 0; i < nums2.Length; i++)
+            {
+                nums2[i] *= k;
 
+                for (int j = 0; j < nums1.Length; j++)
+                {
+                    if (nums1[j] % nums2[i] == 0)
+                    {
+                        result++;
+                    }
+                }
+            }
+
+            return result;
+        }
 
 
 
