@@ -5775,14 +5775,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
 
             ////(2520.) Count the Digits That Divide a Number (EASY)
-            int num = 1248;
+            //int num = 1248;
 
-            LeetCode_2520 classLeetCode = new LeetCode_2520();
-            Console.WriteLine(classLeetCode.CountDigits(num));
+            //LeetCode_2520 classLeetCode = new LeetCode_2520();
+            //Console.WriteLine(classLeetCode.CountDigits(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountDigits(num));
+            //Console.WriteLine(leetCodeAll.CountDigits(num));
 
             ////(2529.) Maximum Count of Positive Integer and Negative Integer (EASY)
             //int[] nums = [-2, -1, -1, 0, 0, 0];
@@ -5978,6 +5978,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.AreaOfMaxDiagonal(dimensions));
+
+            ////(3021.) Alice and Bob Playing Flower Game (MEDIUM)
+            int n = 3;
+            int m = 2;
+
+            LeetCode_3021 classLeetCode = new LeetCode_3021();
+            Console.WriteLine(classLeetCode.FlowerGame(n, m));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FlowerGame(n, m));
 
             ////(3024.) Type of Triangle (EASY)
             //int[] nums = [8, 4, 2];

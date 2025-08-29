@@ -14492,6 +14492,13 @@ namespace ProblemSolving
 
             return result;
         }
+        public long FlowerGame(int n, int m)
+        {
+            return (long)n * m / 2;
+        }
+
+
+
 
 
 
