@@ -5774,6 +5774,22 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
 
+            ////(2482.) Difference Between Ones and Zeros in Row and Column (MEDIUM)
+            int[][] grid = [[0, 1, 1], [1, 0, 1], [0, 0, 1]];
+
+            LeetCode_2482 classLeetCode = new LeetCode_2482();
+            foreach (var item in classLeetCode.OnesMinusZeros(grid)) 
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.OnesMinusZeros(grid))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
             ////(2520.) Count the Digits That Divide a Number (EASY)
             //int num = 1248;
 
@@ -5980,15 +5996,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.AreaOfMaxDiagonal(dimensions));
 
             ////(3021.) Alice and Bob Playing Flower Game (MEDIUM)
-            int n = 3;
-            int m = 2;
+            //int n = 3;
+            //int m = 2;
 
-            LeetCode_3021 classLeetCode = new LeetCode_3021();
-            Console.WriteLine(classLeetCode.FlowerGame(n, m));
+            //LeetCode_3021 classLeetCode = new LeetCode_3021();
+            //Console.WriteLine(classLeetCode.FlowerGame(n, m));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FlowerGame(n, m));
+            //Console.WriteLine(leetCodeAll.FlowerGame(n, m));
 
             ////(3024.) Type of Triangle (EASY)
             //int[] nums = [8, 4, 2];
