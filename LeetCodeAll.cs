@@ -14579,8 +14579,28 @@ namespace ProblemSolving
 
             return result;
         }
+        public int MinOperationsTask2997(int[] nums, int k)
+        {
+            int allXor = nums[0] ^ k;
+            int result = 0;
+            for (int i = 1; i < nums.Length; i++)
+            {
+                allXor ^= nums[i];
+            }
+
+            string allXorBinaryWithK = Convert.ToString(allXor, 2);
+
+            for (int i = 0; i < allXorBinaryWithK.Length; i++)
+            {
+                if (allXorBinaryWithK[i] == '1')
+                {
+                    result++;
+                }
+            }
 
 
+            return result;
+        }
 
 
 

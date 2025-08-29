@@ -5996,6 +5996,17 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', num));
             //}
 
+            ////(2997.) Minimum Number of Operations to Make Array XOR Equal to K (MEDIUM)
+            int[] nums = [2, 1, 3, 4];
+            int k = 1;
+
+            LeetCode_2997 classLeetCode = new LeetCode_2997();
+            Console.WriteLine(classLeetCode.MinOperations(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperationsTask2997(nums, k));
+
             ////(3000.) Maximum Area of Longest Diagonal Rectangle (EASY);
             //int[][] dimensions = [[6, 5], [8, 6], [2, 10], [8, 1], [9, 2], [3, 5], [3, 5]];
 
@@ -6226,14 +6237,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxAdjacentDistance(nums));
 
             ////(3427.) Sum of Variable Length Subarrays (EASY)
-            int[] nums = [2,3,1];
+            //int[] nums = [2,3,1];
 
-            LeetCode_3427 classLeetCode = new LeetCode_3427();
-            Console.WriteLine(classLeetCode.SubarraySum(nums));
+            //LeetCode_3427 classLeetCode = new LeetCode_3427();
+            //Console.WriteLine(classLeetCode.SubarraySum(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SubarraySum(nums));
+            //Console.WriteLine(leetCodeAll.SubarraySum(nums));
 
             ////(3439.) Reschedule Meetings for Maximum Free Time I (MEDIUM)
             //int eventTime = 99;
