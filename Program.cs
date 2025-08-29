@@ -5669,15 +5669,15 @@ namespace ProblemSolving
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
             ////(2367.) Number of Arithmetic Triplets (EASY)
-            int[] nums = [0, 1, 4, 6, 7, 10];
-            int diff = 3;
+            //int[] nums = [0, 1, 4, 6, 7, 10];
+            //int diff = 3;
 
-            LeetCode_2367 classLeetCode = new LeetCode_2367();
-            Console.WriteLine(classLeetCode.ArithmeticTriplets(nums, diff));
+            //LeetCode_2367 classLeetCode = new LeetCode_2367();
+            //Console.WriteLine(classLeetCode.ArithmeticTriplets(nums, diff));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ArithmeticTriplets(nums, diff));
+            //Console.WriteLine(leetCodeAll.ArithmeticTriplets(nums, diff));
 
             ////(2373.) Largest Local Values in a Matrix (EASY)
             //int[][] grid = [[1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 2, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1]];
@@ -6224,6 +6224,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxAdjacentDistance(nums));
+
+            ////(3427.) Sum of Variable Length Subarrays (EASY)
+            int[] nums = [2,3,1];
+
+            LeetCode_3427 classLeetCode = new LeetCode_3427();
+            Console.WriteLine(classLeetCode.SubarraySum(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SubarraySum(nums));
 
             ////(3439.) Reschedule Meetings for Maximum Free Time I (MEDIUM)
             //int eventTime = 99;

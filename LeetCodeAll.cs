@@ -14554,8 +14554,31 @@ namespace ProblemSolving
 
             return result;
         }
+        public int SubarraySum(int[] nums)
+        {
+            int result = nums[0];
+            int currSum = 0;
+            int indexStart = 0;
 
+            for (int i = 1; i < nums.Length; i++)
+            {
+                currSum = 0;
+                indexStart = i - nums[i];
+                if (indexStart < 0)
+                {
+                    indexStart = 0;
+                }
 
+                for (int j = indexStart; j <= i; j++)
+                {
+                    currSum += nums[j];
+                }
+
+                result += currSum;
+            }
+
+            return result;
+        }
 
 
 
