@@ -14601,8 +14601,31 @@ namespace ProblemSolving
 
             return result;
         }
+        public int NumberOfBeams(string[] bank)
+        {
+            int result = 0;
+            int howManyLastLaser = 0;
 
+            for (int i = 0; i < bank.Length; i++)
+            {
+                int currHowManyLaser = 0;
+                for (int j = 0; j < bank[i].Length; j++)
+                {
+                    if (bank[i][j] == '1')
+                    {
+                        currHowManyLaser++;
+                    }
+                }
+                if (currHowManyLaser > 0)
+                {
+                    result += howManyLastLaser * currHowManyLaser;
 
+                    howManyLastLaser = currHowManyLaser;
+                }
+            }
+
+            return result;
+        }
 
 
 

@@ -5499,6 +5499,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MostWordsFound(sentences));
 
+            ////(2125.) Number of Laser Beams in a Bank (MEDIUM)
+            string[] bank = ["011001", "000000", "010100", "001000"];
+
+            LeetCode_2125 classLeetCode = new LeetCode_2125();
+            Console.WriteLine(classLeetCode.NumberOfBeams(bank));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumberOfBeams(bank));
+
             ////(2138.) Divide a String Into Groups of Size k (EASY)
             //string s = "abcdefghij";
             //int k = 3;
@@ -5997,15 +6007,15 @@ namespace ProblemSolving
             //}
 
             ////(2997.) Minimum Number of Operations to Make Array XOR Equal to K (MEDIUM)
-            int[] nums = [2, 1, 3, 4];
-            int k = 1;
+            //int[] nums = [2, 1, 3, 4];
+            //int k = 1;
 
-            LeetCode_2997 classLeetCode = new LeetCode_2997();
-            Console.WriteLine(classLeetCode.MinOperations(nums, k));
+            //LeetCode_2997 classLeetCode = new LeetCode_2997();
+            //Console.WriteLine(classLeetCode.MinOperations(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperationsTask2997(nums, k));
+            //Console.WriteLine(leetCodeAll.MinOperationsTask2997(nums, k));
 
             ////(3000.) Maximum Area of Longest Diagonal Rectangle (EASY);
             //int[][] dimensions = [[6, 5], [8, 6], [2, 10], [8, 1], [9, 2], [3, 5], [3, 5]];
