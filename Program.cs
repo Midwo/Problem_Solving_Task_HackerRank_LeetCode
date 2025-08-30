@@ -4882,6 +4882,19 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1527 classLeetCode = new LeetCode_1527();
 
+            ////(1534.) Count Good Triplets (EASY)
+            int[] arr = [3, 0, 1, 1, 9, 7];
+            int a = 7;
+            int b = 2;
+            int c = 3;
+
+            LeetCode_1534 classLeetCode = new LeetCode_1534();
+            Console.WriteLine(classLeetCode.CountGoodTriplets(arr, a, b, c));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountGoodTriplets(arr, a, b, c));
+
             ////(1581.) Customer Who Visited but Did Not Make Any Transactions (EASY)
             //string SqlQuery =
             //    @"
@@ -5500,14 +5513,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MostWordsFound(sentences));
 
             ////(2125.) Number of Laser Beams in a Bank (MEDIUM)
-            string[] bank = ["011001", "000000", "010100", "001000"];
+            //string[] bank = ["011001", "000000", "010100", "001000"];
 
-            LeetCode_2125 classLeetCode = new LeetCode_2125();
-            Console.WriteLine(classLeetCode.NumberOfBeams(bank));
+            //LeetCode_2125 classLeetCode = new LeetCode_2125();
+            //Console.WriteLine(classLeetCode.NumberOfBeams(bank));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumberOfBeams(bank));
+            //Console.WriteLine(leetCodeAll.NumberOfBeams(bank));
 
             ////(2138.) Divide a String Into Groups of Size k (EASY)
             //string s = "abcdefghij";
