@@ -4680,14 +4680,14 @@ namespace ProblemSolving
             //LeetCode_1341 classLeetCode = new LeetCode_1341();
 
             ////(1342.) Number of Steps to Reduce a Number to Zero (EASY)
-            int num = 14;
+            //int num = 14;
 
-            LeetCode_1342 classLeetCode = new LeetCode_1342();
-            Console.WriteLine(classLeetCode.NumberOfSteps(num));
+            //LeetCode_1342 classLeetCode = new LeetCode_1342();
+            //Console.WriteLine(classLeetCode.NumberOfSteps(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumberOfSteps(num));
+            //Console.WriteLine(leetCodeAll.NumberOfSteps(num));
 
             ////(1365.) How Many Numbers Are Smaller Than the Current Number (EASY)
             //int[] nums = [8, 1, 2, 2, 3];
@@ -5853,6 +5853,28 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumCount(nums));
+
+            ////(2545.) Sort the Students by Their Kth Score (MEDIUM)
+            int[][] score = [[10, 6, 9, 1], [7, 5, 11, 2], [4, 8, 3, 15]];
+            int k = 2;
+
+            LeetCode_2545 classLeetCode = new LeetCode_2545();
+
+            int[][] result = classLeetCode.SortTheStudents(score, k);
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            int[][] result1 = leetCodeAll.SortTheStudents(score, k);
+
+            foreach (var item in result1)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             ////(2561.) Rearranging Fruits (HARD)
             //int[] basket1 = [4, 2, 2, 2];
