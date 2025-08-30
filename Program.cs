@@ -4883,17 +4883,17 @@ namespace ProblemSolving
             //LeetCode_1527 classLeetCode = new LeetCode_1527();
 
             ////(1534.) Count Good Triplets (EASY)
-            int[] arr = [3, 0, 1, 1, 9, 7];
-            int a = 7;
-            int b = 2;
-            int c = 3;
+            //int[] arr = [3, 0, 1, 1, 9, 7];
+            //int a = 7;
+            //int b = 2;
+            //int c = 3;
 
-            LeetCode_1534 classLeetCode = new LeetCode_1534();
-            Console.WriteLine(classLeetCode.CountGoodTriplets(arr, a, b, c));
+            //LeetCode_1534 classLeetCode = new LeetCode_1534();
+            //Console.WriteLine(classLeetCode.CountGoodTriplets(arr, a, b, c));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountGoodTriplets(arr, a, b, c));
+            //Console.WriteLine(leetCodeAll.CountGoodTriplets(arr, a, b, c));
 
             ////(1581.) Customer Who Visited but Did Not Make Any Transactions (EASY)
             //string SqlQuery =
@@ -5905,6 +5905,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
+
+            ////(2652.) Sum Multiples (EASY)
+            int n = 10;
+
+            LeetCode_2652 classLeetCode = new LeetCode_2652();
+            Console.WriteLine(classLeetCode.SumOfMultiples(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumOfMultiples(n));
 
             ////(2657.) Find the Prefix Common Array of Two Arrays (MEDIUM)
             //int[] A = [2, 3, 1];
