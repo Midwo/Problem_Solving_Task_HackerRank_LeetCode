@@ -4679,6 +4679,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1341 classLeetCode = new LeetCode_1341();
 
+            ////(1342.) Number of Steps to Reduce a Number to Zero (EASY)
+            int num = 14;
+
+            LeetCode_1342 classLeetCode = new LeetCode_1342();
+            Console.WriteLine(classLeetCode.NumberOfSteps(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumberOfSteps(num));
+
             ////(1365.) How Many Numbers Are Smaller Than the Current Number (EASY)
             //int[] nums = [8, 1, 2, 2, 3];
 
@@ -5907,14 +5917,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
             ////(2652.) Sum Multiples (EASY)
-            int n = 10;
+            //int n = 10;
 
-            LeetCode_2652 classLeetCode = new LeetCode_2652();
-            Console.WriteLine(classLeetCode.SumOfMultiples(n));
+            //LeetCode_2652 classLeetCode = new LeetCode_2652();
+            //Console.WriteLine(classLeetCode.SumOfMultiples(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumOfMultiples(n));
+            //Console.WriteLine(leetCodeAll.SumOfMultiples(n));
 
             ////(2657.) Find the Prefix Common Array of Two Arrays (MEDIUM)
             //int[] A = [2, 3, 1];
