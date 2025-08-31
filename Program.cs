@@ -5855,26 +5855,26 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumCount(nums));
 
             ////(2545.) Sort the Students by Their Kth Score (MEDIUM)
-            int[][] score = [[10, 6, 9, 1], [7, 5, 11, 2], [4, 8, 3, 15]];
-            int k = 2;
+            //int[][] score = [[10, 6, 9, 1], [7, 5, 11, 2], [4, 8, 3, 15]];
+            //int k = 2;
 
-            LeetCode_2545 classLeetCode = new LeetCode_2545();
+            //LeetCode_2545 classLeetCode = new LeetCode_2545();
 
-            int[][] result = classLeetCode.SortTheStudents(score, k);
+            //int[][] result = classLeetCode.SortTheStudents(score, k);
 
-            foreach (var item in result)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            int[][] result1 = leetCodeAll.SortTheStudents(score, k);
+            //int[][] result1 = leetCodeAll.SortTheStudents(score, k);
 
-            foreach (var item in result1)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(2561.) Rearranging Fruits (HARD)
             //int[] basket1 = [4, 2, 2, 2];
@@ -6017,6 +6017,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountPairs(nums, target));
+
+            ////(2859.) Sum of Values at Indices With K Set Bits (EASY)
+            IList<int> nums = [5, 10, 1, 5, 2];
+            int k = 1;
+
+            LeetCode_2859 classLeetCode = new LeetCode_2859();
+            Console.WriteLine(classLeetCode.SumIndicesWithKSetBits(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumIndicesWithKSetBits(nums, k));
 
             ////(2894.) Divisible and Non-divisible Sums Difference (EASY)
             //int n = 10;
