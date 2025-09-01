@@ -5268,15 +5268,44 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindCenter(edges));
 
             ////(1792.) Maximum Average Pass Ratio (MEDIUM)
-            int[][] classes = [[2, 4], [3, 9], [4, 5], [2, 10]];
-            int extraStudents = 4;
+            //int[][] classes = [[2, 4], [3, 9], [4, 5], [2, 10]];
+            //int extraStudents = 4;
 
-            LeetCode_1792 classLeetCode = new LeetCode_1792();
-            Console.WriteLine(classLeetCode.MaxAverageRatio(classes, extraStudents));
+            //LeetCode_1792 classLeetCode = new LeetCode_1792();
+            //Console.WriteLine(classLeetCode.MaxAverageRatio(classes, extraStudents));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaxAverageRatio(classes, extraStudents));
+
+            ////(1795) Rearrange Products Table (EASY)
+            string SqlQuery =
+                @"
+                    Select 
+                        product_id,
+                        'store1' as store,
+                        store1 as price 
+                    FROM Products
+                    Where store1 is not null
+                    UNION ALL
+                    Select 
+                        product_id,
+                        'store2' as store,
+                        store2 as price 
+                    FROM Products 
+                    Where store2 is not null
+                    UNION ALL
+                    Select 
+                        product_id,
+                        'store3' as store,
+                        store3 as price 
+                    FROM Products 
+                    Where store3 is not null
+                ";
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MaxAverageRatio(classes, extraStudents));
+            LeetCode_1795 classLeetCode = new LeetCode_1795();
 
             ////(1816.) Truncate Sentence (EASY) 
             //string s = "Hello how are you Contestant";
