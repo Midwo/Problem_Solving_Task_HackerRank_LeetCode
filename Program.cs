@@ -5279,33 +5279,33 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxAverageRatio(classes, extraStudents));
 
             ////(1795) Rearrange Products Table (EASY)
-            string SqlQuery =
-                @"
-                    Select 
-                        product_id,
-                        'store1' as store,
-                        store1 as price 
-                    FROM Products
-                    Where store1 is not null
-                    UNION ALL
-                    Select 
-                        product_id,
-                        'store2' as store,
-                        store2 as price 
-                    FROM Products 
-                    Where store2 is not null
-                    UNION ALL
-                    Select 
-                        product_id,
-                        'store3' as store,
-                        store3 as price 
-                    FROM Products 
-                    Where store3 is not null
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            product_id,
+            //            'store1' as store,
+            //            store1 as price 
+            //        FROM Products
+            //        Where store1 is not null
+            //        UNION ALL
+            //        Select 
+            //            product_id,
+            //            'store2' as store,
+            //            store2 as price 
+            //        FROM Products 
+            //        Where store2 is not null
+            //        UNION ALL
+            //        Select 
+            //            product_id,
+            //            'store3' as store,
+            //            store3 as price 
+            //        FROM Products 
+            //        Where store3 is not null
+            //    ";
 
-            //OR
+            ////OR
 
-            LeetCode_1795 classLeetCode = new LeetCode_1795();
+            //LeetCode_1795 classLeetCode = new LeetCode_1795();
 
             ////(1816.) Truncate Sentence (EASY) 
             //string s = "Hello how are you Contestant";
@@ -5716,6 +5716,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.LongestSubsequence(s, k));
+
+            ////(2325.) Decode the Message (EASY) 
+            string key = "the quick brown fox jumps over the lazy dog";
+            string message = "vkbs bs t suepuv";
+
+            LeetCode_2325 classLeetCode = new LeetCode_2325();
+            Console.WriteLine(classLeetCode.DecodeMessage(key, message));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DecodeMessage(key, message));
 
             ////(2348.) Number of Zero-Filled Subarrays (MEDIUM)
             //int[] nums = [0, 0, 0, 2, 0, 0];
