@@ -5718,15 +5718,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LongestSubsequence(s, k));
 
             ////(2325.) Decode the Message (EASY) 
-            string key = "the quick brown fox jumps over the lazy dog";
-            string message = "vkbs bs t suepuv";
+            //string key = "the quick brown fox jumps over the lazy dog";
+            //string message = "vkbs bs t suepuv";
 
-            LeetCode_2325 classLeetCode = new LeetCode_2325();
-            Console.WriteLine(classLeetCode.DecodeMessage(key, message));
+            //LeetCode_2325 classLeetCode = new LeetCode_2325();
+            //Console.WriteLine(classLeetCode.DecodeMessage(key, message));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DecodeMessage(key, message));
+            //Console.WriteLine(leetCodeAll.DecodeMessage(key, message));
 
             ////(2348.) Number of Zero-Filled Subarrays (MEDIUM)
             //int[] nums = [0, 0, 0, 2, 0, 0];
@@ -6450,6 +6450,25 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.TransformArray(nums)));
+
+            ////(3475.) DNA Pattern Recognition (MEDIUM)
+            string SqlQuery =
+                    @"
+                    SELECT 
+                        a.sample_id
+                        ,dna_sequence
+                        ,species
+                        ,EXISTS (SELECT 1 FROM Samples b WHERE LEFT(dna_sequence, 3) =  'ATG' and b.sample_id = a.sample_id) as has_start 
+                        ,EXISTS (SELECT 1 FROM Samples b WHERE RIGHT(dna_sequence, 3) IN ('TAA', 'TAG', 'TGA') and b.sample_id = a.sample_id) as has_stop  
+                        ,EXISTS (SELECT 1 FROM Samples b WHERE b.dna_sequence  like '%ATAT%' and b.sample_id = a.sample_id) as has_atat
+                        ,EXISTS (SELECT 1 FROM Samples b WHERE b.dna_sequence  like '%GGG%' and b.sample_id = a.sample_id) as has_ggg
+                    FROM 
+                    Samples a 
+                ";
+
+            //OR
+
+            LeetCode_3475 classLeetCode = new LeetCode_3475();
 
             ////(3477.) Fruits Into Baskets II (EASY)
             //int[] fruits = [4, 2, 5];
