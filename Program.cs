@@ -5267,6 +5267,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindCenter(edges));
 
+            ////(1792.) Maximum Average Pass Ratio (MEDIUM)
+            int[][] classes = [[2, 4], [3, 9], [4, 5], [2, 10]];
+            int extraStudents = 4;
+
+            LeetCode_1792 classLeetCode = new LeetCode_1792();
+            Console.WriteLine(classLeetCode.MaxAverageRatio(classes, extraStudents));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxAverageRatio(classes, extraStudents));
+
             ////(1816.) Truncate Sentence (EASY) 
             //string s = "Hello how are you Contestant";
             //int k = 4;
@@ -6019,15 +6030,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountPairs(nums, target));
 
             ////(2859.) Sum of Values at Indices With K Set Bits (EASY)
-            IList<int> nums = [5, 10, 1, 5, 2];
-            int k = 1;
+            //IList<int> nums = [5, 10, 1, 5, 2];
+            //int k = 1;
 
-            LeetCode_2859 classLeetCode = new LeetCode_2859();
-            Console.WriteLine(classLeetCode.SumIndicesWithKSetBits(nums, k));
+            //LeetCode_2859 classLeetCode = new LeetCode_2859();
+            //Console.WriteLine(classLeetCode.SumIndicesWithKSetBits(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumIndicesWithKSetBits(nums, k));
+            //Console.WriteLine(leetCodeAll.SumIndicesWithKSetBits(nums, k));
 
             ////(2894.) Divisible and Non-divisible Sums Difference (EASY)
             //int n = 10;
