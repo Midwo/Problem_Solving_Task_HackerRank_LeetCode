@@ -17,6 +17,7 @@ using System.Security;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Timers;
 using System.Xml.Linq;
 using static ProblemSolving.LeetCode.LeetCode_1476;
 using static ProblemSolving.LeetCode.LeetCode_225;
@@ -4735,15 +4736,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindLucky(arr));
 
             ////(1415.) The k-th Lexicographical String of All Happy Strings of Length n (MEDIUM)
-            int n = 3;
-            int k = 9;
+            //int n = 3;
+            //int k = 9;
 
-            LeetCode_1415 classLeetCode = new LeetCode_1415();
-            Console.WriteLine(classLeetCode.GetHappyString(n, k));
+            //LeetCode_1415 classLeetCode = new LeetCode_1415();
+            //Console.WriteLine(classLeetCode.GetHappyString(n, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GetHappyStringTask1415(n, k));
+            //Console.WriteLine(leetCodeAll.GetHappyStringTask1415(n, k));
 
             ////(1431.) Kids With the Greatest Number of Candies (EASY)
             //int[] candies = [2, 3, 5, 1, 3];
@@ -5802,6 +5803,17 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+
+            ////(2391.) Minimum Amount of Time to Collect Garbage (MEDIUM)
+            string[] garbage = ["G", "P", "GP", "GG"];
+            int[] travel = [2, 4, 3];
+
+            LeetCode_2391 classLeetCode = new LeetCode_2391();
+            Console.WriteLine(classLeetCode.GarbageCollection(garbage, travel));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GarbageCollection(garbage, travel));
 
             ////(2396.) Strictly Palindromic Number (MEDIUM)
             //int n = 9;
