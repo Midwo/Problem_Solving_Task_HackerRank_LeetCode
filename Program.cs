@@ -4892,6 +4892,17 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1527 classLeetCode = new LeetCode_1527();
 
+            ////(1528.) Shuffle String (EASY)
+            string s = "codeleet";
+            int[] indices = [4, 5, 6, 7, 0, 2, 1, 3];
+
+            LeetCode_1528 classLeetCode = new LeetCode_1528();
+            Console.WriteLine(classLeetCode.RestoreString(s, indices));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.RestoreString(s, indices));
+
             ////(1534.) Count Good Triplets (EASY)
             //int[] arr = [3, 0, 1, 1, 9, 7];
             //int a = 7;
@@ -6452,23 +6463,23 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.TransformArray(nums)));
 
             ////(3475.) DNA Pattern Recognition (MEDIUM)
-            string SqlQuery =
-                    @"
-                    SELECT 
-                        a.sample_id
-                        ,dna_sequence
-                        ,species
-                        ,EXISTS (SELECT 1 FROM Samples b WHERE LEFT(dna_sequence, 3) =  'ATG' and b.sample_id = a.sample_id) as has_start 
-                        ,EXISTS (SELECT 1 FROM Samples b WHERE RIGHT(dna_sequence, 3) IN ('TAA', 'TAG', 'TGA') and b.sample_id = a.sample_id) as has_stop  
-                        ,EXISTS (SELECT 1 FROM Samples b WHERE b.dna_sequence  like '%ATAT%' and b.sample_id = a.sample_id) as has_atat
-                        ,EXISTS (SELECT 1 FROM Samples b WHERE b.dna_sequence  like '%GGG%' and b.sample_id = a.sample_id) as has_ggg
-                    FROM 
-                    Samples a 
-                ";
+            //string SqlQuery =
+            //        @"
+            //        SELECT 
+            //            a.sample_id
+            //            ,dna_sequence
+            //            ,species
+            //            ,EXISTS (SELECT 1 FROM Samples b WHERE LEFT(dna_sequence, 3) =  'ATG' and b.sample_id = a.sample_id) as has_start 
+            //            ,EXISTS (SELECT 1 FROM Samples b WHERE RIGHT(dna_sequence, 3) IN ('TAA', 'TAG', 'TGA') and b.sample_id = a.sample_id) as has_stop  
+            //            ,EXISTS (SELECT 1 FROM Samples b WHERE b.dna_sequence  like '%ATAT%' and b.sample_id = a.sample_id) as has_atat
+            //            ,EXISTS (SELECT 1 FROM Samples b WHERE b.dna_sequence  like '%GGG%' and b.sample_id = a.sample_id) as has_ggg
+            //        FROM 
+            //        Samples a 
+            //    ";
 
-            //OR
+            ////OR
 
-            LeetCode_3475 classLeetCode = new LeetCode_3475();
+            //LeetCode_3475 classLeetCode = new LeetCode_3475();
 
             ////(3477.) Fruits Into Baskets II (EASY)
             //int[] fruits = [4, 2, 5];

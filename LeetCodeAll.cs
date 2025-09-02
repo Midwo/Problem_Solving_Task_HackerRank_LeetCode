@@ -14818,7 +14818,18 @@ namespace ProblemSolving
 
             return new string(sb.ToString());
         }
+        public string RestoreString(string s, int[] indices)
+        {
+            char[] resultChars = new char[indices.Length];
 
+            for (int i = 0; i < indices.Length; i++)
+            {
+                resultChars[indices[i]] = s[i];
+
+            }
+
+            return new string(resultChars);
+        }
 
 
 
