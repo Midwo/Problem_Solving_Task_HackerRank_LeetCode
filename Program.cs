@@ -4734,6 +4734,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindLucky(arr));
 
+            ////(1415.) The k-th Lexicographical String of All Happy Strings of Length n (MEDIUM)
+            int n = 3;
+            int k = 9;
+
+            LeetCode_1415 classLeetCode = new LeetCode_1415();
+            Console.WriteLine(classLeetCode.GetHappyString(n, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GetHappyStringTask1415(n, k));
+
             ////(1431.) Kids With the Greatest Number of Candies (EASY)
             //int[] candies = [2, 3, 5, 1, 3];
             //int extraCandies = 3;
@@ -4893,15 +4904,15 @@ namespace ProblemSolving
             //LeetCode_1527 classLeetCode = new LeetCode_1527();
 
             ////(1528.) Shuffle String (EASY)
-            string s = "codeleet";
-            int[] indices = [4, 5, 6, 7, 0, 2, 1, 3];
+            //string s = "codeleet";
+            //int[] indices = [4, 5, 6, 7, 0, 2, 1, 3];
 
-            LeetCode_1528 classLeetCode = new LeetCode_1528();
-            Console.WriteLine(classLeetCode.RestoreString(s, indices));
+            //LeetCode_1528 classLeetCode = new LeetCode_1528();
+            //Console.WriteLine(classLeetCode.RestoreString(s, indices));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.RestoreString(s, indices));
+            //Console.WriteLine(leetCodeAll.RestoreString(s, indices));
 
             ////(1534.) Count Good Triplets (EASY)
             //int[] arr = [3, 0, 1, 1, 9, 7];

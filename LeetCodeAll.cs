@@ -14830,8 +14830,43 @@ namespace ProblemSolving
 
             return new string(resultChars);
         }
+        List<string> _happyStringsTask1415;
+        char[] _charsABCTask1415;
+        public string GetHappyStringTask1415(int n, int k)
+        {
+            int checkRange = 3;
+            _happyStringsTask1415 = new List<string>();
+            _charsABCTask1415 = new char[3] { 'a', 'b', 'c' };
 
+            for (int i = 1; i < n; i++)
+            {
+                checkRange *= 2;
+            }
 
+            if (checkRange < k)
+            {
+                return "";
+            }
+
+            GenerateHappyStringTask1415(n, "");
+
+            return _happyStringsTask1415[k - 1];
+        }
+        private void GenerateHappyStringTask1415(int length, string currString)
+        {
+            if (length == currString.Length)
+            {
+                _happyStringsTask1415.Add(currString);
+                return;
+            }
+
+            foreach (char c in _charsABCTask1415)
+            {
+                if (currString.Length > 0 && c == currString[currString.Length - 1]) { continue; }
+
+                GenerateHappyStringTask1415(length, currString + c);
+            }
+        }
 
 
 
