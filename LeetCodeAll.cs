@@ -14910,8 +14910,25 @@ namespace ProblemSolving
 
             return howManyM + howManyG + howMAnyP + lastDistanceP + lastDistanceM + lastDistanceG;
         }
+        public int DifferenceOfSum(int[] nums)
+        {
+            int normalSum = 0;
+            int digitSum = 0;
 
+            for (int i = 0; i < nums.Length; i++)
+            {
+                normalSum += nums[i];
 
+                while (nums[i] > 0)
+                {
+                    int temp = nums[i] % 10;
+                    digitSum += temp;
+                    nums[i] /= 10;
+                }
+            }
+
+            return Math.Abs(normalSum - digitSum);
+        }
 
 
 

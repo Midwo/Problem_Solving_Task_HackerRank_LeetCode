@@ -5805,15 +5805,15 @@ namespace ProblemSolving
             //}
 
             ////(2391.) Minimum Amount of Time to Collect Garbage (MEDIUM)
-            string[] garbage = ["G", "P", "GP", "GG"];
-            int[] travel = [2, 4, 3];
+            //string[] garbage = ["G", "P", "GP", "GG"];
+            //int[] travel = [2, 4, 3];
 
-            LeetCode_2391 classLeetCode = new LeetCode_2391();
-            Console.WriteLine(classLeetCode.GarbageCollection(garbage, travel));
+            //LeetCode_2391 classLeetCode = new LeetCode_2391();
+            //Console.WriteLine(classLeetCode.GarbageCollection(garbage, travel));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GarbageCollection(garbage, travel));
+            //Console.WriteLine(leetCodeAll.GarbageCollection(garbage, travel));
 
             ////(2396.) Strictly Palindromic Number (MEDIUM)
             //int n = 9;
@@ -5938,6 +5938,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumCount(nums));
+
+            ////(2535.) Difference Between Element Sum and Digit Sum of an Array (EASY)
+            int[] nums = [1, 15, 6, 3];
+
+            LeetCode_2535 classLeetCode = new LeetCode_2535();
+            Console.WriteLine(classLeetCode.DifferenceOfSum(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DifferenceOfSum(nums));
 
             ////(2545.) Sort the Students by Their Kth Score (MEDIUM)
             //int[][] score = [[10, 6, 9, 1], [7, 5, 11, 2], [4, 8, 3, 15]];
