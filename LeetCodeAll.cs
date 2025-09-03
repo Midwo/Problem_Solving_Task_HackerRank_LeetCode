@@ -14942,7 +14942,28 @@ namespace ProblemSolving
 
             return nums;
         }
+        public int CountMatches(IList<IList<string>> items, string ruleKey, string ruleValue)
+        {
+            int count = 0;
 
+            for (int i = 0; i < items.Count; i++)
+            {
+                if (ruleKey == "type")
+                {
+                    if (items[i][0] == ruleValue) { count++; }
+                }
+                else if (ruleKey == "color")
+                {
+                    if (items[i][1] == ruleValue) { count++; }
+                }
+                else
+                {
+                    if (items[i][2] == ruleValue) { count++; }
+                }
+            }
+
+            return count;
+        }
 
 
 

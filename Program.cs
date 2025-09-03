@@ -5236,6 +5236,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.MinOperations(boxes)));
 
+            ////(1773.) Count Items Matching a Rule (EASY)
+            IList<IList<string>> items = [["phone", "blue", "pixel"], ["computer", "silver", "lenovo"], ["phone", "gold", "iphone"]];
+            string ruleKey = "color";
+            string ruleValue = "silver";
+
+            LeetCode_1773 classLeetCode = new LeetCode_1773();
+            Console.WriteLine(classLeetCode.CountMatches(items, ruleKey, ruleValue));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountMatches(items, ruleKey, ruleValue));
+
             ////(1789.) Primary Department for Each Employee (EASY)
             //string SqlQuery =
             //    @"
@@ -6168,14 +6180,14 @@ namespace ProblemSolving
             //}
 
             ////(2974.) Minimum Number Game (EASY)
-            int[] nums = [5, 4, 2, 3];
+            //int[] nums = [5, 4, 2, 3];
 
-            LeetCode_2974 classLeetCode = new LeetCode_2974();
-            Console.WriteLine(string.Join(',', classLeetCode.NumberGame(nums)));
+            //LeetCode_2974 classLeetCode = new LeetCode_2974();
+            //Console.WriteLine(string.Join(',', classLeetCode.NumberGame(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.NumberGame(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.NumberGame(nums)));
 
             ////(2997.) Minimum Number of Operations to Make Array XOR Equal to K (MEDIUM)
             //int[] nums = [2, 1, 3, 4];
