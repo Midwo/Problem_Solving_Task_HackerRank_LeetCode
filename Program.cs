@@ -5940,14 +5940,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumCount(nums));
 
             ////(2535.) Difference Between Element Sum and Digit Sum of an Array (EASY)
-            int[] nums = [1, 15, 6, 3];
+            //int[] nums = [1, 15, 6, 3];
 
-            LeetCode_2535 classLeetCode = new LeetCode_2535();
-            Console.WriteLine(classLeetCode.DifferenceOfSum(nums));
+            //LeetCode_2535 classLeetCode = new LeetCode_2535();
+            //Console.WriteLine(classLeetCode.DifferenceOfSum(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DifferenceOfSum(nums));
+            //Console.WriteLine(leetCodeAll.DifferenceOfSum(nums));
 
             ////(2545.) Sort the Students by Their Kth Score (MEDIUM)
             //int[][] score = [[10, 6, 9, 1], [7, 5, 11, 2], [4, 8, 3, 15]];
@@ -6166,6 +6166,16 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', num));
             //}
+
+            ////(2974.) Minimum Number Game (EASY)
+            int[] nums = [5, 4, 2, 3];
+
+            LeetCode_2974 classLeetCode = new LeetCode_2974();
+            Console.WriteLine(string.Join(',', classLeetCode.NumberGame(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.NumberGame(nums)));
 
             ////(2997.) Minimum Number of Operations to Make Array XOR Equal to K (MEDIUM)
             //int[] nums = [2, 1, 3, 4];
