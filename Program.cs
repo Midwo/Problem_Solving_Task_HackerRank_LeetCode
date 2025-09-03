@@ -5237,16 +5237,16 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.MinOperations(boxes)));
 
             ////(1773.) Count Items Matching a Rule (EASY)
-            IList<IList<string>> items = [["phone", "blue", "pixel"], ["computer", "silver", "lenovo"], ["phone", "gold", "iphone"]];
-            string ruleKey = "color";
-            string ruleValue = "silver";
+            //IList<IList<string>> items = [["phone", "blue", "pixel"], ["computer", "silver", "lenovo"], ["phone", "gold", "iphone"]];
+            //string ruleKey = "color";
+            //string ruleValue = "silver";
 
-            LeetCode_1773 classLeetCode = new LeetCode_1773();
-            Console.WriteLine(classLeetCode.CountMatches(items, ruleKey, ruleValue));
+            //LeetCode_1773 classLeetCode = new LeetCode_1773();
+            //Console.WriteLine(classLeetCode.CountMatches(items, ruleKey, ruleValue));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountMatches(items, ruleKey, ruleValue));
+            //Console.WriteLine(leetCodeAll.CountMatches(items, ruleKey, ruleValue));
 
             ////(1789.) Primary Department for Each Employee (EASY)
             //string SqlQuery =
@@ -5522,6 +5522,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ReversePrefix(word, ch));
+
+            ////(2006.) Count Number of Pairs With Absolute Difference K (EASY)
+            int[] nums = [3, 2, 1, 5, 4];
+            int k = 2;
+
+            LeetCode_2006 classLeetCode = new LeetCode_2006();
+            Console.WriteLine(classLeetCode.CountKDifference(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountKDifference(nums, k));
 
             ////(2011.) Final Value of Variable After Performing Operations (EASY)
             //string[] operations = ["X++", "++X", "--X", "X--"];
