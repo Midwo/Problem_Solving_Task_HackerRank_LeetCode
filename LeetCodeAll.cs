@@ -14981,8 +14981,22 @@ namespace ProblemSolving
 
             return count;
         }
+        public double MinimumAverage(int[] nums)
+        {
+            double minValue = int.MaxValue;
+            int index = 0;
+            int length = nums.Length - 1;
 
+            Array.Sort(nums);
 
+            while (index <= (length) / 2)
+            {
+                minValue = Math.Min((double)(nums[index] + nums[length - index]) / 2, minValue);
+                index++;
+            }
+
+            return minValue;
+        }
 
 
 
