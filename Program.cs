@@ -5731,6 +5731,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.Sum(num1, num2));
 
+            ////(2236.) Root Equals Sum of Children (EASY)
+            TreeNode root = new TreeNode(10);
+            root.left = new TreeNode(4);
+            root.right = new TreeNode(6);
+
+            LeetCode_2236 classLeetCode = new LeetCode_2236();
+            Console.WriteLine(classLeetCode.CheckTree(root));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckTree(root));
+
             ////(2264.) Largest 3-Same-Digit Number in String (EASY)
             //string num = "42352338";
 
@@ -6327,14 +6339,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumOperations(nums));
 
             ////(3194.) Minimum Average of Smallest and Largest Elements (EASY)
-            int[] nums = [7, 8, 3, 4, 15, 13, 4, 1];
+            //int[] nums = [7, 8, 3, 4, 15, 13, 4, 1];
 
-            LeetCode_3194 classLeetCode = new LeetCode_3194();
-            Console.WriteLine(classLeetCode.MinimumAverage(nums));
+            //LeetCode_3194 classLeetCode = new LeetCode_3194();
+            //Console.WriteLine(classLeetCode.MinimumAverage(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumAverage(nums));
+            //Console.WriteLine(leetCodeAll.MinimumAverage(nums));
 
             ////(3195.) Find the Minimum Area to Cover All Ones I (MEDIUM)
             //int[][] grid = [[0, 1, 0], [1, 0, 1]];
