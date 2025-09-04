@@ -15023,8 +15023,12 @@ namespace ProblemSolving
                 return 0;
             }
         }
+        public string[] SortPeople(string[] names, int[] heights)
+        {
+            Array.Sort(heights, names);
 
-
+            return names.Reverse().ToArray();
+        }
 
 
 

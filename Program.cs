@@ -5924,6 +5924,17 @@ namespace ProblemSolving
 
             //leetCodeAll.ReverseOddLevels(root);
 
+            ////(2418.) Sort the People (EASY)
+            string[] names = ["Mary", "John", "Emma"];
+            int[] heigts = [180, 165, 170];
+
+            LeetCode_2418 classLeetCode = new LeetCode_2418();
+            Console.WriteLine(string.Join(',',classLeetCode.SortPeople(names,heigts)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SortPeople(names, heigts)));
+
             ////(2419.) Longest Subarray With Maximum Bitwise AND (MEDIUM)
             //int[] nums = [100, 5, 5];
 
@@ -6629,16 +6640,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxSum(nums));
 
             ////(3516.) Find Closest Person (EASY)
-            int x = 2;
-            int y = 7;
-            int z = 4;
+            //int x = 2;
+            //int y = 7;
+            //int z = 4;
 
-            LeetCode_3516 classLeetCode = new LeetCode_3516();
-            Console.WriteLine(classLeetCode.FindClosest(x, y, z));
+            //LeetCode_3516 classLeetCode = new LeetCode_3516();
+            //Console.WriteLine(classLeetCode.FindClosest(x, y, z));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindClosest(x, y, z));
+            //Console.WriteLine(leetCodeAll.FindClosest(x, y, z));
 
             ////(3541.) Find Most Frequent Vowel and Consonant (EASY)
             //string s = "cz";
