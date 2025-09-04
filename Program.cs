@@ -4726,31 +4726,31 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.CreateTargetArray(nums, index)));
 
             ////(1393.) Capital Gain/Loss (MEDIUM)
-            string SqlQuery =
-                @"
-                    Select
-                        Distinct(a.stock_name)
-                        ,(c.SumSell - b.SumBuy) as capital_gain_loss 
-                    From Stocks a 
-                        join (Select
-                        stock_name
-                        ,SUM(price) as SumBuy
-                    From Stocks
-                    Where operation = 'Buy'
-                    GROUP BY stock_name) b
-                    ON a.stock_name = b.stock_name
-                        join (Select
-                        stock_name
-                        ,SUM(price) as SumSell
-                    From Stocks
-                    Where operation = 'Sell'
-                    GROUP BY stock_name) c
-                    ON a.stock_name = c.stock_name
-                ";
-            
-            //OR
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            Distinct(a.stock_name)
+            //            ,(c.SumSell - b.SumBuy) as capital_gain_loss 
+            //        From Stocks a 
+            //            join (Select
+            //            stock_name
+            //            ,SUM(price) as SumBuy
+            //        From Stocks
+            //        Where operation = 'Buy'
+            //        GROUP BY stock_name) b
+            //        ON a.stock_name = b.stock_name
+            //            join (Select
+            //            stock_name
+            //            ,SUM(price) as SumSell
+            //        From Stocks
+            //        Where operation = 'Sell'
+            //        GROUP BY stock_name) c
+            //        ON a.stock_name = c.stock_name
+            //    ";
 
-            LeetCode_1393 classLeetCode = new LeetCode_1393();
+            ////OR
+
+            //LeetCode_1393 classLeetCode = new LeetCode_1393();
 
             ////(1394.) Find Lucky Integer in an Array (EASY)
             //int[] arr = [1, 2, 2, 3, 3, 3];
@@ -6627,6 +6627,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxSum(nums));
+
+            ////(3516.) Find Closest Person (EASY)
+            int x = 2;
+            int y = 7;
+            int z = 4;
+
+            LeetCode_3516 classLeetCode = new LeetCode_3516();
+            Console.WriteLine(classLeetCode.FindClosest(x, y, z));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindClosest(x, y, z));
 
             ////(3541.) Find Most Frequent Vowel and Consonant (EASY)
             //string s = "cz";

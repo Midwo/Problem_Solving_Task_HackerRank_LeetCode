@@ -15008,8 +15008,21 @@ namespace ProblemSolving
                 return false;
             }
         }
-
-
+        public int FindClosest(int x, int y, int z)
+        {
+            if (Math.Abs(x - z) > Math.Abs(y - z))
+            {
+                return 2;
+            }
+            else if (Math.Abs(x - z) < Math.Abs(y - z))
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
 
 
 
