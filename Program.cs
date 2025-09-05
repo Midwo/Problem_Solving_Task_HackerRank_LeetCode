@@ -4794,6 +4794,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxDiff(num));
 
+            ////(1442.) Count Triplets That Can Form Two Arrays of Equal XOR (MEDIUM)
+            int[] arr = [2, 3, 1, 6, 7];
+
+            LeetCode_1442 classLeetCode = new LeetCode_1442();
+            Console.WriteLine(classLeetCode.CountTriplets(arr));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountTriplets(arr));
+
             ////(1470.) Shuffle the Array (EASY)
             //int[] nums = [1, 2, 3, 4, 4, 3, 2, 1];
             //int n = 4;
@@ -5925,15 +5935,15 @@ namespace ProblemSolving
             //leetCodeAll.ReverseOddLevels(root);
 
             ////(2418.) Sort the People (EASY)
-            string[] names = ["Mary", "John", "Emma"];
-            int[] heigts = [180, 165, 170];
+            //string[] names = ["Mary", "John", "Emma"];
+            //int[] heigts = [180, 165, 170];
 
-            LeetCode_2418 classLeetCode = new LeetCode_2418();
-            Console.WriteLine(string.Join(',',classLeetCode.SortPeople(names,heigts)));
+            //LeetCode_2418 classLeetCode = new LeetCode_2418();
+            //Console.WriteLine(string.Join(',',classLeetCode.SortPeople(names,heigts)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SortPeople(names, heigts)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.SortPeople(names, heigts)));
 
             ////(2419.) Longest Subarray With Maximum Bitwise AND (MEDIUM)
             //int[] nums = [100, 5, 5];
