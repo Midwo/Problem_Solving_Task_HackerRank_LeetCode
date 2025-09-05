@@ -15061,6 +15061,40 @@ namespace ProblemSolving
 
             return count;
         }
+        public int PrefixCount(string[] words, string pref)
+        {
+            int count = 0;
+            int prefLength = pref.Length;
+            bool goodPref = false;
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i].Length >= prefLength)
+                {
+                    goodPref = true;
+                    for (int j = 0; j < prefLength; j++)
+                    {
+                        if (pref[j] != words[i][j])
+                        {
+                            goodPref = false;
+                            break;
+                        }
+                    }
+                    if (goodPref)
+                    {
+                        count++;
+                    }
+                }
+            }
+
+            return count;
+        }
+
+
+
+
+
+
 
 
 

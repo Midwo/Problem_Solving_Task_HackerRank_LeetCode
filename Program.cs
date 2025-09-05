@@ -4795,14 +4795,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDiff(num));
 
             ////(1442.) Count Triplets That Can Form Two Arrays of Equal XOR (MEDIUM)
-            int[] arr = [2, 3, 1, 6, 7];
+            //int[] arr = [2, 3, 1, 6, 7];
 
-            LeetCode_1442 classLeetCode = new LeetCode_1442();
-            Console.WriteLine(classLeetCode.CountTriplets(arr));
+            //LeetCode_1442 classLeetCode = new LeetCode_1442();
+            //Console.WriteLine(classLeetCode.CountTriplets(arr));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountTriplets(arr));
+            //Console.WriteLine(leetCodeAll.CountTriplets(arr));
 
             ////(1470.) Shuffle the Array (EASY)
             //int[] nums = [1, 2, 3, 4, 4, 3, 2, 1];
@@ -5723,6 +5723,17 @@ namespace ProblemSolving
             //    Console.WriteLine(result1.val);
             //    result1 = result1.next;
             //}
+
+            ////(2185.) Counting Words With a Given Prefix (EASY)
+            string[] words = ["pay", "attention", "practice", "attend"];
+            string pref = "at";
+
+            LeetCode_2185 classLeetCode = new LeetCode_2185();
+            Console.WriteLine(classLeetCode.PrefixCount(words, pref));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.PrefixCount(words, pref));
 
             ////(2200.) Find All K-Distant Indices in an Array (EASY)
             //int[] nums = [2, 1, 1, 1, 2];
