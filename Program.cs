@@ -4762,6 +4762,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindLucky(arr));
 
+            ////(1409.) Queries on a Permutation With Key (MEDIUM)
+            int[] queries = [3, 1, 2, 1];
+            int m = 5;
+
+            LeetCode_1409 classLeetCode = new LeetCode_1409();
+            Console.WriteLine(string.Join(',', classLeetCode.ProcessQueries(queries, m)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ProcessQueries(queries, m)));
+
             ////(1415.) The k-th Lexicographical String of All Happy Strings of Length n (MEDIUM)
             //int n = 3;
             //int k = 9;
@@ -5725,15 +5736,15 @@ namespace ProblemSolving
             //}
 
             ////(2185.) Counting Words With a Given Prefix (EASY)
-            string[] words = ["pay", "attention", "practice", "attend"];
-            string pref = "at";
+            //string[] words = ["pay", "attention", "practice", "attend"];
+            //string pref = "at";
 
-            LeetCode_2185 classLeetCode = new LeetCode_2185();
-            Console.WriteLine(classLeetCode.PrefixCount(words, pref));
+            //LeetCode_2185 classLeetCode = new LeetCode_2185();
+            //Console.WriteLine(classLeetCode.PrefixCount(words, pref));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PrefixCount(words, pref));
+            //Console.WriteLine(leetCodeAll.PrefixCount(words, pref));
 
             ////(2200.) Find All K-Distant Indices in an Array (EASY)
             //int[] nums = [2, 1, 1, 1, 2];
