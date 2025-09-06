@@ -15108,6 +15108,24 @@ namespace ProblemSolving
 
             return queries;
         }
+        public int MaxCoins(int[] piles)
+        {
+            Array.Sort(piles);
+            int sum = 0;
+
+            int length = piles.Length;
+
+            for (int i = length / 3; i < length - 1; i += 2)
+            {
+                sum += piles[i];
+            }
+
+            return sum;
+        }
+
+
+
+
 
 
 

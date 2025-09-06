@@ -4763,15 +4763,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindLucky(arr));
 
             ////(1409.) Queries on a Permutation With Key (MEDIUM)
-            int[] queries = [3, 1, 2, 1];
-            int m = 5;
+            //int[] queries = [3, 1, 2, 1];
+            //int m = 5;
 
-            LeetCode_1409 classLeetCode = new LeetCode_1409();
-            Console.WriteLine(string.Join(',', classLeetCode.ProcessQueries(queries, m)));
+            //LeetCode_1409 classLeetCode = new LeetCode_1409();
+            //Console.WriteLine(string.Join(',', classLeetCode.ProcessQueries(queries, m)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ProcessQueries(queries, m)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ProcessQueries(queries, m)));
 
             ////(1415.) The k-th Lexicographical String of All Happy Strings of Length n (MEDIUM)
             //int n = 3;
@@ -4975,6 +4975,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountGoodTriplets(arr, a, b, c));
+
+            ////(1561.) Maximum Number of Coins You Can Get (MEDIUM)
+            int[] piles = [2, 4, 1, 2, 7, 8];
+
+            LeetCode_1561 classLeetCode = new LeetCode_1561();
+            Console.WriteLine(classLeetCode.MaxCoins(piles));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxCoins(piles));
 
             ////(1581.) Customer Who Visited but Did Not Make Any Transactions (EASY)
             //string SqlQuery =
