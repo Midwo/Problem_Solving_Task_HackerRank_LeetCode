@@ -4533,6 +4533,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.DeepestLeavesSum(root));
 
+            ////(1304.) Find N Unique Integers Sum up to Zero (EASY)
+            int n = 4;
+
+            LeetCode_1304 classLeetCode = new LeetCode_1304();
+            Console.WriteLine(string.Join(',', classLeetCode.SumZero(n)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SumZero(n)));
+
             ////(1309.) Decrypt String from Alphabet to Integer Mapping (EASY)
             //string s = "1326#";
 
@@ -4977,14 +4987,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountGoodTriplets(arr, a, b, c));
 
             ////(1561.) Maximum Number of Coins You Can Get (MEDIUM)
-            int[] piles = [2, 4, 1, 2, 7, 8];
+            //int[] piles = [2, 4, 1, 2, 7, 8];
 
-            LeetCode_1561 classLeetCode = new LeetCode_1561();
-            Console.WriteLine(classLeetCode.MaxCoins(piles));
+            //LeetCode_1561 classLeetCode = new LeetCode_1561();
+            //Console.WriteLine(classLeetCode.MaxCoins(piles));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxCoins(piles));
+            //Console.WriteLine(leetCodeAll.MaxCoins(piles));
 
             ////(1581.) Customer Who Visited but Did Not Make Any Transactions (EASY)
             //string SqlQuery =
