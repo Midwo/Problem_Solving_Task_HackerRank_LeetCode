@@ -4534,14 +4534,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DeepestLeavesSum(root));
 
             ////(1304.) Find N Unique Integers Sum up to Zero (EASY)
-            int n = 4;
+            //int n = 4;
 
-            LeetCode_1304 classLeetCode = new LeetCode_1304();
-            Console.WriteLine(string.Join(',', classLeetCode.SumZero(n)));
+            //LeetCode_1304 classLeetCode = new LeetCode_1304();
+            //Console.WriteLine(string.Join(',', classLeetCode.SumZero(n)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SumZero(n)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.SumZero(n)));
 
             ////(1309.) Decrypt String from Alphabet to Integer Mapping (EASY)
             //string s = "1326#";
@@ -5864,6 +5864,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DecodeMessage(key, message));
+
+            ////(2327.) Number of People Aware of a Secret (MEDIUM)
+            int n = 4, delay = 1, forget = 3;
+
+            LeetCode_2327 classLeetCode = new LeetCode_2327();
+            Console.WriteLine(classLeetCode.PeopleAwareOfSecret(n, delay, forget));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.PeopleAwareOfSecret(n, delay, forget));
 
             ////(2348.) Number of Zero-Filled Subarrays (MEDIUM)
             //int[] nums = [0, 0, 0, 2, 0, 0];
