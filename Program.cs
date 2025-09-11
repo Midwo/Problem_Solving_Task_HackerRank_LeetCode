@@ -4563,6 +4563,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.DecompressRLElist(nums)));
 
+            ////(1317.) Convert Integer to the Sum of Two No-Zero Integers (EASY)
+            int n = 10000;
+
+            LeetCode_1317 classLeetCode = new LeetCode_1317();
+            Console.WriteLine(string.Join(',', classLeetCode.GetNoZeroIntegers(n)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.GetNoZeroIntegers(n)));
+
             ////(1321.) Restaurant Growth (MEDIUM)
             //string SqlQuery =
             //    @"
@@ -5253,6 +5263,18 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1731 classLeetCode = new LeetCode_1731();
 
+            ////(1733.) Minimum Number of People to Teach (MEDIUM);
+            //int n = 2;
+            //int[][] languages = [[1], [2], [1, 2]];
+            //int[][] friendships = [[1, 2], [1, 3], [2, 3]];
+
+            //LeetCode_1733 classLeetCode = new LeetCode_1733();
+            //Console.WriteLine(classLeetCode.MinimumTeachings(n, languages, friendships));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MinimumTeachings(n, languages, friendships));
+
             ////(1741.) Find Total Time Spent by Each Employee (EASY)
             //string SqlQuery =
             //    @"
@@ -5866,14 +5888,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DecodeMessage(key, message));
 
             ////(2327.) Number of People Aware of a Secret (MEDIUM)
-            int n = 4, delay = 1, forget = 3;
+            //int n = 4, delay = 1, forget = 3;
 
-            LeetCode_2327 classLeetCode = new LeetCode_2327();
-            Console.WriteLine(classLeetCode.PeopleAwareOfSecret(n, delay, forget));
+            //LeetCode_2327 classLeetCode = new LeetCode_2327();
+            //Console.WriteLine(classLeetCode.PeopleAwareOfSecret(n, delay, forget));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PeopleAwareOfSecret(n, delay, forget));
+            //Console.WriteLine(leetCodeAll.PeopleAwareOfSecret(n, delay, forget));
 
             ////(2348.) Number of Zero-Filled Subarrays (MEDIUM)
             //int[] nums = [0, 0, 0, 2, 0, 0];

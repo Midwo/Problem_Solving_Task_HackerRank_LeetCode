@@ -15188,10 +15188,94 @@ namespace ProblemSolving
 
             return (int)resultKnowing;
         }
+        public int MinimumTeachings(int n, int[][] languages, int[][] friendships)
+        {
+            HashSet<int> whoCannotSpeak = new HashSet<int>();
 
+            foreach (var recordFromFriendShips in friendships)
+            {
+                HashSet<int> availableLanguages = new HashSet<int>();
+                bool boolCanCommunicate = false;
 
+                foreach (var item in languages[recordFromFriendShips[0] - 1])
+                {
+                    availableLanguages.Add(item);
+                }
 
+                foreach (var item in languages[recordFromFriendShips[1] - 1])
+                {
+                    if (availableLanguages.Contains(item))
+                    {
+                        boolCanCommunicate |= true;
+                        break;
+                    }
+                }
 
+                if (!boolCanCommunicate)
+                {
+                    whoCannotSpeak.Add(recordFromFriendShips[0] - 1);
+                    whoCannotSpeak.Add(recordFromFriendShips[1] - 1);
+                }
+            }
+
+            int[] languagePopularityTable = new int[n + 1];
+            int howManyKnowMostPopularityLanguage = 0;
+
+            foreach (var numberPerson in whoCannotSpeak)
+            {
+                foreach (var language in languages[numberPerson])
+                {
+                    languagePopularityTable[language]++;
+                    howManyKnowMostPopularityLanguage = Math.Max(howManyKnowMostPopularityLanguage, languagePopularityTable[language]);
+                }
+            }
+
+            return whoCannotSpeak.Count - howManyKnowMostPopularityLanguage;
+        }
+        public int[] GetNoZeroIntegers(int n)
+        {
+            for (int i = 1; i <= n - 1; i++)
+            {
+                int value = i;
+                bool valueStatus = true;
+
+                while (value != 0)
+                {
+                    if (value % 10 == 0)
+                    {
+                        valueStatus = false;
+                        break;
+                    }
+                    else
+                    {
+                        value = value / 10;
+                    }
+                }
+                if (valueStatus)
+                {
+                    value = n - i;
+                    while (value != 0)
+                    {
+                        if (value % 10 == 0)
+                        {
+                            valueStatus = false;
+                            break;
+                        }
+                        else
+                        {
+                            value = value / 10;
+                        }
+                    }
+
+                    if (valueStatus)
+                    {
+                        return new int[] { i, n - i };
+                    }
+                }
+            }
+
+            return new int[2];
+        }
 
 
 
