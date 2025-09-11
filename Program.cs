@@ -4564,14 +4564,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.DecompressRLElist(nums)));
 
             ////(1317.) Convert Integer to the Sum of Two No-Zero Integers (EASY)
-            int n = 10000;
+            //int n = 10000;
 
-            LeetCode_1317 classLeetCode = new LeetCode_1317();
-            Console.WriteLine(string.Join(',', classLeetCode.GetNoZeroIntegers(n)));
+            //LeetCode_1317 classLeetCode = new LeetCode_1317();
+            //Console.WriteLine(string.Join(',', classLeetCode.GetNoZeroIntegers(n)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.GetNoZeroIntegers(n)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.GetNoZeroIntegers(n)));
 
             ////(1321.) Restaurant Growth (MEDIUM)
             //string SqlQuery =
@@ -6221,6 +6221,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.TheMaximumAchievableX(num, t));
+
+            ////(2785.) Sort Vowels in a String (MEDIUM)
+            string s = "lEetcOde";
+
+            LeetCode_2785 classLeetCode = new LeetCode_2785();
+            Console.WriteLine(classLeetCode.SortVowels(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SortVowels(s));
 
             ////(2798.) Number of Employees Who Met the Target (EASY)
             //int[] hours = [0, 1, 2, 3, 4];
