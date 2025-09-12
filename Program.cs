@@ -3354,6 +3354,24 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.UncommonFromSentences(s1, s2)));
 
+            ////(885.) Spiral Matrix III (MEDIUM)
+            int rows = 5, cols = 6, rStart = 1, cStart = 4;
+
+            LeetCode_885 classLeetCode = new LeetCode_885();
+            int[][] result = classLeetCode.SpiralMatrixIII(rows, cols, rStart, cStart);
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.SpiralMatrixIII(rows, cols, rStart, cStart))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
             ////(888.) Fair Candy Swap (EASY)
             //int[] aliceSizes = [1, 2, 5];
             //int[] bobSizes = [2, 4];
@@ -6522,14 +6540,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.ValidStrings(n)));
 
             ////(3227.) Vowels Game in a String (MEDIUM)
-            string s = "bbcd";
+            //string s = "bbcd";
 
-            LeetCode_3227 classLeetCode = new LeetCode_3227();
-            Console.WriteLine(classLeetCode.DoesAliceWin(s));
+            //LeetCode_3227 classLeetCode = new LeetCode_3227();
+            //Console.WriteLine(classLeetCode.DoesAliceWin(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DoesAliceWin(s));
+            //Console.WriteLine(leetCodeAll.DoesAliceWin(s));
 
             ////(3264.) Final Array State After K Multiplication Operations I (EASY)
             //int[] nums = [2, 1, 3, 5, 6];
