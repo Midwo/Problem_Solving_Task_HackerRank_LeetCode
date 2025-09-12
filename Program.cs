@@ -6223,14 +6223,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TheMaximumAchievableX(num, t));
 
             ////(2785.) Sort Vowels in a String (MEDIUM)
-            string s = "lEetcOde";
+            //string s = "lEetcOde";
 
-            LeetCode_2785 classLeetCode = new LeetCode_2785();
-            Console.WriteLine(classLeetCode.SortVowels(s));
+            //LeetCode_2785 classLeetCode = new LeetCode_2785();
+            //Console.WriteLine(classLeetCode.SortVowels(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SortVowels(s));
+            //Console.WriteLine(leetCodeAll.SortVowels(s));
 
             ////(2798.) Number of Employees Who Met the Target (EASY)
             //int[] hours = [0, 1, 2, 3, 4];
@@ -6520,6 +6520,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ValidStrings(n)));
+
+            ////(3227.) Vowels Game in a String (MEDIUM)
+            string s = "bbcd";
+
+            LeetCode_3227 classLeetCode = new LeetCode_3227();
+            Console.WriteLine(classLeetCode.DoesAliceWin(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DoesAliceWin(s));
 
             ////(3264.) Final Array State After K Multiplication Operations I (EASY)
             //int[] nums = [2, 1, 3, 5, 6];
