@@ -5058,14 +5058,14 @@ namespace ProblemSolving
             //Console.WriteLine(LeetCodeAll.AddCar(1));
 
             ////(1614.) Maximum Nesting Depth of the Parentheses (EASY)
-            string s = "(1+(2*3)+((8)/4))+1";
+            //string s = "(1+(2*3)+((8)/4))+1";
 
-            LeetCode_1614 classLeetCode = new LeetCode_1614();
-            Console.WriteLine(classLeetCode.MaxDepth(s));
+            //LeetCode_1614 classLeetCode = new LeetCode_1614();
+            //Console.WriteLine(classLeetCode.MaxDepth(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxDepth(s));
+            //Console.WriteLine(leetCodeAll.MaxDepth(s));
 
             ////(1633.) Percentage of Users Attended a Contest (EASY)
             //string SqlQuery =
@@ -5750,6 +5750,16 @@ namespace ProblemSolving
 
             //string[] result1 = leetCodeAll.DivideString(s, k, fill);
             //Console.WriteLine(string.Join(',', result1));
+
+            ////(2149.) Rearrange Array Elements by Sign (MEDIUM)
+            int[] nums = [3, 1, -2, -5, 2, -4];
+
+            LeetCode_2149 classLeetCode = new LeetCode_2149();
+            Console.WriteLine(string.Join(',', classLeetCode.RearrangeArray(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.RearrangeArray(nums)));
 
             ////(2160.) Minimum Sum of Four Digit Number After Splitting Digits (EASY) 
             //int num = 2932;
