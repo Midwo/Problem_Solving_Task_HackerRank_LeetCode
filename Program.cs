@@ -3355,22 +3355,22 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.UncommonFromSentences(s1, s2)));
 
             ////(885.) Spiral Matrix III (MEDIUM)
-            int rows = 5, cols = 6, rStart = 1, cStart = 4;
+            //int rows = 5, cols = 6, rStart = 1, cStart = 4;
 
-            LeetCode_885 classLeetCode = new LeetCode_885();
-            int[][] result = classLeetCode.SpiralMatrixIII(rows, cols, rStart, cStart);
+            //LeetCode_885 classLeetCode = new LeetCode_885();
+            //int[][] result = classLeetCode.SpiralMatrixIII(rows, cols, rStart, cStart);
 
-            foreach (var item in result)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.SpiralMatrixIII(rows, cols, rStart, cStart))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.SpiralMatrixIII(rows, cols, rStart, cStart))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(888.) Fair Candy Swap (EASY)
             //int[] aliceSizes = [1, 2, 5];
@@ -5056,6 +5056,16 @@ namespace ProblemSolving
             //Console.WriteLine(LeetCodeAll.AddCar(2));
             //Console.WriteLine(LeetCodeAll.AddCar(3));
             //Console.WriteLine(LeetCodeAll.AddCar(1));
+
+            ////(1614.) Maximum Nesting Depth of the Parentheses (EASY)
+            string s = "(1+(2*3)+((8)/4))+1";
+
+            LeetCode_1614 classLeetCode = new LeetCode_1614();
+            Console.WriteLine(classLeetCode.MaxDepth(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxDepth(s));
 
             ////(1633.) Percentage of Users Attended a Contest (EASY)
             //string SqlQuery =

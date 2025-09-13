@@ -15412,8 +15412,31 @@ namespace ProblemSolving
             }
             return result;
         }
+        public int MaxDepth(string s)
+        {
+            int maxNestingDepth = 0;
 
+            int countLeft = 0;
 
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == '(')
+                {
+                    countLeft++;
+                }
+                else if (s[i] == ')')
+                {
+                    countLeft--;
+                }
+                else
+                {
+                    continue;
+                }
+                maxNestingDepth = Math.Max(maxNestingDepth, countLeft);
+            }
+
+            return maxNestingDepth;
+        }
 
 
 
