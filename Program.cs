@@ -3622,6 +3622,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsUnivalTree(root));
 
+            ////(966.) Vowel Spellchecker (MEDIUM)
+            string[] wordlist = ["KiTe", "kite", "hare", "Hare"];
+            string[] queries = ["kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto"];
+
+            LeetCode_966 classLeetCode = new LeetCode_966();
+            Console.WriteLine(string.Join(',', classLeetCode.Spellchecker(wordlist, queries)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.Spellchecker(wordlist, queries)));
+
             ////(976.) Largest Perimeter Triangle (EASY)
             //int[] nums = [2, 1, 2];
 
@@ -5752,14 +5763,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', result1));
 
             ////(2149.) Rearrange Array Elements by Sign (MEDIUM)
-            int[] nums = [3, 1, -2, -5, 2, -4];
+            //int[] nums = [3, 1, -2, -5, 2, -4];
 
-            LeetCode_2149 classLeetCode = new LeetCode_2149();
-            Console.WriteLine(string.Join(',', classLeetCode.RearrangeArray(nums)));
+            //LeetCode_2149 classLeetCode = new LeetCode_2149();
+            //Console.WriteLine(string.Join(',', classLeetCode.RearrangeArray(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.RearrangeArray(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.RearrangeArray(nums)));
 
             ////(2160.) Minimum Sum of Four Digit Number After Splitting Digits (EASY) 
             //int num = 2932;
