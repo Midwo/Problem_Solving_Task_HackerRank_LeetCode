@@ -15699,8 +15699,24 @@ namespace ProblemSolving
             //}
             //return queries;
         }
+        public int CountPairs(int[] nums, int k)
+        {
+            int count = 0;
 
+            for (int i = 0; i < nums.Length - 1; i++)
+            {
+                int tempValue1 = nums[i];
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    if (tempValue1 == nums[j] && (i * j) % k == 0)
+                    {
+                        count++;
+                    }
+                }
+            }
 
+            return count;
+        }
 
 
 

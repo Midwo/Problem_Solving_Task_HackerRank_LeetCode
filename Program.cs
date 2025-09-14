@@ -3623,15 +3623,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsUnivalTree(root));
 
             ////(966.) Vowel Spellchecker (MEDIUM)
-            string[] wordlist = ["KiTe", "kite", "hare", "Hare"];
-            string[] queries = ["kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto"];
+            //string[] wordlist = ["KiTe", "kite", "hare", "Hare"];
+            //string[] queries = ["kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto"];
 
-            LeetCode_966 classLeetCode = new LeetCode_966();
-            Console.WriteLine(string.Join(',', classLeetCode.Spellchecker(wordlist, queries)));
+            //LeetCode_966 classLeetCode = new LeetCode_966();
+            //Console.WriteLine(string.Join(',', classLeetCode.Spellchecker(wordlist, queries)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.Spellchecker(wordlist, queries)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.Spellchecker(wordlist, queries)));
 
             ////(976.) Largest Perimeter Triangle (EASY)
             //int[] nums = [2, 1, 2];
@@ -5792,6 +5792,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.PivotArray(nums, pivot)));
+
+            ////(2176.) Count Equal and Divisible Pairs in an Array (EASY)
+            int[] nums = [3, 1, 2, 2, 2, 1, 3];
+            int k = 2;
+
+            LeetCode_2176 classLeetCode = new LeetCode_2176();
+            Console.WriteLine(classLeetCode.CountPairs(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountPairs(nums, k));
 
             ////(2181.) Merge Nodes in Between Zeros (MEDIUM)
             //ListNode head = new ListNode(0);
