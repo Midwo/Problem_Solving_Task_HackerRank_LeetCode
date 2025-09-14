@@ -5794,15 +5794,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.PivotArray(nums, pivot)));
 
             ////(2176.) Count Equal and Divisible Pairs in an Array (EASY)
-            int[] nums = [3, 1, 2, 2, 2, 1, 3];
-            int k = 2;
+            //int[] nums = [3, 1, 2, 2, 2, 1, 3];
+            //int k = 2;
 
-            LeetCode_2176 classLeetCode = new LeetCode_2176();
-            Console.WriteLine(classLeetCode.CountPairs(nums, k));
+            //LeetCode_2176 classLeetCode = new LeetCode_2176();
+            //Console.WriteLine(classLeetCode.CountPairs(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountPairs(nums, k));
+            //Console.WriteLine(leetCodeAll.CountPairs(nums, k));
 
             ////(2181.) Merge Nodes in Between Zeros (MEDIUM)
             //ListNode head = new ListNode(0);
@@ -5847,6 +5847,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.PrefixCount(words, pref));
+
+            ////(2194.) Cells in a Range on an Excel Sheet (EASY)
+            string s = "K1:L2";
+
+            LeetCode_2194 classLeetCode = new LeetCode_2194();
+            Console.WriteLine(string.Join(',', classLeetCode.CellsInRange(s)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.CellsInRange(s)));
 
             ////(2200.) Find All K-Distant Indices in an Array (EASY)
             //int[] nums = [2, 1, 1, 1, 2];
