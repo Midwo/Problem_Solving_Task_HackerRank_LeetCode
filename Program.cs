@@ -5493,7 +5493,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.CountPoints(points, queries)));
 
-            //(1863.) Sum of All Subset XOR Totals (EASY)
+            ////(1832.) Check if the Sentence Is Pangram (EASY)
+            string sentence = "thequickbrownfoxjumpsoverthelazydog";
+
+            LeetCode_1832 classLeetCode = new LeetCode_1832();
+            Console.WriteLine(classLeetCode.CheckIfPangram(sentence));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckIfPangram(sentence));
+
+            ////(1863.) Sum of All Subset XOR Totals (EASY)
             //int[] nums = [5, 1, 6];
 
             //LeetCode_1863 classLeetCode = new LeetCode_1863();
@@ -6656,14 +6666,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.GetSneakyNumbers(nums)));
 
             ////(3300.) Minimum Element After Replacement With Digit Sum (EASY)
-            int[] nums = [10, 12, 13, 14];
+            //int[] nums = [10, 12, 13, 14];
 
-            LeetCode_3300 classLeetCode = new LeetCode_3300();
-            Console.WriteLine(classLeetCode.MinElement(nums));
+            //LeetCode_3300 classLeetCode = new LeetCode_3300();
+            //Console.WriteLine(classLeetCode.MinElement(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinElement(nums));
+            //Console.WriteLine(leetCodeAll.MinElement(nums));
 
             ////(3304.) Find the K-th Character in String Game I (EASY)
             //int k = 5;
