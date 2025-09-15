@@ -5613,15 +5613,15 @@ namespace ProblemSolving
             //LeetCode_1934 classLeetCode = new LeetCode_1934();
 
             ////(1935.) Maximum Number of Words You Can Type (EASY)
-            string text = "hello world";
-            string brokenLetters = "ad";
+            //string text = "hello world";
+            //string brokenLetters = "ad";
 
-            LeetCode_1935 classLeetCode = new LeetCode_1935();
-            Console.WriteLine(classLeetCode.CanBeTypedWords(text, brokenLetters));
+            //LeetCode_1935 classLeetCode = new LeetCode_1935();
+            //Console.WriteLine(classLeetCode.CanBeTypedWords(text, brokenLetters));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CanBeTypedWords(text, brokenLetters));
+            //Console.WriteLine(leetCodeAll.CanBeTypedWords(text, brokenLetters));
 
             ////(1957.) Delete Characters to Make Fancy String (EASY)
             //string s = "leeetcode";
@@ -6654,6 +6654,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.GetSneakyNumbers(nums)));
+
+            ////(3300.) Minimum Element After Replacement With Digit Sum (EASY)
+            int[] nums = [10, 12, 13, 14];
+
+            LeetCode_3300 classLeetCode = new LeetCode_3300();
+            Console.WriteLine(classLeetCode.MinElement(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinElement(nums));
 
             ////(3304.) Find the K-th Character in String Game I (EASY)
             //int k = 5;
