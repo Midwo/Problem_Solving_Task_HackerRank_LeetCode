@@ -15738,8 +15738,42 @@ namespace ProblemSolving
 
             return list;
         }
+        public int CanBeTypedWords(string text, string brokenLetters)
+        {
+            //HashSet<char> brokenLettersCharsList = brokenLetters.ToHashSet();
+            HashSet<char> brokenLettersCharsList = new HashSet<char>();
 
+            foreach (char currChar in brokenLetters)
+            {
+                brokenLettersCharsList.Add(currChar);
+            }
 
+            int count = 0;
+            bool goodValidation = true;
+
+            foreach (char currChar in text)
+            {
+                if (currChar == ' ')
+                {
+                    if (goodValidation)
+                    {
+                        count++;
+                    }
+                    goodValidation = true;
+                }
+                else if (brokenLettersCharsList.Contains(currChar))
+                {
+                    goodValidation = false;
+                }
+            }
+
+            if (goodValidation == true)
+            {
+                count++;
+            }
+
+            return count;
+        }
 
 
 

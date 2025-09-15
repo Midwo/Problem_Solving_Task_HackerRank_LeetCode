@@ -5612,6 +5612,17 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1934 classLeetCode = new LeetCode_1934();
 
+            ////(1935.) Maximum Number of Words You Can Type (EASY)
+            string text = "hello world";
+            string brokenLetters = "ad";
+
+            LeetCode_1935 classLeetCode = new LeetCode_1935();
+            Console.WriteLine(classLeetCode.CanBeTypedWords(text, brokenLetters));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CanBeTypedWords(text, brokenLetters));
+
             ////(1957.) Delete Characters to Make Fancy String (EASY)
             //string s = "leeetcode";
 
@@ -5849,14 +5860,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PrefixCount(words, pref));
 
             ////(2194.) Cells in a Range on an Excel Sheet (EASY)
-            string s = "K1:L2";
+            //string s = "K1:L2";
 
-            LeetCode_2194 classLeetCode = new LeetCode_2194();
-            Console.WriteLine(string.Join(',', classLeetCode.CellsInRange(s)));
+            //LeetCode_2194 classLeetCode = new LeetCode_2194();
+            //Console.WriteLine(string.Join(',', classLeetCode.CellsInRange(s)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.CellsInRange(s)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.CellsInRange(s)));
 
             ////(2200.) Find All K-Distant Indices in an Array (EASY)
             //int[] nums = [2, 1, 1, 1, 2];
