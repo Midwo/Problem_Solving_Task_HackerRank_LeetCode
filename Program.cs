@@ -5494,14 +5494,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.CountPoints(points, queries)));
 
             ////(1832.) Check if the Sentence Is Pangram (EASY)
-            string sentence = "thequickbrownfoxjumpsoverthelazydog";
+            //string sentence = "thequickbrownfoxjumpsoverthelazydog";
 
-            LeetCode_1832 classLeetCode = new LeetCode_1832();
-            Console.WriteLine(classLeetCode.CheckIfPangram(sentence));
+            //LeetCode_1832 classLeetCode = new LeetCode_1832();
+            //Console.WriteLine(classLeetCode.CheckIfPangram(sentence));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckIfPangram(sentence));
+            //Console.WriteLine(leetCodeAll.CheckIfPangram(sentence));
 
             ////(1863.) Sum of All Subset XOR Totals (EASY)
             //int[] nums = [5, 1, 6];
@@ -6403,6 +6403,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindWordsContaining(words, x)));
+
+            ////(2956.) Find Common Elements Between Two Arrays (EASY)
+            int[] nums1 = [4, 3, 2, 3, 1]; 
+            int[] nums2 = [2, 2, 5, 2, 3, 6];
+
+            LeetCode_2956 classLeetCode = new LeetCode_2956();
+            Console.WriteLine(string.Join(',', classLeetCode.FindIntersectionValues(nums1, nums2)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindIntersectionValues(nums1, nums2)));
 
             ////(2966.) Divide Array Into Arrays With Max Difference (MEDIUM)
             //int[] nums = [1, 3, 4, 8, 7, 9, 3, 5, 1];
