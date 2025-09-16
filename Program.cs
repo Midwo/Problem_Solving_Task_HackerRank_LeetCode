@@ -5035,6 +5035,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxCoins(piles));
 
+            ////(1572.) Matrix Diagonal Sum (EASY)
+            int[][] mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+            LeetCode_1572 classLeetCode = new LeetCode_1572();
+            Console.WriteLine(classLeetCode.DiagonalSum(mat));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DiagonalSum(mat));
+
             ////(1581.) Customer Who Visited but Did Not Make Any Transactions (EASY)
             //string SqlQuery =
             //    @"
@@ -5504,14 +5514,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckIfPangram(sentence));
 
             ////(1859.) Sorting the Sentence (EASY)
-            string s = "is2 sentence4 This1 a3";
+            //string s = "is2 sentence4 This1 a3";
 
-            LeetCode_1859 classLeetCode = new LeetCode_1859();
-            Console.WriteLine(classLeetCode.SortSentence(s));
+            //LeetCode_1859 classLeetCode = new LeetCode_1859();
+            //Console.WriteLine(classLeetCode.SortSentence(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SortSentence(s));
+            //Console.WriteLine(leetCodeAll.SortSentence(s));
 
             ////(1863.) Sum of All Subset XOR Totals (EASY)
             //int[] nums = [5, 1, 6];
