@@ -15885,6 +15885,8 @@ namespace ProblemSolving
         }
         public IList<int> ReplaceNonCoprimes(int[] nums)
         {
+            //// 23ms, Beats: 50%
+
             IList<int> result = new List<int>();
 
             for (int i = 0; i < nums.Length; i++)
@@ -15896,7 +15898,7 @@ namespace ProblemSolving
                     int firstValue = result[result.Count - 2];
                     int secondValue = result[result.Count - 1];
 
-                    int gdcValue = GreatestCommonDivisorTask2197(firstValue, secondValue);
+                    int gdcValue = GreatestCommonDivisor2197(firstValue, secondValue);
 
                     if (gdcValue == 1)
                     {
@@ -15905,21 +15907,21 @@ namespace ProblemSolving
 
                     result.RemoveAt(result.Count - 1);
 
-                    result[result.Count - 1] = firstValue * secondValue / gdcValue;
+                    result[result.Count - 1] = (int)((long)firstValue * secondValue / gdcValue);
                 }
             }
 
             return result;
         }
-        private int GreatestCommonDivisorTask2197(int a, int b)
+
+        private int GreatestCommonDivisor2197(int a, int b)
         {
             if (b == 0)
             {
                 return a;
             }
-            return GreatestCommonDivisorTask2197(b, a % b);
+            return GreatestCommonDivisor2197(b, a % b);
         }
-
 
 
 

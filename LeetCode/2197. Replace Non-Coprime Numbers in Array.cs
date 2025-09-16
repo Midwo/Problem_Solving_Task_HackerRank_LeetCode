@@ -11,6 +11,8 @@ namespace ProblemSolving.LeetCode
         ////(2197.) Replace Non-Coprime Numbers in Array (HARD)
         public IList<int> ReplaceNonCoprimes(int[] nums)
         {
+            //// 23ms, Beats: 50%
+
             IList<int> result = new List<int>();
 
             for (int i = 0; i < nums.Length; i++)
