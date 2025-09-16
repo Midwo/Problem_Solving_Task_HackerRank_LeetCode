@@ -5313,14 +5313,14 @@ namespace ProblemSolving
             //LeetCode_1731 classLeetCode = new LeetCode_1731();
 
             ////(1732.) Find the Highest Altitude (EASY)
-            int[] gain = [-5, 1, 5, 0, -7];
+            //int[] gain = [-5, 1, 5, 0, -7];
 
-            LeetCode_1732 classLeetCode = new LeetCode_1732();
-            Console.WriteLine(classLeetCode.LargestAltitude(gain));
+            //LeetCode_1732 classLeetCode = new LeetCode_1732();
+            //Console.WriteLine(classLeetCode.LargestAltitude(gain));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LargestAltitude(gain));
+            //Console.WriteLine(leetCodeAll.LargestAltitude(gain));
 
             ////(1733.) Minimum Number of People to Teach (MEDIUM);
             //int n = 2;
@@ -6216,6 +6216,16 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+
+            ////(2485.) Find the Pivot Integer (EASY)
+            int n = 8;
+
+            LeetCode_2485 classLeetCode = new LeetCode_2485();
+            Console.WriteLine(classLeetCode.PivotInteger(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.PivotInteger(n));
 
             ////(2520.) Count the Digits That Divide a Number (EASY)
             //int num = 1248;
