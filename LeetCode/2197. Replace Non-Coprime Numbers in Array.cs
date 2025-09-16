@@ -31,7 +31,7 @@ namespace ProblemSolving.LeetCode
 
                     result.RemoveAt(result.Count - 1);
 
-                    result[result.Count - 1] = firstValue * secondValue / gdcValue;
+                    result[result.Count - 1] = (int)((long)firstValue * secondValue / gdcValue);
                 }
             }
 
