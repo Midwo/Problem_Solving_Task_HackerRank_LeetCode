@@ -15977,8 +15977,20 @@ namespace ProblemSolving
 
             return sum;
         }
+        public int LargestAltitude(int[] gain)
+        {
+            //// 0ms, Beats: 100%
 
+            int highestAlitute = 0;
+            int sum = 0;
+            for (int i = 0; i < gain.Length; i++)
+            {
+                sum += gain[i];
+                highestAlitute = Math.Max(highestAlitute, sum);
+            }
 
+            return highestAlitute;
+        }
 
 
 

@@ -5036,14 +5036,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxCoins(piles));
 
             ////(1572.) Matrix Diagonal Sum (EASY)
-            int[][] mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+            //int[][] mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
-            LeetCode_1572 classLeetCode = new LeetCode_1572();
-            Console.WriteLine(classLeetCode.DiagonalSum(mat));
+            //LeetCode_1572 classLeetCode = new LeetCode_1572();
+            //Console.WriteLine(classLeetCode.DiagonalSum(mat));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DiagonalSum(mat));
+            //Console.WriteLine(leetCodeAll.DiagonalSum(mat));
 
             ////(1581.) Customer Who Visited but Did Not Make Any Transactions (EASY)
             //string SqlQuery =
@@ -5311,6 +5311,16 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1731 classLeetCode = new LeetCode_1731();
+
+            ////(1732.) Find the Highest Altitude (EASY)
+            int[] gain = [-5, 1, 5, 0, -7];
+
+            LeetCode_1732 classLeetCode = new LeetCode_1732();
+            Console.WriteLine(classLeetCode.LargestAltitude(gain));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LargestAltitude(gain));
 
             ////(1733.) Minimum Number of People to Teach (MEDIUM);
             //int n = 2;
