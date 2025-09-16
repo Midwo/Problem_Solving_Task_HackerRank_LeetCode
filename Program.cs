@@ -5879,6 +5879,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.CellsInRange(s)));
 
+            ////(2197.) Replace Non-Coprime Numbers in Array (HARD)
+            int[] nums = [6, 4, 3, 2, 7, 6, 2];
+
+            LeetCode_2197 classLeetCode = new LeetCode_2197();
+            Console.WriteLine(string.Join(',', classLeetCode.ReplaceNonCoprimes(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ReplaceNonCoprimes(nums)));
+
             ////(2200.) Find All K-Distant Indices in an Array (EASY)
             //int[] nums = [2, 1, 1, 1, 2];
             //int key = 2;
@@ -6405,15 +6415,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindWordsContaining(words, x)));
 
             ////(2956.) Find Common Elements Between Two Arrays (EASY)
-            int[] nums1 = [4, 3, 2, 3, 1]; 
-            int[] nums2 = [2, 2, 5, 2, 3, 6];
+            //int[] nums1 = [4, 3, 2, 3, 1]; 
+            //int[] nums2 = [2, 2, 5, 2, 3, 6];
 
-            LeetCode_2956 classLeetCode = new LeetCode_2956();
-            Console.WriteLine(string.Join(',', classLeetCode.FindIntersectionValues(nums1, nums2)));
+            //LeetCode_2956 classLeetCode = new LeetCode_2956();
+            //Console.WriteLine(string.Join(',', classLeetCode.FindIntersectionValues(nums1, nums2)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindIntersectionValues(nums1, nums2)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindIntersectionValues(nums1, nums2)));
 
             ////(2966.) Divide Array Into Arrays With Max Difference (MEDIUM)
             //int[] nums = [1, 3, 4, 8, 7, 9, 3, 5, 1];
