@@ -5503,6 +5503,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CheckIfPangram(sentence));
 
+            ////(1859.) Sorting the Sentence (EASY)
+            string s = "is2 sentence4 This1 a3";
+
+            LeetCode_1859 classLeetCode = new LeetCode_1859();
+            Console.WriteLine(classLeetCode.SortSentence(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SortSentence(s));
+
             ////(1863.) Sum of All Subset XOR Totals (EASY)
             //int[] nums = [5, 1, 6];
 
@@ -5748,15 +5758,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxTotalFruits(fruits, startPos, k));
 
-            ////(2108.) Find First Palindromic String in the Array (EASY)
-            string[] words = ["abc", "car", "ada", "racecar", "cool"];
+            //////(2108.) Find First Palindromic String in the Array (EASY)
+            //string[] words = ["abc", "car", "ada", "racecar", "cool"];
 
-            LeetCode_2108 classLeetCode = new LeetCode_2108();
-            Console.WriteLine(string.Join(',',classLeetCode.FirstPalindrome(words)));
+            //LeetCode_2108 classLeetCode = new LeetCode_2108();
+            //Console.WriteLine(string.Join(',',classLeetCode.FirstPalindrome(words)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FirstPalindrome(words)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FirstPalindrome(words)));
 
             ////(2114.) Maximum Number of Words Found in Sentences (EASY)
             //string[] sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"];
