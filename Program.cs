@@ -5748,6 +5748,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxTotalFruits(fruits, startPos, k));
 
+            ////(2108.) Find First Palindromic String in the Array (EASY)
+            string[] words = ["abc", "car", "ada", "racecar", "cool"];
+
+            LeetCode_2108 classLeetCode = new LeetCode_2108();
+            Console.WriteLine(string.Join(',',classLeetCode.FirstPalindrome(words)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FirstPalindrome(words)));
+
             ////(2114.) Maximum Number of Words Found in Sentences (EASY)
             //string[] sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"];
 
@@ -5880,14 +5890,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.CellsInRange(s)));
 
             ////(2197.) Replace Non-Coprime Numbers in Array (HARD)
-            int[] nums = [6, 4, 3, 2, 7, 6, 2];
+            //int[] nums = [6, 4, 3, 2, 7, 6, 2];
 
-            LeetCode_2197 classLeetCode = new LeetCode_2197();
-            Console.WriteLine(string.Join(',', classLeetCode.ReplaceNonCoprimes(nums)));
+            //LeetCode_2197 classLeetCode = new LeetCode_2197();
+            //Console.WriteLine(string.Join(',', classLeetCode.ReplaceNonCoprimes(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ReplaceNonCoprimes(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ReplaceNonCoprimes(nums)));
 
             ////(2200.) Find All K-Distant Indices in an Array (EASY)
             //int[] nums = [2, 1, 1, 1, 2];

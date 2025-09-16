@@ -15913,7 +15913,6 @@ namespace ProblemSolving
 
             return result;
         }
-
         private int GreatestCommonDivisor2197(int a, int b)
         {
             if (b == 0)
@@ -15922,8 +15921,29 @@ namespace ProblemSolving
             }
             return GreatestCommonDivisor2197(b, a % b);
         }
+        public string FirstPalindrome(string[] words)
+        {
+            for (int i = 0; i < words.Length; i++)
+            {
+                int index = 0;
+                bool notAPalindrome = false;
+                for (int j = words[i].Length - 1; j >= 0; j--)
+                {
+                    if (words[i][index] != words[i][j])
+                    {
+                        notAPalindrome = true;
+                        break;
+                    }
+                    index++;
+                }
+                if (!notAPalindrome)
+                {
+                    return words[i];
+                }
+            }
 
-
+            return "";
+        }
 
 
 
