@@ -5115,16 +5115,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDepth(s));
 
             ////(1630.) Arithmetic Subarrays (MEDIUM)
-            int[] nums = [4, 6, 5, 9, 3, 7];
-            int[] l = [0, 0, 2];
-            int[] r = [2, 3, 5];
+            //int[] nums = [4, 6, 5, 9, 3, 7];
+            //int[] l = [0, 0, 2];
+            //int[] r = [2, 3, 5];
 
-            LeetCode_1630 classLeetCode = new LeetCode_1630();
-            Console.WriteLine(string.Join(',', classLeetCode.CheckArithmeticSubarrays(nums, l, r)));
+            //LeetCode_1630 classLeetCode = new LeetCode_1630();
+            //Console.WriteLine(string.Join(',', classLeetCode.CheckArithmeticSubarrays(nums, l, r)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.CheckArithmeticSubarrays(nums, l, r)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.CheckArithmeticSubarrays(nums, l, r)));
 
             ////(1633.) Percentage of Users Attended a Contest (EASY)
             //string SqlQuery =
@@ -6606,6 +6606,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(classLeetCode.MinimumDeletions(word, k));
+
+            ////(3099.) Harshad Number (EASY)
+            int x = 18;
+
+            LeetCode_3099 classLeetCode = new LeetCode_3099();
+            Console.WriteLine(classLeetCode.SumOfTheDigitsOfHarshadNumber(x));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumOfTheDigitsOfHarshadNumber(x));
 
             ////(3110.) Score of a String (EASY)
             //string s = "hello";
