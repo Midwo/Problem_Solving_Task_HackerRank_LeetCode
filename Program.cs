@@ -5059,6 +5059,16 @@ namespace ProblemSolving
             //////OR
             //LeetCode_1581 classLeetCode = new LeetCode_1581();
 
+            ////(1588.) Sum of All Odd Length Subarrays (EASY)
+            int[] arr = [1, 4, 2, 5, 3];
+
+            LeetCode_1588 classLeetCode = new LeetCode_1588();
+            Console.WriteLine(classLeetCode.SumOddLengthSubarrays(arr));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumOddLengthSubarrays(arr));
+
             ////(1603.) Design Parking System (EASY)
             //int big = 1;
             //int medium = 1;
@@ -6046,7 +6056,7 @@ namespace ProblemSolving
 
             ////OR
 
-            //Console.WriteLine(leetCodeAll.ZeroFilledSubarray(nums));
+            //Console.WriteLine(leetCodeAll.ZeroFilledSubarray(nums));                                               
 
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
             //string SqlQuery =
@@ -6218,14 +6228,14 @@ namespace ProblemSolving
             //}
 
             ////(2485.) Find the Pivot Integer (EASY)
-            int n = 8;
+            //int n = 8;
 
-            LeetCode_2485 classLeetCode = new LeetCode_2485();
-            Console.WriteLine(classLeetCode.PivotInteger(n));
+            //LeetCode_2485 classLeetCode = new LeetCode_2485();
+            //Console.WriteLine(classLeetCode.PivotInteger(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PivotInteger(n));
+            //Console.WriteLine(leetCodeAll.PivotInteger(n));
 
             ////(2520.) Count the Digits That Divide a Number (EASY)
             //int num = 1248;
