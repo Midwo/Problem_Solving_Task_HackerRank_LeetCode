@@ -5059,15 +5059,31 @@ namespace ProblemSolving
             //////OR
             //LeetCode_1581 classLeetCode = new LeetCode_1581();
 
+            ////(1587.) Bank Account Summary II (EASY)
+            string SqlQuery =
+                @"
+                    Select 
+                        a.name
+                        ,SUM(b.amount) balance 
+                    From Users a 
+                    left join Transactions b
+                    ON a.account = b.account
+                    Group by a.name
+                    having SUM(b.amount) > 10000     
+                ";
+
+            ////OR
+            LeetCode_1587 classLeetCode = new LeetCode_1587();
+
             ////(1588.) Sum of All Odd Length Subarrays (EASY)
-            int[] arr = [1, 4, 2, 5, 3];
+            //int[] arr = [1, 4, 2, 5, 3];
 
-            LeetCode_1588 classLeetCode = new LeetCode_1588();
-            Console.WriteLine(classLeetCode.SumOddLengthSubarrays(arr));
+            //LeetCode_1588 classLeetCode = new LeetCode_1588();
+            //Console.WriteLine(classLeetCode.SumOddLengthSubarrays(arr));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumOddLengthSubarrays(arr));
+            //Console.WriteLine(leetCodeAll.SumOddLengthSubarrays(arr));
 
             ////(1603.) Design Parking System (EASY)
             //int big = 1;
