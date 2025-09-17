@@ -5060,20 +5060,20 @@ namespace ProblemSolving
             //LeetCode_1581 classLeetCode = new LeetCode_1581();
 
             ////(1587.) Bank Account Summary II (EASY)
-            string SqlQuery =
-                @"
-                    Select 
-                        a.name
-                        ,SUM(b.amount) balance 
-                    From Users a 
-                    left join Transactions b
-                    ON a.account = b.account
-                    Group by a.name
-                    having SUM(b.amount) > 10000     
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select 
+            //            a.name
+            //            ,SUM(b.amount) balance 
+            //        From Users a 
+            //        left join Transactions b
+            //        ON a.account = b.account
+            //        Group by a.name
+            //        having SUM(b.amount) > 10000     
+            //    ";
 
-            ////OR
-            LeetCode_1587 classLeetCode = new LeetCode_1587();
+            //////OR
+            //LeetCode_1587 classLeetCode = new LeetCode_1587();
 
             ////(1588.) Sum of All Odd Length Subarrays (EASY)
             //int[] arr = [1, 4, 2, 5, 3];
@@ -5113,6 +5113,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxDepth(s));
+
+            ////(1630.) Arithmetic Subarrays (MEDIUM)
+            int[] nums = [4, 6, 5, 9, 3, 7];
+            int[] l = [0, 0, 2];
+            int[] r = [2, 3, 5];
+
+            LeetCode_1630 classLeetCode = new LeetCode_1630();
+            Console.WriteLine(string.Join(',', classLeetCode.CheckArithmeticSubarrays(nums, l, r)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.CheckArithmeticSubarrays(nums, l, r)));
 
             ////(1633.) Percentage of Users Attended a Contest (EASY)
             //string SqlQuery =
