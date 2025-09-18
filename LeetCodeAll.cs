@@ -16118,7 +16118,34 @@ namespace ProblemSolving
             return result;
         }
 
+        IList<IList<int>> _resultListTask797;
+        public IList<IList<int>> AllPathsSourceTarget(int[][] graph)
+        {
+            _resultListTask797 = new List<IList<int>>();
 
+            IList<int> currPath = new List<int>();
+            currPath.Add(0);
+
+            GeneratePathTask797(currPath, 0, graph);
+
+            return _resultListTask797;
+        }
+        private void GeneratePathTask797(IList<int> currPath, int value, int[][] graph)
+        {
+            if (value == graph.Length - 1)
+            {
+                _resultListTask797.Add(new List<int>(currPath));
+                //currPath.RemoveAt(currPath.Count() - 1);
+                return;
+            }
+
+            foreach (int i in graph[value])
+            {
+                currPath.Add(i);
+                GeneratePathTask797(currPath, i, graph);
+                currPath.RemoveAt(currPath.Count() - 1);
+            }
+        }
 
 
 

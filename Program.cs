@@ -3078,6 +3078,26 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.RotateString(s, goal));
 
+            ////(797.) All Paths From Source to Target (MEDIUM)
+            int[][] graph = [[4, 3, 1], [3, 2, 4], [3], [4], []];
+
+            LeetCode_797 classLeetCode = new LeetCode_797();
+            IList<IList<int>> result =  classLeetCode.AllPathsSourceTarget(graph);
+
+            foreach (IList<int> path in result) 
+            {
+                Console.WriteLine(string.Join(',', path));            
+            }
+
+            //OR
+
+            IList<IList<int>> result1 = classLeetCode.AllPathsSourceTarget(graph);
+
+            foreach (IList<int> path in result1)
+            {
+                Console.WriteLine(string.Join(',', path));
+            }
+
             ////(804.) Unique Morse Code Words (EASY)
             //string[] words = ["gin", "zen", "gig", "msg"];
 
@@ -6514,14 +6534,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindIntersectionValues(nums1, nums2)));
 
             ////(2965.) Find Missing and Repeated Values (EASY)
-            int[][] grid = [[9, 1, 7], [8, 9, 2], [3, 4, 6]];
+            //int[][] grid = [[9, 1, 7], [8, 9, 2], [3, 4, 6]];
 
-            LeetCode_2965 classLeetCode = new LeetCode_2965();
-            Console.WriteLine(string.Join(',', classLeetCode.FindMissingAndRepeatedValues(grid)));
+            //LeetCode_2965 classLeetCode = new LeetCode_2965();
+            //Console.WriteLine(string.Join(',', classLeetCode.FindMissingAndRepeatedValues(grid)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindMissingAndRepeatedValues(grid)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindMissingAndRepeatedValues(grid)));
 
             ////(2966.) Divide Array Into Arrays With Max Difference (MEDIUM)
             //int[] nums = [1, 3, 4, 8, 7, 9, 3, 5, 1];
