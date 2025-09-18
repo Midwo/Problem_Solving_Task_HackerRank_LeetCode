@@ -6513,6 +6513,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindIntersectionValues(nums1, nums2)));
 
+            ////(2965.) Find Missing and Repeated Values (EASY)
+            int[][] grid = [[9, 1, 7], [8, 9, 2], [3, 4, 6]];
+
+            LeetCode_2965 classLeetCode = new LeetCode_2965();
+            Console.WriteLine(string.Join(',', classLeetCode.FindMissingAndRepeatedValues(grid)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindMissingAndRepeatedValues(grid)));
+
             ////(2966.) Divide Array Into Arrays With Max Difference (MEDIUM)
             //int[] nums = [1, 3, 4, 8, 7, 9, 3, 5, 1];
             //int k = 2;
@@ -6608,14 +6618,14 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.MinimumDeletions(word, k));
 
             ////(3099.) Harshad Number (EASY)
-            int x = 18;
+            //int x = 18;
 
-            LeetCode_3099 classLeetCode = new LeetCode_3099();
-            Console.WriteLine(classLeetCode.SumOfTheDigitsOfHarshadNumber(x));
+            //LeetCode_3099 classLeetCode = new LeetCode_3099();
+            //Console.WriteLine(classLeetCode.SumOfTheDigitsOfHarshadNumber(x));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumOfTheDigitsOfHarshadNumber(x));
+            //Console.WriteLine(leetCodeAll.SumOfTheDigitsOfHarshadNumber(x));
 
             ////(3110.) Score of a String (EASY)
             //string s = "hello";
