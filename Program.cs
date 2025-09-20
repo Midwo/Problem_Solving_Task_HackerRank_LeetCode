@@ -3607,6 +3607,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinDeletionSize(strs));
 
+            ////(950.) Reveal Cards In Increasing Order (MEDIUM)
+            int[] deck = [17, 13, 11, 2, 3, 5, 7];
+            
+            LeetCode_950 classLeetCode = new LeetCode_950();
+            Console.WriteLine(string.Join(',', classLeetCode.DeckRevealedIncreasing(deck)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.DeckRevealedIncreasing(deck)));
+
             ////(953.) Verifying an Alien Dictionary (EASY)
             //string[] words = ["hello", "leetcode"];
             //string order = "hlabcdefgijkmnopqrstuvwxyz";
@@ -4885,14 +4895,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountTriplets(arr));
 
             ////(1464.) Maximum Product of Two Elements in an Array (EASY)
-            int[] nums = [1,5,4,5];
-            
-            LeetCode_1464 classLeetCode = new LeetCode_1464();
-            Console.WriteLine(classLeetCode.MaxProduct(nums));
+            //int[] nums = [1,5,4,5];
 
-            //OR
+            //LeetCode_1464 classLeetCode = new LeetCode_1464();
+            //Console.WriteLine(classLeetCode.MaxProduct(nums));
 
-            Console.WriteLine(leetCodeAll.MaxProduct(nums));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaxProduct(nums));
 
             ////(1470.) Shuffle the Array (EASY)
             //int[] nums = [1, 2, 3, 4, 4, 3, 2, 1];

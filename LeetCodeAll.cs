@@ -16215,8 +16215,35 @@ namespace ProblemSolving
 
             return ((firstMax - 1) * (secondMax - 1));
         }
+        public int[] DeckRevealedIncreasing(int[] deck)
+        {
+            //// 4ms, Beats: 95.24%
 
+            int length = deck.Length;
+            Array.Sort(deck);
+            int[] newDeck = new int[length];
+            Queue<int> queue = new Queue<int>();
 
+            for (int i = 0; i < length; i++)
+            {
+                queue.Enqueue(i);
+            }
+
+            int index = 0;
+
+            while (queue.Count > 0)
+            {
+                newDeck[queue.Dequeue()] = deck[index++];
+                if (queue.Count == 0)
+                {
+                    break;
+                }
+                int temp = queue.Dequeue();
+                queue.Enqueue(temp);
+            }
+
+            return newDeck;
+        }
 
 
 
