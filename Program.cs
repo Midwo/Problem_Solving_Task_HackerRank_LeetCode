@@ -4884,6 +4884,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountTriplets(arr));
 
+            ////(1464.) Maximum Product of Two Elements in an Array (EASY)
+            int[] nums = [1,5,4,5];
+            
+            LeetCode_1464 classLeetCode = new LeetCode_1464();
+            Console.WriteLine(classLeetCode.MaxProduct(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxProduct(nums));
+
             ////(1470.) Shuffle the Array (EASY)
             //int[] nums = [1, 2, 3, 4, 4, 3, 2, 1];
             //int n = 4;
@@ -6984,25 +6994,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumOfUnplacedFruits(fruits, baskets));
 
             ////(3484.) Design Spreadsheet (MEDIUM)
-            LeetCode_3484.Spreadsheet spreadsheet = new LeetCode_3484.Spreadsheet(3);
-            Console.WriteLine(spreadsheet.GetValue("=5+7")); // returns 12 (5+7)
-            spreadsheet.SetCell("A1", 10); // sets A1 to 10
-            Console.WriteLine(spreadsheet.GetValue("=A1+6")); // returns 16 (10+6)
-            spreadsheet.SetCell("B2", 15); // sets B2 to 15
-            Console.WriteLine(spreadsheet.GetValue("=A1+B2")); // returns 25 (10+15)
-            spreadsheet.ResetCell("A1"); // resets A1 to 0
-            Console.WriteLine(spreadsheet.GetValue("=A1+B2")); // returns 15 (0+15)
+            //LeetCode_3484.Spreadsheet spreadsheet = new LeetCode_3484.Spreadsheet(3);
+            //Console.WriteLine(spreadsheet.GetValue("=5+7")); // returns 12 (5+7)
+            //spreadsheet.SetCell("A1", 10); // sets A1 to 10
+            //Console.WriteLine(spreadsheet.GetValue("=A1+6")); // returns 16 (10+6)
+            //spreadsheet.SetCell("B2", 15); // sets B2 to 15
+            //Console.WriteLine(spreadsheet.GetValue("=A1+B2")); // returns 25 (10+15)
+            //spreadsheet.ResetCell("A1"); // resets A1 to 0
+            //Console.WriteLine(spreadsheet.GetValue("=A1+B2")); // returns 15 (0+15)
 
-            //OR
+            ////OR
 
-            LeetCodeAll.SpreadsheetTask3484 spreadsheet1 = new LeetCodeAll.SpreadsheetTask3484(3);
-            Console.WriteLine(spreadsheet1.GetValue("=5+7")); // returns 12 (5+7)
-            spreadsheet1.SetCell("A1", 10); // sets A1 to 10
-            Console.WriteLine(spreadsheet1.GetValue("=A1+6")); // returns 16 (10+6)
-            spreadsheet1.SetCell("B2", 15); // sets B2 to 15
-            Console.WriteLine(spreadsheet1.GetValue("=A1+B2")); // returns 25 (10+15)
-            spreadsheet1.ResetCell("A1"); // resets A1 to 0
-            Console.WriteLine(spreadsheet1.GetValue("=A1+B2")); // returns 15 (0+15)
+            //LeetCodeAll.SpreadsheetTask3484 spreadsheet1 = new LeetCodeAll.SpreadsheetTask3484(3);
+            //Console.WriteLine(spreadsheet1.GetValue("=5+7")); // returns 12 (5+7)
+            //spreadsheet1.SetCell("A1", 10); // sets A1 to 10
+            //Console.WriteLine(spreadsheet1.GetValue("=A1+6")); // returns 16 (10+6)
+            //spreadsheet1.SetCell("B2", 15); // sets B2 to 15
+            //Console.WriteLine(spreadsheet1.GetValue("=A1+B2")); // returns 25 (10+15)
+            //spreadsheet1.ResetCell("A1"); // resets A1 to 0
+            //Console.WriteLine(spreadsheet1.GetValue("=A1+B2")); // returns 15 (0+15)
 
             ////(3487.) Maximum Unique Subarray Sum After Deletion (EASY)
             //int[] nums = [-10, 18, 1, 18, -5];
