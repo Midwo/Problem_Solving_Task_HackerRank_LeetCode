@@ -5488,6 +5488,17 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1757 classLeetCode = new LeetCode_1757();
 
+            ////(1768.) Merge Strings Alternately (EASY)
+            string word1 = "abc";
+            string word2 = "pqr";
+
+            LeetCode_1768 classLeetCode = new LeetCode_1768();
+            Console.WriteLine(classLeetCode.MergeAlternately(word1, word2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MergeAlternately(word1, word2));
+
             ////(1769.) Minimum Number of Operations to Move All Balls to Each Box (MEDIUM)
             //string boxes = "001011";
 
@@ -5616,15 +5627,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TruncateSentence(s, k));
 
             ////(1823.) Find the Winner of the Circular Game (MEDIUM)
-            int n = 5;
-            int k = 2;
+            //int n = 5;
+            //int k = 2;
 
-            LeetCode_1823 classLeetCode = new LeetCode_1823();
-            Console.WriteLine(classLeetCode.FindTheWinner(n, k));
+            //LeetCode_1823 classLeetCode = new LeetCode_1823();
+            //Console.WriteLine(classLeetCode.FindTheWinner(n, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindTheWinner(n, k));
+            //Console.WriteLine(leetCodeAll.FindTheWinner(n, k));
 
             ////(1828.) Queries on Number of Points Inside a Circle (MEDIUM)
             //int[][] points = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5]];
