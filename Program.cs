@@ -2826,6 +2826,21 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindShortestSubArray(nums));
 
+            ////(700.) Search in a Binary Search Tree (EASY)
+            int val = 5;
+            TreeNode root = new TreeNode(4);
+            root.left = new TreeNode(2);
+            root.left.left = new TreeNode(1);
+            root.left.right = new TreeNode(3);
+            root.right = new TreeNode(7);
+
+            LeetCode_700 classLeetCode = new LeetCode_700();
+            classLeetCode.SearchBST(root, val);
+
+            //OR
+
+            leetCodeAll.SearchBST(root, val);
+
             //703. Kth Largest Element in a Stream (EASY)
             //int k = 2;
             //int[] nums = [0];
@@ -4025,14 +4040,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(",", leetCodeAll.FindOcurrences(text, first, second)));
 
             ////(1079.) Letter Tile Possibilities (MEDIUM)
-            string tiles = "AAABBC";
+            //string tiles = "AAABBC";
 
-            LeetCode_1079 classLeetCode = new LeetCode_1079();
-            Console.WriteLine(classLeetCode.NumTilePossibilities(tiles));
+            //LeetCode_1079 classLeetCode = new LeetCode_1079();
+            //Console.WriteLine(classLeetCode.NumTilePossibilities(tiles));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumTilePossibilities(tiles));
+            //Console.WriteLine(leetCodeAll.NumTilePossibilities(tiles));
 
             ////(1084.) Sales Analysis III (EASY)
             //string SqlQuery =

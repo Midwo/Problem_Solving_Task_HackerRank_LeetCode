@@ -16311,8 +16311,28 @@ namespace ProblemSolving
                 currPath = currPath[0..(currPath.Length - 1)];
             }
         }
+        public TreeNode SearchBST(TreeNode root, int val)
+        {
+            ////0ms, Beats: 100.00%
 
+            while (root != null)
+            {
+                if (root.val == val)
+                {
+                    return root;
+                }
+                if (root.val > val)
+                {
+                    root = root.right;
+                }
+                if (root.val < val)
+                {
+                    root = root.left;
+                }
+            }
 
+            return null;
+        }
 
 
 
