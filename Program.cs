@@ -3608,14 +3608,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinDeletionSize(strs));
 
             ////(950.) Reveal Cards In Increasing Order (MEDIUM)
-            int[] deck = [17, 13, 11, 2, 3, 5, 7];
-            
-            LeetCode_950 classLeetCode = new LeetCode_950();
-            Console.WriteLine(string.Join(',', classLeetCode.DeckRevealedIncreasing(deck)));
+            //int[] deck = [17, 13, 11, 2, 3, 5, 7];
 
-            //OR
+            //LeetCode_950 classLeetCode = new LeetCode_950();
+            //Console.WriteLine(string.Join(',', classLeetCode.DeckRevealedIncreasing(deck)));
 
-            Console.WriteLine(string.Join(',', leetCodeAll.DeckRevealedIncreasing(deck)));
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.DeckRevealedIncreasing(deck)));
 
             ////(953.) Verifying an Alien Dictionary (EASY)
             //string[] words = ["hello", "leetcode"];
@@ -4914,6 +4914,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.Shuffle(nums, n)));
+
+            ////(1475.) Final Prices With a Special Discount in a Shop (EASY)
+            int[] prices = [8, 4, 6, 2, 3];
+
+            LeetCode_1475 classLeetCode = new LeetCode_1475();
+            Console.WriteLine(string.Join(',', classLeetCode.FinalPrices(prices)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FinalPrices(prices)));
 
             ////(1476.) Subrectangle Queries (MEDIUM)
             //int[][] rectangle = [[1, 2, 1], [4, 3, 4], [3, 2, 1], [1, 1, 1]];
