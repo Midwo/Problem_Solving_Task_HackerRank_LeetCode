@@ -2827,19 +2827,19 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindShortestSubArray(nums));
 
             ////(700.) Search in a Binary Search Tree (EASY)
-            int val = 5;
-            TreeNode root = new TreeNode(4);
-            root.left = new TreeNode(2);
-            root.left.left = new TreeNode(1);
-            root.left.right = new TreeNode(3);
-            root.right = new TreeNode(7);
+            //int val = 5;
+            //TreeNode root = new TreeNode(4);
+            //root.left = new TreeNode(2);
+            //root.left.left = new TreeNode(1);
+            //root.left.right = new TreeNode(3);
+            //root.right = new TreeNode(7);
 
-            LeetCode_700 classLeetCode = new LeetCode_700();
-            classLeetCode.SearchBST(root, val);
+            //LeetCode_700 classLeetCode = new LeetCode_700();
+            //classLeetCode.SearchBST(root, val);
 
-            //OR
+            ////OR
 
-            leetCodeAll.SearchBST(root, val);
+            //leetCodeAll.SearchBST(root, val);
 
             //703. Kth Largest Element in a Stream (EASY)
             //int k = 2;
@@ -5614,6 +5614,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.TruncateSentence(s, k));
+
+            ////(1823.) Find the Winner of the Circular Game (MEDIUM)
+            int n = 5;
+            int k = 2;
+
+            LeetCode_1823 classLeetCode = new LeetCode_1823();
+            Console.WriteLine(classLeetCode.FindTheWinner(n, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindTheWinner(n, k));
 
             ////(1828.) Queries on Number of Points Inside a Circle (MEDIUM)
             //int[][] points = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5]];
