@@ -16268,7 +16268,49 @@ namespace ProblemSolving
             return prices;
         }
 
+        HashSet<string> _hashsetStringTask1079;
+        public int NumTilePossibilities(string tiles)
+        {
+            Dictionary<char, int> countCharDictionary = new Dictionary<char, int>();
 
+            for (int i = 0; i < tiles.Length; i++)
+            {
+                if (countCharDictionary.ContainsKey(tiles[i]))
+                {
+                    countCharDictionary[tiles[i]]++;
+                }
+                else
+                {
+                    countCharDictionary.Add(tiles[i], 1);
+                }
+            }
+
+            _hashsetStringTask1079 = new HashSet<string>();
+
+            GenerateLetterPossibilities(countCharDictionary, string.Empty);
+
+            return _hashsetStringTask1079.Count;
+        }
+        private void GenerateLetterPossibilities(Dictionary<char, int> countCharDictionary, string currPath)
+        {
+            foreach (var item in countCharDictionary)
+            {
+                if (item.Value == 0)
+                {
+                    continue;
+                }
+                if (countCharDictionary.Count == 0)
+                {
+                    return;
+                }
+                countCharDictionary[item.Key]--;
+                currPath += item.Key;
+                _hashsetStringTask1079.Add(currPath);
+                GenerateLetterPossibilities(countCharDictionary, currPath);
+                countCharDictionary[item.Key]++;
+                currPath = currPath[0..(currPath.Length - 1)];
+            }
+        }
 
 
 

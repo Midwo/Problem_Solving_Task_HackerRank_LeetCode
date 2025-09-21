@@ -4024,6 +4024,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(",", leetCodeAll.FindOcurrences(text, first, second)));
 
+            ////(1079.) Letter Tile Possibilities (MEDIUM)
+            string tiles = "AAABBC";
+
+            LeetCode_1079 classLeetCode = new LeetCode_1079();
+            Console.WriteLine(classLeetCode.NumTilePossibilities(tiles));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumTilePossibilities(tiles));
+
             ////(1084.) Sales Analysis III (EASY)
             //string SqlQuery =
             //    @"
@@ -4916,14 +4926,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.Shuffle(nums, n)));
 
             ////(1475.) Final Prices With a Special Discount in a Shop (EASY)
-            int[] prices = [8, 4, 6, 2, 3];
+            //int[] prices = [8, 4, 6, 2, 3];
 
-            LeetCode_1475 classLeetCode = new LeetCode_1475();
-            Console.WriteLine(string.Join(',', classLeetCode.FinalPrices(prices)));
+            //LeetCode_1475 classLeetCode = new LeetCode_1475();
+            //Console.WriteLine(string.Join(',', classLeetCode.FinalPrices(prices)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FinalPrices(prices)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FinalPrices(prices)));
 
             ////(1476.) Subrectangle Queries (MEDIUM)
             //int[][] rectangle = [[1, 2, 1], [4, 3, 4], [3, 2, 1], [1, 1, 1]];
