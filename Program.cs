@@ -5489,15 +5489,15 @@ namespace ProblemSolving
             //LeetCode_1757 classLeetCode = new LeetCode_1757();
 
             ////(1768.) Merge Strings Alternately (EASY)
-            string word1 = "abc";
-            string word2 = "pqr";
+            //string word1 = "abc";
+            //string word2 = "pqr";
 
-            LeetCode_1768 classLeetCode = new LeetCode_1768();
-            Console.WriteLine(classLeetCode.MergeAlternately(word1, word2));
+            //LeetCode_1768 classLeetCode = new LeetCode_1768();
+            //Console.WriteLine(classLeetCode.MergeAlternately(word1, word2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MergeAlternately(word1, word2));
+            //Console.WriteLine(leetCodeAll.MergeAlternately(word1, word2));
 
             ////(1769.) Minimum Number of Operations to Move All Balls to Each Box (MEDIUM)
             //string boxes = "001011";
@@ -5807,6 +5807,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MakeFancyString(s));
+
+            ////(1967.) Number of Strings That Appear as Substrings in Word (EASY)
+            string[] patterns = ["a", "abc", "bc", "d"];
+            string word = "abc";
+
+            LeetCode_1967 classLeetCode = new LeetCode_1967();
+            Console.WriteLine(classLeetCode.NumOfStrings(patterns, word));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumOfStrings(patterns, word));
 
             ////(1978.) Employees Whose Manager Left the Company (EASY)
             //string SqlQuery =
