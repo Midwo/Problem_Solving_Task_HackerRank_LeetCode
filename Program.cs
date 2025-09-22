@@ -4794,6 +4794,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumberOfSteps(num));
 
+            ////(1347.) Minimum Number of Steps to Make Two Strings Anagram ()
+            string s = "leetcode";
+            string t = "practice";
+
+            LeetCode_1347 classLeetCode = new LeetCode_1347();
+            Console.WriteLine(classLeetCode.MinSteps(s, t));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinSteps(s, t));
+
             ////(1365.) How Many Numbers Are Smaller Than the Current Number (EASY)
             //int[] nums = [8, 1, 2, 2, 3];
 
@@ -6684,14 +6695,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.AreaOfMaxDiagonal(dimensions));
 
             ////(3005.) Count Elements With Maximum Frequency (EASY)
-            int[] nums = [1, 2, 2, 3, 1, 4];
+            //int[] nums = [1, 2, 2, 3, 1, 4];
 
-            LeetCode_3005 classLeetCode = new LeetCode_3005();
-            Console.WriteLine(classLeetCode.MaxFrequencyElements(nums));
+            //LeetCode_3005 classLeetCode = new LeetCode_3005();
+            //Console.WriteLine(classLeetCode.MaxFrequencyElements(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxFrequencyElements(nums));
+            //Console.WriteLine(leetCodeAll.MaxFrequencyElements(nums));
 
             ////(3021.) Alice and Bob Playing Flower Game (MEDIUM)
             //int n = 3;
