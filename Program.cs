@@ -5809,15 +5809,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MakeFancyString(s));
 
             ////(1967.) Number of Strings That Appear as Substrings in Word (EASY)
-            string[] patterns = ["a", "abc", "bc", "d"];
-            string word = "abc";
+            //string[] patterns = ["a", "abc", "bc", "d"];
+            //string word = "abc";
 
-            LeetCode_1967 classLeetCode = new LeetCode_1967();
-            Console.WriteLine(classLeetCode.NumOfStrings(patterns, word));
+            //LeetCode_1967 classLeetCode = new LeetCode_1967();
+            //Console.WriteLine(classLeetCode.NumOfStrings(patterns, word));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumOfStrings(patterns, word));
+            //Console.WriteLine(leetCodeAll.NumOfStrings(patterns, word));
 
             ////(1978.) Employees Whose Manager Left the Company (EASY)
             //string SqlQuery =
@@ -6682,6 +6682,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.AreaOfMaxDiagonal(dimensions));
+
+            ////(3005.) Count Elements With Maximum Frequency (EASY)
+            int[] nums = [1, 2, 2, 3, 1, 4];
+
+            LeetCode_3005 classLeetCode = new LeetCode_3005();
+            Console.WriteLine(classLeetCode.MaxFrequencyElements(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxFrequencyElements(nums));
 
             ////(3021.) Alice and Bob Playing Flower Game (MEDIUM)
             //int n = 3;
