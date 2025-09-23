@@ -6785,6 +6785,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ScoreOfString(s));
 
+            ////(3131.) Find the Integer Added to Array I (EASY)
+            int[] nums1 = [2, 6, 4];
+            int[] nums2 = [9, 7, 5];
+
+            LeetCode_3131 classLeetCode = new LeetCode_3131();
+            Console.WriteLine(classLeetCode.AddedInteger(nums1, nums2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AddedInteger(nums1, nums2));
+
             ////(3136.) Valid Word (EASY)
             //string word = "PO@w8FWZ";
 
