@@ -20,6 +20,7 @@ using System.Threading;
 using System.Timers;
 using System.Xml.Linq;
 using static ProblemSolving.LeetCode.LeetCode_1476;
+using static ProblemSolving.LeetCode.LeetCode_1656;
 using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
 using static ProblemSolving.LeetCode.LeetCode_303;
@@ -4795,15 +4796,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfSteps(num));
 
             ////(1347.) Minimum Number of Steps to Make Two Strings Anagram ()
-            string s = "leetcode";
-            string t = "practice";
+            //string s = "leetcode";
+            //string t = "practice";
 
-            LeetCode_1347 classLeetCode = new LeetCode_1347();
-            Console.WriteLine(classLeetCode.MinSteps(s, t));
+            //LeetCode_1347 classLeetCode = new LeetCode_1347();
+            //Console.WriteLine(classLeetCode.MinSteps(s, t));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinSteps(s, t));
+            //Console.WriteLine(leetCodeAll.MinSteps(s, t));
 
             ////(1365.) How Many Numbers Are Smaller Than the Current Number (EASY)
             //int[] nums = [8, 1, 2, 2, 3];
@@ -5235,6 +5236,24 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxWidthOfVerticalArea(points));
+
+            ////(1656.) Design an Ordered Stream (EASY)
+            LeetCode_1656.OrderedStream os = new LeetCode_1656.OrderedStream(5);
+            Console.WriteLine(string.Join(',', os.Insert(3, "ccccc"))); // Inserts (3, "ccccc"), returns [].
+            Console.WriteLine(string.Join(',', os.Insert(1, "aaaaa"))); // Inserts (1, "aaaaa"), returns ["aaaaa"].
+            Console.WriteLine(string.Join(',', os.Insert(2, "bbbbb"))); // Inserts (2, "bbbbb"), returns ["bbbbb", "ccccc"].
+            Console.WriteLine(string.Join(',', os.Insert(5, "eeeee"))); // Inserts (5, "eeeee"), returns [].
+            Console.WriteLine(string.Join(',', os.Insert(4, "ddddd"))); // Inserts (4, "ddddd"), returns ["ddddd", "eeeee"].
+
+            //OR
+
+            LeetCodeAll.OrderedStreamTask1656 os1 = new LeetCodeAll.OrderedStreamTask1656(5);
+            Console.WriteLine(string.Join(',', os1.Insert(3, "ccccc"))); // Inserts (3, "ccccc"), returns [].
+            Console.WriteLine(string.Join(',', os1.Insert(1, "aaaaa"))); // Inserts (1, "aaaaa"), returns ["aaaaa"].
+            Console.WriteLine(string.Join(',', os1.Insert(2, "bbbbb"))); // Inserts (2, "bbbbb"), returns ["bbbbb", "ccccc"].
+            Console.WriteLine(string.Join(',', os1.Insert(5, "eeeee"))); // Inserts (5, "eeeee"), returns [].
+            Console.WriteLine(string.Join(',', os1.Insert(4, "ddddd"))); // Inserts (4, "ddddd"), returns ["ddddd", "eeeee"].
+
 
             ////(1661.) Average Time of Process per Machine (EASY)
             //string SqlQuery =

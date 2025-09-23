@@ -16490,8 +16490,43 @@ namespace ProblemSolving
 
             //return count;
         }
+        public class OrderedStreamTask1656
+        {
+            private string[] _strings;
+            private int _index;
+            public OrderedStreamTask1656(int n)
+            {
+                _index = 0;
+                _strings = new string[n];
+            }
 
-
+            public IList<string> Insert(int idKey, string value)
+            {
+                if (_index != idKey - 1)
+                {
+                    _strings[idKey - 1] = value;
+                    return [];
+                }
+                else
+                {
+                    int howLong = 0;
+                    _strings[idKey - 1] = value;
+                    for (int i = idKey; i < _strings.Length; i++)
+                    {
+                        if (_strings[i] == null)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            howLong++;
+                        }
+                    }
+                    _index += howLong + 1;
+                    return _strings[(_index - howLong - 1)..(_index)];
+                }
+            }
+        }
 
 
 
