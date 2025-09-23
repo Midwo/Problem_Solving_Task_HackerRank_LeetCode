@@ -5688,6 +5688,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CheckIfPangram(sentence));
 
+            ////(1844.) Replace All Digits with Characters (EASY)
+            string s = "a1b2c3d4e";
+
+            LeetCode_1844 classLeetCode = new LeetCode_1844();
+            Console.WriteLine(classLeetCode.ReplaceDigits(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ReplaceDigits(s));
+
             ////(1859.) Sorting the Sentence (EASY)
             //string s = "is2 sentence4 This1 a3";
 
@@ -6786,15 +6796,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ScoreOfString(s));
 
             ////(3131.) Find the Integer Added to Array I (EASY)
-            int[] nums1 = [2, 6, 4];
-            int[] nums2 = [9, 7, 5];
+            //int[] nums1 = [2, 6, 4];
+            //int[] nums2 = [9, 7, 5];
 
-            LeetCode_3131 classLeetCode = new LeetCode_3131();
-            Console.WriteLine(classLeetCode.AddedInteger(nums1, nums2));
+            //LeetCode_3131 classLeetCode = new LeetCode_3131();
+            //Console.WriteLine(classLeetCode.AddedInteger(nums1, nums2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.AddedInteger(nums1, nums2));
+            //Console.WriteLine(leetCodeAll.AddedInteger(nums1, nums2));
 
             ////(3136.) Valid Word (EASY)
             //string word = "PO@w8FWZ";
