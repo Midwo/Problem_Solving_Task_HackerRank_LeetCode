@@ -5112,6 +5112,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountGoodTriplets(arr, a, b, c));
 
+            ////(1551.) Minimum Operations to Make Array Equal (MEDIUM)
+            int n = 6;
+
+            LeetCode_1551 classLeetCode = new LeetCode_1551();
+            Console.WriteLine(classLeetCode.MinOperations(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperations(n));
+
             ////(1561.) Maximum Number of Coins You Can Get (MEDIUM)
             //int[] piles = [2, 4, 1, 2, 7, 8];
 
@@ -5689,14 +5699,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckIfPangram(sentence));
 
             ////(1844.) Replace All Digits with Characters (EASY)
-            string s = "a1b2c3d4e";
+            //string s = "a1b2c3d4e";
 
-            LeetCode_1844 classLeetCode = new LeetCode_1844();
-            Console.WriteLine(classLeetCode.ReplaceDigits(s));
+            //LeetCode_1844 classLeetCode = new LeetCode_1844();
+            //Console.WriteLine(classLeetCode.ReplaceDigits(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ReplaceDigits(s));
+            //Console.WriteLine(leetCodeAll.ReplaceDigits(s));
 
             ////(1859.) Sorting the Sentence (EASY)
             //string s = "is2 sentence4 This1 a3";

@@ -16570,8 +16570,42 @@ namespace ProblemSolving
 
             return new string(sb.ToString());
         }
+        public int MinOperations(int n)
+        {
+            int result = 0;
 
+            int[] arrayN = new int[n];
+            int length = arrayN.Length;
+            for (int i = 0; i < n; i++)
+            {
+                arrayN[i] = (2 * i) + 1;
+            }
 
+            int indexL = 0;
+            int indexR = length - 1;
+            int seachrNumber = 0;
+
+            if (length % 2 == 0)
+            {
+                seachrNumber = (arrayN[length / 2] + arrayN[length / 2 - 1]) / 2;
+                while (indexL < indexR)
+                {
+                    result += seachrNumber - arrayN[indexL++];
+                    indexR--;
+                }
+            }
+            else
+            {
+                seachrNumber = arrayN[length / 2];
+                while (indexL < indexR)
+                {
+                    result += seachrNumber - arrayN[indexL++];
+                    indexR--;
+                }
+            }
+
+            return result;
+        }
 
 
 
