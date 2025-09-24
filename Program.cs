@@ -3699,6 +3699,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.SortedSquares(nums)));
 
+            ////(980.) Unique Paths III (HARD)
+            int[][] grid = [[0, 1], [2, 0]];
+
+            LeetCode_980 classLeetCode = new LeetCode_980();
+            Console.WriteLine(classLeetCode.UniquePathsIII(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.UniquePathsIII(grid));
+
             ////(989.) Add to Array-Form of Integer (EASY)
             //int[] num = [1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 0, 6, 3];
             //int k = 516;
@@ -5113,14 +5123,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountGoodTriplets(arr, a, b, c));
 
             ////(1551.) Minimum Operations to Make Array Equal (MEDIUM)
-            int n = 6;
+            //int n = 6;
 
-            LeetCode_1551 classLeetCode = new LeetCode_1551();
-            Console.WriteLine(classLeetCode.MinOperations(n));
+            //LeetCode_1551 classLeetCode = new LeetCode_1551();
+            //Console.WriteLine(classLeetCode.MinOperations(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperations(n));
+            //Console.WriteLine(leetCodeAll.MinOperations(n));
 
             ////(1561.) Maximum Number of Coins You Can Get (MEDIUM)
             //int[] piles = [2, 4, 1, 2, 7, 8];

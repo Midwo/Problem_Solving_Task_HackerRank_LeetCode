@@ -16607,7 +16607,74 @@ namespace ProblemSolving
             return result;
         }
 
+        private bool[][] _visitedGridTask980;
+        private int[][] _gridTask980;
+        private int _countRowTask980;
+        private int _countColTask980;
+        private int _howManyZeroTask980;
+        private int _howManyPathTask980;
+        private int[] _directionTask980;
+        public int UniquePathsIII(int[][] grid)
+        {
+            _gridTask980 = grid;
+            _countRowTask980 = grid.Length;
+            _countColTask980 = grid[0].Length;
+            _howManyZeroTask980 = 0;
+            int positionRow = 0;
+            int positionCol = 0;
+            _howManyPathTask980 = 0;
+            _directionTask980 = new int[5] { 0, 1, 0, -1, 0 };
+            _visitedGridTask980 = new bool[_countRowTask980][];
 
+            for (int i = 0; i < _countRowTask980; i++)
+            {
+                _visitedGridTask980[i] = new bool[_countColTask980];
+                for (int j = 0; j < _countColTask980; j++)
+                {
+                    if (grid[i][j] == 0)
+                    {
+                        _howManyZeroTask980++;
+                    }
+                    else if (grid[i][j] == 1)
+                    {
+                        positionRow = i;
+                        positionCol = j;
+                    }
+                }
+            }
+            _visitedGridTask980[positionRow][positionCol] = true;
+
+            dfsPath(positionRow, positionCol, 0);
+
+            return _howManyPathTask980;
+        }
+
+        private void dfsPath(int row, int col, int countZero)
+        {
+            if (_gridTask980[row][col] == 2)
+            {
+                if (countZero == _howManyZeroTask980 + 1)
+                {
+                    _howManyPathTask980++;
+                }
+                return;
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                int currRow = row + _directionTask980[i];
+                int currCol = col + _directionTask980[i + 1];
+
+                if (currRow >= 0 && currCol >= 0 && currRow < _countRowTask980 && currCol < _countColTask980 && !_visitedGridTask980[currRow][currCol] && _gridTask980[currRow][currCol] != -1)
+                {
+                    _visitedGridTask980[currRow][currCol] = true;
+
+                    dfsPath(currRow, currCol, countZero + 1);
+
+                    _visitedGridTask980[currRow][currCol] = false;
+                }
+            }
+        }
 
 
 
