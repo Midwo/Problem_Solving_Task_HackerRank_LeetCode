@@ -3700,14 +3700,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SortedSquares(nums)));
 
             ////(980.) Unique Paths III (HARD)
-            int[][] grid = [[0, 1], [2, 0]];
+            //int[][] grid = [[0, 1], [2, 0]];
 
-            LeetCode_980 classLeetCode = new LeetCode_980();
-            Console.WriteLine(classLeetCode.UniquePathsIII(grid));
+            //LeetCode_980 classLeetCode = new LeetCode_980();
+            //Console.WriteLine(classLeetCode.UniquePathsIII(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.UniquePathsIII(grid));
+            //Console.WriteLine(leetCodeAll.UniquePathsIII(grid));
 
             ////(989.) Add to Array-Form of Integer (EASY)
             //int[] num = [1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 0, 6, 3];
@@ -5324,6 +5324,46 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1667 classLeetCode = new LeetCode_1667();
+
+            ////(1669.) Merge In Between Linked Lists (MEDIUM)
+            //ListNode listNode1 = new ListNode(10);
+            //listNode1.next = new ListNode(1);
+            //listNode1.next.next = new ListNode(13);
+            //listNode1.next.next.next = new ListNode(6);
+            //listNode1.next.next.next.next = new ListNode(9);
+            //listNode1.next.next.next.next.next = new ListNode(5);
+            //int a = 3;
+            //int b = 4;
+            //ListNode listNode2 = new ListNode(1000000);
+            //listNode2.next = new ListNode(1000001);
+            //listNode2.next.next = new ListNode(1000002);
+
+            ListNode listNode1 = new ListNode(0);
+            listNode1.next = new ListNode(1);
+            listNode1.next.next = new ListNode(2);
+            int a = 1;
+            int b = 1;
+            ListNode listNode2 = new ListNode(1000000);
+            listNode2.next = new ListNode(1000001);
+            listNode2.next.next = new ListNode(1000002);
+
+
+            LeetCode_1669 classLeetCode = new LeetCode_1669();
+            ListNode resultListNode = classLeetCode.MergeInBetween(listNode1, a, b, listNode2);
+            while (resultListNode != null)
+            {
+                Console.WriteLine(resultListNode.val);
+                resultListNode = resultListNode.next;
+            }
+
+            //OR
+
+            ListNode resultListNode1 = leetCodeAll.MergeInBetweenTask1669(listNode1, a, b, listNode2);
+            while (resultListNode1 != null)
+            {
+                Console.WriteLine(resultListNode1.val);
+                resultListNode1 = resultListNode1.next;
+            }
 
             ////(1672.) Richest Customer Wealth (EASY)
             //int[][] accounts = [[1,2,3], [3,2,1]];
