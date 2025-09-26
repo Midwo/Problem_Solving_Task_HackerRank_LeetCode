@@ -41,7 +41,7 @@ namespace ProblemSolving
         {
             Basic_Task basic_Task = new Basic_Task();
             LeetCodeAll leetCodeAll = new LeetCodeAll();
-            
+
             //HACKERRANK
 
             ////Subarray Division 1
@@ -2638,6 +2638,16 @@ namespace ProblemSolving
             ////OR
 
             //leetCodeAll.LeetCode_610();
+
+            ////(611.) Valid Triangle Number (MEDIUM)
+            int[] nums = [2, 2, 3, 4];
+
+            LeetCode_611 classLeetCode = new LeetCode_611();
+            Console.WriteLine(classLeetCode.TriangleNumber(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.TriangleNumber(nums));
 
             ////(619.) Biggest Single Number (EASY)
 
@@ -5363,7 +5373,7 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(resultListNode1.val);
             //    resultListNode1 = resultListNode1.next;
-         
+
 
             ////(1672.) Richest Customer Wealth (EASY)
             //int[][] accounts = [[1,2,3], [3,2,1]];
@@ -6910,14 +6920,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfPairs(nums1, nums2, k));
 
             ////(3174.) Clear Digits (EASY)
-            string s = "cb34";
+            //string s = "cb34";
 
-            LeetCode_3174 classLeetCode = new LeetCode_3174();
-            Console.WriteLine(classLeetCode.ClearDigits(s));
+            //LeetCode_3174 classLeetCode = new LeetCode_3174();
+            //Console.WriteLine(classLeetCode.ClearDigits(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ClearDigits(s));
+            //Console.WriteLine(leetCodeAll.ClearDigits(s));
 
             ////(3190.) Find Minimum Operations to Make All Elements Divisible by Three (EASY)
             //int[] nums = [1, 2, 3, 4];
