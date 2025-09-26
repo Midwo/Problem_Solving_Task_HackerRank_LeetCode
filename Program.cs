@@ -41,7 +41,7 @@ namespace ProblemSolving
         {
             Basic_Task basic_Task = new Basic_Task();
             LeetCodeAll leetCodeAll = new LeetCodeAll();
-
+            
             //HACKERRANK
 
             ////Subarray Division 1
@@ -5338,32 +5338,32 @@ namespace ProblemSolving
             //listNode2.next = new ListNode(1000001);
             //listNode2.next.next = new ListNode(1000002);
 
-            ListNode listNode1 = new ListNode(0);
-            listNode1.next = new ListNode(1);
-            listNode1.next.next = new ListNode(2);
-            int a = 1;
-            int b = 1;
-            ListNode listNode2 = new ListNode(1000000);
-            listNode2.next = new ListNode(1000001);
-            listNode2.next.next = new ListNode(1000002);
+            //ListNode listNode1 = new ListNode(0);
+            //listNode1.next = new ListNode(1);
+            //listNode1.next.next = new ListNode(2);
+            //int a = 1;
+            //int b = 1;
+            //ListNode listNode2 = new ListNode(1000000);
+            //listNode2.next = new ListNode(1000001);
+            //listNode2.next.next = new ListNode(1000002);
 
 
-            LeetCode_1669 classLeetCode = new LeetCode_1669();
-            ListNode resultListNode = classLeetCode.MergeInBetween(listNode1, a, b, listNode2);
-            while (resultListNode != null)
-            {
-                Console.WriteLine(resultListNode.val);
-                resultListNode = resultListNode.next;
-            }
+            //LeetCode_1669 classLeetCode = new LeetCode_1669();
+            //ListNode resultListNode = classLeetCode.MergeInBetween(listNode1, a, b, listNode2);
+            //while (resultListNode != null)
+            //{
+            //    Console.WriteLine(resultListNode.val);
+            //    resultListNode = resultListNode.next;
+            //}
 
-            //OR
+            ////OR
 
-            ListNode resultListNode1 = leetCodeAll.MergeInBetweenTask1669(listNode1, a, b, listNode2);
-            while (resultListNode1 != null)
-            {
-                Console.WriteLine(resultListNode1.val);
-                resultListNode1 = resultListNode1.next;
-            }
+            //ListNode resultListNode1 = leetCodeAll.MergeInBetweenTask1669(listNode1, a, b, listNode2);
+            //while (resultListNode1 != null)
+            //{
+            //    Console.WriteLine(resultListNode1.val);
+            //    resultListNode1 = resultListNode1.next;
+         
 
             ////(1672.) Richest Customer Wealth (EASY)
             //int[][] accounts = [[1,2,3], [3,2,1]];
@@ -6908,6 +6908,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NumberOfPairs(nums1, nums2, k));
+
+            ////(3174.) Clear Digits (EASY)
+            string s = "cb34";
+
+            LeetCode_3174 classLeetCode = new LeetCode_3174();
+            Console.WriteLine(classLeetCode.ClearDigits(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ClearDigits(s));
 
             ////(3190.) Find Minimum Operations to Make All Elements Divisible by Three (EASY)
             //int[] nums = [1, 2, 3, 4];

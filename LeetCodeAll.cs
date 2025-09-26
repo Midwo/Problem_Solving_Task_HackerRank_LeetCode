@@ -16715,6 +16715,52 @@ namespace ProblemSolving
 
             return resultListNode.next;
         }
+        public string ClearDigits(string s)
+        {
+            StringBuilder sb = new StringBuilder(s);
+            bool end = false;
+            int index = 0;
+
+            if (s.Length < 2)
+            {
+                return s;
+            }
+
+            while (!end)
+            {
+                if (sb[index + 1] < 'a' && sb[index] >= 'a')
+                {
+                    sb.Remove(index, 2);
+                    index--;
+                }
+                else
+                {
+                    index++;
+                }
+
+                if (index + 1 >= sb.Length)
+                {
+                    end = true;
+                }
+            }
+
+            return new string(sb.ToString());
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
