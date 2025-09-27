@@ -16807,7 +16807,25 @@ namespace ProblemSolving
 
             //return count;
         }
+        public int[] MinCosts(int[] cost)
+        {
+            int currMinValue = cost[0];
 
+            for (int i = 0; i < cost.Length; i++)
+            {
+                if (currMinValue < cost[i])
+                {
+                    cost[i] = currMinValue;
+                }
+                else
+                {
+                    currMinValue = cost[i];
+                    cost[i] = currMinValue;
+                }
+            }
+
+            return cost;
+        }
 
 
 

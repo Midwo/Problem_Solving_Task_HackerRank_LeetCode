@@ -2640,14 +2640,14 @@ namespace ProblemSolving
             //leetCodeAll.LeetCode_610();
 
             ////(611.) Valid Triangle Number (MEDIUM)
-            int[] nums = [2, 2, 3, 4];
+            //int[] nums = [2, 2, 3, 4];
 
-            LeetCode_611 classLeetCode = new LeetCode_611();
-            Console.WriteLine(classLeetCode.TriangleNumber(nums));
+            //LeetCode_611 classLeetCode = new LeetCode_611();
+            //Console.WriteLine(classLeetCode.TriangleNumber(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.TriangleNumber(nums));
+            //Console.WriteLine(leetCodeAll.TriangleNumber(nums));
 
             ////(619.) Biggest Single Number (EASY)
 
@@ -7274,6 +7274,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ReverseDegree(s));
+
+            ////(3502.) Minimum Cost to Reach Every Position (EASY)
+            int[] cost = [5, 3, 4, 1, 3, 2];
+
+            LeetCode_3502 classLeetCode = new LeetCode_3502();
+            Console.WriteLine(string.Join(',', classLeetCode.MinCosts(cost)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.MinCosts(cost)));
 
             ////(3512.) Minimum Operations to Make Array Sum Divisible by K (EASY)
             //int[] nums = [3, 9, 7];
