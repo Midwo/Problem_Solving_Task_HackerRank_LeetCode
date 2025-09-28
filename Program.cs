@@ -5222,25 +5222,25 @@ namespace ProblemSolving
             //Console.WriteLine(LeetCodeAll.AddCar(1));
 
             ////(1605.) Find Valid Matrix Given Row and Column Sums (MEDIUM)
-            int[] rowSum = [3, 8];
-            int[] colSum = [4, 7];
+            //int[] rowSum = [3, 8];
+            //int[] colSum = [4, 7];
 
-            LeetCode_1605 classLeetCode = new LeetCode_1605();
-            int[][] result = classLeetCode.RestoreMatrix(rowSum, colSum);
+            //LeetCode_1605 classLeetCode = new LeetCode_1605();
+            //int[][] result = classLeetCode.RestoreMatrix(rowSum, colSum);
 
-            foreach (var item in result) 
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in result) 
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            int[][] result1 = leetCodeAll.RestoreMatrix(rowSum, colSum);
+            //int[][] result1 = leetCodeAll.RestoreMatrix(rowSum, colSum);
 
-            foreach (var item in result1)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(1614.) Maximum Nesting Depth of the Parentheses (EASY)
             //string s = "(1+(2*3)+((8)/4))+1";
@@ -5870,6 +5870,16 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1907 classLeetCode = new LeetCode_1907();
+
+            ////(1913.) Maximum Product Difference Between Two Pairs (EASY)
+            int[] nums = [4, 2, 5, 9, 7, 4, 8];
+
+            LeetCode_1913 classLeetCode = new LeetCode_1913();
+            Console.WriteLine(classLeetCode.MaxProductDifference(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxProductDifference(nums));
 
             ////(1920.) Build Array from Permutation (EASY)
             //int[] nums = [0,2,1,5,3,4];
