@@ -5221,6 +5221,27 @@ namespace ProblemSolving
             //Console.WriteLine(LeetCodeAll.AddCar(3));
             //Console.WriteLine(LeetCodeAll.AddCar(1));
 
+            ////(1605.) Find Valid Matrix Given Row and Column Sums (MEDIUM)
+            int[] rowSum = [3, 8];
+            int[] colSum = [4, 7];
+
+            LeetCode_1605 classLeetCode = new LeetCode_1605();
+            int[][] result = classLeetCode.RestoreMatrix(rowSum, colSum);
+
+            foreach (var item in result) 
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            int[][] result1 = leetCodeAll.RestoreMatrix(rowSum, colSum);
+
+            foreach (var item in result1)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
             ////(1614.) Maximum Nesting Depth of the Parentheses (EASY)
             //string s = "(1+(2*3)+((8)/4))+1";
 
@@ -6710,14 +6731,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumIndicesWithKSetBits(nums, k));
 
             ////(2864.) Maximum Odd Binary Number (EASY)
-            string s = "010";
+            //string s = "010";
 
-            LeetCode_2864 classLeetCode = new LeetCode_2864();
-            Console.WriteLine(classLeetCode.MaximumOddBinaryNumber(s));
+            //LeetCode_2864 classLeetCode = new LeetCode_2864();
+            //Console.WriteLine(classLeetCode.MaximumOddBinaryNumber(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumOddBinaryNumber(s));
+            //Console.WriteLine(leetCodeAll.MaximumOddBinaryNumber(s));
 
             ////(2894.) Divisible and Non-divisible Sums Difference (EASY)
             //int n = 10;
