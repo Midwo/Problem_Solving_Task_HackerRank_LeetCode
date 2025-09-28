@@ -6687,6 +6687,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountPairs(nums, target));
 
+            ////(2828.) Check if a String Is an Acronym of Words (EASY)
+            IList<string> words = ["alice", "bob", "charlie"];
+            string s = "abc";
+
+            LeetCode_2828 classLeetCode = new LeetCode_2828();
+            Console.WriteLine(classLeetCode.IsAcronym(words, s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsAcronym(words, s));
+
             ////(2859.) Sum of Values at Indices With K Set Bits (EASY)
             //IList<int> nums = [5, 10, 1, 5, 2];
             //int k = 1;
@@ -7276,14 +7287,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReverseDegree(s));
 
             ////(3502.) Minimum Cost to Reach Every Position (EASY)
-            int[] cost = [5, 3, 4, 1, 3, 2];
+            //int[] cost = [5, 3, 4, 1, 3, 2];
 
-            LeetCode_3502 classLeetCode = new LeetCode_3502();
-            Console.WriteLine(string.Join(',', classLeetCode.MinCosts(cost)));
+            //LeetCode_3502 classLeetCode = new LeetCode_3502();
+            //Console.WriteLine(string.Join(',', classLeetCode.MinCosts(cost)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.MinCosts(cost)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.MinCosts(cost)));
 
             ////(3512.) Minimum Operations to Make Array Sum Divisible by K (EASY)
             //int[] nums = [3, 9, 7];
