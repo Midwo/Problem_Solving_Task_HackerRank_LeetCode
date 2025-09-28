@@ -6688,15 +6688,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountPairs(nums, target));
 
             ////(2828.) Check if a String Is an Acronym of Words (EASY)
-            IList<string> words = ["alice", "bob", "charlie"];
-            string s = "abc";
+            //IList<string> words = ["alice", "bob", "charlie"];
+            //string s = "abc";
 
-            LeetCode_2828 classLeetCode = new LeetCode_2828();
-            Console.WriteLine(classLeetCode.IsAcronym(words, s));
+            //LeetCode_2828 classLeetCode = new LeetCode_2828();
+            //Console.WriteLine(classLeetCode.IsAcronym(words, s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsAcronym(words, s));
+            //Console.WriteLine(leetCodeAll.IsAcronym(words, s));
 
             ////(2859.) Sum of Values at Indices With K Set Bits (EASY)
             //IList<int> nums = [5, 10, 1, 5, 2];
@@ -6708,6 +6708,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SumIndicesWithKSetBits(nums, k));
+
+            ////(2864.) Maximum Odd Binary Number (EASY)
+            string s = "010";
+
+            LeetCode_2864 classLeetCode = new LeetCode_2864();
+            Console.WriteLine(classLeetCode.MaximumOddBinaryNumber(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumOddBinaryNumber(s));
 
             ////(2894.) Divisible and Non-divisible Sums Difference (EASY)
             //int n = 10;
