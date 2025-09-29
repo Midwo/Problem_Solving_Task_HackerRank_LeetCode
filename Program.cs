@@ -6305,14 +6305,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LongestSubsequence(s, k));
 
             ////(2315.) Count Asterisks (EASY)
-            string s = "yo|uar|e**|b|e***au|tifu|l";
+            //string s = "yo|uar|e**|b|e***au|tifu|l";
 
-            LeetCode_2315 classLeetCode = new LeetCode_2315();
-            Console.WriteLine(classLeetCode.CountAsterisks(s));
+            //LeetCode_2315 classLeetCode = new LeetCode_2315();
+            //Console.WriteLine(classLeetCode.CountAsterisks(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountAsterisks(s));
+            //Console.WriteLine(leetCodeAll.CountAsterisks(s));
 
             ////(2325.) Decode the Message (EASY) 
             //string key = "the quick brown fox jumps over the lazy dog";
@@ -7073,6 +7073,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.GetFinalState(nums, k, multiplier)));
+
+            ////(3271.) Hash Divided String (MEDIUM)
+            string s = "mxz";
+            int k = 3;
+
+            LeetCode_3271 classLeetCode = new LeetCode_3271();
+            Console.WriteLine(classLeetCode.StringHash(s, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.StringHash(s, k));
 
             ////(3280.) Convert Date to Binary (EASY)
             //string date = "2080-02-29";
