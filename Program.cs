@@ -6739,6 +6739,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsAcronym(words, s));
 
+            ////(2843.) Count Symmetric Integers (EASY)
+            int low = 1200;
+            int high = 1230;
+
+            LeetCode_2843 classLeetCode = new LeetCode_2843();
+            Console.WriteLine(classLeetCode.CountSymmetricIntegers(low, high));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountSymmetricIntegers(low, high));
+
             ////(2859.) Sum of Values at Indices With K Set Bits (EASY)
             //IList<int> nums = [5, 10, 1, 5, 2];
             //int k = 1;
@@ -7075,15 +7086,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.GetFinalState(nums, k, multiplier)));
 
             ////(3271.) Hash Divided String (MEDIUM)
-            string s = "mxz";
-            int k = 3;
+            //string s = "mxz";
+            //int k = 3;
 
-            LeetCode_3271 classLeetCode = new LeetCode_3271();
-            Console.WriteLine(classLeetCode.StringHash(s, k));
+            //LeetCode_3271 classLeetCode = new LeetCode_3271();
+            //Console.WriteLine(classLeetCode.StringHash(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.StringHash(s, k));
+            //Console.WriteLine(leetCodeAll.StringHash(s, k));
 
             ////(3280.) Convert Date to Binary (EASY)
             //string date = "2080-02-29";
