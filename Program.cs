@@ -5872,14 +5872,14 @@ namespace ProblemSolving
             //LeetCode_1907 classLeetCode = new LeetCode_1907();
 
             ////(1913.) Maximum Product Difference Between Two Pairs (EASY)
-            int[] nums = [4, 2, 5, 9, 7, 4, 8];
+            //int[] nums = [4, 2, 5, 9, 7, 4, 8];
 
-            LeetCode_1913 classLeetCode = new LeetCode_1913();
-            Console.WriteLine(classLeetCode.MaxProductDifference(nums));
+            //LeetCode_1913 classLeetCode = new LeetCode_1913();
+            //Console.WriteLine(classLeetCode.MaxProductDifference(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxProductDifference(nums));
+            //Console.WriteLine(leetCodeAll.MaxProductDifference(nums));
 
             ////(1920.) Build Array from Permutation (EASY)
             //int[] nums = [0,2,1,5,3,4];
@@ -6303,6 +6303,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.LongestSubsequence(s, k));
+
+            ////(2315.) Count Asterisks (EASY)
+            string s = "yo|uar|e**|b|e***au|tifu|l";
+
+            LeetCode_2315 classLeetCode = new LeetCode_2315();
+            Console.WriteLine(classLeetCode.CountAsterisks(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountAsterisks(s));
 
             ////(2325.) Decode the Message (EASY) 
             //string key = "the quick brown fox jumps over the lazy dog";

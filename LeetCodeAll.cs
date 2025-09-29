@@ -16972,8 +16972,32 @@ namespace ProblemSolving
 
             return firstMax * secondMax - firstMin * secondMin;
         }
+        public int CountAsterisks(string s)
+        {
+            int count = 0;
+            bool active = true;
 
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == '|')
+                {
+                    if (active)
+                    {
+                        active = false;
+                    }
+                    else
+                    {
+                        active = true;
+                    }
+                }
+                if (s[i] == '*' && active)
+                {
+                    count++;
+                }
+            }
 
+            return count;
+        }
 
 
 
