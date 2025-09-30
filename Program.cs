@@ -6249,6 +6249,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinBitFlips(start, goal));
 
+            ////(2221.) Find Triangular Sum of an Array (MEDIUM)
+            int[] nums = [1, 2, 3, 4, 5];
+            
+            LeetCode_2221 classLeetCode = new LeetCode_2221();
+            Console.WriteLine(classLeetCode.TriangularSum(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.TriangularSum(nums));
+
             ////(2235.) Add Two Integers (EASY)
             //int num1 = 12;
             //int num2 = 5;
@@ -6740,15 +6750,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsAcronym(words, s));
 
             ////(2843.) Count Symmetric Integers (EASY)
-            int low = 1200;
-            int high = 1230;
+            //int low = 1200;
+            //int high = 1230;
 
-            LeetCode_2843 classLeetCode = new LeetCode_2843();
-            Console.WriteLine(classLeetCode.CountSymmetricIntegers(low, high));
+            //LeetCode_2843 classLeetCode = new LeetCode_2843();
+            //Console.WriteLine(classLeetCode.CountSymmetricIntegers(low, high));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountSymmetricIntegers(low, high));
+            //Console.WriteLine(leetCodeAll.CountSymmetricIntegers(low, high));
 
             ////(2859.) Sum of Values at Indices With K Set Bits (EASY)
             //IList<int> nums = [5, 10, 1, 5, 2];
