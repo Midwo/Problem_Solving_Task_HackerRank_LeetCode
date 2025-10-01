@@ -4746,24 +4746,24 @@ namespace ProblemSolving
             //LeetCode_1327 classLeetCode = new LeetCode_1327();
 
             ////(1329.) Sort the Matrix Diagonally (MEDIUM)
-            int[][] mat = mat = [[3, 3, 1, 1], [2, 2, 1, 2], [1, 1, 1, 2]];
+            //int[][] mat = mat = [[3, 3, 1, 1], [2, 2, 1, 2], [1, 1, 1, 2]];
 
-            LeetCode_1329 classLeetCode = new LeetCode_1329();
-            int[][] result = classLeetCode.DiagonalSort(mat);
+            //LeetCode_1329 classLeetCode = new LeetCode_1329();
+            //int[][] result = classLeetCode.DiagonalSort(mat);
 
-            foreach (var item in result) 
-            {
-                Console.WriteLine(string.Join(',',item));
-            }
+            //foreach (var item in result) 
+            //{
+            //    Console.WriteLine(string.Join(',',item));
+            //}
 
-            //OR
+            ////OR
 
-            int[][] result1 = leetCodeAll.DiagonalSort(mat);
+            //int[][] result1 = leetCodeAll.DiagonalSort(mat);
 
-            foreach (var item in result1)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(1341.) Movie Rating  (MEDIUM)
             //string SqlQuery =
@@ -5162,6 +5162,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountGoodTriplets(arr, a, b, c));
+
+            ////(1550.) Three Consecutive Odds (EASY)
+            int[] arr = [1, 2, 34, 3, 4, 5, 7, 23, 12];
+
+            LeetCode_1550 classLeetCode = new LeetCode_1550();
+            Console.WriteLine(classLeetCode.ThreeConsecutiveOdds(arr));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ThreeConsecutiveOdds(arr));
 
             ////(1551.) Minimum Operations to Make Array Equal (MEDIUM)
             //int n = 6;
