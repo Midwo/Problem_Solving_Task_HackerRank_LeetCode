@@ -17058,8 +17058,20 @@ namespace ProblemSolving
 
             return nums[0];
         }
+        public int NumWaterBottles(int numBottles, int numExchange)
+        {
+            ////0ms, 100.00%
+            int result = numBottles;
 
+            while (numBottles >= numExchange)
+            {
+                int temp = numBottles / numExchange;
+                result += temp;
+                numBottles = numBottles % numExchange + temp;
+            }
 
+            return result;
+        }
 
 
 

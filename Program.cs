@@ -5094,6 +5094,17 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1517 classLeetCode = new LeetCode_1517();
 
+            ////(1518.) Water Bottles (EASY)
+            int numBottles = 9;
+            int numExchange = 3;
+
+            LeetCode_1518 classLeetCode = new LeetCode_1518();
+            Console.WriteLine(classLeetCode.NumWaterBottles(numBottles, numExchange));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumWaterBottles(numBottles, numExchange));
+
             ////(1527.) Patients With a Condition (EASY)
             //string SqlQuery =
             //    @"
@@ -6250,14 +6261,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinBitFlips(start, goal));
 
             ////(2221.) Find Triangular Sum of an Array (MEDIUM)
-            int[] nums = [1, 2, 3, 4, 5];
-            
-            LeetCode_2221 classLeetCode = new LeetCode_2221();
-            Console.WriteLine(classLeetCode.TriangularSum(nums));
+            //int[] nums = [1, 2, 3, 4, 5];
 
-            //OR
+            //LeetCode_2221 classLeetCode = new LeetCode_2221();
+            //Console.WriteLine(classLeetCode.TriangularSum(nums));
 
-            Console.WriteLine(leetCodeAll.TriangularSum(nums));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.TriangularSum(nums));
 
             ////(2235.) Add Two Integers (EASY)
             //int num1 = 12;
