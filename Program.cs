@@ -4745,6 +4745,26 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1327 classLeetCode = new LeetCode_1327();
 
+            ////(1329.) Sort the Matrix Diagonally (MEDIUM)
+            int[][] mat = mat = [[3, 3, 1, 1], [2, 2, 1, 2], [1, 1, 1, 2]];
+
+            LeetCode_1329 classLeetCode = new LeetCode_1329();
+            int[][] result = classLeetCode.DiagonalSort(mat);
+
+            foreach (var item in result) 
+            {
+                Console.WriteLine(string.Join(',',item));
+            }
+
+            //OR
+
+            int[][] result1 = leetCodeAll.DiagonalSort(mat);
+
+            foreach (var item in result1)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
             ////(1341.) Movie Rating  (MEDIUM)
             //string SqlQuery =
             //    @"
@@ -5095,15 +5115,15 @@ namespace ProblemSolving
             //LeetCode_1517 classLeetCode = new LeetCode_1517();
 
             ////(1518.) Water Bottles (EASY)
-            int numBottles = 9;
-            int numExchange = 3;
+            //int numBottles = 9;
+            //int numExchange = 3;
 
-            LeetCode_1518 classLeetCode = new LeetCode_1518();
-            Console.WriteLine(classLeetCode.NumWaterBottles(numBottles, numExchange));
+            //LeetCode_1518 classLeetCode = new LeetCode_1518();
+            //Console.WriteLine(classLeetCode.NumWaterBottles(numBottles, numExchange));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumWaterBottles(numBottles, numExchange));
+            //Console.WriteLine(leetCodeAll.NumWaterBottles(numBottles, numExchange));
 
             ////(1527.) Patients With a Condition (EASY)
             //string SqlQuery =
