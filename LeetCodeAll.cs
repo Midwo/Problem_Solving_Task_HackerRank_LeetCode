@@ -17256,8 +17256,17 @@ namespace ProblemSolving
                 }
             }
         }
+        public int MaxBottlesDrunk(int numBottles, int numExchange)
+        {
+            int count = numBottles;
+            while (numBottles >= numExchange)
+            {
+                numBottles -= numExchange++ - 1;
+                count++;
+            }
 
-
+            return count;
+        }
 
 
 
