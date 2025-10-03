@@ -6136,6 +6136,20 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumberOfBeams(bank));
 
+            ////(2130.) Maximum Twin Sum of a Linked List (MEDIUM)
+            ListNode head = new ListNode(5);
+            head.next = new ListNode(4);
+            head.next.next = new ListNode(3);
+            head.next.next.next = new ListNode(2);
+            head.next.next.next.next = new ListNode(1);
+
+            LeetCode_2130 classLeetCode = new LeetCode_2130();
+            Console.WriteLine(classLeetCode.PairSum(head));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.PairSum(head));
+
             ////(2138.) Divide a String Into Groups of Size k (EASY)
             //string s = "abcdefghij";
             //int k = 3;
@@ -6991,15 +7005,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumOfTheDigitsOfHarshadNumber(x));
 
             ////(3100.) Water Bottles II (MEDIUM)
-            int numBottles = 13;
-            int numExchange = 6;
+            //int numBottles = 13;
+            //int numExchange = 6;
 
-            LeetCode_3100 classLeetCode = new LeetCode_3100();
-            Console.WriteLine(classLeetCode.MaxBottlesDrunk(numBottles, numExchange));
+            //LeetCode_3100 classLeetCode = new LeetCode_3100();
+            //Console.WriteLine(classLeetCode.MaxBottlesDrunk(numBottles, numExchange));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxBottlesDrunk(numBottles, numExchange));
+            //Console.WriteLine(leetCodeAll.MaxBottlesDrunk(numBottles, numExchange));
 
             ////(3110.) Score of a String (EASY)
             //string s = "hello";
