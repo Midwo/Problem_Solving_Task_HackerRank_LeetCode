@@ -6137,18 +6137,18 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfBeams(bank));
 
             ////(2130.) Maximum Twin Sum of a Linked List (MEDIUM)
-            ListNode head = new ListNode(5);
-            head.next = new ListNode(4);
-            head.next.next = new ListNode(3);
-            head.next.next.next = new ListNode(2);
-            head.next.next.next.next = new ListNode(1);
+            //ListNode head = new ListNode(5);
+            //head.next = new ListNode(4);
+            //head.next.next = new ListNode(3);
+            //head.next.next.next = new ListNode(2);
+            //head.next.next.next.next = new ListNode(1);
 
-            LeetCode_2130 classLeetCode = new LeetCode_2130();
-            Console.WriteLine(classLeetCode.PairSum(head));
+            //LeetCode_2130 classLeetCode = new LeetCode_2130();
+            //Console.WriteLine(classLeetCode.PairSum(head));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PairSum(head));
+            //Console.WriteLine(leetCodeAll.PairSum(head));
 
             ////(2138.) Divide a String Into Groups of Size k (EASY)
             //string s = "abcdefghij";
@@ -6723,6 +6723,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindThePrefixCommonArray(A, B)));
+
+            ////(2678.) Number of Senior Citizens (EASY)
+            string[] details = ["7868190130M7522", "5303914400F9211", "9273338290F4010"];
+
+            LeetCode_2678 classLeetCode = new LeetCode_2678();
+            Console.WriteLine(classLeetCode.CountSeniors(details));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountSeniors(details));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
