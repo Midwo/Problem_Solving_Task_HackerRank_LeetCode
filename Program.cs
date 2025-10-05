@@ -5319,6 +5319,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1633 classLeetCode = new LeetCode_1633();
 
+            ////(1636.) Sort Array by Increasing Frequency (EASY)
+            int[] nums = [-1, 1, -6, 4, 5, -6, 1, 4, 1];
+
+            LeetCode_1636 classLeetCode = new LeetCode_1636();
+            Console.WriteLine(string.Join(',', classLeetCode.FrequencySort(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FrequencySort(nums)));
+
             ////(1637.) Widest Vertical Area Between Two Points Containing No Points (EASY)
             //int[][] points = [[3, 1], [9, 0], [1, 0], [1, 4], [5, 3], [8, 8]];
 
@@ -6725,14 +6735,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindThePrefixCommonArray(A, B)));
 
             ////(2678.) Number of Senior Citizens (EASY)
-            string[] details = ["7868190130M7522", "5303914400F9211", "9273338290F4010"];
+            //string[] details = ["7868190130M7522", "5303914400F9211", "9273338290F4010"];
 
-            LeetCode_2678 classLeetCode = new LeetCode_2678();
-            Console.WriteLine(classLeetCode.CountSeniors(details));
+            //LeetCode_2678 classLeetCode = new LeetCode_2678();
+            //Console.WriteLine(classLeetCode.CountSeniors(details));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountSeniors(details));
+            //Console.WriteLine(leetCodeAll.CountSeniors(details));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
