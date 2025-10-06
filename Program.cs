@@ -3439,6 +3439,23 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ReorderedPowerOf2(n));
 
+            ////(890.) Find and Replace Pattern (MEDIUM)
+            string[] words = ["abc", "deq", "mee", "aqq", "dkd", "ccc"];
+            string pattern = "abb";
+
+            LeetCode_890 classLeetCode = new LeetCode_890();
+            foreach (string word in classLeetCode.FindAndReplacePattern(words, pattern))
+            {
+                Console.WriteLine(word);
+            }
+
+            //OR
+
+            foreach (string word in leetCodeAll.FindAndReplacePattern(words, pattern))
+            {
+                Console.WriteLine(word);
+            }
+
             ////(892.) Surface Area of 3D Shapes (EASY)
             //int[][] grid = [[1, 2], [3, 4]];
 
@@ -4766,14 +4783,14 @@ namespace ProblemSolving
             //}
 
             ////(1332.) Remove Palindromic Subsequences (EASY)
-            string s = "ababa";
-            
-            LeetCode_1332 classLeetCode = new LeetCode_1332();
-            Console.WriteLine(classLeetCode.RemovePalindromeSub(s));
+            //string s = "ababa";
 
-            //OR
+            //LeetCode_1332 classLeetCode = new LeetCode_1332();
+            //Console.WriteLine(classLeetCode.RemovePalindromeSub(s));
 
-            Console.WriteLine(leetCodeAll.RemovePalindromeSub(s));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.RemovePalindromeSub(s));
 
             ////(1341.) Movie Rating  (MEDIUM)
             //string SqlQuery =
