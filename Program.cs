@@ -5320,14 +5320,14 @@ namespace ProblemSolving
             //LeetCode_1633 classLeetCode = new LeetCode_1633();
 
             ////(1636.) Sort Array by Increasing Frequency (EASY)
-            int[] nums = [-1, 1, -6, 4, 5, -6, 1, 4, 1];
+            //int[] nums = [-1, 1, -6, 4, 5, -6, 1, 4, 1];
 
-            LeetCode_1636 classLeetCode = new LeetCode_1636();
-            Console.WriteLine(string.Join(',', classLeetCode.FrequencySort(nums)));
+            //LeetCode_1636 classLeetCode = new LeetCode_1636();
+            //Console.WriteLine(string.Join(',', classLeetCode.FrequencySort(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FrequencySort(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FrequencySort(nums)));
 
             ////(1637.) Widest Vertical Area Between Two Points Containing No Points (EASY)
             //int[][] points = [[3, 1], [9, 0], [1, 0], [1, 4], [5, 3], [8, 8]];
@@ -6092,6 +6092,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountMaxOrSubsets(nums));
+
+            ////(2079.) Watering Plants (MEDIUM)
+            int[] plants = [1, 1, 1, 4, 2, 3];
+            int capacity = 4;
+
+            LeetCode_2079 classLeetCode = new LeetCode_2079();
+            Console.WriteLine(classLeetCode.WateringPlants(plants, capacity));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.WateringPlants(plants, capacity));
 
             ////(2099.) Find Subsequence of Length K With the Largest Sum (EASY)
             //int[] nums = [-1, -2, 3, 4];
