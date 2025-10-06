@@ -4765,6 +4765,16 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', item));
             //}
 
+            ////(1332.) Remove Palindromic Subsequences (EASY)
+            string s = "ababa";
+            
+            LeetCode_1332 classLeetCode = new LeetCode_1332();
+            Console.WriteLine(classLeetCode.RemovePalindromeSub(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.RemovePalindromeSub(s));
+
             ////(1341.) Movie Rating  (MEDIUM)
             //string SqlQuery =
             //    @"
@@ -6094,15 +6104,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountMaxOrSubsets(nums));
 
             ////(2079.) Watering Plants (MEDIUM)
-            int[] plants = [1, 1, 1, 4, 2, 3];
-            int capacity = 4;
+            //int[] plants = [1, 1, 1, 4, 2, 3];
+            //int capacity = 4;
 
-            LeetCode_2079 classLeetCode = new LeetCode_2079();
-            Console.WriteLine(classLeetCode.WateringPlants(plants, capacity));
+            //LeetCode_2079 classLeetCode = new LeetCode_2079();
+            //Console.WriteLine(classLeetCode.WateringPlants(plants, capacity));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.WateringPlants(plants, capacity));
+            //Console.WriteLine(leetCodeAll.WateringPlants(plants, capacity));
 
             ////(2099.) Find Subsequence of Length K With the Largest Sum (EASY)
             //int[] nums = [-1, -2, 3, 4];

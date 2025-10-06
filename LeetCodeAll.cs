@@ -17360,8 +17360,19 @@ namespace ProblemSolving
 
             return sum;
         }
+        public int RemovePalindromeSub(string s)
+        {
+            int length = s.Length;
+            for (int i = 0; i < length / 2; i++)
+            {
+                if (s[i] != s[length - 1 - i])
+                {
+                    return 2;
+                }
+            }
 
-
+            return 1;
+        }
 
 
 
