@@ -3440,21 +3440,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReorderedPowerOf2(n));
 
             ////(890.) Find and Replace Pattern (MEDIUM)
-            string[] words = ["abc", "deq", "mee", "aqq", "dkd", "ccc"];
-            string pattern = "abb";
+            //string[] words = ["abc", "deq", "mee", "aqq", "dkd", "ccc"];
+            //string pattern = "abb";
 
-            LeetCode_890 classLeetCode = new LeetCode_890();
-            foreach (string word in classLeetCode.FindAndReplacePattern(words, pattern))
-            {
-                Console.WriteLine(word);
-            }
+            //LeetCode_890 classLeetCode = new LeetCode_890();
+            //foreach (string word in classLeetCode.FindAndReplacePattern(words, pattern))
+            //{
+            //    Console.WriteLine(word);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (string word in leetCodeAll.FindAndReplacePattern(words, pattern))
-            {
-                Console.WriteLine(word);
-            }
+            //foreach (string word in leetCodeAll.FindAndReplacePattern(words, pattern))
+            //{
+            //    Console.WriteLine(word);
+            //}
 
             ////(892.) Surface Area of 3D Shapes (EASY)
             //int[][] grid = [[1, 2], [3, 4]];
@@ -4882,6 +4882,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.SmallerNumbersThanCurrent(nums)));
+
+            ////(1370.) Increasing Decreasing String (EASY)
+            string s = "aaaabbbbcccc";
+
+            LeetCode_1370 classLeetCode = new LeetCode_1370();
+            Console.WriteLine(classLeetCode.SortString(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SortString(s));
 
             ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
             //string SqlQuery =
