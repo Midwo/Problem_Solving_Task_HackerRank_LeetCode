@@ -4884,14 +4884,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SmallerNumbersThanCurrent(nums)));
 
             ////(1370.) Increasing Decreasing String (EASY)
-            string s = "aaaabbbbcccc";
+            //string s = "aaaabbbbcccc";
 
-            LeetCode_1370 classLeetCode = new LeetCode_1370();
-            Console.WriteLine(classLeetCode.SortString(s));
+            //LeetCode_1370 classLeetCode = new LeetCode_1370();
+            //Console.WriteLine(classLeetCode.SortString(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SortString(s));
+            //Console.WriteLine(leetCodeAll.SortString(s));
 
             ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
             //string SqlQuery =
@@ -6415,6 +6415,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.PartitionArray(nums, k));
+
+            ////(2300.) Successful Pairs of Spells and Potions (MEDIUM)
+            int[] spells = [5, 1, 3];
+            int[] potions = [1, 2, 3, 4, 5];
+            long success = 7;
+
+            LeetCode_2300 classLeetCode = new LeetCode_2300();
+            Console.WriteLine(string.Join(',', classLeetCode.SuccessfulPairs(spells, potions, success)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SuccessfulPairs(spells, potions, success)));
 
             ////(2311.) Longest Binary Subsequence Less Than or Equal to K (MEDIUM)
             //string s = "1001010";
