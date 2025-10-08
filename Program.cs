@@ -6417,16 +6417,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PartitionArray(nums, k));
 
             ////(2300.) Successful Pairs of Spells and Potions (MEDIUM)
-            int[] spells = [5, 1, 3];
-            int[] potions = [1, 2, 3, 4, 5];
-            long success = 7;
+            //int[] spells = [5, 1, 3];
+            //int[] potions = [1, 2, 3, 4, 5];
+            //long success = 7;
 
-            LeetCode_2300 classLeetCode = new LeetCode_2300();
-            Console.WriteLine(string.Join(',', classLeetCode.SuccessfulPairs(spells, potions, success)));
+            //LeetCode_2300 classLeetCode = new LeetCode_2300();
+            //Console.WriteLine(string.Join(',', classLeetCode.SuccessfulPairs(spells, potions, success)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SuccessfulPairs(spells, potions, success)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.SuccessfulPairs(spells, potions, success)));
 
             ////(2311.) Longest Binary Subsequence Less Than or Equal to K (MEDIUM)
             //string s = "1001010";
@@ -6803,6 +6803,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountSeniors(details));
+
+            ////(2716.) Minimize String Length (EASY)
+            string s = "baadccab";
+
+            LeetCode_2716 classLeetCode = new LeetCode_2716();
+            Console.WriteLine(classLeetCode.MinimizedStringLength(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimizedStringLength(s));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;

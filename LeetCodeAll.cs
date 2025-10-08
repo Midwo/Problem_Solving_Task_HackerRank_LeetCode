@@ -17507,8 +17507,19 @@ namespace ProblemSolving
             }
             return spells;
         }
+        public int MinimizedStringLength(string s)
+        {
+            ////6ms, Betas: 81.13%
 
+            HashSet<char> countUniqueChars = new HashSet<char>();
 
+            for (int i = 0; i < s.Length; i++)
+            {
+                countUniqueChars.Add(s[i]);
+            }
+
+            return countUniqueChars.Count;
+        }
 
 
 
