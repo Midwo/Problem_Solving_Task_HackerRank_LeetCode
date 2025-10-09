@@ -6711,6 +6711,16 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', item));
             //}
 
+            ////(2553.) Separate the Digits in an Array (EASY)
+            int[] nums = [13, 25, 83, 77];
+
+            LeetCode_2553 classLeetCode = new LeetCode_2553();
+            Console.WriteLine(string.Join(',', classLeetCode.SeparateDigits(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SeparateDigits(nums)));
+
             ////(2561.) Rearranging Fruits (HARD)
             //int[] basket1 = [4, 2, 2, 2];
             //int[] basket2 = [1, 4, 1, 2];
@@ -7505,15 +7515,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxSum(nums));
 
             ////(3494.) Find the Minimum Amount of Time to Brew Potions (MEDIUM)
-            int[] skill = [1, 5, 2, 4];
-            int[] mana = [5, 1, 4, 2];
+            //int[] skill = [1, 5, 2, 4];
+            //int[] mana = [5, 1, 4, 2];
 
-            LeetCode_3494 classLeetCode = new LeetCode_3494();
-            Console.WriteLine(classLeetCode.MinTime(skill, mana));
+            //LeetCode_3494 classLeetCode = new LeetCode_3494();
+            //Console.WriteLine(classLeetCode.MinTime(skill, mana));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinTime(skill, mana));
+            //Console.WriteLine(leetCodeAll.MinTime(skill, mana));
 
             ////(3516.) Find Closest Person (EASY)
             //int x = 2;

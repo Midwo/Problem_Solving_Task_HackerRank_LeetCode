@@ -17545,8 +17545,29 @@ namespace ProblemSolving
 
             return times[skillsCount - 1];
         }
+        public int[] SeparateDigits(int[] nums)
+        {
+            List<int> listAllNums = new List<int>();
 
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] < 9)
+                {
+                    listAllNums.Add(nums[i]);
+                }
+                else
+                {
+                    string tempValue = nums[i].ToString();
 
+                    for (int j = 0; j < tempValue.Length; j++)
+                    {
+                        listAllNums.Add((int)char.GetNumericValue(tempValue[j]));
+                    }
+                }
+            }
+
+            return listAllNums.ToArray();
+        }
 
 
 
