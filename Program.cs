@@ -6805,14 +6805,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountSeniors(details));
 
             ////(2716.) Minimize String Length (EASY)
-            string s = "baadccab";
+            //string s = "baadccab";
 
-            LeetCode_2716 classLeetCode = new LeetCode_2716();
-            Console.WriteLine(classLeetCode.MinimizedStringLength(s));
+            //LeetCode_2716 classLeetCode = new LeetCode_2716();
+            //Console.WriteLine(classLeetCode.MinimizedStringLength(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimizedStringLength(s));
+            //Console.WriteLine(leetCodeAll.MinimizedStringLength(s));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
@@ -7503,6 +7503,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxSum(nums));
+
+            ////(3494.) Find the Minimum Amount of Time to Brew Potions (MEDIUM)
+            int[] skill = [1, 5, 2, 4];
+            int[] mana = [5, 1, 4, 2];
+
+            LeetCode_3494 classLeetCode = new LeetCode_3494();
+            Console.WriteLine(classLeetCode.MinTime(skill, mana));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinTime(skill, mana));
 
             ////(3516.) Find Closest Person (EASY)
             //int x = 2;

@@ -17520,8 +17520,31 @@ namespace ProblemSolving
 
             return countUniqueChars.Count;
         }
+        public long MinTime(int[] skill, int[] mana)
+        {
+            int skillsCount = skill.Length;
+            long[] times = new long[skillsCount];
+            int manaCount = mana.Length;
 
+            for (int indexMana = 0; indexMana < manaCount; indexMana++)
+            {
+                long currTime = 0;
 
+                for (int indexSkill = 0; indexSkill < skillsCount; indexSkill++)
+                {
+                    currTime = Math.Max(currTime, times[indexSkill]) + (long)mana[indexMana] * skill[indexSkill];
+                }
+
+                times[skillsCount - 1] = currTime;
+
+                for (int indexSkill = skillsCount - 2; indexSkill >= 0; indexSkill--)
+                {
+                    times[indexSkill] = times[indexSkill + 1] - (long)mana[indexMana] * skill[indexSkill + 1];
+                }
+            }
+
+            return times[skillsCount - 1];
+        }
 
 
 
