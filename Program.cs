@@ -6712,14 +6712,14 @@ namespace ProblemSolving
             //}
 
             ////(2553.) Separate the Digits in an Array (EASY)
-            int[] nums = [13, 25, 83, 77];
+            //int[] nums = [13, 25, 83, 77];
 
-            LeetCode_2553 classLeetCode = new LeetCode_2553();
-            Console.WriteLine(string.Join(',', classLeetCode.SeparateDigits(nums)));
+            //LeetCode_2553 classLeetCode = new LeetCode_2553();
+            //Console.WriteLine(string.Join(',', classLeetCode.SeparateDigits(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SeparateDigits(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.SeparateDigits(nums)));
 
             ////(2561.) Rearranging Fruits (HARD)
             //int[] basket1 = [4, 2, 2, 2];
@@ -7156,6 +7156,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FindPermutationDifference(s, t));
+
+            ////(3147.) Taking Maximum Energy From the Mystic Dungeon (MEDIUM)
+            int[] energy = [5,2,-10,-5,1];
+            int k = 3;
+
+            LeetCode_3147 classLeetCode = new LeetCode_3147();
+            Console.WriteLine(classLeetCode.MaximumEnergy(energy, k));
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumEnergy(energy, k));
 
             ////(3151.) Special Array I (EASY)
             //int[] nums = [4, 3, 1, 6];
