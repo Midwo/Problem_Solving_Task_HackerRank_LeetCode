@@ -6352,21 +6352,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountHillValley(nums));
 
             ////(2215.) Find the Difference of Two Arrays (EASY)
-            int[] nums1 = [1, 2, 3];
-            int[] nums2 = [2, 4, 6];
+            //int[] nums1 = [1, 2, 3];
+            //int[] nums2 = [2, 4, 6];
 
-            LeetCode_2215 classLeetCode = new LeetCode_2215();
-            foreach (var item in classLeetCode.FindDifference(nums1,nums2))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //LeetCode_2215 classLeetCode = new LeetCode_2215();
+            //foreach (var item in classLeetCode.FindDifference(nums1,nums2))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.FindDifference(nums1, nums2))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.FindDifference(nums1, nums2))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(2220.) Minimum Bit Flips to Convert Number (EASY)
             //int start = 10;
@@ -7286,6 +7286,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DoesAliceWin(s));
+
+            ////(3232.) Find if Digit Game Can Be Won (EASY)
+            int[] nums = [1, 2, 3, 4, 5, 14];
+
+            LeetCode_3232 classLeetCode = new LeetCode_3232();
+            Console.WriteLine(classLeetCode.CanAliceWin(nums));
+
+            //OR
+            
+            Console.WriteLine(leetCodeAll.CanAliceWin(nums));
 
             ////(3264.) Final Array State After K Multiplication Operations I (EASY)
             //int[] nums = [2, 1, 3, 5, 6];
