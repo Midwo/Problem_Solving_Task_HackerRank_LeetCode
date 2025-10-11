@@ -6351,6 +6351,23 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountHillValley(nums));
 
+            ////(2215.) Find the Difference of Two Arrays (EASY)
+            int[] nums1 = [1, 2, 3];
+            int[] nums2 = [2, 4, 6];
+
+            LeetCode_2215 classLeetCode = new LeetCode_2215();
+            foreach (var item in classLeetCode.FindDifference(nums1,nums2))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.FindDifference(nums1, nums2))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
             ////(2220.) Minimum Bit Flips to Convert Number (EASY)
             //int start = 10;
             //int goal = 7;
@@ -7158,14 +7175,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindPermutationDifference(s, t));
 
             ////(3147.) Taking Maximum Energy From the Mystic Dungeon (MEDIUM)
-            int[] energy = [5,2,-10,-5,1];
-            int k = 3;
+            //int[] energy = [5,2,-10,-5,1];
+            //int k = 3;
 
-            LeetCode_3147 classLeetCode = new LeetCode_3147();
-            Console.WriteLine(classLeetCode.MaximumEnergy(energy, k));
-            //OR
+            //LeetCode_3147 classLeetCode = new LeetCode_3147();
+            //Console.WriteLine(classLeetCode.MaximumEnergy(energy, k));
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumEnergy(energy, k));
+            //Console.WriteLine(leetCodeAll.MaximumEnergy(energy, k));
 
             ////(3151.) Special Array I (EASY)
             //int[] nums = [4, 3, 1, 6];
