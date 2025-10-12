@@ -4955,6 +4955,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindLucky(arr));
 
+            ////(1402.) Reducing Dishes (HARD)
+            int[] satisfaction = [4, 3, 2];
+
+            LeetCode_1402 classLeetCode = new LeetCode_1402();
+            Console.WriteLine(classLeetCode.MaxSatisfaction(satisfaction));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxSatisfaction(satisfaction));
+
             ////(1409.) Queries on a Permutation With Key (MEDIUM)
             //int[] queries = [3, 1, 2, 1];
             //int m = 5;
@@ -5030,27 +5040,27 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.Shuffle(nums, n)));
 
             ////(1472.) Design Browser History (MEDIUM)
-            LeetCode_1472.BrowserHistory browserHistory = new LeetCode_1472.BrowserHistory("zav.com");
-            browserHistory.Visit("kni.com");
-            Console.WriteLine(browserHistory.Back(7));
-            Console.WriteLine(browserHistory.Back(7));
-            Console.WriteLine(browserHistory.Forward(5));
-            Console.WriteLine(browserHistory.Forward(1));
-            browserHistory.Visit("pwrrbnw.com");
-            browserHistory.Visit("mosohif.com");
-            Console.WriteLine(browserHistory.Back(9));
+            //LeetCode_1472.BrowserHistory browserHistory = new LeetCode_1472.BrowserHistory("zav.com");
+            //browserHistory.Visit("kni.com");
+            //Console.WriteLine(browserHistory.Back(7));
+            //Console.WriteLine(browserHistory.Back(7));
+            //Console.WriteLine(browserHistory.Forward(5));
+            //Console.WriteLine(browserHistory.Forward(1));
+            //browserHistory.Visit("pwrrbnw.com");
+            //browserHistory.Visit("mosohif.com");
+            //Console.WriteLine(browserHistory.Back(9));
 
-            //OR
+            ////OR
 
-            BrowserHistoryTask1472 browserHistoryTask1472 = new BrowserHistoryTask1472("zav.com");
-            browserHistoryTask1472.Visit("kni.com");
-            Console.WriteLine(browserHistoryTask1472.Back(7));
-            Console.WriteLine(browserHistoryTask1472.Back(7));
-            Console.WriteLine(browserHistoryTask1472.Forward(5));
-            Console.WriteLine(browserHistoryTask1472.Forward(1));
-            browserHistoryTask1472.Visit("pwrrbnw.com");
-            browserHistoryTask1472.Visit("mosohif.com");
-            Console.WriteLine(browserHistoryTask1472.Back(9));
+            //BrowserHistoryTask1472 browserHistoryTask1472 = new BrowserHistoryTask1472("zav.com");
+            //browserHistoryTask1472.Visit("kni.com");
+            //Console.WriteLine(browserHistoryTask1472.Back(7));
+            //Console.WriteLine(browserHistoryTask1472.Back(7));
+            //Console.WriteLine(browserHistoryTask1472.Forward(5));
+            //Console.WriteLine(browserHistoryTask1472.Forward(1));
+            //browserHistoryTask1472.Visit("pwrrbnw.com");
+            //browserHistoryTask1472.Visit("mosohif.com");
+            //Console.WriteLine(browserHistoryTask1472.Back(9));
 
             ////(1475.) Final Prices With a Special Discount in a Shop (EASY)
             //int[] prices = [8, 4, 6, 2, 3];
