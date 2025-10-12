@@ -17697,6 +17697,27 @@ namespace ProblemSolving
             if (singleDigitSum != doubleDigitSum) { return true; }
             return false;
         }
+        public int CountCompleteDayPairs(int[] hours)
+        {
+            int count = 0;
+            int length = hours.Length;
+
+            for (int i = 0; i < length - 1; i++)
+            {
+                int firstValue = hours[i];
+                for (int j = i + 1; j < length; j++)
+                {
+                    if ((firstValue + hours[j]) % 24 == 0)
+                    {
+                        count++;
+                    }
+                }
+            }
+
+            return count;
+        }
+
+
 
 
 

@@ -7216,6 +7216,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ClearDigits(s));
 
+            ////(3184.) Count Pairs That Form a Complete Day I (EASY)
+            int[] hours = [72, 48, 24, 3];
+
+            LeetCode_3184 classLeetCode = new LeetCode_3184();
+            Console.WriteLine(classLeetCode.CountCompleteDayPairs(hours));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountCompleteDayPairs(hours));
+
             ////(3190.) Find Minimum Operations to Make All Elements Divisible by Three (EASY)
             //int[] nums = [1, 2, 3, 4];
 
@@ -7288,14 +7298,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DoesAliceWin(s));
 
             ////(3232.) Find if Digit Game Can Be Won (EASY)
-            int[] nums = [1, 2, 3, 4, 5, 14];
+            //int[] nums = [1, 2, 3, 4, 5, 14];
 
-            LeetCode_3232 classLeetCode = new LeetCode_3232();
-            Console.WriteLine(classLeetCode.CanAliceWin(nums));
+            //LeetCode_3232 classLeetCode = new LeetCode_3232();
+            //Console.WriteLine(classLeetCode.CanAliceWin(nums));
 
-            //OR
-            
-            Console.WriteLine(leetCodeAll.CanAliceWin(nums));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.CanAliceWin(nums));
 
             ////(3264.) Final Array State After K Multiplication Operations I (EASY)
             //int[] nums = [2, 1, 3, 5, 6];
