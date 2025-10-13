@@ -4874,14 +4874,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinSteps(s, t));
 
             ////(1351.) Count Negative Numbers in a Sorted Matrix (EASY)
-            int[][] grid = [[4, 3, 2, -1], [3, 2, 1, -1], [1, 1, -1, -2], [-1, -1, -2, -3]];
+            //int[][] grid = [[4, 3, 2, -1], [3, 2, 1, -1], [1, 1, -1, -2], [-1, -1, -2, -3]];
 
-            LeetCode_1351 classLeetCode = new LeetCode_1351();
-            Console.WriteLine(classLeetCode.CountNegatives(grid));
+            //LeetCode_1351 classLeetCode = new LeetCode_1351();
+            //Console.WriteLine(classLeetCode.CountNegatives(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountNegatives(grid));
+            //Console.WriteLine(leetCodeAll.CountNegatives(grid));
 
             ////(1365.) How Many Numbers Are Smaller Than the Current Number (EASY)
             //int[] nums = [8, 1, 2, 2, 3];
@@ -7148,6 +7148,16 @@ namespace ProblemSolving
 
             ////OR
             //Console.WriteLine(leetCodeAll.TriangleType(nums));
+
+            ////(3042.) Count Prefix and Suffix Pairs I (EASY)
+            string[] words = ["a", "aba", "ababa", "aa"];
+
+            LeetCode_3042 classLeetCode = new LeetCode_3042();
+            Console.WriteLine(classLeetCode.CountPrefixSuffixPairs(words));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountPrefixSuffixPairs(words));
 
             ////(3065.) Minimum Operations to Exceed Threshold Value I (EASY)
             //int[] nums = [2, 11, 10, 1, 3];
