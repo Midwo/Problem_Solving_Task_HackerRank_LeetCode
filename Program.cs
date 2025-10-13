@@ -4873,6 +4873,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinSteps(s, t));
 
+            ////(1351.) Count Negative Numbers in a Sorted Matrix (EASY)
+            int[][] grid = [[4, 3, 2, -1], [3, 2, 1, -1], [1, 1, -1, -2], [-1, -1, -2, -3]];
+
+            LeetCode_1351 classLeetCode = new LeetCode_1351();
+            Console.WriteLine(classLeetCode.CountNegatives(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountNegatives(grid));
+
             ////(1365.) How Many Numbers Are Smaller Than the Current Number (EASY)
             //int[] nums = [8, 1, 2, 2, 3];
 
@@ -6456,21 +6466,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LargestGoodInteger(num));
 
             ////(2273.) Find Resultant Array After Removing Anagrams (EASY)
-            string[] words = ["abba", "baba", "bbaa", "cd", "cd"];
+            //string[] words = ["abba", "baba", "bbaa", "cd", "cd"];
 
-            LeetCode_2273 classLeetCode = new LeetCode_2273();
+            //LeetCode_2273 classLeetCode = new LeetCode_2273();
 
-            foreach (var item in classLeetCode.RemoveAnagrams(words))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in classLeetCode.RemoveAnagrams(words))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.RemoveAnagrams(words))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in leetCodeAll.RemoveAnagrams(words))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];
