@@ -6195,6 +6195,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.MaxSubsequence(nums, k)));
 
+            ////(2103.) Rings and Rods (EASY)
+            string rings = "B0B6G0R6R0R6G9";
+
+            LeetCode_2103 classLeetCode = new LeetCode_2103();
+            Console.WriteLine(classLeetCode.CountPoints(rings));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountPoints(rings));
+
             ////(2106.) Maximum Fruits Harvested After at Most K Steps (HARD)
             //int[][] fruits = [[2, 8], [6, 3], [8, 6]];
             //int startPos = 5;
@@ -7150,14 +7160,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TriangleType(nums));
 
             ////(3042.) Count Prefix and Suffix Pairs I (EASY)
-            string[] words = ["a", "aba", "ababa", "aa"];
+            //string[] words = ["a", "aba", "ababa", "aa"];
 
-            LeetCode_3042 classLeetCode = new LeetCode_3042();
-            Console.WriteLine(classLeetCode.CountPrefixSuffixPairs(words));
+            //LeetCode_3042 classLeetCode = new LeetCode_3042();
+            //Console.WriteLine(classLeetCode.CountPrefixSuffixPairs(words));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountPrefixSuffixPairs(words));
+            //Console.WriteLine(leetCodeAll.CountPrefixSuffixPairs(words));
 
             ////(3065.) Minimum Operations to Exceed Threshold Value I (EASY)
             //int[] nums = [2, 11, 10, 1, 3];
