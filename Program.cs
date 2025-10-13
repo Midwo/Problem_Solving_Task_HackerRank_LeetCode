@@ -4956,14 +4956,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindLucky(arr));
 
             ////(1402.) Reducing Dishes (HARD)
-            int[] satisfaction = [4, 3, 2];
+            //int[] satisfaction = [4, 3, 2];
 
-            LeetCode_1402 classLeetCode = new LeetCode_1402();
-            Console.WriteLine(classLeetCode.MaxSatisfaction(satisfaction));
+            //LeetCode_1402 classLeetCode = new LeetCode_1402();
+            //Console.WriteLine(classLeetCode.MaxSatisfaction(satisfaction));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxSatisfaction(satisfaction));
+            //Console.WriteLine(leetCodeAll.MaxSatisfaction(satisfaction));
 
             ////(1409.) Queries on a Permutation With Key (MEDIUM)
             //int[] queries = [3, 1, 2, 1];
@@ -6454,6 +6454,23 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.LargestGoodInteger(num));
+
+            ////(2273.) Find Resultant Array After Removing Anagrams (EASY)
+            string[] words = ["abba", "baba", "bbaa", "cd", "cd"];
+
+            LeetCode_2273 classLeetCode = new LeetCode_2273();
+
+            foreach (var item in classLeetCode.RemoveAnagrams(words))
+            {
+                Console.WriteLine(item);
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.RemoveAnagrams(words))
+            {
+                Console.WriteLine(item);
+            }
 
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];
