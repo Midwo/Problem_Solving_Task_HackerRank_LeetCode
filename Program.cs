@@ -6196,14 +6196,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.MaxSubsequence(nums, k)));
 
             ////(2103.) Rings and Rods (EASY)
-            string rings = "B0B6G0R6R0R6G9";
+            //string rings = "B0B6G0R6R0R6G9";
 
-            LeetCode_2103 classLeetCode = new LeetCode_2103();
-            Console.WriteLine(classLeetCode.CountPoints(rings));
+            //LeetCode_2103 classLeetCode = new LeetCode_2103();
+            //Console.WriteLine(classLeetCode.CountPoints(rings));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountPoints(rings));
+            //Console.WriteLine(leetCodeAll.CountPoints(rings));
 
             ////(2106.) Maximum Fruits Harvested After at Most K Steps (HARD)
             //int[][] fruits = [[2, 8], [6, 3], [8, 6]];
@@ -7470,6 +7470,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.PossibleStringCount(word));
+
+            ////(3349.) Adjacent Increasing Subarrays Detection I (EASY)
+            IList<int> nums = [-12, 20, 18, 18];
+            int k = 2;
+
+            LeetCode_3349 classLeetCode = new LeetCode_3349();
+            Console.WriteLine(classLeetCode.HasIncreasingSubarrays(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.HasIncreasingSubarrays(nums, k));
 
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
             //int[] nums = [-5, -10, -5];
