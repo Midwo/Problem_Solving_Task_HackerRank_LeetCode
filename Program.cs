@@ -6237,6 +6237,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MostWordsFound(sentences));
 
+            ////(2119.) A Number After a Double Reversal (EASY)
+            int num = 1800;
+
+            LeetCode_2119 classLeetCode = new LeetCode_2119();
+            Console.WriteLine(classLeetCode.IsSameAfterReversals(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsSameAfterReversals(num));
+
             ////(2125.) Number of Laser Beams in a Bank (MEDIUM)
             //string[] bank = ["011001", "000000", "010100", "001000"];
 
@@ -7483,14 +7493,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.HasIncreasingSubarrays(nums, k));
 
             ////(3350.) Adjacent Increasing Subarrays Detection II
-            IList<int> nums = [0, 8, -19, 4, -19, -6, 17];
+            //IList<int> nums = [0, 8, -19, 4, -19, -6, 17];
 
-            LeetCode_3350 classLeetCode = new LeetCode_3350();
-            Console.WriteLine(classLeetCode.MaxIncreasingSubarrays(nums));
+            //LeetCode_3350 classLeetCode = new LeetCode_3350();
+            //Console.WriteLine(classLeetCode.MaxIncreasingSubarrays(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxIncreasingSubarrays(nums));
+            //Console.WriteLine(leetCodeAll.MaxIncreasingSubarrays(nums));
 
             //Console.WriteLine(leetCodeAll.HasIncreasingSubarrays(nums, k));
 
