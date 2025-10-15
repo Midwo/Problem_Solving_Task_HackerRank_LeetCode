@@ -7472,15 +7472,27 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PossibleStringCount(word));
 
             ////(3349.) Adjacent Increasing Subarrays Detection I (EASY)
-            IList<int> nums = [-12, 20, 18, 18];
-            int k = 2;
+            //IList<int> nums = [-12, 20, 18, 18];
+            //int k = 2;
 
-            LeetCode_3349 classLeetCode = new LeetCode_3349();
-            Console.WriteLine(classLeetCode.HasIncreasingSubarrays(nums, k));
+            //LeetCode_3349 classLeetCode = new LeetCode_3349();
+            //Console.WriteLine(classLeetCode.HasIncreasingSubarrays(nums, k));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.HasIncreasingSubarrays(nums, k));
+
+            ////(3350.) Adjacent Increasing Subarrays Detection II
+            IList<int> nums = [0, 8, -19, 4, -19, -6, 17];
+
+            LeetCode_3350 classLeetCode = new LeetCode_3350();
+            Console.WriteLine(classLeetCode.MaxIncreasingSubarrays(nums));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.HasIncreasingSubarrays(nums, k));
+            Console.WriteLine(leetCodeAll.MaxIncreasingSubarrays(nums));
+
+            //Console.WriteLine(leetCodeAll.HasIncreasingSubarrays(nums, k));
 
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
             //int[] nums = [-5, -10, -5];
