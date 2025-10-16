@@ -6238,14 +6238,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MostWordsFound(sentences));
 
             ////(2119.) A Number After a Double Reversal (EASY)
-            int num = 1800;
+            //int num = 1800;
 
-            LeetCode_2119 classLeetCode = new LeetCode_2119();
-            Console.WriteLine(classLeetCode.IsSameAfterReversals(num));
+            //LeetCode_2119 classLeetCode = new LeetCode_2119();
+            //Console.WriteLine(classLeetCode.IsSameAfterReversals(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsSameAfterReversals(num));
+            //Console.WriteLine(leetCodeAll.IsSameAfterReversals(num));
 
             ////(2125.) Number of Laser Beams in a Bank (MEDIUM)
             //string[] bank = ["011001", "000000", "010100", "001000"];
@@ -7738,8 +7738,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinOperations(nums, k));
 
+            ////(3658.) GCD of Odd and Even Sums (EASY)
+            int n = 4;
 
+            LeetCode_3658 classLeetCode = new LeetCode_3658();
+            Console.WriteLine(classLeetCode.GcdOfOddEvenSums(n));
 
+            //OR
+
+            Console.WriteLine(leetCodeAll.GcdOfOddEvenSums(n));
 
 
 

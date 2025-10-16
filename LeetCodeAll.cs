@@ -18015,6 +18015,17 @@ namespace ProblemSolving
             //resultString = new string(resultString.Reverse().ToArray());
             //return int.Parse(resultString) == num; 
         }
+        public int GcdOfOddEvenSums(int n)
+        {
+            return (n * (n + 1)) - (n * n);
+
+            //// OR
+            //int sumOdd = n * n;
+            //int sumEven = n * (n + 1);
+
+            //return sumEven - sumOdd;
+        }
+
 
 
 
