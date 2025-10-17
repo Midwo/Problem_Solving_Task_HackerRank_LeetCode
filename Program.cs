@@ -6591,6 +6591,30 @@ namespace ProblemSolving
 
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
+            ////(2363.) Merge Similar Items (EASY)
+            int[][] items1 = [[2, 9], [24, 4], [11, 1], [16, 3], [1, 4], [28, 3], [23, 8], [3, 3]];
+            int[][] items2 = [[7, 6], [12, 7], [9, 5], [22, 4], [6, 3], [17, 1]];
+
+            LeetCode_2363 classLeetCode = new LeetCode_2363();
+
+            foreach (var item in classLeetCode.MergeSimilarItems(items1, items2))
+            {
+                foreach (var itemIn in item)
+                {
+                    Console.WriteLine(itemIn);
+                }
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.MergeSimilarItems(items1, items2))
+            {
+                foreach (var itemIn in item)
+                {
+                    Console.WriteLine(itemIn);
+                }
+            }
+
             ////(2367.) Number of Arithmetic Triplets (EASY)
             //int[] nums = [0, 1, 4, 6, 7, 10];
             //int diff = 3;
@@ -7739,14 +7763,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinOperations(nums, k));
 
             ////(3658.) GCD of Odd and Even Sums (EASY)
-            int n = 4;
+            //int n = 4;
 
-            LeetCode_3658 classLeetCode = new LeetCode_3658();
-            Console.WriteLine(classLeetCode.GcdOfOddEvenSums(n));
+            //LeetCode_3658 classLeetCode = new LeetCode_3658();
+            //Console.WriteLine(classLeetCode.GcdOfOddEvenSums(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GcdOfOddEvenSums(n));
+            //Console.WriteLine(leetCodeAll.GcdOfOddEvenSums(n));
 
 
 
