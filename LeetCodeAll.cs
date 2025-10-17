@@ -18094,8 +18094,20 @@ namespace ProblemSolving
             }
             return result;
         }
+        public int BusyStudent(int[] startTime, int[] endTime, int queryTime)
+        {
+            int count = 0;
 
+            for (int i = 0; i < endTime.Length; i++)
+            {
+                if (endTime[i] >= queryTime && startTime[i] <= queryTime)
+                {
+                    count++;
+                }
+            }
 
+            return count;
+        }
 
 
 

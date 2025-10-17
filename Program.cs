@@ -5028,6 +5028,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountTriplets(arr));
 
+            ////(1450.) Number of Students Doing Homework at a Given Time (EASY)
+            int[] startTime = [1, 2, 3];
+            int[] endTime = [3, 2, 7];
+            int queryTime = 4;
+
+            LeetCode_1450 classLeetCode = new LeetCode_1450();
+            Console.WriteLine(classLeetCode.BusyStudent(startTime, endTime, queryTime));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.BusyStudent(startTime, endTime, queryTime));
+
             ////(1464.) Maximum Product of Two Elements in an Array (EASY)
             //int[] nums = [1,5,4,5];
 
@@ -6592,28 +6604,28 @@ namespace ProblemSolving
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
             ////(2363.) Merge Similar Items (EASY)
-            int[][] items1 = [[2, 9], [24, 4], [11, 1], [16, 3], [1, 4], [28, 3], [23, 8], [3, 3]];
-            int[][] items2 = [[7, 6], [12, 7], [9, 5], [22, 4], [6, 3], [17, 1]];
+            //int[][] items1 = [[2, 9], [24, 4], [11, 1], [16, 3], [1, 4], [28, 3], [23, 8], [3, 3]];
+            //int[][] items2 = [[7, 6], [12, 7], [9, 5], [22, 4], [6, 3], [17, 1]];
 
-            LeetCode_2363 classLeetCode = new LeetCode_2363();
+            //LeetCode_2363 classLeetCode = new LeetCode_2363();
 
-            foreach (var item in classLeetCode.MergeSimilarItems(items1, items2))
-            {
-                foreach (var itemIn in item)
-                {
-                    Console.WriteLine(itemIn);
-                }
-            }
+            //foreach (var item in classLeetCode.MergeSimilarItems(items1, items2))
+            //{
+            //    foreach (var itemIn in item)
+            //    {
+            //        Console.WriteLine(itemIn);
+            //    }
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.MergeSimilarItems(items1, items2))
-            {
-                foreach (var itemIn in item)
-                {
-                    Console.WriteLine(itemIn);
-                }
-            }
+            //foreach (var item in leetCodeAll.MergeSimilarItems(items1, items2))
+            //{
+            //    foreach (var itemIn in item)
+            //    {
+            //        Console.WriteLine(itemIn);
+            //    }
+            //}
 
             ////(2367.) Number of Arithmetic Triplets (EASY)
             //int[] nums = [0, 1, 4, 6, 7, 10];
