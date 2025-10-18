@@ -18108,8 +18108,28 @@ namespace ProblemSolving
 
             return count;
         }
+        public int MaxDistinctElements(int[] nums, int k)
+        {
+            int count = 0;
+            Array.Sort(nums);
+            int currMinValue = int.MinValue;
 
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] - k > currMinValue)
+                {
+                    currMinValue = nums[i] - k;
+                    count++;
+                }
+                else if (currMinValue != nums[i] + k)
+                {
+                    currMinValue++;
+                    count++;
+                }
+            }
 
+            return count;
+        }
 
 
 

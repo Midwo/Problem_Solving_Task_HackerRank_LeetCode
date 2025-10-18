@@ -5029,16 +5029,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountTriplets(arr));
 
             ////(1450.) Number of Students Doing Homework at a Given Time (EASY)
-            int[] startTime = [1, 2, 3];
-            int[] endTime = [3, 2, 7];
-            int queryTime = 4;
+            //int[] startTime = [1, 2, 3];
+            //int[] endTime = [3, 2, 7];
+            //int queryTime = 4;
 
-            LeetCode_1450 classLeetCode = new LeetCode_1450();
-            Console.WriteLine(classLeetCode.BusyStudent(startTime, endTime, queryTime));
+            //LeetCode_1450 classLeetCode = new LeetCode_1450();
+            //Console.WriteLine(classLeetCode.BusyStudent(startTime, endTime, queryTime));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.BusyStudent(startTime, endTime, queryTime));
+            //Console.WriteLine(leetCodeAll.BusyStudent(startTime, endTime, queryTime));
 
             ////(1464.) Maximum Product of Two Elements in an Array (EASY)
             //int[] nums = [1,5,4,5];
@@ -7539,6 +7539,17 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxIncreasingSubarrays(nums));
 
             //Console.WriteLine(leetCodeAll.HasIncreasingSubarrays(nums, k));
+
+            ////(3397.) Maximum Number of Distinct Elements After Operations (MEDIUM)
+            int[] nums = [1, 2, 2, 3, 3, 4];
+            int k = 2;
+
+            LeetCode_3397 classLeetCode = new LeetCode_3397();
+            Console.WriteLine(classLeetCode.MaxDistinctElements(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxDistinctElements(nums, k));
 
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
             //int[] nums = [-5, -10, -5];
