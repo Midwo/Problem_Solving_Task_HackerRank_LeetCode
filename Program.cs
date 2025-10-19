@@ -4118,6 +4118,18 @@ namespace ProblemSolving
 
             //leetCodeAll.DuplicateZeros(arr);
 
+            ////(1094.) Car Pooling (MEDIUM)
+            //int[][] trips = [[2, 1, 5], [3, 3, 7]];
+            //int capacity = 4;
+
+            //LeetCode_1094 classLeetCode = new LeetCode_1094();
+
+            //Console.WriteLine(classLeetCode.CarPooling(trips, capacity));
+
+            //OR
+
+
+
             ////(1103.) Distribute Candies to People (EASY)
             //int candies = 10;
             //int num_people = 3;
@@ -5384,6 +5396,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxDepth(s));
+
+            ////(1625.) Lexicographically Smallest String After Applying Operations (MEDIUM)
+            string s = "5525";
+            int a = 9;
+            int b = 2;
+
+            LeetCode_1625 classLeetCode = new LeetCode_1625();
+            Console.WriteLine(classLeetCode.FindLexSmallestString(s, a, b));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindLexSmallestString(s, a, b));
 
             ////(1630.) Arithmetic Subarrays (MEDIUM)
             //int[] nums = [4, 6, 5, 9, 3, 7];
@@ -7541,15 +7565,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.HasIncreasingSubarrays(nums, k));
 
             ////(3397.) Maximum Number of Distinct Elements After Operations (MEDIUM)
-            int[] nums = [1, 2, 2, 3, 3, 4];
-            int k = 2;
+            //int[] nums = [1, 2, 2, 3, 3, 4];
+            //int k = 2;
 
-            LeetCode_3397 classLeetCode = new LeetCode_3397();
-            Console.WriteLine(classLeetCode.MaxDistinctElements(nums, k));
+            //LeetCode_3397 classLeetCode = new LeetCode_3397();
+            //Console.WriteLine(classLeetCode.MaxDistinctElements(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxDistinctElements(nums, k));
+            //Console.WriteLine(leetCodeAll.MaxDistinctElements(nums, k));
 
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
             //int[] nums = [-5, -10, -5];
