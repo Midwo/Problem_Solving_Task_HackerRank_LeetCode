@@ -4119,16 +4119,16 @@ namespace ProblemSolving
             //leetCodeAll.DuplicateZeros(arr);
 
             ////(1094.) Car Pooling (MEDIUM)
-            //int[][] trips = [[2, 1, 5], [3, 3, 7]];
-            //int capacity = 4;
+            int[][] trips = [[2, 1, 5], [3, 3, 7]];
+            int capacity = 3;
 
-            //LeetCode_1094 classLeetCode = new LeetCode_1094();
+            LeetCode_1094 classLeetCode = new LeetCode_1094();
 
-            //Console.WriteLine(classLeetCode.CarPooling(trips, capacity));
+            Console.WriteLine(classLeetCode.CarPooling(trips, capacity));
 
             //OR
 
-
+            Console.WriteLine(leetCodeAll.CarPooling(trips, capacity));
 
             ////(1103.) Distribute Candies to People (EASY)
             //int candies = 10;
@@ -5398,16 +5398,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDepth(s));
 
             ////(1625.) Lexicographically Smallest String After Applying Operations (MEDIUM)
-            string s = "5525";
-            int a = 9;
-            int b = 2;
+            //string s = "5525";
+            //int a = 9;
+            //int b = 2;
 
-            LeetCode_1625 classLeetCode = new LeetCode_1625();
-            Console.WriteLine(classLeetCode.FindLexSmallestString(s, a, b));
+            //LeetCode_1625 classLeetCode = new LeetCode_1625();
+            //Console.WriteLine(classLeetCode.FindLexSmallestString(s, a, b));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindLexSmallestString(s, a, b));
+            //Console.WriteLine(leetCodeAll.FindLexSmallestString(s, a, b));
 
             ////(1630.) Arithmetic Subarrays (MEDIUM)
             //int[] nums = [4, 6, 5, 9, 3, 7];
