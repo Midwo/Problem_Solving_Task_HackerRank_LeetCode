@@ -1741,6 +1741,23 @@ namespace ProblemSolving
             //////OR
             //Console.WriteLine(leetCodeAll.CanWinNim(n));
 
+            ////(295.) Find Median from Data Strea (HARD)
+            LeetCode_295.MedianFinder medianFinder1 = new LeetCode_295.MedianFinder();
+            medianFinder1.AddNum(1);    // arr = [1]
+            medianFinder1.AddNum(2);    // arr = [1, 2]
+            Console.WriteLine(medianFinder1.FindMedian()); // return 1.5 (i.e., (1 + 2) / 2)
+            medianFinder1.AddNum(3);    // arr[1, 2, 3]
+            Console.WriteLine(medianFinder1.FindMedian()); // return 2.0
+
+            //OR
+
+            MedianFinderTask295 medianFinder2 = new MedianFinderTask295();
+            medianFinder2.AddNum(1);    // arr = [1]
+            medianFinder2.AddNum(2);    // arr = [1, 2]
+            Console.WriteLine(medianFinder2.FindMedian()); // return 1.5 (i.e., (1 + 2) / 2)
+            medianFinder2.AddNum(3);    // arr[1, 2, 3]
+            Console.WriteLine(medianFinder2.FindMedian()); // return 2.0
+
             ////(303.) Range Sum Query - Immutable (EASY)
             //int[] nums = [-2, 0, 3, -5, 2, -1];
 
@@ -4119,16 +4136,16 @@ namespace ProblemSolving
             //leetCodeAll.DuplicateZeros(arr);
 
             ////(1094.) Car Pooling (MEDIUM)
-            int[][] trips = [[2, 1, 5], [3, 3, 7]];
-            int capacity = 3;
+            //int[][] trips = [[2, 1, 5], [3, 3, 7]];
+            //int capacity = 3;
 
-            LeetCode_1094 classLeetCode = new LeetCode_1094();
+            //LeetCode_1094 classLeetCode = new LeetCode_1094();
 
-            Console.WriteLine(classLeetCode.CarPooling(trips, capacity));
+            //Console.WriteLine(classLeetCode.CarPooling(trips, capacity));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CarPooling(trips, capacity));
+            //Console.WriteLine(leetCodeAll.CarPooling(trips, capacity));
 
             ////(1103.) Distribute Candies to People (EASY)
             //int candies = 10;
