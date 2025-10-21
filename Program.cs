@@ -7679,6 +7679,16 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', item));
             //}
 
+            ////(3461.) Check If Digits Are Equal in String After Operations I (EASY)
+            string s = "323";
+
+            LeetCode_3461 classLeetCode = new LeetCode_3461();
+            Console.WriteLine(classLeetCode.HasSameDigits(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.HasSameDigits(s));
+
             ////(3467.) Transform Array by Parity (EASY)
             //int[] nums = [4, 3, 2, 1];
 
@@ -7849,14 +7859,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.RecoverOrder(order, friends)));
 
             ////(3701.) Compute Alternating Sum (EASY)
-            int[] nums = [1, 3, 5, 7];
+            //int[] nums = [1, 3, 5, 7];
 
-            LeetCode_3701 classLeetCode = new LeetCode_3701();
-            Console.WriteLine(classLeetCode.AlternatingSum(nums));
+            //LeetCode_3701 classLeetCode = new LeetCode_3701();
+            //Console.WriteLine(classLeetCode.AlternatingSum(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.AlternatingSum(nums));
+            //Console.WriteLine(leetCodeAll.AlternatingSum(nums));
 
 
 
