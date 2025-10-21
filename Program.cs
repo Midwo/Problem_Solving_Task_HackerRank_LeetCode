@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data.SqlTypes;
 using System.Diagnostics;
+using System.Diagnostics.Metrics;
 using System.Globalization;
 using System.Linq;
 using System.Net;
@@ -1742,21 +1743,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanWinNim(n));
 
             ////(295.) Find Median from Data Strea (HARD)
-            LeetCode_295.MedianFinder medianFinder1 = new LeetCode_295.MedianFinder();
-            medianFinder1.AddNum(1);    // arr = [1]
-            medianFinder1.AddNum(2);    // arr = [1, 2]
-            Console.WriteLine(medianFinder1.FindMedian()); // return 1.5 (i.e., (1 + 2) / 2)
-            medianFinder1.AddNum(3);    // arr[1, 2, 3]
-            Console.WriteLine(medianFinder1.FindMedian()); // return 2.0
+            //LeetCode_295.MedianFinder medianFinder1 = new LeetCode_295.MedianFinder();
+            //medianFinder1.AddNum(1);    // arr = [1]
+            //medianFinder1.AddNum(2);    // arr = [1, 2]
+            //Console.WriteLine(medianFinder1.FindMedian()); // return 1.5 (i.e., (1 + 2) / 2)
+            //medianFinder1.AddNum(3);    // arr[1, 2, 3]
+            //Console.WriteLine(medianFinder1.FindMedian()); // return 2.0
 
-            //OR
+            ////OR
 
-            MedianFinderTask295 medianFinder2 = new MedianFinderTask295();
-            medianFinder2.AddNum(1);    // arr = [1]
-            medianFinder2.AddNum(2);    // arr = [1, 2]
-            Console.WriteLine(medianFinder2.FindMedian()); // return 1.5 (i.e., (1 + 2) / 2)
-            medianFinder2.AddNum(3);    // arr[1, 2, 3]
-            Console.WriteLine(medianFinder2.FindMedian()); // return 2.0
+            //MedianFinderTask295 medianFinder2 = new MedianFinderTask295();
+            //medianFinder2.AddNum(1);    // arr = [1]
+            //medianFinder2.AddNum(2);    // arr = [1, 2]
+            //Console.WriteLine(medianFinder2.FindMedian()); // return 1.5 (i.e., (1 + 2) / 2)
+            //medianFinder2.AddNum(3);    // arr[1, 2, 3]
+            //Console.WriteLine(medianFinder2.FindMedian()); // return 2.0
 
             ////(303.) Range Sum Query - Immutable (EASY)
             //int[] nums = [-2, 0, 3, -5, 2, -1];
@@ -7836,9 +7837,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.GcdOfOddEvenSums(n));
 
+            ////(3668.) Restore Finishing Order (EASY)
+            int[] order = [3, 1, 2, 5, 4];
+            int[] friends = [1, 3, 4];
 
+            LeetCode_3668 classLeetCode = new LeetCode_3668();
+            Console.WriteLine(string.Join(',', classLeetCode.RecoverOrder(order, friends)));
 
+            //OR
 
+            Console.WriteLine(string.Join(',', leetCodeAll.RecoverOrder(order, friends)));
 
 
 
