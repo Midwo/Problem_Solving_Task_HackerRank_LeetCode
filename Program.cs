@@ -7838,15 +7838,45 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GcdOfOddEvenSums(n));
 
             ////(3668.) Restore Finishing Order (EASY)
-            int[] order = [3, 1, 2, 5, 4];
-            int[] friends = [1, 3, 4];
+            //int[] order = [3, 1, 2, 5, 4];
+            //int[] friends = [1, 3, 4];
 
-            LeetCode_3668 classLeetCode = new LeetCode_3668();
-            Console.WriteLine(string.Join(',', classLeetCode.RecoverOrder(order, friends)));
+            //LeetCode_3668 classLeetCode = new LeetCode_3668();
+            //Console.WriteLine(string.Join(',', classLeetCode.RecoverOrder(order, friends)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.RecoverOrder(order, friends)));
+
+            ////(3701.) Compute Alternating Sum (EASY)
+            int[] nums = [1, 3, 5, 7];
+
+            LeetCode_3701 classLeetCode = new LeetCode_3701();
+            Console.WriteLine(classLeetCode.AlternatingSum(nums));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.RecoverOrder(order, friends)));
+            Console.WriteLine(leetCodeAll.AlternatingSum(nums));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
