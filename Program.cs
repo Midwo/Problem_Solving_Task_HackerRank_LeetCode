@@ -4706,15 +4706,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FreqAlphabets(s));
 
             ////(1310.) XOR Queries of a Subarray (MEDIUM)
-            int[] arr = [1, 3, 4, 8];
-            int[][] queries = [[0, 1], [1, 2], [0, 3], [3, 3]];
+            //int[] arr = [1, 3, 4, 8];
+            //int[][] queries = [[0, 1], [1, 2], [0, 3], [3, 3]];
 
-            LeetCode_1310 classLeetCode = new LeetCode_1310();
-            Console.WriteLine(string.Join(',', classLeetCode.XorQueries(arr, queries)));
+            //LeetCode_1310 classLeetCode = new LeetCode_1310();
+            //Console.WriteLine(string.Join(',', classLeetCode.XorQueries(arr, queries)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.XorQueries(arr, queries)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.XorQueries(arr, queries)));
 
             ////(1313.) Decompress Run-Length Encoded List (EASY)
             //int[] nums = [1, 2, 3, 4];
@@ -7569,6 +7569,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.PossibleStringCount(word));
+
+            ////(3340.) Check Balanced String (EASY)
+            string num = "24123";
+
+            LeetCode_3340 classLeetCode = new LeetCode_3340();
+            Console.WriteLine(classLeetCode.IsBalanced(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsBalanced(num));
 
             ////(3349.) Adjacent Increasing Subarrays Detection I (EASY)
             //IList<int> nums = [-12, 20, 18, 18];

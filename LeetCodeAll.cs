@@ -18352,6 +18352,32 @@ namespace ProblemSolving
 
             //return result;
         }
+        public bool IsBalanced(string num)
+        {
+            ////0ms, Beats: 100.00%
+
+            int sumEven = 0;
+            int sumOdd = 0;
+
+            for (int i = 0; i < num.Length; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    sumOdd += (int)num[i] - '0';
+                }
+                else
+                {
+                    sumEven += (int)num[i] - '0';
+                }
+            }
+
+            return sumEven == sumOdd ? true : false;
+        }
+
+
+
+
+
 
 
 
