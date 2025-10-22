@@ -4705,6 +4705,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FreqAlphabets(s));
 
+            ////(1310.) XOR Queries of a Subarray (MEDIUM)
+            int[] arr = [1, 3, 4, 8];
+            int[][] queries = [[0, 1], [1, 2], [0, 3], [3, 3]];
+
+            LeetCode_1310 classLeetCode = new LeetCode_1310();
+            Console.WriteLine(string.Join(',', classLeetCode.XorQueries(arr, queries)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.XorQueries(arr, queries)));
+
             ////(1313.) Decompress Run-Length Encoded List (EASY)
             //int[] nums = [1, 2, 3, 4];
 
@@ -7680,14 +7691,14 @@ namespace ProblemSolving
             //}
 
             ////(3461.) Check If Digits Are Equal in String After Operations I (EASY)
-            string s = "323";
+            //string s = "323";
 
-            LeetCode_3461 classLeetCode = new LeetCode_3461();
-            Console.WriteLine(classLeetCode.HasSameDigits(s));
+            //LeetCode_3461 classLeetCode = new LeetCode_3461();
+            //Console.WriteLine(classLeetCode.HasSameDigits(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.HasSameDigits(s));
+            //Console.WriteLine(leetCodeAll.HasSameDigits(s));
 
             ////(3467.) Transform Array by Parity (EASY)
             //int[] nums = [4, 3, 2, 1];
