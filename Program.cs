@@ -2021,6 +2021,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.AddStrings(num1, num2));
 
+            ////(419.) Battleships in a Board (MEDIUM)
+            char[][] board = [['X', '.', 'X', '.', 'X'], ['.', 'X', '.', 'X', '.'], ['.', 'X', '.', '.', '.'], ['.', 'X', '.', '.', 'X'], ['.', 'X', '.', '.', '.'], ['X', '.', 'X', 'X', 'X'], ['.', 'X', '.', '.', '.'], ['.', 'X', '.', 'X', '.'], ['X', '.', 'X', '.', 'X'], ['.', 'X', '.', '.', 'X']];
+
+            LeetCode_419 classLeetCode = new LeetCode_419();
+            Console.WriteLine(classLeetCode.CountBattleships(board));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountBattleships(board));
+
             ////(434.) Number of Segments in a String (EASY)
             //string s = "";
 
@@ -3200,21 +3210,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SoupServings(n));
 
             ////(811.) Subdomain Visit Count (MEDIUM)
-            string[] cpdomains = ["900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"];
+            //string[] cpdomains = ["900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"];
 
-            LeetCode_811 classLeetCode = new LeetCode_811();
+            //LeetCode_811 classLeetCode = new LeetCode_811();
 
-            foreach (var item in classLeetCode.SubdomainVisits(cpdomains))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in classLeetCode.SubdomainVisits(cpdomains))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.SubdomainVisits(cpdomains))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in leetCodeAll.SubdomainVisits(cpdomains))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             ////(812.) Largest Triangle Area (EASY)
             //int[][] points = [[8, 3], [5, 6], [3, 5]];
