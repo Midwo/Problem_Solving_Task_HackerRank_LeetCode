@@ -3075,6 +3075,22 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountPrimeSetBits(left, right));
 
+            ////(763.) Partition Labels (MEDIUM)
+            string s = "caedbdedda";
+
+            LeetCode_763 classLeetCode = new LeetCode_763();
+            foreach (var item in classLeetCode.PartitionLabels(s))
+            {
+                Console.WriteLine(item);
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.PartitionLabels(s))
+            {
+                Console.WriteLine(item);
+            }
+
             ////(766.) Toeplitz Matrix (EASY)
             //int[][] matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]];
 
@@ -7571,14 +7587,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PossibleStringCount(word));
 
             ////(3340.) Check Balanced String (EASY)
-            string num = "24123";
+            //string num = "24123";
 
-            LeetCode_3340 classLeetCode = new LeetCode_3340();
-            Console.WriteLine(classLeetCode.IsBalanced(num));
+            //LeetCode_3340 classLeetCode = new LeetCode_3340();
+            //Console.WriteLine(classLeetCode.IsBalanced(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsBalanced(num));
+            //Console.WriteLine(leetCodeAll.IsBalanced(num));
 
             ////(3349.) Adjacent Increasing Subarrays Detection I (EASY)
             //IList<int> nums = [-12, 20, 18, 18];
