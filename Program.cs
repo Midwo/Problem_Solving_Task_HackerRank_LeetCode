@@ -3199,6 +3199,23 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SoupServings(n));
 
+            ////(811.) Subdomain Visit Count (MEDIUM)
+            string[] cpdomains = ["900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"];
+
+            LeetCode_811 classLeetCode = new LeetCode_811();
+
+            foreach (var item in classLeetCode.SubdomainVisits(cpdomains))
+            {
+                Console.WriteLine(item);
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.SubdomainVisits(cpdomains))
+            {
+                Console.WriteLine(item);
+            }
+
             ////(812.) Largest Triangle Area (EASY)
             //int[][] points = [[8, 3], [5, 6], [3, 5]];
 
@@ -6044,19 +6061,19 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeTask.Count(7));
 
             ////(1890.) The Latest Login in 2020 (EASY)
-            string SqlQuery =
-                @"
-                    Select
-                        user_id
-                        ,MAX(time_stamp) as last_stamp
-                    From Logins 
-                    WHERE YEAR(time_stamp) = '2020'
-                    GROUP BY user_id
-                ";
+            //string SqlQuery =
+            //    @"
+            //        Select
+            //            user_id
+            //            ,MAX(time_stamp) as last_stamp
+            //        From Logins 
+            //        WHERE YEAR(time_stamp) = '2020'
+            //        GROUP BY user_id
+            //    ";
 
-            //OR
+            ////OR
 
-            LeetCode_1890 classLeetCode = new LeetCode_1890();
+            //LeetCode_1890 classLeetCode = new LeetCode_1890();
 
             ////(1907.) Count Salary Categories (MEDIUM)
             //string SqlQuery =
