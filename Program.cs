@@ -3076,20 +3076,20 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountPrimeSetBits(left, right));
 
             ////(763.) Partition Labels (MEDIUM)
-            string s = "caedbdedda";
+            //string s = "caedbdedda";
 
-            LeetCode_763 classLeetCode = new LeetCode_763();
-            foreach (var item in classLeetCode.PartitionLabels(s))
-            {
-                Console.WriteLine(item);
-            }
+            //LeetCode_763 classLeetCode = new LeetCode_763();
+            //foreach (var item in classLeetCode.PartitionLabels(s))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.PartitionLabels(s))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in leetCodeAll.PartitionLabels(s))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             ////(766.) Toeplitz Matrix (EASY)
             //int[][] matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]];
@@ -6042,6 +6042,21 @@ namespace ProblemSolving
             //leetCodeTask.Add(0, 1);
             //leetCodeTask.Add(1, 1);
             //Console.WriteLine(leetCodeTask.Count(7));
+
+            ////(1890.) The Latest Login in 2020 (EASY)
+            string SqlQuery =
+                @"
+                    Select
+                        user_id
+                        ,MAX(time_stamp) as last_stamp
+                    From Logins 
+                    WHERE YEAR(time_stamp) = '2020'
+                    GROUP BY user_id
+                ";
+
+            //OR
+
+            LeetCode_1890 classLeetCode = new LeetCode_1890();
 
             ////(1907.) Count Salary Categories (MEDIUM)
             //string SqlQuery =
