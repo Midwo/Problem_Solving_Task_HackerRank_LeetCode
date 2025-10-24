@@ -6297,14 +6297,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountMaxOrSubsets(nums));
 
             ////(2048.) Next Greater Numerically Balanced Number (MEDIUM)
-            int n = 1000;
+            //int n = 1000;
 
-            LeetCode_2048 classLeetCode = new LeetCode_2048();
-            Console.WriteLine(classLeetCode.NextBeautifulNumber(n));
+            //LeetCode_2048 classLeetCode = new LeetCode_2048();
+            //Console.WriteLine(classLeetCode.NextBeautifulNumber(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NextBeautifulNumber(n));
+            //Console.WriteLine(leetCodeAll.NextBeautifulNumber(n));
 
             ////(2079.) Watering Plants (MEDIUM)
             //int[] plants = [1, 1, 1, 4, 2, 3];
@@ -6316,6 +6316,24 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.WateringPlants(plants, capacity));
+
+            ////(2089.) Find Target Indices After Sorting Array (EASY)
+            int[] nums = [1, 2, 5, 2, 3];
+            int target = 2;
+
+            LeetCode_2089 classLeetCode = new LeetCode_2089();
+
+            foreach (var item in classLeetCode.TargetIndices(nums, target)) 
+            {
+                Console.WriteLine(item);
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.TargetIndices(nums, target))
+            {
+                Console.WriteLine(item);
+            }
 
             ////(2099.) Find Subsequence of Length K With the Largest Sum (EASY)
             //int[] nums = [-1, -2, 3, 4];

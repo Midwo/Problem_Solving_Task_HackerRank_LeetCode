@@ -18545,6 +18545,40 @@ namespace ProblemSolving
 
             return int.Parse(stringN);
         }
+        public IList<int> TargetIndices(int[] nums, int target)
+        {
+            ////0ms, Beats: 100.00%
+
+            int countTarget = 0;
+            int countLessValue = 0;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] < target)
+                {
+                    countLessValue++;
+                }
+                else if (nums[i] == target)
+                {
+                    countTarget++;
+                }
+            }
+
+            int[] result = new int[countTarget];
+
+            for (int i = countLessValue; i < countLessValue + countTarget; i++)
+            {
+                result[i - countLessValue] = i;
+            }
+            return result.ToList();
+        }
+
+
+
+
+
+
+
 
 
 
