@@ -2022,14 +2022,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.AddStrings(num1, num2));
 
             ////(419.) Battleships in a Board (MEDIUM)
-            char[][] board = [['X', '.', 'X', '.', 'X'], ['.', 'X', '.', 'X', '.'], ['.', 'X', '.', '.', '.'], ['.', 'X', '.', '.', 'X'], ['.', 'X', '.', '.', '.'], ['X', '.', 'X', 'X', 'X'], ['.', 'X', '.', '.', '.'], ['.', 'X', '.', 'X', '.'], ['X', '.', 'X', '.', 'X'], ['.', 'X', '.', '.', 'X']];
+            //char[][] board = [['X', '.', 'X', '.', 'X'], ['.', 'X', '.', 'X', '.'], ['.', 'X', '.', '.', '.'], ['.', 'X', '.', '.', 'X'], ['.', 'X', '.', '.', '.'], ['X', '.', 'X', 'X', 'X'], ['.', 'X', '.', '.', '.'], ['.', 'X', '.', 'X', '.'], ['X', '.', 'X', '.', 'X'], ['.', 'X', '.', '.', 'X']];
 
-            LeetCode_419 classLeetCode = new LeetCode_419();
-            Console.WriteLine(classLeetCode.CountBattleships(board));
+            //LeetCode_419 classLeetCode = new LeetCode_419();
+            //Console.WriteLine(classLeetCode.CountBattleships(board));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountBattleships(board));
+            //Console.WriteLine(leetCodeAll.CountBattleships(board));
 
             ////(434.) Number of Segments in a String (EASY)
             //string s = "";
@@ -6295,6 +6295,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountMaxOrSubsets(nums));
+
+            ////(2048.) Next Greater Numerically Balanced Number (MEDIUM)
+            int n = 1000;
+
+            LeetCode_2048 classLeetCode = new LeetCode_2048();
+            Console.WriteLine(classLeetCode.NextBeautifulNumber(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NextBeautifulNumber(n));
 
             ////(2079.) Watering Plants (MEDIUM)
             //int[] plants = [1, 1, 1, 4, 2, 3];
