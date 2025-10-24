@@ -6275,6 +6275,24 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
+            ////(2032.) Two Out of Three (EASY)
+            int[] nums1 = [1, 1, 3, 2];
+            int[] nums2 = [2,3];
+            int[] nums3 = [3];
+
+            LeetCode_2032 classLeetCode = new LeetCode_2032();
+            foreach (var item in classLeetCode.TwoOutOfThree(nums1, nums2, nums3)) 
+            { 
+                Console.WriteLine(item);
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.TwoOutOfThree(nums1, nums2, nums3))
+            {
+                Console.WriteLine(item);
+            }
+
             ////(2037.) Minimum Number of Moves to Seat Everyone (EASY)
             //int[] seats = [4,1,5,9];
             //int[] students = [1, 3, 2, 6];
@@ -6318,22 +6336,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.WateringPlants(plants, capacity));
 
             ////(2089.) Find Target Indices After Sorting Array (EASY)
-            int[] nums = [1, 2, 5, 2, 3];
-            int target = 2;
+            //int[] nums = [1, 2, 5, 2, 3];
+            //int target = 2;
 
-            LeetCode_2089 classLeetCode = new LeetCode_2089();
+            //LeetCode_2089 classLeetCode = new LeetCode_2089();
 
-            foreach (var item in classLeetCode.TargetIndices(nums, target)) 
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in classLeetCode.TargetIndices(nums, target)) 
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.TargetIndices(nums, target))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in leetCodeAll.TargetIndices(nums, target))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             ////(2099.) Find Subsequence of Length K With the Largest Sum (EASY)
             //int[] nums = [-1, -2, 3, 4];
