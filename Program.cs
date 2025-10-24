@@ -2051,6 +2051,23 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ArrangeCoins(n));
 
+            ////(442.) Find All Duplicates in an Array (MEDIUM)
+            int[] nums = [4, 3, 2, 7, 8, 2, 3, 1];
+
+            LeetCode_442 classLeetCode = new LeetCode_442();
+
+            foreach (var item in classLeetCode.FindDuplicates(nums))
+            {
+                Console.WriteLine(item);
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.FindDuplicates(nums))
+            {
+                Console.WriteLine(item);
+            }
+
             ////(448.) Find All Numbers Disappeared in an Array (EASY)
             //int[] nums = [4, 3, 2, 7, 7, 2, 3, 1];
 
@@ -6276,22 +6293,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
             ////(2032.) Two Out of Three (EASY)
-            int[] nums1 = [1, 1, 3, 2];
-            int[] nums2 = [2,3];
-            int[] nums3 = [3];
+            //int[] nums1 = [1, 1, 3, 2];
+            //int[] nums2 = [2,3];
+            //int[] nums3 = [3];
 
-            LeetCode_2032 classLeetCode = new LeetCode_2032();
-            foreach (var item in classLeetCode.TwoOutOfThree(nums1, nums2, nums3)) 
-            { 
-                Console.WriteLine(item);
-            }
+            //LeetCode_2032 classLeetCode = new LeetCode_2032();
+            //foreach (var item in classLeetCode.TwoOutOfThree(nums1, nums2, nums3)) 
+            //{ 
+            //    Console.WriteLine(item);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.TwoOutOfThree(nums1, nums2, nums3))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in leetCodeAll.TwoOutOfThree(nums1, nums2, nums3))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             ////(2037.) Minimum Number of Moves to Seat Everyone (EASY)
             //int[] seats = [4,1,5,9];
