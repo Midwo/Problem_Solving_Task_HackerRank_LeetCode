@@ -2052,21 +2052,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ArrangeCoins(n));
 
             ////(442.) Find All Duplicates in an Array (MEDIUM)
-            int[] nums = [4, 3, 2, 7, 8, 2, 3, 1];
+            //int[] nums = [4, 3, 2, 7, 8, 2, 3, 1];
 
-            LeetCode_442 classLeetCode = new LeetCode_442();
+            //LeetCode_442 classLeetCode = new LeetCode_442();
 
-            foreach (var item in classLeetCode.FindDuplicates(nums))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in classLeetCode.FindDuplicates(nums))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.FindDuplicates(nums))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in leetCodeAll.FindDuplicates(nums))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             ////(448.) Find All Numbers Disappeared in an Array (EASY)
             //int[] nums = [4, 3, 2, 7, 7, 2, 3, 1];
@@ -5740,6 +5740,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumUniqueSubarray(nums));
+
+            ////(1716.) Calculate Money in Leetcode Bank (EASY)
+            int n = 20;
+
+            LeetCode_1716 classLeetCode = new LeetCode_1716();
+            Console.WriteLine(classLeetCode.TotalMoney(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.TotalMoney(n));
 
             ////(1717.) Maximum Score From Removing Substrings (MEDIUM)
             //string s = "abbmzgaabtaabsbabhaahabnaeabdbaababbbiabaavababtabwbababzbdabbaaabhbyabdvabbaabbquapaaaaqbbblbuaawlnbbaxaubbbbbpbabbbpaaaacbbaabaaaahbbcoyaauabanqaabpbbbgaawbhabbbbaobsaaababbafbababbbbaaaqbabsbsmabbxqylbbbba";
