@@ -6380,6 +6380,16 @@ namespace ProblemSolving
             //    Console.WriteLine(item);
             //}
 
+            ////(2094.) Finding 3-Digit Even Numbers (EASY)
+            int[] digits = [2, 1, 3, 0];
+
+            LeetCode_2094 classLeetCode = new LeetCode_2094();
+            Console.WriteLine(string.Join(',',classLeetCode.FindEvenNumbers(digits)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindEvenNumbers(digits)));
+
             ////(2099.) Find Subsequence of Length K With the Largest Sum (EASY)
             //int[] nums = [-1, -2, 3, 4];
             //int k = 3;
@@ -6920,14 +6930,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LongestSubarray(nums));
 
             ////(2428.) Maximum Sum of an Hourglass (MEDIUM)
-            int[][] grid = [[6, 2, 1, 3], [4, 2, 1, 5], [9, 2, 8, 7], [4, 1, 2, 9]];
+            //int[][] grid = [[6, 2, 1, 3], [4, 2, 1, 5], [9, 2, 8, 7], [4, 1, 2, 9]];
 
-            LeetCode_2428 classLeetCode = new LeetCode_2428();
-            Console.WriteLine(classLeetCode.MaxSum(grid));
+            //LeetCode_2428 classLeetCode = new LeetCode_2428();
+            //Console.WriteLine(classLeetCode.MaxSum(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxSum(grid));
+            //Console.WriteLine(leetCodeAll.MaxSum(grid));
 
             ////(2433.) Find The Original Array of Prefix Xor (MEDIUM)
             //int[] pref = [5, 2, 0, 3, 1];
