@@ -7151,6 +7151,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountSeniors(details));
 
+            ////(2696.) Minimum String Length After Removing Substrings (EASY)
+            string s = "ABFCACDB";
+
+            LeetCode_2696 classLeetCode = new LeetCode_2696();
+            Console.WriteLine(classLeetCode.MinLength(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinLength(s));
+
             ////(2716.) Minimize String Length (EASY)
             //string s = "baadccab";
 
@@ -7915,14 +7925,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumOfUnplacedFruits(fruits, baskets));
 
             ////(3483.) Unique 3-Digit Even Numbers (EASY)
-            int[] digits = [1, 2, 3, 4];
+            //int[] digits = [1, 2, 3, 4];
 
-            LeetCode_3483 classLeetCode = new LeetCode_3483();
-            Console.WriteLine(classLeetCode.TotalNumbers(digits));
+            //LeetCode_3483 classLeetCode = new LeetCode_3483();
+            //Console.WriteLine(classLeetCode.TotalNumbers(digits));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.TotalNumbers(digits));
+            //Console.WriteLine(leetCodeAll.TotalNumbers(digits));
 
             ////(3484.) Design Spreadsheet (MEDIUM)
             //LeetCode_3484.Spreadsheet spreadsheet = new LeetCode_3484.Spreadsheet(3);
