@@ -5742,14 +5742,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumUniqueSubarray(nums));
 
             ////(1716.) Calculate Money in Leetcode Bank (EASY)
-            int n = 20;
+            //int n = 20;
 
-            LeetCode_1716 classLeetCode = new LeetCode_1716();
-            Console.WriteLine(classLeetCode.TotalMoney(n));
+            //LeetCode_1716 classLeetCode = new LeetCode_1716();
+            //Console.WriteLine(classLeetCode.TotalMoney(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.TotalMoney(n));
+            //Console.WriteLine(leetCodeAll.TotalMoney(n));
 
             ////(1717.) Maximum Score From Removing Substrings (MEDIUM)
             //string s = "abbmzgaabtaabsbabhaahabnaeabdbaababbbiabaavababtabwbababzbdabbaaabhbyabdvabbaabbquapaaaaqbbblbuaawlnbbaxaubbbbbpbabbbpaaaacbbaabaaaahbbcoyaauabanqaabpbbbgaawbhabbbbaobsaaababbafbababbbbaaaqbabsbsmabbxqylbbbba";
@@ -6918,6 +6918,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.LongestSubarray(nums));
+
+            ////(2428.) Maximum Sum of an Hourglass (MEDIUM)
+            int[][] grid = [[6, 2, 1, 3], [4, 2, 1, 5], [9, 2, 8, 7], [4, 1, 2, 9]];
+
+            LeetCode_2428 classLeetCode = new LeetCode_2428();
+            Console.WriteLine(classLeetCode.MaxSum(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxSum(grid));
 
             ////(2433.) Find The Original Array of Prefix Xor (MEDIUM)
             //int[] pref = [5, 2, 0, 3, 1];

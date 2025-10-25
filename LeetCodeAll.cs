@@ -18697,7 +18697,25 @@ namespace ProblemSolving
             }
             return (int)sum;
         }
-    
+        public int MaxSum(int[][] grid)
+        {
+            ////1ms, Beats: 100.00%
+            int lengthX = grid[0].Length;
+            int lengthY = grid.Length;
+            int maxSum = int.MinValue;
+
+            for (int y = 0; y < lengthY - 2; y++)
+            {
+                int currSum = 0;
+                for (int x = 0; x < lengthX - 2; x++)
+                {
+                    currSum = grid[y][x] + grid[y][x + 1] + grid[y][x + 2] + grid[y + 1][x + 1] + grid[y + 2][x] + grid[y + 2][x + 1] + grid[y + 2][x + 2];
+                    maxSum = currSum > maxSum ? currSum : maxSum;
+                }
+            }
+
+            return maxSum;
+        }
 
 
 
@@ -18751,9 +18769,7 @@ namespace ProblemSolving
 
 
 
-
-
-}
+    }
 
 
 
