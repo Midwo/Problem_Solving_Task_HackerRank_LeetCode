@@ -6381,14 +6381,14 @@ namespace ProblemSolving
             //}
 
             ////(2094.) Finding 3-Digit Even Numbers (EASY)
-            int[] digits = [2, 1, 3, 0];
+            //int[] digits = [2, 1, 3, 0];
 
-            LeetCode_2094 classLeetCode = new LeetCode_2094();
-            Console.WriteLine(string.Join(',',classLeetCode.FindEvenNumbers(digits)));
+            //LeetCode_2094 classLeetCode = new LeetCode_2094();
+            //Console.WriteLine(string.Join(',',classLeetCode.FindEvenNumbers(digits)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindEvenNumbers(digits)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindEvenNumbers(digits)));
 
             ////(2099.) Find Subsequence of Length K With the Largest Sum (EASY)
             //int[] nums = [-1, -2, 3, 4];
@@ -7913,6 +7913,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NumOfUnplacedFruits(fruits, baskets));
+
+            ////(3483.) Unique 3-Digit Even Numbers (EASY)
+            int[] digits = [1, 2, 3, 4];
+
+            LeetCode_3483 classLeetCode = new LeetCode_3483();
+            Console.WriteLine(classLeetCode.TotalNumbers(digits));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.TotalNumbers(digits));
 
             ////(3484.) Design Spreadsheet (MEDIUM)
             //LeetCode_3484.Spreadsheet spreadsheet = new LeetCode_3484.Spreadsheet(3);
