@@ -18984,6 +18984,32 @@ namespace ProblemSolving
 
             return result;
         }
+        public int FindNumbers(int[] nums)
+        {
+            ////0ms, Beats: 100.00%
+
+            int countEvenLength = 0;
+
+            foreach (var item in nums)
+            {
+                if (item.ToString().Length % 2 == 0)
+                {
+                    countEvenLength++;
+                }
+            }
+
+            return countEvenLength;
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 

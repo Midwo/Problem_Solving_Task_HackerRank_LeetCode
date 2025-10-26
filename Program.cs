@@ -4729,6 +4729,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.GetDecimalValue(head));
 
+            ////(1295.) Find Numbers with Even Number of Digits (EASY)
+            int[] nums = [12, 345, 2, 6, 7896];
+
+            LeetCode_1295 classLeetCode = new LeetCode_1295();
+            Console.WriteLine(classLeetCode.FindNumbers(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindNumbers(nums));
+
             ////(1302.) Deepest Leaves Sum (MEDIUM)
             //TreeNode root = new TreeNode(1);
             //root.left = new TreeNode(2);
@@ -5143,15 +5153,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BusyStudent(startTime, endTime, queryTime));
 
             ////(1455.) Check If a Word Occurs As a Prefix of Any Word in a Sentence (EASY)
-            string sentence = "b bu bur burg burger";
-            string searchWord = "burg";
+            //string sentence = "b bu bur burg burger";
+            //string searchWord = "burg";
 
-            LeetCode_1455 classLeetCode = new LeetCode_1455();
-            Console.WriteLine(classLeetCode.IsPrefixOfWord(sentence, searchWord));
+            //LeetCode_1455 classLeetCode = new LeetCode_1455();
+            //Console.WriteLine(classLeetCode.IsPrefixOfWord(sentence, searchWord));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsPrefixOfWord(sentence, searchWord));
+            //Console.WriteLine(leetCodeAll.IsPrefixOfWord(sentence, searchWord));
 
             ////(1464.) Maximum Product of Two Elements in an Array (EASY)
             //int[] nums = [1,5,4,5];
