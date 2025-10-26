@@ -6333,30 +6333,29 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinMovesToSeat(seats, students));
 
             ////(2043.) Simple Bank System (MEDIUM)
+            //LeetCode_2043.Bank bank1 = new LeetCode_2043.Bank([10, 100, 20, 50, 30]);
+            //bank1.Withdraw(3, 10);    // return true, account 3 has a balance of $20, so it is valid to withdraw $10.
+            //                         // Account 3 has $20 - $10 = $10.
+            //bank1.Transfer(5, 1, 20); // return true, account 5 has a balance of $30, so it is valid to transfer $20.
+            //                         // Account 5 has $30 - $20 = $10, and account 1 has $10 + $20 = $30.
+            //bank1.Deposit(5, 20);     // return true, it is valid to deposit $20 to account 5.
+            //                          // Account 5 has $10 + $20 = $30.
+            //bank1.Transfer(3, 4, 15); // return false, the current balance of account 3 is $10,
+            //                          // so it is invalid to transfer $15 from it.
+            //bank1.Withdraw(10, 50);   // return false, it is invalid because account 10 does not exist.
 
-            LeetCode_2043.Bank bank1 = new LeetCode_2043.Bank([10, 100, 20, 50, 30]);
-            bank1.Withdraw(3, 10);    // return true, account 3 has a balance of $20, so it is valid to withdraw $10.
-                                     // Account 3 has $20 - $10 = $10.
-            bank1.Transfer(5, 1, 20); // return true, account 5 has a balance of $30, so it is valid to transfer $20.
-                                     // Account 5 has $30 - $20 = $10, and account 1 has $10 + $20 = $30.
-            bank1.Deposit(5, 20);     // return true, it is valid to deposit $20 to account 5.
-                                      // Account 5 has $10 + $20 = $30.
-            bank1.Transfer(3, 4, 15); // return false, the current balance of account 3 is $10,
-                                      // so it is invalid to transfer $15 from it.
-            bank1.Withdraw(10, 50);   // return false, it is invalid because account 10 does not exist.
+            ////OR
 
-            //OR
-
-            BankTask2043 bank2 = new BankTask2043([10, 100, 20, 50, 30]);
-            bank2.Withdraw(3, 10);    // return true, account 3 has a balance of $20, so it is valid to withdraw $10.
-                                      // Account 3 has $20 - $10 = $10.
-            bank2.Transfer(5, 1, 20); // return true, account 5 has a balance of $30, so it is valid to transfer $20.
-                                      // Account 5 has $30 - $20 = $10, and account 1 has $10 + $20 = $30.
-            bank2.Deposit(5, 20);     // return true, it is valid to deposit $20 to account 5.
-                                      // Account 5 has $10 + $20 = $30.
-            bank2.Transfer(3, 4, 15); // return false, the current balance of account 3 is $10,
-                                      // so it is invalid to transfer $15 from it.
-            bank2.Withdraw(10, 50);   // return false, it is invalid because account 10 does not exist.
+            //BankTask2043 bank2 = new BankTask2043([10, 100, 20, 50, 30]);
+            //bank2.Withdraw(3, 10);    // return true, account 3 has a balance of $20, so it is valid to withdraw $10.
+            //                          // Account 3 has $20 - $10 = $10.
+            //bank2.Transfer(5, 1, 20); // return true, account 5 has a balance of $30, so it is valid to transfer $20.
+            //                          // Account 5 has $30 - $20 = $10, and account 1 has $10 + $20 = $30.
+            //bank2.Deposit(5, 20);     // return true, it is valid to deposit $20 to account 5.
+            //                          // Account 5 has $10 + $20 = $30.
+            //bank2.Transfer(3, 4, 15); // return false, the current balance of account 3 is $10,
+            //                          // so it is invalid to transfer $15 from it.
+            //bank2.Withdraw(10, 50);   // return false, it is invalid because account 10 does not exist.
 
             //(2044.) Count Number of Maximum Bitwise-OR Subsets (MEDIUM)
             //int[] nums = [3, 2, 1, 5];
@@ -8087,9 +8086,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.AlternatingSum(nums));
 
+            ////(3712.) Sum of Elements With Frequency Divisible by K (EASY)
+            int[] nums = [1, 2, 2, 3, 3, 3, 3, 4];
+            int k = 2;
 
+            LeetCode_3712 classLeetCode = new LeetCode_3712();
+            Console.WriteLine(classLeetCode.SumDivisibleByK(nums, k));
 
+            //OR
 
+            Console.WriteLine(leetCodeAll.SumDivisibleByK(nums, k));
 
 
 
