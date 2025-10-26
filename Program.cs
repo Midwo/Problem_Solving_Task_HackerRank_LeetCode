@@ -7218,6 +7218,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimizedStringLength(s));
 
+            ////(2733.) Neither Minimum nor Maximum (EASY)
+            int[] nums = [3, 2, 1, 4];
+
+            LeetCode_2733 classLeetCode = new LeetCode_2733();
+            Console.WriteLine(classLeetCode.FindNonMinOrMax(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindNonMinOrMax(nums));
+
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
             //int t = 2;
@@ -8023,16 +8033,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxSum(nums));
 
             ////(3492.) Maximum Containers on a Ship (EASY)
-            int n = 2;
-            int w = 3;
-            int maxWeight = 15;
+            //int n = 2;
+            //int w = 3;
+            //int maxWeight = 15;
 
-            LeetCode_3492 classLeetCode = new LeetCode_3492();
-            Console.WriteLine(classLeetCode.MaxContainers(n, w, maxWeight));
+            //LeetCode_3492 classLeetCode = new LeetCode_3492();
+            //Console.WriteLine(classLeetCode.MaxContainers(n, w, maxWeight));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxContainers(n, w, maxWeight));
+            //Console.WriteLine(leetCodeAll.MaxContainers(n, w, maxWeight));
 
             ////(3494.) Find the Minimum Amount of Time to Brew Potions (MEDIUM)
             //int[] skill = [1, 5, 2, 4];
