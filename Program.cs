@@ -7445,6 +7445,16 @@ namespace ProblemSolving
             ////OR
             //Console.WriteLine(leetCodeAll.TriangleType(nums));
 
+            ////(3028.) Ant on the Boundary (EASY)
+            int[] nums = [2, 3, -5];
+
+            LeetCode_3028 classLeetCode = new LeetCode_3028();
+            Console.WriteLine(classLeetCode.ReturnToBoundaryCount(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ReturnToBoundaryCount(nums));
+
             ////(3042.) Count Prefix and Suffix Pairs I (EASY)
             //string[] words = ["a", "aba", "ababa", "aa"];
 
@@ -8087,15 +8097,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.AlternatingSum(nums));
 
             ////(3712.) Sum of Elements With Frequency Divisible by K (EASY)
-            int[] nums = [1, 2, 2, 3, 3, 3, 3, 4];
-            int k = 2;
+            //int[] nums = [1, 2, 2, 3, 3, 3, 3, 4];
+            //int k = 2;
 
-            LeetCode_3712 classLeetCode = new LeetCode_3712();
-            Console.WriteLine(classLeetCode.SumDivisibleByK(nums, k));
+            //LeetCode_3712 classLeetCode = new LeetCode_3712();
+            //Console.WriteLine(classLeetCode.SumDivisibleByK(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumDivisibleByK(nums, k));
+            //Console.WriteLine(leetCodeAll.SumDivisibleByK(nums, k));
 
 
 

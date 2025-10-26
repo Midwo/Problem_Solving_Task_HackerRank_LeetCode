@@ -18923,8 +18923,23 @@ namespace ProblemSolving
 
             //return sum;
         }
+        public int ReturnToBoundaryCount(int[] nums)
+        {
+            ////60ms, Beats: 96.00%
+            int result = 0;
+            int currPosition = 0;
 
+            foreach (var item in nums)
+            {
+                currPosition += item;
+                if (currPosition == 0)
+                {
+                    result++;
+                }
+            }
 
+            return result;
+        }
 
 
 
