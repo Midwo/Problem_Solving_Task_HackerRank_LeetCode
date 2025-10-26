@@ -7219,14 +7219,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizedStringLength(s));
 
             ////(2733.) Neither Minimum nor Maximum (EASY)
-            int[] nums = [3, 2, 1, 4];
+            //int[] nums = [3, 2, 1, 4];
 
-            LeetCode_2733 classLeetCode = new LeetCode_2733();
-            Console.WriteLine(classLeetCode.FindNonMinOrMax(nums));
+            //LeetCode_2733 classLeetCode = new LeetCode_2733();
+            //Console.WriteLine(classLeetCode.FindNonMinOrMax(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindNonMinOrMax(nums));
+            //Console.WriteLine(leetCodeAll.FindNonMinOrMax(nums));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
@@ -8107,6 +8107,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinOperations(nums, k));
+
+            ////(3622.) Check Divisibility by Digit Sum and Product (EASY)
+            int n = 99;
+
+            LeetCode_3622 classLeetCode = new LeetCode_3622();
+            Console.WriteLine(classLeetCode.CheckDivisibility(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckDivisibility(n));
 
             ////(3658.) GCD of Odd and Even Sums (EASY)
             //int n = 4;
