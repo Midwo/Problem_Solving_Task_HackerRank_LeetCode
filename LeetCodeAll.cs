@@ -18811,7 +18811,49 @@ namespace ProblemSolving
             //return sb.Length;
         }
 
+        public class BankTask2043
+        {
+            ////3ms, Beats: 100.00%
+            
+            private long[] _balance;
+            private int _countAccount;
+            public BankTask2043(long[] balance)
+            {
+                _balance = balance;
+                _countAccount = balance.Length;
+            }
 
+            public bool Transfer(int account1, int account2, long money)
+            {
+                if (account1 <= _countAccount && account2 <= _countAccount && _balance[account1 - 1] >= money)
+                {
+                    _balance[account1 - 1] -= money;
+                    _balance[account2 - 1] += money;
+                    return true;
+                }
+                return false;
+            }
+
+            public bool Deposit(int account, long money)
+            {
+                if (account <= _countAccount)
+                {
+                    _balance[account - 1] += money;
+                    return true;
+                }
+                return false;
+            }
+
+            public bool Withdraw(int account, long money)
+            {
+                if (account <= _countAccount && _balance[account - 1] >= money)
+                {
+                    _balance[account - 1] -= money;
+                    return true;
+                }
+                return false;
+            }
+        }
 
 
 
