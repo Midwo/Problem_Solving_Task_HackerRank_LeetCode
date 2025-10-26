@@ -5142,6 +5142,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.BusyStudent(startTime, endTime, queryTime));
 
+            ////(1455.) Check If a Word Occurs As a Prefix of Any Word in a Sentence (EASY)
+            string sentence = "b bu bur burg burger";
+            string searchWord = "burg";
+
+            LeetCode_1455 classLeetCode = new LeetCode_1455();
+            Console.WriteLine(classLeetCode.IsPrefixOfWord(sentence, searchWord));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsPrefixOfWord(sentence, searchWord));
+
             ////(1464.) Maximum Product of Two Elements in an Array (EASY)
             //int[] nums = [1,5,4,5];
 
@@ -7446,14 +7457,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TriangleType(nums));
 
             ////(3028.) Ant on the Boundary (EASY)
-            int[] nums = [2, 3, -5];
+            //int[] nums = [2, 3, -5];
 
-            LeetCode_3028 classLeetCode = new LeetCode_3028();
-            Console.WriteLine(classLeetCode.ReturnToBoundaryCount(nums));
+            //LeetCode_3028 classLeetCode = new LeetCode_3028();
+            //Console.WriteLine(classLeetCode.ReturnToBoundaryCount(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ReturnToBoundaryCount(nums));
+            //Console.WriteLine(leetCodeAll.ReturnToBoundaryCount(nums));
 
             ////(3042.) Count Prefix and Suffix Pairs I (EASY)
             //string[] words = ["a", "aba", "ababa", "aa"];
