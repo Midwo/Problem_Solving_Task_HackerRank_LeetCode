@@ -17,28 +17,18 @@ namespace ProblemSolving.LeetCode
 
             if (length > 2)
             {
-                int min;
-                int max;
-                if (nums[0] > nums[1])
-                {
-                    min = nums[1];
-                    max = nums[0];
-                }
-                else
-                {
-                    min = nums[0];
-                    max = nums[1];
-                }
-
-                if (nums[2] > max)
+                int max = Math.Max(nums[0], nums[1]);
+                int min = Math.Min(nums[0], nums[1]);
+                int nextValue = nums[2];
+                if (nextValue > max)
                 {
                     return max;
                 }
-                else if (nums[2] < min)
+                else if (nextValue < min)
                 {
                     return min;
                 }
-                return nums[2];
+                return nextValue;
             }            
             else
             {
