@@ -19000,6 +19000,14 @@ namespace ProblemSolving
 
             return countEvenLength;
         }
+        public int MaxContainers(int n, int w, int maxWeight)
+        {
+            ////0ms, Beats: 100.00%
+
+            return Math.Min(n * n, maxWeight / w);
+        }
+
+
 
 
 

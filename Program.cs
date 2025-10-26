@@ -4730,14 +4730,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GetDecimalValue(head));
 
             ////(1295.) Find Numbers with Even Number of Digits (EASY)
-            int[] nums = [12, 345, 2, 6, 7896];
+            //int[] nums = [12, 345, 2, 6, 7896];
 
-            LeetCode_1295 classLeetCode = new LeetCode_1295();
-            Console.WriteLine(classLeetCode.FindNumbers(nums));
+            //LeetCode_1295 classLeetCode = new LeetCode_1295();
+            //Console.WriteLine(classLeetCode.FindNumbers(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindNumbers(nums));
+            //Console.WriteLine(leetCodeAll.FindNumbers(nums));
 
             ////(1302.) Deepest Leaves Sum (MEDIUM)
             //TreeNode root = new TreeNode(1);
@@ -8021,6 +8021,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxSum(nums));
+
+            ////(3492.) Maximum Containers on a Ship (EASY)
+            int n = 2;
+            int w = 3;
+            int maxWeight = 15;
+
+            LeetCode_3492 classLeetCode = new LeetCode_3492();
+            Console.WriteLine(classLeetCode.MaxContainers(n, w, maxWeight));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxContainers(n, w, maxWeight));
 
             ////(3494.) Find the Minimum Amount of Time to Brew Potions (MEDIUM)
             //int[] skill = [1, 5, 2, 4];
