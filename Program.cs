@@ -5164,15 +5164,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsPrefixOfWord(sentence, searchWord));
 
             ////(1460.) Make Two Arrays Equal by Reversing Subarrays (EASY)
-            int[] target = [1, 2, 3, 4];
-            int[] arr = [2, 4, 1, 3];
+            //int[] target = [1, 2, 3, 4];
+            //int[] arr = [2, 4, 1, 3];
 
-            LeetCode_1460 classLeetCode = new LeetCode_1460();
-            Console.WriteLine(classLeetCode.CanBeEqual(target, arr));
+            //LeetCode_1460 classLeetCode = new LeetCode_1460();
+            //Console.WriteLine(classLeetCode.CanBeEqual(target, arr));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CanBeEqual(target, arr));
+            //Console.WriteLine(leetCodeAll.CanBeEqual(target, arr));
 
             ////(1464.) Maximum Product of Two Elements in an Array (EASY)
             //int[] nums = [1,5,4,5];
@@ -7249,6 +7249,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.TheMaximumAchievableX(num, t));
+
+            ////(2778.) Sum of Squares of Special Elements (EASY)
+            int[] nums = [1, 2, 3, 4];
+            
+            LeetCode_2778 classLeetCode = new LeetCode_2778();
+            Console.WriteLine(classLeetCode.SumOfSquares(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumOfSquares(nums));
 
             ////(2785.) Sort Vowels in a String (MEDIUM)
             //string s = "lEetcOde";
