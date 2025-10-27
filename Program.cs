@@ -5163,6 +5163,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsPrefixOfWord(sentence, searchWord));
 
+            ////(1460.) Make Two Arrays Equal by Reversing Subarrays (EASY)
+            int[] target = [1, 2, 3, 4];
+            int[] arr = [2, 4, 1, 3];
+
+            LeetCode_1460 classLeetCode = new LeetCode_1460();
+            Console.WriteLine(classLeetCode.CanBeEqual(target, arr));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CanBeEqual(target, arr));
+
             ////(1464.) Maximum Product of Two Elements in an Array (EASY)
             //int[] nums = [1,5,4,5];
 
@@ -8109,14 +8120,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinOperations(nums, k));
 
             ////(3622.) Check Divisibility by Digit Sum and Product (EASY)
-            int n = 99;
+            //int n = 99;
 
-            LeetCode_3622 classLeetCode = new LeetCode_3622();
-            Console.WriteLine(classLeetCode.CheckDivisibility(n));
+            //LeetCode_3622 classLeetCode = new LeetCode_3622();
+            //Console.WriteLine(classLeetCode.CheckDivisibility(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckDivisibility(n));
+            //Console.WriteLine(leetCodeAll.CheckDivisibility(n));
 
             ////(3658.) GCD of Odd and Even Sums (EASY)
             //int n = 4;
