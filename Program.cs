@@ -7018,6 +7018,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ProductQueries(n, queries)));
 
+            ////(2455.) Average Value of Even Numbers That Are Divisible by Three (EASY)
+            int[] nums = [1, 3, 6, 10, 12, 15];
+
+            LeetCode_2455 classLeetCode = new LeetCode_2455();
+            Console.WriteLine(classLeetCode.AverageValue(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AverageValue(nums));
+
             ////(2469.) Convert the Temperature (EASY)
             //double celsius = 36.5;
 
@@ -7251,14 +7261,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TheMaximumAchievableX(num, t));
 
             ////(2778.) Sum of Squares of Special Elements (EASY)
-            int[] nums = [1, 2, 3, 4];
-            
-            LeetCode_2778 classLeetCode = new LeetCode_2778();
-            Console.WriteLine(classLeetCode.SumOfSquares(nums));
+            //int[] nums = [1, 2, 3, 4];
 
-            //OR
+            //LeetCode_2778 classLeetCode = new LeetCode_2778();
+            //Console.WriteLine(classLeetCode.SumOfSquares(nums));
 
-            Console.WriteLine(leetCodeAll.SumOfSquares(nums));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.SumOfSquares(nums));
 
             ////(2785.) Sort Vowels in a String (MEDIUM)
             //string s = "lEetcOde";
