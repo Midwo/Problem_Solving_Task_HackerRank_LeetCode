@@ -19201,8 +19201,33 @@ namespace ProblemSolving
 
             return count * 100 / length;
         }
+        public bool CheckTwoChessboards(string coordinate1, string coordinate2)
+        {
+            ////51ms, Beats: 91.18%
 
-
+            if (Math.Abs(coordinate1[0] - coordinate2[0]) % 2 == 0)
+            {
+                if (Math.Abs(coordinate1[1] - coordinate2[1]) % 2 == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                if (Math.Abs(coordinate1[1] - coordinate2[1]) % 2 == 0)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        }
 
 
 

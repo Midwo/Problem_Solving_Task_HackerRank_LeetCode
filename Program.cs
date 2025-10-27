@@ -6777,15 +6777,15 @@ namespace ProblemSolving
             //}
 
             ////(2278.) Percentage of Letter in String (EASY)
-            string s = "foobar";
-            char letter = 'o';
+            //string s = "foobar";
+            //char letter = 'o';
 
-            LeetCode_2278 classLeetCode = new LeetCode_2278();
-            Console.WriteLine(classLeetCode.PercentageLetter(s, letter));
+            //LeetCode_2278 classLeetCode = new LeetCode_2278();
+            //Console.WriteLine(classLeetCode.PercentageLetter(s, letter));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PercentageLetter(s, letter));
+            //Console.WriteLine(leetCodeAll.PercentageLetter(s, letter));
 
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];
@@ -7810,6 +7810,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.StringHash(s, k));
+
+            ////(3274.) Check if Two Chessboard Squares Have the Same Color (EASY)
+            string coordinate1 = "d1";
+            string coordinate2 = "h4";
+
+            LeetCode_3274 classLeetCode = new LeetCode_3274();
+            Console.WriteLine(classLeetCode.CheckTwoChessboards(coordinate1, coordinate2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckTwoChessboards(coordinate1, coordinate2));
 
             ////(3280.) Convert Date to Binary (EASY)
             //string date = "2080-02-29";
