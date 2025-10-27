@@ -5316,14 +5316,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumSubseq(nums, target));
 
             ////(1502.) Can Make Arithmetic Progression From Sequence (EASY)
-            int[] arr = [0, 0, 0, 0];
+            //int[] arr = [0, 0, 0, 0];
 
-            LeetCode_1502 classLeetCode = new LeetCode_1502();
-            Console.WriteLine(classLeetCode.CanMakeArithmeticProgression(arr));
+            //LeetCode_1502 classLeetCode = new LeetCode_1502();
+            //Console.WriteLine(classLeetCode.CanMakeArithmeticProgression(arr));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(classLeetCode.CanMakeArithmeticProgression(arr));
+            //Console.WriteLine(classLeetCode.CanMakeArithmeticProgression(arr));
 
             ////(1512.) Number of Good Pairs (EASY)
             //int[] nums = [1, 2, 3, 1, 1, 3];
@@ -6850,6 +6850,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ZeroFilledSubarray(nums));                                               
+
+            ////(2351.) First Letter to Appear Twice (EASY)
+            string s = "abccbaacz";
+
+            LeetCode_2351 classLeetCode = new LeetCode_2351();
+            Console.WriteLine(classLeetCode.RepeatedCharacter(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.RepeatedCharacter(s));
 
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
             //string SqlQuery =

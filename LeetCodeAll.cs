@@ -19148,8 +19148,21 @@ namespace ProblemSolving
             }
             return true;
         }
+        public char RepeatedCharacter(string s)
+        {
+            ////0ms, Beats: 100.00%
 
+            HashSet<char> distinctChars = new HashSet<char>();
 
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (!distinctChars.Add(s[i]))
+                {
+                    return s[i];
+                }
+            }
+            return ' ';
+        }
 
 
 
