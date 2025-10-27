@@ -5315,6 +5315,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumSubseq(nums, target));
 
+            ////(1502.) Can Make Arithmetic Progression From Sequence (EASY)
+            int[] arr = [0, 0, 0, 0];
+
+            LeetCode_1502 classLeetCode = new LeetCode_1502();
+            Console.WriteLine(classLeetCode.CanMakeArithmeticProgression(arr));
+
+            //OR
+
+            Console.WriteLine(classLeetCode.CanMakeArithmeticProgression(arr));
+
             ////(1512.) Number of Good Pairs (EASY)
             //int[] nums = [1, 2, 3, 1, 1, 3];
 
@@ -7019,14 +7029,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.ProductQueries(n, queries)));
 
             ////(2455.) Average Value of Even Numbers That Are Divisible by Three (EASY)
-            int[] nums = [1, 3, 6, 10, 12, 15];
+            //int[] nums = [1, 3, 6, 10, 12, 15];
 
-            LeetCode_2455 classLeetCode = new LeetCode_2455();
-            Console.WriteLine(classLeetCode.AverageValue(nums));
+            //LeetCode_2455 classLeetCode = new LeetCode_2455();
+            //Console.WriteLine(classLeetCode.AverageValue(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.AverageValue(nums));
+            //Console.WriteLine(lee.AverageValue(nums));
 
             ////(2469.) Convert the Temperature (EASY)
             //double celsius = 36.5;
