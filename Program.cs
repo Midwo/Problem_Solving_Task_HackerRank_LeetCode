@@ -5016,14 +5016,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SortString(s));
 
             ////(1374.) Generate a String With Characters That Have Odd Counts (EASY)
-            int n = 4;
+            //int n = 4;
 
-            LeetCode_1374 classLeetCode = new LeetCode_1374();
-            Console.WriteLine(classLeetCode.GenerateTheString(n));
+            //LeetCode_1374 classLeetCode = new LeetCode_1374();
+            //Console.WriteLine(classLeetCode.GenerateTheString(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GenerateTheString(n));
+            //Console.WriteLine(leetCodeAll.GenerateTheString(n));
 
             ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
             //string SqlQuery =
@@ -7269,6 +7269,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinLength(s));
+
+            ////(2710.) Remove Trailing Zeros From a String (EASY)
+            string num = "51230100";
+
+            LeetCode_2710 classLeetCode = new LeetCode_2710();
+            Console.WriteLine(classLeetCode.RemoveTrailingZeros(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.RemoveTrailingZeros(num));
 
             ////(2716.) Minimize String Length (EASY)
             //string s = "baadccab";

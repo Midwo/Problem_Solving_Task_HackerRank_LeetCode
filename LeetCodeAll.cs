@@ -19302,8 +19302,31 @@ namespace ProblemSolving
                 return new string('a', n);
             }
         }
+        public string RemoveTrailingZeros(string num)
+        {
+            int indexFirstZero = -1;
 
+            for (int i = num.Length - 1; i >= 0; i--)
+            {
+                if (num[i] == '0')
+                {
+                    indexFirstZero = i;
+                }
+                else
+                {
+                    break;
+                }
+            }
 
+            if (indexFirstZero == -1)
+            {
+                return num;
+            }
+            else
+            {
+                return num[0..indexFirstZero];
+            }
+        }
 
 
 
