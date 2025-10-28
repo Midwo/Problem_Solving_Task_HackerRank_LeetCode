@@ -5015,6 +5015,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SortString(s));
 
+            ////(1374.) Generate a String With Characters That Have Odd Counts (EASY)
+            int n = 4;
+
+            LeetCode_1374 classLeetCode = new LeetCode_1374();
+            Console.WriteLine(classLeetCode.GenerateTheString(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GenerateTheString(n));
+
             ////(1378.) Replace Employee ID With The Unique Identifier (EASY)
             //string SqlQuery =
             //    @"
@@ -7915,14 +7925,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxIncreasingSubarrays(nums));
 
             ////(3354.) Make Array Elements Equal to Zero (EASY)
-            int[] nums = [0, 1];
+            //int[] nums = [0, 1];
 
-            LeetCode_3354 classLeetcode = new LeetCode_3354();
-            Console.WriteLine(classLeetcode.CountValidSelections(nums));
-            
-            //OR
+            //LeetCode_3354 classLeetcode = new LeetCode_3354();
+            //Console.WriteLine(classLeetcode.CountValidSelections(nums));
 
-            Console.WriteLine(leetCodeAll.CountValidSelections(nums));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.CountValidSelections(nums));
 
             ////(3397.) Maximum Number of Distinct Elements After Operations (MEDIUM)
             //int[] nums = [1, 2, 2, 3, 3, 4];

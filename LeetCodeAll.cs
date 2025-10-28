@@ -19290,8 +19290,18 @@ namespace ProblemSolving
 
             return result;
         }
-
-
+        public string GenerateTheString(int n)
+        {
+            ////1ms, Beats: 76.79%
+            if (n % 2 == 0)
+            {
+                return new string('a', n - 1) + 'b';
+            }
+            else
+            {
+                return new string('a', n);
+            }
+        }
 
 
 
