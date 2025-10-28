@@ -5151,14 +5151,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountTriplets(arr));
 
             ////(1446.) Consecutive Characters (EASY)
-            string s = "abbcccddddeeeeedcba";
+            //string s = "abbcccddddeeeeedcba";
 
-            LeetCode_1446 classLeetCode = new LeetCode_1446();
-            Console.WriteLine(classLeetCode.MaxPower(s));
+            //LeetCode_1446 classLeetCode = new LeetCode_1446();
+            //Console.WriteLine(classLeetCode.MaxPower(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxPower(s));
+            //Console.WriteLine(leetCodeAll.MaxPower(s));
 
             ////(1450.) Number of Students Doing Homework at a Given Time (EASY)
             //int[] startTime = [1, 2, 3];
@@ -7068,6 +7068,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ProductQueries(n, queries)));
+
+            ////(2441.) Largest Positive Integer That Exists With Its Negative (EASY)
+            int[] nums = [-1,2,-3,3];
+
+            LeetCode_2441 classLeetCode = new LeetCode_2441();
+            Console.WriteLine(classLeetCode.FindMaxK(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindMaxK(nums));
 
             ////(2455.) Average Value of Even Numbers That Are Divisible by Three (EASY)
             //int[] nums = [1, 3, 6, 10, 12, 15];
