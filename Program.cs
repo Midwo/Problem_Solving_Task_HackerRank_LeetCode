@@ -5150,6 +5150,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountTriplets(arr));
 
+            ////(1446.) Consecutive Characters (EASY)
+            string s = "abbcccddddeeeeedcba";
+
+            LeetCode_1446 classLeetCode = new LeetCode_1446();
+            Console.WriteLine(classLeetCode.MaxPower(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxPower(s));
+
             ////(1450.) Number of Students Doing Homework at a Given Time (EASY)
             //int[] startTime = [1, 2, 3];
             //int[] endTime = [3, 2, 7];
@@ -7271,14 +7281,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinLength(s));
 
             ////(2710.) Remove Trailing Zeros From a String (EASY)
-            string num = "51230100";
+            //string num = "51230100";
 
-            LeetCode_2710 classLeetCode = new LeetCode_2710();
-            Console.WriteLine(classLeetCode.RemoveTrailingZeros(num));
+            //LeetCode_2710 classLeetCode = new LeetCode_2710();
+            //Console.WriteLine(classLeetCode.RemoveTrailingZeros(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.RemoveTrailingZeros(num));
+            //Console.WriteLine(leetCodeAll.RemoveTrailingZeros(num));
 
             ////(2716.) Minimize String Length (EASY)
             //string s = "baadccab";
