@@ -7812,15 +7812,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.StringHash(s, k));
 
             ////(3274.) Check if Two Chessboard Squares Have the Same Color (EASY)
-            string coordinate1 = "d1";
-            string coordinate2 = "h4";
+            //string coordinate1 = "d1";
+            //string coordinate2 = "h4";
 
-            LeetCode_3274 classLeetCode = new LeetCode_3274();
-            Console.WriteLine(classLeetCode.CheckTwoChessboards(coordinate1, coordinate2));
+            //LeetCode_3274 classLeetCode = new LeetCode_3274();
+            //Console.WriteLine(classLeetCode.CheckTwoChessboards(coordinate1, coordinate2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckTwoChessboards(coordinate1, coordinate2));
+            //Console.WriteLine(leetCodeAll.CheckTwoChessboards(coordinate1, coordinate2));
 
             ////(3280.) Convert Date to Binary (EASY)
             //string date = "2080-02-29";
@@ -7914,7 +7914,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxIncreasingSubarrays(nums));
 
-            //Console.WriteLine(leetCodeAll.HasIncreasingSubarrays(nums, k));
+            ////(3354.) Make Array Elements Equal to Zero (EASY)
+            int[] nums = [0, 1];
+
+            LeetCode_3354 classLeetcode = new LeetCode_3354();
+            Console.WriteLine(classLeetcode.CountValidSelections(nums));
+            
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountValidSelections(nums));
 
             ////(3397.) Maximum Number of Distinct Elements After Operations (MEDIUM)
             //int[] nums = [1, 2, 2, 3, 3, 4];
