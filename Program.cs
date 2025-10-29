@@ -7259,6 +7259,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
+            ////(2651.) Calculate Delayed Arrival Time (EASY)
+            int arrivalTime = 15;
+            int delayedTime = 5; 
+
+            LeetCode_2651 classLeetCode = new LeetCode_2651();
+            Console.WriteLine(classLeetCode.FindDelayedArrivalTime(arrivalTime, delayedTime));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindDelayedArrivalTime(arrivalTime, delayedTime));
+
             ////(2652.) Sum Multiples (EASY)
             //int n = 10;
 
@@ -7975,14 +7986,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountValidSelections(nums));
 
             ////(3370.) Smallest Number With All Set Bits (EASY)
-            int n = 10;
+            //int n = 10;
 
-            LeetCode_3370 classLeetCode = new LeetCode_3370();
-            Console.WriteLine(classLeetCode.SmallestNumber(n));
+            //LeetCode_3370 classLeetCode = new LeetCode_3370();
+            //Console.WriteLine(classLeetCode.SmallestNumber(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SmallestNumber(n));
+            //Console.WriteLine(leetCodeAll.SmallestNumber(n));
 
             ////(3397.) Maximum Number of Distinct Elements After Operations (MEDIUM)
             //int[] nums = [1, 2, 2, 3, 3, 4];

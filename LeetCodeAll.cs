@@ -19404,8 +19404,12 @@ namespace ProblemSolving
 
             return result;
         }
+        public int FindDelayedArrivalTime(int arrivalTime, int delayedTime)
+        {
+            ////0ms, Beats: 100.00%
 
-
+            return (arrivalTime + delayedTime) % 24;
+        }
 
 
 
