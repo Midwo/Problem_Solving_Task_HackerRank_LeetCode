@@ -19498,8 +19498,20 @@ namespace ProblemSolving
 
             return count;
         }
+        public bool IsSubstringPresent(string s)
+        {
+            string sReverse = new string(s.Reverse().ToArray());
 
+            for (int i = 0; i < s.Length - 1; i++)
+            {
+                if (sReverse.Contains(s[i..(i + 2)]))
+                {
+                    return true;
+                }
+            }
 
+            return false;
+        }
 
 
 

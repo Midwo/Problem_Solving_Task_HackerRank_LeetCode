@@ -7049,15 +7049,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LongestSubarray(nums));
 
             ////(2427.) Number of Common Factors (EASY)
-            int a = 25;
-            int b = 30;
+            //int a = 25;
+            //int b = 30;
 
-            LeetCode_2427 classLeetCode = new LeetCode_2427();
-            Console.WriteLine(classLeetCode.CommonFactors(a, b));
+            //LeetCode_2427 classLeetCode = new LeetCode_2427();
+            //Console.WriteLine(classLeetCode.CommonFactors(a, b));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CommonFactors(a, b));
+            //Console.WriteLine(leetCodeAll.CommonFactors(a, b));
 
             ////(2428.) Maximum Sum of an Hourglass (MEDIUM)
             //int[][] grid = [[6, 2, 1, 3], [4, 2, 1, 5], [9, 2, 8, 7], [4, 1, 2, 9]];
@@ -7662,6 +7662,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinOperationsTask3065(nums, k));
+
+            ////(3083.) Existence of a Substring in a String and Its Reverse (EASY)
+            string s = "abcba";
+
+            LeetCode_3083 classLeetCode = new LeetCode_3083();
+            Console.WriteLine(classLeetCode.IsSubstringPresent(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsSubstringPresent(s));
 
             ////(3085). Minimum Deletions to Make String K-Special (MEDIUM)
             //string word = "gzpgogrg";
