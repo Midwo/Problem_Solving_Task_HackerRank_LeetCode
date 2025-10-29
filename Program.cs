@@ -7746,6 +7746,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
 
+            ////(3158.) Find the XOR of Numbers Which Appear Twice (EASY)
+            int[] nums = [1, 2, 2, 1];
+
+            LeetCode_3158 classLeetCode = new LeetCode_3158();
+            Console.WriteLine(classLeetCode.DuplicateNumbersXOR(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DuplicateNumbersXOR(nums));
+
             ////(3162.) Find the Number of Good Pairs I (EASY)
             //int[] nums1 = [1, 3, 4];
             //int[] nums2 = [1, 3, 4];
@@ -7860,15 +7870,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanAliceWin(nums));
 
             ////(3248.) Snake in Matrix (EASY)
-            int n = 3;
-            IList<string> commands = ["DOWN", "RIGHT", "UP"];
+            //int n = 3;
+            //IList<string> commands = ["DOWN", "RIGHT", "UP"];
 
-            LeetCode_3248 classLeetCode = new LeetCode_3248();
-            Console.WriteLine(classLeetCode.FinalPositionOfSnake(n, commands));
+            //LeetCode_3248 classLeetCode = new LeetCode_3248();
+            //Console.WriteLine(classLeetCode.FinalPositionOfSnake(n, commands));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FinalPositionOfSnake(n, commands));
+            //Console.WriteLine(leetCodeAll.FinalPositionOfSnake(n, commands));
 
             ////(3264.) Final Array State After K Multiplication Operations I (EASY)
             //int[] nums = [2, 1, 3, 5, 6];
