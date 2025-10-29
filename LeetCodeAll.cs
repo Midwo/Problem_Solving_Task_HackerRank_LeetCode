@@ -19475,6 +19475,30 @@ namespace ProblemSolving
 
             return resultXOR;
         }
+        public int CommonFactors(int a, int b)
+        {
+            ////0ms, Beats: 100.00%
+
+            int count = 0;
+
+            if (a > b)
+            {
+                int temp = b;
+                b = a;
+                a = temp;
+            }
+
+            for (int i = 1; i <= a; i++)
+            {
+                if (a % i == 0 & b % i == 0)
+                {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+
 
 
 

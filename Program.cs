@@ -7048,6 +7048,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.LongestSubarray(nums));
 
+            ////(2427.) Number of Common Factors (EASY)
+            int a = 25;
+            int b = 30;
+
+            LeetCode_2427 classLeetCode = new LeetCode_2427();
+            Console.WriteLine(classLeetCode.CommonFactors(a, b));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CommonFactors(a, b));
+
             ////(2428.) Maximum Sum of an Hourglass (MEDIUM)
             //int[][] grid = [[6, 2, 1, 3], [4, 2, 1, 5], [9, 2, 8, 7], [4, 1, 2, 9]];
 
@@ -7747,14 +7758,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsArraySpecial(nums));
 
             ////(3158.) Find the XOR of Numbers Which Appear Twice (EASY)
-            int[] nums = [1, 2, 2, 1];
+            //int[] nums = [1, 2, 2, 1];
 
-            LeetCode_3158 classLeetCode = new LeetCode_3158();
-            Console.WriteLine(classLeetCode.DuplicateNumbersXOR(nums));
+            //LeetCode_3158 classLeetCode = new LeetCode_3158();
+            //Console.WriteLine(classLeetCode.DuplicateNumbersXOR(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DuplicateNumbersXOR(nums));
+            //Console.WriteLine(leetCodeAll.DuplicateNumbersXOR(nums));
 
             ////(3162.) Find the Number of Good Pairs I (EASY)
             //int[] nums1 = [1, 3, 4];
