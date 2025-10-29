@@ -7520,14 +7520,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindIntersectionValues(nums1, nums2)));
 
             ////(2960.) Count Tested Devices After Test Operations (EASY)
-            int[] batteryPercentages = [1, 1, 2, 1, 3];
+            //int[] batteryPercentages = [1, 1, 2, 1, 3];
 
-            LeetCode_2960 classLeetCode = new LeetCode_2960();
-            Console.WriteLine(classLeetCode.CountTestedDevices(batteryPercentages));
+            //LeetCode_2960 classLeetCode = new LeetCode_2960();
+            //Console.WriteLine(classLeetCode.CountTestedDevices(batteryPercentages));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountTestedDevices(batteryPercentages));
+            //Console.WriteLine(leetCodeAll.CountTestedDevices(batteryPercentages));
 
             ////(2965.) Find Missing and Repeated Values (EASY)
             //int[][] grid = [[9, 1, 7], [8, 9, 2], [3, 4, 6]];
@@ -7858,6 +7858,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CanAliceWin(nums));
+
+            ////(3248.) Snake in Matrix (EASY)
+            int n = 3;
+            IList<string> commands = ["DOWN", "RIGHT", "UP"];
+
+            LeetCode_3248 classLeetCode = new LeetCode_3248();
+            Console.WriteLine(classLeetCode.FinalPositionOfSnake(n, commands));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FinalPositionOfSnake(n, commands));
 
             ////(3264.) Final Array State After K Multiplication Operations I (EASY)
             //int[] nums = [2, 1, 3, 5, 6];
