@@ -6440,14 +6440,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NextBeautifulNumber(n));
 
             ////(2057.) Smallest Index With Equal Value (EASY)
-            int[] nums = [4, 3, 2, 1];
+            //int[] nums = [4, 3, 2, 1];
 
-            LeetCode_2057 classLeetCode = new LeetCode_2057();
-            Console.WriteLine(classLeetCode.SmallestEqual(nums));
+            //LeetCode_2057 classLeetCode = new LeetCode_2057();
+            //Console.WriteLine(classLeetCode.SmallestEqual(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SmallestEqual(nums));
+            //Console.WriteLine(leetCodeAll.SmallestEqual(nums));
 
             ////(2079.) Watering Plants (MEDIUM)
             //int[] plants = [1, 1, 1, 4, 2, 3];
@@ -7973,6 +7973,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountValidSelections(nums));
+
+            ////(3370.) Smallest Number With All Set Bits (EASY)
+            int n = 10;
+
+            LeetCode_3370 classLeetCode = new LeetCode_3370();
+            Console.WriteLine(classLeetCode.SmallestNumber(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SmallestNumber(n));
 
             ////(3397.) Maximum Number of Distinct Elements After Operations (MEDIUM)
             //int[] nums = [1, 2, 2, 3, 3, 4];

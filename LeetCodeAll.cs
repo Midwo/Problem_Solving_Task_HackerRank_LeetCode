@@ -19389,8 +19389,21 @@ namespace ProblemSolving
             }
             return -1;
         }
+        public int SmallestNumber(int n)
+        {
+            ////0ms, Beats: 100.00%
 
+            //string nStringBits = Convert.ToString(n, 2);
+            int result = 0;
+            string nBits = Convert.ToString(n, 2);
 
+            for (int i = 0; i < nBits.Length; i++)
+            {
+                result += (int)Math.Pow(2, i);
+            }
+
+            return result;
+        }
 
 
 
