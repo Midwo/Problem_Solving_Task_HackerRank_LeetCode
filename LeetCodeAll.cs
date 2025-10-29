@@ -19410,8 +19410,21 @@ namespace ProblemSolving
 
             return (arrivalTime + delayedTime) % 24;
         }
+        public int CountTestedDevices(int[] batteryPercentages)
+        {
+            ////0ms, Beats: 100.00%
 
+            int countTestedDevices = 0;
 
+            for (int i = 0; i < batteryPercentages.Length; i++)
+            {
+                if (batteryPercentages[i] - countTestedDevices > 0)
+                {
+                    countTestedDevices++;
+                }
+            }
+            return countTestedDevices;
+        }
 
 
 

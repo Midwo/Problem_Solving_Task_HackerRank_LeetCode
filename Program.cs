@@ -7260,15 +7260,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
             ////(2651.) Calculate Delayed Arrival Time (EASY)
-            int arrivalTime = 15;
-            int delayedTime = 5; 
+            //int arrivalTime = 15;
+            //int delayedTime = 5; 
 
-            LeetCode_2651 classLeetCode = new LeetCode_2651();
-            Console.WriteLine(classLeetCode.FindDelayedArrivalTime(arrivalTime, delayedTime));
+            //LeetCode_2651 classLeetCode = new LeetCode_2651();
+            //Console.WriteLine(classLeetCode.FindDelayedArrivalTime(arrivalTime, delayedTime));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindDelayedArrivalTime(arrivalTime, delayedTime));
+            //Console.WriteLine(leetCodeAll.FindDelayedArrivalTime(arrivalTime, delayedTime));
 
             ////(2652.) Sum Multiples (EASY)
             //int n = 10;
@@ -7518,6 +7518,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindIntersectionValues(nums1, nums2)));
+
+            ////(2960.) Count Tested Devices After Test Operations (EASY)
+            int[] batteryPercentages = [1, 1, 2, 1, 3];
+
+            LeetCode_2960 classLeetCode = new LeetCode_2960();
+            Console.WriteLine(classLeetCode.CountTestedDevices(batteryPercentages));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountTestedDevices(batteryPercentages));
 
             ////(2965.) Find Missing and Repeated Values (EASY)
             //int[][] grid = [[9, 1, 7], [8, 9, 2], [3, 4, 6]];
