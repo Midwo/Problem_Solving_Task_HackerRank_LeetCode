@@ -7271,14 +7271,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
             ////(2643.) Row With Maximum Ones (EASY)
-            int[][] mat = [[0, 0], [1, 1], [0, 0]];
+            //int[][] mat = [[0, 0], [1, 1], [0, 0]];
 
-            LeetCode_2643 classLeetCode = new LeetCode_2643();
-            Console.WriteLine(string.Join(',', classLeetCode.RowAndMaximumOnes(mat)));
+            //LeetCode_2643 classLeetCode = new LeetCode_2643();
+            //Console.WriteLine(string.Join(',', classLeetCode.RowAndMaximumOnes(mat)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.RowAndMaximumOnes(mat)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.RowAndMaximumOnes(mat)));
 
             ////(2651.) Calculate Delayed Arrival Time (EASY)
             //int arrivalTime = 15;
@@ -7621,6 +7621,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxFrequencyElements(nums));
+
+            ////(3019.) Number of Changing Keys (EASY)
+            string s = "aAbBcC";
+
+            LeetCode_3019 classLeetCode = new LeetCode_3019();
+            Console.WriteLine(classLeetCode.CountKeyChanges(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountKeyChanges(s));
 
             ////(3021.) Alice and Bob Playing Flower Game (MEDIUM)
             //int n = 3;
