@@ -7270,6 +7270,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
+            ////(2643.) Row With Maximum Ones (EASY)
+            int[][] mat = [[0, 0], [1, 1], [0, 0]];
+
+            LeetCode_2643 classLeetCode = new LeetCode_2643();
+            Console.WriteLine(string.Join(',', classLeetCode.RowAndMaximumOnes(mat)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.RowAndMaximumOnes(mat)));
+
             ////(2651.) Calculate Delayed Arrival Time (EASY)
             //int arrivalTime = 15;
             //int delayedTime = 5; 
@@ -7664,14 +7674,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinOperationsTask3065(nums, k));
 
             ////(3083.) Existence of a Substring in a String and Its Reverse (EASY)
-            string s = "abcba";
+            //string s = "abcba";
 
-            LeetCode_3083 classLeetCode = new LeetCode_3083();
-            Console.WriteLine(classLeetCode.IsSubstringPresent(s));
+            //LeetCode_3083 classLeetCode = new LeetCode_3083();
+            //Console.WriteLine(classLeetCode.IsSubstringPresent(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsSubstringPresent(s));
+            //Console.WriteLine(leetCodeAll.IsSubstringPresent(s));
 
             ////(3085). Minimum Deletions to Make String K-Special (MEDIUM)
             //string word = "gzpgogrg";
