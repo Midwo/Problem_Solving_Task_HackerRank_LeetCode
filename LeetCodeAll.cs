@@ -19573,8 +19573,16 @@ namespace ProblemSolving
 
             return count;
         }
+        public int MinNumberOperations(int[] target)
+        {
+            int count = target[0];
+            for (int i = 1; i < target.Length; i++)
+            {
+                count += Math.Max(target[i] - target[i - 1], 0);
+            }
 
-
+            return count;
+        }
 
 
 

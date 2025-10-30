@@ -5381,6 +5381,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumWaterBottles(numBottles, numExchange));
 
+            ////(1526.) Minimum Number of Increments on Subarrays to Form a Target Array (HARD)
+            int[] target = [3, 1, 5, 4, 2];
+
+            LeetCode_1526 classLeetCode = new LeetCode_1526();
+            Console.WriteLine(classLeetCode.MinNumberOperations(target));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinNumberOperations(target));
+
             ////(1527.) Patients With a Condition (EASY)
             //string SqlQuery =
             //    @"
@@ -7623,14 +7633,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxFrequencyElements(nums));
 
             ////(3019.) Number of Changing Keys (EASY)
-            string s = "aAbBcC";
+            //string s = "aAbBcC";
 
-            LeetCode_3019 classLeetCode = new LeetCode_3019();
-            Console.WriteLine(classLeetCode.CountKeyChanges(s));
+            //LeetCode_3019 classLeetCode = new LeetCode_3019();
+            //Console.WriteLine(classLeetCode.CountKeyChanges(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountKeyChanges(s));
+            //Console.WriteLine(leetCodeAll.CountKeyChanges(s));
 
             ////(3021.) Alice and Bob Playing Flower Game (MEDIUM)
             //int n = 3;
