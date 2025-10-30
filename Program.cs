@@ -4717,6 +4717,16 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', item));
             //}
 
+            ////(1287.) Element Appearing More Than 25% In Sorted Array (EASY)
+            int[] arr = arr = [1, 2, 2, 6, 6, 6, 6, 7, 10];
+
+            LeetCode_1287 classLeetCode = new LeetCode_1287();
+            Console.WriteLine(classLeetCode.FindSpecialInteger(arr));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindSpecialInteger(arr));
+
             ////(1290.) Convert Binary Number in a Linked List to Integer (EASY)
             //ListNode head = new ListNode(1);
             //head.next = new ListNode(0);
@@ -7249,17 +7259,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
 
-            ////(2586.) Count the Number of Vowel Strings in Range (EASY)
-            string[] words = ["hey", "aeo", "mu", "ooo", "artro"];
-            int left = 1;
-            int right = 4;
+            //////(2586.) Count the Number of Vowel Strings in Range (EASY)
+            //string[] words = ["hey", "aeo", "mu", "ooo", "artro"];
+            //int left = 1;
+            //int right = 4;
 
-            LeetCode_2586 classLeetCode = new LeetCode_2586();
-            Console.WriteLine(classLeetCode.VowelStrings(words, left, right));
+            //LeetCode_2586 classLeetCode = new LeetCode_2586();
+            //Console.WriteLine(classLeetCode.VowelStrings(words, left, right));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.VowelStrings(words, left, right));
+            //Console.WriteLine(leetCodeAll.VowelStrings(words, left, right));
 
             ////(2610.) Convert an Array Into a 2D Array With Conditions (MEDIUM)
             //int[] nums = [1, 3, 4, 1, 2, 3, 1];

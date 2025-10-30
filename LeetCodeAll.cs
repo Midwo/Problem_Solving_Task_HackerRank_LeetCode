@@ -19601,8 +19601,21 @@ namespace ProblemSolving
 
             return count;
         }
+        public int FindSpecialInteger(int[] arr)
+        {
+            int lenght = arr.Length;
+            int size = lenght / 4;
 
+            for (int i = 0; i < lenght - size; i++)
+            {
+                if (arr[i] == arr[i + size])
+                {
+                    return arr[i];
+                }
+            }
 
+            return -1;
+        }
 
 
 
