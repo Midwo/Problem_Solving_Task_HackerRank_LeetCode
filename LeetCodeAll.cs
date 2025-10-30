@@ -19616,8 +19616,27 @@ namespace ProblemSolving
 
             return -1;
         }
+        public string GetEncryptedString(string s, int k)
+        {
+            int length = s.Length;
+            k = k % length;
 
+            StringBuilder sb = new StringBuilder();
+            int index = 0;
+            int currIndexS = k;
 
+            while (index < length)
+            {
+                if (currIndexS == length)
+                {
+                    currIndexS = 0;
+                }
+                sb.Append(s[currIndexS++]);
+                index++;
+            }
+
+            return new string(sb.ToString());
+        }
 
 
 

@@ -4718,14 +4718,14 @@ namespace ProblemSolving
             //}
 
             ////(1287.) Element Appearing More Than 25% In Sorted Array (EASY)
-            int[] arr = arr = [1, 2, 2, 6, 6, 6, 6, 7, 10];
+            //int[] arr = arr = [1, 2, 2, 6, 6, 6, 6, 7, 10];
 
-            LeetCode_1287 classLeetCode = new LeetCode_1287();
-            Console.WriteLine(classLeetCode.FindSpecialInteger(arr));
+            //LeetCode_1287 classLeetCode = new LeetCode_1287();
+            //Console.WriteLine(classLeetCode.FindSpecialInteger(arr));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindSpecialInteger(arr));
+            //Console.WriteLine(leetCodeAll.FindSpecialInteger(arr));
 
             ////(1290.) Convert Binary Number in a Linked List to Integer (EASY)
             //ListNode head = new ListNode(1);
@@ -7911,6 +7911,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumLength(nums, k));
+
+            ////(3210.) Find the Encrypted String (EASY)
+            string s = "dart";
+            int k = 3;
+
+            LeetCode_3210 classLeetCode = new LeetCode_3210();
+            Console.WriteLine(classLeetCode.GetEncryptedString(s, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GetEncryptedString(s, k));
 
             ////(3211.) Generate Binary Strings Without Adjacent Zeros (MEDIUM)
             //int n = 3;
