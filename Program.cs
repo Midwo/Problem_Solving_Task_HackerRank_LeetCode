@@ -5382,14 +5382,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumWaterBottles(numBottles, numExchange));
 
             ////(1526.) Minimum Number of Increments on Subarrays to Form a Target Array (HARD)
-            int[] target = [3, 1, 5, 4, 2];
+            //int[] target = [3, 1, 5, 4, 2];
 
-            LeetCode_1526 classLeetCode = new LeetCode_1526();
-            Console.WriteLine(classLeetCode.MinNumberOperations(target));
+            //LeetCode_1526 classLeetCode = new LeetCode_1526();
+            //Console.WriteLine(classLeetCode.MinNumberOperations(target));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinNumberOperations(target));
+            //Console.WriteLine(leetCodeAll.MinNumberOperations(target));
 
             ////(1527.) Patients With a Condition (EASY)
             //string SqlQuery =
@@ -7248,6 +7248,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
+
+            ////(2586.) Count the Number of Vowel Strings in Range (EASY)
+            string[] words = ["hey", "aeo", "mu", "ooo", "artro"];
+            int left = 1;
+            int right = 4;
+
+            LeetCode_2586 classLeetCode = new LeetCode_2586();
+            Console.WriteLine(classLeetCode.VowelStrings(words, left, right));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.VowelStrings(words, left, right));
 
             ////(2610.) Convert an Array Into a 2D Array With Conditions (MEDIUM)
             //int[] nums = [1, 3, 4, 1, 2, 3, 1];
