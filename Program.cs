@@ -3350,14 +3350,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BackspaceCompare(s, t));
 
             ////(852.) Peak Index in a Mountain Array (MEDIUM)
-            int[] arr = [0, 10, 5, 2];
+            //int[] arr = [0, 10, 5, 2];
 
-            LeetCode_852 classLeetCode = new LeetCode_852();
-            Console.WriteLine(classLeetCode.PeakIndexInMountainArray(arr));
+            //LeetCode_852 classLeetCode = new LeetCode_852();
+            //Console.WriteLine(classLeetCode.PeakIndexInMountainArray(arr));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PeakIndexInMountainArray(arr));
+            //Console.WriteLine(leetCodeAll.PeakIndexInMountainArray(arr));
 
             ////(859.) Buddy Strings (EASY)
             //string s = "ab";
@@ -7222,6 +7222,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DifferenceOfSum(nums));
+
+            ////(2544.) Alternating Digit Sum (EASY)
+            int n = 521;
+
+            LeetCode_2544 classLeetCode = new LeetCode_2544();
+            Console.WriteLine(classLeetCode.AlternateDigitSum(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AlternateDigitSum(n));
 
             ////(2545.) Sort the Students by Their Kth Score (MEDIUM)
             //int[][] score = [[10, 6, 9, 1], [7, 5, 11, 2], [4, 8, 3, 15]];
