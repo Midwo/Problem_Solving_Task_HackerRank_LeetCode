@@ -5151,21 +5151,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDiff(num));
 
             ////(1441.) Build an Array With Stack Operations (MEDIUM)
-            int[] target = [1];
-            int n = 2;
+            //int[] target = [1];
+            //int n = 2;
 
-            LeetCode_1441 classLeetCode = new LeetCode_1441();
-            foreach (var item in classLeetCode.BuildArray(target, n))
-            {
-                Console.WriteLine(item);
-            }
+            //LeetCode_1441 classLeetCode = new LeetCode_1441();
+            //foreach (var item in classLeetCode.BuildArray(target, n))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.BuildArray(target, n))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in leetCodeAll.BuildArray(target, n))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             ////(1442.) Count Triplets That Can Form Two Arrays of Equal XOR (MEDIUM)
             //int[] arr = [2, 3, 1, 6, 7];
@@ -7710,6 +7710,22 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ReturnToBoundaryCount(nums));
+
+            ////(3033.) Modify the Matrix (EASY)
+            int[][] matrix = [[1, 2, -1], [4, -1, 6], [7, 8, 9]];
+
+            LeetCode_3033 classLeetCode = new LeetCode_3033();
+            foreach (var item in classLeetCode.ModifiedMatrix(matrix))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.ModifiedMatrix(matrix))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             ////(3042.) Count Prefix and Suffix Pairs I (EASY)
             //string[] words = ["a", "aba", "ababa", "aa"];
