@@ -5150,6 +5150,23 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxDiff(num));
 
+            ////(1441.) Build an Array With Stack Operations (MEDIUM)
+            int[] target = [1];
+            int n = 2;
+
+            LeetCode_1441 classLeetCode = new LeetCode_1441();
+            foreach (var item in classLeetCode.BuildArray(target, n))
+            {
+                Console.WriteLine(item);
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.BuildArray(target, n))
+            {
+                Console.WriteLine(item);
+            }
+
             ////(1442.) Count Triplets That Can Form Two Arrays of Equal XOR (MEDIUM)
             //int[] arr = [2, 3, 1, 6, 7];
 
@@ -7913,15 +7930,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumLength(nums, k));
 
             ////(3210.) Find the Encrypted String (EASY)
-            string s = "dart";
-            int k = 3;
+            //string s = "dart";
+            //int k = 3;
 
-            LeetCode_3210 classLeetCode = new LeetCode_3210();
-            Console.WriteLine(classLeetCode.GetEncryptedString(s, k));
+            //LeetCode_3210 classLeetCode = new LeetCode_3210();
+            //Console.WriteLine(classLeetCode.GetEncryptedString(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GetEncryptedString(s, k));
+            //Console.WriteLine(leetCodeAll.GetEncryptedString(s, k));
 
             ////(3211.) Generate Binary Strings Without Adjacent Zeros (MEDIUM)
             //int n = 3;
