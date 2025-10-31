@@ -3349,6 +3349,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.BackspaceCompare(s, t));
 
+            ////(852.) Peak Index in a Mountain Array (MEDIUM)
+            int[] arr = [0, 10, 5, 2];
+
+            LeetCode_852 classLeetCode = new LeetCode_852();
+            Console.WriteLine(classLeetCode.PeakIndexInMountainArray(arr));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.PeakIndexInMountainArray(arr));
+
             ////(859.) Buddy Strings (EASY)
             //string s = "ab";
             //string goal = "ab";
@@ -7712,20 +7722,20 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReturnToBoundaryCount(nums));
 
             ////(3033.) Modify the Matrix (EASY)
-            int[][] matrix = [[1, 2, -1], [4, -1, 6], [7, 8, 9]];
+            //int[][] matrix = [[1, 2, -1], [4, -1, 6], [7, 8, 9]];
 
-            LeetCode_3033 classLeetCode = new LeetCode_3033();
-            foreach (var item in classLeetCode.ModifiedMatrix(matrix))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //LeetCode_3033 classLeetCode = new LeetCode_3033();
+            //foreach (var item in classLeetCode.ModifiedMatrix(matrix))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.ModifiedMatrix(matrix))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.ModifiedMatrix(matrix))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(3042.) Count Prefix and Suffix Pairs I (EASY)
             //string[] words = ["a", "aba", "ababa", "aa"];
