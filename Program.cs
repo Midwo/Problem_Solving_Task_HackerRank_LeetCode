@@ -7224,14 +7224,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DifferenceOfSum(nums));
 
             ////(2544.) Alternating Digit Sum (EASY)
-            int n = 521;
+            //int n = 521;
 
-            LeetCode_2544 classLeetCode = new LeetCode_2544();
-            Console.WriteLine(classLeetCode.AlternateDigitSum(n));
+            //LeetCode_2544 classLeetCode = new LeetCode_2544();
+            //Console.WriteLine(classLeetCode.AlternateDigitSum(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.AlternateDigitSum(n));
+            //Console.WriteLine(leetCodeAll.AlternateDigitSum(n));
 
             ////(2545.) Sort the Students by Their Kth Score (MEDIUM)
             //int[][] score = [[10, 6, 9, 1], [7, 5, 11, 2], [4, 8, 3, 15]];
@@ -7985,6 +7985,36 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ValidStrings(n)));
+
+            ////(3217.) Delete Nodes From Linked List Present in Array (MEDIUM)
+            int[] nums = [1,2,3];
+            ListNode head = new ListNode(1);
+            head.next = new ListNode(2);
+            head.next.next = new ListNode(3);
+            head.next.next.next = new ListNode(4);
+            head.next.next.next.next = new ListNode(5);
+            head.next.next.next.next.next = new ListNode(1);
+            head.next.next.next.next.next.next = new ListNode(13);
+
+            LeetCode_3217 classLeetCode = new LeetCode_3217();
+            ListNode result = classLeetCode.ModifiedList(nums, head);
+
+            while(result != null)
+            {
+                Console.WriteLine(result.val);
+                result = result.next;
+            }
+
+            //OR
+
+            ListNode result1 = leetCodeAll.ModifiedList(nums, head);
+
+            while (result1 != null)
+            {
+                Console.WriteLine(result1.val);
+                result1 = result1.next;
+            }
+
 
             ////(3227.) Vowels Game in a String (MEDIUM)
             //string s = "bbcd";
