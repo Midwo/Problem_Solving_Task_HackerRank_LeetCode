@@ -6826,6 +6826,19 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CheckTree(root));
 
+            ////(2257.) Count Unguarded Cells in the Grid (MEDIUM)
+            int m = 4;
+            int n = 6;
+            int[][] guards = [[0, 0], [1, 1], [2, 3]];
+            int[][] walls = [[0, 1], [2, 2], [1, 4]];
+
+            LeetCode_2257 classLeetCode = new LeetCode_2257();
+            Console.WriteLine(classLeetCode.CountUnguarded(m, n, guards, walls));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountUnguarded(m, n, guards, walls));
+
             ////(2264.) Largest 3-Same-Digit Number in String (EASY)
             //string num = "42352338";
 
@@ -7987,34 +8000,33 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.ValidStrings(n)));
 
             ////(3217.) Delete Nodes From Linked List Present in Array (MEDIUM)
-            int[] nums = [1,2,3];
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(2);
-            head.next.next = new ListNode(3);
-            head.next.next.next = new ListNode(4);
-            head.next.next.next.next = new ListNode(5);
-            head.next.next.next.next.next = new ListNode(1);
-            head.next.next.next.next.next.next = new ListNode(13);
+            //int[] nums = [1,2,3];
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(2);
+            //head.next.next = new ListNode(3);
+            //head.next.next.next = new ListNode(4);
+            //head.next.next.next.next = new ListNode(5);
+            //head.next.next.next.next.next = new ListNode(1);
+            //head.next.next.next.next.next.next = new ListNode(13);
 
-            LeetCode_3217 classLeetCode = new LeetCode_3217();
-            ListNode result = classLeetCode.ModifiedList(nums, head);
+            //LeetCode_3217 classLeetCode = new LeetCode_3217();
+            //ListNode result = classLeetCode.ModifiedList(nums, head);
 
-            while(result != null)
-            {
-                Console.WriteLine(result.val);
-                result = result.next;
-            }
+            //while(result != null)
+            //{
+            //    Console.WriteLine(result.val);
+            //    result = result.next;
+            //}
 
-            //OR
+            ////OR
 
-            ListNode result1 = leetCodeAll.ModifiedList(nums, head);
+            //ListNode result1 = leetCodeAll.ModifiedList(nums, head);
 
-            while (result1 != null)
-            {
-                Console.WriteLine(result1.val);
-                result1 = result1.next;
-            }
-
+            //while (result1 != null)
+            //{
+            //    Console.WriteLine(result1.val);
+            //    result1 = result1.next;
+            //}
 
             ////(3227.) Vowels Game in a String (MEDIUM)
             //string s = "bbcd";
