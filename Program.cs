@@ -5506,6 +5506,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.DiagonalSum(mat));
 
+            ////(1578.) Minimum Time to Make Rope Colorful (MEDIUM)
+            string colors = "aabaa";
+            int[] neededTime = [1, 2, 3, 4, 1];
+
+            LeetCode_1578 classLeetCode = new LeetCode_1578();
+            Console.WriteLine(classLeetCode.MinCost(colors, neededTime));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinCost(colors, neededTime));
+
+
             ////(1581.) Customer Who Visited but Did Not Make Any Transactions (EASY)
             //string SqlQuery =
             //    @"
@@ -6827,17 +6839,17 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckTree(root));
 
             ////(2257.) Count Unguarded Cells in the Grid (MEDIUM)
-            int m = 4;
-            int n = 6;
-            int[][] guards = [[0, 0], [1, 1], [2, 3]];
-            int[][] walls = [[0, 1], [2, 2], [1, 4]];
+            //int m = 4;
+            //int n = 6;
+            //int[][] guards = [[0, 0], [1, 1], [2, 3]];
+            //int[][] walls = [[0, 1], [2, 2], [1, 4]];
 
-            LeetCode_2257 classLeetCode = new LeetCode_2257();
-            Console.WriteLine(classLeetCode.CountUnguarded(m, n, guards, walls));
+            //LeetCode_2257 classLeetCode = new LeetCode_2257();
+            //Console.WriteLine(classLeetCode.CountUnguarded(m, n, guards, walls));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountUnguarded(m, n, guards, walls));
+            //Console.WriteLine(leetCodeAll.CountUnguarded(m, n, guards, walls));
 
             ////(2264.) Largest 3-Same-Digit Number in String (EASY)
             //string num = "42352338";
