@@ -5507,16 +5507,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DiagonalSum(mat));
 
             ////(1578.) Minimum Time to Make Rope Colorful (MEDIUM)
-            string colors = "aabaa";
-            int[] neededTime = [1, 2, 3, 4, 1];
+            //string colors = "aabaa";
+            //int[] neededTime = [1, 2, 3, 4, 1];
 
-            LeetCode_1578 classLeetCode = new LeetCode_1578();
-            Console.WriteLine(classLeetCode.MinCost(colors, neededTime));
+            //LeetCode_1578 classLeetCode = new LeetCode_1578();
+            //Console.WriteLine(classLeetCode.MinCost(colors, neededTime));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinCost(colors, neededTime));
-
+            //Console.WriteLine(leetCodeAll.MinCost(colors, neededTime));
 
             ////(1581.) Customer Who Visited but Did Not Make Any Transactions (EASY)
             //string SqlQuery =
@@ -8155,6 +8154,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.KthCharacter(k));
+
+            ////(3318.) Find X-Sum of All K-Long Subarrays I (EASY)
+            int[] nums = [1, 1, 2, 2, 3, 4, 2, 3];
+            int k = 6;
+            int x = 2;
+
+            LeetCode_3318 classLeetcode = new LeetCode_3318();
+            Console.WriteLine(string.Join(',',classLeetcode.FindXSum(nums, k, x)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindXSum(nums, k, x)));
 
             ////(3330.) Find the Original Typed String I (EASY)
             //string word = "abbcccc";
