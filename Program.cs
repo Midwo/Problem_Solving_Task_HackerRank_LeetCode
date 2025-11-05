@@ -6381,6 +6381,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1978 classLeetCode = new LeetCode_1978();
 
+            ////(1979.) Find Greatest Common Divisor of Array (EASY)
+            int[] nums = [2, 5, 6, 9, 10];
+
+            LeetCode_1979 classLeetCode = new LeetCode_1979();
+            Console.WriteLine(classLeetCode.FindGCD(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindGCD(nums));
+
             ////(2000.) Reverse Prefix of Word (EASY)
             //string word = "abcdefd";
             //char ch = 'd';
@@ -8156,16 +8166,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.KthCharacter(k));
 
             ////(3318.) Find X-Sum of All K-Long Subarrays I (EASY)
-            int[] nums = [1, 1, 2, 2, 3, 4, 2, 3];
-            int k = 6;
-            int x = 2;
+            //int[] nums = [1, 1, 2, 2, 3, 4, 2, 3];
+            //int k = 6;
+            //int x = 2;
 
-            LeetCode_3318 classLeetcode = new LeetCode_3318();
-            Console.WriteLine(string.Join(',',classLeetcode.FindXSum(nums, k, x)));
+            //LeetCode_3318 classLeetcode = new LeetCode_3318();
+            //Console.WriteLine(string.Join(',',classLeetcode.FindXSum(nums, k, x)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindXSum(nums, k, x)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindXSum(nums, k, x)));
 
             ////(3330.) Find the Original Typed String I (EASY)
             //string word = "abbcccc";
