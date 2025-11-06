@@ -6382,14 +6382,14 @@ namespace ProblemSolving
             //LeetCode_1978 classLeetCode = new LeetCode_1978();
 
             ////(1979.) Find Greatest Common Divisor of Array (EASY)
-            int[] nums = [2, 5, 6, 9, 10];
+            //int[] nums = [2, 5, 6, 9, 10];
 
-            LeetCode_1979 classLeetCode = new LeetCode_1979();
-            Console.WriteLine(classLeetCode.FindGCD(nums));
+            //LeetCode_1979 classLeetCode = new LeetCode_1979();
+            //Console.WriteLine(classLeetCode.FindGCD(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindGCD(nums));
+            //Console.WriteLine(leetCodeAll.FindGCD(nums));
 
             ////(2000.) Reverse Prefix of Word (EASY)
             //string word = "abcdefd";
@@ -6962,6 +6962,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.PeopleAwareOfSecret(n, delay, forget));
+
+            ////(2341.) Maximum Number of Pairs in Array (EASY)
+            int[] nums = [1, 3, 2, 1, 3, 2, 2];
+
+            LeetCode_2341 classLeetCode = new LeetCode_2341();
+            Console.WriteLine(string.Join(',',classLeetCode.NumberOfPairs(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.NumberOfPairs(nums)));
 
             ////(2348.) Number of Zero-Filled Subarrays (MEDIUM)
             //int[] nums = [0, 0, 0, 2, 0, 0];
