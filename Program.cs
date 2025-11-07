@@ -6964,14 +6964,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PeopleAwareOfSecret(n, delay, forget));
 
             ////(2341.) Maximum Number of Pairs in Array (EASY)
-            int[] nums = [1, 3, 2, 1, 3, 2, 2];
+            //int[] nums = [1, 3, 2, 1, 3, 2, 2];
 
-            LeetCode_2341 classLeetCode = new LeetCode_2341();
-            Console.WriteLine(string.Join(',',classLeetCode.NumberOfPairs(nums)));
+            //LeetCode_2341 classLeetCode = new LeetCode_2341();
+            //Console.WriteLine(string.Join(',',classLeetCode.NumberOfPairs(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.NumberOfPairs(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.NumberOfPairs(nums)));
 
             ////(2348.) Number of Zero-Filled Subarrays (MEDIUM)
             //int[] nums = [0, 0, 0, 2, 0, 0];
@@ -8524,6 +8524,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinOperations(nums, k));
+
+            ////(3612.) Process String with Special Operations I (MEDIUM)
+            string s = "a#b%*";
+
+            LeetCode_3612 classLeetCode = new LeetCode_3612();
+            Console.WriteLine(classLeetCode.ProcessStr(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ProcessStr(s));
 
             ////(3622.) Check Divisibility by Digit Sum and Product (EASY)
             //int n = 99;
