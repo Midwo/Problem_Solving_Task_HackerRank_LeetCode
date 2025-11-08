@@ -6218,6 +6218,18 @@ namespace ProblemSolving
             //leetCodeTask.Add(1, 1);
             //Console.WriteLine(leetCodeTask.Count(7));
 
+            ////(1880.) Check if Word Equals Summation of Two Words (EASY)
+            string firstWord = "acb";
+            string secondWord = "cba";
+            string targetWord = "cdb";
+
+            LeetCode_1880 classLeetCode = new LeetCode_1880();
+            Console.WriteLine(classLeetCode.IsSumEqual(firstWord, secondWord, targetWord));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsSumEqual(firstWord, secondWord, targetWord));
+
             ////(1890.) The Latest Login in 2020 (EASY)
             //string SqlQuery =
             //    @"
@@ -8526,14 +8538,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinOperations(nums, k));
 
             ////(3612.) Process String with Special Operations I (MEDIUM)
-            string s = "a#b%*";
+            //string s = "a#b%*";
 
-            LeetCode_3612 classLeetCode = new LeetCode_3612();
-            Console.WriteLine(classLeetCode.ProcessStr(s));
+            //LeetCode_3612 classLeetCode = new LeetCode_3612();
+            //Console.WriteLine(classLeetCode.ProcessStr(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ProcessStr(s));
+            //Console.WriteLine(leetCodeAll.ProcessStr(s));
 
             ////(3622.) Check Divisibility by Digit Sum and Product (EASY)
             //int n = 99;
