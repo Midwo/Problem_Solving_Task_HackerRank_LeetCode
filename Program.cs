@@ -6219,16 +6219,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeTask.Count(7));
 
             ////(1880.) Check if Word Equals Summation of Two Words (EASY)
-            string firstWord = "acb";
-            string secondWord = "cba";
-            string targetWord = "cdb";
+            //string firstWord = "acb";
+            //string secondWord = "cba";
+            //string targetWord = "cdb";
 
-            LeetCode_1880 classLeetCode = new LeetCode_1880();
-            Console.WriteLine(classLeetCode.IsSumEqual(firstWord, secondWord, targetWord));
+            //LeetCode_1880 classLeetCode = new LeetCode_1880();
+            //Console.WriteLine(classLeetCode.IsSumEqual(firstWord, secondWord, targetWord));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsSumEqual(firstWord, secondWord, targetWord));
+            //Console.WriteLine(leetCodeAll.IsSumEqual(firstWord, secondWord, targetWord));
 
             ////(1890.) The Latest Login in 2020 (EASY)
             //string SqlQuery =
@@ -6700,6 +6700,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.PivotArray(nums, pivot)));
+
+            ////(2169.) Count Operations to Obtain Zero (EASY)
+            int num1 = 2;
+            int num2 = 3;
+
+            LeetCode_2169 classLeetCode = new LeetCode_2169();
+            Console.WriteLine(classLeetCode.CountOperations(num1, num2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountOperations(num1, num2));
 
             ////(2176.) Count Equal and Divisible Pairs in an Array (EASY)
             //int[] nums = [3, 1, 2, 2, 2, 1, 3];
