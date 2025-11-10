@@ -7665,6 +7665,22 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindWordsContaining(words, x)));
 
+            ////(2951.) Find the Peaks (EASY)
+            int[] mountain = [1, 4, 3, 8, 5];
+
+            LeetCode_2951 classLeetCode = new LeetCode_2951();
+            foreach (var item in classLeetCode.FindPeaks(mountain))
+            {
+                Console.WriteLine(item);
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.FindPeaks(mountain))
+            {
+                Console.WriteLine(item);
+            }
+
             ////(2956.) Find Common Elements Between Two Arrays (EASY)
             //int[] nums1 = [4, 3, 2, 3, 1]; 
             //int[] nums2 = [2, 2, 5, 2, 3, 6];
@@ -8549,14 +8565,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxFreqSum(s));
 
             ////(3542.) Minimum Operations to Convert All Elements to Zero (MEDIUM)
-            int[] nums = [5, 3, 3];
+            //int[] nums = [5, 3, 3];
 
-            LeetCode_3542 classLeetCode = new LeetCode_3542();
-            Console.WriteLine(classLeetCode.MinOperations(nums));
+            //LeetCode_3542 classLeetCode = new LeetCode_3542();
+            //Console.WriteLine(classLeetCode.MinOperations(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperations(nums));
+            //Console.WriteLine(leetCodeAll.MinOperations(nums));
 
             ////(3612.) Process String with Special Operations I (MEDIUM)
             //string s = "a#b%*";
