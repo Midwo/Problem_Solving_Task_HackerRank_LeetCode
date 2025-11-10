@@ -3825,6 +3825,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.UniquePathsIII(grid));
 
+            ////(985.) Sum of Even Numbers After Queries (MEDIUM)
+            int[] nums = [1, 2, 3, 4];
+            int[][] queries = [[1, 0], [-3, 1], [-4, 0], [2, 3]];
+
+            LeetCode_985 classLeetCode = new LeetCode_985();
+            Console.WriteLine(string.Join(',', classLeetCode.SumEvenAfterQueries(nums, queries)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SumEvenAfterQueries(nums, queries)));
+
             ////(989.) Add to Array-Form of Integer (EASY)
             //int[] num = [1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 0, 6, 3];
             //int k = 516;
@@ -7666,20 +7677,20 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindWordsContaining(words, x)));
 
             ////(2951.) Find the Peaks (EASY)
-            int[] mountain = [1, 4, 3, 8, 5];
+            //int[] mountain = [1, 4, 3, 8, 5];
 
-            LeetCode_2951 classLeetCode = new LeetCode_2951();
-            foreach (var item in classLeetCode.FindPeaks(mountain))
-            {
-                Console.WriteLine(item);
-            }
+            //LeetCode_2951 classLeetCode = new LeetCode_2951();
+            //foreach (var item in classLeetCode.FindPeaks(mountain))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.FindPeaks(mountain))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in leetCodeAll.FindPeaks(mountain))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             ////(2956.) Find Common Elements Between Two Arrays (EASY)
             //int[] nums1 = [4, 3, 2, 3, 1]; 
