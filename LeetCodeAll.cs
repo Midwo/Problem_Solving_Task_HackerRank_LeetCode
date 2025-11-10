@@ -20330,8 +20330,31 @@ namespace ProblemSolving
 
             return count;
         }
+        public int MinOperations(int[] nums)
+        {
+            int countOperation = 0;
+            List<int> listFromNums = new List<int>();
 
+            foreach (int num in nums)
+            {
+                while (listFromNums.Count > 0 && num < listFromNums[listFromNums.Count - 1])
+                {
+                    listFromNums.RemoveAt(listFromNums.Count - 1);
+                }
 
+                if (num == 0)
+                {
+                    continue;
+                }
+
+                else if (listFromNums.Count == 0 || listFromNums[listFromNums.Count - 1] < num)
+                {
+                    countOperation++;
+                    listFromNums.Add(num);
+                }
+            }
+            return countOperation;
+        }
 
 
 

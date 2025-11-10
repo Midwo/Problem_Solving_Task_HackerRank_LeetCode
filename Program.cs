@@ -6702,15 +6702,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.PivotArray(nums, pivot)));
 
             ////(2169.) Count Operations to Obtain Zero (EASY)
-            int num1 = 2;
-            int num2 = 3;
+            //int num1 = 2;
+            //int num2 = 3;
 
-            LeetCode_2169 classLeetCode = new LeetCode_2169();
-            Console.WriteLine(classLeetCode.CountOperations(num1, num2));
+            //LeetCode_2169 classLeetCode = new LeetCode_2169();
+            //Console.WriteLine(classLeetCode.CountOperations(num1, num2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountOperations(num1, num2));
+            //Console.WriteLine(leetCodeAll.CountOperations(num1, num2));
 
             ////(2176.) Count Equal and Divisible Pairs in an Array (EASY)
             //int[] nums = [3, 1, 2, 2, 2, 1, 3];
@@ -8495,28 +8495,6 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinTime(skill, mana));
 
-            ////(3516.) Find Closest Person (EASY)
-            //int x = 2;
-            //int y = 7;
-            //int z = 4;
-
-            //LeetCode_3516 classLeetCode = new LeetCode_3516();
-            //Console.WriteLine(classLeetCode.FindClosest(x, y, z));
-
-            ////OR
-
-            //Console.WriteLine(leetCodeAll.FindClosest(x, y, z));
-
-            ////(3541.) Find Most Frequent Vowel and Consonant (EASY)
-            //string s = "cz";
-
-            //LeetCode_3541 classLeetCode = new LeetCode_3541();
-            //Console.WriteLine(classLeetCode.MaxFreqSum(s));
-
-            ////OR
-
-            //Console.WriteLine(leetCodeAll.MaxFreqSum(s));
-
             ////(3498.) Reverse Degree of a String (EASY)
             //string s = "abc";
 
@@ -8547,6 +8525,38 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinOperations(nums, k));
+
+            ////(3516.) Find Closest Person (EASY)
+            //int x = 2;
+            //int y = 7;
+            //int z = 4;
+
+            //LeetCode_3516 classLeetCode = new LeetCode_3516();
+            //Console.WriteLine(classLeetCode.FindClosest(x, y, z));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.FindClosest(x, y, z));
+
+            ////(3541.) Find Most Frequent Vowel and Consonant (EASY)
+            //string s = "cz";
+
+            //LeetCode_3541 classLeetCode = new LeetCode_3541();
+            //Console.WriteLine(classLeetCode.MaxFreqSum(s));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaxFreqSum(s));
+
+            ////(3542.) Minimum Operations to Convert All Elements to Zero (MEDIUM)
+            int[] nums = [5, 3, 3];
+
+            LeetCode_3542 classLeetCode = new LeetCode_3542();
+            Console.WriteLine(classLeetCode.MinOperations(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperations(nums));
 
             ////(3612.) Process String with Special Operations I (MEDIUM)
             //string s = "a#b%*";
