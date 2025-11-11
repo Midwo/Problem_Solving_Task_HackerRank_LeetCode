@@ -3826,15 +3826,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.UniquePathsIII(grid));
 
             ////(985.) Sum of Even Numbers After Queries (MEDIUM)
-            int[] nums = [1, 2, 3, 4];
-            int[][] queries = [[1, 0], [-3, 1], [-4, 0], [2, 3]];
+            //int[] nums = [1, 2, 3, 4];
+            //int[][] queries = [[1, 0], [-3, 1], [-4, 0], [2, 3]];
 
-            LeetCode_985 classLeetCode = new LeetCode_985();
-            Console.WriteLine(string.Join(',', classLeetCode.SumEvenAfterQueries(nums, queries)));
+            //LeetCode_985 classLeetCode = new LeetCode_985();
+            //Console.WriteLine(string.Join(',', classLeetCode.SumEvenAfterQueries(nums, queries)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SumEvenAfterQueries(nums, queries)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.SumEvenAfterQueries(nums, queries)));
 
             ////(989.) Add to Array-Form of Integer (EASY)
             //int[] num = [1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 0, 6, 3];
@@ -5170,6 +5170,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxDiff(num));
+
+            ////(1436.) Destination City (EASY)
+            IList<IList<string>> paths = [["London", "New York"], ["New York", "Lima"], ["Lima", "Sao Paulo"]];
+
+            LeetCode_1436 classLeetCode = new LeetCode_1436();
+            Console.WriteLine(classLeetCode.DestCity(paths));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DestCity(paths));
 
             ////(1441.) Build an Array With Stack Operations (MEDIUM)
             //int[] target = [1];
