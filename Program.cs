@@ -5172,14 +5172,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDiff(num));
 
             ////(1436.) Destination City (EASY)
-            IList<IList<string>> paths = [["London", "New York"], ["New York", "Lima"], ["Lima", "Sao Paulo"]];
+            //IList<IList<string>> paths = [["London", "New York"], ["New York", "Lima"], ["Lima", "Sao Paulo"]];
 
-            LeetCode_1436 classLeetCode = new LeetCode_1436();
-            Console.WriteLine(classLeetCode.DestCity(paths));
+            //LeetCode_1436 classLeetCode = new LeetCode_1436();
+            //Console.WriteLine(classLeetCode.DestCity(paths));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DestCity(paths));
+            //Console.WriteLine(leetCodeAll.DestCity(paths));
 
             ////(1441.) Build an Array With Stack Operations (MEDIUM)
             //int[] target = [1];
@@ -7585,6 +7585,16 @@ namespace ProblemSolving
             //    Console.WriteLine(result1.val);
             //    result1 = result1.next;
             //}
+
+            ////(2810.) Faulty Keyboard (EASY)
+            string s = "string";
+
+            LeetCode_2810 classLeetCode = new LeetCode_2810();
+            Console.WriteLine(classLeetCode.FinalString(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FinalString(s));
 
             ////(2824.) Count Pairs Whose Sum is Less than Target (EASY)
             //IList<int> nums = [-1, 1, 2, 3, 1];
