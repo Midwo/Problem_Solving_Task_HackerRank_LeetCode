@@ -7587,14 +7587,14 @@ namespace ProblemSolving
             //}
 
             ////(2810.) Faulty Keyboard (EASY)
-            string s = "string";
+            //string s = "string";
 
-            LeetCode_2810 classLeetCode = new LeetCode_2810();
-            Console.WriteLine(classLeetCode.FinalString(s));
+            //LeetCode_2810 classLeetCode = new LeetCode_2810();
+            //Console.WriteLine(classLeetCode.FinalString(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FinalString(s));
+            //Console.WriteLine(leetCodeAll.FinalString(s));
 
             ////(2824.) Count Pairs Whose Sum is Less than Target (EASY)
             //IList<int> nums = [-1, 1, 2, 3, 1];
@@ -8138,6 +8138,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DoesAliceWin(s));
+
+            ////(3228.) Maximum Number of Operations to Move Ones to the End (MEDIUM)
+            string s = "00111";
+
+            LeetCode_3228 classLeetCode = new LeetCode_3228();
+            Console.WriteLine(classLeetCode.MaxOperations(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxOperations(s));
 
             ////(3232.) Find if Digit Game Can Be Won (EASY)
             //int[] nums = [1, 2, 3, 4, 5, 14];
