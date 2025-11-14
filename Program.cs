@@ -5181,6 +5181,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.DestCity(paths));
 
+            ////(1437.) Check If All 1's Are at Least Length K Places Away (EASY)
+            int[] nums = [1, 0, 0, 0, 1, 0, 0, 1];
+            int k = 2;
+
+            LeetCode_1437 classLeetCode = new LeetCode_1437();
+            Console.WriteLine(classLeetCode.KLengthApart(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.KLengthApart(nums, k));
+
             ////(1441.) Build an Array With Stack Operations (MEDIUM)
             //int[] target = [1];
             //int n = 2;
@@ -8140,14 +8151,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DoesAliceWin(s));
 
             ////(3228.) Maximum Number of Operations to Move Ones to the End (MEDIUM)
-            string s = "00111";
+            //string s = "00111";
 
-            LeetCode_3228 classLeetCode = new LeetCode_3228();
-            Console.WriteLine(classLeetCode.MaxOperations(s));
+            //LeetCode_3228 classLeetCode = new LeetCode_3228();
+            //Console.WriteLine(classLeetCode.MaxOperations(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxOperations(s));
+            //Console.WriteLine(leetCodeAll.MaxOperations(s));
 
             ////(3232.) Find if Digit Game Can Be Won (EASY)
             //int[] nums = [1, 2, 3, 4, 5, 14];
