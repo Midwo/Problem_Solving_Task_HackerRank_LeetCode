@@ -20558,8 +20558,30 @@ namespace ProblemSolving
 
             return true;
         }
+        public bool ReportSpam(string[] message, string[] bannedWords)
+        {
+            int count = 0;
+            HashSet<string> bannedWordsHashSet = new HashSet<string>();
 
+            foreach (string word in bannedWords)
+            {
+                bannedWordsHashSet.Add(word);
+            }
 
+            foreach (string item in message)
+            {
+                if (bannedWordsHashSet.Contains(item))
+                {
+                    count++;
+                    if (count > 1)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
 
 
 

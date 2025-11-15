@@ -5182,15 +5182,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DestCity(paths));
 
             ////(1437.) Check If All 1's Are at Least Length K Places Away (EASY)
-            int[] nums = [1, 0, 0, 0, 1, 0, 0, 1];
-            int k = 2;
+            //int[] nums = [1, 0, 0, 0, 1, 0, 0, 1];
+            //int k = 2;
 
-            LeetCode_1437 classLeetCode = new LeetCode_1437();
-            Console.WriteLine(classLeetCode.KLengthApart(nums, k));
+            //LeetCode_1437 classLeetCode = new LeetCode_1437();
+            //Console.WriteLine(classLeetCode.KLengthApart(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.KLengthApart(nums, k));
+            //Console.WriteLine(leetCodeAll.KLengthApart(nums, k));
 
             ////(1441.) Build an Array With Stack Operations (MEDIUM)
             //int[] target = [1];
@@ -8245,6 +8245,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.GetSneakyNumbers(nums)));
+
+            ////(3295.) Report Spam Message (MEDIUM)
+            string[] message = ["hello", "world", "leetcode"];
+            string[] bannedWords = ["world", "hello"];
+
+            LeetCode_3295 classLeetCode = new LeetCode_3295();
+            Console.WriteLine(classLeetCode.ReportSpam(message, bannedWords));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ReportSpam(message, bannedWords));
 
             ////(3300.) Minimum Element After Replacement With Digit Sum (EASY)
             //int[] nums = [10, 12, 13, 14];
