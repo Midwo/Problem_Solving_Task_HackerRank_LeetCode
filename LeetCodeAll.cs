@@ -20582,8 +20582,31 @@ namespace ProblemSolving
 
             return false;
         }
+        public int MinimumBoxes(int[] apple, int[] capacity)
+        {
+            int sumApple = 0;
+            int minBoxes = 0;
+            foreach (int item in apple)
+            {
+                sumApple += item;
+            }
 
+            Array.Sort(capacity);
+            int index = capacity.Length - 1;
 
+            while (sumApple > 0 && index > -1)
+            {
+                sumApple -= capacity[index--];
+                minBoxes++;
+            }
+
+            if (sumApple > 0)
+            {
+                return -1;
+            }
+
+            return minBoxes;
+        }
 
 
 

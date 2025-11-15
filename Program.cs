@@ -7893,6 +7893,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinOperationsTask3065(nums, k));
 
+            ////(3074.) Apple Redistribution into Boxes (EASY)
+            int[] apple = [1, 3, 2];
+            int[] capacity = [4,3,1,5,2];
+
+            LeetCode_3074 classLeetCode = new LeetCode_3074();
+            Console.WriteLine(classLeetCode.MinimumBoxes(apple, capacity));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumBoxes(apple, capacity));
+
             ////(3083.) Existence of a Substring in a String and Its Reverse (EASY)
             //string s = "abcba";
 
@@ -8247,15 +8258,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.GetSneakyNumbers(nums)));
 
             ////(3295.) Report Spam Message (MEDIUM)
-            string[] message = ["hello", "world", "leetcode"];
-            string[] bannedWords = ["world", "hello"];
+            //string[] message = ["hello", "world", "leetcode"];
+            //string[] bannedWords = ["world", "hello"];
 
-            LeetCode_3295 classLeetCode = new LeetCode_3295();
-            Console.WriteLine(classLeetCode.ReportSpam(message, bannedWords));
+            //LeetCode_3295 classLeetCode = new LeetCode_3295();
+            //Console.WriteLine(classLeetCode.ReportSpam(message, bannedWords));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ReportSpam(message, bannedWords));
+            //Console.WriteLine(leetCodeAll.ReportSpam(message, bannedWords));
 
             ////(3300.) Minimum Element After Replacement With Digit Sum (EASY)
             //int[] nums = [10, 12, 13, 14];
