@@ -5425,14 +5425,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumIdenticalPairs(nums));
 
             ////(1513.) Number of Substrings With Only 1s (MEDIUM)
-            string s = "0110111";
+            //string s = "0110111";
 
-            LeetCode_1513 classLeetCode = new LeetCode_1513();
-            Console.WriteLine(classLeetCode.NumSub(s));
+            //LeetCode_1513 classLeetCode = new LeetCode_1513();
+            //Console.WriteLine(classLeetCode.NumSub(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumSub(s));
+            //Console.WriteLine(leetCodeAll.NumSub(s));
 
             ////(1517.) Find Users With Valid E-Mails (EASY)
             //string SqlQuery =
@@ -8698,6 +8698,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.RecoverOrder(order, friends)));
+
+            ////(3683.) Earliest Time to Finish One Task (EASY)
+            int[][] tasks = [[1,6], [2,3]];
+
+            LeetCode_3683 classLeetCode = new LeetCode_3683();
+            Console.WriteLine(classLeetCode.EarliestTime((tasks)));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.EarliestTime((tasks)));
 
             ////(3701.) Compute Alternating Sum (EASY)
             //int[] nums = [1, 3, 5, 7];
