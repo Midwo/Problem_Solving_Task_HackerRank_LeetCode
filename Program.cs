@@ -5424,6 +5424,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumIdenticalPairs(nums));
 
+            ////(1513.) Number of Substrings With Only 1s (MEDIUM)
+            string s = "0110111";
+
+            LeetCode_1513 classLeetCode = new LeetCode_1513();
+            Console.WriteLine(classLeetCode.NumSub(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumSub(s));
+
             ////(1517.) Find Users With Valid E-Mails (EASY)
             //string SqlQuery =
             //    @"
@@ -7894,15 +7904,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinOperationsTask3065(nums, k));
 
             ////(3074.) Apple Redistribution into Boxes (EASY)
-            int[] apple = [1, 3, 2];
-            int[] capacity = [4,3,1,5,2];
+            //int[] apple = [1, 3, 2];
+            //int[] capacity = [4,3,1,5,2];
 
-            LeetCode_3074 classLeetCode = new LeetCode_3074();
-            Console.WriteLine(classLeetCode.MinimumBoxes(apple, capacity));
+            //LeetCode_3074 classLeetCode = new LeetCode_3074();
+            //Console.WriteLine(classLeetCode.MinimumBoxes(apple, capacity));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumBoxes(apple, capacity));
+            //Console.WriteLine(leetCodeAll.MinimumBoxes(apple, capacity));
 
             ////(3083.) Existence of a Substring in a String and Its Reverse (EASY)
             //string s = "abcba";

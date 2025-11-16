@@ -20607,8 +20607,33 @@ namespace ProblemSolving
 
             return minBoxes;
         }
+        public int NumSub(string s)
+        {
+            int mod = 1000000007;
+            long result = 0;
+            long currCountOne = 0;
 
+            foreach (char c in s)
+            {
+                if (c == '1')
+                {
+                    currCountOne++;
+                }
+                else if (c == '0' && currCountOne > 0)
+                {
+                    result = ((currCountOne + 1) * currCountOne / 2 + result) % mod;
 
+                    currCountOne = 0;
+                }
+            }
+
+            if (currCountOne > 0)
+            {
+                result = ((currCountOne + 1) * currCountOne / 2 + result) % mod;
+            }
+
+            return (int)result;
+        }
 
 
 
