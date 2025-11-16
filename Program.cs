@@ -8638,6 +8638,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindClosest(x, y, z));
 
+            ////(3536.) Maximum Product of Two Digits (EASY)
+            int n = 124;
+
+            LeetCode_3536 classLeetCode = new LeetCode_3536();
+            Console.WriteLine(classLeetCode.MaxProduct(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxProduct(n));
+
             ////(3541.) Find Most Frequent Vowel and Consonant (EASY)
             //string s = "cz";
 
@@ -8700,14 +8710,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.RecoverOrder(order, friends)));
 
             ////(3683.) Earliest Time to Finish One Task (EASY)
-            int[][] tasks = [[1,6], [2,3]];
+            //int[][] tasks = [[1,6], [2,3]];
 
-            LeetCode_3683 classLeetCode = new LeetCode_3683();
-            Console.WriteLine(classLeetCode.EarliestTime((tasks)));
+            //LeetCode_3683 classLeetCode = new LeetCode_3683();
+            //Console.WriteLine(classLeetCode.EarliestTime((tasks)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.EarliestTime((tasks)));
+            //Console.WriteLine(leetCodeAll.EarliestTime((tasks)));
 
             ////(3701.) Compute Alternating Sum (EASY)
             //int[] nums = [1, 3, 5, 7];
