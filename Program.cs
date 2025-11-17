@@ -8402,6 +8402,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SubarraySum(nums));
 
+            ////(3432.) Count Partitions with Even Sum Difference (EASY)
+            int[] nums = [10, 10, 3, 7, 6];
+
+            LeetCode_3432 classLeetCode = new LeetCode_3432();
+            Console.WriteLine(classLeetCode.CountPartitions(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountPartitions(nums));
+
             ////(3439.) Reschedule Meetings for Maximum Free Time I (MEDIUM)
             //int eventTime = 99;
             //int k = 1;
@@ -8467,6 +8477,17 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+
+            ////(3452.) Sum of Good Numbers (EASY)
+            //int[] nums = [1, 3, 2, 1, 5, 4];
+            //int k = 2;
+
+            //LeetCode_3452 classLeetCode = new LeetCode_3452();
+            //Console.WriteLine(classLeetCode.SumOfGoodNumbers(nums,k));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.SumOfGoodNumbers(nums, k));
 
             ////(3461.) Check If Digits Are Equal in String After Operations I (EASY)
             //string s = "323";
@@ -8667,17 +8688,6 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinOperations(nums));
-
-            ////(3452.) Sum of Good Numbers (EASY)
-            int[] nums = [1, 3, 2, 1, 5, 4];
-            int k = 2;
-
-            LeetCode_3452 classLeetCode = new LeetCode_3452();
-            Console.WriteLine(classLeetCode.SumOfGoodNumbers(nums,k));
-
-            //OR
-
-            Console.WriteLine(leetCodeAll.SumOfGoodNumbers(nums, k));
 
             ////(3612.) Process String with Special Operations I (MEDIUM)
             //string s = "a#b%*";
