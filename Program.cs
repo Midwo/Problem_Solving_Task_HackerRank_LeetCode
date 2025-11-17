@@ -8639,14 +8639,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindClosest(x, y, z));
 
             ////(3536.) Maximum Product of Two Digits (EASY)
-            int n = 124;
+            //int n = 124;
 
-            LeetCode_3536 classLeetCode = new LeetCode_3536();
-            Console.WriteLine(classLeetCode.MaxProduct(n));
+            //LeetCode_3536 classLeetCode = new LeetCode_3536();
+            //Console.WriteLine(classLeetCode.MaxProduct(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxProduct(n));
+            //Console.WriteLine(leetCodeAll.MaxProduct(n));
 
             ////(3541.) Find Most Frequent Vowel and Consonant (EASY)
             //string s = "cz";
@@ -8667,6 +8667,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinOperations(nums));
+
+            ////(3452.) Sum of Good Numbers (EASY)
+            int[] nums = [1, 3, 2, 1, 5, 4];
+            int k = 2;
+
+            LeetCode_3452 classLeetCode = new LeetCode_3452();
+            Console.WriteLine(classLeetCode.SumOfGoodNumbers(nums,k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumOfGoodNumbers(nums, k));
 
             ////(3612.) Process String with Special Operations I (MEDIUM)
             //string s = "a#b%*";
