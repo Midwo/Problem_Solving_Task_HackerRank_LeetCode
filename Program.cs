@@ -8371,6 +8371,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SmallestNumber(n));
 
+            ////(3392.) Count Subarrays of Length Three With a Condition (EASY)
+            int[] nums = [1, 2, 1, 4, 1];
+
+            LeetCode_3392 classLeetCode = new LeetCode_3392();
+            Console.WriteLine(classLeetCode.CountSubarrays(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountSubarrays(nums));
+
             ////(3397.) Maximum Number of Distinct Elements After Operations (MEDIUM)
             //int[] nums = [1, 2, 2, 3, 3, 4];
             //int k = 2;
@@ -8690,14 +8700,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinOperations(nums));
 
             ////(3550.) Smallest Index With Digit Sum Equal to Index (EASY)
-            int[] nums = [1, 10, 11];
+            //int[] nums = [1, 10, 11];
 
-            LeetCode_3550 classLeetCode = new LeetCode_3550();
-            Console.WriteLine(classLeetCode.SmallestIndex(nums));
+            //LeetCode_3550 classLeetCode = new LeetCode_3550();
+            //Console.WriteLine(classLeetCode.SmallestIndex(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SmallestIndex(nums));
+            //Console.WriteLine(leetCodeAll.SmallestIndex(nums));
 
             ////(3612.) Process String with Special Operations I (MEDIUM)
             //string s = "a#b%*";
