@@ -8403,14 +8403,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SubarraySum(nums));
 
             ////(3432.) Count Partitions with Even Sum Difference (EASY)
-            int[] nums = [10, 10, 3, 7, 6];
+            //int[] nums = [10, 10, 3, 7, 6];
 
-            LeetCode_3432 classLeetCode = new LeetCode_3432();
-            Console.WriteLine(classLeetCode.CountPartitions(nums));
+            //LeetCode_3432 classLeetCode = new LeetCode_3432();
+            //Console.WriteLine(classLeetCode.CountPartitions(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountPartitions(nums));
+            //Console.WriteLine(leetCodeAll.CountPartitions(nums));
 
             ////(3439.) Reschedule Meetings for Maximum Free Time I (MEDIUM)
             //int eventTime = 99;
@@ -8688,6 +8688,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinOperations(nums));
+
+            ////(3550.) Smallest Index With Digit Sum Equal to Index (EASY)
+            int[] nums = [1, 10, 11];
+
+            LeetCode_3550 classLeetCode = new LeetCode_3550();
+            Console.WriteLine(classLeetCode.SmallestIndex(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SmallestIndex(nums));
 
             ////(3612.) Process String with Special Operations I (MEDIUM)
             //string s = "a#b%*";
