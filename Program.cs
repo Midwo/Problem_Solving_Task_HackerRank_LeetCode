@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using ProblemSolving.LeetCode;
 using System;
 using System.Collections;
@@ -6722,6 +6723,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.RearrangeArray(nums)));
 
+            ////(2154.) Keep Multiplying Found Values by Two (EASY)
+            int[] nums = [5, 3, 6, 1, 12];
+            int original = 3;
+
+            LeetCode_2154 classLeetCode = new LeetCode_2154();
+            Console.WriteLine(classLeetCode.FindFinalValue(nums, original));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindFinalValue(nums, original));
+
             ////(2160.) Minimum Sum of Four Digit Number After Splitting Digits (EASY) 
             //int num = 2932;
 
@@ -8372,14 +8384,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestNumber(n));
 
             ////(3392.) Count Subarrays of Length Three With a Condition (EASY)
-            int[] nums = [1, 2, 1, 4, 1];
+            //int[] nums = [1, 2, 1, 4, 1];
 
-            LeetCode_3392 classLeetCode = new LeetCode_3392();
-            Console.WriteLine(classLeetCode.CountSubarrays(nums));
+            //LeetCode_3392 classLeetCode = new LeetCode_3392();
+            //Console.WriteLine(classLeetCode.CountSubarrays(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountSubarrays(nums));
+            //Console.WriteLine(leetCodeAll.CountSubarrays(nums));
 
             ////(3397.) Maximum Number of Distinct Elements After Operations (MEDIUM)
             //int[] nums = [1, 2, 2, 3, 3, 4];
