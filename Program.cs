@@ -6724,15 +6724,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.RearrangeArray(nums)));
 
             ////(2154.) Keep Multiplying Found Values by Two (EASY)
-            int[] nums = [5, 3, 6, 1, 12];
-            int original = 3;
+            //int[] nums = [5, 3, 6, 1, 12];
+            //int original = 3;
 
-            LeetCode_2154 classLeetCode = new LeetCode_2154();
-            Console.WriteLine(classLeetCode.FindFinalValue(nums, original));
+            //LeetCode_2154 classLeetCode = new LeetCode_2154();
+            //Console.WriteLine(classLeetCode.FindFinalValue(nums, original));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindFinalValue(nums, original));
+            //Console.WriteLine(leetCodeAll.FindFinalValue(nums, original));
 
             ////(2160.) Minimum Sum of Four Digit Number After Splitting Digits (EASY) 
             //int num = 2932;
@@ -7018,6 +7018,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountAsterisks(s));
+
+            ////(2319.) Check if Matrix Is X-Matrix (EASY)
+            int[][] grid = [[2, 0, 0, 1], [0, 3, 1, 0], [0, 5, 2, 0], [4, 0, 0, 2]];
+
+            LeetCode_2319 classLeetCode = new LeetCode_2319();
+            Console.WriteLine(classLeetCode.CheckXMatrix(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckXMatrix(grid));
 
             ////(2325.) Decode the Message (EASY) 
             //string key = "the quick brown fox jumps over the lazy dog";
