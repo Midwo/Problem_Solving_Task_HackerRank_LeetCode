@@ -6685,14 +6685,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsSameAfterReversals(num));
 
             ////(2124.) Check if All A's Appears Before All B's (EASY)
-            string s = "aaabbb";
+            //string s = "aaabbb";
 
-            LeetCode_2124 classLeetCode = new LeetCode_2124();
-            Console.WriteLine(classLeetCode.CheckString(s));
+            //LeetCode_2124 classLeetCode = new LeetCode_2124();
+            //Console.WriteLine(classLeetCode.CheckString(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckString(s));
+            //Console.WriteLine(leetCodeAll.CheckString(s));
 
             ////(2125.) Number of Laser Beams in a Bank (MEDIUM)
             //string[] bank = ["011001", "000000", "010100", "001000"];
@@ -7923,6 +7923,16 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+
+            ////(3038.) Maximum Number of Operations With the Same Score I (EASY)
+            int[] nums = [1, 5, 3, 3, 4, 1, 3, 2, 2, 3];
+
+            LeetCode_3038 classLeetCode = new LeetCode_3038();
+            Console.WriteLine(classLeetCode.MaxOperations(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxOperations(nums));
 
             ////(3042.) Count Prefix and Suffix Pairs I (EASY)
             //string[] words = ["a", "aba", "ababa", "aa"];
