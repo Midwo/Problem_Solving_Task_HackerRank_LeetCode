@@ -5384,6 +5384,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.XorOperation(n, start));
 
+            ////(1491.) Average Salary Excluding the Minimum and Maximum Salary (EASY)
+            int[] salary = [4000, 3000, 1000, 2000];
+
+            LeetCode_1491 classLeetCode = new LeetCode_1491();
+            Console.WriteLine(classLeetCode.Average(salary));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.Average(salary));
+
             ////(1493.) Longest Subarray of 1's After Deleting One Element (MEDIUM)
             //int[] nums = [0, 1, 1, 1, 0, 1, 1, 0, 1];
 
@@ -7020,14 +7030,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountAsterisks(s));
 
             ////(2319.) Check if Matrix Is X-Matrix (EASY)
-            int[][] grid = [[2, 0, 0, 1], [0, 3, 1, 0], [0, 5, 2, 0], [4, 0, 0, 2]];
+            //int[][] grid = [[2, 0, 0, 1], [0, 3, 1, 0], [0, 5, 2, 0], [4, 0, 0, 2]];
 
-            LeetCode_2319 classLeetCode = new LeetCode_2319();
-            Console.WriteLine(classLeetCode.CheckXMatrix(grid));
+            //LeetCode_2319 classLeetCode = new LeetCode_2319();
+            //Console.WriteLine(classLeetCode.CheckXMatrix(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckXMatrix(grid));
+            //Console.WriteLine(leetCodeAll.CheckXMatrix(grid));
 
             ////(2325.) Decode the Message (EASY) 
             //string key = "the quick brown fox jumps over the lazy dog";
