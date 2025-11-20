@@ -5385,14 +5385,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.XorOperation(n, start));
 
             ////(1491.) Average Salary Excluding the Minimum and Maximum Salary (EASY)
-            int[] salary = [4000, 3000, 1000, 2000];
+            //int[] salary = [4000, 3000, 1000, 2000];
 
-            LeetCode_1491 classLeetCode = new LeetCode_1491();
-            Console.WriteLine(classLeetCode.Average(salary));
+            //LeetCode_1491 classLeetCode = new LeetCode_1491();
+            //Console.WriteLine(classLeetCode.Average(salary));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.Average(salary));
+            //Console.WriteLine(leetCodeAll.Average(salary));
 
             ////(1493.) Longest Subarray of 1's After Deleting One Element (MEDIUM)
             //int[] nums = [0, 1, 1, 1, 0, 1, 1, 0, 1];
@@ -6683,6 +6683,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsSameAfterReversals(num));
+
+            ////(2124.) Check if All A's Appears Before All B's (EASY)
+            string s = "aaabbb";
+
+            LeetCode_2124 classLeetCode = new LeetCode_2124();
+            Console.WriteLine(classLeetCode.CheckString(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckString(s));
 
             ////(2125.) Number of Laser Beams in a Bank (MEDIUM)
             //string[] bank = ["011001", "000000", "010100", "001000"];

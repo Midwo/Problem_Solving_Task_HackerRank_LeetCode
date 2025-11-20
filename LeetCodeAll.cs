@@ -20838,8 +20838,20 @@ namespace ProblemSolving
 
             return (sumSalary - minSalary - maxSalary) / (salary.Length - 2);
         }
+        public bool CheckString(string s)
+        {
+            bool status = true;
 
+            for (int i = 1; i < s.Length; i++)
+            {
+                if (s[i - 1] == 'b' && s[i] == 'a')
+                {
+                    return false;
+                }
+            }
 
+            return status;
+        }
 
 
 
