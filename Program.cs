@@ -6369,14 +6369,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', classLeetCode.GetConcatenation(nums)));
 
             ////(1930.) Unique Length-3 Palindromic Subsequences (MEDIUM)
-            string s = "bbcbaba";
+            //string s = "bbcbaba";
 
-            LeetCode_1930 classLeetCode = new LeetCode_1930();
-            Console.WriteLine(classLeetCode.CountPalindromicSubsequence(s));
+            //LeetCode_1930 classLeetCode = new LeetCode_1930();
+            //Console.WriteLine(classLeetCode.CountPalindromicSubsequence(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountPalindromicSubsequence(s));
+            //Console.WriteLine(leetCodeAll.CountPalindromicSubsequence(s));
 
             ////(1934.) Confirmation Rate (MEDIUM)
             //string SqlQuery =
@@ -6742,6 +6742,16 @@ namespace ProblemSolving
 
             //string[] result1 = leetCodeAll.DivideString(s, k, fill);
             //Console.WriteLine(string.Join(',', result1));
+
+            ////(2148.) Count Elements With Strictly Smaller and Greater Elements (EASY)
+            int[] nums = [-3, 3, 3, 90];
+
+            LeetCode_2148 classLeetCode = new LeetCode_2148();
+            Console.WriteLine(classLeetCode.CountElements(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountElements(nums));
 
             ////(2149.) Rearrange Array Elements by Sign (MEDIUM)
             //int[] nums = [3, 1, -2, -5, 2, -4];
