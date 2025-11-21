@@ -6368,6 +6368,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', classLeetCode.GetConcatenation(nums)));
 
+            ////(1930.) Unique Length-3 Palindromic Subsequences (MEDIUM)
+            string s = "bbcbaba";
+
+            LeetCode_1930 classLeetCode = new LeetCode_1930();
+            Console.WriteLine(classLeetCode.CountPalindromicSubsequence(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountPalindromicSubsequence(s));
+
             ////(1934.) Confirmation Rate (MEDIUM)
             //string SqlQuery =
             //    @"
@@ -7925,14 +7935,14 @@ namespace ProblemSolving
             //}
 
             ////(3038.) Maximum Number of Operations With the Same Score I (EASY)
-            int[] nums = [1, 5, 3, 3, 4, 1, 3, 2, 2, 3];
+            //int[] nums = [1, 5, 3, 3, 4, 1, 3, 2, 2, 3];
 
-            LeetCode_3038 classLeetCode = new LeetCode_3038();
-            Console.WriteLine(classLeetCode.MaxOperations(nums));
+            //LeetCode_3038 classLeetCode = new LeetCode_3038();
+            //Console.WriteLine(classLeetCode.MaxOperations(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxOperations(nums));
+            //Console.WriteLine(leetCodeAll.MaxOperations(nums));
 
             ////(3042.) Count Prefix and Suffix Pairs I (EASY)
             //string[] words = ["a", "aba", "ababa", "aa"];
