@@ -6417,14 +6417,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanBeTypedWords(text, brokenLetters));
 
             ////(1952.) Three Divisors (EASY)
-            int n = 4;
+            //int n = 4;
 
-            LeetCode_1952 classLeetCode = new LeetCode_1952();
-            Console.WriteLine(classLeetCode.IsThree(n));
+            //LeetCode_1952 classLeetCode = new LeetCode_1952();
+            //Console.WriteLine(classLeetCode.IsThree(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsThree(n));
+            //Console.WriteLine(leetCodeAll.IsThree(n));
 
             ////(1957.) Delete Characters to Make Fancy String (EASY)
             //string s = "leeetcode";
@@ -7984,6 +7984,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinOperationsTask3065(nums, k));
+
+            ////(3069.) Distribute Elements Into Two Arrays I (EASY)
+            int[] nums = [5,4,3,8];
+
+            LeetCode_3069 classLeetCode = new LeetCode_3069();
+            Console.WriteLine(string.Join(',',classLeetCode.ResultArray(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ResultArray(nums)));
 
             ////(3074.) Apple Redistribution into Boxes (EASY)
             //int[] apple = [1, 3, 2];
