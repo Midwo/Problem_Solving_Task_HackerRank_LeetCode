@@ -6416,6 +6416,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CanBeTypedWords(text, brokenLetters));
 
+            ////(1952.) Three Divisors (EASY)
+            int n = 4;
+
+            LeetCode_1952 classLeetCode = new LeetCode_1952();
+            Console.WriteLine(classLeetCode.IsThree(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsThree(n));
+
             ////(1957.) Delete Characters to Make Fancy String (EASY)
             //string s = "leeetcode";
 
@@ -6744,14 +6754,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', result1));
 
             ////(2148.) Count Elements With Strictly Smaller and Greater Elements (EASY)
-            int[] nums = [-3, 3, 3, 90];
+            //int[] nums = [-3, 3, 3, 90];
 
-            LeetCode_2148 classLeetCode = new LeetCode_2148();
-            Console.WriteLine(classLeetCode.CountElements(nums));
+            //LeetCode_2148 classLeetCode = new LeetCode_2148();
+            //Console.WriteLine(classLeetCode.CountElements(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountElements(nums));
+            //Console.WriteLine(leetCodeAll.CountElements(nums));
 
             ////(2149.) Rearrange Array Elements by Sign (MEDIUM)
             //int[] nums = [3, 1, -2, -5, 2, -4];
