@@ -4653,6 +4653,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1251 classLeetCode = new LeetCode_1251();
 
+            ////(1262. Greatest Sum Divisible by Three (MEDIUM)
+            int[] nums = [1, 2, 3, 4, 4];
+
+            LeetCode_1262 classLeetCode = new LeetCode_1262();
+            Console.WriteLine(classLeetCode.MaxSumDivThree(nums));
+
+            ////OR
+            
+            Console.WriteLine(leetCodeAll.MaxSumDivThree(nums));
+
             ////(1266.) Minimum Time Visiting All Points (EASY)
             //int[][] points = [[559, 511], [932, 618], [-623, -443], 
             //[431, 91], [838, -127], [773, -917], [-500, -910], [830, -417], 
@@ -7986,14 +7996,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinOperationsTask3065(nums, k));
 
             ////(3069.) Distribute Elements Into Two Arrays I (EASY)
-            int[] nums = [5,4,3,8];
+            //int[] nums = [5,4,3,8];
 
-            LeetCode_3069 classLeetCode = new LeetCode_3069();
-            Console.WriteLine(string.Join(',',classLeetCode.ResultArray(nums)));
+            //LeetCode_3069 classLeetCode = new LeetCode_3069();
+            //Console.WriteLine(string.Join(',',classLeetCode.ResultArray(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ResultArray(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ResultArray(nums)));
 
             ////(3074.) Apple Redistribution into Boxes (EASY)
             //int[] apple = [1, 3, 2];
