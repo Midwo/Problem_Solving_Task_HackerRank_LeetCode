@@ -4654,14 +4654,14 @@ namespace ProblemSolving
             //LeetCode_1251 classLeetCode = new LeetCode_1251();
 
             ////(1262. Greatest Sum Divisible by Three (MEDIUM)
-            int[] nums = [1, 2, 3, 4, 4];
+            //int[] nums = [1, 2, 3, 4, 4];
 
-            LeetCode_1262 classLeetCode = new LeetCode_1262();
-            Console.WriteLine(classLeetCode.MaxSumDivThree(nums));
+            //LeetCode_1262 classLeetCode = new LeetCode_1262();
+            //Console.WriteLine(classLeetCode.MaxSumDivThree(nums));
 
-            ////OR
-            
-            Console.WriteLine(leetCodeAll.MaxSumDivThree(nums));
+            //////OR
+
+            //Console.WriteLine(leetCodeAll.MaxSumDivThree(nums));
 
             ////(1266.) Minimum Time Visiting All Points (EASY)
             //int[][] points = [[559, 511], [932, 618], [-623, -443], 
@@ -8861,6 +8861,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.EarliestTime((tasks)));
+
+            ////(3688.) Bitwise OR of Even Numbers in an Array (EASY)
+            int[] nums = [1,2,3,4,5,6];
+
+            LeetCode_3688 classLeetCode = new LeetCode_3688();
+            Console.WriteLine(classLeetCode.EvenNumberBitwiseORs(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.EvenNumberBitwiseORs(nums));
 
             ////(3701.) Compute Alternating Sum (EASY)
             //int[] nums = [1, 3, 5, 7];

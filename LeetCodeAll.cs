@@ -21200,34 +21200,46 @@ namespace ProblemSolving
                 }
             }
         }
+        public int EvenNumberBitwiseORs(int[] nums)
+        {
+            int bitwiseEvenResult = 0;
 
+            foreach (int num in nums)
+            {
+                if (num % 2 == 0)
+                {
+                    bitwiseEvenResult |= num;
+                }
+            }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            return bitwiseEvenResult;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 
 
 
