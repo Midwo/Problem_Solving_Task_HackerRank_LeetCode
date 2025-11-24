@@ -21214,6 +21214,62 @@ namespace ProblemSolving
 
             return bitwiseEvenResult;
         }
+        public bool CheckZeroOnes(string s)
+        {
+            int maxContiguousOnes = 0;
+            int maxContiguousZeros = 0;
+            char lastChar = 'k';
+            int currContiguous = 0;
+
+            foreach (char c in s)
+            {
+                if (lastChar == c)
+                {
+                    currContiguous++;
+                    if (c == '0')
+                    {
+                        maxContiguousZeros = currContiguous > maxContiguousZeros ? currContiguous : maxContiguousZeros;
+                    }
+                    else
+                    {
+                        maxContiguousOnes = currContiguous > maxContiguousOnes ? currContiguous : maxContiguousOnes;
+                    }
+                }
+                else
+                {
+                    currContiguous = 1;
+                    if (c == '0')
+                    {
+                        maxContiguousZeros = currContiguous > maxContiguousZeros ? currContiguous : maxContiguousZeros;
+                    }
+                    else
+                    {
+                        maxContiguousOnes = currContiguous > maxContiguousOnes ? currContiguous : maxContiguousOnes;
+                    }
+                }
+                lastChar = c;
+            }
+
+            if (maxContiguousOnes > maxContiguousZeros)
+            {
+                return true;
+            }
+            return false;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

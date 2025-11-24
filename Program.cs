@@ -6281,6 +6281,16 @@ namespace ProblemSolving
             //leetCodeTask.Add(1, 1);
             //Console.WriteLine(leetCodeTask.Count(7));
 
+            ////(1869.) Longer Contiguous Segments of Ones than Zeros (EASY)
+            string s = "110100010";
+            
+            LeetCode_1869 classLeetCode = new LeetCode_1869();
+            Console.WriteLine(classLeetCode.CheckZeroOnes(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckZeroOnes(s));
+
             ////(1880.) Check if Word Equals Summation of Two Words (EASY)
             //string firstWord = "acb";
             //string secondWord = "cba";
@@ -8863,14 +8873,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.EarliestTime((tasks)));
 
             ////(3688.) Bitwise OR of Even Numbers in an Array (EASY)
-            int[] nums = [1,2,3,4,5,6];
+            //int[] nums = [1,2,3,4,5,6];
 
-            LeetCode_3688 classLeetCode = new LeetCode_3688();
-            Console.WriteLine(classLeetCode.EvenNumberBitwiseORs(nums));
+            //LeetCode_3688 classLeetCode = new LeetCode_3688();
+            //Console.WriteLine(classLeetCode.EvenNumberBitwiseORs(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.EvenNumberBitwiseORs(nums));
+            //Console.WriteLine(leetCodeAll.EvenNumberBitwiseORs(nums));
 
             ////(3701.) Compute Alternating Sum (EASY)
             //int[] nums = [1, 3, 5, 7];
