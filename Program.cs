@@ -3918,6 +3918,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CanThreePartsEqualSum(arr));
 
+            ////(1015.) Smallest Integer Divisible by K (MEDIUM)
+            int k = 3;
+
+            LeetCode_1015 classLeetCode = new LeetCode_1015();
+            Console.WriteLine(classLeetCode.SmallestRepunitDivByK(k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SmallestRepunitDivByK(k));
+
             ////(1018.) Binary Prefix Divisible By 5 (EASY)
             //int[] nums = [1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0];
 
@@ -6282,14 +6292,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeTask.Count(7));
 
             ////(1869.) Longer Contiguous Segments of Ones than Zeros (EASY)
-            string s = "110100010";
-            
-            LeetCode_1869 classLeetCode = new LeetCode_1869();
-            Console.WriteLine(classLeetCode.CheckZeroOnes(s));
+            //string s = "110100010";
 
-            //OR
+            //LeetCode_1869 classLeetCode = new LeetCode_1869();
+            //Console.WriteLine(classLeetCode.CheckZeroOnes(s));
 
-            Console.WriteLine(leetCodeAll.CheckZeroOnes(s));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.CheckZeroOnes(s));
 
             ////(1880.) Check if Word Equals Summation of Two Words (EASY)
             //string firstWord = "acb";

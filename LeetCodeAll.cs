@@ -21256,6 +21256,25 @@ namespace ProblemSolving
             }
             return false;
         }
+        public int SmallestRepunitDivByK(int k)
+        {
+            if (k % 5 == 0 || k % 2 == 0)
+            {
+                return -1;
+            }
+
+            int actSum = 1 % k;
+            int length = 1;
+
+            while (actSum != 0)
+            {
+                actSum = (actSum * 10 + 1) % k;
+                length++;
+            }
+
+            return length;
+        }
+
 
 
 
