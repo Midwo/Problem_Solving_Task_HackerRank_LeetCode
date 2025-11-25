@@ -3919,14 +3919,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanThreePartsEqualSum(arr));
 
             ////(1015.) Smallest Integer Divisible by K (MEDIUM)
-            int k = 3;
+            //int k = 3;
 
-            LeetCode_1015 classLeetCode = new LeetCode_1015();
-            Console.WriteLine(classLeetCode.SmallestRepunitDivByK(k));
+            //LeetCode_1015 classLeetCode = new LeetCode_1015();
+            //Console.WriteLine(classLeetCode.SmallestRepunitDivByK(k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SmallestRepunitDivByK(k));
+            //Console.WriteLine(leetCodeAll.SmallestRepunitDivByK(k));
 
             ////(1018.) Binary Prefix Divisible By 5 (EASY)
             //int[] nums = [1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0];
@@ -8335,6 +8335,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.GetFinalState(nums, k, multiplier)));
+
+            ////(3270.) Find the Key of the Numbers (EASY)
+            int nums1 = 1140;
+            int nums2 = 1851;
+            int nums3 = 2057;
+
+            LeetCode_3270 classLeetCode = new LeetCode_3270();
+            Console.WriteLine(classLeetCode.GenerateKey(nums1, nums2, nums3));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GenerateKey(nums1, nums2, nums3));
 
             ////(3271.) Hash Divided String (MEDIUM)
             //string s = "mxz";
