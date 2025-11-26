@@ -8088,6 +8088,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ScoreOfString(s));
 
+            ////(3120.) Count the Number of Special Characters I (EASY)
+            string word = "aaAbcBC";
+
+            LeetCode_3120 classLeetCode = new LeetCode_3120();
+            Console.WriteLine(classLeetCode.NumberOfSpecialChars(word));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumberOfSpecialChars(word));
+
             ////(3131.) Find the Integer Added to Array I (EASY)
             //int[] nums1 = [2, 6, 4];
             //int[] nums2 = [9, 7, 5];
@@ -8337,16 +8347,16 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.GetFinalState(nums, k, multiplier)));
 
             ////(3270.) Find the Key of the Numbers (EASY)
-            int nums1 = 1140;
-            int nums2 = 1851;
-            int nums3 = 2057;
+            //int nums1 = 1140;
+            //int nums2 = 1851;
+            //int nums3 = 2057;
 
-            LeetCode_3270 classLeetCode = new LeetCode_3270();
-            Console.WriteLine(classLeetCode.GenerateKey(nums1, nums2, nums3));
+            //LeetCode_3270 classLeetCode = new LeetCode_3270();
+            //Console.WriteLine(classLeetCode.GenerateKey(nums1, nums2, nums3));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GenerateKey(nums1, nums2, nums3));
+            //Console.WriteLine(leetCodeAll.GenerateKey(nums1, nums2, nums3));
 
             ////(3271.) Hash Divided String (MEDIUM)
             //string s = "mxz";
