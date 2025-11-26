@@ -6102,6 +6102,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountMatches(items, ruleKey, ruleValue));
 
+            ////(1784.) Check if Binary String Has at Most One Segment of Ones (EASY)
+            string s = "110";
+
+            LeetCode_1784 classLeetCode = new LeetCode_1784();
+            Console.WriteLine(classLeetCode.CheckOnesSegment(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckOnesSegment(s));
+
             ////(1789.) Primary Department for Each Employee (EASY)
             //string SqlQuery =
             //    @"
@@ -8089,14 +8099,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ScoreOfString(s));
 
             ////(3120.) Count the Number of Special Characters I (EASY)
-            string word = "aaAbcBC";
+            //string word = "aaAbcBC";
 
-            LeetCode_3120 classLeetCode = new LeetCode_3120();
-            Console.WriteLine(classLeetCode.NumberOfSpecialChars(word));
+            //LeetCode_3120 classLeetCode = new LeetCode_3120();
+            //Console.WriteLine(classLeetCode.NumberOfSpecialChars(word));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumberOfSpecialChars(word));
+            //Console.WriteLine(leetCodeAll.NumberOfSpecialChars(word));
 
             ////(3131.) Find the Integer Added to Array I (EASY)
             //int[] nums1 = [2, 6, 4];

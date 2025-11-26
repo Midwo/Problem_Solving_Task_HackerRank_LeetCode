@@ -21357,9 +21357,16 @@ namespace ProblemSolving
 
             return count;
         }
-
-
-
+        public bool CheckOnesSegment(string s)
+        {
+            bool zero = false;
+            for (int i = 1; i < s.Length; i++)
+            {
+                if (s[i] == '0' && !zero) { zero = true; }
+                else if (s[i] == '1' && zero) { return false; }
+            }
+            return true;
+        }
 
 
 
