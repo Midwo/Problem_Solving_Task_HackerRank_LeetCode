@@ -5935,6 +5935,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumUniqueSubarray(nums));
 
+            ////(1704.) Determine if String Halves Are Alike (EASY)
+            string s = "book";
+
+            LeetCode_1704 classLeetCode = new LeetCode_1704();
+            Console.WriteLine(classLeetCode.HalvesAreAlike(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.HalvesAreAlike(s));
+
             ////(1716.) Calculate Money in Leetcode Bank (EASY)
             //int n = 20;
 
@@ -7530,14 +7540,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.VowelStrings(words, left, right));
 
             ////(2595.) Number of Even and Odd Bits (EASY)
-            int n = 5;
+            //int n = 5;
 
-            LeetCode_2595 classLeetCode = new LeetCode_2595();
-            Console.WriteLine(string.Join(',', classLeetCode.EvenOddBit(n)));
+            //LeetCode_2595 classLeetCode = new LeetCode_2595();
+            //Console.WriteLine(string.Join(',', classLeetCode.EvenOddBit(n)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.EvenOddBit(n)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.EvenOddBit(n)));
 
             ////(2610.) Convert an Array Into a 2D Array With Conditions (MEDIUM)
             //int[] nums = [1, 3, 4, 1, 2, 3, 1];
