@@ -6103,14 +6103,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountMatches(items, ruleKey, ruleValue));
 
             ////(1784.) Check if Binary String Has at Most One Segment of Ones (EASY)
-            string s = "110";
+            //string s = "110";
 
-            LeetCode_1784 classLeetCode = new LeetCode_1784();
-            Console.WriteLine(classLeetCode.CheckOnesSegment(s));
+            //LeetCode_1784 classLeetCode = new LeetCode_1784();
+            //Console.WriteLine(classLeetCode.CheckOnesSegment(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckOnesSegment(s));
+            //Console.WriteLine(leetCodeAll.CheckOnesSegment(s));
 
             ////(1789.) Primary Department for Each Employee (EASY)
             //string SqlQuery =
@@ -7528,6 +7528,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.VowelStrings(words, left, right));
+
+            ////(2595.) Number of Even and Odd Bits (EASY)
+            int n = 5;
+
+            LeetCode_2595 classLeetCode = new LeetCode_2595();
+            Console.WriteLine(string.Join(',', classLeetCode.EvenOddBit(n)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.EvenOddBit(n)));
 
             ////(2610.) Convert an Array Into a 2D Array With Conditions (MEDIUM)
             //int[] nums = [1, 3, 4, 1, 2, 3, 1];

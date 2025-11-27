@@ -21367,6 +21367,38 @@ namespace ProblemSolving
             }
             return true;
         }
+        public int[] EvenOddBit(int n)
+        {
+            int countEven = 0;
+            int countOdd = 0;
+
+            string nToBitsString = Convert.ToString(n, 2);
+            int length = nToBitsString.Length;
+
+            for (int i = 0; i < length; i++)
+            {
+                if (nToBitsString[i] == '1')
+                {
+                    if (i % 2 == 0)
+                    {
+                        countEven++;
+                    }
+                    else
+                    {
+                        countOdd++;
+                    }
+                }
+            }
+
+            if (length % 2 == 0)
+            {
+                return new int[] { countOdd, countEven };
+            }
+
+            return new int[] { countEven, countOdd };
+        }
+
+
 
 
 
