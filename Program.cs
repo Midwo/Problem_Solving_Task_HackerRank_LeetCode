@@ -5091,6 +5091,16 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
 
+            ////(1380.) Lucky Numbers in a Matrix (EASY)
+            int[][] matrix = [[3,7,8], [9,11,13], [15,16,17]];
+
+            LeetCode_1380 classLeetCode = new LeetCode_1380();
+            Console.WriteLine(string.Join(',',classLeetCode.LuckyNumbers(matrix)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.LuckyNumbers(matrix)));
+
             ////(1389.) Create Target Array in the Given Order (EASY)
             //int[] nums = [0, 1, 2, 3, 4];
             //int[] index = [0, 1, 2, 2, 1];
@@ -7643,15 +7653,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinLength(s));
 
             ////(2706.) Buy Two Chocolates (EASY)
-            int[] prices = { 1, 2, 2 };
-            int money = 3;
+            //int[] prices = { 1, 2, 2 };
+            //int money = 3;
 
-            LeetCode_2706 classLeetCode = new LeetCode_2706();
-            Console.WriteLine(classLeetCode.BuyChoco(prices, money));
+            //LeetCode_2706 classLeetCode = new LeetCode_2706();
+            //Console.WriteLine(classLeetCode.BuyChoco(prices, money));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.BuyChoco(prices, money));
+            //Console.WriteLine(leetCodeAll.BuyChoco(prices, money));
 
             ////(2710.) Remove Trailing Zeros From a String (EASY)
             //string num = "51230100";
