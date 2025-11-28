@@ -21423,6 +21423,35 @@ namespace ProblemSolving
             }
             return true;
         }
+        public int BuyChoco(int[] prices, int money)
+        {
+            int firstMinValue = prices[0];
+            int secondMinValue = int.MaxValue;
+
+            for (int i = 1; i < prices.Length; i++)
+            {
+                if (prices[i] < firstMinValue)
+                {
+                    secondMinValue = firstMinValue;
+                    firstMinValue = prices[i];
+                }
+                else if (prices[i] < secondMinValue)
+                {
+                    secondMinValue = prices[i];
+                }
+            }
+
+            if (firstMinValue + secondMinValue > money)
+            {
+                return money;
+            }
+            return money - firstMinValue - secondMinValue;
+        }
+
+
+
+
+
 
 
 

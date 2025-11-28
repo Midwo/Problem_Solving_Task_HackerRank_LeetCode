@@ -5936,14 +5936,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumUniqueSubarray(nums));
 
             ////(1704.) Determine if String Halves Are Alike (EASY)
-            string s = "book";
+            //string s = "book";
 
-            LeetCode_1704 classLeetCode = new LeetCode_1704();
-            Console.WriteLine(classLeetCode.HalvesAreAlike(s));
+            //LeetCode_1704 classLeetCode = new LeetCode_1704();
+            //Console.WriteLine(classLeetCode.HalvesAreAlike(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.HalvesAreAlike(s));
+            //Console.WriteLine(leetCodeAll.HalvesAreAlike(s));
 
             ////(1716.) Calculate Money in Leetcode Bank (EASY)
             //int n = 20;
@@ -7641,6 +7641,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinLength(s));
+
+            ////(2706.) Buy Two Chocolates (EASY)
+            int[] prices = { 1, 2, 2 };
+            int money = 3;
+
+            LeetCode_2706 classLeetCode = new LeetCode_2706();
+            Console.WriteLine(classLeetCode.BuyChoco(prices, money));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.BuyChoco(prices, money));
 
             ////(2710.) Remove Trailing Zeros From a String (EASY)
             //string num = "51230100";
