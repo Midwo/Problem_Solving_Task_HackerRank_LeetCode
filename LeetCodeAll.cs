@@ -21495,6 +21495,56 @@ namespace ProblemSolving
 
             return (high - low) / 2 + 1;
         }
+        public int ArraySign(int[] nums)
+        {
+            bool positiveValue = true;
+            foreach (int item in nums)
+            {
+                if (item < 0)
+                {
+                    if (positiveValue)
+                    {
+                        positiveValue = false;
+                    }
+                    else
+                    {
+                        positiveValue = true;
+                    }
+                }
+                else if (item == 0)
+                {
+                    return 0;
+                }
+            }
+
+            if (positiveValue)
+            {
+                return 1;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

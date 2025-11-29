@@ -5502,15 +5502,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumWaterBottles(numBottles, numExchange));
 
             ////(1523.) Count Odd Numbers in an Interval Range(EASY)
-            int low = 8;
-            int high = 10;
+            //int low = 8;
+            //int high = 10;
 
-            LeetCode_1523 classLeetCode = new LeetCode_1523();
-            Console.WriteLine(classLeetCode.CountOdds(low, high));
+            //LeetCode_1523 classLeetCode = new LeetCode_1523();
+            //Console.WriteLine(classLeetCode.CountOdds(low, high));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(classLeetCode.CountOdds(low, high));
+            //Console.WriteLine(classLeetCode.CountOdds(low, high));
 
             ////(1526.) Minimum Number of Increments on Subarrays to Form a Target Array (HARD)
             //int[] target = [3, 1, 5, 4, 2];
@@ -6247,6 +6247,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.TruncateSentence(s, k));
+
+            ////(1822.) Sign of the Product of an Array (EASY)
+            int[] nums = [-1, -2, -3, -4, 3, 2, 1];
+
+            LeetCode_1822 classLeetCode = new LeetCode_1822();
+            Console.WriteLine(classLeetCode.ArraySign(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ArraySign(nums));
 
             ////(1823.) Find the Winner of the Circular Game (MEDIUM)
             //int n = 5;
