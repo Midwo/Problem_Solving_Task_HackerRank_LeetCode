@@ -5092,14 +5092,14 @@ namespace ProblemSolving
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
 
             ////(1380.) Lucky Numbers in a Matrix (EASY)
-            int[][] matrix = [[3,7,8], [9,11,13], [15,16,17]];
+            //int[][] matrix = [[3,7,8], [9,11,13], [15,16,17]];
 
-            LeetCode_1380 classLeetCode = new LeetCode_1380();
-            Console.WriteLine(string.Join(',',classLeetCode.LuckyNumbers(matrix)));
+            //LeetCode_1380 classLeetCode = new LeetCode_1380();
+            //Console.WriteLine(string.Join(',',classLeetCode.LuckyNumbers(matrix)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.LuckyNumbers(matrix)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.LuckyNumbers(matrix)));
 
             ////(1389.) Create Target Array in the Given Order (EASY)
             //int[] nums = [0, 1, 2, 3, 4];
@@ -5500,6 +5500,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NumWaterBottles(numBottles, numExchange));
+
+            ////(1523.) Count Odd Numbers in an Interval Range(EASY)
+            int low = 8;
+            int high = 10;
+
+            LeetCode_1523 classLeetCode = new LeetCode_1523();
+            Console.WriteLine(classLeetCode.CountOdds(low, high));
+
+            //OR
+
+            Console.WriteLine(classLeetCode.CountOdds(low, high));
 
             ////(1526.) Minimum Number of Increments on Subarrays to Form a Target Array (HARD)
             //int[] target = [3, 1, 5, 4, 2];
