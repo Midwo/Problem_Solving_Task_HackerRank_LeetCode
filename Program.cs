@@ -6249,14 +6249,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TruncateSentence(s, k));
 
             ////(1822.) Sign of the Product of an Array (EASY)
-            int[] nums = [-1, -2, -3, -4, 3, 2, 1];
+            //int[] nums = [-1, -2, -3, -4, 3, 2, 1];
 
-            LeetCode_1822 classLeetCode = new LeetCode_1822();
-            Console.WriteLine(classLeetCode.ArraySign(nums));
+            //LeetCode_1822 classLeetCode = new LeetCode_1822();
+            //Console.WriteLine(classLeetCode.ArraySign(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ArraySign(nums));
+            //Console.WriteLine(leetCodeAll.ArraySign(nums));
 
             ////(1823.) Find the Winner of the Circular Game (MEDIUM)
             //int n = 5;
@@ -8914,6 +8914,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinOperations(nums));
+
+            ////(3545.) Minimum Deletions for At Most K Distinct Characters (EASY)
+            string s = "aabbccddeeff";
+            int k = 3;
+
+            LeetCode_3545 classLeetCode = new LeetCode_3545();
+            Console.WriteLine(classLeetCode.MinDeletion(s, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinDeletion(s, k));
 
             ////(3550.) Smallest Index With Digit Sum Equal to Index (EASY)
             //int[] nums = [1, 10, 11];

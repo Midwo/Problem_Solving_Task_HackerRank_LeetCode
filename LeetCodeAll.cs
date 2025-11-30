@@ -21526,7 +21526,32 @@ namespace ProblemSolving
                 return -1;
             }
         }
+        public int MinDeletion(string s, int k)
+        {
+            int[] countChars = new int[26];
 
+            foreach (char item in s)
+            {
+                countChars[item - 'a']++;
+            }
+
+            Array.Sort(countChars);
+            int minDelete = 0;
+
+            for (int i = 25 - k; i >= 0; i--)
+            {
+                if (countChars[i] == 0)
+                {
+                    break;
+                }
+                else
+                {
+                    minDelete += countChars[i];
+                }
+            }
+
+            return minDelete;
+        }
 
 
 
