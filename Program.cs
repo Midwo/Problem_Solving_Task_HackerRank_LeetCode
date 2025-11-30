@@ -8244,6 +8244,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumberOfPairs(nums1, nums2, k));
 
+            ////(3168.) Minimum Number of Chairs in a Waiting Room (EASY)
+            string s = "ELELEEL";
+
+            LeetCode_3168 classLeetCode = new LeetCode_3168();
+            Console.WriteLine(classLeetCode.MinimumChairs(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumChairs(s));
+
             ////(3174.) Clear Digits (EASY)
             //string s = "cb34";
 
@@ -8916,15 +8926,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinOperations(nums));
 
             ////(3545.) Minimum Deletions for At Most K Distinct Characters (EASY)
-            string s = "aabbccddeeff";
-            int k = 3;
+            //string s = "aabbccddeeff";
+            //int k = 3;
 
-            LeetCode_3545 classLeetCode = new LeetCode_3545();
-            Console.WriteLine(classLeetCode.MinDeletion(s, k));
+            //LeetCode_3545 classLeetCode = new LeetCode_3545();
+            //Console.WriteLine(classLeetCode.MinDeletion(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinDeletion(s, k));
+            //Console.WriteLine(leetCodeAll.MinDeletion(s, k));
 
             ////(3550.) Smallest Index With Digit Sum Equal to Index (EASY)
             //int[] nums = [1, 10, 11];

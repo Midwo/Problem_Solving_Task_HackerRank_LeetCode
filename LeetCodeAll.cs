@@ -21552,8 +21552,24 @@ namespace ProblemSolving
 
             return minDelete;
         }
-
-
+        public int MinimumChairs(string s)
+        {
+            int minChairs = 0;
+            int currChairs = 0;
+            foreach (char c in s)
+            {
+                if (c == 'E')
+                {
+                    currChairs++;
+                    minChairs = minChairs < currChairs ? currChairs : minChairs;
+                }
+                else
+                {
+                    currChairs--;
+                }
+            }
+            return minChairs;
+        }
 
 
 
