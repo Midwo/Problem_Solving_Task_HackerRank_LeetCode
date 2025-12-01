@@ -5170,6 +5170,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ProcessQueries(queries, m)));
 
+            ////(1413.) Minimum Value to Get Positive Step by Step Sum (EASY)
+            int[] nums = [-3,2,-3,4,2];
+
+            LeetCode_1413 classLeetCode = new LeetCode_1413();
+            Console.WriteLine(classLeetCode.MinStartValue(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinStartValue(nums));
+
             ////(1415.) The k-th Lexicographical String of All Happy Strings of Length n (MEDIUM)
             //int n = 3;
             //int k = 9;
@@ -8077,14 +8087,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountPrefixSuffixPairs(words));
 
             ////(3046.) Split the Array (EASY)
-            int[] nums = [2, 10, 2, 7, 8, 9, 7, 6, 6, 9];
+            //int[] nums = [2, 10, 2, 7, 8, 9, 7, 6, 6, 9];
 
-            LeetCode_3046 classLeetCode = new LeetCode_3046();
-            Console.WriteLine(classLeetCode.IsPossibleToSplit(nums));
+            //LeetCode_3046 classLeetCode = new LeetCode_3046();
+            //Console.WriteLine(classLeetCode.IsPossibleToSplit(nums));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.IsPossibleToSplit(nums));
+            //Console.WriteLine(leetCodeAll.IsPossibleToSplit(nums));
 
             ////(3065.) Minimum Operations to Exceed Threshold Value I (EASY)
             //int[] nums = [2, 11, 10, 1, 3];

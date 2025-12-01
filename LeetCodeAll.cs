@@ -21585,8 +21585,23 @@ namespace ProblemSolving
 
             return true;
         }
+        public int MinStartValue(int[] nums)
+        {
+            int startValue = 1;
+            int currSum = 1;
 
+            foreach (int item in nums)
+            {
+                currSum += item;
+                if (currSum < 1)
+                {
+                    startValue += Math.Abs(currSum - 1);
+                    currSum = 1;
+                }
+            }
 
+            return startValue;
+        }
 
 
 
