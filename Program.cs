@@ -8076,6 +8076,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountPrefixSuffixPairs(words));
 
+            ////(3046.) Split the Array (EASY)
+            int[] nums = [2, 10, 2, 7, 8, 9, 7, 6, 6, 9];
+
+            LeetCode_3046 classLeetCode = new LeetCode_3046();
+            Console.WriteLine(classLeetCode.IsPossibleToSplit(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsPossibleToSplit(nums));
+
             ////(3065.) Minimum Operations to Exceed Threshold Value I (EASY)
             //int[] nums = [2, 11, 10, 1, 3];
             //int k = 10;
@@ -8245,14 +8255,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfPairs(nums1, nums2, k));
 
             ////(3168.) Minimum Number of Chairs in a Waiting Room (EASY)
-            string s = "ELELEEL";
+            //string s = "ELELEEL";
 
-            LeetCode_3168 classLeetCode = new LeetCode_3168();
-            Console.WriteLine(classLeetCode.MinimumChairs(s));
+            //LeetCode_3168 classLeetCode = new LeetCode_3168();
+            //Console.WriteLine(classLeetCode.MinimumChairs(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumChairs(s));
+            //Console.WriteLine(leetCodeAll.MinimumChairs(s));
 
             ////(3174.) Clear Digits (EASY)
             //string s = "cb34";

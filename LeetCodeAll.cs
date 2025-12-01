@@ -21570,8 +21570,21 @@ namespace ProblemSolving
             }
             return minChairs;
         }
+        public bool IsPossibleToSplit(int[] nums)
+        {
+            int[] countNums = new int[101];
 
+            foreach (int item in nums)
+            {
+                countNums[item]++;
+                if (countNums[item] > 2)
+                {
+                    return false;
+                }
+            }
 
+            return true;
+        }
 
 
 
