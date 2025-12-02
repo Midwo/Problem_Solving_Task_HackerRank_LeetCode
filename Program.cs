@@ -7653,15 +7653,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumOfMultiples(n));
 
             ////(2656.) Maximum Sum With Exactly K Elements (EASY)
-            int[] nums = [5, 5, 5];
-            int k = 2;
+            //int[] nums = [5, 5, 5];
+            //int k = 2;
 
-            LeetCode_2656 classLeetCode = new LeetCode_2656();
-            Console.WriteLine(classLeetCode.MaximizeSum(nums, k));
+            //LeetCode_2656 classLeetCode = new LeetCode_2656();
+            //Console.WriteLine(classLeetCode.MaximizeSum(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximizeSum(nums, k));
+            //Console.WriteLine(leetCodeAll.MaximizeSum(nums, k));
 
             ////(2657.) Find the Prefix Common Array of Two Arrays (MEDIUM)
             //int[] A = [2, 3, 1];

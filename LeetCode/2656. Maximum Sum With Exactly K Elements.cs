@@ -12,11 +12,9 @@ namespace ProblemSolving.LeetCode
         public int MaximizeSum(int[] nums, int k)
         {
             int maxValue = nums[0];
-            int sum = 0;
 
             for (int i = 1; i < nums.Length; i++) 
             { 
-                sum += nums[i];
                 maxValue = maxValue < nums[i]? nums[i] : maxValue;
             }
             return (((maxValue+(maxValue + (k - 1))) )*k/2);
