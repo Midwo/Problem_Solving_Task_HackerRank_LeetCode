@@ -21612,8 +21612,28 @@ namespace ProblemSolving
             }
             return (((maxValue + (maxValue + (k - 1)))) * k / 2);
         }
+        public int[][] KClosest(int[][] points, int k)
+        {
+            int[][] distancePoints = new int[points.Length][];
+            int minimumDistance = int.MaxValue;
 
+            for (int i = 0; i < points.Length; i++)
+            {
+                int temp = points[i][0] * points[i][0] + points[i][1] * points[i][1];
+                distancePoints[i] = new int[] { temp, i };
+            }
 
+            List<int[]> listResult = new List<int[]>();
+
+            distancePoints = distancePoints.OrderBy(x => x[0]).ToArray();
+
+            for (int i = 0; i < k; i++)
+            {
+                listResult.Add(points[distancePoints[i][1]]);
+            }
+
+            return listResult.ToArray();
+        }
 
 
 
