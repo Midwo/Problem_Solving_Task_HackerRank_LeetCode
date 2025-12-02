@@ -5171,14 +5171,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.ProcessQueries(queries, m)));
 
             ////(1413.) Minimum Value to Get Positive Step by Step Sum (EASY)
-            int[] nums = [-3,2,-3,4,2];
+            //int[] nums = [-3,2,-3,4,2];
 
-            LeetCode_1413 classLeetCode = new LeetCode_1413();
-            Console.WriteLine(classLeetCode.MinStartValue(nums));
+            //LeetCode_1413 classLeetCode = new LeetCode_1413();
+            //Console.WriteLine(classLeetCode.MinStartValue(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinStartValue(nums));
+            //Console.WriteLine(leetCodeAll.MinStartValue(nums));
 
             ////(1415.) The k-th Lexicographical String of All Happy Strings of Length n (MEDIUM)
             //int n = 3;
@@ -7651,6 +7651,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SumOfMultiples(n));
+
+            ////(2656.) Maximum Sum With Exactly K Elements (EASY)
+            int[] nums = [5, 5, 5];
+            int k = 2;
+
+            LeetCode_2656 classLeetCode = new LeetCode_2656();
+            Console.WriteLine(classLeetCode.MaximizeSum(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximizeSum(nums, k));
 
             ////(2657.) Find the Prefix Common Array of Two Arrays (MEDIUM)
             //int[] A = [2, 3, 1];
