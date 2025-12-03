@@ -21634,8 +21634,15 @@ namespace ProblemSolving
 
             return listResult.ToArray();
         }
-
-
+        public int AccountBalanceAfterPurchase(int purchaseAmount)
+        {
+            int moduloResult = purchaseAmount % 10;
+            if (moduloResult > 4)
+            {
+                return 90 - purchaseAmount + moduloResult;
+            }
+            return 100 - purchaseAmount + moduloResult;
+        }
 
 
 

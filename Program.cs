@@ -3796,22 +3796,22 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.Spellchecker(wordlist, queries)));
 
-            ////(973.) K Closest Points to Origin (MEDIUM)
-            int[][] points = [[3, 3], [5, -1], [-2, 4]];
-            int k = 2;
+            //////(973.) K Closest Points to Origin (MEDIUM)
+            //int[][] points = [[3, 3], [5, -1], [-2, 4]];
+            //int k = 2;
 
-            LeetCode_973 classLeetCode = new LeetCode_973();
-            foreach (var item in classLeetCode.KClosest(points, k)) 
-            {
-                Console.WriteLine(string.Join(',',item));
-            }
+            //LeetCode_973 classLeetCode = new LeetCode_973();
+            //foreach (var item in classLeetCode.KClosest(points, k)) 
+            //{
+            //    Console.WriteLine(string.Join(',',item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.KClosest(points, k))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.KClosest(points, k))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(976.) Largest Perimeter Triangle (EASY)
             //int[] nums = [2, 1, 2];
@@ -7793,6 +7793,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NumberOfEmployeesWhoMetTarget(hours, target));
+
+            ////(2806.) Account Balance After Rounded Purchase (EASY)
+            int purchaseAmount = 15;
+
+            LeetCode_2806 classLeetCode = new LeetCode_2806();
+            Console.WriteLine(classLeetCode.AccountBalanceAfterPurchase(purchaseAmount));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AccountBalanceAfterPurchase(purchaseAmount));
 
             ////(2807.) Insert Greatest Common Divisors in Linked List (MEDIUM)
             //ListNode head = new ListNode(18);
