@@ -6327,6 +6327,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ReplaceDigits(s));
 
+            ////(1848.) Minimum Distance to the Target Element (EASY)
+            int[] nums = [1, 2, 3, 4, 5];
+            int target = 5;
+            int start = 3;
+
+            LeetCode_1848 classLeetCode = new LeetCode_1848();
+            Console.WriteLine(classLeetCode.GetMinDistance(nums, target, start));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GetMinDistance(nums, target, start));
+
             ////(1859.) Sorting the Sentence (EASY)
             //string s = "is2 sentence4 This1 a3";
 
@@ -7795,14 +7807,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfEmployeesWhoMetTarget(hours, target));
 
             ////(2806.) Account Balance After Rounded Purchase (EASY)
-            int purchaseAmount = 15;
+            //int purchaseAmount = 15;
 
-            LeetCode_2806 classLeetCode = new LeetCode_2806();
-            Console.WriteLine(classLeetCode.AccountBalanceAfterPurchase(purchaseAmount));
+            //LeetCode_2806 classLeetCode = new LeetCode_2806();
+            //Console.WriteLine(classLeetCode.AccountBalanceAfterPurchase(purchaseAmount));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.AccountBalanceAfterPurchase(purchaseAmount));
+            //Console.WriteLine(leetCodeAll.AccountBalanceAfterPurchase(purchaseAmount));
 
             ////(2807.) Insert Greatest Common Divisors in Linked List (MEDIUM)
             //ListNode head = new ListNode(18);
