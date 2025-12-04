@@ -21703,8 +21703,28 @@ namespace ProblemSolving
 
             return maxStricly;
         }
+        public IList<int> FindMissingElements(int[] nums)
+        {
+            IList<int> result = new List<int>();
+            int minValue = int.MaxValue;
+            int maxValue = int.MinValue;
 
+            for (int i = 0; i < nums.Length; i++)
+            {
+                minValue = minValue > nums[i] ? nums[i] : minValue;
+                maxValue = maxValue < nums[i] ? nums[i] : maxValue;
+            }
 
+            for (int i = minValue; i <= maxValue; i++)
+            {
+                if (!nums.Contains(i))
+                {
+                    result.Add(i);
+                }
+            }
+
+            return result;
+        }
 
 
 

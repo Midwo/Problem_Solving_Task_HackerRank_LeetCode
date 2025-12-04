@@ -8221,14 +8221,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxBottlesDrunk(numBottles, numExchange));
 
             ////(3105.) Longest Strictly Increasing or Strictly Decreasing Subarray (EASY)
-            int[] nums = [1, 4, 3, 3, 2];
+            //int[] nums = [1, 4, 3, 3, 2];
 
-            LeetCode_3105 classLeetCode = new LeetCode_3105();
-            Console.WriteLine(classLeetCode.LongestMonotonicSubarray(nums));
+            //LeetCode_3105 classLeetCode = new LeetCode_3105();
+            //Console.WriteLine(classLeetCode.LongestMonotonicSubarray(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LongestMonotonicSubarray(nums));
+            //Console.WriteLine(leetCodeAll.LongestMonotonicSubarray(nums));
 
             ////(3110.) Score of a String (EASY)
             //string s = "hello";
@@ -9108,8 +9108,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SumDivisibleByK(nums, k));
 
+            ////(3731.) Find Missing Elements (EASY)
+            int[] nums = [1, 4, 2, 5];
 
+            LeetCode_3731 classLeetCode = new LeetCode_3731();
+            Console.WriteLine(string.Join(',', classLeetCode.FindMissingElements(nums)));
 
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindMissingElements(nums)));
 
 
 
