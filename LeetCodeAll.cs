@@ -21658,6 +21658,60 @@ namespace ProblemSolving
 
             return minDistance;
         }
+        public int LongestMonotonicSubarray(int[] nums)
+        {
+            int maxStricly = 1;
+            int status = -1;
+            int currStricly = 1;
+            int lastValue = nums[0];
+
+            for (int i = 1; i < nums.Length; i++)
+            {
+                if (lastValue < nums[i])
+                {
+                    if (status == 2)
+                    {
+                        currStricly++;
+                    }
+                    else
+                    {
+                        status = 2;
+                        currStricly = 2;
+                    }
+                    maxStricly = maxStricly < currStricly ? currStricly : maxStricly;
+                }
+                else if (lastValue > nums[i])
+                {
+                    if (status == 1)
+                    {
+                        currStricly++;
+                    }
+                    else
+                    {
+                        status = 1;
+                        currStricly = 2;
+                    }
+                    maxStricly = maxStricly < currStricly ? currStricly : maxStricly;
+                }
+                else
+                {
+                    status = 0;
+                    currStricly = 1;
+                }
+                lastValue = nums[i];
+            }
+
+            return maxStricly;
+        }
+
+
+
+
+
+
+
+
+
 
 
 

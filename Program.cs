@@ -6328,16 +6328,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReplaceDigits(s));
 
             ////(1848.) Minimum Distance to the Target Element (EASY)
-            int[] nums = [1, 2, 3, 4, 5];
-            int target = 5;
-            int start = 3;
+            //int[] nums = [1, 2, 3, 4, 5];
+            //int target = 5;
+            //int start = 3;
 
-            LeetCode_1848 classLeetCode = new LeetCode_1848();
-            Console.WriteLine(classLeetCode.GetMinDistance(nums, target, start));
+            //LeetCode_1848 classLeetCode = new LeetCode_1848();
+            //Console.WriteLine(classLeetCode.GetMinDistance(nums, target, start));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GetMinDistance(nums, target, start));
+            //Console.WriteLine(leetCodeAll.GetMinDistance(nums, target, start));
 
             ////(1859.) Sorting the Sentence (EASY)
             //string s = "is2 sentence4 This1 a3";
@@ -8219,6 +8219,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxBottlesDrunk(numBottles, numExchange));
+
+            ////(3105.) Longest Strictly Increasing or Strictly Decreasing Subarray (EASY)
+            int[] nums = [1, 4, 3, 3, 2];
+
+            LeetCode_3105 classLeetCode = new LeetCode_3105();
+            Console.WriteLine(classLeetCode.LongestMonotonicSubarray(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LongestMonotonicSubarray(nums));
 
             ////(3110.) Score of a String (EASY)
             //string s = "hello";
