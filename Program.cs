@@ -4808,6 +4808,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindNumbers(nums));
 
+            ////(1299.) Replace Elements with Greatest Element on Right Side (EASY)
+            int[] arr = [17,18,5,4,6,1];
+
+            LeetCode_1299 classLeetCode = new LeetCode_1299();
+            Console.WriteLine(string.Join(',',classLeetCode.ReplaceElements(arr)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ReplaceElements(arr)));
+
             ////(1302.) Deepest Leaves Sum (MEDIUM)
             //TreeNode root = new TreeNode(1);
             //root.left = new TreeNode(2);
@@ -7449,14 +7459,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindMaxK(nums));
 
             ////(2442.) Count Number of Distinct Integers After Reverse Operations (MEDIUM)
-            int[] nums = [1,13,10,12,31];
+            //int[] nums = [1,13,10,12,31];
 
-            LeetCode_2442 classLeetCode = new LeetCode_2442();
-            Console.WriteLine(classLeetCode.CountDistinctIntegers(nums));
+            //LeetCode_2442 classLeetCode = new LeetCode_2442();
+            //Console.WriteLine(classLeetCode.CountDistinctIntegers(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountDistinctIntegers(nums));
+            //Console.WriteLine(leetCodeAll.CountDistinctIntegers(nums));
 
             ////(2455.) Average Value of Even Numbers That Are Divisible by Three (EASY)
             //int[] nums = [1, 3, 6, 10, 12, 15];
