@@ -7448,6 +7448,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindMaxK(nums));
 
+            ////(2442.) Count Number of Distinct Integers After Reverse Operations (MEDIUM)
+            int[] nums = [1,13,10,12,31];
+
+            LeetCode_2442 classLeetCode = new LeetCode_2442();
+            Console.WriteLine(classLeetCode.CountDistinctIntegers(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountDistinctIntegers(nums));
+
             ////(2455.) Average Value of Even Numbers That Are Divisible by Three (EASY)
             //int[] nums = [1, 3, 6, 10, 12, 15];
 
@@ -9109,14 +9119,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumDivisibleByK(nums, k));
 
             ////(3731.) Find Missing Elements (EASY)
-            int[] nums = [1, 4, 2, 5];
+            //int[] nums = [1, 4, 2, 5];
 
-            LeetCode_3731 classLeetCode = new LeetCode_3731();
-            Console.WriteLine(string.Join(',', classLeetCode.FindMissingElements(nums)));
+            //LeetCode_3731 classLeetCode = new LeetCode_3731();
+            //Console.WriteLine(string.Join(',', classLeetCode.FindMissingElements(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindMissingElements(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindMissingElements(nums)));
 
 
 
