@@ -5186,6 +5186,22 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxSatisfaction(satisfaction));
 
+            ////(1408.) String Matching in an Array (EASY)
+            string[] words = ["mass", "as", "hero", "superhero"];
+
+            LeetCode_1408 classLeetCode = new LeetCode_1408();
+            foreach (string word in classLeetCode.StringMatching(words)) 
+            {
+                Console.WriteLine(word);
+            }
+
+            //OR
+
+            foreach (string word in leetCodeAll.StringMatching(words))
+            {
+                Console.WriteLine(word);
+            }
+
             ////(1409.) Queries on a Permutation With Key (MEDIUM)
             //int[] queries = [3, 1, 2, 1];
             //int m = 5;
@@ -7370,14 +7386,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestEvenMultiple(n));
 
             ////(2414.) Length of the Longest Alphabetical Continuous Substring (MEDIUM)
-            string s = "abacaba";
+            //string s = "abacaba";
 
-            LeetCode_2414 classLeetCode = new LeetCode_2414();
-            Console.WriteLine(classLeetCode.LongestContinuousSubstring(s));
+            //LeetCode_2414 classLeetCode = new LeetCode_2414();
+            //Console.WriteLine(classLeetCode.LongestContinuousSubstring(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LongestContinuousSubstring(s));
+            //Console.WriteLine(leetCodeAll.LongestContinuousSubstring(s));
 
             ////(2415.) Reverse Odd Levels of Binary Tree (MEDIUM)
             //TreeNode root = new TreeNode(2);
