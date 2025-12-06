@@ -4809,14 +4809,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindNumbers(nums));
 
             ////(1299.) Replace Elements with Greatest Element on Right Side (EASY)
-            int[] arr = [17,18,5,4,6,1];
+            //int[] arr = [17,18,5,4,6,1];
 
-            LeetCode_1299 classLeetCode = new LeetCode_1299();
-            Console.WriteLine(string.Join(',',classLeetCode.ReplaceElements(arr)));
+            //LeetCode_1299 classLeetCode = new LeetCode_1299();
+            //Console.WriteLine(string.Join(',',classLeetCode.ReplaceElements(arr)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ReplaceElements(arr)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ReplaceElements(arr)));
 
             ////(1302.) Deepest Leaves Sum (MEDIUM)
             //TreeNode root = new TreeNode(1);
@@ -7368,6 +7368,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SmallestEvenMultiple(n));
+
+            ////(2414.) Length of the Longest Alphabetical Continuous Substring (MEDIUM)
+            string s = "abacaba";
+
+            LeetCode_2414 classLeetCode = new LeetCode_2414();
+            Console.WriteLine(classLeetCode.LongestContinuousSubstring(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LongestContinuousSubstring(s));
 
             ////(2415.) Reverse Odd Levels of Binary Tree (MEDIUM)
             //TreeNode root = new TreeNode(2);

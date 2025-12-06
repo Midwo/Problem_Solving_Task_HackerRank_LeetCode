@@ -21761,8 +21761,28 @@ namespace ProblemSolving
 
             return newArr;
         }
+        public int LongestContinuousSubstring(string s)
+        {
+            int maxLenghtAlphabeticalContinuous = 1;
+            char lastChar = '\0';
+            int currLenghtAlpabeticalContinuous = 1;
 
+            foreach (char item in s)
+            {
+                if (lastChar + 1 == item)
+                {
+                    currLenghtAlpabeticalContinuous++;
+                    maxLenghtAlphabeticalContinuous = maxLenghtAlphabeticalContinuous < currLenghtAlpabeticalContinuous ? currLenghtAlpabeticalContinuous : maxLenghtAlphabeticalContinuous;
+                }
+                else
+                {
+                    currLenghtAlpabeticalContinuous = 1;
+                }
+                lastChar = item;
+            }
 
+            return maxLenghtAlphabeticalContinuous;
+        }
 
 
 
