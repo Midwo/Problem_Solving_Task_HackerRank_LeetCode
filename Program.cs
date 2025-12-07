@@ -5187,20 +5187,20 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxSatisfaction(satisfaction));
 
             ////(1408.) String Matching in an Array (EASY)
-            string[] words = ["mass", "as", "hero", "superhero"];
+            //string[] words = ["mass", "as", "hero", "superhero"];
 
-            LeetCode_1408 classLeetCode = new LeetCode_1408();
-            foreach (string word in classLeetCode.StringMatching(words)) 
-            {
-                Console.WriteLine(word);
-            }
+            //LeetCode_1408 classLeetCode = new LeetCode_1408();
+            //foreach (string word in classLeetCode.StringMatching(words)) 
+            //{
+            //    Console.WriteLine(word);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (string word in leetCodeAll.StringMatching(words))
-            {
-                Console.WriteLine(word);
-            }
+            //foreach (string word in leetCodeAll.StringMatching(words))
+            //{
+            //    Console.WriteLine(word);
+            //}
 
             ////(1409.) Queries on a Permutation With Key (MEDIUM)
             //int[] queries = [3, 1, 2, 1];
@@ -7048,6 +7048,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindKDistantIndices(nums, key, k)));
+
+            ////(2206.) Divide Array Into Equal Pairs (EASY)
+            int[] nums = [3, 2, 3, 2, 2, 2];
+
+            LeetCode_2206 classLeetCode = new LeetCode_2206();
+            Console.WriteLine(classLeetCode.DivideArray(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DivideArray(nums));
 
             ////(2210.) Count Hills and Valleys in an Array (EASY)
             //int[] nums = [2, 4, 1, 1, 6, 5];

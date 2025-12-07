@@ -21804,6 +21804,27 @@ namespace ProblemSolving
 
             return result;
         }
+        public bool DivideArray(int[] nums)
+        {
+            Span<int> spanNums = stackalloc int[501];
+
+            foreach (int num in nums)
+            {
+                spanNums[num]++;
+            }
+
+            foreach (int num in spanNums)
+            {
+                if (num % 2 != 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+
 
 
 
