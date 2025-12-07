@@ -7050,14 +7050,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindKDistantIndices(nums, key, k)));
 
             ////(2206.) Divide Array Into Equal Pairs (EASY)
-            int[] nums = [3, 2, 3, 2, 2, 2];
+            //int[] nums = [3, 2, 3, 2, 2, 2];
 
-            LeetCode_2206 classLeetCode = new LeetCode_2206();
-            Console.WriteLine(classLeetCode.DivideArray(nums));
+            //LeetCode_2206 classLeetCode = new LeetCode_2206();
+            //Console.WriteLine(classLeetCode.DivideArray(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DivideArray(nums));
+            //Console.WriteLine(leetCodeAll.DivideArray(nums));
 
             ////(2210.) Count Hills and Valleys in an Array (EASY)
             //int[] nums = [2, 4, 1, 1, 6, 5];
@@ -8460,6 +8460,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumLength(nums, k));
+
+            ////(3206.) Alternating Groups I (EASY)
+            int[] colors = [0, 1, 0, 0, 1];
+
+            LeetCode_3206 classLeetCode = new LeetCode_3206();
+            Console.WriteLine(classLeetCode.NumberOfAlternatingGroups(colors));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumberOfAlternatingGroups(colors));
 
             ////(3210.) Find the Encrypted String (EASY)
             //string s = "dart";

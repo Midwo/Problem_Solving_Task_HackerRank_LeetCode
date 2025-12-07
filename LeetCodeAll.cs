@@ -21823,8 +21823,26 @@ namespace ProblemSolving
 
             return true;
         }
+        public int NumberOfAlternatingGroups(int[] colors)
+        {
+            int countAlternatingGroups = 0;
+            int lastColor = colors[colors.Length - 2];
+            int middleColor = colors[colors.Length - 1];
+            int nextColor;
 
+            for (int i = 0; i < colors.Length; i++)
+            {
+                nextColor = colors[i];
+                if (lastColor == nextColor && lastColor != middleColor)
+                {
+                    countAlternatingGroups++;
+                }
+                lastColor = middleColor;
+                middleColor = nextColor;
+            }
 
+            return countAlternatingGroups;
+        }
 
 
 
