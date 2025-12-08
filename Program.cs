@@ -6504,6 +6504,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.BuildArray(nums)));
 
+            ////(1925.) Count Square Sum Triples (EASY)
+            int n = 10;
+
+            LeetCode_1925 classLeetCode = new LeetCode_1925();
+            Console.WriteLine(classLeetCode.CountTriples(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountTriples(n));
+
             ////(1929.) Concatenation of Array (EASY)
             //int[] nums = [1, 2, 1];
 
@@ -8462,14 +8472,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumLength(nums, k));
 
             ////(3206.) Alternating Groups I (EASY)
-            int[] colors = [0, 1, 0, 0, 1];
+            //int[] colors = [0, 1, 0, 0, 1];
 
-            LeetCode_3206 classLeetCode = new LeetCode_3206();
-            Console.WriteLine(classLeetCode.NumberOfAlternatingGroups(colors));
+            //LeetCode_3206 classLeetCode = new LeetCode_3206();
+            //Console.WriteLine(classLeetCode.NumberOfAlternatingGroups(colors));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumberOfAlternatingGroups(colors));
+            //Console.WriteLine(leetCodeAll.NumberOfAlternatingGroups(colors));
 
             ////(3210.) Find the Encrypted String (EASY)
             //string s = "dart";
