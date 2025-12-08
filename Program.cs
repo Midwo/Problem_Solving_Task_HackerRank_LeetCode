@@ -6505,14 +6505,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.BuildArray(nums)));
 
             ////(1925.) Count Square Sum Triples (EASY)
-            int n = 10;
+            //int n = 10;
 
-            LeetCode_1925 classLeetCode = new LeetCode_1925();
-            Console.WriteLine(classLeetCode.CountTriples(n));
+            //LeetCode_1925 classLeetCode = new LeetCode_1925();
+            //Console.WriteLine(classLeetCode.CountTriples(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountTriples(n));
+            //Console.WriteLine(leetCodeAll.CountTriples(n));
 
             ////(1929.) Concatenation of Array (EASY)
             //int[] nums = [1, 2, 1];
@@ -7523,6 +7523,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(lee.AverageValue(nums));
+
+            ////(2460.) Apply Operations to an Array (EASY)
+            int[] nums = [0,1];
+
+            LeetCode_2460 classLeetCode = new LeetCode_2460();
+            Console.WriteLine(string.Join(',', classLeetCode.ApplyOperations(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ApplyOperations(nums)));
 
             ////(2469.) Convert the Temperature (EASY)
             //double celsius = 36.5;
