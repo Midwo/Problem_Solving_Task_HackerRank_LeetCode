@@ -7525,14 +7525,14 @@ namespace ProblemSolving
             //Console.WriteLine(lee.AverageValue(nums));
 
             ////(2460.) Apply Operations to an Array (EASY)
-            int[] nums = [0,1];
+            //int[] nums = [0,1];
 
-            LeetCode_2460 classLeetCode = new LeetCode_2460();
-            Console.WriteLine(string.Join(',', classLeetCode.ApplyOperations(nums)));
+            //LeetCode_2460 classLeetCode = new LeetCode_2460();
+            //Console.WriteLine(string.Join(',', classLeetCode.ApplyOperations(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ApplyOperations(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ApplyOperations(nums)));
 
             ////(2469.) Convert the Temperature (EASY)
             //double celsius = 36.5;
@@ -8253,6 +8253,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimumBoxes(apple, capacity));
+
+            ////(3079.) Find the Sum of Encrypted Integers (EASY)
+            int[] nums = [10, 21, 31];
+
+            LeetCode_3079 classLeetCode = new LeetCode_3079();
+            Console.WriteLine(classLeetCode.SumOfEncryptedInt(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumOfEncryptedInt(nums));
 
             ////(3083.) Existence of a Substring in a String and Its Reverse (EASY)
             //string s = "abcba";
