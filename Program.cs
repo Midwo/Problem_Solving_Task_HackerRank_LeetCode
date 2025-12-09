@@ -4983,6 +4983,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.RemovePalindromeSub(s));
 
+            ////(1337.) The K Weakest Rows in a Matrix (EASY)
+            int[][] mat = [[1,1,0,0,0], [1,1,1,1,0], [1,0,0,0,0], [1,1,0,0,0], [1,1,1,1,1]];
+            int k = 3;
+
+            LeetCode_1337 classLeetCode = new LeetCode_1337();
+            Console.WriteLine(string.Join(',',classLeetCode.KWeakestRows(mat, k)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.KWeakestRows(mat, k)));
+
             ////(1341.) Movie Rating  (MEDIUM)
             //string SqlQuery =
             //    @"
@@ -8255,14 +8266,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumBoxes(apple, capacity));
 
             ////(3079.) Find the Sum of Encrypted Integers (EASY)
-            int[] nums = [10, 21, 31];
+            //int[] nums = [10, 21, 31];
 
-            LeetCode_3079 classLeetCode = new LeetCode_3079();
-            Console.WriteLine(classLeetCode.SumOfEncryptedInt(nums));
+            //LeetCode_3079 classLeetCode = new LeetCode_3079();
+            //Console.WriteLine(classLeetCode.SumOfEncryptedInt(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumOfEncryptedInt(nums));
+            //Console.WriteLine(leetCodeAll.SumOfEncryptedInt(nums));
 
             ////(3083.) Existence of a Substring in a String and Its Reverse (EASY)
             //string s = "abcba";
