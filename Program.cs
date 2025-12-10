@@ -5065,14 +5065,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfSteps(num));
 
             ////(1346.) Check If N and Its Double Exist (EASY)
-            int[] arr = [10,2,5,3];
+            //int[] arr = [10,2,5,3];
 
-            LeetCode_1346 classLeetCode = new LeetCode_1346();
-            Console.WriteLine(classLeetCode.CheckIfExist(arr));
+            //LeetCode_1346 classLeetCode = new LeetCode_1346();
+            //Console.WriteLine(classLeetCode.CheckIfExist(arr));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckIfExist(arr));
+            //Console.WriteLine(leetCodeAll.CheckIfExist(arr));
 
             ////(1347.) Minimum Number of Steps to Make Two Strings Anagram ()
             //string s = "leetcode";
@@ -7330,6 +7330,16 @@ namespace ProblemSolving
             ////OR
 
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
+
+            ////(2357.) Make Array Zero by Subtracting Equal Amounts (EASY)
+            int[] nums = [1,5,0,3,5];
+
+            LeetCode_2357 classLeetCode = new LeetCode_2357();
+            Console.WriteLine(classLeetCode.MinimumOperations(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumOperations2357(nums));
 
             ////(2363.) Merge Similar Items (EASY)
             //int[][] items1 = [[2, 9], [24, 4], [11, 1], [16, 3], [1, 4], [28, 3], [23, 8], [3, 3]];

@@ -21958,8 +21958,20 @@ namespace ProblemSolving
 
             return status;
         }
+        public int MinimumOperations2357(int[] nums)
+        {
+            HashSet<int> countUniqueNums = new HashSet<int>();
 
+            foreach (int num in nums)
+            {
+                if (num > 0)
+                {
+                    countUniqueNums.Add(num);
+                }
+            }
 
+            return countUniqueNums.Count;
+        }
 
 
 
