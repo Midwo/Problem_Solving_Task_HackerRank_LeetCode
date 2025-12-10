@@ -21940,8 +21940,24 @@ namespace ProblemSolving
 
             return indexRowCount.OrderBy(x => x[1]).ToArray().Select(x => x[0]).ToArray()[0..k];
         }
+        public bool CheckIfExist(int[] arr)
+        {
+            bool status = false;
 
+            for (int j = 0; j < arr.Length; j++)
+            {
+                int doubleValue = arr[j] * 2;
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    if (i != j & arr[i] == doubleValue)
+                    {
+                        return true;
+                    }
+                }
+            }
 
+            return status;
+        }
 
 
 

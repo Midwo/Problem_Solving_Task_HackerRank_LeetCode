@@ -4984,15 +4984,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.RemovePalindromeSub(s));
 
             ////(1337.) The K Weakest Rows in a Matrix (EASY)
-            int[][] mat = [[1,1,0,0,0], [1,1,1,1,0], [1,0,0,0,0], [1,1,0,0,0], [1,1,1,1,1]];
-            int k = 3;
+            //int[][] mat = [[1,1,0,0,0], [1,1,1,1,0], [1,0,0,0,0], [1,1,0,0,0], [1,1,1,1,1]];
+            //int k = 3;
 
-            LeetCode_1337 classLeetCode = new LeetCode_1337();
-            Console.WriteLine(string.Join(',',classLeetCode.KWeakestRows(mat, k)));
+            //LeetCode_1337 classLeetCode = new LeetCode_1337();
+            //Console.WriteLine(string.Join(',',classLeetCode.KWeakestRows(mat, k)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.KWeakestRows(mat, k)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.KWeakestRows(mat, k)));
 
             ////(1341.) Movie Rating  (MEDIUM)
             //string SqlQuery =
@@ -5063,6 +5063,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NumberOfSteps(num));
+
+            ////(1346.) Check If N and Its Double Exist (EASY)
+            int[] arr = [10,2,5,3];
+
+            LeetCode_1346 classLeetCode = new LeetCode_1346();
+            Console.WriteLine(classLeetCode.CheckIfExist(arr));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckIfExist(arr));
 
             ////(1347.) Minimum Number of Steps to Make Two Strings Anagram ()
             //string s = "leetcode";
