@@ -7332,14 +7332,14 @@ namespace ProblemSolving
             //LeetCode_2356 classLeetCode = new LeetCode_2356();
 
             ////(2357.) Make Array Zero by Subtracting Equal Amounts (EASY)
-            int[] nums = [1,5,0,3,5];
+            //int[] nums = [1,5,0,3,5];
 
-            LeetCode_2357 classLeetCode = new LeetCode_2357();
-            Console.WriteLine(classLeetCode.MinimumOperations(nums));
+            //LeetCode_2357 classLeetCode = new LeetCode_2357();
+            //Console.WriteLine(classLeetCode.MinimumOperations(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumOperations2357(nums));
+            //Console.WriteLine(leetCodeAll.MinimumOperations2357(nums));
 
             ////(2363.) Merge Similar Items (EASY)
             //int[][] items1 = [[2, 9], [24, 4], [11, 1], [16, 3], [1, 4], [28, 3], [23, 8], [3, 3]];
@@ -8854,6 +8854,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountPartitions(nums));
+
+            ////(3438.) Find Valid Pair of Adjacent Digits in String (EASY)
+            string s = "2523533";
+
+            LeetCode_3438 classLeetCode = new LeetCode_3438();
+            Console.WriteLine(classLeetCode.FindValidPair(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindValidPair(s));
 
             ////(3439.) Reschedule Meetings for Maximum Free Time I (MEDIUM)
             //int eventTime = 99;
