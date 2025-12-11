@@ -25,7 +25,7 @@ namespace ProblemSolving.LeetCode
             {
                 //Console.WriteLine(sDictionaryCharCount[s[i - 1]] + sDictionaryCharCount[s[i]]);
                 //Console.WriteLine((s[i] - '0') + (s[i - 1] - '0'));
-                if (s[i] != s[i - 1] & sDictionaryCharCount[s[i - 1]] == (s[i] - '0') & sDictionaryCharCount[s[i]] == (s[i - 1] - '0'))
+                if (s[i] != s[i - 1] & sDictionaryCharCount[s[i]] == (s[i] - '0') & sDictionaryCharCount[s[i-1]] == (s[i - 1] - '0'))
                 {
                     return string.Concat(s[i - 1], s[i]);
                 }

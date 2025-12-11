@@ -8856,14 +8856,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountPartitions(nums));
 
             ////(3438.) Find Valid Pair of Adjacent Digits in String (EASY)
-            string s = "2523533";
+            //string s = "2523533";
 
-            LeetCode_3438 classLeetCode = new LeetCode_3438();
-            Console.WriteLine(classLeetCode.FindValidPair(s));
+            //LeetCode_3438 classLeetCode = new LeetCode_3438();
+            //Console.WriteLine(classLeetCode.FindValidPair(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindValidPair(s));
+            //Console.WriteLine(leetCodeAll.FindValidPair(s));
 
             ////(3439.) Reschedule Meetings for Maximum Free Time I (MEDIUM)
             //int eventTime = 99;
@@ -9172,6 +9172,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ProcessStr(s));
+
+            ////(3618.) Split Array by Prime Indices (MEDIUM)
+            int[] nums = [-1,5,7,0]; 
+
+            LeetCode_3618 classLeetCode = new LeetCode_3618();
+            Console.WriteLine(classLeetCode.SplitArray(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SplitArray(nums));
 
             ////(3622.) Check Divisibility by Digit Sum and Product (EASY)
             //int n = 99;
