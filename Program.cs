@@ -7861,6 +7861,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimizedStringLength(s));
 
+            ////(2729.) Check if The Number is Fascinating (EASY)
+            int n = 192;
+
+            LeetCode_2729 classLeetCode = new LeetCode_2729();
+            Console.WriteLine(classLeetCode.IsFascinating(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsFascinating(n));
+
             ////(2733.) Neither Minimum nor Maximum (EASY)
             //int[] nums = [3, 2, 1, 4];
 
@@ -9256,15 +9266,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumDivisibleByK(nums, k));
 
             ////(3718.) Smallest Missing Multiple of K (EASY)
-            int[] nums = [8, 2, 3, 4, 6];
-            int k = 2;
+            //int[] nums = [8, 2, 3, 4, 6];
+            //int k = 2;
 
-            LeetCode_3718 classLeetCode = new LeetCode_3718();
-            Console.WriteLine(classLeetCode.MissingMultiple(nums, k));
+            //LeetCode_3718 classLeetCode = new LeetCode_3718();
+            //Console.WriteLine(classLeetCode.MissingMultiple(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MissingMultiple(nums, k));
+            //Console.WriteLine(leetCodeAll.MissingMultiple(nums, k));
 
             ////(3731.) Find Missing Elements (EASY)
             //int[] nums = [1, 4, 2, 5];
