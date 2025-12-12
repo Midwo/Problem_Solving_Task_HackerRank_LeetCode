@@ -22037,8 +22037,21 @@ namespace ProblemSolving
 
             return Math.Abs(sumA - sumB);
         }
+        public int MissingMultiple(int[] nums, int k)
+        {
+            HashSet<int> hashSetNums = new HashSet<int>(nums);
 
-
+            int currValue = k;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (!hashSetNums.Contains(currValue))
+                {
+                    return currValue;
+                }
+                currValue += k;
+            }
+            return currValue;
+        }
 
 
 

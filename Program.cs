@@ -9174,14 +9174,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ProcessStr(s));
 
             ////(3618.) Split Array by Prime Indices (MEDIUM)
-            int[] nums = [-1,5,7,0]; 
+            //int[] nums = [-1,5,7,0]; 
 
-            LeetCode_3618 classLeetCode = new LeetCode_3618();
-            Console.WriteLine(classLeetCode.SplitArray(nums));
+            //LeetCode_3618 classLeetCode = new LeetCode_3618();
+            //Console.WriteLine(classLeetCode.SplitArray(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SplitArray(nums));
+            //Console.WriteLine(leetCodeAll.SplitArray(nums));
 
             ////(3622.) Check Divisibility by Digit Sum and Product (EASY)
             //int n = 99;
@@ -9254,6 +9254,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SumDivisibleByK(nums, k));
+
+            ////(3718.) Smallest Missing Multiple of K (EASY)
+            int[] nums = [8, 2, 3, 4, 6];
+            int k = 2;
+
+            LeetCode_3718 classLeetCode = new LeetCode_3718();
+            Console.WriteLine(classLeetCode.MissingMultiple(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MissingMultiple(nums, k));
 
             ////(3731.) Find Missing Elements (EASY)
             //int[] nums = [1, 4, 2, 5];
