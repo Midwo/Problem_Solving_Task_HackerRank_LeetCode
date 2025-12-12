@@ -7862,7 +7862,7 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizedStringLength(s));
 
             ////(2729.) Check if The Number is Fascinating (EASY)
-            int n = 192;
+            int n = 123;
 
             LeetCode_2729 classLeetCode = new LeetCode_2729();
             Console.WriteLine(classLeetCode.IsFascinating(n));
