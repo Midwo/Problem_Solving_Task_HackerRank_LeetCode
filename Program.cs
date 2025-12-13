@@ -28,6 +28,7 @@ using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
 using static ProblemSolving.LeetCode.LeetCode_303;
 using static ProblemSolving.LeetCode.LeetCode_380;
+using static ProblemSolving.LeetCode.LeetCode_535;
 using static ProblemSolving.LeetCode.LeetCode_703;
 using static ProblemSolving.LeetCode.LeetCode_705;
 using static ProblemSolving.LeetCode.LeetCode_706;
@@ -7862,14 +7863,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizedStringLength(s));
 
             ////(2729.) Check if The Number is Fascinating (EASY)
-            int n = 123;
+            //int n = 123;
 
-            LeetCode_2729 classLeetCode = new LeetCode_2729();
-            Console.WriteLine(classLeetCode.IsFascinating(n));
+            //LeetCode_2729 classLeetCode = new LeetCode_2729();
+            //Console.WriteLine(classLeetCode.IsFascinating(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsFascinating(n));
+            //Console.WriteLine(leetCodeAll.IsFascinating(n));
 
             ////(2733.) Neither Minimum nor Maximum (EASY)
             //int[] nums = [3, 2, 1, 4];
@@ -9172,6 +9173,24 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SmallestIndex(nums));
+
+            ////(3606.) Coupon Code Validator (EASY)
+            string[] code = ["SAVE20", "", "PHARMA5", "SAVE@20"];
+            string[] businessLine = ["restaurant", "grocery", "pharmacy", "restaurant"];
+            bool[] isActive = [true, true, true, true];
+
+            LeetCode_3606 classLeetCode = new LeetCode_3606();
+            foreach (var item in classLeetCode.ValidateCoupons(code, businessLine, isActive))
+            {
+                Console.WriteLine(item);
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.ValidateCoupons(code, businessLine, isActive))
+            {
+                Console.WriteLine(item);
+            }
 
             ////(3612.) Process String with Special Operations I (MEDIUM)
             //string s = "a#b%*";
