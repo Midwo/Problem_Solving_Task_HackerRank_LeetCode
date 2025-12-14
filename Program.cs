@@ -6154,14 +6154,14 @@ namespace ProblemSolving
             //LeetCode_1741 classLeetCode = new LeetCode_1741();
 
             ////(1748.) Sum of Unique Elements (EASY)
-            int[] nums = [1, 2, 3, 2];
+            //int[] nums = [1, 2, 3, 2];
 
-            LeetCode_1748 classLeetCode = new LeetCode_1748();
-            Console.WriteLine(classLeetCode.SumOfUnique(nums));
+            //LeetCode_1748 classLeetCode = new LeetCode_1748();
+            //Console.WriteLine(classLeetCode.SumOfUnique(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumOfUnique(nums));
+            //Console.WriteLine(leetCodeAll.SumOfUnique(nums));
 
             ////(1752.) Check if Array Is Sorted and Rotated (EASY)
             //int[] nums = [2, 1, 3, 4];
@@ -6321,6 +6321,16 @@ namespace ProblemSolving
             ////OR
 
             //LeetCode_1795 classLeetCode = new LeetCode_1795();
+
+            ////(1800.) Maximum Ascending Subarray Sum (EASY)
+            int[] nums = [10,20,30,5,10,50];
+
+            LeetCode_1800 classLeetCode = new LeetCode_1800();
+            Console.WriteLine(classLeetCode.MaxAscendingSum(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxAscendingSum(nums));
 
             ////(1816.) Truncate Sentence (EASY) 
             //string s = "Hello how are you Contestant";

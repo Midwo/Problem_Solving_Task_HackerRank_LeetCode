@@ -22263,6 +22263,34 @@ namespace ProblemSolving
 
             return sumOfUnique;
         }
+        public int MaxAscendingSum(int[] nums)
+        {
+            int last = nums[0];
+            int maxAscendingSum = last;
+            int currAscendingSum = last;
+            for (int i = 1; i < nums.Length; i++)
+            {
+                if (last < nums[i])
+                {
+                    last = nums[i];
+                    currAscendingSum += last;
+                    maxAscendingSum = maxAscendingSum < currAscendingSum ? currAscendingSum : maxAscendingSum;
+                }
+                else
+                {
+                    last = nums[i];
+                    currAscendingSum = last;
+                }
+            }
+
+            return maxAscendingSum;
+        }
+
+
+
+
+
+
 
 
 
