@@ -22243,6 +22243,27 @@ namespace ProblemSolving
             }
             return true;
         }
+        public int SumOfUnique(int[] nums)
+        {
+            int sumOfUnique = 0;
+            int[] tableNums = new int[101];
+
+            foreach (var item in nums)
+            {
+                tableNums[item]++;
+                if (tableNums[item] < 2)
+                {
+                    sumOfUnique += item;
+                }
+                else if (tableNums[item] == 2)
+                {
+                    sumOfUnique -= item;
+                }
+            }
+
+            return sumOfUnique;
+        }
+
 
 
 

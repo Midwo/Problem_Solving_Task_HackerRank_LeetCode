@@ -6153,6 +6153,16 @@ namespace ProblemSolving
 
             //LeetCode_1741 classLeetCode = new LeetCode_1741();
 
+            ////(1748.) Sum of Unique Elements (EASY)
+            int[] nums = [1, 2, 3, 2];
+
+            LeetCode_1748 classLeetCode = new LeetCode_1748();
+            Console.WriteLine(classLeetCode.SumOfUnique(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumOfUnique(nums));
+
             ////(1752.) Check if Array Is Sorted and Rotated (EASY)
             //int[] nums = [2, 1, 3, 4];
 
@@ -9175,22 +9185,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestIndex(nums));
 
             ////(3606.) Coupon Code Validator (EASY)
-            string[] code = ["SAVE20", "", "PHARMA5", "SAVE@20"];
-            string[] businessLine = ["restaurant", "grocery", "pharmacy", "restaurant"];
-            bool[] isActive = [true, true, true, true];
+            //string[] code = ["SAVE20", "", "PHARMA5", "SAVE@20"];
+            //string[] businessLine = ["restaurant", "grocery", "pharmacy", "restaurant"];
+            //bool[] isActive = [true, true, true, true];
 
-            LeetCode_3606 classLeetCode = new LeetCode_3606();
-            foreach (var item in classLeetCode.ValidateCoupons(code, businessLine, isActive))
-            {
-                Console.WriteLine(item);
-            }
+            //LeetCode_3606 classLeetCode = new LeetCode_3606();
+            //foreach (var item in classLeetCode.ValidateCoupons(code, businessLine, isActive))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.ValidateCoupons(code, businessLine, isActive))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in leetCodeAll.ValidateCoupons(code, businessLine, isActive))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             ////(3612.) Process String with Special Operations I (MEDIUM)
             //string s = "a#b%*";
