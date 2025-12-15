@@ -6323,14 +6323,14 @@ namespace ProblemSolving
             //LeetCode_1795 classLeetCode = new LeetCode_1795();
 
             ////(1800.) Maximum Ascending Subarray Sum (EASY)
-            int[] nums = [10,20,30,5,10,50];
+            //int[] nums = [10,20,30,5,10,50];
 
-            LeetCode_1800 classLeetCode = new LeetCode_1800();
-            Console.WriteLine(classLeetCode.MaxAscendingSum(nums));
+            //LeetCode_1800 classLeetCode = new LeetCode_1800();
+            //Console.WriteLine(classLeetCode.MaxAscendingSum(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxAscendingSum(nums));
+            //Console.WriteLine(leetCodeAll.MaxAscendingSum(nums));
 
             ////(1816.) Truncate Sentence (EASY) 
             //string s = "Hello how are you Contestant";
@@ -6881,6 +6881,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FirstPalindrome(words)));
+
+            ////(2110.) Number of Smooth Descent Periods of a Stock (MEDIUM)
+            int[] prices = [3, 2, 1, 4];
+
+            LeetCode_2110 classLeetCode = new LeetCode_2110();
+            Console.WriteLine(classLeetCode.GetDescentPeriods(prices));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GetDescentPeriods(prices));
 
             ////(2114.) Maximum Number of Words Found in Sentences (EASY)
             //string[] sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"];
