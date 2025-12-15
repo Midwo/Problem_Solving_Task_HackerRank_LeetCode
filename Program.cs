@@ -6074,6 +6074,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.Decode(encoded, first)));
 
+            ////(1725.) Number Of Rectangles That Can Form The Largest Square (EASY)
+            int[][] rectangles = [[5,8], [3,9], [5,12], [16,5]];
+
+            LeetCode_1725 classLeetCode = new LeetCode_1725();
+            Console.WriteLine(classLeetCode.CountGoodRectangles(rectangles));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountGoodRectangles(rectangles));
+
             ////(1729.) Find Followers Count (EASY)
             //string SqlQuery =
             //    @"
@@ -6883,14 +6893,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FirstPalindrome(words)));
 
             ////(2110.) Number of Smooth Descent Periods of a Stock (MEDIUM)
-            int[] prices = [3, 2, 1, 4];
+            //int[] prices = [3, 2, 1, 4];
 
-            LeetCode_2110 classLeetCode = new LeetCode_2110();
-            Console.WriteLine(classLeetCode.GetDescentPeriods(prices));
+            //LeetCode_2110 classLeetCode = new LeetCode_2110();
+            //Console.WriteLine(classLeetCode.GetDescentPeriods(prices));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GetDescentPeriods(prices));
+            //Console.WriteLine(leetCodeAll.GetDescentPeriods(prices));
 
             ////(2114.) Maximum Number of Words Found in Sentences (EASY)
             //string[] sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"];
