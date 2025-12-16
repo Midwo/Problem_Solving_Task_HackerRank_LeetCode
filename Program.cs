@@ -5499,6 +5499,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.Average(salary));
 
+            ////(1492.) The kth Factor of n (MEDIUM)
+            int n = 12;
+            int k = 3;
+
+            LeetCode_1492 classLeetCode = new LeetCode_1492();
+            Console.WriteLine(classLeetCode.KthFactor(n, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.KthFactor(n, k));
+
             ////(1493.) Longest Subarray of 1's After Deleting One Element (MEDIUM)
             //int[] nums = [0, 1, 1, 1, 0, 1, 1, 0, 1];
 
@@ -8044,14 +8055,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountSymmetricIntegers(low, high));
 
             ////(2848.) Points That Intersect With Cars (EASY)
-            IList<IList<int>> nums = [[2, 5], [8, 8], [1, 6], [4, 4], [4, 5], [2, 4]];
+            //IList<IList<int>> nums = [[2, 5], [8, 8], [1, 6], [4, 4], [4, 5], [2, 4]];
 
-            LeetCode_2848 classLeetCode = new LeetCode_2848();
-            Console.WriteLine(classLeetCode.NumberOfPoints(nums));
+            //LeetCode_2848 classLeetCode = new LeetCode_2848();
+            //Console.WriteLine(classLeetCode.NumberOfPoints(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(classLeetCode.NumberOfPoints(nums));
+            //Console.WriteLine(classLeetCode.NumberOfPoints(nums));
 
             ////(2859.) Sum of Values at Indices With K Set Bits (EASY)
             //IList<int> nums = [5, 10, 1, 5, 2];
