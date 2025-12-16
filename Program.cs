@@ -6075,14 +6075,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.Decode(encoded, first)));
 
             ////(1725.) Number Of Rectangles That Can Form The Largest Square (EASY)
-            int[][] rectangles = [[5,8], [3,9], [5,12], [16,5]];
+            //int[][] rectangles = [[5,8], [3,9], [5,12], [16,5]];
 
-            LeetCode_1725 classLeetCode = new LeetCode_1725();
-            Console.WriteLine(classLeetCode.CountGoodRectangles(rectangles));
+            //LeetCode_1725 classLeetCode = new LeetCode_1725();
+            //Console.WriteLine(classLeetCode.CountGoodRectangles(rectangles));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountGoodRectangles(rectangles));
+            //Console.WriteLine(leetCodeAll.CountGoodRectangles(rectangles));
 
             ////(1729.) Find Followers Count (EASY)
             //string SqlQuery =
@@ -8042,6 +8042,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountSymmetricIntegers(low, high));
+
+            ////(2848.) Points That Intersect With Cars (EASY)
+            IList<IList<int>> nums = [[2, 5], [8, 8], [1, 6], [4, 4], [4, 5], [2, 4]];
+
+            LeetCode_2848 classLeetCode = new LeetCode_2848();
+            Console.WriteLine(classLeetCode.NumberOfPoints(nums));
+
+            //OR
+
+            Console.WriteLine(classLeetCode.NumberOfPoints(nums));
 
             ////(2859.) Sum of Values at Indices With K Set Bits (EASY)
             //IList<int> nums = [5, 10, 1, 5, 2];
