@@ -22396,7 +22396,24 @@ namespace ProblemSolving
 
             return resultList[k - 1];
         }
+        public bool HasTrailingZeros(int[] nums)
+        {
+            int countEven = 0;
 
+            foreach (int item in nums)
+            {
+                if (item % 2 == 0)
+                {
+                    countEven++;
+                    if (countEven == 2)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
 
 
 

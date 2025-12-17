@@ -5500,15 +5500,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.Average(salary));
 
             ////(1492.) The kth Factor of n (MEDIUM)
-            int n = 12;
-            int k = 3;
+            //int n = 12;
+            //int k = 3;
 
-            LeetCode_1492 classLeetCode = new LeetCode_1492();
-            Console.WriteLine(classLeetCode.KthFactor(n, k));
+            //LeetCode_1492 classLeetCode = new LeetCode_1492();
+            //Console.WriteLine(classLeetCode.KthFactor(n, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.KthFactor(n, k));
+            //Console.WriteLine(leetCodeAll.KthFactor(n, k));
 
             ////(1493.) Longest Subarray of 1's After Deleting One Element (MEDIUM)
             //int[] nums = [0, 1, 1, 1, 0, 1, 1, 0, 1];
@@ -8207,6 +8207,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.NumberGame(nums)));
+
+            ////(2980.) Check if Bitwise OR Has Trailing Zeros (EASY)
+            int[] nums = [1, 2, 3, 4, 5];
+
+            LeetCode_2980 classLeetCode = new LeetCode_2980();
+            Console.WriteLine(classLeetCode.HasTrailingZeros(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.HasTrailingZeros(nums));
 
             ////(2997.) Minimum Number of Operations to Make Array XOR Equal to K (MEDIUM)
             //int[] nums = [2, 1, 3, 4];
