@@ -6655,6 +6655,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MakeFancyString(s));
 
+            ////(1961.) Check If String Is a Prefix of Array (EASY)
+            string s = "z";
+            string[] words = ["z"];
+
+            LeetCode_1961 classLeetCode = new LeetCode_1961();
+            Console.WriteLine(classLeetCode.IsPrefixString(s, words));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsPrefixString(s, words));
+
             ////(1967.) Number of Strings That Appear as Substrings in Word (EASY)
             //string[] patterns = ["a", "abc", "bc", "d"];
             //string word = "abc";
@@ -8209,14 +8220,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.NumberGame(nums)));
 
             ////(2980.) Check if Bitwise OR Has Trailing Zeros (EASY)
-            int[] nums = [1, 2, 3, 4, 5];
+            //int[] nums = [1, 2, 3, 4, 5];
 
-            LeetCode_2980 classLeetCode = new LeetCode_2980();
-            Console.WriteLine(classLeetCode.HasTrailingZeros(nums));
+            //LeetCode_2980 classLeetCode = new LeetCode_2980();
+            //Console.WriteLine(classLeetCode.HasTrailingZeros(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.HasTrailingZeros(nums));
+            //Console.WriteLine(leetCodeAll.HasTrailingZeros(nums));
 
             ////(2997.) Minimum Number of Operations to Make Array XOR Equal to K (MEDIUM)
             //int[] nums = [2, 1, 3, 4];
