@@ -6656,15 +6656,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MakeFancyString(s));
 
             ////(1961.) Check If String Is a Prefix of Array (EASY)
-            string s = "z";
-            string[] words = ["z"];
+            //string s = "z";
+            //string[] words = ["z"];
 
-            LeetCode_1961 classLeetCode = new LeetCode_1961();
-            Console.WriteLine(classLeetCode.IsPrefixString(s, words));
+            //LeetCode_1961 classLeetCode = new LeetCode_1961();
+            //Console.WriteLine(classLeetCode.IsPrefixString(s, words));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsPrefixString(s, words));
+            //Console.WriteLine(leetCodeAll.IsPrefixString(s, words));
 
             ////(1967.) Number of Strings That Appear as Substrings in Word (EASY)
             //string[] patterns = ["a", "abc", "bc", "d"];
@@ -9255,6 +9255,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SmallestIndex(nums));
+
+            ////(3591.) Check if Any Element Has Prime Frequency (EASY)
+            int[] nums = [3, 0, 3, 6, 3, 3];
+
+            LeetCode_3591 classLeetCode = new LeetCode_3591();
+            Console.WriteLine(classLeetCode.CheckPrimeFrequency(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckPrimeFrequency(nums));
 
             ////(3606.) Coupon Code Validator (EASY)
             //string[] code = ["SAVE20", "", "PHARMA5", "SAVE@20"];
