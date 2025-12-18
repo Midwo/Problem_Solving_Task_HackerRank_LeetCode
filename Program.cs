@@ -5150,6 +5150,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.LuckyNumbers(matrix)));
 
+            ////(1385.) Find the Distance Value Between Two Arrays (EASY)
+            int[] arr1 = [4, 5, 8];
+            int[] arr2 = [10,9,1,8];
+            int d = 2;
+
+            LeetCode_1385 classLeetCode = new LeetCode_1385();
+            Console.WriteLine(classLeetCode.FindTheDistanceValue(arr1, arr2, d));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindTheDistanceValue(arr1, arr2, d));
+
             ////(1389.) Create Target Array in the Given Order (EASY)
             //int[] nums = [0, 1, 2, 3, 4];
             //int[] index = [0, 1, 2, 2, 1];
