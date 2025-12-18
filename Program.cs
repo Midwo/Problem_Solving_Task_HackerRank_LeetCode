@@ -9257,14 +9257,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestIndex(nums));
 
             ////(3591.) Check if Any Element Has Prime Frequency (EASY)
-            int[] nums = [3, 0, 3, 6, 3, 3];
+            //int[] nums = [3, 0, 3, 6, 3, 3];
 
-            LeetCode_3591 classLeetCode = new LeetCode_3591();
-            Console.WriteLine(classLeetCode.CheckPrimeFrequency(nums));
+            //LeetCode_3591 classLeetCode = new LeetCode_3591();
+            //Console.WriteLine(classLeetCode.CheckPrimeFrequency(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckPrimeFrequency(nums));
+            //Console.WriteLine(leetCodeAll.CheckPrimeFrequency(nums));
 
             ////(3606.) Coupon Code Validator (EASY)
             //string[] code = ["SAVE20", "", "PHARMA5", "SAVE@20"];
