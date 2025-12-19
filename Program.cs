@@ -5151,16 +5151,16 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.LuckyNumbers(matrix)));
 
             ////(1385.) Find the Distance Value Between Two Arrays (EASY)
-            int[] arr1 = [4, 5, 8];
-            int[] arr2 = [10,9,1,8];
-            int d = 2;
+            //int[] arr1 = [4, 5, 8];
+            //int[] arr2 = [10,9,1,8];
+            //int d = 2;
 
-            LeetCode_1385 classLeetCode = new LeetCode_1385();
-            Console.WriteLine(classLeetCode.FindTheDistanceValue(arr1, arr2, d));
+            //LeetCode_1385 classLeetCode = new LeetCode_1385();
+            //Console.WriteLine(classLeetCode.FindTheDistanceValue(arr1, arr2, d));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindTheDistanceValue(arr1, arr2, d));
+            //Console.WriteLine(leetCodeAll.FindTheDistanceValue(arr1, arr2, d));
 
             ////(1389.) Create Target Array in the Given Order (EASY)
             //int[] nums = [0, 1, 2, 3, 4];
@@ -9325,6 +9325,25 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CheckDivisibility(n));
+
+            ////(3643.) Flip Square Submatrix Vertically (EASY)
+            int[][] grid = [[6, 16, 14], [1, 2, 19], [14, 17, 15], [18, 7, 6], [14, 12, 5]];
+            int x = 2;
+            int y = 1;
+            int k = 2;
+
+            LeetCode_3643 classLeetCode = new LeetCode_3643();
+            foreach (var item in classLeetCode.ReverseSubmatrix(grid, x, y, k))
+            {
+                Console.WriteLine(string.Join(',',item));
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.ReverseSubmatrix(grid, x, y, k))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             ////(3658.) GCD of Odd and Even Sums (EASY)
             //int n = 4;
