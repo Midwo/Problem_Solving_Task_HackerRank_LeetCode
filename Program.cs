@@ -8868,6 +8868,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsBalanced(num));
 
+            ////(3345.) Smallest Divisible Digit Product I (EASY)
+            int n = 15;
+            int t = 3;
+
+            LeetCode_3345 classLeetCode = new LeetCode_3345();
+            Console.WriteLine(classLeetCode.SmallestNumber(n, t));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SmallestNumber(n, t));
+
             ////(3349.) Adjacent Increasing Subarrays Detection I (EASY)
             //IList<int> nums = [-12, 20, 18, 18];
             //int k = 2;
@@ -9327,23 +9338,23 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckDivisibility(n));
 
             ////(3643.) Flip Square Submatrix Vertically (EASY)
-            int[][] grid = [[6, 16, 14], [1, 2, 19], [14, 17, 15], [18, 7, 6], [14, 12, 5]];
-            int x = 2;
-            int y = 1;
-            int k = 2;
+            //int[][] grid = [[6, 16, 14], [1, 2, 19], [14, 17, 15], [18, 7, 6], [14, 12, 5]];
+            //int x = 2;
+            //int y = 1;
+            //int k = 2;
 
-            LeetCode_3643 classLeetCode = new LeetCode_3643();
-            foreach (var item in classLeetCode.ReverseSubmatrix(grid, x, y, k))
-            {
-                Console.WriteLine(string.Join(',',item));
-            }
+            //LeetCode_3643 classLeetCode = new LeetCode_3643();
+            //foreach (var item in classLeetCode.ReverseSubmatrix(grid, x, y, k))
+            //{
+            //    Console.WriteLine(string.Join(',',item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.ReverseSubmatrix(grid, x, y, k))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.ReverseSubmatrix(grid, x, y, k))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(3658.) GCD of Odd and Even Sums (EASY)
             //int n = 4;

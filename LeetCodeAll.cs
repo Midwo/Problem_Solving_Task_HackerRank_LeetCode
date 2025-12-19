@@ -22534,8 +22534,28 @@ namespace ProblemSolving
 
             return grid;
         }
+        public int SmallestNumber(int n, int t)
+        {
+            while (n < 101)
+            {
+                int tempN = n;
+                int productValue = 1;
 
+                while (tempN != 0)
+                {
+                    productValue *= tempN % 10;
+                    tempN /= 10;
+                }
 
+                if (productValue % t == 0)
+                {
+                    return n;
+                }
+
+                n++;
+            }
+            return -1;
+        }
 
 
 
