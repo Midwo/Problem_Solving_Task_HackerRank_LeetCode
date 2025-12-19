@@ -22526,22 +22526,14 @@ namespace ProblemSolving
                 for (int j = y; j < y + k; j++)
                 {
                     grid[i][j] = grid[where][j];
-                    indexJ++;
-                }
-                indexJ = 0;
-                for (int j = y; j < y + k; j++)
-                {
                     grid[where][j] = tempX[indexJ];
                     indexJ++;
                 }
-
                 x1++;
             }
 
             return grid;
         }
-
-
 
 
 
