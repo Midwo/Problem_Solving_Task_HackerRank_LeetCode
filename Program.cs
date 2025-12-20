@@ -8142,6 +8142,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinSum(nums1, nums2));
 
+            ////(2923.) Find Champion I (EASY)
+            int[][] grid = [[0,0,1], [1,1,1], [0,0,0]];
+            
+            LeetCode_2923 classLeetCode = new LeetCode_2923();
+            Console.WriteLine(classLeetCode.FindChampion(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindChampion(grid));
+
             ////(2942.) Find Words Containing Character (EASY)
             //string[] words = ["leet", "code"];
             //char x = 'e';
@@ -8869,15 +8879,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsBalanced(num));
 
             ////(3345.) Smallest Divisible Digit Product I (EASY)
-            int n = 15;
-            int t = 3;
+            //int n = 15;
+            //int t = 3;
 
-            LeetCode_3345 classLeetCode = new LeetCode_3345();
-            Console.WriteLine(classLeetCode.SmallestNumber(n, t));
+            //LeetCode_3345 classLeetCode = new LeetCode_3345();
+            //Console.WriteLine(classLeetCode.SmallestNumber(n, t));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SmallestNumber(n, t));
+            //Console.WriteLine(leetCodeAll.SmallestNumber(n, t));
 
             ////(3349.) Adjacent Increasing Subarrays Detection I (EASY)
             //IList<int> nums = [-12, 20, 18, 18];
