@@ -5268,6 +5268,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.GetHappyStringTask1415(n, k));
 
+            ////(1422.) Maximum Score After Splitting a String (EASY)
+            //string s = "011101";
+
+            //LeetCode_1422 classLeetCode = new LeetCode_1422();
+            //Console.WriteLine(classLeetCode.MaxScore(s));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaxScore(s));
+
             ////(1431.) Kids With the Greatest Number of Candies (EASY)
             //int[] candies = [2, 3, 5, 1, 3];
             //int extraCandies = 3;
@@ -8143,14 +8153,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinSum(nums1, nums2));
 
             ////(2923.) Find Champion I (EASY)
-            int[][] grid = [[0,0,1], [1,1,1], [0,0,0]];
-            
-            LeetCode_2923 classLeetCode = new LeetCode_2923();
-            Console.WriteLine(classLeetCode.FindChampion(grid));
+            //int[][] grid = [[0,0,1], [1,1,1], [0,0,0]];
 
-            //OR
+            //LeetCode_2923 classLeetCode = new LeetCode_2923();
+            //Console.WriteLine(classLeetCode.FindChampion(grid));
 
-            Console.WriteLine(leetCodeAll.FindChampion(grid));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.FindChampion(grid));
 
             ////(2942.) Find Words Containing Character (EASY)
             //string[] words = ["leet", "code"];
@@ -9237,6 +9247,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FindClosest(x, y, z));
+
+            ////(3522.) Calculate Score After Performing Instructions (MEDIUM)
+            string[] instructions = ["jump", "add", "add", "jump", "add", "jump"];
+            int[] values = [2, 1, 3, 1, -2, -3];
+
+            LeetCode_3522 classLeetCode = new LeetCode_3522();
+            Console.WriteLine(classLeetCode.CalculateScore(instructions, values));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CalculateScore(instructions, values));
 
             ////(3536.) Maximum Product of Two Digits (EASY)
             //int n = 124;

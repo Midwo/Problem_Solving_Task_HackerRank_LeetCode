@@ -22585,6 +22585,71 @@ namespace ProblemSolving
 
             return championIndex;
         }
+        public int MaxScore(string s)
+        {
+            int count0 = 0;
+            int count1 = 0;
+            int maxScore = 0;
+            int lenght = s.Length;
+
+            for (int i = 0; i < lenght; i++)
+            {
+                if (s[i] == '1')
+                {
+                    count1++;
+                }
+            }
+
+            for (int i = 0; i < lenght - 1; i++)
+            {
+                if (s[i] == '0')
+                {
+                    count0++;
+                }
+                else
+                {
+                    count1--;
+                }
+                maxScore = maxScore < count0 + count1 ? count0 + count1 : maxScore;
+            }
+
+            return maxScore;
+        }
+        public long CalculateScore(string[] instructions, int[] values)
+        {
+            long score = 0;
+            int index = 0;
+            int lenght = values.Length;
+            bool[] visited = new bool[lenght];
+
+            while (index >= 0 && index < lenght && !visited[index])
+            {
+                visited[index] = true;
+                if (instructions[index][0] == 'j')
+                {
+                    index += values[index];
+                }
+                else
+                {
+                    score += values[index++];
+                }
+            }
+
+            return score;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
