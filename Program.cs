@@ -7997,6 +7997,23 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SortVowels(s));
 
+            ////(2788.) Split Strings by Separator (EASY)
+            IList<string> words = ["one.two.three", "four.five", "six"];
+            char separator = '.';
+
+            LeetCode_2788 classLeetCode = new LeetCode_2788();
+            foreach (string word in classLeetCode.SplitWordsBySeparator(words, separator))
+            {
+                Console.WriteLine(word);
+            }
+
+            //OR
+
+            foreach (string word in leetCodeAll.SplitWordsBySeparator(words, separator))
+            {
+                Console.WriteLine(word);
+            }
+
             ////(2798.) Number of Employees Who Met the Target (EASY)
             //int[] hours = [0, 1, 2, 3, 4];
             //int target = 2;
@@ -9249,15 +9266,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindClosest(x, y, z));
 
             ////(3522.) Calculate Score After Performing Instructions (MEDIUM)
-            string[] instructions = ["jump", "add", "add", "jump", "add", "jump"];
-            int[] values = [2, 1, 3, 1, -2, -3];
+            //string[] instructions = ["jump", "add", "add", "jump", "add", "jump"];
+            //int[] values = [2, 1, 3, 1, -2, -3];
 
-            LeetCode_3522 classLeetCode = new LeetCode_3522();
-            Console.WriteLine(classLeetCode.CalculateScore(instructions, values));
+            //LeetCode_3522 classLeetCode = new LeetCode_3522();
+            //Console.WriteLine(classLeetCode.CalculateScore(instructions, values));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CalculateScore(instructions, values));
+            //Console.WriteLine(leetCodeAll.CalculateScore(instructions, values));
 
             ////(3536.) Maximum Product of Two Digits (EASY)
             //int n = 124;
