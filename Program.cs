@@ -6855,14 +6855,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestEqual(nums));
 
             ////(2078.) Two Furthest Houses With Different Colors (EASY)
-            int[] colors = [6, 6, 6, 6, 6, 6, 6, 6, 6, 19, 19, 6, 6];
+            //int[] colors = [6, 6, 6, 6, 6, 6, 6, 6, 6, 19, 19, 6, 6];
 
-            LeetCode_2078 classLeetCode = new LeetCode_2078();
-            Console.WriteLine(classLeetCode.MaxDistance(colors));
+            //LeetCode_2078 classLeetCode = new LeetCode_2078();
+            //Console.WriteLine(classLeetCode.MaxDistance(colors));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxDistance(colors));
+            //Console.WriteLine(leetCodeAll.MaxDistance(colors));
 
             ////(2079.) Watering Plants (MEDIUM)
             //int[] plants = [1, 1, 1, 4, 2, 3];
@@ -7306,6 +7306,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.PercentageLetter(s, letter));
+
+            ////(2293.) Min Max Game (EASY)
+            int[] nums = [70, 38, 21, 22];
+
+            LeetCode_2293 classLeetCode = new LeetCode_2293();
+            Console.WriteLine(classLeetCode.MinMaxGame(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinMaxGame(nums));
 
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];

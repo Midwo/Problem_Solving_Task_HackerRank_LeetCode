@@ -22677,9 +22677,33 @@ namespace ProblemSolving
 
             return 1;
         }
+        public int MinMaxGame(int[] nums)
+        {
+            int index = 0;
+            int length = nums.Length;
 
+            for (int i = 0; i < length - 1; i += 2)
+            {
+                if (index % 2 == 0)
+                {
+                    nums[index] = Math.Min(nums[i], nums[i + 1]);
+                }
+                else
+                {
+                    nums[index] = Math.Max(nums[i], nums[i + 1]);
+                }
+                index++;
 
+                if (i == length - 2)
+                {
+                    length /= 2;
+                    i = -2;
+                    index = 0;
+                }
+            }
 
+            return nums[0];
+        }
 
 
 
