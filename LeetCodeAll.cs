@@ -22657,8 +22657,26 @@ namespace ProblemSolving
 
             return splitWordsList;
         }
+        public int MaxDistance(int[] colors)
+        {
+            int length = colors.Length;
+            int lastColor = colors[length - 1];
+            int firstColor = colors[0];
 
+            for (int i = 0; i < length; i++)
+            {
+                if (colors[i] != lastColor)
+                {
+                    return length - i - 1;
+                }
+                if (colors[length - i - 1] != firstColor)
+                {
+                    return length - i - 1;
+                }
+            }
 
+            return 1;
+        }
 
 
 

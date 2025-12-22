@@ -6854,6 +6854,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SmallestEqual(nums));
 
+            ////(2078.) Two Furthest Houses With Different Colors (EASY)
+            int[] colors = [6, 6, 6, 6, 6, 6, 6, 6, 6, 19, 19, 6, 6];
+
+            LeetCode_2078 classLeetCode = new LeetCode_2078();
+            Console.WriteLine(classLeetCode.MaxDistance(colors));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxDistance(colors));
+
             ////(2079.) Watering Plants (MEDIUM)
             //int[] plants = [1, 1, 1, 4, 2, 3];
             //int capacity = 4;
@@ -7998,21 +8008,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SortVowels(s));
 
             ////(2788.) Split Strings by Separator (EASY)
-            IList<string> words = ["one.two.three", "four.five", "six"];
-            char separator = '.';
+            //IList<string> words = ["one.two.three", "four.five", "six"];
+            //char separator = '.';
 
-            LeetCode_2788 classLeetCode = new LeetCode_2788();
-            foreach (string word in classLeetCode.SplitWordsBySeparator(words, separator))
-            {
-                Console.WriteLine(word);
-            }
+            //LeetCode_2788 classLeetCode = new LeetCode_2788();
+            //foreach (string word in classLeetCode.SplitWordsBySeparator(words, separator))
+            //{
+            //    Console.WriteLine(word);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (string word in leetCodeAll.SplitWordsBySeparator(words, separator))
-            {
-                Console.WriteLine(word);
-            }
+            //foreach (string word in leetCodeAll.SplitWordsBySeparator(words, separator))
+            //{
+            //    Console.WriteLine(word);
+            //}
 
             ////(2798.) Number of Employees Who Met the Target (EASY)
             //int[] hours = [0, 1, 2, 3, 4];
