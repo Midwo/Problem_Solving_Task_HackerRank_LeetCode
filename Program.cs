@@ -6845,14 +6845,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NextBeautifulNumber(n));
 
             ////(2054.) Two Best Non-Overlapping Events (MEDIUM)
-            int[][] events = [[1, 3, 2], [1000000000, 1000000000, 10]];
+            //int[][] events = [[1, 3, 2], [1000000000, 1000000000, 10]];
 
-            LeetCode_2054 classLeetCode = new LeetCode_2054();
-            Console.WriteLine(classLeetCode.MaxTwoEvents(events));
+            //LeetCode_2054 classLeetCode = new LeetCode_2054();
+            //Console.WriteLine(classLeetCode.MaxTwoEvents(events));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxTwoEvents(events));
+            //Console.WriteLine(leetCodeAll.MaxTwoEvents(events));
 
             ////(2057.) Smallest Index With Equal Value (EASY)
             //int[] nums = [4, 3, 2, 1];
@@ -7337,6 +7337,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.PartitionArray(nums, k));
+
+            ////(2299.) Strong Password Checker II (EASY)
+            string password = "IloveLe3tcode!";
+
+            LeetCode_2299 classLeetCode = new LeetCode_2299();
+            Console.WriteLine(classLeetCode.StrongPasswordCheckerII(password));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.StrongPasswordCheckerII(password));
 
             ////(2300.) Successful Pairs of Spells and Potions (MEDIUM)
             //int[] spells = [5, 1, 3];
