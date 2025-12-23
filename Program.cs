@@ -6844,6 +6844,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NextBeautifulNumber(n));
 
+            ////(2054.) Two Best Non-Overlapping Events (MEDIUM)
+            int[][] events = [[1, 3, 2], [1000000000, 1000000000, 10]];
+
+            LeetCode_2054 classLeetCode = new LeetCode_2054();
+            Console.WriteLine(classLeetCode.MaxTwoEvents(events));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxTwoEvents(events));
+
             ////(2057.) Smallest Index With Equal Value (EASY)
             //int[] nums = [4, 3, 2, 1];
 
@@ -7308,14 +7318,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PercentageLetter(s, letter));
 
             ////(2293.) Min Max Game (EASY)
-            int[] nums = [70, 38, 21, 22];
+            //int[] nums = [70, 38, 21, 22];
 
-            LeetCode_2293 classLeetCode = new LeetCode_2293();
-            Console.WriteLine(classLeetCode.MinMaxGame(nums));
+            //LeetCode_2293 classLeetCode = new LeetCode_2293();
+            //Console.WriteLine(classLeetCode.MinMaxGame(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinMaxGame(nums));
+            //Console.WriteLine(leetCodeAll.MinMaxGame(nums));
 
             ////(2294.) Partition Array Such That Maximum Difference Is K (MEDIUM)
             //int[] nums = [3, 6, 1, 2, 5];
