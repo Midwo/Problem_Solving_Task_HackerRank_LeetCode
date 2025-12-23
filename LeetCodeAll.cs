@@ -22808,6 +22808,11 @@ namespace ProblemSolving
                     }
                 }
             }
+            else
+            {
+                return false;
+            }
+
             if (statusOptions[0] && statusOptions[1] && statusOptions[2] && statusOptions[3])
             {
                 return true;
