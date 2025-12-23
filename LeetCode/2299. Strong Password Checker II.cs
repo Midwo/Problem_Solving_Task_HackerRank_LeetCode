@@ -40,7 +40,7 @@ namespace ProblemSolving.LeetCode
                         {
                             statusOptions[2] = true;
                         }
-                        else
+                        else if ("!@#$%^&*()-+".IndexOf(lastChar) >= 0)
                         {
                             statusOptions[3] = true;
                         }
