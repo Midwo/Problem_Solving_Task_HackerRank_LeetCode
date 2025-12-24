@@ -7339,14 +7339,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PartitionArray(nums, k));
 
             ////(2299.) Strong Password Checker II (EASY)
-            string password = "IloveLe3tcode!";
+            //string password = "IloveLe3tcode!";
 
-            LeetCode_2299 classLeetCode = new LeetCode_2299();
-            Console.WriteLine(classLeetCode.StrongPasswordCheckerII(password));
+            //LeetCode_2299 classLeetCode = new LeetCode_2299();
+            //Console.WriteLine(classLeetCode.StrongPasswordCheckerII(password));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.StrongPasswordCheckerII(password));
+            //Console.WriteLine(leetCodeAll.StrongPasswordCheckerII(password));
 
             ////(2300.) Successful Pairs of Spells and Potions (MEDIUM)
             //int[] spells = [5, 1, 3];
@@ -7421,6 +7421,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.NumberOfPairs(nums)));
+
+            ////(2347.) Best Poker Hand (EASY)
+            int[] ranks = [4, 4, 2, 4, 4];
+            char[] suits = ['d', 'a', 'a', 'b', 'c'];
+
+            LeetCode_2347 classLeetCode = new LeetCode_2347();
+            Console.WriteLine(classLeetCode.BestHand(ranks, suits));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.BestHand(ranks, suits));
 
             ////(2348.) Number of Zero-Filled Subarrays (MEDIUM)
             //int[] nums = [0, 0, 0, 2, 0, 0];
