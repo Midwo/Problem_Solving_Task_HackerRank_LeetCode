@@ -20,7 +20,6 @@ namespace ProblemSolving.LeetCode
             }    
             
             ////other options:
-            int maxCard = 0;
             int[] countCard = new int[14];
             int currCard = 0;
             int maxCount = 0;
@@ -28,7 +27,6 @@ namespace ProblemSolving.LeetCode
             for (int i = 0; i < length; i++)
             {
                 currCard = ranks[i];
-                maxCard = maxCard < currCard ? currCard : maxCard;
                 countCard[currCard]++;
                 maxCount = maxCount < countCard[currCard]? countCard[currCard]: maxCount; 
             }
