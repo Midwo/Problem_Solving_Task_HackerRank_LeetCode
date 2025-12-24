@@ -7423,15 +7423,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.NumberOfPairs(nums)));
 
             ////(2347.) Best Poker Hand (EASY)
-            int[] ranks = [4, 4, 2, 4, 4];
-            char[] suits = ['d', 'a', 'a', 'b', 'c'];
+            //int[] ranks = [4, 4, 2, 4, 4];
+            //char[] suits = ['d', 'a', 'a', 'b', 'c'];
 
-            LeetCode_2347 classLeetCode = new LeetCode_2347();
-            Console.WriteLine(classLeetCode.BestHand(ranks, suits));
+            //LeetCode_2347 classLeetCode = new LeetCode_2347();
+            //Console.WriteLine(classLeetCode.BestHand(ranks, suits));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.BestHand(ranks, suits));
+            //Console.WriteLine(leetCodeAll.BestHand(ranks, suits));
 
             ////(2348.) Number of Zero-Filled Subarrays (MEDIUM)
             //int[] nums = [0, 0, 0, 2, 0, 0];
@@ -7861,6 +7861,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.EvenOddBit(n)));
+
+            ////(2605.) Form Smallest Number From Two Digit Arrays (EASY)
+            int[] nums1 = [4, 1, 3];
+            int[] nums2 = [5, 7];
+            
+            LeetCode_2605 classLeetCode = new LeetCode_2605();
+            Console.WriteLine(classLeetCode.MinNumber(nums1, nums2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinNumber(nums1, nums2));
 
             ////(2610.) Convert an Array Into a 2D Array With Conditions (MEDIUM)
             //int[] nums = [1, 3, 4, 1, 2, 3, 1];
