@@ -22949,7 +22949,6 @@ namespace ProblemSolving
                 }
             }
         }
-
         private string GenerateReformatString(List<char> longerList, List<char> shorterList, bool longerStatus)
         {
             StringBuilder sb = new StringBuilder();
@@ -22966,8 +22965,27 @@ namespace ProblemSolving
             }
             return sb.ToString();
         }
+        public int MinAddToMakeValid(string s)
+        {
+            int left = 0;
+            int length = s.Length;
+            int howManyCorrect = 0;
 
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == '(')
+                {
+                    left++;
+                }
+                else if (left > 0)
+                {
+                    left--;
+                    howManyCorrect += 2;
+                }
+            }
 
+            return length - howManyCorrect;
+        }
 
 
 

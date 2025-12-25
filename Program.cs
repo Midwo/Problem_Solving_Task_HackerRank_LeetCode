@@ -3643,6 +3643,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ReverseOnlyLetters(s));
 
+            ////(921.) Minimum Add to Make Parentheses Valid (MEDIUM)
+            string s = "())";
+
+            LeetCode_921 classLeetCode =  new LeetCode_921();
+            Console.WriteLine(classLeetCode.MinAddToMakeValid(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinAddToMakeValid(s));
+
             ////(922.) Sort Array By Parity II (EASY)
             //int[] nums = [4, 2, 5, 7];
 
@@ -5269,14 +5279,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GetHappyStringTask1415(n, k));
 
             ////(1417.) Reformat The String (EASY)
-            string s = "covid2019";
+            //string s = "covid2019";
 
-            LeetCode_1417 classLeetCode = new LeetCode_1417();
-            Console.WriteLine(classLeetCode.Reformat(s));
+            //LeetCode_1417 classLeetCode = new LeetCode_1417();
+            //Console.WriteLine(classLeetCode.Reformat(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.Reformat(s));
+            //Console.WriteLine(leetCodeAll.Reformat(s));
 
             ////(1422.) Maximum Score After Splitting a String (EASY)
             //string s = "011101";
