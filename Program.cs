@@ -5268,6 +5268,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.GetHappyStringTask1415(n, k));
 
+            ////(1417.) Reformat The String (EASY)
+            string s = "covid2019";
+
+            LeetCode_1417 classLeetCode = new LeetCode_1417();
+            Console.WriteLine(classLeetCode.Reformat(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.Reformat(s));
+
             ////(1422.) Maximum Score After Splitting a String (EASY)
             //string s = "011101";
 
@@ -7863,15 +7873,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.EvenOddBit(n)));
 
             ////(2605.) Form Smallest Number From Two Digit Arrays (EASY)
-            int[] nums1 = [4, 1, 3];
-            int[] nums2 = [5, 7];
-            
-            LeetCode_2605 classLeetCode = new LeetCode_2605();
-            Console.WriteLine(classLeetCode.MinNumber(nums1, nums2));
+            //int[] nums1 = [4, 1, 3];
+            //int[] nums2 = [5, 7];
 
-            //OR
+            //LeetCode_2605 classLeetCode = new LeetCode_2605();
+            //Console.WriteLine(classLeetCode.MinNumber(nums1, nums2));
 
-            Console.WriteLine(leetCodeAll.MinNumber(nums1, nums2));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MinNumber(nums1, nums2));
 
             ////(2610.) Convert an Array Into a 2D Array With Conditions (MEDIUM)
             //int[] nums = [1, 3, 4, 1, 2, 3, 1];
