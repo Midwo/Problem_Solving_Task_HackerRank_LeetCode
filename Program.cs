@@ -3644,14 +3644,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReverseOnlyLetters(s));
 
             ////(921.) Minimum Add to Make Parentheses Valid (MEDIUM)
-            string s = "())";
+            //string s = "())";
 
-            LeetCode_921 classLeetCode =  new LeetCode_921();
-            Console.WriteLine(classLeetCode.MinAddToMakeValid(s));
+            //LeetCode_921 classLeetCode =  new LeetCode_921();
+            //Console.WriteLine(classLeetCode.MinAddToMakeValid(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinAddToMakeValid(s));
+            //Console.WriteLine(leetCodeAll.MinAddToMakeValid(s));
 
             ////(922.) Sort Array By Parity II (EASY)
             //int[] nums = [4, 2, 5, 7];
@@ -7746,6 +7746,16 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+
+            ////(2483.) Minimum Penalty for a Shop (MEDIUM)
+            string customers = "YYNY";
+
+            LeetCode_2483 classLeetCode = new LeetCode_2483();
+            Console.WriteLine(classLeetCode.BestClosingTime(customers));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.BestClosingTime(customers));
 
             ////(2485.) Find the Pivot Integer (EASY)
             //int n = 8;
