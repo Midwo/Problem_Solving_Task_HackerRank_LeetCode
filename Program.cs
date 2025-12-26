@@ -6677,6 +6677,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CanBeTypedWords(text, brokenLetters));
 
+            ////(1941.) Check if All Characters Have Equal Number of Occurrences (EASY)
+            string s = "abacbc";
+
+            LeetCode_1941 classLeetCode = new LeetCode_1941();
+            Console.WriteLine(classLeetCode.AreOccurrencesEqual(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AreOccurrencesEqual(s));
+
             ////(1952.) Three Divisors (EASY)
             //int n = 4;
 
@@ -7748,14 +7758,14 @@ namespace ProblemSolving
             //}
 
             ////(2483.) Minimum Penalty for a Shop (MEDIUM)
-            string customers = "YYNY";
+            //string customers = "YYNY";
 
-            LeetCode_2483 classLeetCode = new LeetCode_2483();
-            Console.WriteLine(classLeetCode.BestClosingTime(customers));
+            //LeetCode_2483 classLeetCode = new LeetCode_2483();
+            //Console.WriteLine(classLeetCode.BestClosingTime(customers));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.BestClosingTime(customers));
+            //Console.WriteLine(leetCodeAll.BestClosingTime(customers));
 
             ////(2485.) Find the Pivot Integer (EASY)
             //int n = 8;
