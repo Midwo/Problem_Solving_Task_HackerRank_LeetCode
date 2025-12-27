@@ -7390,6 +7390,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.SuccessfulPairs(spells, potions, success)));
 
+            ////(2309.) Greatest English Letter in Upper and Lower Case (EASY)
+            string s = "AbCdEfGhIjK";
+
+            LeetCode_2309 classLeetCode = new LeetCode_2309();
+            Console.WriteLine(classLeetCode.GreatestLetter(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GreatestLetter(s));
+
             ////(2311.) Longest Binary Subsequence Less Than or Equal to K (MEDIUM)
             //string s = "1001010";
             //int k = 5;
@@ -8798,14 +8808,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.ValidStrings(n)));
 
             ////(3216.) Lexicographically Smallest String After a Swap (EASY)
-            string s = "13";
+            //string s = "13";
 
-            LeetCode_3216 classLeetCode = new LeetCode_3216();
-            Console.WriteLine(classLeetCode.GetSmallestString(s));
+            //LeetCode_3216 classLeetCode = new LeetCode_3216();
+            //Console.WriteLine(classLeetCode.GetSmallestString(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GetSmallestString(s));
+            //Console.WriteLine(leetCodeAll.GetSmallestString(s));
 
             ////(3217.) Delete Nodes From Linked List Present in Array (MEDIUM)
             //int[] nums = [1,2,3];

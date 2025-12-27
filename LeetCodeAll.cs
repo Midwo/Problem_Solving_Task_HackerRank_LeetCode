@@ -23180,15 +23180,63 @@ namespace ProblemSolving
 
             //return s;
         }
+        public string GreatestLetter(string s)
+        {
+            bool[] letterStatus = new bool[52];
+            char currChar;
 
+            for (int i = 0; i < s.Length; i++)
+            {
+                currChar = s[i];
+                if (currChar >= 'a')
+                {
+                    letterStatus[currChar - 'a'] = true;
+                }
+                else
+                {
+                    letterStatus[currChar - 'A' + 26] = true;
+                }
+            }
 
+            for (int i = 51; i >= 26; i--)
+            {
+                if (letterStatus[i - 26] && letterStatus[i])
+                {
+                    return ((char)('A' + i - 26)).ToString();
+                }
+            }
 
+            return "";
 
 
 
+            //bool[] letterLower = new bool[26];
+            //bool[] letterUpper = new bool[26];
+            //char currChar;
 
+            //for (int i = 0; i < s.Length; i++) 
+            //{
+            //    currChar = s[i];
+            //    if (currChar >= 'a')
+            //    {
+            //        letterLower[currChar - 'a'] = true;
+            //    }
+            //    else
+            //    {
+            //        letterUpper[currChar - 'A'] = true;
+            //    }
+            //}
 
+            //for (int i = 25; i >= 0; i--) 
+            //{ 
+            //    if (letterLower[i] && letterUpper[i])
+            //    {
+            //        return ((char)('A' + i)).ToString();
+            //    }
+            //}
 
+            //return ""; 
+        }
 
 
 
@@ -23241,7 +23289,6 @@ namespace ProblemSolving
 
 
 
-    }
 
 
 
@@ -23252,6 +23299,7 @@ namespace ProblemSolving
 
 
 
+        }
 
 
 
@@ -23262,7 +23310,17 @@ namespace ProblemSolving
 
 
 
-    public class ListNode
+
+
+
+
+
+
+
+
+
+
+        public class ListNode
     {
         public int val;
         public ListNode next;
