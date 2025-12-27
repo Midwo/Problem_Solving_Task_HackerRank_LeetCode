@@ -6678,14 +6678,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanBeTypedWords(text, brokenLetters));
 
             ////(1941.) Check if All Characters Have Equal Number of Occurrences (EASY)
-            string s = "abacbc";
+            //string s = "abacbc";
 
-            LeetCode_1941 classLeetCode = new LeetCode_1941();
-            Console.WriteLine(classLeetCode.AreOccurrencesEqual(s));
+            //LeetCode_1941 classLeetCode = new LeetCode_1941();
+            //Console.WriteLine(classLeetCode.AreOccurrencesEqual(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.AreOccurrencesEqual(s));
+            //Console.WriteLine(leetCodeAll.AreOccurrencesEqual(s));
 
             ////(1952.) Three Divisors (EASY)
             //int n = 4;
@@ -8796,6 +8796,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ValidStrings(n)));
+
+            ////(3216.) Lexicographically Smallest String After a Swap (EASY)
+            string s = "13";
+
+            LeetCode_3216 classLeetCode = new LeetCode_3216();
+            Console.WriteLine(classLeetCode.GetSmallestString(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GetSmallestString(s));
 
             ////(3217.) Delete Nodes From Linked List Present in Array (MEDIUM)
             //int[] nums = [1,2,3];
