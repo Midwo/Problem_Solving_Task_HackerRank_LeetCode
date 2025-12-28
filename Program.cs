@@ -7391,14 +7391,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SuccessfulPairs(spells, potions, success)));
 
             ////(2309.) Greatest English Letter in Upper and Lower Case (EASY)
-            string s = "AbCdEfGhIjK";
+            //string s = "AbCdEfGhIjK";
 
-            LeetCode_2309 classLeetCode = new LeetCode_2309();
-            Console.WriteLine(classLeetCode.GreatestLetter(s));
+            //LeetCode_2309 classLeetCode = new LeetCode_2309();
+            //Console.WriteLine(classLeetCode.GreatestLetter(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GreatestLetter(s));
+            //Console.WriteLine(leetCodeAll.GreatestLetter(s));
 
             ////(2311.) Longest Binary Subsequence Less Than or Equal to K (MEDIUM)
             //string s = "1001010";
@@ -7590,6 +7590,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsStrictlyPalindromic(n));
+
+            ////(2399.) Check Distances Between Same Letters (EASY)
+            string s = "abaccb";
+            int[] distance = [1, 3, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+            LeetCode_2399 classLeetCode = new LeetCode_2399();
+            Console.WriteLine(classLeetCode.CheckDistances(s, distance));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckDistances(s, distance));
 
             ////(2410.) Maximum Matching of Players With Trainers (MEDIUM)
             //int[] players = [4, 7, 9];
