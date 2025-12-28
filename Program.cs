@@ -7592,15 +7592,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsStrictlyPalindromic(n));
 
             ////(2399.) Check Distances Between Same Letters (EASY)
-            string s = "abaccb";
-            int[] distance = [1, 3, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            //string s = "abaccb";
+            //int[] distance = [1, 3, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-            LeetCode_2399 classLeetCode = new LeetCode_2399();
-            Console.WriteLine(classLeetCode.CheckDistances(s, distance));
+            //LeetCode_2399 classLeetCode = new LeetCode_2399();
+            //Console.WriteLine(classLeetCode.CheckDistances(s, distance));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckDistances(s, distance));
+            //Console.WriteLine(leetCodeAll.CheckDistances(s, distance));
 
             ////(2410.) Maximum Matching of Players With Trainers (MEDIUM)
             //int[] players = [4, 7, 9];
@@ -9227,6 +9227,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SumOfGoodNumbers(nums, k));
+
+            ////(3456.) Find Special Substring of Length K (EASY)
+            string s = "jkjhfgg";
+            int k = 2;
+
+            LeetCode_3456 classLeetCode = new LeetCode_3456();
+            Console.WriteLine(classLeetCode.HasSpecialSubstring(s, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.HasSpecialSubstring(s, k));
 
             ////(3461.) Check If Digits Are Equal in String After Operations I (EASY)
             //string s = "323";
