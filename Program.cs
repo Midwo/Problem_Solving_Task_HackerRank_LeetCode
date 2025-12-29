@@ -7762,6 +7762,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
 
+            ////(2481.) Minimum Cuts to Divide a Circle (EASY)
+            int n = 4;
+
+            LeetCode_2481 classLeetCode = new LeetCode_2481();
+            Console.WriteLine(classLeetCode.NumberOfCuts(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumberOfCuts(n));
+
             ////(2482.) Difference Between Ones and Zeros in Row and Column (MEDIUM)
             //int[][] grid = [[0, 1, 1], [1, 0, 1], [0, 0, 1]];
 
@@ -9112,14 +9122,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDistinctElements(nums, k));
 
             ////(3402.) Minimum Operations to Make Columns Strictly Increasing (EASY)
-            int[][] grid = [[0], [50]];
+            //int[][] grid = [[0], [50]];
 
-            LeetCode_3402 classLeetCode = new LeetCode_3402();
-            Console.WriteLine(classLeetCode.MinimumOperations(grid));
+            //LeetCode_3402 classLeetCode = new LeetCode_3402();
+            //Console.WriteLine(classLeetCode.MinimumOperations(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumOperations(grid));
+            //Console.WriteLine(leetCodeAll.MinimumOperations(grid));
 
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
             //int[] nums = [-5, -10, -5];
