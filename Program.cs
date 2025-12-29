@@ -9111,6 +9111,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxDistinctElements(nums, k));
 
+            ////(3402.) Minimum Operations to Make Columns Strictly Increasing (EASY)
+            int[][] grid = [[0], [50]];
+
+            LeetCode_3402 classLeetCode = new LeetCode_3402();
+            Console.WriteLine(classLeetCode.MinimumOperations(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumOperations(grid));
+
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
             //int[] nums = [-5, -10, -5];
 
@@ -9229,15 +9239,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumOfGoodNumbers(nums, k));
 
             ////(3456.) Find Special Substring of Length K (EASY)
-            string s = "jkjhfgg";
-            int k = 2;
+            //string s = "jkjhfgg";
+            //int k = 2;
 
-            LeetCode_3456 classLeetCode = new LeetCode_3456();
-            Console.WriteLine(classLeetCode.HasSpecialSubstring(s, k));
+            //LeetCode_3456 classLeetCode = new LeetCode_3456();
+            //Console.WriteLine(classLeetCode.HasSpecialSubstring(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.HasSpecialSubstring(s, k));
+            //Console.WriteLine(leetCodeAll.HasSpecialSubstring(s, k));
 
             ////(3461.) Check If Digits Are Equal in String After Operations I (EASY)
             //string s = "323";
