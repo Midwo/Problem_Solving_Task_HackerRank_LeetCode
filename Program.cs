@@ -4652,6 +4652,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
 
+            ////(1232.) Check If It Is a Straight Line (EASY)
+            int[][] coordinates = [[0, 0], [0, 1], [0, -1]];
+
+            LeetCode_1232 classLeetCode = new LeetCode_1232();
+            Console.WriteLine(classLeetCode.CheckStraightLine(coordinates));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckStraightLine(coordinates));
+
             ////(1233.) Remove Sub-Folders from the Filesystem (MEDIUM)
             //string[] folder = ["/a", "/a/b", "/a/c", "/a/b/a", "/c/d", "/c/d/e", "/c/f"];
 
@@ -7763,14 +7773,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
 
             ////(2481.) Minimum Cuts to Divide a Circle (EASY)
-            int n = 4;
+            //int n = 4;
 
-            LeetCode_2481 classLeetCode = new LeetCode_2481();
-            Console.WriteLine(classLeetCode.NumberOfCuts(n));
+            //LeetCode_2481 classLeetCode = new LeetCode_2481();
+            //Console.WriteLine(classLeetCode.NumberOfCuts(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumberOfCuts(n));
+            //Console.WriteLine(leetCodeAll.NumberOfCuts(n));
 
             ////(2482.) Difference Between Ones and Zeros in Row and Column (MEDIUM)
             //int[][] grid = [[0, 1, 1], [1, 0, 1], [0, 0, 1]];
@@ -8311,6 +8321,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FindChampion(grid));
+
+            ////(2932.) Maximum Strong Pair XOR I (EASY)
+            //int[] nums = [1, 2, 3, 4, 5];
+
+            //LeetCode_2932 classLeetCode = new LeetCode_2932();
+            //Console.WriteLine(classLeetCode.MaximumStrongPairXor(nums));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaximumStrongPairXor(nums));
 
             ////(2942.) Find Words Containing Character (EASY)
             //string[] words = ["leet", "code"];

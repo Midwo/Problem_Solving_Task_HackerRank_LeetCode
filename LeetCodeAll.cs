@@ -23346,9 +23346,145 @@ namespace ProblemSolving
 
             return (n & 1) == 0 ? n / 2 : n;
         }
+        public int MaximumStrongPairXor(int[] nums)
+        {
+            ////low readability, high performance 
+
+            int maxPairXor = 0;
+            int firstValue;
+            int secondValue;
+            int length = nums.Length;
+
+            for (int firstIndexValue = 0; firstIndexValue < length; firstIndexValue++)
+            {
+                firstValue = nums[firstIndexValue];
+                for (int secondIndexValue = firstIndexValue; secondIndexValue < length; secondIndexValue++)
+                {
+                    secondValue = nums[secondIndexValue];
+                    int diff = firstValue > secondValue ? firstValue - secondValue : secondValue - firstValue;
+                    int min = firstValue > secondValue ? secondValue : firstValue;
+                    if (diff <= min)
+                    {
+                        int xorValue = secondValue ^ firstValue;
+                        maxPairXor = maxPairXor < xorValue ? xorValue : maxPairXor;
+                    }
+                }
+            }
+
+            return maxPairXor;
 
 
+            ////average readability, average performance 
 
+            //int maxPairXor = 0;
+            //int firstValue;
+            //int secondValue;
+            //int length = nums.Length;
+
+            //for (int firstIndexValue = 0; firstIndexValue < length; firstIndexValue++)
+            //{
+            //    firstValue = nums[firstIndexValue];
+            //    for (int secondIndexValue = firstIndexValue; secondIndexValue < length; secondIndexValue++)
+            //    {
+            //        secondValue = nums[secondIndexValue];
+            //        if (Math.Abs(firstValue - secondValue) <= Math.Min(firstValue, secondValue))
+            //        {
+            //            int xorValue = secondValue ^ firstValue;
+            //            maxPairXor = maxPairXor < xorValue ? xorValue : maxPairXor;
+            //        }
+            //    }
+            //}
+
+            //return maxPairXor;
+
+
+            ////high readability, low performance
+
+            //int maxPairXor = 0;
+
+            //foreach (int firstValue in nums)
+            //{
+            //    foreach (int secondValue in nums)
+            //    {
+            //        if (Math.Abs(firstValue - secondValue) <= Math.Min(firstValue, secondValue))
+            //        {
+            //            int xorValue = secondValue ^ firstValue;
+            //            maxPairXor = maxPairXor < xorValue ? xorValue : maxPairXor;
+            //        }
+            //    }
+            //}
+
+            //return maxPairXor;
+
+        }
+        public bool CheckStraightLine(int[][] coordinates)
+        {
+            int length = coordinates.Length;
+            decimal a;
+
+            if (length == 2)
+            {
+                return true;
+            }
+
+            int firstX = coordinates[0][0];
+            int secondX = coordinates[1][0];
+            int firstY = coordinates[0][1];
+            int secondY = coordinates[1][1];
+            bool isItHorizontal = false;
+            int ay = secondY - firstY;
+            int ax = secondX - firstX;
+
+            if (ay == 0 || ax == 0)
+            {
+                a = 0;
+                if (ax == 0) { isItHorizontal = true; }
+            }
+            else
+            {
+                a = (decimal)ay / ax;
+            }
+
+            decimal b = firstY - (a * firstX);
+
+            for (int i = 2; i < length; i++)
+            {
+                int x = coordinates[i][0];
+                int y = coordinates[i][1];
+
+                if (a == 0)
+                {
+                    if (isItHorizontal)
+                    {
+                        if (firstX == x)
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        if (firstY == y)
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+                if (y != (a * x) + b)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
 
 
 
@@ -23419,7 +23555,7 @@ namespace ProblemSolving
 
 
 
-        public class ListNode
+    public class ListNode
     {
         public int val;
         public ListNode next;
