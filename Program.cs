@@ -4653,14 +4653,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BalancedStringSplit(s));
 
             ////(1232.) Check If It Is a Straight Line (EASY)
-            int[][] coordinates = [[0, 0], [0, 1], [0, -1]];
+            //int[][] coordinates = [[0, 0], [0, 1], [0, -1]];
 
-            LeetCode_1232 classLeetCode = new LeetCode_1232();
-            Console.WriteLine(classLeetCode.CheckStraightLine(coordinates));
+            //LeetCode_1232 classLeetCode = new LeetCode_1232();
+            //Console.WriteLine(classLeetCode.CheckStraightLine(coordinates));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckStraightLine(coordinates));
+            //Console.WriteLine(leetCodeAll.CheckStraightLine(coordinates));
 
             ////(1233.) Remove Sub-Folders from the Filesystem (MEDIUM)
             //string[] folder = ["/a", "/a/b", "/a/c", "/a/b/a", "/c/d", "/c/d/e", "/c/f"];
@@ -8886,6 +8886,17 @@ namespace ProblemSolving
             //    Console.WriteLine(result1.val);
             //    result1 = result1.next;
             //}
+
+            ////(3226.) Number of Bit Changes to Make Two Integers Equal (EASY)
+            int n = 54;
+            int k = 4;
+
+            LeetCode_3226 classLeetCode = new LeetCode_3226();
+            Console.WriteLine(classLeetCode.MinChanges(n, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinChanges(n, k));
 
             ////(3227.) Vowels Game in a String (MEDIUM)
             //string s = "bbcd";
