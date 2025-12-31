@@ -8888,15 +8888,15 @@ namespace ProblemSolving
             //}
 
             ////(3226.) Number of Bit Changes to Make Two Integers Equal (EASY)
-            int n = 54;
-            int k = 4;
+            //int n = 54;
+            //int k = 4;
 
-            LeetCode_3226 classLeetCode = new LeetCode_3226();
-            Console.WriteLine(classLeetCode.MinChanges(n, k));
+            //LeetCode_3226 classLeetCode = new LeetCode_3226();
+            //Console.WriteLine(classLeetCode.MinChanges(n, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinChanges(n, k));
+            //Console.WriteLine(leetCodeAll.MinChanges(n, k));
 
             ////(3227.) Vowels Game in a String (MEDIUM)
             //string s = "bbcd";
@@ -9682,9 +9682,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindMissingElements(nums)));
 
+            ////(3754.) Concatenate Non - Zero Digits and Multiply by Sum I (EASY)
+            int n = 0;
 
+            LeetCode_3754 classLeetCode = new LeetCode_3754();
+            Console.WriteLine(classLeetCode.SumAndMultiply(n));
 
+            //OR
 
+            Console.WriteLine(leetCodeAll.SumAndMultiply(n));
 
 
 
