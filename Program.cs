@@ -6533,14 +6533,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckZeroOnes(s));
 
             ////(1876.) Substrings of Size Three with Distinct Characters (EASY)
-            string s = "owuxoelszb";
+            //string s = "owuxoelszb";
 
-            LeetCode_1876 classLeetCode = new LeetCode_1876();
-            Console.WriteLine(classLeetCode.CountGoodSubstrings(s));
+            //LeetCode_1876 classLeetCode = new LeetCode_1876();
+            //Console.WriteLine(classLeetCode.CountGoodSubstrings(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountGoodSubstrings(s));
+            //Console.WriteLine(leetCodeAll.CountGoodSubstrings(s));
 
             ////(1880.) Check if Word Equals Summation of Two Words (EASY)
             //string firstWord = "acb";
@@ -6568,6 +6568,16 @@ namespace ProblemSolving
             ////OR
 
             //LeetCode_1890 classLeetCode = new LeetCode_1890();
+
+            ////(1903.) Largest Odd Number in String (EASY)
+            string num = "52";
+
+            LeetCode_1903 classLeetCode = new LeetCode_1903();
+            Console.WriteLine(classLeetCode.LargestOddNumber(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LargestOddNumber(num));
 
             ////(1907.) Count Salary Categories (MEDIUM)
             //string SqlQuery =
