@@ -6532,6 +6532,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CheckZeroOnes(s));
 
+            ////(1876.) Substrings of Size Three with Distinct Characters (EASY)
+            string s = "owuxoelszb";
+
+            LeetCode_1876 classLeetCode = new LeetCode_1876();
+            Console.WriteLine(classLeetCode.CountGoodSubstrings(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountGoodSubstrings(s));
+
             ////(1880.) Check if Word Equals Summation of Two Words (EASY)
             //string firstWord = "acb";
             //string secondWord = "cba";
@@ -9683,14 +9693,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindMissingElements(nums)));
 
             ////(3754.) Concatenate Non - Zero Digits and Multiply by Sum I (EASY)
-            int n = 0;
+            //int n = 0;
 
-            LeetCode_3754 classLeetCode = new LeetCode_3754();
-            Console.WriteLine(classLeetCode.SumAndMultiply(n));
+            //LeetCode_3754 classLeetCode = new LeetCode_3754();
+            //Console.WriteLine(classLeetCode.SumAndMultiply(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumAndMultiply(n));
+            //Console.WriteLine(leetCodeAll.SumAndMultiply(n));
 
 
 
