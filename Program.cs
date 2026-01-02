@@ -6570,14 +6570,14 @@ namespace ProblemSolving
             //LeetCode_1890 classLeetCode = new LeetCode_1890();
 
             ////(1903.) Largest Odd Number in String (EASY)
-            string num = "52";
+            //string num = "52";
 
-            LeetCode_1903 classLeetCode = new LeetCode_1903();
-            Console.WriteLine(classLeetCode.LargestOddNumber(num));
+            //LeetCode_1903 classLeetCode = new LeetCode_1903();
+            //Console.WriteLine(classLeetCode.LargestOddNumber(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LargestOddNumber(num));
+            //Console.WriteLine(leetCodeAll.LargestOddNumber(num));
 
             ////(1907.) Count Salary Categories (MEDIUM)
             //string SqlQuery =
@@ -7376,6 +7376,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.PercentageLetter(s, letter));
+
+            ////(2279.) Maximum Bags With Full Capacity of Rocks (MEDIUM)
+            int[] capacity = [2, 3, 4, 5];
+            int[] rocks = [1, 2, 4, 4];
+            int additionalRocks = 2;
+
+            LeetCode_2279 classLeetCode = new LeetCode_2279();
+            Console.WriteLine(classLeetCode.MaximumBags(capacity, rocks, additionalRocks));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumBags(capacity, rocks, additionalRocks));
 
             ////(2293.) Min Max Game (EASY)
             //int[] nums = [70, 38, 21, 22];
