@@ -7378,16 +7378,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PercentageLetter(s, letter));
 
             ////(2279.) Maximum Bags With Full Capacity of Rocks (MEDIUM)
-            int[] capacity = [2, 3, 4, 5];
-            int[] rocks = [1, 2, 4, 4];
-            int additionalRocks = 2;
+            //int[] capacity = [2, 3, 4, 5];
+            //int[] rocks = [1, 2, 4, 4];
+            //int additionalRocks = 2;
 
-            LeetCode_2279 classLeetCode = new LeetCode_2279();
-            Console.WriteLine(classLeetCode.MaximumBags(capacity, rocks, additionalRocks));
+            //LeetCode_2279 classLeetCode = new LeetCode_2279();
+            //Console.WriteLine(classLeetCode.MaximumBags(capacity, rocks, additionalRocks));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumBags(capacity, rocks, additionalRocks));
+            //Console.WriteLine(leetCodeAll.MaximumBags(capacity, rocks, additionalRocks));
 
             ////(2293.) Min Max Game (EASY)
             //int[] nums = [70, 38, 21, 22];
@@ -7879,6 +7879,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DifferenceOfSum(nums));
+
+            ////(2540.) Minimum Common Value (EASY)
+            int[] nums1 = [1, 2, 3, 6];
+            int[] nums2 = [2, 3, 4, 5];
+
+            LeetCode_2540 classLeetCode = new LeetCode_2540();
+            Console.WriteLine(classLeetCode.GetCommon(nums1, nums2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GetCommon(nums1, nums2));
 
             ////(2544.) Alternating Digit Sum (EASY)
             //int n = 521;
