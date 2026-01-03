@@ -7623,6 +7623,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.GarbageCollection(garbage, travel));
 
+            ////(2395.) Find Subarrays With Equal Sum (EASY)
+            int[] nums = [1, 2, 3, 4, 5];
+
+            LeetCode_2395 classLeetCode = new LeetCode_2395();
+            Console.WriteLine(classLeetCode.FindSubarrays(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindSubarrays(nums));
+
             ////(2396.) Strictly Palindromic Number (MEDIUM)
             //int n = 9;
 
@@ -7881,15 +7891,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DifferenceOfSum(nums));
 
             ////(2540.) Minimum Common Value (EASY)
-            int[] nums1 = [1, 2, 3, 6];
-            int[] nums2 = [2, 3, 4, 5];
+            //int[] nums1 = [1, 2, 3, 6];
+            //int[] nums2 = [2, 3, 4, 5];
 
-            LeetCode_2540 classLeetCode = new LeetCode_2540();
-            Console.WriteLine(classLeetCode.GetCommon(nums1, nums2));
+            //LeetCode_2540 classLeetCode = new LeetCode_2540();
+            //Console.WriteLine(classLeetCode.GetCommon(nums1, nums2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GetCommon(nums1, nums2));
+            //Console.WriteLine(leetCodeAll.GetCommon(nums1, nums2));
 
             ////(2544.) Alternating Digit Sum (EASY)
             //int n = 521;

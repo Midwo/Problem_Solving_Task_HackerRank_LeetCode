@@ -23666,8 +23666,26 @@ namespace ProblemSolving
 
             return -1;
         }
+        public bool FindSubarrays(int[] nums)
+        {
+            HashSet<int> uniqueSum = new HashSet<int>();
+            int length = nums.Length;
+            int firstValue;
+            int secondValue = nums[0];
 
+            for (int indexSecondValue = 1; indexSecondValue < length; indexSecondValue++)
+            {
+                firstValue = secondValue;
+                secondValue = nums[indexSecondValue];
 
+                if (!uniqueSum.Add(firstValue + secondValue))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
 
 
 
