@@ -13,6 +13,7 @@ using System.Linq;
 using System.Net;
 using System.Net.WebSockets;
 using System.Numerics;
+using System.Reflection.Emit;
 using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 using System.Security;
@@ -4388,6 +4389,21 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountCharacters(words, chars));
 
+            ////(1161.) Maximum Level Sum of a Binary Tree (MEDIUM)
+            TreeNode root = new TreeNode(1);
+            root.right = new TreeNode(0);
+            root.left = new TreeNode(7);
+            root.left.left = new TreeNode(7);
+            root.left.right = new TreeNode(-8);
+
+            LeetCode_1161 classLeetCode = new LeetCode_1161();
+
+            Console.WriteLine(classLeetCode.MaxLevelSum(root));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxLevelSum(root));
+
             ////(1164.) Product Price at a Given Date (MEDIUM)
             //string SqlQuery =
             //    @"
@@ -7624,14 +7640,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GarbageCollection(garbage, travel));
 
             ////(2395.) Find Subarrays With Equal Sum (EASY)
-            int[] nums = [1, 2, 3, 4, 5];
+            //int[] nums = [1, 2, 3, 4, 5];
 
-            LeetCode_2395 classLeetCode = new LeetCode_2395();
-            Console.WriteLine(classLeetCode.FindSubarrays(nums));
+            //LeetCode_2395 classLeetCode = new LeetCode_2395();
+            //Console.WriteLine(classLeetCode.FindSubarrays(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindSubarrays(nums));
+            //Console.WriteLine(leetCodeAll.FindSubarrays(nums));
 
             ////(2396.) Strictly Palindromic Number (MEDIUM)
             //int n = 9;
