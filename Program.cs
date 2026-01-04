@@ -4390,19 +4390,19 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountCharacters(words, chars));
 
             ////(1161.) Maximum Level Sum of a Binary Tree (MEDIUM)
-            TreeNode root = new TreeNode(1);
-            root.right = new TreeNode(0);
-            root.left = new TreeNode(7);
-            root.left.left = new TreeNode(7);
-            root.left.right = new TreeNode(-8);
+            //TreeNode root = new TreeNode(1);
+            //root.right = new TreeNode(0);
+            //root.left = new TreeNode(7);
+            //root.left.left = new TreeNode(7);
+            //root.left.right = new TreeNode(-8);
 
-            LeetCode_1161 classLeetCode = new LeetCode_1161();
+            //LeetCode_1161 classLeetCode = new LeetCode_1161();
 
-            Console.WriteLine(classLeetCode.MaxLevelSum(root));
+            //Console.WriteLine(classLeetCode.MaxLevelSum(root));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxLevelSum(root));
+            //Console.WriteLine(leetCodeAll.MaxLevelSum(root));
 
             ////(1164.) Product Price at a Given Date (MEDIUM)
             //string SqlQuery =
@@ -5208,6 +5208,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.CreateTargetArray(nums, index)));
+
+            ////(1390.) Four Divisors (MEDIUM)
+            int[] nums = [21, 4, 7];
+
+            LeetCode_1390 classLeetCode = new LeetCode_1390();
+            Console.WriteLine(classLeetCode.SumFourDivisors(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumFourDivisors(nums));
 
             ////(1393.) Capital Gain/Loss (MEDIUM)
             //string SqlQuery =
