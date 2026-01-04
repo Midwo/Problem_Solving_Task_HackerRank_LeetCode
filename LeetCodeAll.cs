@@ -23784,6 +23784,23 @@ namespace ProblemSolving
 
             return sumFourDivisors;
         }
+        public int DistinctAverages(int[] nums)
+        {
+            Array.Sort(nums);
+            HashSet<int> countDistinctAverages = new HashSet<int>();
+            int left = 0;
+            int right = nums.Length - 1;
+
+            while (left < right)
+            {
+                countDistinctAverages.Add((nums[left] + nums[right]));
+                left++;
+                right--;
+            }
+
+            return countDistinctAverages.Count;
+        }
+
 
 
 

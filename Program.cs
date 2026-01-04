@@ -5210,14 +5210,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.CreateTargetArray(nums, index)));
 
             ////(1390.) Four Divisors (MEDIUM)
-            int[] nums = [21, 4, 7];
+            //int[] nums = [21, 4, 7];
 
-            LeetCode_1390 classLeetCode = new LeetCode_1390();
-            Console.WriteLine(classLeetCode.SumFourDivisors(nums));
+            //LeetCode_1390 classLeetCode = new LeetCode_1390();
+            //Console.WriteLine(classLeetCode.SumFourDivisors(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumFourDivisors(nums));
+            //Console.WriteLine(leetCodeAll.SumFourDivisors(nums));
 
             ////(1393.) Capital Gain/Loss (MEDIUM)
             //string SqlQuery =
@@ -7829,6 +7829,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ApplyOperations(nums)));
+
+            ////(2465.) Number of Distinct Averages (EASY)
+            int[] nums = [4, 1, 4, 0, 3, 5];
+
+            LeetCode_2465 classLeetCode = new LeetCode_2465();
+            Console.WriteLine(classLeetCode.DistinctAverages(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DistinctAverages(nums));
 
             ////(2469.) Convert the Temperature (EASY)
             //double celsius = 36.5;
