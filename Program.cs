@@ -6785,6 +6785,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumOfStrings(patterns, word));
 
+            ////(1975.) Maximum Matrix Sum (MEDIUM)
+            int[][] matrix = [[1, 2, 3], [-1, -2, -3], [1, 2, 3]];
+
+            LeetCode_1975 classLeetCode = new LeetCode_1975();
+            Console.WriteLine(classLeetCode.MaxMatrixSum(matrix));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxMatrixSum(matrix));
+
             ////(1978.) Employees Whose Manager Left the Company (EASY)
             //string SqlQuery =
             //    @"
@@ -7831,14 +7841,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.ApplyOperations(nums)));
 
             ////(2465.) Number of Distinct Averages (EASY)
-            int[] nums = [4, 1, 4, 0, 3, 5];
+            //int[] nums = [4, 1, 4, 0, 3, 5];
 
-            LeetCode_2465 classLeetCode = new LeetCode_2465();
-            Console.WriteLine(classLeetCode.DistinctAverages(nums));
+            //LeetCode_2465 classLeetCode = new LeetCode_2465();
+            //Console.WriteLine(classLeetCode.DistinctAverages(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DistinctAverages(nums));
+            //Console.WriteLine(leetCodeAll.DistinctAverages(nums));
 
             ////(2469.) Convert the Temperature (EASY)
             //double celsius = 36.5;
