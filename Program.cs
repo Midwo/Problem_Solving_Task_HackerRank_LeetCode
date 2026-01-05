@@ -6786,14 +6786,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumOfStrings(patterns, word));
 
             ////(1975.) Maximum Matrix Sum (MEDIUM)
-            int[][] matrix = [[1, 2, 3], [-1, -2, -3], [1, 2, 3]];
+            //int[][] matrix = [[1, 2, 3], [-1, -2, -3], [1, 2, 3]];
 
-            LeetCode_1975 classLeetCode = new LeetCode_1975();
-            Console.WriteLine(classLeetCode.MaxMatrixSum(matrix));
+            //LeetCode_1975 classLeetCode = new LeetCode_1975();
+            //Console.WriteLine(classLeetCode.MaxMatrixSum(matrix));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxMatrixSum(matrix));
+            //Console.WriteLine(leetCodeAll.MaxMatrixSum(matrix));
 
             ////(1978.) Employees Whose Manager Left the Company (EASY)
             //string SqlQuery =
@@ -9738,6 +9738,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.EvenNumberBitwiseORs(nums));
+
+            ////(3697.) Compute Decimal Representation (EASY)
+            int n = 537;
+
+            LeetCode_3697 classLeetCode = new LeetCode_3697();
+            Console.WriteLine(string.Join(',',classLeetCode.DecimalRepresentation(n)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.DecimalRepresentation(n)));
 
             ////(3701.) Compute Alternating Sum (EASY)
             //int[] nums = [1, 3, 5, 7];
