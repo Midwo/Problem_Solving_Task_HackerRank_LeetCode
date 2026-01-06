@@ -6484,6 +6484,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CheckIfPangram(sentence));
 
+            ////(1833.) Maximum Ice Cream Bars (MEDIUM)
+            int[] costs = [6, 2, 8, 8, 5, 6, 6, 2, 2, 2];
+            int coins = 77;
+
+            LeetCode_1833 classLeetCode = new LeetCode_1833();
+            Console.WriteLine(classLeetCode.MaxIceCream(costs, coins));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxIceCream(costs, coins));
+
             ////(1844.) Replace All Digits with Characters (EASY)
             //string s = "a1b2c3d4e";
 
@@ -9740,14 +9751,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.EvenNumberBitwiseORs(nums));
 
             ////(3697.) Compute Decimal Representation (EASY)
-            int n = 537;
+            //int n = 537;
 
-            LeetCode_3697 classLeetCode = new LeetCode_3697();
-            Console.WriteLine(string.Join(',',classLeetCode.DecimalRepresentation(n)));
+            //LeetCode_3697 classLeetCode = new LeetCode_3697();
+            //Console.WriteLine(string.Join(',',classLeetCode.DecimalRepresentation(n)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.DecimalRepresentation(n)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.DecimalRepresentation(n)));
 
             ////(3701.) Compute Alternating Sum (EASY)
             //int[] nums = [1, 3, 5, 7];
