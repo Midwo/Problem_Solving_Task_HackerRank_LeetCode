@@ -31,23 +31,26 @@ namespace ProblemSolving.LeetCode
             ////indexCntArr == Value
             for (int indexCntArr = min; indexCntArr < max+1; indexCntArr++)
             {
-                currCount = cntArr[indexCntArr];
-                if (currCount > 0)
+                if (coins < indexCntArr)
                 {
-                    currSum = indexCntArr * currCount;
-                    if (currSum <= coins)
+                    return quantityCounter;
+                }
+                else
+                {
+                    currCount = cntArr[indexCntArr];
+                    if (currCount > 0)
                     {
-                        quantityCounter += currCount;
-                        coins -= currSum;
-                        if(coins < indexCntArr + 1)
+                        currSum = indexCntArr * currCount;
+                        if (currSum <= coins)
                         {
+                            quantityCounter += currCount;
+                            coins -= currSum;
+                        }
+                        else
+                        {
+                            quantityCounter += coins / indexCntArr;
                             return quantityCounter;
                         }
-                    }
-                    else
-                    {
-                        quantityCounter += coins / indexCntArr;
-                        return quantityCounter;
                     }
                 }
             }
