@@ -6485,15 +6485,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckIfPangram(sentence));
 
             ////(1833.) Maximum Ice Cream Bars (MEDIUM)
-            int[] costs = [6, 2, 8, 8, 5, 6, 6, 2, 2, 2];
-            int coins = 77;
+            //int[] costs = [6, 2, 8, 8, 5, 6, 6, 2, 2, 2];
+            //int coins = 77;
 
-            LeetCode_1833 classLeetCode = new LeetCode_1833();
-            Console.WriteLine(classLeetCode.MaxIceCream(costs, coins));
+            //LeetCode_1833 classLeetCode = new LeetCode_1833();
+            //Console.WriteLine(classLeetCode.MaxIceCream(costs, coins));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxIceCream(costs, coins));
+            //Console.WriteLine(leetCodeAll.MaxIceCream(costs, coins));
 
             ////(1844.) Replace All Digits with Characters (EASY)
             //string s = "a1b2c3d4e";
@@ -9801,6 +9801,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindMissingElements(nums)));
+
+            ////(3736.) Minimum Moves to Equal Array Elements III (EASY)
+            int[] nums = [2, 1, 3];
+
+            LeetCode_3736 classLeetCode = new LeetCode_3736();
+            Console.WriteLine(classLeetCode.MinMoves(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinMoves(nums));
 
             ////(3754.) Concatenate Non - Zero Digits and Multiply by Sum I (EASY)
             //int n = 0;

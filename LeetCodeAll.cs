@@ -23895,8 +23895,23 @@ namespace ProblemSolving
 
             return quantityCounter;
         }
+        public int MinMoves(int[] nums)
+        {
+            int maxValue = nums[0];
+            int sumNums = maxValue;
+            int length = nums.Length;
+            int currValue = 0;
 
+            for (int indexNums = 1; indexNums < length; indexNums++)
+            {
+                currValue = nums[indexNums];
+                sumNums += currValue;
 
+                maxValue = maxValue < currValue ? currValue : maxValue;
+            }
+
+            return (length * maxValue) - sumNums;
+        }
 
 
 
