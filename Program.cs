@@ -7195,14 +7195,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.PivotArray(nums, pivot)));
 
             ////(2164.) Sort Even and Odd Indices Independently (EASY)
-            int[] nums = [5, 39, 33, 5, 12, 27, 20, 45, 14, 25, 32, 33, 30, 30, 9, 14, 44, 15, 21];
+            //int[] nums = [5, 39, 33, 5, 12, 27, 20, 45, 14, 25, 32, 33, 30, 30, 9, 14, 44, 15, 21];
 
-            LeetCode_2164 classLeetCode = new LeetCode_2164();
-            Console.WriteLine(string.Join(',',classLeetCode.SortEvenOdd(nums)));
+            //LeetCode_2164 classLeetCode = new LeetCode_2164();
+            //Console.WriteLine(string.Join(',',classLeetCode.SortEvenOdd(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SortEvenOdd(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.SortEvenOdd(nums)));
 
             ////(2169.) Count Operations to Obtain Zero (EASY)
             //int num1 = 2;
@@ -7445,6 +7445,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumBags(capacity, rocks, additionalRocks));
+
+            ////(2283.) Check if Number Has Equal Digit Count and Digit Value (EASY)
+            string num = "1210";
+
+            LeetCode_2283 classLeetCode = new LeetCode_2283();
+            Console.WriteLine(classLeetCode.DigitCount(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DigitCount(num));
 
             ////(2293.) Min Max Game (EASY)
             //int[] nums = [70, 38, 21, 22];
