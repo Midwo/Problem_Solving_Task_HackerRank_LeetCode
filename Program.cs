@@ -7194,6 +7194,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.PivotArray(nums, pivot)));
 
+            ////(2164.) Sort Even and Odd Indices Independently (EASY)
+            int[] nums = [5, 39, 33, 5, 12, 27, 20, 45, 14, 25, 32, 33, 30, 30, 9, 14, 44, 15, 21];
+
+            LeetCode_2164 classLeetCode = new LeetCode_2164();
+            Console.WriteLine(string.Join(',',classLeetCode.SortEvenOdd(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SortEvenOdd(nums)));
+
             ////(2169.) Count Operations to Obtain Zero (EASY)
             //int num1 = 2;
             //int num2 = 3;
@@ -9803,14 +9813,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindMissingElements(nums)));
 
             ////(3736.) Minimum Moves to Equal Array Elements III (EASY)
-            int[] nums = [2, 1, 3];
+            //int[] nums = [2, 1, 3];
 
-            LeetCode_3736 classLeetCode = new LeetCode_3736();
-            Console.WriteLine(classLeetCode.MinMoves(nums));
+            //LeetCode_3736 classLeetCode = new LeetCode_3736();
+            //Console.WriteLine(classLeetCode.MinMoves(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinMoves(nums));
+            //Console.WriteLine(leetCodeAll.MinMoves(nums));
 
             ////(3754.) Concatenate Non - Zero Digits and Multiply by Sum I (EASY)
             //int n = 0;
