@@ -24061,8 +24061,19 @@ namespace ProblemSolving
 
             return buttonIndex;
         }
+        public int NumberOfChild(int n, int k)
+        {
+            int numberOfStepsForAnalysis = k % (n + n - 2);
 
-
+            if (numberOfStepsForAnalysis < n)
+            {
+                return numberOfStepsForAnalysis;
+            }
+            else
+            {
+                return n + (n - numberOfStepsForAnalysis) - 2;
+            }
+        }
 
 
 

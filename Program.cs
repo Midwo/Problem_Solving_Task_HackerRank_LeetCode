@@ -8907,6 +8907,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ClearDigits(s));
 
+            ////(3178.) Find the Child Who Has the Ball After K Seconds (EASY)
+            int n = 3;
+            int k = 3;
+
+            LeetCode_3178 classLeetCode = new LeetCode_3178();
+            Console.WriteLine(classLeetCode.NumberOfChild(n, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumberOfChild(n, k));
+
             ////(3184.) Count Pairs That Form a Complete Day I (EASY)
             //int[] hours = [72, 48, 24, 3];
 
@@ -9283,14 +9294,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestNumber(n));
 
             ////(3386.) Button with Longest Push Time (EASY)
-            int[][] events = [[5, 4], [20, 14]];
+            //int[][] events = [[5, 4], [20, 14]];
 
-            LeetCode_3386 classLeetCode = new LeetCode_3386();
-            Console.WriteLine(classLeetCode.ButtonWithLongestTime(events));
+            //LeetCode_3386 classLeetCode = new LeetCode_3386();
+            //Console.WriteLine(classLeetCode.ButtonWithLongestTime(events));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ButtonWithLongestTime(events));
+            //Console.WriteLine(leetCodeAll.ButtonWithLongestTime(events));
 
             ////(3392.) Count Subarrays of Length Three With a Condition (EASY)
             //int[] nums = [1, 2, 1, 4, 1];
