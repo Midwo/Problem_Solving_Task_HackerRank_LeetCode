@@ -6755,15 +6755,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.AreOccurrencesEqual(s));
 
             ////(1945.) Sum of Digits of String After Convert (EASY)
-            string s = "iiii";
-            int k = 1;
+            //string s = "iiii";
+            //int k = 1;
 
-            LeetCode_1945 classLeetCode = new LeetCode_1945();
-            Console.WriteLine(classLeetCode.GetLucky(s, k));
+            //LeetCode_1945 classLeetCode = new LeetCode_1945();
+            //Console.WriteLine(classLeetCode.GetLucky(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GetLucky(s, k));
+            //Console.WriteLine(leetCodeAll.GetLucky(s, k));
 
             ////(1952.) Three Divisors (EASY)
             //int n = 4;
@@ -9281,6 +9281,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SmallestNumber(n));
+
+            ////(3386.) Button with Longest Push Time (EASY)
+            int[][] events = [[5, 4], [20, 14]];
+
+            LeetCode_3386 classLeetCode = new LeetCode_3386();
+            Console.WriteLine(classLeetCode.ButtonWithLongestTime(events));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ButtonWithLongestTime(events));
 
             ////(3392.) Count Subarrays of Length Three With a Condition (EASY)
             //int[] nums = [1, 2, 1, 4, 1];
