@@ -2986,6 +2986,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ToLowerCase(s));
 
+            ////(712.) Minimum ASCII Delete Sum for Two Strings (MEDIUM)
+            string s1 = "delete";
+            string s2 = "leet";
+
+            LeetCode_712 classLeetCode = new LeetCode_712();
+            Console.WriteLine(classLeetCode.MinimumDeleteSum(s1, s2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumDeleteSum(s1, s2));
+
             ////(717.) 1-bit and 2-bit Characters 
             //int[] bits = [1, 1, 1, 0];
 
@@ -8908,15 +8919,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ClearDigits(s));
 
             ////(3178.) Find the Child Who Has the Ball After K Seconds (EASY)
-            int n = 3;
-            int k = 3;
+            //int n = 3;
+            //int k = 3;
 
-            LeetCode_3178 classLeetCode = new LeetCode_3178();
-            Console.WriteLine(classLeetCode.NumberOfChild(n, k));
+            //LeetCode_3178 classLeetCode = new LeetCode_3178();
+            //Console.WriteLine(classLeetCode.NumberOfChild(n, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumberOfChild(n, k));
+            //Console.WriteLine(leetCodeAll.NumberOfChild(n, k));
 
             ////(3184.) Count Pairs That Form a Complete Day I (EASY)
             //int[] hours = [72, 48, 24, 3];
