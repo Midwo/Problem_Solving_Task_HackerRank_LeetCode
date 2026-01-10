@@ -2987,15 +2987,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ToLowerCase(s));
 
             ////(712.) Minimum ASCII Delete Sum for Two Strings (MEDIUM)
-            string s1 = "delete";
-            string s2 = "leet";
+            //string s1 = "delete";
+            //string s2 = "leet";
 
-            LeetCode_712 classLeetCode = new LeetCode_712();
-            Console.WriteLine(classLeetCode.MinimumDeleteSum(s1, s2));
+            //LeetCode_712 classLeetCode = new LeetCode_712();
+            //Console.WriteLine(classLeetCode.MinimumDeleteSum(s1, s2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumDeleteSum(s1, s2));
+            //Console.WriteLine(leetCodeAll.MinimumDeleteSum(s1, s2));
 
             ////(717.) 1-bit and 2-bit Characters 
             //int[] bits = [1, 1, 1, 0];
@@ -7912,6 +7912,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
+
+            ////(2475.) Number of Unequal Triplets in Array (EASY)
+            int[] nums = [4,4,2,4,3];
+
+            LeetCode_2475 classLeetCode = new LeetCode_2475();
+            Console.WriteLine(classLeetCode.UnequalTriplets(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.UnequalTriplets(nums));
 
             ////(2481.) Minimum Cuts to Divide a Circle (EASY)
             //int n = 4;

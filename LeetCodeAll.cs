@@ -24121,8 +24121,32 @@ namespace ProblemSolving
 
             return dp[row - 1][col - 1];
         }
+        public int UnequalTriplets(int[] nums)
+        {
+            int countUnequalTriplets = 0;
+            int length = nums.Length;
 
-
+            for (int indexNums1 = 0; indexNums1 < length - 2; indexNums1++)
+            {
+                int fistrValue = nums[indexNums1];
+                for (int indexNums2 = indexNums1 + 1; indexNums2 < length - 1; indexNums2++)
+                {
+                    int secondValue = nums[indexNums2];
+                    if (fistrValue != secondValue)
+                    {
+                        for (int indexNums3 = indexNums2 + 1; indexNums3 < length; indexNums3++)
+                        {
+                            int thirdValue = nums[indexNums3];
+                            if (secondValue != thirdValue && thirdValue != fistrValue)
+                            {
+                                countUnequalTriplets++;
+                            }
+                        }
+                    }
+                }
+            }
+            return countUnequalTriplets;
+        }
 
 
 
