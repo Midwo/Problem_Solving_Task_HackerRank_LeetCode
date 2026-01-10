@@ -7914,14 +7914,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join((':'), leetCodeAll.ConvertTemperature(celsius)));
 
             ////(2475.) Number of Unequal Triplets in Array (EASY)
-            int[] nums = [4,4,2,4,3];
+            //int[] nums = [4,4,2,4,3];
 
-            LeetCode_2475 classLeetCode = new LeetCode_2475();
-            Console.WriteLine(classLeetCode.UnequalTriplets(nums));
+            //LeetCode_2475 classLeetCode = new LeetCode_2475();
+            //Console.WriteLine(classLeetCode.UnequalTriplets(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.UnequalTriplets(nums));
+            //Console.WriteLine(leetCodeAll.UnequalTriplets(nums));
 
             ////(2481.) Minimum Cuts to Divide a Circle (EASY)
             //int n = 4;
