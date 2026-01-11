@@ -24170,9 +24170,25 @@ namespace ProblemSolving
 
             return howMuchToDelete;
         }
+        public int FindClosestNumber(int[] nums)
+        {
+            int closestValueToZero = int.MaxValue;
+            int maxNoABSValue = int.MinValue;
 
+            for (int indexNums = 0; indexNums < nums.Length; indexNums++)
+            {
+                int currValue = nums[indexNums];
+                int currABSValue = currValue < 0 ? -currValue : currValue;
 
+                if (currABSValue < closestValueToZero || closestValueToZero == currABSValue && currValue > maxNoABSValue)
+                {
+                    closestValueToZero = currABSValue;
+                    maxNoABSValue = currValue;
+                }
+            }
 
+            return maxNoABSValue;
+        }
 
 
 

@@ -7293,15 +7293,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PrefixCount(words, pref));
 
             ////(2186.) Minimum Number of Steps to Make Two Strings Anagram II (MEDIUM)
-            string s = "leetcode";
-            string t = "coats";
+            //string s = "leetcode";
+            //string t = "coats";
 
-            LeetCode_2186 classLeetCode = new LeetCode_2186();
-            Console.WriteLine(classLeetCode.MinSteps(s, t));
+            //LeetCode_2186 classLeetCode = new LeetCode_2186();
+            //Console.WriteLine(classLeetCode.MinSteps(s, t));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinStepsTask2186(s, t));
+            //Console.WriteLine(leetCodeAll.MinStepsTask2186(s, t));
 
             ////(2194.) Cells in a Range on an Excel Sheet (EASY)
             //string s = "K1:L2";
@@ -7415,6 +7415,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CheckTree(root));
+
+            ////(2239.) Find Closest Number to Zero (EASY)
+            int[] nums = [-4,-2,1,4,8];
+            
+            LeetCode_2239 classLeetCode = new LeetCode_2239();
+            Console.WriteLine(classLeetCode.FindClosestNumber(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindClosestNumber(nums));
 
             ////(2257.) Count Unguarded Cells in the Grid (MEDIUM)
             //int m = 4;
