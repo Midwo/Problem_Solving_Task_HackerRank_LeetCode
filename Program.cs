@@ -7292,6 +7292,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.PrefixCount(words, pref));
 
+            ////(2186.) Minimum Number of Steps to Make Two Strings Anagram II (MEDIUM)
+            string s = "leetcode";
+            string t = "coats";
+
+            LeetCode_2186 classLeetCode = new LeetCode_2186();
+            Console.WriteLine(classLeetCode.MinSteps(s, t));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinStepsTask2186(s, t));
+
             ////(2194.) Cells in a Range on an Excel Sheet (EASY)
             //string s = "K1:L2";
 
