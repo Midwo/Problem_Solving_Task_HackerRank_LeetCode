@@ -7303,6 +7303,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinStepsTask2186(s, t));
 
+            ////(2190.) Most Frequent Number Following Key In an Array (EASY)
+            int[] nums = [1, 100, 200, 1, 100];
+            int key = 1;
+
+            LeetCode_2190 classLeetCode = new LeetCode_2190();
+            Console.WriteLine(classLeetCode.MostFrequent(nums, key));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MostFrequent(nums, key));
+
             ////(2194.) Cells in a Range on an Excel Sheet (EASY)
             //string s = "K1:L2";
 
@@ -9336,14 +9347,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestNumber(n));
 
             ////(3379.) Transformed Array (EASY)
-            int[] nums = [-10, -10];
+            //int[] nums = [-10, -10];
 
-            LeetCode_3379 classLeetCode = new LeetCode_3379();
-            Console.WriteLine(string.Join(',', classLeetCode.ConstructTransformedArray(nums)));
+            //LeetCode_3379 classLeetCode = new LeetCode_3379();
+            //Console.WriteLine(string.Join(',', classLeetCode.ConstructTransformedArray(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ConstructTransformedArray(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ConstructTransformedArray(nums)));
 
             ////(3386.) Button with Longest Push Time (EASY)
             //int[][] events = [[5, 4], [20, 14]];
