@@ -7417,14 +7417,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckTree(root));
 
             ////(2239.) Find Closest Number to Zero (EASY)
-            int[] nums = [-4,-2,1,4,8];
-            
-            LeetCode_2239 classLeetCode = new LeetCode_2239();
-            Console.WriteLine(classLeetCode.FindClosestNumber(nums));
+            //int[] nums = [-4,-2,1,4,8];
 
-            //OR
+            //LeetCode_2239 classLeetCode = new LeetCode_2239();
+            //Console.WriteLine(classLeetCode.FindClosestNumber(nums));
 
-            Console.WriteLine(leetCodeAll.FindClosestNumber(nums));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.FindClosestNumber(nums));
 
             ////(2257.) Count Unguarded Cells in the Grid (MEDIUM)
             //int m = 4;
@@ -9334,6 +9334,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SmallestNumber(n));
+
+            ////(3379.) Transformed Array (EASY)
+            int[] nums = [-10, -10];
+
+            LeetCode_3379 classLeetCode = new LeetCode_3379();
+            Console.WriteLine(string.Join(',', classLeetCode.ConstructTransformedArray(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ConstructTransformedArray(nums)));
 
             ////(3386.) Button with Longest Push Time (EASY)
             //int[][] events = [[5, 4], [20, 14]];
