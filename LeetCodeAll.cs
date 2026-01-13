@@ -24275,8 +24275,47 @@ namespace ProblemSolving
 
             return countEven;
         }
+        public bool AreNumbersAscending(string s)
+        {
+            int lastValue = 0;
+            int currValue = 0;
 
+            for (int indexS = 0; indexS < s.Length; indexS++)
+            {
+                char temp = s[indexS];
+                if (temp >= '0' && temp <= '9')
+                {
+                    if (currValue == 0)
+                    {
+                        currValue = temp - '0';
+                    }
+                    else
+                    {
+                        currValue *= 10;
+                        currValue += temp - '0';
+                    }
+                }
+                else if (currValue > 0)
+                {
+                    if (currValue <= lastValue)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        lastValue = currValue;
+                        currValue = 0;
+                    }
+                }
+            }
 
+            if (currValue > 0 && currValue <= lastValue)
+            {
+                return false;
+            }
+
+            return true;
+        }
 
 
 

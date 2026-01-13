@@ -6928,6 +6928,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinMovesToSeat(seats, students));
 
+            ////(2042.) Check if Numbers Are Ascending in a Sentence (EASY)
+            string s = "sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s";
+
+            LeetCode_2042 classLeetCode = new LeetCode_2042();
+            Console.WriteLine(classLeetCode.AreNumbersAscending(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AreNumbersAscending(s));
+
             ////(2043.) Simple Bank System (MEDIUM)
             //LeetCode_2043.Bank bank1 = new LeetCode_2043.Bank([10, 100, 20, 50, 30]);
             //bank1.Withdraw(3, 10);    // return true, account 3 has a balance of $20, so it is valid to withdraw $10.
@@ -7249,15 +7259,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountPairs(nums, k));
 
             ////(2180.) Count Integers With Even Digit Sum (EASY)
-            int num = 30;
+            //int num = 30;
 
-            LeetCode_2180 classLeetCode = new LeetCode_2180();
-            Console.WriteLine(classLeetCode.CountEven(num));
+            //LeetCode_2180 classLeetCode = new LeetCode_2180();
+            //Console.WriteLine(classLeetCode.CountEven(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountEven(num));
-             
+            //Console.WriteLine(leetCodeAll.CountEven(num));
+
             ////(2181.) Merge Nodes in Between Zeros (MEDIUM)
             //ListNode head = new ListNode(0);
             //head.next = new ListNode(3);
