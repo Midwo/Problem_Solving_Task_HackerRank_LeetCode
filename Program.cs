@@ -7248,6 +7248,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountPairs(nums, k));
 
+            ////(2180.) Count Integers With Even Digit Sum (EASY)
+            int num = 30;
+
+            LeetCode_2180 classLeetCode = new LeetCode_2180();
+            Console.WriteLine(classLeetCode.CountEven(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountEven(num));
+             
             ////(2181.) Merge Nodes in Between Zeros (MEDIUM)
             //ListNode head = new ListNode(0);
             //head.next = new ListNode(3);
@@ -7304,15 +7314,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinStepsTask2186(s, t));
 
             ////(2190.) Most Frequent Number Following Key In an Array (EASY)
-            int[] nums = [1, 100, 200, 1, 100];
-            int key = 1;
+            //int[] nums = [1, 100, 200, 1, 100];
+            //int key = 1;
 
-            LeetCode_2190 classLeetCode = new LeetCode_2190();
-            Console.WriteLine(classLeetCode.MostFrequent(nums, key));
+            //LeetCode_2190 classLeetCode = new LeetCode_2190();
+            //Console.WriteLine(classLeetCode.MostFrequent(nums, key));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MostFrequent(nums, key));
+            //Console.WriteLine(leetCodeAll.MostFrequent(nums, key));
 
             ////(2194.) Cells in a Range on an Excel Sheet (EASY)
             //string s = "K1:L2";

@@ -24252,8 +24252,29 @@ namespace ProblemSolving
 
             return valueMaxFreq;
         }
+        public int CountEven(int num)
+        {
+            int countEven = 0;
 
+            for (int value = 2; value <= num; value++)
+            {
+                int scaleValue = 0;
+                int currValue = value;
 
+                while (currValue != 0)
+                {
+                    scaleValue += currValue % 10;
+                    currValue /= 10;
+                }
+
+                if ((scaleValue & 1) == 0)
+                {
+                    countEven++;
+                }
+            }
+
+            return countEven;
+        }
 
 
 
