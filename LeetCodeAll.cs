@@ -24318,11 +24318,14 @@ namespace ProblemSolving
         }
         public int[] SortByBits(int[] arr)
         {
-            var sorted = arr.Select((x, i) => new { Value = x, Index = i })
-                            .OrderBy(item => countBits(item.Value))
-                            .ThenBy(item => item.Value)
-                            .Select(item => item.Value)
-                            .ToArray();
+            //var sorted = arr.Select((x, i) => new { Value = x, Index = i })
+            //                .OrderBy(item => countBits(item.Value))
+            //                .ThenBy(item => item.Value)
+            //                .Select(item => item.Value)
+            //                .ToArray();
+
+            var sorted = arr.OrderBy(x => countBits(x)).ThenBy(x => x).ToArray();
+
             return sorted;
         }
         static int countBits(int valueArr)
@@ -24336,10 +24339,34 @@ namespace ProblemSolving
             }
             return count;
         }
+        public int MaxDivScore(int[] nums, int[] divisors)
+        {
+            int MaxCountingCorrectValues = -1;
+            int minValueFromMaxCountingCorrectValues = int.MaxValue;
+            int numsLength = nums.Length;
 
+            for (int indexDivisors = 0; indexDivisors < divisors.Length; indexDivisors++)
+            {
+                int currdivisors = divisors[indexDivisors];
+                int count = 0;
 
+                for (int indexNums = 0; indexNums < numsLength; indexNums++)
+                {
+                    if (nums[indexNums] % currdivisors == 0)
+                    {
+                        count++;
+                    }
+                }
 
+                if (count > MaxCountingCorrectValues || count == MaxCountingCorrectValues && currdivisors < minValueFromMaxCountingCorrectValues)
+                {
+                    MaxCountingCorrectValues = count;
+                    minValueFromMaxCountingCorrectValues = currdivisors;
+                }
+            }
 
+            return minValueFromMaxCountingCorrectValues;
+        }
 
 
 

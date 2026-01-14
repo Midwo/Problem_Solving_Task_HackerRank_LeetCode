@@ -5144,14 +5144,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountNegatives(grid));
 
             ////(1356.) Sort Integers by The Number of 1 Bits (EASY)
-            int[] arr = [1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1];
+            //int[] arr = [1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1];
 
-            LeetCode_1356 classLeetCode = new LeetCode_1356();
-            Console.WriteLine(string.Join(',', classLeetCode.SortByBits(arr)));
+            //LeetCode_1356 classLeetCode = new LeetCode_1356();
+            //Console.WriteLine(string.Join(',', classLeetCode.SortByBits(arr)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SortByBits(arr)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.SortByBits(arr)));
 
             ////(1365.) How Many Numbers Are Smaller Than the Current Number (EASY)
             //int[] nums = [8, 1, 2, 2, 3];
@@ -8218,6 +8218,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.RowAndMaximumOnes(mat)));
+
+            ////(2644.) Find the Maximum Divisibility Score (EASY)
+            int[] nums = [2, 9, 15, 50];
+            int[] divisors = [5,3,7,2];
+
+            LeetCode_2644 classLeetCode = new LeetCode_2644();
+            Console.WriteLine(classLeetCode.MaxDivScore(nums, divisors));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxDivScore(nums, divisors));
 
             ////(2651.) Calculate Delayed Arrival Time (EASY)
             //int arrivalTime = 15;

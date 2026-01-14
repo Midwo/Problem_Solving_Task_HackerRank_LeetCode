@@ -11,11 +11,14 @@ namespace ProblemSolving.LeetCode
         ////(1356.) Sort Integers by The Number of 1 Bits (EASY)
         public int[] SortByBits(int[] arr)
         {
-            var sorted = arr.Select((x, i) => new { Value = x, Index = i })
-                            .OrderBy(item => countBits(item.Value))
-                            .ThenBy(item => item.Value)
-                            .Select(item => item.Value)
-                            .ToArray();
+            //var sorted = arr.Select((x, i) => new { Value = x, Index = i })
+            //                .OrderBy(item => countBits(item.Value))
+            //                .ThenBy(item => item.Value)
+            //                .Select(item => item.Value)
+            //                .ToArray();
+
+            var sorted = arr.OrderBy(x => countBits(x)).ThenBy(x => x).ToArray();
+            
             return sorted;
         }
         static int countBits(int valueArr)
