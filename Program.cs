@@ -5143,6 +5143,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountNegatives(grid));
 
+            ////(1356.) Sort Integers by The Number of 1 Bits (EASY)
+            int[] arr = [1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1];
+
+            LeetCode_1356 classLeetCode = new LeetCode_1356();
+            Console.WriteLine(string.Join(',', classLeetCode.SortByBits(arr)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SortByBits(arr)));
+
             ////(1365.) How Many Numbers Are Smaller Than the Current Number (EASY)
             //int[] nums = [8, 1, 2, 2, 3];
 
@@ -6929,14 +6939,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinMovesToSeat(seats, students));
 
             ////(2042.) Check if Numbers Are Ascending in a Sentence (EASY)
-            string s = "sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s";
+            //string s = "sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s";
 
-            LeetCode_2042 classLeetCode = new LeetCode_2042();
-            Console.WriteLine(classLeetCode.AreNumbersAscending(s));
+            //LeetCode_2042 classLeetCode = new LeetCode_2042();
+            //Console.WriteLine(classLeetCode.AreNumbersAscending(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.AreNumbersAscending(s));
+            //Console.WriteLine(leetCodeAll.AreNumbersAscending(s));
 
             ////(2043.) Simple Bank System (MEDIUM)
             //LeetCode_2043.Bank bank1 = new LeetCode_2043.Bank([10, 100, 20, 50, 30]);
