@@ -8220,15 +8220,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.RowAndMaximumOnes(mat)));
 
             ////(2644.) Find the Maximum Divisibility Score (EASY)
-            int[] nums = [2, 9, 15, 50];
-            int[] divisors = [5,3,7,2];
+            //int[] nums = [2, 9, 15, 50];
+            //int[] divisors = [5,3,7,2];
 
-            LeetCode_2644 classLeetCode = new LeetCode_2644();
-            Console.WriteLine(classLeetCode.MaxDivScore(nums, divisors));
+            //LeetCode_2644 classLeetCode = new LeetCode_2644();
+            //Console.WriteLine(classLeetCode.MaxDivScore(nums, divisors));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxDivScore(nums, divisors));
+            //Console.WriteLine(leetCodeAll.MaxDivScore(nums, divisors));
 
             ////(2651.) Calculate Delayed Arrival Time (EASY)
             //int arrivalTime = 15;
@@ -9194,6 +9194,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FinalPositionOfSnake(n, commands));
+
+            ////(3258.) Count Substrings That Satisfy K-Constraint I (EASY)
+            string s = "10101";
+            int k = 1;
+
+            LeetCode_3258 classLeetCode = new LeetCode_3258();
+            Console.WriteLine(classLeetCode.CountKConstraintSubstrings(s, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountKConstraintSubstrings(s, k));
 
             ////(3264.) Final Array State After K Multiplication Operations I (EASY)
             //int[] nums = [2, 1, 3, 5, 6];
