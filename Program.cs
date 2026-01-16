@@ -7805,6 +7805,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CheckDistances(s, distance));
 
+            ////(2404.) Most Frequent Even Element (EASY)
+            int[] nums = [0, 1, 2, 2, 4, 4, 1];
+
+            LeetCode_2404 classLeetCode = new LeetCode_2404();
+            Console.WriteLine(classLeetCode.MostFrequentEven(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MostFrequentEven(nums));
+
             ////(2410.) Maximum Matching of Players With Trainers (MEDIUM)
             //int[] players = [4, 7, 9];
             //int[] trainers = [8, 2, 5, 8];
@@ -9196,15 +9206,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FinalPositionOfSnake(n, commands));
 
             ////(3258.) Count Substrings That Satisfy K-Constraint I (EASY)
-            string s = "10101";
-            int k = 1;
+            //string s = "10101";
+            //int k = 1;
 
-            LeetCode_3258 classLeetCode = new LeetCode_3258();
-            Console.WriteLine(classLeetCode.CountKConstraintSubstrings(s, k));
+            //LeetCode_3258 classLeetCode = new LeetCode_3258();
+            //Console.WriteLine(classLeetCode.CountKConstraintSubstrings(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountKConstraintSubstrings(s, k));
+            //Console.WriteLine(leetCodeAll.CountKConstraintSubstrings(s, k));
 
             ////(3264.) Final Array State After K Multiplication Operations I (EASY)
             //int[] nums = [2, 1, 3, 5, 6];
