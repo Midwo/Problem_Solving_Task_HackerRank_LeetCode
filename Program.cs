@@ -6339,16 +6339,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountMatches(items, ruleKey, ruleValue));
 
             ////(1779.) Find Nearest Point That Has the Same X or Y Coordinate (EASY)
-            int x = 3;
-            int y = 4;
-            int[][] points = [[1, 2], [3, 1], [2, 4], [2, 3], [4, 4]];
+            //int x = 3;
+            //int y = 4;
+            //int[][] points = [[1, 2], [3, 1], [2, 4], [2, 3], [4, 4]];
 
-            LeetCode_1779 classLeetCode = new LeetCode_1779();
-            Console.WriteLine(classLeetCode.NearestValidPoint(x, y, points));
+            //LeetCode_1779 classLeetCode = new LeetCode_1779();
+            //Console.WriteLine(classLeetCode.NearestValidPoint(x, y, points));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NearestValidPoint(x, y, points));
+            //Console.WriteLine(leetCodeAll.NearestValidPoint(x, y, points));
 
             ////(1784.) Check if Binary String Has at Most One Segment of Ones (EASY)
             //string s = "110";
@@ -8146,6 +8146,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinCost(basket1, basket2));
+
+            ////(2562.) Find the Array Concatenation Value (EASY)
+            int[] nums = [5, 14, 13, 8, 12];
+
+            LeetCode_2562 classLeetCode = new LeetCode_2562();
+            Console.WriteLine(classLeetCode.FindTheArrayConcVal(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindTheArrayConcVal(nums));
 
             ////(2566.) Maximum Difference by Remapping a Digit (EASY)
             //int num = 11891;
