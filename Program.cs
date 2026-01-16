@@ -6338,6 +6338,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountMatches(items, ruleKey, ruleValue));
 
+            ////(1779.) Find Nearest Point That Has the Same X or Y Coordinate (EASY)
+            int x = 3;
+            int y = 4;
+            int[][] points = [[1, 2], [3, 1], [2, 4], [2, 3], [4, 4]];
+
+            LeetCode_1779 classLeetCode = new LeetCode_1779();
+            Console.WriteLine(classLeetCode.NearestValidPoint(x, y, points));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NearestValidPoint(x, y, points));
+
             ////(1784.) Check if Binary String Has at Most One Segment of Ones (EASY)
             //string s = "110";
 
@@ -7806,14 +7818,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckDistances(s, distance));
 
             ////(2404.) Most Frequent Even Element (EASY)
-            int[] nums = [0, 1, 2, 2, 4, 4, 1];
+            //int[] nums = [0, 1, 2, 2, 4, 4, 1];
 
-            LeetCode_2404 classLeetCode = new LeetCode_2404();
-            Console.WriteLine(classLeetCode.MostFrequentEven(nums));
+            //LeetCode_2404 classLeetCode = new LeetCode_2404();
+            //Console.WriteLine(classLeetCode.MostFrequentEven(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MostFrequentEven(nums));
+            //Console.WriteLine(leetCodeAll.MostFrequentEven(nums));
 
             ////(2410.) Maximum Matching of Players With Trainers (MEDIUM)
             //int[] players = [4, 7, 9];
