@@ -7196,6 +7196,16 @@ namespace ProblemSolving
             //string[] result1 = leetCodeAll.DivideString(s, k, fill);
             //Console.WriteLine(string.Join(',', result1));
 
+            ////(2144.) Minimum Cost of Buying Candies With Discount (EASY)
+            int[] cost = [6, 5, 7, 9, 2, 2];
+
+            LeetCode_2144 classLeetCode = new LeetCode_2144();
+            Console.WriteLine(classLeetCode.MinimumCost(cost));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumCost(cost));
+
             ////(2148.) Count Elements With Strictly Smaller and Greater Elements (EASY)
             //int[] nums = [-3, 3, 3, 90];
 
@@ -7480,15 +7490,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindClosestNumber(nums));
 
             ////(2255.) Count Prefixes of a Given String (EASY)
-            string[] words = ["a", "b", "c", "ab", "bc", "abc"];
-            string s = "abc";
+            //string[] words = ["a", "b", "c", "ab", "bc", "abc"];
+            //string s = "abc";
 
-            LeetCode_2255 classLeetCode = new LeetCode_2255();
-            Console.WriteLine(classLeetCode.CountPrefixes(words, s));
+            //LeetCode_2255 classLeetCode = new LeetCode_2255();
+            //Console.WriteLine(classLeetCode.CountPrefixes(words, s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountPrefixes(words, s));
+            //Console.WriteLine(leetCodeAll.CountPrefixes(words, s));
 
             ////(2257.) Count Unguarded Cells in the Grid (MEDIUM)
             //int m = 4;
