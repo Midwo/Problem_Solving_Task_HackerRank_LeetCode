@@ -7479,6 +7479,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindClosestNumber(nums));
 
+            ////(2255.) Count Prefixes of a Given String (EASY)
+            string[] words = ["a", "b", "c", "ab", "bc", "abc"];
+            string s = "abc";
+
+            LeetCode_2255 classLeetCode = new LeetCode_2255();
+            Console.WriteLine(classLeetCode.CountPrefixes(words, s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountPrefixes(words, s));
+
             ////(2257.) Count Unguarded Cells in the Grid (MEDIUM)
             //int m = 4;
             //int n = 6;
@@ -8148,14 +8159,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinCost(basket1, basket2));
 
             ////(2562.) Find the Array Concatenation Value (EASY)
-            int[] nums = [5, 14, 13, 8, 12];
+            //int[] nums = [5, 14, 13, 8, 12];
 
-            LeetCode_2562 classLeetCode = new LeetCode_2562();
-            Console.WriteLine(classLeetCode.FindTheArrayConcVal(nums));
+            //LeetCode_2562 classLeetCode = new LeetCode_2562();
+            //Console.WriteLine(classLeetCode.FindTheArrayConcVal(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindTheArrayConcVal(nums));
+            //Console.WriteLine(leetCodeAll.FindTheArrayConcVal(nums));
 
             ////(2566.) Maximum Difference by Remapping a Digit (EASY)
             //int num = 11891;
