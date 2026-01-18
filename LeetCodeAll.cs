@@ -24562,8 +24562,23 @@ namespace ProblemSolving
 
             return totalDistance;
         }
+        public long MaximumMedianSum(int[] nums)
+        {
+            Array.Sort(nums);
 
+            int indexLeft = 0;
+            int indexMiddle = nums.Length - 2;
+            long totalSumMedian = 0;
 
+            while (indexLeft < indexMiddle)
+            {
+                totalSumMedian += nums[indexMiddle];
+                indexMiddle -= 2;
+                indexLeft++;
+            }
+
+            return totalSumMedian;
+        }
 
 
 

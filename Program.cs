@@ -8398,15 +8398,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindNonMinOrMax(nums));
 
             ////(2739.) Total Distance Traveled (EASY)
-            int mainTank = 5;
-            int additionalTank = 10;
+            //int mainTank = 5;
+            //int additionalTank = 10;
 
-            LeetCode_2739 classLeetCode = new LeetCode_2739();
-            Console.WriteLine(classLeetCode.DistanceTraveled(mainTank, additionalTank));
+            //LeetCode_2739 classLeetCode = new LeetCode_2739();
+            //Console.WriteLine(classLeetCode.DistanceTraveled(mainTank, additionalTank));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DistanceTraveled(mainTank, additionalTank));
+            //Console.WriteLine(leetCodeAll.DistanceTraveled(mainTank, additionalTank));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
@@ -9930,6 +9930,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CheckDivisibility(n));
+
+            ////(3627.) Maximum Median Sum of Subsequences of Size 3 (MEDIUM)
+            //int[] nums = [1000000000, 1, 1];
+
+            //LeetCode_3627 classLeetCode = new LeetCode_3627();
+            //Console.WriteLine(classLeetCode.MaximumMedianSum(nums));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaximumMedianSum(nums));
 
             ////(3643.) Flip Square Submatrix Vertically (EASY)
             //int[][] grid = [[6, 16, 14], [1, 2, 19], [14, 17, 15], [18, 7, 6], [14, 12, 5]];
