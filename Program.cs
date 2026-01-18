@@ -7197,14 +7197,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', result1));
 
             ////(2144.) Minimum Cost of Buying Candies With Discount (EASY)
-            int[] cost = [6, 5, 7, 9, 2, 2];
+            //int[] cost = [6, 5, 7, 9, 2, 2];
 
-            LeetCode_2144 classLeetCode = new LeetCode_2144();
-            Console.WriteLine(classLeetCode.MinimumCost(cost));
+            //LeetCode_2144 classLeetCode = new LeetCode_2144();
+            //Console.WriteLine(classLeetCode.MinimumCost(cost));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumCost(cost));
+            //Console.WriteLine(leetCodeAll.MinimumCost(cost));
 
             ////(2148.) Count Elements With Strictly Smaller and Greater Elements (EASY)
             //int[] nums = [-3, 3, 3, 90];
@@ -8396,6 +8396,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FindNonMinOrMax(nums));
+
+            ////(2739.) Total Distance Traveled (EASY)
+            int mainTank = 5;
+            int additionalTank = 10;
+
+            LeetCode_2739 classLeetCode = new LeetCode_2739();
+            Console.WriteLine(classLeetCode.DistanceTraveled(mainTank, additionalTank));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DistanceTraveled(mainTank, additionalTank));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
