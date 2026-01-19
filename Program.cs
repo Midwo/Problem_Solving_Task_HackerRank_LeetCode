@@ -10021,6 +10021,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.AlternatingSum(nums));
 
+            ////(3707.) Equal Score Substrings (EASY)
+            string s = "abdcd";
+
+            LeetCode_3707 classLeetCode = new LeetCode_3707();
+            Console.WriteLine(classLeetCode.ScoreBalance(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ScoreBalance(s));
+
             ////(3712.) Sum of Elements With Frequency Divisible by K (EASY)
             //int[] nums = [1, 2, 2, 3, 3, 3, 3, 4];
             //int k = 2;
