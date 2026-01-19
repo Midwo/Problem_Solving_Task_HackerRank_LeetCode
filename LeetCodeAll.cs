@@ -24605,9 +24605,38 @@ namespace ProblemSolving
 
             return statusBalance;
         }
+        public bool IsCircularSentence(string sentence)
+        {
+            char lastChar = ' ';
+            bool check = false;
+            char currChar = ' ';
+            for (int index = 0; index < sentence.Length; index++)
+            {
+                currChar = sentence[index];
+
+                if (currChar == ' ')
+                {
+                    check = true;
+                }
+                else if (!check)
+                {
+                    lastChar = currChar;
+                }
+                else
+                {
+                    check = false;
+                    if (lastChar != currChar)
+                    {
+                        return false;
+                    }
+                    lastChar = currChar;
+                }
+            }
 
 
+            return lastChar == sentence[0];
 
+        }
 
 
 

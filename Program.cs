@@ -8074,6 +8074,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.PivotInteger(n));
 
+            ////(2490.) Circular Sentence (EASY)
+            string sentence = "Leetcode eisc cool";
+
+            LeetCode_2490 classLeetCode = new LeetCode_2490();
+            Console.WriteLine(classLeetCode.IsCircularSentence(sentence));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsCircularSentence(sentence));
+
             ////(2520.) Count the Digits That Divide a Number (EASY)
             //int num = 1248;
 
@@ -10022,14 +10032,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.AlternatingSum(nums));
 
             ////(3707.) Equal Score Substrings (EASY)
-            string s = "abdcd";
+            //string s = "abdcd";
 
-            LeetCode_3707 classLeetCode = new LeetCode_3707();
-            Console.WriteLine(classLeetCode.ScoreBalance(s));
+            //LeetCode_3707 classLeetCode = new LeetCode_3707();
+            //Console.WriteLine(classLeetCode.ScoreBalance(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ScoreBalance(s));
+            //Console.WriteLine(leetCodeAll.ScoreBalance(s));
 
             ////(3712.) Sum of Elements With Frequency Divisible by K (EASY)
             //int[] nums = [1, 2, 2, 3, 3, 3, 3, 4];
