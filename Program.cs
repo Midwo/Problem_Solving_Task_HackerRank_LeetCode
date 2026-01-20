@@ -7290,6 +7290,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountPairs(nums, k));
 
+            ////(2177.) Find Three Consecutive Integers That Sum to a Given Number (MEDIUM)
+            long num = 33;
+
+            LeetCode_2177 classLeetCode = new LeetCode_2177();
+            Console.WriteLine(string.Join(',',classLeetCode.SumOfThree(num)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',',leetCodeAll.SumOfThree(num)));
+
             ////(2180.) Count Integers With Even Digit Sum (EASY)
             //int num = 30;
 
@@ -9389,14 +9399,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.KthCharacter(k));
 
             ////(3314.) Construct the Minimum Bitwise Array I (EASY)
-            IList<int> nums = [2, 3, 5, 7];
+            //IList<int> nums = [2, 3, 5, 7];
 
-            LeetCode_3314 classLeetCode = new LeetCode_3314();
-            Console.WriteLine(string.Join(',',classLeetCode.MinBitwiseArray(nums)));
+            //LeetCode_3314 classLeetCode = new LeetCode_3314();
+            //Console.WriteLine(string.Join(',',classLeetCode.MinBitwiseArray(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.MinBitwiseArray(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.MinBitwiseArray(nums)));
 
             ////(3318.) Find X-Sum of All K-Long Subarrays I (EASY)
             //int[] nums = [1, 1, 2, 2, 3, 4, 2, 3];

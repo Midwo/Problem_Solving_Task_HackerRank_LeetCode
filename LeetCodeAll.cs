@@ -24662,8 +24662,16 @@ namespace ProblemSolving
 
             return ans;
         }
-
-
+        public long[] SumOfThree(long num)
+        {
+            num -= 3;
+            long firstValue = num / 3;
+            if (firstValue * 3 == num)
+            {
+                return new long[] { firstValue, firstValue + 1, firstValue + 2 };
+            }
+            return new long[] { };
+        }
 
 
 
