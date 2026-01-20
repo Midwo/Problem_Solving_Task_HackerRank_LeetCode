@@ -8075,14 +8075,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PivotInteger(n));
 
             ////(2490.) Circular Sentence (EASY)
-            string sentence = "Leetcode eisc cool";
+            //string sentence = "Leetcode eisc cool";
 
-            LeetCode_2490 classLeetCode = new LeetCode_2490();
-            Console.WriteLine(classLeetCode.IsCircularSentence(sentence));
+            //LeetCode_2490 classLeetCode = new LeetCode_2490();
+            //Console.WriteLine(classLeetCode.IsCircularSentence(sentence));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsCircularSentence(sentence));
+            //Console.WriteLine(leetCodeAll.IsCircularSentence(sentence));
 
             ////(2520.) Count the Digits That Divide a Number (EASY)
             //int num = 1248;
@@ -9387,6 +9387,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.KthCharacter(k));
+
+            ////(3314.) Construct the Minimum Bitwise Array I (EASY)
+            IList<int> nums = [2, 3, 5, 7];
+
+            LeetCode_3314 classLeetCode = new LeetCode_3314();
+            Console.WriteLine(string.Join(',',classLeetCode.MinBitwiseArray(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.MinBitwiseArray(nums)));
 
             ////(3318.) Find X-Sum of All K-Long Subarrays I (EASY)
             //int[] nums = [1, 1, 2, 2, 3, 4, 2, 3];
