@@ -7291,14 +7291,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountPairs(nums, k));
 
             ////(2177.) Find Three Consecutive Integers That Sum to a Given Number (MEDIUM)
-            long num = 33;
+            //long num = 33;
 
-            LeetCode_2177 classLeetCode = new LeetCode_2177();
-            Console.WriteLine(string.Join(',',classLeetCode.SumOfThree(num)));
+            //LeetCode_2177 classLeetCode = new LeetCode_2177();
+            //Console.WriteLine(string.Join(',',classLeetCode.SumOfThree(num)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',',leetCodeAll.SumOfThree(num)));
+            //Console.WriteLine(string.Join(',',leetCodeAll.SumOfThree(num)));
 
             ////(2180.) Count Integers With Even Digit Sum (EASY)
             //int num = 30;
@@ -9970,6 +9970,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumMedianSum(nums));
+
+            ////(3637.) Trionic Array I (EASY)
+            int[] nums = [1,3,5,4,2,6];
+
+            LeetCode_3637 classLeetCode = new LeetCode_3637();
+            Console.WriteLine(classLeetCode.IsTrionic(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsTrionic(nums));
 
             ////(3643.) Flip Square Submatrix Vertically (EASY)
             //int[][] grid = [[6, 16, 14], [1, 2, 19], [14, 17, 15], [18, 7, 6], [14, 12, 5]];
