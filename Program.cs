@@ -7181,6 +7181,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.PairSum(head));
 
+            ////(2133.) Check if Every Row and Column Contains All Numbers (EASY)
+            int[][] matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]];
+
+            LeetCode_2133 classLeetCode = new LeetCode_2133();
+            Console.WriteLine(classLeetCode.CheckValid(matrix));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckValid(matrix));
+
             ////(2138.) Divide a String Into Groups of Size k (EASY)
             //string s = "abcdefghij";
             //int k = 3;
@@ -9972,14 +9982,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumMedianSum(nums));
 
             ////(3637.) Trionic Array I (EASY)
-            int[] nums = [1, 3, 2];
+            //int[] nums = [1, 3, 2];
 
-            LeetCode_3637 classLeetCode = new LeetCode_3637();
-            Console.WriteLine(classLeetCode.IsTrionic(nums));
+            //LeetCode_3637 classLeetCode = new LeetCode_3637();
+            //Console.WriteLine(classLeetCode.IsTrionic(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsTrionic(nums));
+            //Console.WriteLine(leetCodeAll.IsTrionic(nums));
 
             ////(3643.) Flip Square Submatrix Vertically (EASY)
             //int[][] grid = [[6, 16, 14], [1, 2, 19], [14, 17, 15], [18, 7, 6], [14, 12, 5]];
