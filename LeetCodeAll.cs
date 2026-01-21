@@ -24689,7 +24689,7 @@ namespace ProblemSolving
             {
                 currValue = nums[indexNums];
 
-                if (currValue > lastValue && status < 4)
+                if (currValue > lastValue)
                 {
                     if (status == 2)
                     {

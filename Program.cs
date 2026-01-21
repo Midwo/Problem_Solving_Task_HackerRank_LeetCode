@@ -9972,7 +9972,7 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumMedianSum(nums));
 
             ////(3637.) Trionic Array I (EASY)
-            int[] nums = [1,3,5,4,2,6];
+            int[] nums = [1, 3, 2];
 
             LeetCode_3637 classLeetCode = new LeetCode_3637();
             Console.WriteLine(classLeetCode.IsTrionic(nums));
