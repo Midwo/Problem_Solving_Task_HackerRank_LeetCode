@@ -7509,6 +7509,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindClosestNumber(nums));
 
+            ////(2248.) Intersection of Multiple Arrays (EASY)
+            int[][] nums = [[3, 1, 2, 4, 5], [1, 2, 3, 4], [3, 4, 5, 6]];
+
+            LeetCode_2248 classLeetCode = new LeetCode_2248();
+            Console.WriteLine(string.Join(',', classLeetCode.Intersection(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.Intersection(nums)));
+
             ////(2255.) Count Prefixes of a Given String (EASY)
             //string[] words = ["a", "b", "c", "ab", "bc", "abc"];
             //string s = "abc";
@@ -9829,14 +9839,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.MinCosts(cost)));
 
             ////(3507.) Minimum Pair Removal to Sort Array I (EASY)
-            int[] nums = [5, 2, 3, 1];
+            //int[] nums = [5, 2, 3, 1];
 
-            LeetCode_3507 classLeetCode = new LeetCode_3507();
-            Console.WriteLine(classLeetCode.MinimumPairRemoval(nums));
+            //LeetCode_3507 classLeetCode = new LeetCode_3507();
+            //Console.WriteLine(classLeetCode.MinimumPairRemoval(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumPairRemoval(nums));
+            //Console.WriteLine(leetCodeAll.MinimumPairRemoval(nums));
 
             ////(3512.) Minimum Operations to Make Array Sum Divisible by K (EASY)
             //int[] nums = [3, 9, 7];
