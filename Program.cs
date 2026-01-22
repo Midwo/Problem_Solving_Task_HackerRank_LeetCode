@@ -7182,14 +7182,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PairSum(head));
 
             ////(2133.) Check if Every Row and Column Contains All Numbers (EASY)
-            int[][] matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]];
+            //int[][] matrix = [[1, 2, 3], [3, 1, 2], [2, 3, 1]];
 
-            LeetCode_2133 classLeetCode = new LeetCode_2133();
-            Console.WriteLine(classLeetCode.CheckValid(matrix));
+            //LeetCode_2133 classLeetCode = new LeetCode_2133();
+            //Console.WriteLine(classLeetCode.CheckValid(matrix));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckValid(matrix));
+            //Console.WriteLine(leetCodeAll.CheckValid(matrix));
 
             ////(2138.) Divide a String Into Groups of Size k (EASY)
             //string s = "abcdefghij";
@@ -9827,6 +9827,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.MinCosts(cost)));
+
+            ////(3507.) Minimum Pair Removal to Sort Array I (EASY)
+            int[] nums = [5, 2, 3, 1];
+
+            LeetCode_3507 classLeetCode = new LeetCode_3507();
+            Console.WriteLine(classLeetCode.MinimumPairRemoval(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumPairRemoval(nums));
 
             ////(3512.) Minimum Operations to Make Array Sum Divisible by K (EASY)
             //int[] nums = [3, 9, 7];
