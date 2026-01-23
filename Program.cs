@@ -6255,14 +6255,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumTeachings(n, languages, friendships));
 
             ////(1736.) Latest Time by Replacing Hidden Digits (EASY)
-            string time = "0?:3?";
+            //string time = "0?:3?";
 
-            LeetCode_1736 classLeetCode = new LeetCode_1736();
-            Console.WriteLine(classLeetCode.MaximumTime(time));
+            //LeetCode_1736 classLeetCode = new LeetCode_1736();
+            //Console.WriteLine(classLeetCode.MaximumTime(time));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumTime(time));
+            //Console.WriteLine(leetCodeAll.MaximumTime(time));
 
             ////(1741.) Find Total Time Spent by Each Employee (EASY)
             //string SqlQuery =
@@ -8196,6 +8196,16 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+
+            ////(2549.) Count Distinct Numbers on Board (EASY)
+            int n = 5;
+
+            LeetCode_2549 classLeetCode = new LeetCode_2549();
+            Console.WriteLine(classLeetCode.DistinctIntegers(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DistinctIntegers(n));
 
             ////(2553.) Separate the Digits in an Array (EASY)
             //int[] nums = [13, 25, 83, 77];

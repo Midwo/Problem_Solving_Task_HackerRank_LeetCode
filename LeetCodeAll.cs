@@ -24851,8 +24851,31 @@ namespace ProblemSolving
             }
             return sb.ToString();
         }
+        public int DistinctIntegers(int n)
+        {
+            HashSet<int> result = new HashSet<int>();
+
+            if (n < 3)
+            {
+                return 1;
+            }
+
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j < n; j++)
+                {
+                    int temp = i % j;
+
+                    if (temp == 1)
+                    {
+                        result.Add(i);
+                    }
+                }
+            }
 
 
+            return result.Count();
+        }
 
 
 
