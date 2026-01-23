@@ -6254,6 +6254,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimumTeachings(n, languages, friendships));
 
+            ////(1736.) Latest Time by Replacing Hidden Digits (EASY)
+            string time = "0?:3?";
+
+            LeetCode_1736 classLeetCode = new LeetCode_1736();
+            Console.WriteLine(classLeetCode.MaximumTime(time));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumTime(time));
+
             ////(1741.) Find Total Time Spent by Each Employee (EASY)
             //string SqlQuery =
             //    @"
@@ -7510,14 +7520,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindClosestNumber(nums));
 
             ////(2248.) Intersection of Multiple Arrays (EASY)
-            int[][] nums = [[3, 1, 2, 4, 5], [1, 2, 3, 4], [3, 4, 5, 6]];
+            //int[][] nums = [[3, 1, 2, 4, 5], [1, 2, 3, 4], [3, 4, 5, 6]];
 
-            LeetCode_2248 classLeetCode = new LeetCode_2248();
-            Console.WriteLine(string.Join(',', classLeetCode.Intersection(nums)));
+            //LeetCode_2248 classLeetCode = new LeetCode_2248();
+            //Console.WriteLine(string.Join(',', classLeetCode.Intersection(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.Intersection(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.Intersection(nums)));
 
             ////(2255.) Count Prefixes of a Given String (EASY)
             //string[] words = ["a", "b", "c", "ab", "bc", "abc"];
