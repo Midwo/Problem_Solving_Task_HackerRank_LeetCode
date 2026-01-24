@@ -6622,6 +6622,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountGoodSubstrings(s));
 
+            ////(1877.) Minimize Maximum Pair Sum in Array (MEDIUM)
+            int[] nums = [3, 5, 4, 2, 4, 6];
+
+            LeetCode_1877 classLeetCode = new LeetCode_1877();
+            Console.WriteLine(classLeetCode.MinPairSum(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinPairSum(nums));
+
             ////(1880.) Check if Word Equals Summation of Two Words (EASY)
             //string firstWord = "acb";
             //string secondWord = "cba";
@@ -8198,14 +8208,14 @@ namespace ProblemSolving
             //}
 
             ////(2549.) Count Distinct Numbers on Board (EASY)
-            int n = 5;
+            //int n = 5;
 
-            LeetCode_2549 classLeetCode = new LeetCode_2549();
-            Console.WriteLine(classLeetCode.DistinctIntegers(n));
+            //LeetCode_2549 classLeetCode = new LeetCode_2549();
+            //Console.WriteLine(classLeetCode.DistinctIntegers(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DistinctIntegers(n));
+            //Console.WriteLine(leetCodeAll.DistinctIntegers(n));
 
             ////(2553.) Separate the Digits in an Array (EASY)
             //int[] nums = [13, 25, 83, 77];

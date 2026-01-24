@@ -24876,8 +24876,21 @@ namespace ProblemSolving
 
             return result.Count();
         }
+        public int MinPairSum(int[] nums)
+        {
+            int maxPairSum = int.MinValue;
+            Array.Sort(nums);
+            int currPairSum = 0;
+            int length = nums.Length;
 
+            for (int i = 0; i < length / 2; i++)
+            {
+                currPairSum = nums[i] + nums[length - i - 1];
+                maxPairSum = maxPairSum < currPairSum ? currPairSum : maxPairSum;
+            }
 
+            return maxPairSum;
+        }
 
 
 
