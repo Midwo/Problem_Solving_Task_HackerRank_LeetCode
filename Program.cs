@@ -6623,14 +6623,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountGoodSubstrings(s));
 
             ////(1877.) Minimize Maximum Pair Sum in Array (MEDIUM)
-            int[] nums = [3, 5, 4, 2, 4, 6];
+            //int[] nums = [3, 5, 4, 2, 4, 6];
 
-            LeetCode_1877 classLeetCode = new LeetCode_1877();
-            Console.WriteLine(classLeetCode.MinPairSum(nums));
+            //LeetCode_1877 classLeetCode = new LeetCode_1877();
+            //Console.WriteLine(classLeetCode.MinPairSum(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinPairSum(nums));
+            //Console.WriteLine(leetCodeAll.MinPairSum(nums));
 
             ////(1880.) Check if Word Equals Summation of Two Words (EASY)
             //string firstWord = "acb";
@@ -7986,6 +7986,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxSum(grid));
+
+            ////(2432.) The Employee That Worked on the Longest Task (EASY)
+            int n = 10;
+            int[][] logs = [[0,3],[2,5],[0,9],[1,15]];
+
+            LeetCode_2432 classLeetCode = new LeetCode_2432();
+            Console.WriteLine(classLeetCode.HardestWorker(n, logs));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.HardestWorker(n, logs));
 
             ////(2433.) Find The Original Array of Prefix Xor (MEDIUM)
             //int[] pref = [5, 2, 0, 3, 1];
