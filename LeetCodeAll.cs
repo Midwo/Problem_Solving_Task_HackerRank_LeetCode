@@ -24913,6 +24913,22 @@ namespace ProblemSolving
 
             return idEmploye;
         }
+        public int MinimumDifference(int[] nums, int k)
+        {
+            int lenght = nums.Length;
+            int minimumDifference = int.MaxValue;
+
+            Array.Sort(nums);
+
+            for (int i = 0; i <= lenght - k; i++)
+            {
+                minimumDifference = Math.Min(minimumDifference, nums[i + k - 1] - nums[i]);
+            }
+
+            return minimumDifference;
+        }
+
+
 
 
 

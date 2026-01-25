@@ -6899,6 +6899,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindGCD(nums));
 
+            ////(1984.) Minimum Difference Between Highest and Lowest of K Scores (EASY)
+            int[] nums = [9, 4, 1, 7];
+            int k = 2;
+
+            LeetCode_1984 classLeetCode = new LeetCode_1984();
+            Console.WriteLine(classLeetCode.MinimumDifference(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumDifference(nums, k));
+
             ////(2000.) Reverse Prefix of Word (EASY)
             //string word = "abcdefd";
             //char ch = 'd';
@@ -7988,15 +7999,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxSum(grid));
 
             ////(2432.) The Employee That Worked on the Longest Task (EASY)
-            int n = 10;
-            int[][] logs = [[0,3],[2,5],[0,9],[1,15]];
+            //int n = 10;
+            //int[][] logs = [[0,3],[2,5],[0,9],[1,15]];
 
-            LeetCode_2432 classLeetCode = new LeetCode_2432();
-            Console.WriteLine(classLeetCode.HardestWorker(n, logs));
+            //LeetCode_2432 classLeetCode = new LeetCode_2432();
+            //Console.WriteLine(classLeetCode.HardestWorker(n, logs));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.HardestWorker(n, logs));
+            //Console.WriteLine(leetCodeAll.HardestWorker(n, logs));
 
             ////(2433.) Find The Original Array of Prefix Xor (MEDIUM)
             //int[] pref = [5, 2, 0, 3, 1];
