@@ -24915,19 +24915,18 @@ namespace ProblemSolving
         }
         public int MinimumDifference(int[] nums, int k)
         {
-            int lenght = nums.Length;
+            int length = nums.Length;
             int minimumDifference = int.MaxValue;
 
             Array.Sort(nums);
 
-            for (int i = 0; i <= lenght - k; i++)
+            for (int i = 0; i <= length - k; i++)
             {
                 minimumDifference = Math.Min(minimumDifference, nums[i + k - 1] - nums[i]);
             }
 
             return minimumDifference;
         }
-
 
 
 
