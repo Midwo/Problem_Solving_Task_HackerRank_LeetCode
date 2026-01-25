@@ -5457,6 +5457,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsPrefixOfWord(sentence, searchWord));
 
+            ////(1456.) Maximum Number of Vowels in a Substring of Given Length (MEDIUM)
+            string s = "abciiidef";
+            int k = 3;
+
+            LeetCode_1456 classLeetCode = new LeetCode_1456();
+            Console.WriteLine(classLeetCode.MaxVowels(s, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxVowels(s, k));
+
             ////(1460.) Make Two Arrays Equal by Reversing Subarrays (EASY)
             //int[] target = [1, 2, 3, 4];
             //int[] arr = [2, 4, 1, 3];
@@ -6900,15 +6911,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindGCD(nums));
 
             ////(1984.) Minimum Difference Between Highest and Lowest of K Scores (EASY)
-            int[] nums = [9, 4, 1, 7];
-            int k = 2;
+            //int[] nums = [9, 4, 1, 7];
+            //int k = 2;
 
-            LeetCode_1984 classLeetCode = new LeetCode_1984();
-            Console.WriteLine(classLeetCode.MinimumDifference(nums, k));
+            //LeetCode_1984 classLeetCode = new LeetCode_1984();
+            //Console.WriteLine(classLeetCode.MinimumDifference(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumDifference(nums, k));
+            //Console.WriteLine(leetCodeAll.MinimumDifference(nums, k));
 
             ////(2000.) Reverse Prefix of Word (EASY)
             //string word = "abcdefd";
