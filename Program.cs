@@ -5458,15 +5458,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsPrefixOfWord(sentence, searchWord));
 
             ////(1456.) Maximum Number of Vowels in a Substring of Given Length (MEDIUM)
-            string s = "abciiidef";
-            int k = 3;
+            //string s = "abciiidef";
+            //int k = 3;
 
-            LeetCode_1456 classLeetCode = new LeetCode_1456();
-            Console.WriteLine(classLeetCode.MaxVowels(s, k));
+            //LeetCode_1456 classLeetCode = new LeetCode_1456();
+            //Console.WriteLine(classLeetCode.MaxVowels(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxVowels(s, k));
+            //Console.WriteLine(leetCodeAll.MaxVowels(s, k));
 
             ////(1460.) Make Two Arrays Equal by Reversing Subarrays (EASY)
             //int[] target = [1, 2, 3, 4];
@@ -8428,6 +8428,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindThePrefixCommonArray(A, B)));
+
+            ////(2670.) Find the Distinct Difference Array (EASY)
+            int[] nums = [1, 2, 3, 4, 5];
+
+            LeetCode_2670 classLeetCode = new LeetCode_2670();
+            Console.WriteLine(string.Join(',', classLeetCode.DistinctDifferenceArray(nums)));
+
+            //OR
+
+            int[] nums1 = [1, 2, 3, 4, 5];
+            Console.WriteLine(string.Join(',', leetCodeAll.DistinctDifferenceArray(nums1)));
 
             ////(2678.) Number of Senior Citizens (EASY)
             //string[] details = ["7868190130M7522", "5303914400F9211", "9273338290F4010"];
