@@ -8430,15 +8430,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindThePrefixCommonArray(A, B)));
 
             ////(2670.) Find the Distinct Difference Array (EASY)
-            int[] nums = [1, 2, 3, 4, 5];
+            //int[] nums = [1, 2, 3, 4, 5];
 
-            LeetCode_2670 classLeetCode = new LeetCode_2670();
-            Console.WriteLine(string.Join(',', classLeetCode.DistinctDifferenceArray(nums)));
+            //LeetCode_2670 classLeetCode = new LeetCode_2670();
+            //Console.WriteLine(string.Join(',', classLeetCode.DistinctDifferenceArray(nums)));
 
-            //OR
+            ////OR
 
-            int[] nums1 = [1, 2, 3, 4, 5];
-            Console.WriteLine(string.Join(',', leetCodeAll.DistinctDifferenceArray(nums1)));
+            //int[] nums1 = [1, 2, 3, 4, 5];
+            //Console.WriteLine(string.Join(',', leetCodeAll.DistinctDifferenceArray(nums1)));
 
             ////(2678.) Number of Senior Citizens (EASY)
             //string[] details = ["7868190130M7522", "5303914400F9211", "9273338290F4010"];
@@ -9575,6 +9575,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountValidSelections(nums));
+
+            ////(3360.) Stone Removal Game (EASY)
+            int n = 12;
+
+            LeetCode_3360 classLeetCode = new LeetCode_3360();
+            Console.WriteLine(classLeetCode.CanAliceWin(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CanAliceWin(n));
 
             ////(3370.) Smallest Number With All Set Bits (EASY)
             //int n = 10;

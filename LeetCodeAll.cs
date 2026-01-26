@@ -25007,8 +25007,20 @@ namespace ProblemSolving
             }
             return nums;
         }
+        public bool CanAliceWin(int n)
+        {
+            int howManyRemove = 10;
+            bool aliceWin = false;
 
+            while (n >= howManyRemove)
+            {
+                n -= howManyRemove--;
 
+                aliceWin = aliceWin == false ? true : false;
+            }
+
+            return aliceWin;
+        }
 
 
 
