@@ -5434,6 +5434,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxPower(s));
 
+            ////(1447.) Simplified Fractions (MEDIUM)
+            int n = 6;
+
+            LeetCode_1447 classLeetCode = new LeetCode_1447();
+            Console.WriteLine(string.Join(',',classLeetCode.SimplifiedFractions(n)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SimplifiedFractions(n)));
+
             ////(1450.) Number of Students Doing Homework at a Given Time (EASY)
             //int[] startTime = [1, 2, 3];
             //int[] endTime = [3, 2, 7];
@@ -9577,14 +9587,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountValidSelections(nums));
 
             ////(3360.) Stone Removal Game (EASY)
-            int n = 12;
+            //int n = 12;
 
-            LeetCode_3360 classLeetCode = new LeetCode_3360();
-            Console.WriteLine(classLeetCode.CanAliceWin(n));
+            //LeetCode_3360 classLeetCode = new LeetCode_3360();
+            //Console.WriteLine(classLeetCode.CanAliceWin(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CanAliceWin(n));
+            //Console.WriteLine(leetCodeAll.CanAliceWin(n));
 
             ////(3370.) Smallest Number With All Set Bits (EASY)
             //int n = 10;
