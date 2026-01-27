@@ -25048,8 +25048,17 @@ namespace ProblemSolving
             }
             return firstValue;
         }
+        public string WinningPlayer(int x, int y)
+        {
+            y /= 4;
+            x = x > y ? y : x;
 
-
+            if ((x & 1) == 1)
+            {
+                return "Alice";
+            }
+            return "Bob";
+        }
 
 
 

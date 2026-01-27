@@ -5435,14 +5435,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxPower(s));
 
             ////(1447.) Simplified Fractions (MEDIUM)
-            int n = 6;
+            //int n = 6;
 
-            LeetCode_1447 classLeetCode = new LeetCode_1447();
-            Console.WriteLine(string.Join(',',classLeetCode.SimplifiedFractions(n)));
+            //LeetCode_1447 classLeetCode = new LeetCode_1447();
+            //Console.WriteLine(string.Join(',',classLeetCode.SimplifiedFractions(n)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SimplifiedFractions(n)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.SimplifiedFractions(n)));
 
             ////(1450.) Number of Students Doing Homework at a Given Time (EASY)
             //int[] startTime = [1, 2, 3];
@@ -9330,6 +9330,17 @@ namespace ProblemSolving
             //    Console.WriteLine(result1.val);
             //    result1 = result1.next;
             //}
+
+            ////(3222.) Find the Winning Player in Coin Game (EASY)
+            int x = 4;
+            int y = 11;
+
+            LeetCode_3222 classLeetCode = new LeetCode_3222();
+            Console.WriteLine(classLeetCode.WinningPlayer(x, y));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.WinningPlayer(x, y));
 
             ////(3226.) Number of Bit Changes to Make Two Integers Equal (EASY)
             //int n = 54;
