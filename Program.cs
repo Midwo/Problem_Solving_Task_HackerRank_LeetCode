@@ -7606,15 +7606,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LargestGoodInteger(num));
 
             ////(2269.) Find the K-Beauty of a Number (EASY)
-            int num = 430043;
-            int k = 2;
+            //int num = 430043;
+            //int k = 2;
 
-            LeetCode_2269 classLeetCode = new LeetCode_2269();
-            Console.WriteLine(classLeetCode.DivisorSubstrings(num, k));
+            //LeetCode_2269 classLeetCode = new LeetCode_2269();
+            //Console.WriteLine(classLeetCode.DivisorSubstrings(num, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DivisorSubstrings(num, k));
+            //Console.WriteLine(leetCodeAll.DivisorSubstrings(num, k));
 
             ////(2273.) Find Resultant Array After Removing Anagrams (EASY)
             //string[] words = ["abba", "baba", "bbaa", "cd", "cd"];
@@ -8311,6 +8311,23 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinMaxDifference(num));
+
+            ////(2570.) Merge Two 2D Arrays by Summing Values (EASY)
+            int[][] nums1 = [[1, 2], [2, 3], [4, 5]];
+            int[][] nums2 = [[1, 4], [3, 2], [4, 1]];
+
+            LeetCode_2570 classLeetCode = new LeetCode_2570();
+            foreach (var item in classLeetCode.MergeArrays(nums1, nums2))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.MergeArrays(nums1, nums2))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             ////(2574.) Left and Right Sum Differences (EASY)
             //int[] nums = [10, 4, 8, 3];

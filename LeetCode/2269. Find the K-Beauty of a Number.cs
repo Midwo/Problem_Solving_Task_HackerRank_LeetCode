@@ -18,7 +18,7 @@ namespace ProblemSolving.LeetCode
             for (int i = 0; i < numToString.Length-k+1; i++)
             {
                 currValue = int.Parse(numToString[i..(i + k)]);
-                if (currValue > 0 && num % currValue == 0)
+                if (currValue > 0 &&  num % currValue == 0)
                 {
                     countKBeauty++;
                 }
