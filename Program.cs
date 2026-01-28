@@ -7605,6 +7605,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.LargestGoodInteger(num));
 
+            ////(2269.) Find the K-Beauty of a Number (EASY)
+            int num = 430043;
+            int k = 2;
+
+            LeetCode_2269 classLeetCode = new LeetCode_2269();
+            Console.WriteLine(classLeetCode.DivisorSubstrings(num, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DivisorSubstrings(num, k));
+
             ////(2273.) Find Resultant Array After Removing Anagrams (EASY)
             //string[] words = ["abba", "baba", "bbaa", "cd", "cd"];
 
@@ -9332,15 +9343,15 @@ namespace ProblemSolving
             //}
 
             ////(3222.) Find the Winning Player in Coin Game (EASY)
-            int x = 4;
-            int y = 11;
+            //int x = 4;
+            //int y = 11;
 
-            LeetCode_3222 classLeetCode = new LeetCode_3222();
-            Console.WriteLine(classLeetCode.WinningPlayer(x, y));
+            //LeetCode_3222 classLeetCode = new LeetCode_3222();
+            //Console.WriteLine(classLeetCode.WinningPlayer(x, y));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.WinningPlayer(x, y));
+            //Console.WriteLine(leetCodeAll.WinningPlayer(x, y));
 
             ////(3226.) Number of Bit Changes to Make Two Integers Equal (EASY)
             //int n = 54;

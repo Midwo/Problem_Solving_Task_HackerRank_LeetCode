@@ -25059,6 +25059,25 @@ namespace ProblemSolving
             }
             return "Bob";
         }
+        public int DivisorSubstrings(int num, int k)
+        {
+            int countKBeauty = 0;
+            string numToString = num.ToString();
+            int currValue = 0;
+
+            for (int i = 0; i < numToString.Length - k + 1; i++)
+            {
+                currValue = int.Parse(numToString[i..(i + k)]);
+                if (currValue > 0 && num % currValue == 0)
+                {
+                    countKBeauty++;
+                }
+            }
+
+            return countKBeauty;
+        }
+
+
 
 
 
