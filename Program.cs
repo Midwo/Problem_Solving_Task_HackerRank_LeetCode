@@ -9186,16 +9186,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DuplicateNumbersXOR(nums));
 
             ////(3159.) Find Occurrences of an Element in an Array (MEDIUM)
-            int[] nums = [1, 3, 1, 7];
-            int[] queries = [1, 3, 2, 4];
-            int x = 1;
+            //int[] nums = [1, 3, 1, 7];
+            //int[] queries = [1, 3, 2, 4];
+            //int x = 1;
 
-            LeetCode_3159 classLeetCode = new LeetCode_3159();
-            Console.WriteLine(string.Join(',', classLeetCode.OccurrencesOfElement(nums, queries, x)));
+            //LeetCode_3159 classLeetCode = new LeetCode_3159();
+            //Console.WriteLine(string.Join(',', classLeetCode.OccurrencesOfElement(nums, queries, x)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.OccurrencesOfElement(nums, queries, x)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.OccurrencesOfElement(nums, queries, x)));
 
             ////(3162.) Find the Number of Good Pairs I (EASY)
             //int[] nums1 = [1, 3, 4];
@@ -9433,6 +9433,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FinalPositionOfSnake(n, commands));
+
+            ////(3254.) Find the Power of K-Size Subarrays I (MEDIUM)
+            int[] nums = [5, 6, 27];
+            int k = 2;
+
+            LeetCode_3254 clasLeetCode = new LeetCode_3254();
+            Console.WriteLine(string.Join(',', clasLeetCode.ResultsArray(nums, k)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ResultsArray(nums, k)));
 
             ////(3258.) Count Substrings That Satisfy K-Constraint I (EASY)
             //string s = "10101";
