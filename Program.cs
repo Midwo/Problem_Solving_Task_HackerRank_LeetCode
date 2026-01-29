@@ -8313,21 +8313,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinMaxDifference(num));
 
             ////(2570.) Merge Two 2D Arrays by Summing Values (EASY)
-            int[][] nums1 = [[1, 2], [2, 3], [4, 5]];
-            int[][] nums2 = [[1, 4], [3, 2], [4, 1]];
+            //int[][] nums1 = [[1, 2], [2, 3], [4, 5]];
+            //int[][] nums2 = [[1, 4], [3, 2], [4, 1]];
 
-            LeetCode_2570 classLeetCode = new LeetCode_2570();
-            foreach (var item in classLeetCode.MergeArrays(nums1, nums2))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //LeetCode_2570 classLeetCode = new LeetCode_2570();
+            //foreach (var item in classLeetCode.MergeArrays(nums1, nums2))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.MergeArrays(nums1, nums2))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.MergeArrays(nums1, nums2))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(2574.) Left and Right Sum Differences (EASY)
             //int[] nums = [10, 4, 8, 3];
@@ -9184,6 +9184,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DuplicateNumbersXOR(nums));
+
+            ////(3159.) Find Occurrences of an Element in an Array (MEDIUM)
+            int[] nums = [1, 3, 1, 7];
+            int[] queries = [1, 3, 2, 4];
+            int x = 1;
+
+            LeetCode_3159 classLeetCode = new LeetCode_3159();
+            Console.WriteLine(string.Join(',', classLeetCode.OccurrencesOfElement(nums, queries, x)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.OccurrencesOfElement(nums, queries, x)));
 
             ////(3162.) Find the Number of Good Pairs I (EASY)
             //int[] nums1 = [1, 3, 4];
