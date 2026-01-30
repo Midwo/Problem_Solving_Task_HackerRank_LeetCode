@@ -5786,6 +5786,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinOperations(n));
 
+            ////(1556.) Thousand Separator (EASY)
+            int n = 1234;
+
+            LeetCode_1556 classLeetCode = new LeetCode_1556();
+            Console.WriteLine(classLeetCode.ThousandSeparator(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ThousandSeparator(n));
+
             ////(1561.) Maximum Number of Coins You Can Get (MEDIUM)
             //int[] piles = [2, 4, 1, 2, 7, 8];
 
@@ -8730,14 +8740,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumOddBinaryNumber(s));
 
             ////(2873.) Maximum Value of an Ordered Triplet I (EASY)
-            int[] nums = [1000000, 1, 1000000];
+            //int[] nums = [1000000, 1, 1000000];
 
-            LeetCode_2873 classLeetCode = new LeetCode_2873();
-            Console.WriteLine(classLeetCode.MaximumTripletValue(nums));
+            //LeetCode_2873 classLeetCode = new LeetCode_2873();
+            //Console.WriteLine(classLeetCode.MaximumTripletValue(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumTripletValue(nums));
+            //Console.WriteLine(leetCodeAll.MaximumTripletValue(nums));
 
             ////(2894.) Divisible and Non-divisible Sums Difference (EASY)
             //int n = 10;
