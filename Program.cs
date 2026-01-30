@@ -8729,6 +8729,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumOddBinaryNumber(s));
 
+            ////(2873.) Maximum Value of an Ordered Triplet I (EASY)
+            int[] nums = [1000000, 1, 1000000];
+
+            LeetCode_2873 classLeetCode = new LeetCode_2873();
+            Console.WriteLine(classLeetCode.MaximumTripletValue(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumTripletValue(nums));
+
             ////(2894.) Divisible and Non-divisible Sums Difference (EASY)
             //int n = 10;
             //int m = 3;
@@ -9435,15 +9445,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FinalPositionOfSnake(n, commands));
 
             ////(3254.) Find the Power of K-Size Subarrays I (MEDIUM)
-            int[] nums = [5, 6, 27];
-            int k = 2;
+            //int[] nums = [5, 6, 27];
+            //int k = 2;
 
-            LeetCode_3254 clasLeetCode = new LeetCode_3254();
-            Console.WriteLine(string.Join(',', clasLeetCode.ResultsArray(nums, k)));
+            //LeetCode_3254 clasLeetCode = new LeetCode_3254();
+            //Console.WriteLine(string.Join(',', clasLeetCode.ResultsArray(nums, k)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ResultsArray(nums, k)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ResultsArray(nums, k)));
 
             ////(3258.) Count Substrings That Satisfy K-Constraint I (EASY)
             //string s = "10101";
