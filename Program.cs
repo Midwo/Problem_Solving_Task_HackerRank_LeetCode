@@ -7298,6 +7298,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.RearrangeArray(nums)));
 
+            ////(2150.) Find All Lonely Numbers in the Array (MEDIUM)
+            int[] nums = [10, 6, 5, 8];
+
+            LeetCode_2150 classLeetCode = new LeetCode_2150();
+            Console.WriteLine(string.Join(',',classLeetCode.FindLonely(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindLonely(nums)));
+
             ////(2154.) Keep Multiplying Found Values by Two (EASY)
             //int[] nums = [5, 3, 6, 1, 12];
             //int original = 3;
@@ -8740,15 +8750,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumOddBinaryNumber(s));
 
             ////(2869.) Minimum Operations to Collect Elements (EASY)
-            IList<int> nums = [3,1,5,4,2];
-            int k = 5;
+            //IList<int> nums = [3,1,5,4,2];
+            //int k = 5;
 
-            LeetCode_2869 classLeetCode = new LeetCode_2869();
-            Console.WriteLine(classLeetCode.MinOperations(nums, k));
+            //LeetCode_2869 classLeetCode = new LeetCode_2869();
+            //Console.WriteLine(classLeetCode.MinOperations(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperations(nums, k));
+            //Console.WriteLine(leetCodeAll.MinOperations(nums, k));
 
             ////(2873.) Maximum Value of an Ordered Triplet I (EASY)
             //int[] nums = [1000000, 1, 1000000];
