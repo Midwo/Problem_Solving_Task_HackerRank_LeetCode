@@ -25359,8 +25359,30 @@ namespace ProblemSolving
 
             //return listLonelyNumbers;
         }
+        public IList<int> GetAllElements(TreeNode root1, TreeNode root2)
+        {
+            List<int> listAllValues = new List<int>();
 
+            CheckRoot(root1, listAllValues);
+            CheckRoot(root2, listAllValues);
 
+            listAllValues.Sort();
+            return listAllValues;
+        }
+        private void CheckRoot(TreeNode root, List<int> listAllValues)
+        {
+            if (root != null)
+            {
+                listAllValues.Add(root.val);
+            }
+            else
+            {
+                return;
+            }
+
+            CheckRoot(root.left, listAllValues);
+            CheckRoot(root.right, listAllValues);
+        }
 
 
 

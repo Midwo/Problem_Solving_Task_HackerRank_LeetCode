@@ -4355,7 +4355,6 @@ namespace ProblemSolving
 
             //LeetCode_1141 classLeetCode = new LeetCode_1141();
 
-
             ////(1148.) Article Views I (EASY)
             //string SqlQuery =
             //    @"
@@ -4892,6 +4891,22 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.SumZero(n)));
+
+            ////(1305.) All Elements in Two Binary Search Trees (MEDIUM)
+            TreeNode root1 = new TreeNode(2);
+            root1.left = new TreeNode(1);
+            root1.right = new TreeNode(4);
+
+            TreeNode root2 = new TreeNode(1);
+            root2.left = new TreeNode(0);
+            root2.right = new TreeNode(3);
+
+            LeetCode_1305 classLeetCode = new LeetCode_1305();
+            Console.WriteLine(string.Join(',', classLeetCode.GetAllElements(root1, root2)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.GetAllElements(root1, root2)));
 
             ////(1309.) Decrypt String from Alphabet to Integer Mapping (EASY)
             //string s = "1326#";
@@ -7299,14 +7314,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.RearrangeArray(nums)));
 
             ////(2150.) Find All Lonely Numbers in the Array (MEDIUM)
-            int[] nums = [10, 6, 5, 8];
+            //int[] nums = [10, 6, 5, 8];
 
-            LeetCode_2150 classLeetCode = new LeetCode_2150();
-            Console.WriteLine(string.Join(',',classLeetCode.FindLonely(nums)));
+            //LeetCode_2150 classLeetCode = new LeetCode_2150();
+            //Console.WriteLine(string.Join(',',classLeetCode.FindLonely(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindLonely(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindLonely(nums)));
 
             ////(2154.) Keep Multiplying Found Values by Two (EASY)
             //int[] nums = [5, 3, 6, 1, 12];
