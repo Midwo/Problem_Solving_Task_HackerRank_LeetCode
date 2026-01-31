@@ -25282,8 +25282,26 @@ namespace ProblemSolving
             Array.Reverse(arrayN);
             return new string(arrayN);
         }
+        public int MinOperations(IList<int> nums, int k)
+        {
+            bool[] valueStatus = new bool[k + 1];
+            int countTrueValueStatus = 0;
+            int lenght = nums.Count;
+            int indexNums = lenght - 1;
+            int currValue = 0;
 
+            while (countTrueValueStatus != k)
+            {
+                currValue = nums[indexNums--];
+                if (currValue <= k && !valueStatus[currValue])
+                {
+                    countTrueValueStatus++;
+                    valueStatus[currValue] = true;
+                }
+            }
 
+            return lenght - indexNums - 1;
+        }
 
 
 

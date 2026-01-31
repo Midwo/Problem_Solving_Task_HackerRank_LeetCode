@@ -5787,14 +5787,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinOperations(n));
 
             ////(1556.) Thousand Separator (EASY)
-            int n = 1234;
+            //int n = 1234;
 
-            LeetCode_1556 classLeetCode = new LeetCode_1556();
-            Console.WriteLine(classLeetCode.ThousandSeparator(n));
+            //LeetCode_1556 classLeetCode = new LeetCode_1556();
+            //Console.WriteLine(classLeetCode.ThousandSeparator(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ThousandSeparator(n));
+            //Console.WriteLine(leetCodeAll.ThousandSeparator(n));
 
             ////(1561.) Maximum Number of Coins You Can Get (MEDIUM)
             //int[] piles = [2, 4, 1, 2, 7, 8];
@@ -8738,6 +8738,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumOddBinaryNumber(s));
+
+            ////(2869.) Minimum Operations to Collect Elements (EASY)
+            IList<int> nums = [3,1,5,4,2];
+            int k = 5;
+
+            LeetCode_2869 classLeetCode = new LeetCode_2869();
+            Console.WriteLine(classLeetCode.MinOperations(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperations(nums, k));
 
             ////(2873.) Maximum Value of an Ordered Triplet I (EASY)
             //int[] nums = [1000000, 1, 1000000];
