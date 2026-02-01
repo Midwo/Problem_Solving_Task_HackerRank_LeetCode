@@ -25383,8 +25383,32 @@ namespace ProblemSolving
             CheckRoot(root.left, listAllValues);
             CheckRoot(root.right, listAllValues);
         }
+        public int MinimumCostTask3010(int[] nums)
+        {
+            int firstValue = nums[0];
+            int minValue = int.MaxValue;
+            int secondMinValue = int.MaxValue;
+            int currValue = 0;
 
+            for (int i = 1; i < nums.Length; i++)
+            {
+                currValue = nums[i];
+                if (currValue < minValue)
+                {
+                    if (minValue < secondMinValue)
+                    {
+                        secondMinValue = minValue;
+                    }
+                    minValue = currValue;
+                }
+                else if (currValue < secondMinValue)
+                {
+                    secondMinValue = currValue;
+                }
+            }
 
+            return firstValue + minValue + secondMinValue;
+        }
 
 
 

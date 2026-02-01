@@ -4893,20 +4893,20 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SumZero(n)));
 
             ////(1305.) All Elements in Two Binary Search Trees (MEDIUM)
-            TreeNode root1 = new TreeNode(2);
-            root1.left = new TreeNode(1);
-            root1.right = new TreeNode(4);
+            //TreeNode root1 = new TreeNode(2);
+            //root1.left = new TreeNode(1);
+            //root1.right = new TreeNode(4);
 
-            TreeNode root2 = new TreeNode(1);
-            root2.left = new TreeNode(0);
-            root2.right = new TreeNode(3);
+            //TreeNode root2 = new TreeNode(1);
+            //root2.left = new TreeNode(0);
+            //root2.right = new TreeNode(3);
 
-            LeetCode_1305 classLeetCode = new LeetCode_1305();
-            Console.WriteLine(string.Join(',', classLeetCode.GetAllElements(root1, root2)));
+            //LeetCode_1305 classLeetCode = new LeetCode_1305();
+            //Console.WriteLine(string.Join(',', classLeetCode.GetAllElements(root1, root2)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.GetAllElements(root1, root2)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.GetAllElements(root1, root2)));
 
             ////(1309.) Decrypt String from Alphabet to Integer Mapping (EASY)
             //string s = "1326#";
@@ -8978,6 +8978,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxFrequencyElements(nums));
+
+            ////(3010.) Divide an Array Into Subarrays With Minimum Cost I (EASY)
+            int[] nums = [1, 2, 3, 12];
+
+            LeetCode_3010 classLeetCode = new LeetCode_3010();
+            Console.WriteLine(classLeetCode.MinimumCost(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumCostTask3010(nums));
 
             ////(3019.) Number of Changing Keys (EASY)
             //string s = "aAbBcC";
