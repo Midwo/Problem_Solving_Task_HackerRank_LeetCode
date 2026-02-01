@@ -8980,14 +8980,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxFrequencyElements(nums));
 
             ////(3010.) Divide an Array Into Subarrays With Minimum Cost I (EASY)
-            int[] nums = [1, 2, 3, 12];
+            //int[] nums = [1, 2, 3, 12];
 
-            LeetCode_3010 classLeetCode = new LeetCode_3010();
-            Console.WriteLine(classLeetCode.MinimumCost(nums));
+            //LeetCode_3010 classLeetCode = new LeetCode_3010();
+            //Console.WriteLine(classLeetCode.MinimumCost(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumCostTask3010(nums));
+            //Console.WriteLine(leetCodeAll.MinimumCostTask3010(nums));
 
             ////(3019.) Number of Changing Keys (EASY)
             //string s = "aAbBcC";
@@ -10103,6 +10103,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CalculateScore(instructions, values));
+
+            ////(3527.) Find the Most Common Response (MEDIUM)
+            IList<IList<string>> responses = [["good", "ok", "good", "ok"], ["ok", "bad", "good", "ok", "ok"], ["good"], ["bad"]];
+
+            LeetCode_3527 classLeetCode = new LeetCode_3527();
+            Console.WriteLine(classLeetCode.FindCommonResponse(responses));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindCommonResponse(responses));
 
             ////(3536.) Maximum Product of Two Digits (EASY)
             //int n = 124;
