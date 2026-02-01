@@ -21,10 +21,7 @@ namespace ProblemSolving.LeetCode
                 currValue = nums[i];
                 if(currValue < minValue)
                 {
-                    if (minValue < secondMinValue)
-                    {
-                        secondMinValue = minValue;
-                    }
+                    secondMinValue = minValue;
                     minValue = currValue;
                 }
                 else if(currValue < secondMinValue)
