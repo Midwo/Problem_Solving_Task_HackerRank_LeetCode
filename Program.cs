@@ -7103,15 +7103,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestEqual(nums));
 
             ////(2068.) Check Whether Two Strings are Almost Equivalent (EASY)
-            string word1 = "abcdeef";
-            string word2 = "abaaacc";
+            //string word1 = "abcdeef";
+            //string word2 = "abaaacc";
 
-            LeetCode_2068 classLeetCode = new LeetCode_2068();
-            Console.WriteLine(classLeetCode.CheckAlmostEquivalent(word1, word2));
+            //LeetCode_2068 classLeetCode = new LeetCode_2068();
+            //Console.WriteLine(classLeetCode.CheckAlmostEquivalent(word1, word2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckAlmostEquivalent(word1, word2));
+            //Console.WriteLine(leetCodeAll.CheckAlmostEquivalent(word1, word2));
 
             ////(2078.) Two Furthest Houses With Different Colors (EASY)
             //int[] colors = [6, 6, 6, 6, 6, 6, 6, 6, 6, 19, 19, 6, 6];
@@ -7254,6 +7254,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NumberOfBeams(bank));
+
+            ////(2129.) Capitalize the Title (EASY)
+            string title = "First leTTeR of EACH Word";
+
+            LeetCode_2129 classLeetCode = new LeetCode_2129();
+            Console.WriteLine(classLeetCode.CapitalizeTitle(title));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CapitalizeTitle(title));
 
             ////(2130.) Maximum Twin Sum of a Linked List (MEDIUM)
             //ListNode head = new ListNode(5);
