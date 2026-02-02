@@ -7102,6 +7102,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SmallestEqual(nums));
 
+            ////(2068.) Check Whether Two Strings are Almost Equivalent (EASY)
+            string word1 = "abcdeef";
+            string word2 = "abaaacc";
+
+            LeetCode_2068 classLeetCode = new LeetCode_2068();
+            Console.WriteLine(classLeetCode.CheckAlmostEquivalent(word1, word2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckAlmostEquivalent(word1, word2));
+
             ////(2078.) Two Furthest Houses With Different Colors (EASY)
             //int[] colors = [6, 6, 6, 6, 6, 6, 6, 6, 6, 19, 19, 6, 6];
 
@@ -10105,14 +10116,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CalculateScore(instructions, values));
 
             ////(3527.) Find the Most Common Response (MEDIUM)
-            IList<IList<string>> responses = [["good", "ok", "good", "ok"], ["ok", "bad", "good", "ok", "ok"], ["good"], ["bad"]];
+            //IList<IList<string>> responses = [["good", "ok", "good", "ok"], ["ok", "bad", "good", "ok", "ok"], ["good"], ["bad"]];
 
-            LeetCode_3527 classLeetCode = new LeetCode_3527();
-            Console.WriteLine(classLeetCode.FindCommonResponse(responses));
+            //LeetCode_3527 classLeetCode = new LeetCode_3527();
+            //Console.WriteLine(classLeetCode.FindCommonResponse(responses));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindCommonResponse(responses));
+            //Console.WriteLine(leetCodeAll.FindCommonResponse(responses));
 
             ////(3536.) Maximum Product of Two Digits (EASY)
             //int n = 124;
