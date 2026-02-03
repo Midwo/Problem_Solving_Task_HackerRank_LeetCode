@@ -6329,6 +6329,17 @@ namespace ProblemSolving
 
             //LeetCode_1741 classLeetCode = new LeetCode_1741();
 
+            ////(1742.) Maximum Number of Balls in a Box (EASY)
+            int lowLimit = 1;
+            int highLimit = 10;
+
+            LeetCode_1742 classLeetCode = new LeetCode_1742();
+            Console.WriteLine(classLeetCode.CountBalls(lowLimit, highLimit));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountBalls(lowLimit, highLimit));
+
             ////(1748.) Sum of Unique Elements (EASY)
             //int[] nums = [1, 2, 3, 2];
 
@@ -8338,15 +8349,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SeparateDigits(nums)));
 
             ////(2558.) Take Gifts From the Richest Pile (EASY)
-            int[] gifts = [25, 64, 9, 4, 100];
-            int k = 4;
+            //int[] gifts = [25, 64, 9, 4, 100];
+            //int k = 4;
 
-            LeetCode_2558 classLeetCode = new LeetCode_2558();
-            Console.WriteLine(classLeetCode.PickGifts(gifts, k));
+            //LeetCode_2558 classLeetCode = new LeetCode_2558();
+            //Console.WriteLine(classLeetCode.PickGifts(gifts, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PickGifts(gifts, k));
+            //Console.WriteLine(leetCodeAll.PickGifts(gifts, k));
 
             ////(2561.) Rearranging Fruits (HARD)
             //int[] basket1 = [4, 2, 2, 2];
