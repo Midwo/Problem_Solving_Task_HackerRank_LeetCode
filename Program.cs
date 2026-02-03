@@ -7256,14 +7256,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfBeams(bank));
 
             ////(2129.) Capitalize the Title (EASY)
-            string title = "First leTTeR of EACH Word";
+            //string title = "First leTTeR of EACH Word";
 
-            LeetCode_2129 classLeetCode = new LeetCode_2129();
-            Console.WriteLine(classLeetCode.CapitalizeTitle(title));
+            //LeetCode_2129 classLeetCode = new LeetCode_2129();
+            //Console.WriteLine(classLeetCode.CapitalizeTitle(title));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CapitalizeTitle(title));
+            //Console.WriteLine(leetCodeAll.CapitalizeTitle(title));
 
             ////(2130.) Maximum Twin Sum of a Linked List (MEDIUM)
             //ListNode head = new ListNode(5);
@@ -8336,6 +8336,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.SeparateDigits(nums)));
+
+            ////(2558.) Take Gifts From the Richest Pile (EASY)
+            int[] gifts = [25, 64, 9, 4, 100];
+            int k = 4;
+
+            LeetCode_2558 classLeetCode = new LeetCode_2558();
+            Console.WriteLine(classLeetCode.PickGifts(gifts, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.PickGifts(gifts, k));
 
             ////(2561.) Rearranging Fruits (HARD)
             //int[] basket1 = [4, 2, 2, 2];
