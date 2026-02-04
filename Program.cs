@@ -5932,6 +5932,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxDepth(s));
 
+            ////(1624.) Largest Substring Between Two Equal Characters (EASY)
+            string s = "abca";
+
+            LeetCode_1624 classLeetCode = new LeetCode_1624();
+            Console.WriteLine(classLeetCode.MaxLengthBetweenEqualCharacters(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxLengthBetweenEqualCharacters(s));
+
             ////(1625.) Lexicographically Smallest String After Applying Operations (MEDIUM)
             //string s = "5525";
             //int a = 9;
@@ -8418,15 +8428,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
 
             ////(2582.) Pass the Pillow (EASY)
-            int n = 4;
-            int time = 5;
+            //int n = 4;
+            //int time = 5;
 
-            LeetCode_2582 classLeetCode = new LeetCode_2582();
-            Console.WriteLine(classLeetCode.PassThePillow(n, time));
+            //LeetCode_2582 classLeetCode = new LeetCode_2582();
+            //Console.WriteLine(classLeetCode.PassThePillow(n, time));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PassThePillow(n, time));
+            //Console.WriteLine(leetCodeAll.PassThePillow(n, time));
 
             //////(2586.) Count the Number of Vowel Strings in Range (EASY)
             //string[] words = ["hey", "aeo", "mu", "ooo", "artro"];
