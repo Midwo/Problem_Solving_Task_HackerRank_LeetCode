@@ -25584,8 +25584,25 @@ namespace ProblemSolving
 
             return maxBalls;
         }
+        public int PassThePillow(int n, int time)
+        {
+            if (n > time)
+            {
+                return time + 1;
+            }
 
+            int howManyCycle = time / (n - 1);
+            int restCycle = time % (n - 1);
 
+            if ((howManyCycle & 1) == 1)
+            {
+                return n - restCycle;
+            }
+            else
+            {
+                return restCycle + 1;
+            }
+        }
 
 
 

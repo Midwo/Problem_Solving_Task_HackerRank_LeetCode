@@ -6330,15 +6330,15 @@ namespace ProblemSolving
             //LeetCode_1741 classLeetCode = new LeetCode_1741();
 
             ////(1742.) Maximum Number of Balls in a Box (EASY)
-            int lowLimit = 1;
-            int highLimit = 10;
+            //int lowLimit = 1;
+            //int highLimit = 10;
 
-            LeetCode_1742 classLeetCode = new LeetCode_1742();
-            Console.WriteLine(classLeetCode.CountBalls(lowLimit, highLimit));
+            //LeetCode_1742 classLeetCode = new LeetCode_1742();
+            //Console.WriteLine(classLeetCode.CountBalls(lowLimit, highLimit));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountBalls(lowLimit, highLimit));
+            //Console.WriteLine(leetCodeAll.CountBalls(lowLimit, highLimit));
 
             ////(1748.) Sum of Unique Elements (EASY)
             //int[] nums = [1, 2, 3, 2];
@@ -8416,6 +8416,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
+
+            ////(2582.) Pass the Pillow (EASY)
+            int n = 4;
+            int time = 5;
+
+            LeetCode_2582 classLeetCode = new LeetCode_2582();
+            Console.WriteLine(classLeetCode.PassThePillow(n, time));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.PassThePillow(n, time));
 
             //////(2586.) Count the Number of Vowel Strings in Range (EASY)
             //string[] words = ["hey", "aeo", "mu", "ooo", "artro"];
