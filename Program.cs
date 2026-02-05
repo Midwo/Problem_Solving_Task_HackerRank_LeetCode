@@ -6606,15 +6606,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxIceCream(costs, coins));
 
             ////(1837.) Sum of Digits in Base K (EASY)
-            int n = 34;
-            int k = 6;
+            //int n = 34;
+            //int k = 6;
 
-            LeetCode_1837 classLeetCode = new LeetCode_1837();
-            Console.WriteLine(classLeetCode.SumBase(n, k));
+            //LeetCode_1837 classLeetCode = new LeetCode_1837();
+            //Console.WriteLine(classLeetCode.SumBase(n, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumBase(n, k));
+            //Console.WriteLine(leetCodeAll.SumBase(n, k));
 
             ////(1844.) Replace All Digits with Characters (EASY)
             //string s = "a1b2c3d4e";
@@ -8512,6 +8512,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
+
+            ////(2639.) Find the Width of Columns of a Grid (EASY)
+            int[][] grid = [[-15, 1, 3], [15, 7, 12], [5, 6, -2]];
+
+            LeetCode_2639 classLeetCode = new LeetCode_2639();
+            Console.WriteLine(string.Join(',',classLeetCode.FindColumnWidth(grid)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindColumnWidth(grid)));
 
             ////(2643.) Row With Maximum Ones (EASY)
             //int[][] mat = [[0, 0], [1, 1], [0, 0]];
