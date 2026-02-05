@@ -5933,14 +5933,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDepth(s));
 
             ////(1624.) Largest Substring Between Two Equal Characters (EASY)
-            string s = "abca";
+            //string s = "abca";
 
-            LeetCode_1624 classLeetCode = new LeetCode_1624();
-            Console.WriteLine(classLeetCode.MaxLengthBetweenEqualCharacters(s));
+            //LeetCode_1624 classLeetCode = new LeetCode_1624();
+            //Console.WriteLine(classLeetCode.MaxLengthBetweenEqualCharacters(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxLengthBetweenEqualCharacters(s));
+            //Console.WriteLine(leetCodeAll.MaxLengthBetweenEqualCharacters(s));
 
             ////(1625.) Lexicographically Smallest String After Applying Operations (MEDIUM)
             //string s = "5525";
@@ -6604,6 +6604,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxIceCream(costs, coins));
+
+            ////(1837.) Sum of Digits in Base K (EASY)
+            int n = 34;
+            int k = 6;
+
+            LeetCode_1837 classLeetCode = new LeetCode_1837();
+            Console.WriteLine(classLeetCode.SumBase(n, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumBase(n, k));
 
             ////(1844.) Replace All Digits with Characters (EASY)
             //string s = "a1b2c3d4e";
