@@ -4727,6 +4727,18 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1251 classLeetCode = new LeetCode_1251();
 
+            ////(1252.) Cells with Odd Values in a Matrix (EASY)
+            int m = 2;
+            int n = 3;
+            int[][] indices = [[0, 1], [1, 1]];
+
+            LeetCode_1252 classLeetCode = new LeetCode_1252();
+            Console.WriteLine(classLeetCode.OddCells(m, n, indices));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.OddCells(m, n, indices));
+
             ////(1262. Greatest Sum Divisible by Three (MEDIUM)
             //int[] nums = [1, 2, 3, 4, 4];
 
@@ -10319,15 +10331,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumMedianSum(nums));
 
             ////(3634.) Minimum Removals to Balance Array (MEDIUM)
-            int[] nums = [1, 6, 2, 9];
-            int k = 3;
+            //int[] nums = [1, 6, 2, 9];
+            //int k = 3;
 
-            LeetCode_3634 classLeetCode = new LeetCode_3634();
-            Console.WriteLine(classLeetCode.MinRemoval(nums, k));
+            //LeetCode_3634 classLeetCode = new LeetCode_3634();
+            //Console.WriteLine(classLeetCode.MinRemoval(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinRemoval(nums, k));
+            //Console.WriteLine(leetCodeAll.MinRemoval(nums, k));
 
             ////(3637.) Trionic Array I (EASY)
             //int[] nums = [1, 3, 2];
