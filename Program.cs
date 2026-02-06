@@ -8514,14 +8514,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizeMax(nums, p));
 
             ////(2639.) Find the Width of Columns of a Grid (EASY)
-            int[][] grid = [[-15, 1, 3], [15, 7, 12], [5, 6, -2]];
+            //int[][] grid = [[-15, 1, 3], [15, 7, 12], [5, 6, -2]];
 
-            LeetCode_2639 classLeetCode = new LeetCode_2639();
-            Console.WriteLine(string.Join(',',classLeetCode.FindColumnWidth(grid)));
+            //LeetCode_2639 classLeetCode = new LeetCode_2639();
+            //Console.WriteLine(string.Join(',',classLeetCode.FindColumnWidth(grid)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindColumnWidth(grid)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindColumnWidth(grid)));
 
             ////(2643.) Row With Maximum Ones (EASY)
             //int[][] mat = [[0, 0], [1, 1], [0, 0]];
@@ -10317,6 +10317,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumMedianSum(nums));
+
+            ////(3634.) Minimum Removals to Balance Array (MEDIUM)
+            int[] nums = [1, 6, 2, 9];
+            int k = 3;
+
+            LeetCode_3634 classLeetCode = new LeetCode_3634();
+            Console.WriteLine(classLeetCode.MinRemoval(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinRemoval(nums, k));
 
             ////(3637.) Trionic Array I (EASY)
             //int[] nums = [1, 3, 2];
