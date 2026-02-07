@@ -4728,16 +4728,16 @@ namespace ProblemSolving
             //LeetCode_1251 classLeetCode = new LeetCode_1251();
 
             ////(1252.) Cells with Odd Values in a Matrix (EASY)
-            int m = 2;
-            int n = 3;
-            int[][] indices = [[0, 1], [1, 1]];
+            //int m = 2;
+            //int n = 3;
+            //int[][] indices = [[0, 1], [1, 1]];
 
-            LeetCode_1252 classLeetCode = new LeetCode_1252();
-            Console.WriteLine(classLeetCode.OddCells(m, n, indices));
+            //LeetCode_1252 classLeetCode = new LeetCode_1252();
+            //Console.WriteLine(classLeetCode.OddCells(m, n, indices));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.OddCells(m, n, indices));
+            //Console.WriteLine(leetCodeAll.OddCells(m, n, indices));
 
             ////(1262. Greatest Sum Divisible by Three (MEDIUM)
             //int[] nums = [1, 2, 3, 4, 4];
@@ -5687,6 +5687,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(classLeetCode.CanMakeArithmeticProgression(arr));
+
+            ////(1507.) Reformat Date (EASY)
+            string date = "29th Oct 1997";
+
+            LeetCode_1507 classLeetCode = new LeetCode_1507();
+            Console.WriteLine(classLeetCode.ReformatDate(date));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ReformatDate(date));
 
             ////(1512.) Number of Good Pairs (EASY)
             //int[] nums = [1, 2, 3, 1, 1, 3];
