@@ -25809,43 +25809,25 @@ namespace ProblemSolving
         {
             double tax = 0;
 
-            int lastUpper = brackets[0][0];
+            int lastUpper = 0;
 
-            if (income > lastUpper)
+            for (int i = 0; i < brackets.Length; i++)
             {
-                tax += lastUpper * brackets[0][1];
-                income -= lastUpper;
+                int currUpper = brackets[i][0];
+                int taxable = Math.Min(income, currUpper - lastUpper);
 
-                for (int i = 1; i < brackets.Length; i++)
+                tax += taxable * brackets[i][1];
+                income -= taxable;
+
+                if (income == 0)
                 {
-                    int currUpper = brackets[i][0];
-                    int lastUpperMinusCurr = currUpper - lastUpper;
-                    if (lastUpperMinusCurr <= income)
-                    {
-                        tax += lastUpperMinusCurr * brackets[i][1];
-                        income -= lastUpperMinusCurr;
-                    }
-                    else
-                    {
-                        tax += income * brackets[i][1];
-                        income = 0;
-                    }
-                    if (income == 0)
-                    {
-                        break;
-                    }
-                    lastUpper = currUpper;
+                    break;
                 }
-            }
-            else
-            {
-                tax += income * brackets[0][1];
+                lastUpper = currUpper;
             }
 
             return tax / 100;
         }
-
-
 
 
 
