@@ -5689,14 +5689,14 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.CanMakeArithmeticProgression(arr));
 
             ////(1507.) Reformat Date (EASY)
-            string date = "29th Oct 1997";
+            //string date = "29th Oct 1997";
 
-            LeetCode_1507 classLeetCode = new LeetCode_1507();
-            Console.WriteLine(classLeetCode.ReformatDate(date));
+            //LeetCode_1507 classLeetCode = new LeetCode_1507();
+            //Console.WriteLine(classLeetCode.ReformatDate(date));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ReformatDate(date));
+            //Console.WriteLine(leetCodeAll.ReformatDate(date));
 
             ////(1512.) Number of Good Pairs (EASY)
             //int[] nums = [1, 2, 3, 1, 1, 3];
@@ -7818,6 +7818,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.SuccessfulPairs(spells, potions, success)));
+
+            ////(2303.) Calculate Amount Paid in Taxes (EASY)
+            int[][] backets = [[3, 50], [7, 10], [12, 25]];
+            int income = 10;
+
+            LeetCode_2303 classLeetCode = new LeetCode_2303();
+            Console.WriteLine(classLeetCode.CalculateTax(backets, income));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CalculateTax(backets, income));
 
             ////(2309.) Greatest English Letter in Upper and Lower Case (EASY)
             //string s = "AbCdEfGhIjK";
