@@ -5603,6 +5603,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.RunningSum(nums)));
 
+            ////(1481.) Least Number of Unique Integers after K Removals (MEDIUM)1481. Least Number of Unique Integers after K Removals (MEDIUM)
+            int[] arr = [4, 3, 1, 1, 3, 3, 2];
+            int k = 3;
+
+            LeetCode_1481 classLeetCode = new LeetCode_1481();
+            Console.WriteLine(classLeetCode.FindLeastNumOfUniqueInts(arr, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindLeastNumOfUniqueInts(arr, k));
+
             ////(1484.) Group Sold Products By The Date (EASY)
             //string SqlQuery =
             //    @"
@@ -7820,15 +7831,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SuccessfulPairs(spells, potions, success)));
 
             ////(2303.) Calculate Amount Paid in Taxes (EASY)
-            int[][] backets = [[3, 50], [7, 10], [12, 25]];
-            int income = 10;
+            //int[][] backets = [[3, 50], [7, 10], [12, 25]];
+            //int income = 10;
 
-            LeetCode_2303 classLeetCode = new LeetCode_2303();
-            Console.WriteLine(classLeetCode.CalculateTax(backets, income));
+            //LeetCode_2303 classLeetCode = new LeetCode_2303();
+            //Console.WriteLine(classLeetCode.CalculateTax(backets, income));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CalculateTax(backets, income));
+            //Console.WriteLine(leetCodeAll.CalculateTax(backets, income));
 
             ////(2309.) Greatest English Letter in Upper and Lower Case (EASY)
             //string s = "AbCdEfGhIjK";
