@@ -5604,15 +5604,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.RunningSum(nums)));
 
             ////(1481.) Least Number of Unique Integers after K Removals (MEDIUM)1481. Least Number of Unique Integers after K Removals (MEDIUM)
-            int[] arr = [4, 3, 1, 1, 3, 3, 2];
-            int k = 3;
+            //int[] arr = [4, 3, 1, 1, 3, 3, 2];
+            //int k = 3;
 
-            LeetCode_1481 classLeetCode = new LeetCode_1481();
-            Console.WriteLine(classLeetCode.FindLeastNumOfUniqueInts(arr, k));
+            //LeetCode_1481 classLeetCode = new LeetCode_1481();
+            //Console.WriteLine(classLeetCode.FindLeastNumOfUniqueInts(arr, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindLeastNumOfUniqueInts(arr, k));
+            //Console.WriteLine(leetCodeAll.FindLeastNumOfUniqueInts(arr, k));
 
             ////(1484.) Group Sold Products By The Date (EASY)
             //string SqlQuery =
@@ -10411,6 +10411,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.GcdOfOddEvenSums(n));
+
+            ////(3663.) Find The Least Frequent Digit (EASY)
+            int n = 723344511;
+
+            LeetCode_3663 classLeetCode = new LeetCode_3663();
+            Console.WriteLine(classLeetCode.GetLeastFrequentDigit(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GetLeastFrequentDigit(n));
 
             ////(3668.) Restore Finishing Order (EASY)
             //int[] order = [3, 1, 2, 5, 4];
