@@ -9618,6 +9618,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CanAliceWin(nums));
 
+            ////(3238.) Find the Number of Winning Players (EASY)
+            int n = 5;
+            int[][] pick = [[1, 1], [1, 2], [1, 3], [1, 4]];
+
+            LeetCode_3238 classLeetCode = new LeetCode_3238();
+            Console.WriteLine(classLeetCode.WinningPlayerCount(n, pick));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.WinningPlayerCount(n, pick));
+
             ////(3248.) Snake in Matrix (EASY)
             //int n = 3;
             //IList<string> commands = ["DOWN", "RIGHT", "UP"];
@@ -10413,14 +10424,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GcdOfOddEvenSums(n));
 
             ////(3663.) Find The Least Frequent Digit (EASY)
-            int n = 723344511;
+            //int n = 723344511;
 
-            LeetCode_3663 classLeetCode = new LeetCode_3663();
-            Console.WriteLine(classLeetCode.GetLeastFrequentDigit(n));
+            //LeetCode_3663 classLeetCode = new LeetCode_3663();
+            //Console.WriteLine(classLeetCode.GetLeastFrequentDigit(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GetLeastFrequentDigit(n));
+            //Console.WriteLine(leetCodeAll.GetLeastFrequentDigit(n));
 
             ////(3668.) Restore Finishing Order (EASY)
             //int[] order = [3, 1, 2, 5, 4];
