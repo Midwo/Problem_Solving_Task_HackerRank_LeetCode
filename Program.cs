@@ -8852,15 +8852,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsAcronym(words, s));
 
             ////(2839.) Check if Strings Can be Made Equal With Operations I (EASY)
-            string s1 = "ifjz";
-            string s2 = "jzfi";
+            //string s1 = "ifjz";
+            //string s2 = "jzfi";
 
-            LeetCode_2839 classLeetCode = new LeetCode_2839();
-            Console.WriteLine(classLeetCode.CanBeEqual(s1, s2));
+            //LeetCode_2839 classLeetCode = new LeetCode_2839();
+            //Console.WriteLine(classLeetCode.CanBeEqual(s1, s2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CanBeEqual(s1, s2));
+            //Console.WriteLine(leetCodeAll.CanBeEqual(s1, s2));
 
             ////(2843.) Count Symmetric Integers (EASY)
             //int low = 1200;
@@ -10546,6 +10546,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinMoves(nums));
+
+            ////(3740.) Minimum Distance Between Three Equal Elements I (EASY)
+            int[] nums = [1, 1, 2, 3, 2, 1, 2];
+
+            LeetCode_3740 classLeetCode = new LeetCode_3740();
+            Console.WriteLine(classLeetCode.MinimumDistance(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumDistance(nums));
 
             ////(3754.) Concatenate Non - Zero Digits and Multiply by Sum I (EASY)
             //int n = 0;
