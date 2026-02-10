@@ -8851,6 +8851,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsAcronym(words, s));
 
+            ////(2839.) Check if Strings Can be Made Equal With Operations I (EASY)
+            string s1 = "ifjz";
+            string s2 = "jzfi";
+
+            LeetCode_2839 classLeetCode = new LeetCode_2839();
+            Console.WriteLine(classLeetCode.CanBeEqual(s1, s2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CanBeEqual(s1, s2));
+
             ////(2843.) Count Symmetric Integers (EASY)
             //int low = 1200;
             //int high = 1230;
@@ -9619,15 +9630,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanAliceWin(nums));
 
             ////(3238.) Find the Number of Winning Players (EASY)
-            int n = 5;
-            int[][] pick = [[1, 1], [1, 2], [1, 3], [1, 4]];
+            //int n = 5;
+            //int[][] pick = [[1, 1], [1, 2], [1, 3], [1, 4]];
 
-            LeetCode_3238 classLeetCode = new LeetCode_3238();
-            Console.WriteLine(classLeetCode.WinningPlayerCount(n, pick));
+            //LeetCode_3238 classLeetCode = new LeetCode_3238();
+            //Console.WriteLine(classLeetCode.WinningPlayerCount(n, pick));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.WinningPlayerCount(n, pick));
+            //Console.WriteLine(leetCodeAll.WinningPlayerCount(n, pick));
 
             ////(3248.) Snake in Matrix (EASY)
             //int n = 3;
