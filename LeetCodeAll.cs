@@ -25990,8 +25990,22 @@ namespace ProblemSolving
             }
             return minimumDistance;
         }
+        public int MinimumFlips(int n)
+        {
+            string nBinaryRepresentation = Convert.ToString(n, 2);
+            int miniumFlips = 0;
+            int lenght = nBinaryRepresentation.Length;
 
+            for (int i = 0; i < lenght; i++)
+            {
+                if (nBinaryRepresentation[i] != nBinaryRepresentation[lenght - 1 - i])
+                {
+                    miniumFlips++;
+                }
+            }
 
+            return miniumFlips;
+        }
 
 
 

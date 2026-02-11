@@ -10548,14 +10548,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinMoves(nums));
 
             ////(3740.) Minimum Distance Between Three Equal Elements I (EASY)
-            int[] nums = [1, 1, 2, 3, 2, 1, 2];
+            //int[] nums = [1, 1, 2, 3, 2, 1, 2];
 
-            LeetCode_3740 classLeetCode = new LeetCode_3740();
-            Console.WriteLine(classLeetCode.MinimumDistance(nums));
+            //LeetCode_3740 classLeetCode = new LeetCode_3740();
+            //Console.WriteLine(classLeetCode.MinimumDistance(nums));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MinimumDistance(nums));
+
+            ////(3750.) Minimum Number of Flips to Reverse Binary String (EASY)
+            int n = 10;
+
+            LeetCode_3750 classLeetCode = new LeetCode_3750();
+            Console.WriteLine(classLeetCode.MinimumFlips(n));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.MinimumDistance(nums));
+            Console.WriteLine(leetCodeAll.MinimumFlips(n));
 
             ////(3754.) Concatenate Non - Zero Digits and Multiply by Sum I (EASY)
             //int n = 0;
