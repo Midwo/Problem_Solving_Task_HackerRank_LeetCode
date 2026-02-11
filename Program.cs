@@ -5314,6 +5314,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxSatisfaction(satisfaction));
 
+            ////(1403.) Minimum Subsequence in Non-Increasing Order (EASY)
+            int[] nums = [4, 4, 7, 6, 7];
+
+            LeetCode_1403 classLeetCode = new LeetCode_1403();
+            Console.WriteLine(string.Join(',', classLeetCode.MinSubsequence(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.MinSubsequence(nums)));
+
             ////(1408.) String Matching in an Array (EASY)
             //string[] words = ["mass", "as", "hero", "superhero"];
 
@@ -10558,14 +10568,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumDistance(nums));
 
             ////(3750.) Minimum Number of Flips to Reverse Binary String (EASY)
-            int n = 10;
+            //int n = 10;
 
-            LeetCode_3750 classLeetCode = new LeetCode_3750();
-            Console.WriteLine(classLeetCode.MinimumFlips(n));
+            //LeetCode_3750 classLeetCode = new LeetCode_3750();
+            //Console.WriteLine(classLeetCode.MinimumFlips(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumFlips(n));
+            //Console.WriteLine(leetCodeAll.MinimumFlips(n));
 
             ////(3754.) Concatenate Non - Zero Digits and Multiply by Sum I (EASY)
             //int n = 0;

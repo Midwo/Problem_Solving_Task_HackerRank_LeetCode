@@ -26006,8 +26006,32 @@ namespace ProblemSolving
 
             return miniumFlips;
         }
+        public IList<int> MinSubsequence(int[] nums)
+        {
+            int sumNums = 0;
 
+            foreach (int valueNums in nums)
+            {
+                sumNums += valueNums;
+            }
 
+            nums = nums.OrderByDescending(x => x).ToArray();
+            int minimumSubsequenceSum = 0;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int currValue = nums[i];
+                sumNums -= currValue;
+                minimumSubsequenceSum += currValue;
+
+                if (minimumSubsequenceSum > sumNums)
+                {
+                    return nums[0..(i + 1)];
+                }
+            }
+
+            return new int[] { };
+        }
 
 
 
