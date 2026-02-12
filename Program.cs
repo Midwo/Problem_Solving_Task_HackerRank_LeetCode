@@ -3888,6 +3888,22 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.AddToArrayForm(num, k)));
 
+            ////(993.) Cousins in Binary Tree (EASY)
+            int x = 2;
+            int y = 3;
+
+            TreeNode root = new TreeNode(1);
+            root.left = new TreeNode(2);
+            root.left.right = new TreeNode(4);
+            root.right = new TreeNode(3);
+
+            LeetCode_993 classLeetCode = new LeetCode_993();
+            Console.WriteLine(classLeetCode.IsCousins(root, x, y));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsCousins(root, x, y));
+
             ///(997.) Find the Town Judge (EASY)
             //int n = 3;
             //int[][] trust = [[1, 2], [2, 3]];
@@ -5315,14 +5331,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxSatisfaction(satisfaction));
 
             ////(1403.) Minimum Subsequence in Non-Increasing Order (EASY)
-            int[] nums = [4, 4, 7, 6, 7];
+            //int[] nums = [4, 4, 7, 6, 7];
 
-            LeetCode_1403 classLeetCode = new LeetCode_1403();
-            Console.WriteLine(string.Join(',', classLeetCode.MinSubsequence(nums)));
+            //LeetCode_1403 classLeetCode = new LeetCode_1403();
+            //Console.WriteLine(string.Join(',', classLeetCode.MinSubsequence(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.MinSubsequence(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.MinSubsequence(nums)));
 
             ////(1408.) String Matching in an Array (EASY)
             //string[] words = ["mass", "as", "hero", "superhero"];
