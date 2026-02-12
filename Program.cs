@@ -3889,20 +3889,20 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.AddToArrayForm(num, k)));
 
             ////(993.) Cousins in Binary Tree (EASY)
-            int x = 2;
-            int y = 3;
+            //int x = 2;
+            //int y = 3;
 
-            TreeNode root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.left.right = new TreeNode(4);
-            root.right = new TreeNode(3);
+            //TreeNode root = new TreeNode(1);
+            //root.left = new TreeNode(2);
+            //root.left.right = new TreeNode(4);
+            //root.right = new TreeNode(3);
 
-            LeetCode_993 classLeetCode = new LeetCode_993();
-            Console.WriteLine(classLeetCode.IsCousins(root, x, y));
+            //LeetCode_993 classLeetCode = new LeetCode_993();
+            //Console.WriteLine(classLeetCode.IsCousins(root, x, y));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsCousins(root, x, y));
+            //Console.WriteLine(leetCodeAll.IsCousins(root, x, y));
 
             ///(997.) Find the Town Judge (EASY)
             //int n = 3;
@@ -10541,6 +10541,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SumDivisibleByK(nums, k));
+
+            ////(3713.) Longest Balanced Substring I (MEDIUM)
+            string s = "zzabccy";
+
+            LeetCode_3713 classLeetCode = new LeetCode_3713();
+            Console.WriteLine(classLeetCode.LongestBalanced(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LongestBalanced(s));
 
             ////(3718.) Smallest Missing Multiple of K (EASY)
             //int[] nums = [8, 2, 3, 4, 6];
