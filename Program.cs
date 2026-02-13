@@ -9962,6 +9962,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimumOperations(grid));
 
+            ////(3417.) Zigzag Grid Traversal With Skip (EASY)
+            int[][] grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+            LeetCode_3417 classLeetCode = new LeetCode_3417();
+            Console.WriteLine(string.Join(',', classLeetCode.ZigzagTraversal(grid)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ZigzagTraversal(grid)));
+
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
             //int[] nums = [-5, -10, -5];
 
@@ -10543,14 +10553,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumDivisibleByK(nums, k));
 
             ////(3713.) Longest Balanced Substring I (MEDIUM)
-            string s = "zzabccy";
+            //string s = "zzabccy";
 
-            LeetCode_3713 classLeetCode = new LeetCode_3713();
-            Console.WriteLine(classLeetCode.LongestBalanced(s));
+            //LeetCode_3713 classLeetCode = new LeetCode_3713();
+            //Console.WriteLine(classLeetCode.LongestBalanced(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LongestBalanced(s));
+            //Console.WriteLine(leetCodeAll.LongestBalanced(s));
 
             ////(3718.) Smallest Missing Multiple of K (EASY)
             //int[] nums = [8, 2, 3, 4, 6];
