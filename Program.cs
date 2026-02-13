@@ -9345,6 +9345,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ScoreOfString(s));
 
+            ////(3114.) Latest Time You Can Obtain After Replacing Characters (EASY)
+            string s = "0?:59";
+
+            LeetCode_3114 classLeetCode = new LeetCode_3114();
+            Console.WriteLine(classLeetCode.FindLatestTime(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindLatestTime(s));
+
             ////(3120.) Count the Number of Special Characters I (EASY)
             //string word = "aaAbcBC";
 
@@ -9963,14 +9973,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumOperations(grid));
 
             ////(3417.) Zigzag Grid Traversal With Skip (EASY)
-            int[][] grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+            //int[][] grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
-            LeetCode_3417 classLeetCode = new LeetCode_3417();
-            Console.WriteLine(string.Join(',', classLeetCode.ZigzagTraversal(grid)));
+            //LeetCode_3417 classLeetCode = new LeetCode_3417();
+            //Console.WriteLine(string.Join(',', classLeetCode.ZigzagTraversal(grid)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ZigzagTraversal(grid)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ZigzagTraversal(grid)));
 
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
             //int[] nums = [-5, -10, -5];
