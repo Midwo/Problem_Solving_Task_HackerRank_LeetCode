@@ -3200,6 +3200,18 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', path));
             //}
 
+            ////(799.) Champagne Tower (MEDIUM)
+            int poured = 0;
+            int query_row = 1;
+            int query_glass = 0;
+
+            LeetCode_799 classLeetCode = new LeetCode_799();
+            Console.WriteLine(classLeetCode.ChampagneTower(poured, query_row, query_glass));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ChampagneTower(poured, query_row, query_glass));
+
             ////(804.) Unique Morse Code Words (EASY)
             //string[] words = ["gin", "zen", "gig", "msg"];
 
@@ -9346,14 +9358,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ScoreOfString(s));
 
             ////(3114.) Latest Time You Can Obtain After Replacing Characters (EASY)
-            string s = "0?:59";
+            //string s = "0?:59";
 
-            LeetCode_3114 classLeetCode = new LeetCode_3114();
-            Console.WriteLine(classLeetCode.FindLatestTime(s));
+            //LeetCode_3114 classLeetCode = new LeetCode_3114();
+            //Console.WriteLine(classLeetCode.FindLatestTime(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindLatestTime(s));
+            //Console.WriteLine(leetCodeAll.FindLatestTime(s));
 
             ////(3120.) Count the Number of Special Characters I (EASY)
             //string word = "aaAbcBC";
