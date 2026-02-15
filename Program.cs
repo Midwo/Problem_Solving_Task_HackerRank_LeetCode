@@ -3201,16 +3201,16 @@ namespace ProblemSolving
             //}
 
             ////(799.) Champagne Tower (MEDIUM)
-            int poured = 0;
-            int query_row = 1;
-            int query_glass = 0;
+            //int poured = 0;
+            //int query_row = 1;
+            //int query_glass = 0;
 
-            LeetCode_799 classLeetCode = new LeetCode_799();
-            Console.WriteLine(classLeetCode.ChampagneTower(poured, query_row, query_glass));
+            //LeetCode_799 classLeetCode = new LeetCode_799();
+            //Console.WriteLine(classLeetCode.ChampagneTower(poured, query_row, query_glass));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ChampagneTower(poured, query_row, query_glass));
+            //Console.WriteLine(leetCodeAll.ChampagneTower(poured, query_row, query_glass));
 
             ////(804.) Unique Morse Code Words (EASY)
             //string[] words = ["gin", "zen", "gig", "msg"];
@@ -5261,6 +5261,34 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.LuckyNumbers(matrix)));
+
+            ////(1381.) Design a Stack With Increment Operation (MEDIUM)
+            LeetCode_1381.CustomStack stk = new LeetCode_1381.CustomStack(3);
+            stk.Push(1);
+            stk.Push(2);
+            Console.WriteLine(stk.Pop());
+            stk.Push(2);
+            stk.Push(3);
+            stk.Push(4);
+            stk.Increment(5, 100);
+            stk.Increment(2, 100);
+            Console.WriteLine(stk.Pop());
+            Console.WriteLine(stk.Pop());
+            Console.WriteLine(stk.Pop());
+
+            //OR
+            CustomStack stk1 = new CustomStack(3);
+            stk1.Push(1);
+            stk1.Push(2);
+            Console.WriteLine(stk1.Pop());
+            stk1.Push(2);
+            stk1.Push(3);
+            stk1.Push(4);
+            stk1.Increment(5, 100);
+            stk1.Increment(2, 100);
+            Console.WriteLine(stk1.Pop());
+            Console.WriteLine(stk1.Pop());
+            Console.WriteLine(stk1.Pop());
 
             ////(1385.) Find the Distance Value Between Two Arrays (EASY)
             //int[] arr1 = [4, 5, 8];
