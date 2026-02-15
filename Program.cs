@@ -5263,32 +5263,32 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.LuckyNumbers(matrix)));
 
             ////(1381.) Design a Stack With Increment Operation (MEDIUM)
-            LeetCode_1381.CustomStack stk = new LeetCode_1381.CustomStack(3);
-            stk.Push(1);
-            stk.Push(2);
-            Console.WriteLine(stk.Pop());
-            stk.Push(2);
-            stk.Push(3);
-            stk.Push(4);
-            stk.Increment(5, 100);
-            stk.Increment(2, 100);
-            Console.WriteLine(stk.Pop());
-            Console.WriteLine(stk.Pop());
-            Console.WriteLine(stk.Pop());
+            //LeetCode_1381.CustomStack stk = new LeetCode_1381.CustomStack(3);
+            //stk.Push(1);
+            //stk.Push(2);
+            //Console.WriteLine(stk.Pop());
+            //stk.Push(2);
+            //stk.Push(3);
+            //stk.Push(4);
+            //stk.Increment(5, 100);
+            //stk.Increment(2, 100);
+            //Console.WriteLine(stk.Pop());
+            //Console.WriteLine(stk.Pop());
+            //Console.WriteLine(stk.Pop());
 
-            //OR
-            CustomStack stk1 = new CustomStack(3);
-            stk1.Push(1);
-            stk1.Push(2);
-            Console.WriteLine(stk1.Pop());
-            stk1.Push(2);
-            stk1.Push(3);
-            stk1.Push(4);
-            stk1.Increment(5, 100);
-            stk1.Increment(2, 100);
-            Console.WriteLine(stk1.Pop());
-            Console.WriteLine(stk1.Pop());
-            Console.WriteLine(stk1.Pop());
+            ////OR
+            //CustomStack stk1 = new CustomStack(3);
+            //stk1.Push(1);
+            //stk1.Push(2);
+            //Console.WriteLine(stk1.Pop());
+            //stk1.Push(2);
+            //stk1.Push(3);
+            //stk1.Push(4);
+            //stk1.Increment(5, 100);
+            //stk1.Increment(2, 100);
+            //Console.WriteLine(stk1.Pop());
+            //Console.WriteLine(stk1.Pop());
+            //Console.WriteLine(stk1.Pop());
 
             ////(1385.) Find the Distance Value Between Two Arrays (EASY)
             //int[] arr1 = [4, 5, 8];
@@ -8009,6 +8009,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.RepeatedCharacter(s));
+
+            ////(2352.) Equal Row and Column Pairs (MEDIUM)
+            int[][] grid = [[11, 1], [1, 11]];
+
+            LeetCode_2352 classLeetCode = new LeetCode_2352();
+            Console.WriteLine(classLeetCode.EqualPairs(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.EqualPairs(grid));
 
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
             //string SqlQuery =
