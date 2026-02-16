@@ -8397,14 +8397,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsCircularSentence(sentence));
 
             ////(2496.) Maximum Value of a String in an Array (EASY)
-            string[] strs = ["1", "01", "001", "0001"];
+            //string[] strs = ["1", "01", "001", "0001"];
 
-            LeetCode_2496 classLeetCode = new LeetCode_2496();
-            Console.WriteLine(classLeetCode.MaximumValue(strs));
+            //LeetCode_2496 classLeetCode = new LeetCode_2496();
+            //Console.WriteLine(classLeetCode.MaximumValue(strs));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumValue(strs));
+            //Console.WriteLine(leetCodeAll.MaximumValue(strs));
 
             ////(2520.) Count the Digits That Divide a Number (EASY)
             //int num = 1248;
@@ -9898,6 +9898,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindXSum(nums, k, x)));
+
+            ////(3324.) Find the Sequence of Strings Appeared on the Screen (MEDIUM)
+            string target = "abc";
+
+            LeetCode_3324 classLeetCode = new LeetCode_3324();
+            Console.WriteLine(string.Join(',', classLeetCode.StringSequence(target)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.StringSequence(target)));
 
             ////(3330.) Find the Original Typed String I (EASY)
             //string word = "abbcccc";
