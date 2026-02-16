@@ -786,26 +786,16 @@ namespace ProblemSolving
             }
             return tempResult;
         }
-        public uint reverseBits(uint n)
+        public int ReverseBits(int n)
         {
-            string tempString = Convert.ToString(n, 2).PadLeft(32, '0');
+            uint newN = (uint)n;
+            string tempString = Convert.ToString(newN, 2).PadLeft(32, '0');
             string newReverseString = string.Empty;
             for (int i = tempString.Length - 1; i >= 0; i--)
             {
                 newReverseString += tempString[i];
             }
-            return Convert.ToUInt32(newReverseString, 2);
-
-            //OR
-
-            //uint result = 0;
-            //for (int i = 0; i < 32; i++)
-            //{
-            //    result <<= 1;
-            //    result |= (n & 1);
-            //    n >>= 1;
-            //}
-            //return result;
+            return Convert.ToInt32(newReverseString, 2);
         }
         public int HammingWeight(int n)
         {

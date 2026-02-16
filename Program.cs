@@ -1298,12 +1298,12 @@ namespace ProblemSolving
 
             //leetCodeAll.Rotate(nums, k);
 
-            ////(190.) Reverse Bits (EASY)
-            //uint n = 43261596;
-            //Console.WriteLine(leetCodeAll.reverseBits(n));
-            ////OR
-            //LeetCode_190 classLeetCode = new LeetCode_190();
-            //Console.WriteLine(classLeetCode.reverseBits(n));
+            //(190.) Reverse Bits (EASY)
+            int n = 43261596;
+            Console.WriteLine(leetCodeAll.ReverseBits(n));
+            //OR
+            LeetCode_190 classLeetCode = new LeetCode_190();
+            Console.WriteLine(classLeetCode.ReverseBits(n));
 
             ////(191.) Number of 1 Bits (EASY)
             //int n = 3;
@@ -8011,14 +8011,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.RepeatedCharacter(s));
 
             ////(2352.) Equal Row and Column Pairs (MEDIUM)
-            int[][] grid = [[11, 1], [1, 11]];
+            //int[][] grid = [[11, 1], [1, 11]];
 
-            LeetCode_2352 classLeetCode = new LeetCode_2352();
-            Console.WriteLine(classLeetCode.EqualPairs(grid));
+            //LeetCode_2352 classLeetCode = new LeetCode_2352();
+            //Console.WriteLine(classLeetCode.EqualPairs(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.EqualPairs(grid));
+            //Console.WriteLine(leetCodeAll.EqualPairs(grid));
 
             ////(2356.) Number of Unique Subjects Taught by Each Teacher (EASY)
             //string SqlQuery =
