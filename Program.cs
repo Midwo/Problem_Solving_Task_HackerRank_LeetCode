@@ -1299,11 +1299,11 @@ namespace ProblemSolving
             //leetCodeAll.Rotate(nums, k);
 
             //(190.) Reverse Bits (EASY)
-            int n = 43261596;
-            Console.WriteLine(leetCodeAll.ReverseBits(n));
-            //OR
-            LeetCode_190 classLeetCode = new LeetCode_190();
-            Console.WriteLine(classLeetCode.ReverseBits(n));
+            //int n = 43261596;
+            //Console.WriteLine(leetCodeAll.ReverseBits(n));
+            ////OR
+            //LeetCode_190 classLeetCode = new LeetCode_190();
+            //Console.WriteLine(classLeetCode.ReverseBits(n));
 
             ////(191.) Number of 1 Bits (EASY)
             //int n = 3;
@@ -8395,6 +8395,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsCircularSentence(sentence));
+
+            ////(2496.) Maximum Value of a String in an Array (EASY)
+            string[] strs = ["1", "01", "001", "0001"];
+
+            LeetCode_2496 classLeetCode = new LeetCode_2496();
+            Console.WriteLine(classLeetCode.MaximumValue(strs));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumValue(strs));
 
             ////(2520.) Count the Digits That Divide a Number (EASY)
             //int num = 1248;
