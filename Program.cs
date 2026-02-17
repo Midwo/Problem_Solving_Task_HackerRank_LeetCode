@@ -8938,14 +8938,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsAcronym(words, s));
 
             ////(2833.) Furthest Point From Origin (EASY)
-            string moves = "L_RL__R";
+            //string moves = "L_RL__R";
 
-            LeetCode_2833 classLeetCode = new LeetCode_2833();
-            Console.WriteLine(classLeetCode.FurthestDistanceFromOrigin(moves));
+            //LeetCode_2833 classLeetCode = new LeetCode_2833();
+            //Console.WriteLine(classLeetCode.FurthestDistanceFromOrigin(moves));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FurthestDistanceFromOrigin(moves));
+            //Console.WriteLine(leetCodeAll.FurthestDistanceFromOrigin(moves));
 
             ////(2839.) Check if Strings Can be Made Equal With Operations I (EASY)
             //string s1 = "ifjz";
@@ -9424,6 +9424,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FindLatestTime(s));
+
+            ////(3115.) Maximum Prime Difference (MEDIUM)
+            int[] nums = [4, 2, 9, 5, 3];
+
+            LeetCode_3115 classLeetCode = new LeetCode_3115();
+            Console.WriteLine(classLeetCode.MaximumPrimeDifference(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumPrimeDifference(nums));
 
             ////(3120.) Count the Number of Special Characters I (EASY)
             //string word = "aaAbcBC";
