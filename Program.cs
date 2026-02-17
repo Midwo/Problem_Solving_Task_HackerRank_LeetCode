@@ -8937,6 +8937,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsAcronym(words, s));
 
+            ////(2833.) Furthest Point From Origin (EASY)
+            string moves = "L_RL__R";
+
+            LeetCode_2833 classLeetCode = new LeetCode_2833();
+            Console.WriteLine(classLeetCode.FurthestDistanceFromOrigin(moves));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FurthestDistanceFromOrigin(moves));
+
             ////(2839.) Check if Strings Can be Made Equal With Operations I (EASY)
             //string s1 = "ifjz";
             //string s2 = "jzfi";
@@ -9900,14 +9910,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindXSum(nums, k, x)));
 
             ////(3324.) Find the Sequence of Strings Appeared on the Screen (MEDIUM)
-            string target = "abc";
+            //string target = "abc";
 
-            LeetCode_3324 classLeetCode = new LeetCode_3324();
-            Console.WriteLine(string.Join(',', classLeetCode.StringSequence(target)));
+            //LeetCode_3324 classLeetCode = new LeetCode_3324();
+            //Console.WriteLine(string.Join(',', classLeetCode.StringSequence(target)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.StringSequence(target)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.StringSequence(target)));
 
             ////(3330.) Find the Original Typed String I (EASY)
             //string word = "abbcccc";
