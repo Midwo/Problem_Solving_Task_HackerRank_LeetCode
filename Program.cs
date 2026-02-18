@@ -5880,6 +5880,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountGoodTriplets(arr, a, b, c));
 
+            ////(1539.) Kth Missing Positive Number (EASY)
+            int[] arr = [2, 3, 4, 7, 11];
+            int k = 5;
+
+            LeetCode_1539 classLeetCode = new LeetCode_1539();
+            Console.WriteLine(classLeetCode.FindKthPositive(arr, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindKthPositive(arr, k));
+
             ////(1550.) Three Consecutive Odds (EASY)
             //int[] arr = [1, 2, 34, 3, 4, 5, 7, 23, 12];
 
@@ -8915,14 +8926,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FinalString(s));
 
             ////(2815.) Max Pair Sum in an Array (EASY)
-            int[] nums = [2536, 1613, 3366, 162];
+            //int[] nums = [2536, 1613, 3366, 162];
 
-            LeetCode_2815 classLeetCode = new LeetCode_2815();
-            Console.WriteLine(classLeetCode.MaxSum(nums));
+            //LeetCode_2815 classLeetCode = new LeetCode_2815();
+            //Console.WriteLine(classLeetCode.MaxSum(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxSumTask2815(nums));
+            //Console.WriteLine(leetCodeAll.MaxSumTask2815(nums));
 
             ////(2824.) Count Pairs Whose Sum is Less than Target (EASY)
             //IList<int> nums = [-1, 1, 2, 3, 1];
