@@ -8914,6 +8914,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FinalString(s));
 
+            ////(2815.) Max Pair Sum in an Array (EASY)
+            int[] nums = [2536, 1613, 3366, 162];
+
+            LeetCode_2815 classLeetCode = new LeetCode_2815();
+            Console.WriteLine(classLeetCode.MaxSum(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxSumTask2815(nums));
+
             ////(2824.) Count Pairs Whose Sum is Less than Target (EASY)
             //IList<int> nums = [-1, 1, 2, 3, 1];
             //int target = 2;
@@ -9426,14 +9436,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindLatestTime(s));
 
             ////(3115.) Maximum Prime Difference (MEDIUM)
-            int[] nums = [4, 2, 9, 5, 3];
+            //int[] nums = [4, 2, 9, 5, 3];
 
-            LeetCode_3115 classLeetCode = new LeetCode_3115();
-            Console.WriteLine(classLeetCode.MaximumPrimeDifference(nums));
+            //LeetCode_3115 classLeetCode = new LeetCode_3115();
+            //Console.WriteLine(classLeetCode.MaximumPrimeDifference(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumPrimeDifference(nums));
+            //Console.WriteLine(leetCodeAll.MaximumPrimeDifference(nums));
 
             ////(3120.) Count the Number of Special Characters I (EASY)
             //string word = "aaAbcBC";
