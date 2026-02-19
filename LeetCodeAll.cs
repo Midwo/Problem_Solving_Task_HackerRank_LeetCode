@@ -26537,8 +26537,22 @@ namespace ProblemSolving
 
             return lastNum + k;
         }
+        public int FindValueOfPartition(int[] nums)
+        {
+            Array.Sort(nums);
+            int minDiff = int.MaxValue;
+            int lastValue = nums[0];
 
+            for (int i = 1; i < nums.Length; i++)
+            {
+                int currValue = nums[i];
+                int currDiff = currValue - lastValue;
+                lastValue = currValue;
+                minDiff = minDiff > currDiff ? currDiff : minDiff;
+            }
 
+            return minDiff;
+        }
 
 
 

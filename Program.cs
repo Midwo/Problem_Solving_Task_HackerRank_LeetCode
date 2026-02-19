@@ -5881,15 +5881,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountGoodTriplets(arr, a, b, c));
 
             ////(1539.) Kth Missing Positive Number (EASY)
-            int[] arr = [2, 3, 4, 7, 11];
-            int k = 5;
+            //int[] arr = [2, 3, 4, 7, 11];
+            //int k = 5;
 
-            LeetCode_1539 classLeetCode = new LeetCode_1539();
-            Console.WriteLine(classLeetCode.FindKthPositive(arr, k));
+            //LeetCode_1539 classLeetCode = new LeetCode_1539();
+            //Console.WriteLine(classLeetCode.FindKthPositive(arr, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindKthPositive(arr, k));
+            //Console.WriteLine(leetCodeAll.FindKthPositive(arr, k));
 
             ////(1550.) Three Consecutive Odds (EASY)
             //int[] arr = [1, 2, 34, 3, 4, 5, 7, 23, 12];
@@ -8820,6 +8820,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DistanceTraveled(mainTank, additionalTank));
+
+            ////(2740.) Find the Value of the Partition (MEDIUM)
+            int[] nums = [1, 3, 2, 4];
+
+            LeetCode_2740 classLeetCode = new LeetCode_2740();
+            Console.WriteLine(classLeetCode.FindValueOfPartition(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindValueOfPartition(nums));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
