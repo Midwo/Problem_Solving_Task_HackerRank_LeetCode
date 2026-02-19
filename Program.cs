@@ -8790,6 +8790,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimizedStringLength(s));
 
+            ////(2717.) Semi-Ordered Permutation (EASY)
+            int[] nums = [2, 4, 1, 3];
+
+            LeetCode_2717 classLeetCode = new LeetCode_2717();
+            Console.WriteLine(classLeetCode.SemiOrderedPermutation(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SemiOrderedPermutation(nums));
+
             ////(2729.) Check if The Number is Fascinating (EASY)
             //int n = 123;
 
@@ -8822,14 +8832,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DistanceTraveled(mainTank, additionalTank));
 
             ////(2740.) Find the Value of the Partition (MEDIUM)
-            int[] nums = [1, 3, 2, 4];
+            //int[] nums = [1, 3, 2, 4];
 
-            LeetCode_2740 classLeetCode = new LeetCode_2740();
-            Console.WriteLine(classLeetCode.FindValueOfPartition(nums));
+            //LeetCode_2740 classLeetCode = new LeetCode_2740();
+            //Console.WriteLine(classLeetCode.FindValueOfPartition(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindValueOfPartition(nums));
+            //Console.WriteLine(leetCodeAll.FindValueOfPartition(nums));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
