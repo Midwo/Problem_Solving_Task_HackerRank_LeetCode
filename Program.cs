@@ -7726,6 +7726,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.TriangularSum(nums));
 
+            ////(2224.) Minimum Number of Operations to Convert Time (EASY)
+            string current = "02:30", correct = "04:35";
+
+            LeetCode_2224 classLeetCode = new LeetCode_2224();
+            Console.WriteLine(classLeetCode.ConvertTime(current, correct));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ConvertTime(current, correct));
+
             ////(2235.) Add Two Integers (EASY)
             //int num1 = 12;
             //int num2 = 5;
@@ -8791,14 +8801,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimizedStringLength(s));
 
             ////(2717.) Semi-Ordered Permutation (EASY)
-            int[] nums = [2, 4, 1, 3];
+            //int[] nums = [2, 4, 1, 3];
 
-            LeetCode_2717 classLeetCode = new LeetCode_2717();
-            Console.WriteLine(classLeetCode.SemiOrderedPermutation(nums));
+            //LeetCode_2717 classLeetCode = new LeetCode_2717();
+            //Console.WriteLine(classLeetCode.SemiOrderedPermutation(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SemiOrderedPermutation(nums));
+            //Console.WriteLine(leetCodeAll.SemiOrderedPermutation(nums));
 
             ////(2729.) Check if The Number is Fascinating (EASY)
             //int n = 123;
