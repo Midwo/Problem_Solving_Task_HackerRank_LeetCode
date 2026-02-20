@@ -5992,6 +5992,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SumOddLengthSubarrays(arr));
 
+            ////(1598.) Crawler Log Folder (EASY)
+            string[] logs = ["d1/", "d2/", "../", "d21/", "./"];
+
+            LeetCode_1598 classLeetCode = new LeetCode_1598();
+            Console.WriteLine(classLeetCode.MinOperations(logs));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperations(logs));
+
             ////(1603.) Design Parking System (EASY)
             //int big = 1;
             //int medium = 1;
@@ -7727,14 +7737,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TriangularSum(nums));
 
             ////(2224.) Minimum Number of Operations to Convert Time (EASY)
-            string current = "02:30", correct = "04:35";
+            //string current = "02:30", correct = "04:35";
 
-            LeetCode_2224 classLeetCode = new LeetCode_2224();
-            Console.WriteLine(classLeetCode.ConvertTime(current, correct));
+            //LeetCode_2224 classLeetCode = new LeetCode_2224();
+            //Console.WriteLine(classLeetCode.ConvertTime(current, correct));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ConvertTime(current, correct));
+            //Console.WriteLine(leetCodeAll.ConvertTime(current, correct));
 
             ////(2235.) Add Two Integers (EASY)
             //int num1 = 12;

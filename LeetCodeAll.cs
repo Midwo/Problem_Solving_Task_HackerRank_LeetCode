@@ -26636,8 +26636,31 @@ namespace ProblemSolving
 
             return countOperations;
         }
+        public int MinOperations(string[] logs)
+        {
+            int level = 0;
 
+            foreach (string log in logs)
+            {
+                if (log == "../")
+                {
+                    if (level > 0)
+                    {
+                        level--;
+                    }
+                }
+                else if (log == "./")
+                {
+                    //do nothing, stay.
+                }
+                else
+                {
+                    level++;
+                }
+            }
 
+            return level;
+        }
 
 
 
