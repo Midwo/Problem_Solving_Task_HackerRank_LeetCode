@@ -5097,6 +5097,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.KWeakestRows(mat, k)));
 
+            ////(1338.) Reduce Array Size to The Half (MEDIUM)
+            int[] arr = [3, 3, 3, 3, 5, 5, 5, 2, 2, 7];
+
+            LeetCode_1338 classLeetCode = new LeetCode_1338();
+            Console.WriteLine(classLeetCode.MinSetSize(arr));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinSetSize(arr));
+
             ////(1341.) Movie Rating  (MEDIUM)
             //string SqlQuery =
             //    @"
@@ -5993,14 +6003,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumOddLengthSubarrays(arr));
 
             ////(1598.) Crawler Log Folder (EASY)
-            string[] logs = ["d1/", "d2/", "../", "d21/", "./"];
+            //string[] logs = ["d1/", "d2/", "../", "d21/", "./"];
 
-            LeetCode_1598 classLeetCode = new LeetCode_1598();
-            Console.WriteLine(classLeetCode.MinOperations(logs));
+            //LeetCode_1598 classLeetCode = new LeetCode_1598();
+            //Console.WriteLine(classLeetCode.MinOperations(logs));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperations(logs));
+            //Console.WriteLine(leetCodeAll.MinOperations(logs));
 
             ////(1603.) Design Parking System (EASY)
             //int big = 1;
