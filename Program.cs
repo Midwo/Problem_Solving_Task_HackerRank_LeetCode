@@ -10122,6 +10122,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountSubarrays(nums));
 
+            ////(3396.) Minimum Number of Operations to Make Elements in Array Distinct (EASY)
+            int[] nums = [4, 5, 6, 4, 4];
+
+            LeetCode_3396 classLeetCode = new LeetCode_3396();
+            Console.WriteLine(classLeetCode.MinimumOperations(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumOperationsTask3396(nums));
+
             ////(3397.) Maximum Number of Distinct Elements After Operations (MEDIUM)
             //int[] nums = [1, 2, 2, 3, 3, 4];
             //int k = 2;
@@ -10683,15 +10693,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.EarliestTime((tasks)));
 
             ////(3684.) Maximize Sum of At Most K Distinct Elements (EASY)
-            int[] nums = [84, 93, 100, 77, 90];
-            int k = 3;
+            //int[] nums = [84, 93, 100, 77, 90];
+            //int k = 3;
 
-            LeetCode_3684 classLeetCode = new LeetCode_3684();
-            Console.WriteLine(string.Join(',',classLeetCode.MaxKDistinct(nums, k)));
+            //LeetCode_3684 classLeetCode = new LeetCode_3684();
+            //Console.WriteLine(string.Join(',',classLeetCode.MaxKDistinct(nums, k)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.MaxKDistinct(nums, k)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.MaxKDistinct(nums, k)));
 
             ////(3688.) Bitwise OR of Even Numbers in an Array (EASY)
             //int[] nums = [1,2,3,4,5,6];
