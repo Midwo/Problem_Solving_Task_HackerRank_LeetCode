@@ -26714,6 +26714,45 @@ namespace ProblemSolving
             }
             return result;
         }
+        public int[] MaxKDistinct(int[] nums, int k)
+        {
+            Array.Sort(nums);
+            List<int> result = new List<int>();
+
+            int lastValue = int.MaxValue;
+            for (int i = nums.Length - 1; i >= 0; i--)
+            {
+                if (lastValue != nums[i])
+                {
+                    lastValue = nums[i];
+                    result.Add(lastValue);
+                    if (result.Count == k)
+                    {
+                        break;
+                    }
+                }
+            }
+
+            return result.ToArray();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
