@@ -5593,15 +5593,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanBeEqual(target, arr));
 
             ////(1461.) Check If a String Contains All Binary Codes of Size K (MEDIUM)
-            string s = "00110110";
-            int k = 2;
+            //string s = "00110110";
+            //int k = 2;
 
-            LeetCode_1461 classLeetCode = new LeetCode_1461();
-            Console.WriteLine(classLeetCode.HasAllCodes(s, k));
+            //LeetCode_1461 classLeetCode = new LeetCode_1461();
+            //Console.WriteLine(classLeetCode.HasAllCodes(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.HasAllCodes(s, k));
+            //Console.WriteLine(leetCodeAll.HasAllCodes(s, k));
 
             ////(1464.) Maximum Product of Two Elements in an Array (EASY)
             //int[] nums = [1,5,4,5];
@@ -7904,6 +7904,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DigitCount(num));
+
+            ////(2287.) Rearrange Characters to Make Target String (EASY)
+            string s = "ilovecodingonleetcode";
+            string target = "code";
+
+            LeetCode_2287 classLeetCode = new LeetCode_2287();
+            Console.WriteLine(classLeetCode.RearrangeCharacters(s, target));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.RearrangeCharacters(s, target));
 
             ////(2293.) Min Max Game (EASY)
             //int[] nums = [70, 38, 21, 22];
