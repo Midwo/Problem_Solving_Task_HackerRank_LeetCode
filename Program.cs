@@ -5592,6 +5592,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CanBeEqual(target, arr));
 
+            ////(1461.) Check If a String Contains All Binary Codes of Size K (MEDIUM)
+            string s = "00110110";
+            int k = 2;
+
+            LeetCode_1461 classLeetCode = new LeetCode_1461();
+            Console.WriteLine(classLeetCode.HasAllCodes(s, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.HasAllCodes(s, k));
+
             ////(1464.) Maximum Product of Two Elements in an Array (EASY)
             //int[] nums = [1,5,4,5];
 
@@ -10123,14 +10134,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountSubarrays(nums));
 
             ////(3396.) Minimum Number of Operations to Make Elements in Array Distinct (EASY)
-            int[] nums = [4, 5, 6, 4, 4];
+            //int[] nums = [4, 5, 6, 4, 4];
 
-            LeetCode_3396 classLeetCode = new LeetCode_3396();
-            Console.WriteLine(classLeetCode.MinimumOperations(nums));
+            //LeetCode_3396 classLeetCode = new LeetCode_3396();
+            //Console.WriteLine(classLeetCode.MinimumOperations(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumOperationsTask3396(nums));
+            //Console.WriteLine(leetCodeAll.MinimumOperationsTask3396(nums));
 
             ////(3397.) Maximum Number of Distinct Elements After Operations (MEDIUM)
             //int[] nums = [1, 2, 2, 3, 3, 4];
