@@ -26810,10 +26810,74 @@ namespace ProblemSolving
 
             return minMake;
         }
+        public int MinimumSumSubarray(IList<int> nums, int l, int r)
+        {
+            int length = nums.Count;
+            int minSum = int.MaxValue;
 
+            for (int startIndex = 0; startIndex <= length - l; startIndex++)
+            {
+                int currSum = nums[startIndex];
+                int indexL = startIndex + 1;
+                int maxIndex = Math.Min(startIndex + l, length);
+                while (indexL < maxIndex)
+                {
+                    currSum += nums[indexL++];
+                }
 
+                if (currSum > 0)
+                {
+                    minSum = Math.Min(currSum, minSum);
+                }
+                maxIndex = Math.Min(startIndex + r, length);
 
+                while (indexL < maxIndex)
+                {
+                    currSum += nums[indexL++];
+                    if (currSum > 0)
+                    {
+                        minSum = Math.Min(currSum, minSum);
+                    }
+                }
+            }
 
+            if (minSum == int.MaxValue)
+            {
+                return -1;
+            }
+
+            return minSum;
+        }
+        public bool AreAlmostEqual(string s1, string s2)
+        {
+            List<char[]> listSwap = new List<char[]>();
+            for (int index = 0; index < s1.Length; index++)
+            {
+                if (s1[index] != s2[index])
+                {
+                    listSwap.Add(new char[] { s1[index], s2[index] });
+                    if (listSwap.Count > 2)
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            if (listSwap.Count == 0)
+            {
+                return true;
+            }
+            else if (listSwap.Count < 2)
+            {
+                return false;
+            }
+
+            if (listSwap[0][0] == listSwap[1][1] && listSwap[1][0] == listSwap[0][1])
+            {
+                return true;
+            }
+            return false;
+        }
 
 
 

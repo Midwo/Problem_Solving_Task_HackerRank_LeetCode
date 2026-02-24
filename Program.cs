@@ -6622,6 +6622,17 @@ namespace ProblemSolving
             ////OR
             //LeetCode_1789 classLeetCode = new LeetCode_1789();
 
+            ////(1790.) Check if One String Swap Can Make Strings Equal (EASY)
+            string s1 = "kelb";
+            string s2 = "kelb";
+
+            LeetCode_1790 classLeetCode = new LeetCode_1790();
+            Console.WriteLine(classLeetCode.AreAlmostEqual(s1, s2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AreAlmostEqual(s1, s2));
+
             ////(1791.) Find Center of Star Graph (EASY)
             //int[][] edges = [[1,2], [2, 3], [4, 2]];
 
@@ -7906,15 +7917,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DigitCount(num));
 
             ////(2287.) Rearrange Characters to Make Target String (EASY)
-            string s = "ilovecodingonleetcode";
-            string target = "code";
+            //string s = "ilovecodingonleetcode";
+            //string target = "code";
 
-            LeetCode_2287 classLeetCode = new LeetCode_2287();
-            Console.WriteLine(classLeetCode.RearrangeCharacters(s, target));
+            //LeetCode_2287 classLeetCode = new LeetCode_2287();
+            //Console.WriteLine(classLeetCode.RearrangeCharacters(s, target));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.RearrangeCharacters(s, target));
+            //Console.WriteLine(leetCodeAll.RearrangeCharacters(s, target));
 
             ////(2293.) Min Max Game (EASY)
             //int[] nums = [70, 38, 21, 22];
@@ -10103,6 +10114,9 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CanAliceWin(n));
+
+            ////(3364.) Minimum Positive Sum Subarray (EASY)
+
 
             ////(3370.) Smallest Number With All Set Bits (EASY)
             //int n = 10;
