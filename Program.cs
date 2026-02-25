@@ -6141,6 +6141,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxWidthOfVerticalArea(points));
 
+            ////(1646.) Get Maximum in Generated Array (EASY)
+            int n = 7;
+
+            LeetCode_1646 classLeetCode = new LeetCode_1646();
+            Console.WriteLine(classLeetCode.GetMaximumGenerated(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GetMaximumGenerated(n));
+
             ////(1656.) Design an Ordered Stream (EASY)
             //LeetCode_1656.OrderedStream os = new LeetCode_1656.OrderedStream(5);
             //Console.WriteLine(string.Join(',', os.Insert(3, "ccccc"))); // Inserts (3, "ccccc"), returns [].
@@ -8905,14 +8915,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindValueOfPartition(nums));
 
             ////(2748.) Number of Beautiful Pairs (EASY)
-            int[] nums = [2,5,1,4]; 
+            //int[] nums = [2,5,1,4]; 
 
-            LeetCode_2748 classLeetCode = new LeetCode_2748();
-            Console.WriteLine(classLeetCode.CountBeautifulPairs(nums));
+            //LeetCode_2748 classLeetCode = new LeetCode_2748();
+            //Console.WriteLine(classLeetCode.CountBeautifulPairs(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountBeautifulPairs(nums));
+            //Console.WriteLine(leetCodeAll.CountBeautifulPairs(nums));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
