@@ -8904,6 +8904,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindValueOfPartition(nums));
 
+            ////(2748.) Number of Beautiful Pairs (EASY)
+            int[] nums = [2,5,1,4]; 
+
+            LeetCode_2748 classLeetCode = new LeetCode_2748();
+            Console.WriteLine(classLeetCode.CountBeautifulPairs(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountBeautifulPairs(nums));
+
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
             //int t = 2;
@@ -10116,16 +10126,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanAliceWin(n));
 
             ////(3364.) Minimum Positive Sum Subarray (EASY)
-            IList<int> nums = [7, 3];
-            int l = 2;
-            int r = 2;
+            //IList<int> nums = [7, 3];
+            //int l = 2;
+            //int r = 2;
 
-            LeetCode_3364 classLeetCode = new LeetCode_3364();
-            Console.WriteLine(classLeetCode.MinimumSumSubarray(nums, l, r));
+            //LeetCode_3364 classLeetCode = new LeetCode_3364();
+            //Console.WriteLine(classLeetCode.MinimumSumSubarray(nums, l, r));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumSumSubarray(nums, l, r));
+            //Console.WriteLine(leetCodeAll.MinimumSumSubarray(nums, l, r));
 
             ////(3370.) Smallest Number With All Set Bits (EASY)
             //int n = 10;
