@@ -5390,6 +5390,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.MinSubsequence(nums)));
 
+            ////(1404.) Number of Steps to Reduce a Number in Binary Representation to One (MEDIUM)
+            string s = "1101";
+
+            LeetCode_1404 classLeetCode = new LeetCode_1404();
+            Console.WriteLine(classLeetCode.NumSteps(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumSteps(s));
+
             ////(1408.) String Matching in an Array (EASY)
             //string[] words = ["mass", "as", "hero", "superhero"];
 
@@ -6142,14 +6152,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxWidthOfVerticalArea(points));
 
             ////(1646.) Get Maximum in Generated Array (EASY)
-            int n = 7;
+            //int n = 7;
 
-            LeetCode_1646 classLeetCode = new LeetCode_1646();
-            Console.WriteLine(classLeetCode.GetMaximumGenerated(n));
+            //LeetCode_1646 classLeetCode = new LeetCode_1646();
+            //Console.WriteLine(classLeetCode.GetMaximumGenerated(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GetMaximumGenerated(n));
+            //Console.WriteLine(leetCodeAll.GetMaximumGenerated(n));
 
             ////(1656.) Design an Ordered Stream (EASY)
             //LeetCode_1656.OrderedStream os = new LeetCode_1656.OrderedStream(5);
