@@ -8510,14 +8510,14 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountDigits(num));
 
-            ////(2525.) Categorize Box According to Criteria (EASY)
+            //(2525.) Categorize Box According to Criteria (EASY)
             int length = 1000;
             int width = 35;
             int height = 700;
             int mass = 300;
 
             LeetCode_2525 classLeetCode = new LeetCode_2525();
-            Console.WriteLine(classLeetCode.CategorizeBox(length, width,height,mass));
+            Console.WriteLine(classLeetCode.CategorizeBox(length, width, height, mass));
 
             //OR
 
