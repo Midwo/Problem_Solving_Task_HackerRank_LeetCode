@@ -5391,14 +5391,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.MinSubsequence(nums)));
 
             ////(1404.) Number of Steps to Reduce a Number in Binary Representation to One (MEDIUM)
-            string s = "1101";
+            //string s = "1101";
 
-            LeetCode_1404 classLeetCode = new LeetCode_1404();
-            Console.WriteLine(classLeetCode.NumSteps(s));
+            //LeetCode_1404 classLeetCode = new LeetCode_1404();
+            //Console.WriteLine(classLeetCode.NumSteps(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumSteps(s));
+            //Console.WriteLine(leetCodeAll.NumSteps(s));
 
             ////(1408.) String Matching in an Array (EASY)
             //string[] words = ["mass", "as", "hero", "superhero"];
@@ -8509,6 +8509,19 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountDigits(num));
+
+            ////(2525.) Categorize Box According to Criteria (EASY)
+            int length = 1000;
+            int width = 35;
+            int height = 700;
+            int mass = 300;
+
+            LeetCode_2525 classLeetCode = new LeetCode_2525();
+            Console.WriteLine(classLeetCode.CategorizeBox(length, width,height,mass));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CategorizeBox(length, width, height, mass));
 
             ////(2529.) Maximum Count of Positive Integer and Negative Integer (EASY)
             //int[] nums = [-2, -1, -1, 0, 0, 0];
