@@ -7160,6 +7160,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimumDifference(nums, k));
 
+            ////(1991.) Find the Middle Index in Array (EASY)
+            int[] nums = [1, 1, 1, 1];
+
+            LeetCode_1991 classLeetCode = new LeetCode_1991();
+            Console.WriteLine(classLeetCode.FindMiddleIndex(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindMiddleIndex(nums));
+
             ////(2000.) Reverse Prefix of Word (EASY)
             //string word = "abcdefd";
             //char ch = 'd';
@@ -8511,17 +8521,17 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountDigits(num));
 
             //(2525.) Categorize Box According to Criteria (EASY)
-            int length = 1000;
-            int width = 35;
-            int height = 700;
-            int mass = 300;
+            //int length = 1000;
+            //int width = 35;
+            //int height = 700;
+            //int mass = 300;
 
-            LeetCode_2525 classLeetCode = new LeetCode_2525();
-            Console.WriteLine(classLeetCode.CategorizeBox(length, width, height, mass));
+            //LeetCode_2525 classLeetCode = new LeetCode_2525();
+            //Console.WriteLine(classLeetCode.CategorizeBox(length, width, height, mass));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CategorizeBox(length, width, height, mass));
+            //Console.WriteLine(leetCodeAll.CategorizeBox(length, width, height, mass));
 
             ////(2529.) Maximum Count of Positive Integer and Negative Integer (EASY)
             //int[] nums = [-2, -1, -1, 0, 0, 0];
