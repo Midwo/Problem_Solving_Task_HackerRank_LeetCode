@@ -27022,8 +27022,34 @@ namespace ProblemSolving
             }
             return -1;
         }
+        public bool SatisfiesConditions(int[][] grid)
+        {
+            int lastValueCol = int.MinValue;
+            int countRow = grid.Length;
+            int countCol = grid[0].Length;
 
+            for (int i = 0; i < countCol; i++)
+            {
+                int currValueCol = grid[0][i];
 
+                if (lastValueCol == currValueCol)
+                {
+                    return false;
+                }
+
+                for (int j = 1; j < countRow; j++)
+                {
+                    if (grid[j][i] != currValueCol)
+                    {
+                        return false;
+                    }
+                }
+
+                lastValueCol = currValueCol;
+            }
+
+            return true;
+        }
 
 
 

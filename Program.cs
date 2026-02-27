@@ -7161,14 +7161,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumDifference(nums, k));
 
             ////(1991.) Find the Middle Index in Array (EASY)
-            int[] nums = [1, 1, 1, 1];
+            //int[] nums = [1, 1, 1, 1];
 
-            LeetCode_1991 classLeetCode = new LeetCode_1991();
-            Console.WriteLine(classLeetCode.FindMiddleIndex(nums));
+            //LeetCode_1991 classLeetCode = new LeetCode_1991();
+            //Console.WriteLine(classLeetCode.FindMiddleIndex(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindMiddleIndex(nums));
+            //Console.WriteLine(leetCodeAll.FindMiddleIndex(nums));
 
             ////(2000.) Reverse Prefix of Word (EASY)
             //string word = "abcdefd";
@@ -9643,6 +9643,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FindPermutationDifference(s, t));
+
+            ////(3142.) Check if Grid Satisfies Conditions (EASY)
+            int[][] grid = [[1, 0, 2], [1, 0, 2]];
+
+            LeetCode_3142 classLeetCode = new LeetCode_3142();
+            Console.WriteLine(classLeetCode.SatisfiesConditions(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SatisfiesConditions(grid));
 
             ////(3147.) Taking Maximum Energy From the Mystic Dungeon (MEDIUM)
             //int[] energy = [5,2,-10,-5,1];
