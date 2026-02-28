@@ -8073,6 +8073,20 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.PeopleAwareOfSecret(n, delay, forget));
 
+            ////(2331.) Evaluate Boolean Binary Tree (EASY)
+            TreeNode root = new TreeNode(2);
+            root.left = new TreeNode(1);
+            root.right = new TreeNode(3);
+            root.right.left = new TreeNode(0);
+            root.right.right = new TreeNode(1);
+
+            LeetCode_2331 classLeetCode = new LeetCode_2331();
+            Console.WriteLine(classLeetCode.EvaluateTree(root));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.EvaluateTree(root));
+
             ////(2341.) Maximum Number of Pairs in Array (EASY)
             //int[] nums = [1, 3, 2, 1, 3, 2, 2];
 
@@ -8866,14 +8880,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinLength(s));
 
             ////(2697.) Lexicographically Smallest Palindrome (EASY)
-            string s = "egcfe";
+            //string s = "egcfe";
 
-            LeetCode_2697 classLeetCode = new LeetCode_2697();
-            Console.WriteLine(classLeetCode.MakeSmallestPalindrome(s));
+            //LeetCode_2697 classLeetCode = new LeetCode_2697();
+            //Console.WriteLine(classLeetCode.MakeSmallestPalindrome(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MakeSmallestPalindrome(s));
+            //Console.WriteLine(leetCodeAll.MakeSmallestPalindrome(s));
 
             ////(2706.) Buy Two Chocolates (EASY)
             //int[] prices = { 1, 2, 2 };
