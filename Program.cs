@@ -8865,6 +8865,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinLength(s));
 
+            ////(2697.) Lexicographically Smallest Palindrome (EASY)
+            string s = "egcfe";
+
+            LeetCode_2697 classLeetCode = new LeetCode_2697();
+            Console.WriteLine(classLeetCode.MakeSmallestPalindrome(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MakeSmallestPalindrome(s));
+
             ////(2706.) Buy Two Chocolates (EASY)
             //int[] prices = { 1, 2, 2 };
             //int money = 3;
@@ -9645,14 +9655,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindPermutationDifference(s, t));
 
             ////(3142.) Check if Grid Satisfies Conditions (EASY)
-            int[][] grid = [[1, 0, 2], [1, 0, 2]];
+            //int[][] grid = [[1, 0, 2], [1, 0, 2]];
 
-            LeetCode_3142 classLeetCode = new LeetCode_3142();
-            Console.WriteLine(classLeetCode.SatisfiesConditions(grid));
+            //LeetCode_3142 classLeetCode = new LeetCode_3142();
+            //Console.WriteLine(classLeetCode.SatisfiesConditions(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SatisfiesConditions(grid));
+            //Console.WriteLine(leetCodeAll.SatisfiesConditions(grid));
 
             ////(3147.) Taking Maximum Energy From the Mystic Dungeon (MEDIUM)
             //int[] energy = [5,2,-10,-5,1];
