@@ -8074,18 +8074,18 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PeopleAwareOfSecret(n, delay, forget));
 
             ////(2331.) Evaluate Boolean Binary Tree (EASY)
-            TreeNode root = new TreeNode(2);
-            root.left = new TreeNode(1);
-            root.right = new TreeNode(3);
-            root.right.left = new TreeNode(0);
-            root.right.right = new TreeNode(1);
+            //TreeNode root = new TreeNode(2);
+            //root.left = new TreeNode(1);
+            //root.right = new TreeNode(3);
+            //root.right.left = new TreeNode(0);
+            //root.right.right = new TreeNode(1);
 
-            LeetCode_2331 classLeetCode = new LeetCode_2331();
-            Console.WriteLine(classLeetCode.EvaluateTree(root));
+            //LeetCode_2331 classLeetCode = new LeetCode_2331();
+            //Console.WriteLine(classLeetCode.EvaluateTree(root));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.EvaluateTree(root));
+            //Console.WriteLine(leetCodeAll.EvaluateTree(root));
 
             ////(2341.) Maximum Number of Pairs in Array (EASY)
             //int[] nums = [1, 3, 2, 1, 3, 2, 2];
@@ -10813,6 +10813,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.RecoverOrder(order, friends)));
+
+            ////(3678.) Smallest Absent Positive Greater Than Average (EASY)
+            int[] nums = [3, 5];
+
+            LeetCode_3678 classLeetCode = new LeetCode_3678();
+            Console.WriteLine(classLeetCode.SmallestAbsent(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SmallestAbsent(nums));
 
             ////(3683.) Earliest Time to Finish One Task (EASY)
             //int[][] tasks = [[1,6], [2,3]];
