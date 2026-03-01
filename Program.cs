@@ -7212,6 +7212,27 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
+            ////(2022.) Convert 1D Array Into 2D Array (EASY)
+            int[] original = [1, 2, 3, 4];
+            int m = 2;
+            int n = 2;
+
+            LeetCode_2022 classLeetCode = new LeetCode_2022();
+            int[][] result = classLeetCode.Construct2DArray(original, m, n);
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            int[][] result1 = leetCodeAll.Construct2DArray(original, m, n);
+            foreach (var item in result)
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
             ////(2032.) Two Out of Three (EASY)
             //int[] nums1 = [1, 1, 3, 2];
             //int[] nums2 = [2,3];
@@ -10815,14 +10836,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.RecoverOrder(order, friends)));
 
             ////(3678.) Smallest Absent Positive Greater Than Average (EASY)
-            int[] nums = [3, 5];
+            //int[] nums = [3, 5];
 
-            LeetCode_3678 classLeetCode = new LeetCode_3678();
-            Console.WriteLine(classLeetCode.SmallestAbsent(nums));
+            //LeetCode_3678 classLeetCode = new LeetCode_3678();
+            //Console.WriteLine(classLeetCode.SmallestAbsent(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SmallestAbsent(nums));
+            //Console.WriteLine(leetCodeAll.SmallestAbsent(nums));
 
             ////(3683.) Earliest Time to Finish One Task (EASY)
             //int[][] tasks = [[1,6], [2,3]];

@@ -27130,8 +27130,27 @@ namespace ProblemSolving
 
             return seachrValue;
         }
+        public int[][] Construct2DArray(int[] original, int m, int n)
+        {
+            int length = original.Length;
+            if (m * n != length)
+            {
+                return new int[][] { };
+            }
+
+            int[][] resultTable = new int[m][];
+            int startIndex = 0;
+
+            for (int i = 0; i < m; i++)
+            {
+                resultTable[i] = original[startIndex..(startIndex + n)];
+
+                startIndex += n;
+            }
 
 
+            return resultTable;
+        }
 
 
 
