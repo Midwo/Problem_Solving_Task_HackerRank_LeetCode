@@ -6909,6 +6909,18 @@ namespace ProblemSolving
 
             //LeetCode_1890 classLeetCode = new LeetCode_1890();
 
+            ////(1893.) Check if All the Integers in a Range Are Covered (EASY)
+            int[][] ranges = [[1, 2], [3, 4], [5, 6]];
+            int left = 2;
+            int right = 5;
+
+            LeetCode_1893 classLeetCode = new LeetCode_1893();
+            Console.WriteLine(classLeetCode.IsCovered(ranges, left, right));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsCovered(ranges, left, right));
+
             ////(1903.) Largest Odd Number in String (EASY)
             //string num = "52";
 
@@ -10707,14 +10719,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckPrimeFrequency(nums));
 
             ////(3602.) Hexadecimal and Hexatrigesimal Conversion (EASY)
-            int n = 36;
+            //int n = 36;
 
-            LeetCode_3602 classLeetCode = new LeetCode_3602();
-            Console.WriteLine(classLeetCode.ConcatHex36(n));
+            //LeetCode_3602 classLeetCode = new LeetCode_3602();
+            //Console.WriteLine(classLeetCode.ConcatHex36(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ConcatHex36(n));
+            //Console.WriteLine(leetCodeAll.ConcatHex36(n));
 
             ////(3606.) Coupon Code Validator (EASY)
             //string[] code = ["SAVE20", "", "PHARMA5", "SAVE@20"];
