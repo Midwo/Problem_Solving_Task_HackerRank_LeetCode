@@ -7213,25 +7213,25 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumDifference(nums));
 
             ////(2022.) Convert 1D Array Into 2D Array (EASY)
-            int[] original = [1, 2, 3, 4];
-            int m = 2;
-            int n = 2;
+            //int[] original = [1, 2, 3, 4];
+            //int m = 2;
+            //int n = 2;
 
-            LeetCode_2022 classLeetCode = new LeetCode_2022();
-            int[][] result = classLeetCode.Construct2DArray(original, m, n);
+            //LeetCode_2022 classLeetCode = new LeetCode_2022();
+            //int[][] result = classLeetCode.Construct2DArray(original, m, n);
 
-            foreach (var item in result)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            int[][] result1 = leetCodeAll.Construct2DArray(original, m, n);
-            foreach (var item in result)
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //int[][] result1 = leetCodeAll.Construct2DArray(original, m, n);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(2032.) Two Out of Three (EASY)
             //int[] nums1 = [1, 1, 3, 2];
@@ -10705,6 +10705,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CheckPrimeFrequency(nums));
+
+            ////(3602.) Hexadecimal and Hexatrigesimal Conversion (EASY)
+            int n = 36;
+
+            LeetCode_3602 classLeetCode = new LeetCode_3602();
+            Console.WriteLine(classLeetCode.ConcatHex36(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ConcatHex36(n));
 
             ////(3606.) Coupon Code Validator (EASY)
             //string[] code = ["SAVE20", "", "PHARMA5", "SAVE@20"];
