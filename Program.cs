@@ -36,6 +36,7 @@ using static ProblemSolving.LeetCode.LeetCode_705;
 using static ProblemSolving.LeetCode.LeetCode_706;
 using static ProblemSolving.LeetCode.LeetCode_933;
 using static ProblemSolving.LeetCodeAll;
+using static System.Formats.Asn1.AsnWriter;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -7383,15 +7384,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.WateringPlants(plants, capacity));
 
             ////(2085.) Count Common Words With One Occurrence (EASY)
-            string[] words1 = ["leetcode", "is", "amazing", "as", "is"];
-            string[] words2 = ["amazing", "leetcode", "is"];
+            //string[] words1 = ["leetcode", "is", "amazing", "as", "is"];
+            //string[] words2 = ["amazing", "leetcode", "is"];
 
-            LeetCode_2085 classLeetCode = new LeetCode_2085();
-            Console.WriteLine(classLeetCode.CountWords(words1, words2));
+            //LeetCode_2085 classLeetCode = new LeetCode_2085();
+            //Console.WriteLine(classLeetCode.CountWords(words1, words2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountWords(words1, words2));
+            //Console.WriteLine(leetCodeAll.CountWords(words1, words2));
 
             ////(2089.) Find Target Indices After Sorting Array (EASY)
             //int[] nums = [1, 2, 5, 2, 3];
@@ -11022,11 +11023,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SumAndMultiply(n));
 
+            ////(3788.) Maximum Score of a Split (MEDIUM)
+            int[] nums = [73, 32, 54];
 
+            LeetCode_3788 classLeetCode = new LeetCode_3788();
+            Console.WriteLine(classLeetCode.MaximumScore(nums));
 
+            //OR
 
-
-
+            Console.WriteLine(leetCodeAll.MaximumScore(nums));
 
 
 
