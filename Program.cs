@@ -18,6 +18,7 @@ using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Timers;
@@ -6910,16 +6911,16 @@ namespace ProblemSolving
             //LeetCode_1890 classLeetCode = new LeetCode_1890();
 
             ////(1893.) Check if All the Integers in a Range Are Covered (EASY)
-            int[][] ranges = [[1, 2], [3, 4], [5, 6]];
-            int left = 2;
-            int right = 5;
+            //int[][] ranges = [[1, 2], [3, 4], [5, 6]];
+            //int left = 2;
+            //int right = 5;
 
-            LeetCode_1893 classLeetCode = new LeetCode_1893();
-            Console.WriteLine(classLeetCode.IsCovered(ranges, left, right));
+            //LeetCode_1893 classLeetCode = new LeetCode_1893();
+            //Console.WriteLine(classLeetCode.IsCovered(ranges, left, right));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsCovered(ranges, left, right));
+            //Console.WriteLine(leetCodeAll.IsCovered(ranges, left, right));
 
             ////(1903.) Largest Odd Number in String (EASY)
             //string num = "52";
@@ -7380,6 +7381,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.WateringPlants(plants, capacity));
+
+            ////(2085.) Count Common Words With One Occurrence (EASY)
+            string[] words1 = ["leetcode", "is", "amazing", "as", "is"];
+            string[] words2 = ["amazing", "leetcode", "is"];
+
+            LeetCode_2085 classLeetCode = new LeetCode_2085();
+            Console.WriteLine(classLeetCode.CountWords(words1, words2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountWords(words1, words2));
 
             ////(2089.) Find Target Indices After Sorting Array (EASY)
             //int[] nums = [1, 2, 5, 2, 3];
