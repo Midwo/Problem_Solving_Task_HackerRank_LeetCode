@@ -10491,6 +10491,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.TransformArray(nums)));
 
+            ////(3471.) Find the Largest Almost Missing Integer (EASY)
+            int[] nums = [3, 9, 2, 1, 7];
+            int k = 3;
+
+            LeetCode_3471 classLeetCode = new LeetCode_3471();
+            Console.WriteLine(classLeetCode.LargestInteger(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LargestInteger(nums, k));
+
             ////(3475.) DNA Pattern Recognition (MEDIUM)
             //string SqlQuery =
             //        @"
@@ -11024,14 +11035,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumAndMultiply(n));
 
             ////(3788.) Maximum Score of a Split (MEDIUM)
-            int[] nums = [73, 32, 54];
+            //int[] nums = [73, 32, 54];
 
-            LeetCode_3788 classLeetCode = new LeetCode_3788();
-            Console.WriteLine(classLeetCode.MaximumScore(nums));
+            //LeetCode_3788 classLeetCode = new LeetCode_3788();
+            //Console.WriteLine(classLeetCode.MaximumScore(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumScore(nums));
+            //Console.WriteLine(leetCodeAll.MaximumScore(nums));
 
 
 
