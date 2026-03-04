@@ -5999,6 +5999,16 @@ namespace ProblemSolving
             //////OR
             //LeetCode_1581 classLeetCode = new LeetCode_1581();
 
+            ////(1582.) Special Positions in a Binary Matrix (EASY)
+            int[][] mat = [[0, 0], [0, 0], [1, 0]];
+
+            LeetCode_1582 classLeetCode = new LeetCode_1582();
+            Console.WriteLine(classLeetCode.NumSpecial(mat));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumSpecial(mat));
+
             ////(1587.) Bank Account Summary II (EASY)
             //string SqlQuery =
             //    @"
@@ -10492,15 +10502,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.TransformArray(nums)));
 
             ////(3471.) Find the Largest Almost Missing Integer (EASY)
-            int[] nums = [3, 9, 2, 1, 7];
-            int k = 3;
+            //int[] nums = [3, 9, 2, 1, 7];
+            //int k = 3;
 
-            LeetCode_3471 classLeetCode = new LeetCode_3471();
-            Console.WriteLine(classLeetCode.LargestInteger(nums, k));
+            //LeetCode_3471 classLeetCode = new LeetCode_3471();
+            //Console.WriteLine(classLeetCode.LargestInteger(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LargestInteger(nums, k));
+            //Console.WriteLine(leetCodeAll.LargestInteger(nums, k));
 
             ////(3475.) DNA Pattern Recognition (MEDIUM)
             //string SqlQuery =
