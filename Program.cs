@@ -6556,14 +6556,14 @@ namespace ProblemSolving
             //LeetCode_1757 classLeetCode = new LeetCode_1757();
 
             ////(1758.) Minimum Changes To Make Alternating Binary String (EASY)
-            string s = "1111";
+            //string s = "1111";
 
-            LeetCode_1758 classLeetCode = new LeetCode_1758();
-            Console.WriteLine(classLeetCode.MinOperations(s));
+            //LeetCode_1758 classLeetCode = new LeetCode_1758();
+            //Console.WriteLine(classLeetCode.MinOperations(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperationsTask1758(s));
+            //Console.WriteLine(leetCodeAll.MinOperationsTask1758(s));
 
             ////(1768.) Merge Strings Alternately (EASY)
             //string word1 = "abc";
@@ -6942,6 +6942,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsCovered(ranges, left, right));
+
+            ////(1897.) Redistribute Characters to Make All Strings Equal (EASY)
+            string[] words = ["abc", "aabc", "bc"];
+
+            LeetCode_1897 classLeetCode = new LeetCode_1897();
+            Console.WriteLine(classLeetCode.MakeEqual(words));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MakeEqual(words));
 
             ////(1903.) Largest Odd Number in String (EASY)
             //string num = "52";

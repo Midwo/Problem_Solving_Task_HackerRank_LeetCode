@@ -27445,8 +27445,28 @@ namespace ProblemSolving
 
             return Math.Min(countOperationStart0, countOperationStart1);
         }
+        public bool MakeEqual(string[] words)
+        {
+            int[] countChar = new int[26];
+            int length = words.Length;
 
+            foreach (string word in words)
+            {
+                foreach (char currChar in word)
+                {
+                    countChar[currChar - 'a']++;
+                }
+            }
 
+            foreach (int currChar in countChar)
+            {
+                if (currChar > 0 && currChar % length != 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
 
 
 
