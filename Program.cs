@@ -6000,14 +6000,14 @@ namespace ProblemSolving
             //LeetCode_1581 classLeetCode = new LeetCode_1581();
 
             ////(1582.) Special Positions in a Binary Matrix (EASY)
-            int[][] mat = [[0, 0], [0, 0], [1, 0]];
+            //int[][] mat = [[0, 0], [0, 0], [1, 0]];
 
-            LeetCode_1582 classLeetCode = new LeetCode_1582();
-            Console.WriteLine(classLeetCode.NumSpecial(mat));
+            //LeetCode_1582 classLeetCode = new LeetCode_1582();
+            //Console.WriteLine(classLeetCode.NumSpecial(mat));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumSpecial(mat));
+            //Console.WriteLine(leetCodeAll.NumSpecial(mat));
 
             ////(1587.) Bank Account Summary II (EASY)
             //string SqlQuery =
@@ -6554,6 +6554,16 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1757 classLeetCode = new LeetCode_1757();
+
+            ////(1758.) Minimum Changes To Make Alternating Binary String (EASY)
+            string s = "1111";
+
+            LeetCode_1758 classLeetCode = new LeetCode_1758();
+            Console.WriteLine(classLeetCode.MinOperations(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperationsTask1758(s));
 
             ////(1768.) Merge Strings Alternately (EASY)
             //string word1 = "abc";
