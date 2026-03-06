@@ -27467,8 +27467,33 @@ namespace ProblemSolving
             }
             return true;
         }
+        public int DeleteGreatestValue(int[][] grid)
+        {
+            int sumDelGreatestValue = 0;
+            int countRow = grid.Length;
+            int countCol = grid[0].Length;
 
+            for (int i = 0; i < countRow; i++)
+            {
+                Array.Sort(grid[i]);
+            }
 
+            for (int i = countCol - 1; i >= 0; i--)
+            {
+                int maxValue = 0;
+                int currValue = 0;
+
+                for (int j = 0; j < countRow; j++)
+                {
+                    currValue = grid[j][i];
+                    maxValue = maxValue < currValue ? currValue : maxValue;
+                }
+
+                sumDelGreatestValue += maxValue;
+            }
+
+            return sumDelGreatestValue;
+        }
 
 
 

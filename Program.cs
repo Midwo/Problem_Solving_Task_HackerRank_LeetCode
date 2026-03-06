@@ -6944,14 +6944,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsCovered(ranges, left, right));
 
             ////(1897.) Redistribute Characters to Make All Strings Equal (EASY)
-            string[] words = ["abc", "aabc", "bc"];
+            //string[] words = ["abc", "aabc", "bc"];
 
-            LeetCode_1897 classLeetCode = new LeetCode_1897();
-            Console.WriteLine(classLeetCode.MakeEqual(words));
+            //LeetCode_1897 classLeetCode = new LeetCode_1897();
+            //Console.WriteLine(classLeetCode.MakeEqual(words));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MakeEqual(words));
+            //Console.WriteLine(leetCodeAll.MakeEqual(words));
 
             ////(1903.) Largest Odd Number in String (EASY)
             //string num = "52";
@@ -8599,6 +8599,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumValue(strs));
+
+            ////(2500.) Delete Greatest Value in Each Row (EASY)
+            int[][] grid = [[1, 2, 4], [3, 3, 1]];
+
+            LeetCode_2500 classLeetCode = new LeetCode_2500();
+            Console.WriteLine(classLeetCode.DeleteGreatestValue(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DeleteGreatestValue(grid));
 
             ////(2520.) Count the Digits That Divide a Number (EASY)
             //int num = 1248;
