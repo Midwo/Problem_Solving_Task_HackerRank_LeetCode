@@ -6380,6 +6380,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.HalvesAreAlike(s));
 
+            ////(1710.) Maximum Units on a Truck (EASY)
+            int[][] boxTypes = [[1, 3], [2, 2], [3, 1]];
+            int truckSize = 4;
+
+            LeetCode_1710 classLeetCode = new LeetCode_1710();
+            Console.WriteLine(classLeetCode.MaximumUnits(boxTypes, truckSize));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumUnits(boxTypes, truckSize));
+
             ////(1716.) Calculate Money in Leetcode Bank (EASY)
             //int n = 20;
 
@@ -8601,14 +8612,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumValue(strs));
 
             ////(2500.) Delete Greatest Value in Each Row (EASY)
-            int[][] grid = [[1, 2, 4], [3, 3, 1]];
+            //int[][] grid = [[1, 2, 4], [3, 3, 1]];
 
-            LeetCode_2500 classLeetCode = new LeetCode_2500();
-            Console.WriteLine(classLeetCode.DeleteGreatestValue(grid));
+            //LeetCode_2500 classLeetCode = new LeetCode_2500();
+            //Console.WriteLine(classLeetCode.DeleteGreatestValue(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DeleteGreatestValue(grid));
+            //Console.WriteLine(leetCodeAll.DeleteGreatestValue(grid));
 
             ////(2520.) Count the Digits That Divide a Number (EASY)
             //int num = 1248;
