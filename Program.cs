@@ -6381,15 +6381,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.HalvesAreAlike(s));
 
             ////(1710.) Maximum Units on a Truck (EASY)
-            int[][] boxTypes = [[1, 3], [2, 2], [3, 1]];
-            int truckSize = 4;
+            //int[][] boxTypes = [[1, 3], [2, 2], [3, 1]];
+            //int truckSize = 4;
 
-            LeetCode_1710 classLeetCode = new LeetCode_1710();
-            Console.WriteLine(classLeetCode.MaximumUnits(boxTypes, truckSize));
+            //LeetCode_1710 classLeetCode = new LeetCode_1710();
+            //Console.WriteLine(classLeetCode.MaximumUnits(boxTypes, truckSize));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumUnits(boxTypes, truckSize));
+            //Console.WriteLine(leetCodeAll.MaximumUnits(boxTypes, truckSize));
 
             ////(1716.) Calculate Money in Leetcode Bank (EASY)
             //int n = 20;
@@ -6926,6 +6926,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsSumEqual(firstWord, secondWord, targetWord));
+
+            ////(1888.) Minimum Number of Flips to Make the Binary String Alternating (MEDIUM) 
+            string s = "01001001101";
+
+            LeetCode_1888 classLeetCode = new LeetCode_1888();
+            Console.WriteLine(classLeetCode.MinFlips(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinFlips(s));
 
             ////(1890.) The Latest Login in 2020 (EASY)
             //string SqlQuery =
