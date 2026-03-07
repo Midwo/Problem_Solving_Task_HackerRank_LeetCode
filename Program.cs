@@ -6928,14 +6928,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsSumEqual(firstWord, secondWord, targetWord));
 
             ////(1888.) Minimum Number of Flips to Make the Binary String Alternating (MEDIUM) 
-            string s = "01001001101";
+            //string s = "01001001101";
 
-            LeetCode_1888 classLeetCode = new LeetCode_1888();
-            Console.WriteLine(classLeetCode.MinFlips(s));
+            //LeetCode_1888 classLeetCode = new LeetCode_1888();
+            //Console.WriteLine(classLeetCode.MinFlips(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinFlips(s));
+            //Console.WriteLine(leetCodeAll.MinFlips(s));
 
             ////(1890.) The Latest Login in 2020 (EASY)
             //string SqlQuery =
@@ -9838,6 +9838,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NumberOfPairs(nums1, nums2, k));
+
+            ////(3163.) String Compression III (MEDIUM)
+            string word = "aaaaaaaaaaaaaabb";
+
+            LeetCode_3163 classLeetCode = new LeetCode_3163();
+            Console.WriteLine(classLeetCode.CompressedString(word));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CompressedString(word));
 
             ////(3168.) Minimum Number of Chairs in a Waiting Room (EASY)
             //string s = "ELELEEL";
