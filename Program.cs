@@ -7222,7 +7222,7 @@ namespace ProblemSolving
 
             //OR
 
-
+            Console.WriteLine(leetCodeAll.FindDifferentBinaryString(nums));
 
             ////(1984.) Minimum Difference Between Highest and Lowest of K Scores (EASY)
             //int[] nums = [9, 4, 1, 7];
