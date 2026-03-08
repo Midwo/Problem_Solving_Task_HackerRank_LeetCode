@@ -27630,8 +27630,27 @@ namespace ProblemSolving
             }
             return TryGenerateUniqueString(currString + "1", hashSetNums, length, index + 1);
         }
+        public int MinOperationsTask1827(int[] nums)
+        {
+            int countOperations = 0;
+            int lastValue = nums[0];
 
+            for (int i = 1; i < nums.Length; i++)
+            {
+                int currValue = nums[i];
+                if (lastValue < currValue)
+                {
+                    lastValue = currValue;
+                }
+                else
+                {
+                    countOperations += lastValue - currValue + 1;
+                    lastValue++;
+                }
+            }
 
+            return countOperations;
+        }
 
 
 

@@ -6778,6 +6778,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindTheWinner(n, k));
 
+            ////(1827.) Minimum Operations to Make the Array Increasing (EASY)
+            int[] nums = [1, 5, 2, 4, 1];
+
+            LeetCode_1827 classLeetCode = new LeetCode_1827();
+            Console.WriteLine(classLeetCode.MinOperations(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperationsTask1827(nums));
+
             ////(1828.) Queries on Number of Points Inside a Circle (MEDIUM)
             //int[][] points = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5]];
             //int[][] queries = [[1, 2, 2], [2, 2, 2], [4, 3, 2], [4, 3, 3]];
@@ -7215,14 +7225,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindGCD(nums));
 
             ////(1980.) Find Unique Binary String (MEDIUM)
-            string[] nums = ["1010", "0000", "0101", "1111"];
+            //string[] nums = ["1010", "0000", "0101", "1111"];
 
-            LeetCode_1980 classLeetCode = new LeetCode_1980();
-            Console.WriteLine(classLeetCode.FindDifferentBinaryString(nums));
+            //LeetCode_1980 classLeetCode = new LeetCode_1980();
+            //Console.WriteLine(classLeetCode.FindDifferentBinaryString(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindDifferentBinaryString(nums));
+            //Console.WriteLine(leetCodeAll.FindDifferentBinaryString(nums));
 
             ////(1984.) Minimum Difference Between Highest and Lowest of K Scores (EASY)
             //int[] nums = [9, 4, 1, 7];
