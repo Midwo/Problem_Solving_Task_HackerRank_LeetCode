@@ -7214,6 +7214,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindGCD(nums));
 
+            ////(1980.) Find Unique Binary String (MEDIUM)
+            string[] nums = ["1010", "0000", "0101", "1111"];
+
+            LeetCode_1980 classLeetCode = new LeetCode_1980();
+            Console.WriteLine(classLeetCode.FindDifferentBinaryString(nums));
+
+            //OR
+
+
+
             ////(1984.) Minimum Difference Between Highest and Lowest of K Scores (EASY)
             //int[] nums = [9, 4, 1, 7];
             //int k = 2;
@@ -9840,14 +9850,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfPairs(nums1, nums2, k));
 
             ////(3163.) String Compression III (MEDIUM)
-            string word = "aaaaaaaaaaaaaabb";
+            //string word = "aaaaaaaaaaaaaabb";
 
-            LeetCode_3163 classLeetCode = new LeetCode_3163();
-            Console.WriteLine(classLeetCode.CompressedString(word));
+            //LeetCode_3163 classLeetCode = new LeetCode_3163();
+            //Console.WriteLine(classLeetCode.CompressedString(word));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CompressedString(word));
+            //Console.WriteLine(leetCodeAll.CompressedString(word));
 
             ////(3168.) Minimum Number of Chairs in a Waiting Room (EASY)
             //string s = "ELELEEL";
