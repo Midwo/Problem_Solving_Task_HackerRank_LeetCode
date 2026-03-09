@@ -6779,14 +6779,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindTheWinner(n, k));
 
             ////(1827.) Minimum Operations to Make the Array Increasing (EASY)
-            int[] nums = [1, 5, 2, 4, 1];
+            //int[] nums = [1, 5, 2, 4, 1];
 
-            LeetCode_1827 classLeetCode = new LeetCode_1827();
-            Console.WriteLine(classLeetCode.MinOperations(nums));
+            //LeetCode_1827 classLeetCode = new LeetCode_1827();
+            //Console.WriteLine(classLeetCode.MinOperations(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperationsTask1827(nums));
+            //Console.WriteLine(leetCodeAll.MinOperationsTask1827(nums));
 
             ////(1828.) Queries on Number of Points Inside a Circle (MEDIUM)
             //int[][] points = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5]];
@@ -8213,6 +8213,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.NumberOfPairs(nums)));
+
+            ////(2342.) Max Sum of a Pair With Equal Sum of Digits (MEDIUM)
+            int[] nums = [10, 12, 19, 14];
+
+            LeetCode_2342 classLEetCode = new LeetCode_2342();
+            Console.WriteLine(classLEetCode.MaximumSum(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumSum(nums));
 
             ////(2347.) Best Poker Hand (EASY)
             //int[] ranks = [4, 4, 2, 4, 4];
