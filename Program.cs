@@ -5571,6 +5571,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.BusyStudent(startTime, endTime, queryTime));
 
+            ////(1451.) Rearrange Words in a Sentence (MEDIUM)
+            string text = "To be or not to be";
+
+            LeetCode_1451 classLeetCode = new LeetCode_1451();
+            Console.WriteLine(classLeetCode.ArrangeWords(text));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ArrangeWords(text));
+
             ////(1455.) Check If a Word Occurs As a Prefix of Any Word in a Sentence (EASY)
             //string sentence = "b bu bur burg burger";
             //string searchWord = "burg";
@@ -8215,14 +8225,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.NumberOfPairs(nums)));
 
             ////(2342.) Max Sum of a Pair With Equal Sum of Digits (MEDIUM)
-            int[] nums = [10, 12, 19, 14];
+            //int[] nums = [10, 12, 19, 14];
 
-            LeetCode_2342 classLEetCode = new LeetCode_2342();
-            Console.WriteLine(classLEetCode.MaximumSum(nums));
+            //LeetCode_2342 classLEetCode = new LeetCode_2342();
+            //Console.WriteLine(classLEetCode.MaximumSum(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumSum(nums));
+            //Console.WriteLine(leetCodeAll.MaximumSum(nums));
 
             ////(2347.) Best Poker Hand (EASY)
             //int[] ranks = [4, 4, 2, 4, 4];

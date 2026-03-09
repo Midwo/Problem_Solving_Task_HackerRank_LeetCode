@@ -27690,8 +27690,16 @@ namespace ProblemSolving
 
             return maxSum;
         }
+        public string ArrangeWords(string text)
+        {
+            string[] splitText = text.Split(' ');
+            splitText[0] = splitText[0].ToLower();
 
+            splitText = splitText.OrderBy(x => x.Length).ToArray();
+            splitText[0] = (char)(splitText[0][0] - 32) + splitText[0][1..splitText[0].Length];
 
+            return string.Join(" ", splitText);
+        }
 
 
 
