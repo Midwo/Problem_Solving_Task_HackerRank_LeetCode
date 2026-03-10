@@ -5572,14 +5572,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BusyStudent(startTime, endTime, queryTime));
 
             ////(1451.) Rearrange Words in a Sentence (MEDIUM)
-            string text = "To be or not to be";
+            //string text = "To be or not to be";
 
-            LeetCode_1451 classLeetCode = new LeetCode_1451();
-            Console.WriteLine(classLeetCode.ArrangeWords(text));
+            //LeetCode_1451 classLeetCode = new LeetCode_1451();
+            //Console.WriteLine(classLeetCode.ArrangeWords(text));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ArrangeWords(text));
+            //Console.WriteLine(leetCodeAll.ArrangeWords(text));
 
             ////(1455.) Check If a Word Occurs As a Prefix of Any Word in a Sentence (EASY)
             //string sentence = "b bu bur burg burger";
@@ -9939,6 +9939,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimumOperations(nums));
+
+            ////(3191.) Minimum Operations to Make Binary Array Elements Equal to One I (MEDIUM)
+            int[] nums = [0, 1, 1, 1, 0, 0];
+
+            LeetCode_3191 classLeetCode = new LeetCode_3191();
+            Console.WriteLine(classLeetCode.MinOperations(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperationsTask3191(nums));
 
             ////(3194.) Minimum Average of Smallest and Largest Elements (EASY)
             //int[] nums = [7, 8, 3, 4, 15, 13, 4, 1];
