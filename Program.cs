@@ -8931,6 +8931,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindColumnWidth(grid)));
 
+            ////(2640.) Find the Score of All Prefixes of an Array (MEDIUM)
+            int[] nums = [2,3,7,5,10];
+
+            LeetCode_2640 classLeetCode = new LeetCode_2640();
+            Console.WriteLine(string.Join(',',classLeetCode.FindPrefixScore(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindPrefixScore(nums)));
+
             ////(2643.) Row With Maximum Ones (EASY)
             //int[][] mat = [[0, 0], [1, 1], [0, 0]];
 
@@ -9941,14 +9951,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumOperations(nums));
 
             ////(3191.) Minimum Operations to Make Binary Array Elements Equal to One I (MEDIUM)
-            int[] nums = [0, 1, 1, 1, 0, 0];
+            //int[] nums = [0, 1, 1, 1, 0, 0];
 
-            LeetCode_3191 classLeetCode = new LeetCode_3191();
-            Console.WriteLine(classLeetCode.MinOperations(nums));
+            //LeetCode_3191 classLeetCode = new LeetCode_3191();
+            //Console.WriteLine(classLeetCode.MinOperations(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperationsTask3191(nums));
+            //Console.WriteLine(leetCodeAll.MinOperationsTask3191(nums));
 
             ////(3194.) Minimum Average of Smallest and Largest Elements (EASY)
             //int[] nums = [7, 8, 3, 4, 15, 13, 4, 1];

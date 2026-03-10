@@ -27727,8 +27727,26 @@ namespace ProblemSolving
 
             return -1;
         }
+        public long[] FindPrefixScore(int[] nums)
+        {
+            int length = nums.Length;
+            long[] score = new long[length];
+            int maxValue = 0;
+            long sum = 0;
+            for (int i = 0; i < length; i++)
+            {
+                int currValue = nums[i];
+                if (currValue > maxValue)
+                {
+                    maxValue = currValue;
+                }
+                sum += currValue + maxValue;
 
+                score[i] = sum;
+            }
 
+            return score;
+        }
 
 
 
