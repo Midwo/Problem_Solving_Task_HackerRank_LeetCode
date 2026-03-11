@@ -7546,6 +7546,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FirstPalindrome(words)));
 
+            ////(2109.) Adding Spaces to a String (MEDIUM)
+            string s = "LeetcodeHelpsMeLearn";
+            int[] spaces = [8, 13, 15];
+
+            LeetCode_2109 classLeetCode = new LeetCode_2109();
+            Console.WriteLine(classLeetCode.AddSpaces(s, spaces));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AddSpaces(s, spaces));
+
             ////(2110.) Number of Smooth Descent Periods of a Stock (MEDIUM)
             //int[] prices = [3, 2, 1, 4];
 
@@ -8932,14 +8943,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindColumnWidth(grid)));
 
             ////(2640.) Find the Score of All Prefixes of an Array (MEDIUM)
-            int[] nums = [2,3,7,5,10];
+            //int[] nums = [2,3,7,5,10];
 
-            LeetCode_2640 classLeetCode = new LeetCode_2640();
-            Console.WriteLine(string.Join(',',classLeetCode.FindPrefixScore(nums)));
+            //LeetCode_2640 classLeetCode = new LeetCode_2640();
+            //Console.WriteLine(string.Join(',',classLeetCode.FindPrefixScore(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindPrefixScore(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindPrefixScore(nums)));
 
             ////(2643.) Row With Maximum Ones (EASY)
             //int[][] mat = [[0, 0], [1, 1], [0, 0]];

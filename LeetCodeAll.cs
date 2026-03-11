@@ -27747,8 +27747,21 @@ namespace ProblemSolving
 
             return score;
         }
+        public string AddSpaces(string s, int[] spaces)
+        {
+            StringBuilder sb = new StringBuilder();
+            int ending = 0;
 
+            foreach (int i in spaces)
+            {
+                sb.Append(s[ending..i]);
+                sb.Append(' ');
+                ending = i;
+            }
+            sb.Append(s[ending..s.Length]);
 
+            return sb.ToString();
+        }
 
 
 
