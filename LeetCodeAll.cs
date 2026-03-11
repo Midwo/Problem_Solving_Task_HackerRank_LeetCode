@@ -27762,8 +27762,27 @@ namespace ProblemSolving
 
             return sb.ToString();
         }
+        public char SlowestKey(int[] releaseTimes, string keysPressed)
+        {
+            char longestChar = keysPressed[0];
+            int longestTime = releaseTimes[0];
+            int lastValue = longestTime;
 
+            for (int i = 1; i < releaseTimes.Length; i++)
+            {
+                int currEndTime = releaseTimes[i];
+                int currDuration = currEndTime - lastValue;
+                lastValue = currEndTime;
 
+                if (longestTime < currDuration || longestTime == currDuration && keysPressed[i] > longestChar)
+                {
+                    longestChar = keysPressed[i];
+                    longestTime = currDuration;
+                }
+            }
+
+            return longestChar;
+        }
 
 
 

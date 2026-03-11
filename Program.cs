@@ -6127,6 +6127,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindLexSmallestString(s, a, b));
 
+            ////(1629.) Slowest Key (EASY)
+            int[] releaseTimes = [9, 29, 49, 50];
+            string keysPressed = "cbcd";
+
+            LeetCode_1629 classLeetCode = new LeetCode_1629();
+            Console.WriteLine(classLeetCode.SlowestKey(releaseTimes, keysPressed));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SlowestKey(releaseTimes, keysPressed));
+
             ////(1630.) Arithmetic Subarrays (MEDIUM)
             //int[] nums = [4, 6, 5, 9, 3, 7];
             //int[] l = [0, 0, 2];
@@ -7547,15 +7558,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FirstPalindrome(words)));
 
             ////(2109.) Adding Spaces to a String (MEDIUM)
-            string s = "LeetcodeHelpsMeLearn";
-            int[] spaces = [8, 13, 15];
+            //string s = "LeetcodeHelpsMeLearn";
+            //int[] spaces = [8, 13, 15];
 
-            LeetCode_2109 classLeetCode = new LeetCode_2109();
-            Console.WriteLine(classLeetCode.AddSpaces(s, spaces));
+            //LeetCode_2109 classLeetCode = new LeetCode_2109();
+            //Console.WriteLine(classLeetCode.AddSpaces(s, spaces));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.AddSpaces(s, spaces));
+            //Console.WriteLine(leetCodeAll.AddSpaces(s, spaces));
 
             ////(2110.) Number of Smooth Descent Periods of a Stock (MEDIUM)
             //int[] prices = [3, 2, 1, 4];
