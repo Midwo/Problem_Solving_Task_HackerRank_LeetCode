@@ -6128,15 +6128,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindLexSmallestString(s, a, b));
 
             ////(1629.) Slowest Key (EASY)
-            int[] releaseTimes = [9, 29, 49, 50];
-            string keysPressed = "cbcd";
+            //int[] releaseTimes = [9, 29, 49, 50];
+            //string keysPressed = "cbcd";
 
-            LeetCode_1629 classLeetCode = new LeetCode_1629();
-            Console.WriteLine(classLeetCode.SlowestKey(releaseTimes, keysPressed));
+            //LeetCode_1629 classLeetCode = new LeetCode_1629();
+            //Console.WriteLine(classLeetCode.SlowestKey(releaseTimes, keysPressed));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SlowestKey(releaseTimes, keysPressed));
+            //Console.WriteLine(leetCodeAll.SlowestKey(releaseTimes, keysPressed));
 
             ////(1630.) Arithmetic Subarrays (MEDIUM)
             //int[] nums = [4, 6, 5, 9, 3, 7];
@@ -7956,6 +7956,22 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ConvertTime(current, correct));
+
+            ////(2225.) Find Players With Zero or One Losses (MEDIUM)
+            int[][] matches = [[1, 3], [2, 3], [3, 6], [5, 6], [5, 7], [4, 5], [4, 8], [4, 9], [10, 4], [10, 9]];
+
+            LeetCode_2225 classLeetCode = new LeetCode_2225();
+            foreach (var item in classLeetCode.FindWinners(matches))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.FindWinners(matches))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             ////(2235.) Add Two Integers (EASY)
             //int num1 = 12;
