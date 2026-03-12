@@ -7958,20 +7958,20 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ConvertTime(current, correct));
 
             ////(2225.) Find Players With Zero or One Losses (MEDIUM)
-            int[][] matches = [[1, 3], [2, 3], [3, 6], [5, 6], [5, 7], [4, 5], [4, 8], [4, 9], [10, 4], [10, 9]];
+            //int[][] matches = [[1, 3], [2, 3], [3, 6], [5, 6], [5, 7], [4, 5], [4, 8], [4, 9], [10, 4], [10, 9]];
 
-            LeetCode_2225 classLeetCode = new LeetCode_2225();
-            foreach (var item in classLeetCode.FindWinners(matches))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //LeetCode_2225 classLeetCode = new LeetCode_2225();
+            //foreach (var item in classLeetCode.FindWinners(matches))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.FindWinners(matches))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.FindWinners(matches))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(2235.) Add Two Integers (EASY)
             //int num1 = 12;
@@ -10900,6 +10900,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SmallestIndex(nums));
+
+            ////(3582.) Generate Tag for Video Caption (EASY)
+            string caption = "   ";
+
+            LeetCode_3582 classLeetCode = new LeetCode_3582();
+            Console.WriteLine(classLeetCode.GenerateTag(caption));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GenerateTag(caption));
 
             ////(3591.) Check if Any Element Has Prime Frequency (EASY)
             //int[] nums = [3, 0, 3, 6, 3, 3];
