@@ -10293,6 +10293,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ReportSpam(message, bannedWords));
 
+            ////(3296.) Minimum Number of Seconds to Make Mountain Height Zero (MEDIUM)
+            int mountainHeight = 4;
+            int[] workerTimes = [2, 1, 1];
+
+            LeetCode_3296 classLeetCode = new LeetCode_3296();
+            Console.WriteLine(classLeetCode.MinNumberOfSeconds(mountainHeight, workerTimes));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinNumberOfSeconds(mountainHeight, workerTimes));
+
             ////(3300.) Minimum Element After Replacement With Digit Sum (EASY)
             //int[] nums = [10, 12, 13, 14];
 
@@ -10902,14 +10913,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestIndex(nums));
 
             ////(3582.) Generate Tag for Video Caption (EASY)
-            string caption = "   ";
+            //string caption = "   ";
 
-            LeetCode_3582 classLeetCode = new LeetCode_3582();
-            Console.WriteLine(classLeetCode.GenerateTag(caption));
+            //LeetCode_3582 classLeetCode = new LeetCode_3582();
+            //Console.WriteLine(classLeetCode.GenerateTag(caption));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GenerateTag(caption));
+            //Console.WriteLine(leetCodeAll.GenerateTag(caption));
 
             ////(3591.) Check if Any Element Has Prime Frequency (EASY)
             //int[] nums = [3, 0, 3, 6, 3, 3];
