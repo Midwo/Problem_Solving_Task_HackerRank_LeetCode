@@ -6381,6 +6381,16 @@ namespace ProblemSolving
 
             //LeetCode_1693 classLeetCode = new LeetCode_1693();
 
+            ////(1694.) Reformat Phone Number (EASY)
+            string number = "1-23-45 6";
+
+            LeetCode_1694 classLeetCode = new LeetCode_1694();
+            Console.WriteLine(classLeetCode.ReformatNumber(number));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ReformatNumber(number));
+
             ////(1695.) Maximum Erasure Value (MEDIUM)
             //int[] nums = [5, 2, 1, 2, 5, 2, 1, 2, 5];
 
@@ -10294,15 +10304,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReportSpam(message, bannedWords));
 
             ////(3296.) Minimum Number of Seconds to Make Mountain Height Zero (MEDIUM)
-            int mountainHeight = 4;
-            int[] workerTimes = [2, 1, 1];
+            //int mountainHeight = 4;
+            //int[] workerTimes = [2, 1, 1];
 
-            LeetCode_3296 classLeetCode = new LeetCode_3296();
-            Console.WriteLine(classLeetCode.MinNumberOfSeconds(mountainHeight, workerTimes));
+            //LeetCode_3296 classLeetCode = new LeetCode_3296();
+            //Console.WriteLine(classLeetCode.MinNumberOfSeconds(mountainHeight, workerTimes));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinNumberOfSeconds(mountainHeight, workerTimes));
+            //Console.WriteLine(leetCodeAll.MinNumberOfSeconds(mountainHeight, workerTimes));
 
             ////(3300.) Minimum Element After Replacement With Digit Sum (EASY)
             //int[] nums = [10, 12, 13, 14];
