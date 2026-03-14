@@ -27950,8 +27950,23 @@ namespace ProblemSolving
 
             return resultSb.ToString();
         }
+        public long CountSubstrings(string s, char c)
+        {
+            long result = 0;
+            long countTargetChar = 0;
 
+            foreach (char currChar in s)
+            {
+                if (currChar == c)
+                {
+                    countTargetChar++;
+                }
+            }
 
+            result = (countTargetChar + 1) * countTargetChar / 2;
+
+            return result;
+        }
 
 
 

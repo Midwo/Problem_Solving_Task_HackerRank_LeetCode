@@ -6382,14 +6382,14 @@ namespace ProblemSolving
             //LeetCode_1693 classLeetCode = new LeetCode_1693();
 
             ////(1694.) Reformat Phone Number (EASY)
-            string number = "1-23-45 6";
+            //string number = "1-23-45 6";
 
-            LeetCode_1694 classLeetCode = new LeetCode_1694();
-            Console.WriteLine(classLeetCode.ReformatNumber(number));
+            //LeetCode_1694 classLeetCode = new LeetCode_1694();
+            //Console.WriteLine(classLeetCode.ReformatNumber(number));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ReformatNumber(number));
+            //Console.WriteLine(leetCodeAll.ReformatNumber(number));
 
             ////(1695.) Maximum Erasure Value (MEDIUM)
             //int[] nums = [5, 2, 1, 2, 5, 2, 1, 2, 5];
@@ -9758,6 +9758,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsSubstringPresent(s));
+
+            ////(3084.) Count Substrings Starting and Ending with Given Character (MEDIUM)
+            string s = "abada";
+            char c = 'a';
+
+            LeetCode_3084 classLeetCode = new LeetCode_3084();
+            Console.WriteLine(classLeetCode.CountSubstrings(s, c));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountSubstrings(s, c));
 
             ////(3085). Minimum Deletions to Make String K-Special (MEDIUM)
             //string word = "gzpgogrg";
