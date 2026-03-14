@@ -27967,9 +27967,26 @@ namespace ProblemSolving
 
             return result;
         }
+        public long DividePlayers(int[] skill)
+        {
+            Array.Sort(skill);
+
+            int right = skill.Length - 1;
+            int left = 1;
+            int sumTwoPlayers = skill[0] + skill[right];
+            long result = skill[0] * skill[right];
+            right--;
 
 
+            while (left < right)
+            {
+                long currSum = skill[left] + skill[right];
+                if (currSum != sumTwoPlayers) { return -1; }
+                result += skill[left++] * skill[right--];
+            }
 
+            return result;
+        }
 
 
 

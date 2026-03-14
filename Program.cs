@@ -8699,6 +8699,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsCircularSentence(sentence));
 
+            ////(2491.) Divide Players Into Teams of Equal Skill (MEDIUM)
+            int[] skill = [3, 2, 5, 1, 3, 4];
+
+            LeetCode_2491 classLeetCode = new LeetCode_2491();
+            Console.WriteLine(classLeetCode.DividePlayers(skill));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DividePlayers(skill));
+
             ////(2496.) Maximum Value of a String in an Array (EASY)
             //string[] strs = ["1", "01", "001", "0001"];
 
@@ -9760,15 +9770,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsSubstringPresent(s));
 
             ////(3084.) Count Substrings Starting and Ending with Given Character (MEDIUM)
-            string s = "abada";
-            char c = 'a';
+            //string s = "abada";
+            //char c = 'a';
 
-            LeetCode_3084 classLeetCode = new LeetCode_3084();
-            Console.WriteLine(classLeetCode.CountSubstrings(s, c));
+            //LeetCode_3084 classLeetCode = new LeetCode_3084();
+            //Console.WriteLine(classLeetCode.CountSubstrings(s, c));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountSubstrings(s, c));
+            //Console.WriteLine(leetCodeAll.CountSubstrings(s, c));
 
             ////(3085). Minimum Deletions to Make String K-Special (MEDIUM)
             //string word = "gzpgogrg";
