@@ -5180,16 +5180,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfSteps(num));
 
             ////(1343.) Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold (MEDIUM)
-            int[] arr = [11, 13, 17, 23, 29, 31, 7, 5, 2, 3];
-            int k = 3;
-            int threshold = 5;
+            //int[] arr = [11, 13, 17, 23, 29, 31, 7, 5, 2, 3];
+            //int k = 3;
+            //int threshold = 5;
 
-            LeetCode_1343 classLeetCode = new LeetCode_1343();
-            Console.WriteLine(classLeetCode.NumOfSubarrays(arr, k, threshold));
+            //LeetCode_1343 classLeetCode = new LeetCode_1343();
+            //Console.WriteLine(classLeetCode.NumOfSubarrays(arr, k, threshold));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumOfSubarrays(arr, k, threshold));
+            //Console.WriteLine(leetCodeAll.NumOfSubarrays(arr, k, threshold));
 
             ////(1346.) Check If N and Its Double Exist (EASY)
             //int[] arr = [10,2,5,3];
@@ -10954,6 +10954,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SmallestIndex(nums));
+
+            ////(3572.) Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values (MEDIUM)
+            int[] x = [1, 2, 1, 3, 2];
+            int[] y = [5, 3, 4, 6, 2];
+
+            LeetCode_3572 classLeetCode = new LeetCode_3572();
+            Console.WriteLine(classLeetCode.MaxSumDistinctTriplet(x, y));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxSumDistinctTriplet(x, y));
 
             ////(3582.) Generate Tag for Video Caption (EASY)
             //string caption = "   ";
