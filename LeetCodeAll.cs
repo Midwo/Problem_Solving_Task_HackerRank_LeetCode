@@ -27987,6 +27987,37 @@ namespace ProblemSolving
 
             return result;
         }
+        public int NumOfSubarrays(int[] arr, int k, int threshold)
+        {
+            int currThreshold = 0;
+            int countCurrThresholdGreaterOrEqualToOryginalThreshold = 0;
+            int length = arr.Length;
+            int minSum = k * threshold;
+
+            for (int i = 0; i < k; i++)
+            {
+                currThreshold += arr[i];
+            }
+
+            if (currThreshold >= minSum)
+            {
+                countCurrThresholdGreaterOrEqualToOryginalThreshold++;
+            }
+
+            for (int i = k; i < length; i++)
+            {
+                currThreshold += arr[i] - arr[i - k];
+                if (currThreshold >= minSum)
+                {
+                    countCurrThresholdGreaterOrEqualToOryginalThreshold++;
+                }
+            }
+
+            return countCurrThresholdGreaterOrEqualToOryginalThreshold;
+        }
+
+
+
 
 
 

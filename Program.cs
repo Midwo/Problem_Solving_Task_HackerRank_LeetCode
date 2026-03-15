@@ -5179,6 +5179,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumberOfSteps(num));
 
+            ////(1343.) Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold (MEDIUM)
+            int[] arr = [11, 13, 17, 23, 29, 31, 7, 5, 2, 3];
+            int k = 3;
+            int threshold = 5;
+
+            LeetCode_1343 classLeetCode = new LeetCode_1343();
+            Console.WriteLine(classLeetCode.NumOfSubarrays(arr, k, threshold));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumOfSubarrays(arr, k, threshold));
+
             ////(1346.) Check If N and Its Double Exist (EASY)
             //int[] arr = [10,2,5,3];
 
@@ -8700,14 +8712,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsCircularSentence(sentence));
 
             ////(2491.) Divide Players Into Teams of Equal Skill (MEDIUM)
-            int[] skill = [3, 2, 5, 1, 3, 4];
+            //int[] skill = [3, 2, 5, 1, 3, 4];
 
-            LeetCode_2491 classLeetCode = new LeetCode_2491();
-            Console.WriteLine(classLeetCode.DividePlayers(skill));
+            //LeetCode_2491 classLeetCode = new LeetCode_2491();
+            //Console.WriteLine(classLeetCode.DividePlayers(skill));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DividePlayers(skill));
+            //Console.WriteLine(leetCodeAll.DividePlayers(skill));
 
             ////(2496.) Maximum Value of a String in an Array (EASY)
             //string[] strs = ["1", "01", "001", "0001"];
@@ -11264,6 +11276,45 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumScore(nums));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
