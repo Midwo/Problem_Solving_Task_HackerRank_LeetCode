@@ -28224,10 +28224,42 @@ namespace ProblemSolving
 
 
         }
+        public int AddRungs(int[] rungs, int dist)
+        {
+            int howManyAdd = 0;
+            int length = rungs.Length;
+            int index = 0;
+            int currLevel = 0;
 
+            while (index < length)
+            {
+                if (currLevel + dist < rungs[index])
+                {
+                    int nextLevel = rungs[index];
+                    int temp = (nextLevel - currLevel) - 1;
 
+                    int howMany = temp / dist;
 
+                    howManyAdd += howMany;
 
+                    if (index < length - 1)
+                    {
+                        currLevel = rungs[index];
+                    }
+                    else
+                    {
+                        index++;
+                    }
+                }
+                else
+                {
+                    currLevel = rungs[index];
+                    index++;
+                }
+            }
+
+            return howManyAdd;
+        }
 
 
 

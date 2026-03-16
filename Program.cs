@@ -7165,6 +7165,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CanBeTypedWords(text, brokenLetters));
 
+            ////(1936.) Add Minimum Number of Rungs (MEDIUM)
+            int[] rungs = [4, 6];
+            int dist = 1;
+
+            Leetcode_1936 classLeetCode = new Leetcode_1936();
+            Console.WriteLine(classLeetCode.AddRungs(rungs, dist));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AddRungs(rungs, dist));
+
             ////(1941.) Check if All Characters Have Equal Number of Occurrences (EASY)
             //string s = "abacbc";
 
@@ -8606,15 +8617,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountDistinctIntegers(nums));
 
             ////(2446.) Determine if Two Events Have Conflict (EASY)
-            string[] event1 = ["01:00", "02:00"];
-            string[] event2 = ["01:20", "03:00"];
+            //string[] event1 = ["01:00", "02:00"];
+            //string[] event2 = ["01:20", "03:00"];
 
-            LeetCode_2446 classLeetCode = new LeetCode_2446();
-            Console.WriteLine(classLeetCode.HaveConflict(event1, event2));
+            //LeetCode_2446 classLeetCode = new LeetCode_2446();
+            //Console.WriteLine(classLeetCode.HaveConflict(event1, event2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.HaveConflict(event1, event2));
+            //Console.WriteLine(leetCodeAll.HaveConflict(event1, event2));
 
             ////(2455.) Average Value of Even Numbers That Are Divisible by Three (EASY)
             //int[] nums = [1, 3, 6, 10, 12, 15];
