@@ -8605,6 +8605,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountDistinctIntegers(nums));
 
+            ////(2446.) Determine if Two Events Have Conflict (EASY)
+            string[] event1 = ["01:00", "02:00"];
+            string[] event2 = ["01:20", "03:00"];
+
+            LeetCode_2446 classLeetCode = new LeetCode_2446();
+            Console.WriteLine(classLeetCode.HaveConflict(event1, event2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.HaveConflict(event1, event2));
+
             ////(2455.) Average Value of Even Numbers That Are Divisible by Three (EASY)
             //int[] nums = [1, 3, 6, 10, 12, 15];
 
@@ -10956,15 +10967,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestIndex(nums));
 
             ////(3572.) Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values (MEDIUM)
-            int[] x = [1, 2, 1, 3, 2];
-            int[] y = [5, 3, 4, 6, 2];
+            //int[] x = [1, 2, 1, 3, 2];
+            //int[] y = [5, 3, 4, 6, 2];
 
-            LeetCode_3572 classLeetCode = new LeetCode_3572();
-            Console.WriteLine(classLeetCode.MaxSumDistinctTriplet(x, y));
+            //LeetCode_3572 classLeetCode = new LeetCode_3572();
+            //Console.WriteLine(classLeetCode.MaxSumDistinctTriplet(x, y));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxSumDistinctTriplet(x, y));
+            //Console.WriteLine(leetCodeAll.MaxSumDistinctTriplet(x, y));
 
             ////(3582.) Generate Tag for Video Caption (EASY)
             //string caption = "   ";

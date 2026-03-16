@@ -1154,7 +1154,8 @@ namespace ProblemSolving
                 if (queueStacks.Count == 0)
                 {
                     return true;
-                };
+                }
+                ;
                 return false;
             }
         }
@@ -1811,7 +1812,8 @@ namespace ProblemSolving
                 {
                     return i;
                 }
-            };
+            }
+            ;
             return -1;
         }
         public char FindTheDifference(string s, string t)
@@ -3107,7 +3109,8 @@ namespace ProblemSolving
                         else
                         {
                             currMaxLongestPalindrome += 2;
-                        };
+                        }
+                        ;
                         tempI++;
                     }
                     else
@@ -5298,7 +5301,7 @@ namespace ProblemSolving
 
             return result;
         }
-       
+
         private int _height733;
         private int _width733;
         public int[][] FloodFill(int[][] image, int sr, int sc, int color)
@@ -5627,7 +5630,7 @@ namespace ProblemSolving
                 GiveMeValueFromTreeNode783(root.right);
             }
         }
-        
+
         private int _goalLength796;
         private string _s796;
         private string _goal796;
@@ -6592,7 +6595,7 @@ namespace ProblemSolving
 
 
             return nums;
-        }       
+        }
 
         private TreeNode currentRoot897;
         public TreeNode IncreasingBST(TreeNode root)
@@ -8640,7 +8643,7 @@ namespace ProblemSolving
             return string.Join(' ', splitWords.ToArray());
 
         }
-        
+
         Dictionary<int, long[]> dictSumCountTask637;
         public IList<double> AverageOfLevels(TreeNode root)
         {
@@ -15947,7 +15950,7 @@ namespace ProblemSolving
             return string.Join(' ', sortedWords);
         }
         public int DiagonalSum(int[][] mat)
-        {            
+        {
             //// 0ms, Beats: 100%
 
             int sum = 0;
@@ -18803,7 +18806,7 @@ namespace ProblemSolving
         public class BankTask2043
         {
             ////3ms, Beats: 100.00%
-            
+
             private long[] _balance;
             private int _countAccount;
             public BankTask2043(long[] balance)
@@ -28051,6 +28054,99 @@ namespace ProblemSolving
 
             return maxSumTriplet;
         }
+        public bool HaveConflict(string[] event1, string[] event2)
+        {
+            int currHourEv1Start = int.Parse(event1[0][0..2]);
+            int currHourEv2Start = int.Parse(event2[0][0..2]);
+            int currMinEv1Start = int.Parse(event1[0][3..5]);
+            int currMinEv2Start = int.Parse(event2[0][3..5]);
+
+            int currHourEv1Stop = int.Parse(event1[1][0..2]);
+            int currHourEv2Stop = int.Parse(event2[1][0..2]);
+            int currMinEv1Stop = int.Parse(event1[1][3..5]);
+            int currMinEv2Stop = int.Parse(event2[1][3..5]);
+
+            if (currHourEv1Start < currHourEv2Start)
+            {
+                if (currHourEv1Stop < currHourEv2Start)
+                {
+                    return false;
+                }
+                else if (currHourEv1Stop == currHourEv2Start)
+                {
+                    if (currMinEv1Stop < currMinEv2Start)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            else if (currHourEv1Start > currHourEv2Start)
+            {
+                if (currHourEv2Stop < currHourEv1Start)
+                {
+                    return false;
+                }
+                else if (currHourEv2Stop == currHourEv1Start)
+                {
+                    if (currMinEv2Stop < currMinEv1Start)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            else
+            {
+                if (currMinEv1Start < currMinEv2Start)
+                {
+                    if (currHourEv1Stop == currHourEv2Start)
+                    {
+                        if (currMinEv1Stop < currMinEv2Start)
+                        {
+                            return false;
+                        }
+                        return true;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+                else if (currMinEv1Start > currMinEv2Start)
+                {
+                    if (currHourEv2Stop == currHourEv1Start)
+                    {
+                        if (currMinEv2Stop < currMinEv1Start)
+                        {
+                            return false;
+                        }
+                        return true;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+                else
+                {
+                    return true;
+                }
+            }
 
 
 
@@ -28072,6 +28168,62 @@ namespace ProblemSolving
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
 
 
 
@@ -28130,25 +28282,6 @@ namespace ProblemSolving
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public class ListNode
     {
