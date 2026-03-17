@@ -7477,22 +7477,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestEqual(nums));
 
             ////(2058.) Find the Minimum and Maximum Number of Nodes Between Critical Points (MEDIUM)
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(3);
-            head.next.next = new ListNode(2);
-            head.next.next.next = new ListNode(2);
-            head.next.next.next.next = new ListNode(3);
-            head.next.next.next.next.next = new ListNode(2);
-            head.next.next.next.next.next.next = new ListNode(2);
-            head.next.next.next.next.next.next.next = new ListNode(2);
-            head.next.next.next.next.next.next.next.next = new ListNode(7);
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(3);
+            //head.next.next = new ListNode(2);
+            //head.next.next.next = new ListNode(2);
+            //head.next.next.next.next = new ListNode(3);
+            //head.next.next.next.next.next = new ListNode(2);
+            //head.next.next.next.next.next.next = new ListNode(2);
+            //head.next.next.next.next.next.next.next = new ListNode(2);
+            //head.next.next.next.next.next.next.next.next = new ListNode(7);
 
-            LeetCode_2058 classLeetCode = new LeetCode_2058();
-            Console.WriteLine(string.Join(',', classLeetCode.NodesBetweenCriticalPoints(head)));
+            //LeetCode_2058 classLeetCode = new LeetCode_2058();
+            //Console.WriteLine(string.Join(',', classLeetCode.NodesBetweenCriticalPoints(head)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.NodesBetweenCriticalPoints(head)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.NodesBetweenCriticalPoints(head)));
 
             ////(2068.) Check Whether Two Strings are Almost Equivalent (EASY)
             //string word1 = "abcdeef";
@@ -7799,6 +7799,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.SortEvenOdd(nums)));
+
+            ////(2165.) Smallest Value of the Rearranged Number (MEDIUM)
+            long num = 0;
+
+            LeetCode_2165 classLeetCode = new LeetCode_2165();
+            Console.WriteLine(classLeetCode.SmallestNumber(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SmallestNumber(num));
 
             ////(2169.) Count Operations to Obtain Zero (EASY)
             //int num1 = 2;
