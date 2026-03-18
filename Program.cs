@@ -8313,6 +8313,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.EvaluateTree(root));
 
+            ////(2335.) Minimum Amount of Time to Fill Cups (EASY)
+            int[] amount = [5,4,4];
+
+            LeetCode_2335 classLeetCode = new LeetCode_2335();
+            Console.WriteLine(classLeetCode.FillCups(amount));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FillCups(amount));
+
             ////(2341.) Maximum Number of Pairs in Array (EASY)
             //int[] nums = [1, 3, 2, 1, 3, 2, 2];
 
@@ -9801,15 +9811,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.ResultArray(nums)));
 
             ////(3070.) Count Submatrices with Top-Left Element and Sum Less Than k (MEDIUM)
-            int[][] grid = [[1, 10], [7, 2], [9, 1], [4, 1]];
-            int k = 8;
+            //int[][] grid = [[1, 10], [7, 2], [9, 1], [4, 1]];
+            //int k = 8;
 
-            LeetCode_3070 classLeetCode = new LeetCode_3070();
-            Console.WriteLine(classLeetCode.CountSubmatrices(grid, k));
+            //LeetCode_3070 classLeetCode = new LeetCode_3070();
+            //Console.WriteLine(classLeetCode.CountSubmatrices(grid, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountSubmatrices(grid, k));
+            //Console.WriteLine(leetCodeAll.CountSubmatrices(grid, k));
 
             ////(3074.) Apple Redistribution into Boxes (EASY)
             //int[] apple = [1, 3, 2];
