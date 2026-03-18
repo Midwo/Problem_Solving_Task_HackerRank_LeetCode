@@ -7801,14 +7801,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SortEvenOdd(nums)));
 
             ////(2165.) Smallest Value of the Rearranged Number (MEDIUM)
-            long num = 0;
+            //long num = 0;
 
-            LeetCode_2165 classLeetCode = new LeetCode_2165();
-            Console.WriteLine(classLeetCode.SmallestNumber(num));
+            //LeetCode_2165 classLeetCode = new LeetCode_2165();
+            //Console.WriteLine(classLeetCode.SmallestNumber(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SmallestNumber(num));
+            //Console.WriteLine(leetCodeAll.SmallestNumber(num));
 
             ////(2169.) Count Operations to Obtain Zero (EASY)
             //int num1 = 2;
@@ -9799,6 +9799,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ResultArray(nums)));
+
+            ////(3070.) Count Submatrices with Top-Left Element and Sum Less Than k (MEDIUM)
+            int[][] grid = [[1, 10], [7, 2], [9, 1], [4, 1]];
+            int k = 8;
+
+            LeetCode_3070 classLeetCode = new LeetCode_3070();
+            Console.WriteLine(classLeetCode.CountSubmatrices(grid, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountSubmatrices(grid, k));
 
             ////(3074.) Apple Redistribution into Boxes (EASY)
             //int[] apple = [1, 3, 2];
