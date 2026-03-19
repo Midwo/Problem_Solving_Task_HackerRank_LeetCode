@@ -8314,14 +8314,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.EvaluateTree(root));
 
             ////(2335.) Minimum Amount of Time to Fill Cups (EASY)
-            int[] amount = [5,4,4];
+            //int[] amount = [5,4,4];
 
-            LeetCode_2335 classLeetCode = new LeetCode_2335();
-            Console.WriteLine(classLeetCode.FillCups(amount));
+            //LeetCode_2335 classLeetCode = new LeetCode_2335();
+            //Console.WriteLine(classLeetCode.FillCups(amount));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FillCups(amount));
+            //Console.WriteLine(leetCodeAll.FillCups(amount));
 
             ////(2341.) Maximum Number of Pairs in Array (EASY)
             //int[] nums = [1, 3, 2, 1, 3, 2, 2];
@@ -10183,6 +10183,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ValidStrings(n)));
+
+            ////(3212.) Count Submatrices With Equal Frequency of X and Y (MEDIUM)
+            char[][] grid = [['X', 'Y', '.'], ['Y', '.', '.']];
+
+            LeetCode_3212 classLeetCode = new LeetCode_3212();
+            Console.WriteLine(classLeetCode.NumberOfSubmatrices(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumberOfSubmatrices(grid));
 
             ////(3216.) Lexicographically Smallest String After a Swap (EASY)
             //string s = "13";
