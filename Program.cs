@@ -8472,6 +8472,17 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', item));
             //}
 
+            ////(2379.) Minimum Recolors to Get K Consecutive Black Blocks (EASY)
+            string blocks = "WWBBBWBBBBBWWBWWWB";
+            int k = 16;
+
+            LeetCode_2379 classLeetCode = new LeetCode_2379();
+            Console.WriteLine(classLeetCode.MinimumRecolors(blocks, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumRecolors(blocks, k));
+
             ////(2391.) Minimum Amount of Time to Collect Garbage (MEDIUM)
             //string[] garbage = ["G", "P", "GP", "GG"];
             //int[] travel = [2, 4, 3];
@@ -11048,22 +11059,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestIndex(nums));
 
             ////(3567.) Minimum Absolute Difference in Sliding Submatrix (MEDIUM)
-            int[][] grid = [[3,-1]];
-            int k = 1;
+            //int[][] grid = [[3,-1]];
+            //int k = 1;
 
-            LeetCode_3567 classLeetCode = new LeetCode_3567();
+            //LeetCode_3567 classLeetCode = new LeetCode_3567();
 
-            foreach (var item in classLeetCode.MinAbsDiff(grid, k))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in classLeetCode.MinAbsDiff(grid, k))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.MinAbsDiff(grid, k))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.MinAbsDiff(grid, k))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(3572.) Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values (MEDIUM)
             //int[] x = [1, 2, 1, 3, 2];
