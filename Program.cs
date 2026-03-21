@@ -8473,15 +8473,15 @@ namespace ProblemSolving
             //}
 
             ////(2379.) Minimum Recolors to Get K Consecutive Black Blocks (EASY)
-            string blocks = "WWBBBWBBBBBWWBWWWB";
-            int k = 16;
+            //string blocks = "WWBBBWBBBBBWWBWWWB";
+            //int k = 16;
 
-            LeetCode_2379 classLeetCode = new LeetCode_2379();
-            Console.WriteLine(classLeetCode.MinimumRecolors(blocks, k));
+            //LeetCode_2379 classLeetCode = new LeetCode_2379();
+            //Console.WriteLine(classLeetCode.MinimumRecolors(blocks, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumRecolors(blocks, k));
+            //Console.WriteLine(leetCodeAll.MinimumRecolors(blocks, k));
 
             ////(2391.) Minimum Amount of Time to Collect Garbage (MEDIUM)
             //string[] garbage = ["G", "P", "GP", "GG"];
@@ -11409,25 +11409,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumScore(nums));
 
+            ////(3809.) Best Reachable Tower (MEDIUM)
+            int[][] towers = [[1, 3, 4], [2, 2, 4], [4, 4, 7]];
+            int[] center = [0,0];
+            int radius = 5;
 
+            LeetCode_3809 classLeetCode = new LeetCode_3809();
+            Console.WriteLine(string.Join(',', classLeetCode.BestTower(towers, center, radius)));
 
+            //OR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            Console.WriteLine(string.Join(',', leetCodeAll.BestTower(towers, center, radius)));
 
 
 
