@@ -8998,6 +8998,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
 
+            ////(2579.) Count Total Number of Colored Cells (MEDIUM)
+            int n = 4;
+
+            LeetCode_2579 classLeetCode = new LeetCode_2579();
+            Console.WriteLine(classLeetCode.ColoredCells(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ColoredCells(n));
+
             ////(2582.) Pass the Pillow (EASY)
             //int n = 4;
             //int time = 5;
@@ -11410,16 +11420,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumScore(nums));
 
             ////(3809.) Best Reachable Tower (MEDIUM)
-            int[][] towers = [[1, 3, 4], [2, 2, 4], [4, 4, 7]];
-            int[] center = [0,0];
-            int radius = 5;
+            //int[][] towers = [[1, 3, 4], [2, 2, 4], [4, 4, 7]];
+            //int[] center = [0,0];
+            //int radius = 5;
 
-            LeetCode_3809 classLeetCode = new LeetCode_3809();
-            Console.WriteLine(string.Join(',', classLeetCode.BestTower(towers, center, radius)));
+            //LeetCode_3809 classLeetCode = new LeetCode_3809();
+            //Console.WriteLine(string.Join(',', classLeetCode.BestTower(towers, center, radius)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.BestTower(towers, center, radius)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.BestTower(towers, center, radius)));
 
 
 

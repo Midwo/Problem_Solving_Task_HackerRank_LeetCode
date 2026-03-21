@@ -28714,8 +28714,18 @@ namespace ProblemSolving
 
             return new int[] { resultX, resultY };
         }
+        public long ColoredCells(int n)
+        {
+            if (n == 1)
+            {
+                return 1;
+            }
 
+            long temp = (1 + (n - 1) * 2);
+            long result = ((temp + 1) * n / 2) + ((temp - 1) * (n - 1) / 2);
 
+            return result;
+        }
 
 
 
