@@ -6991,6 +6991,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsSumEqual(firstWord, secondWord, targetWord));
 
+            ////(1886.) Determine Whether Matrix Can Be Obtained By Rotatio (EASY)
+            int[][] mat = [[0, 0, 0], [0, 1, 0], [1, 1, 1]];
+            int[][] target = [[1,1,1],[0,1,0],[0,0,0]];
+
+            LeetCode_1886 classLeetCode = new LeetCode_1886();
+            Console.WriteLine(classLeetCode.FindRotation(mat, target));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindRotation(mat, target));
+
             ////(1888.) Minimum Number of Flips to Make the Binary String Alternating (MEDIUM) 
             //string s = "01001001101";
 
@@ -8999,14 +9010,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
 
             ////(2579.) Count Total Number of Colored Cells (MEDIUM)
-            int n = 4;
+            //int n = 4;
 
-            LeetCode_2579 classLeetCode = new LeetCode_2579();
-            Console.WriteLine(classLeetCode.ColoredCells(n));
+            //LeetCode_2579 classLeetCode = new LeetCode_2579();
+            //Console.WriteLine(classLeetCode.ColoredCells(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ColoredCells(n));
+            //Console.WriteLine(leetCodeAll.ColoredCells(n));
 
             ////(2582.) Pass the Pillow (EASY)
             //int n = 4;
