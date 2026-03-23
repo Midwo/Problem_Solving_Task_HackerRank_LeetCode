@@ -6057,6 +6057,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SumOddLengthSubarrays(arr));
 
+            ////(1594.) Maximum Non Negative Product in a Matrix (MEDIUM)
+            int[][] grid = [[1, -1, 2, 1, -1, 0, 0, 4, 3, 2, 0, -2, -2], [-2, 3, 3, -1, -1, 0, 0, -2, 4, -3, 3, 0, 0], [-4, -1, -1, -2, 2, -1, -2, -2, 0, 3, -1, -4, 1], [-3, 4, -3, 0, -3, 1, -3, 1, 4, 4, -4, -4, -2], [3, -3, 1, 0, -1, -4, -4, -4, 3, 2, 2, 3, 3], [2, -1, -1, -4, -3, -3, 4, 2, 3, 4, 4, -4, 0], [4, -1, 2, -3, -1, -1, -3, -4, 4, 4, 4, -3, -1], [-3, -4, 4, -2, -1, 2, 3, -1, 2, 3, 4, 4, -4], [-3, -1, -2, 1, 1, -1, -3, -4, -3, 1, -3, 3, -4], [2, 4, 4, 4, -3, -3, 1, -1, 3, 4, -1, 1, 4], [2, -2, 0, 4, -1, 0, -2, 4, -4, 0, 0, 2, -3], [1, 1, -3, 0, -4, -4, -4, -4, 0, -1, -4, -1, 0], [3, -1, -3, -3, -3, -2, -1, 4, -1, -2, 4, 2, 3]];
+
+            LeetCode_1594 classLeetCode = new LeetCode_1594();
+            Console.WriteLine(classLeetCode.MaxProductPath(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxProductPath(grid));
+
             ////(1598.) Crawler Log Folder (EASY)
             //string[] logs = ["d1/", "d2/", "../", "d21/", "./"];
 
@@ -6992,15 +7002,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsSumEqual(firstWord, secondWord, targetWord));
 
             ////(1886.) Determine Whether Matrix Can Be Obtained By Rotatio (EASY)
-            int[][] mat = [[0, 0, 0], [0, 1, 0], [1, 1, 1]];
-            int[][] target = [[1,1,1],[0,1,0],[0,0,0]];
+            //int[][] mat = [[0, 0, 0], [0, 1, 0], [1, 1, 1]];
+            //int[][] target = [[1,1,1],[0,1,0],[0,0,0]];
 
-            LeetCode_1886 classLeetCode = new LeetCode_1886();
-            Console.WriteLine(classLeetCode.FindRotation(mat, target));
+            //LeetCode_1886 classLeetCode = new LeetCode_1886();
+            //Console.WriteLine(classLeetCode.FindRotation(mat, target));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindRotation(mat, target));
+            //Console.WriteLine(leetCodeAll.FindRotation(mat, target));
 
             ////(1888.) Minimum Number of Flips to Make the Binary String Alternating (MEDIUM) 
             //string s = "01001001101";
