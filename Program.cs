@@ -7588,15 +7588,15 @@ namespace ProblemSolving
             //}
 
             ////(2090.) K Radius Subarray Averages (MEDIUM)
-            int[] nums = [8];
-            int k = 100000;
+            //int[] nums = [8];
+            //int k = 100000;
 
-            LeetCode_2090 classLeetCode = new LeetCode_2090();
-            Console.WriteLine(string.Join(',', classLeetCode.GetAverages(nums, k)));
+            //LeetCode_2090 classLeetCode = new LeetCode_2090();
+            //Console.WriteLine(string.Join(',', classLeetCode.GetAverages(nums, k)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.GetAverages(nums, k)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.GetAverages(nums, k)));
 
             ////(2094.) Finding 3-Digit Even Numbers (EASY)
             //int[] digits = [2, 1, 3, 0];
@@ -9575,6 +9575,24 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindIndices(nums, indexDifference, valueDifference)));
+
+            ////(2906.) Construct Product Matrix (MEDIUM)
+            int[][] grid = [[414750857], [449145368], [767292749]];
+
+            LeetCode_2906 classLeetCode = new LeetCode_2906();
+
+            foreach (var item in classLeetCode.ConstructProductMatrix(grid))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+
+            foreach (var item in leetCodeAll.ConstructProductMatrix(grid))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             ////(2908.) Minimum Sum of Mountain Triplets I (EASY)
             //int[] nums = [5,4,8,7,10,2];
