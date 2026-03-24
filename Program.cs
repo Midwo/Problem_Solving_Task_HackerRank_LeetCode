@@ -9577,22 +9577,22 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindIndices(nums, indexDifference, valueDifference)));
 
             ////(2906.) Construct Product Matrix (MEDIUM)
-            int[][] grid = [[414750857], [449145368], [767292749]];
+            //int[][] grid = [[414750857], [449145368], [767292749]];
 
-            LeetCode_2906 classLeetCode = new LeetCode_2906();
+            //LeetCode_2906 classLeetCode = new LeetCode_2906();
 
-            foreach (var item in classLeetCode.ConstructProductMatrix(grid))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in classLeetCode.ConstructProductMatrix(grid))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
 
-            foreach (var item in leetCodeAll.ConstructProductMatrix(grid))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.ConstructProductMatrix(grid))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(2908.) Minimum Sum of Mountain Triplets I (EASY)
             //int[] nums = [5,4,8,7,10,2];
@@ -11045,6 +11045,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FindClosest(x, y, z));
+
+            ////(3517.) Smallest Palindromic Rearrangement I (MEDIUM)
+            string s = "babab";
+
+            LeetCode_3517 classLeetCode = new LeetCode_3517();
+            Console.WriteLine(classLeetCode.SmallestPalindrome(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SmallestPalindrome(s));
 
             ////(3522.) Calculate Score After Performing Instructions (MEDIUM)
             //string[] instructions = ["jump", "add", "add", "jump", "add", "jump"];
