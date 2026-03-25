@@ -5078,6 +5078,16 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', item));
             //}
 
+            ////(1331.) Rank Transform of an Array (EASY)
+            int[] arr = [37, 12, 28, 9, 100, 56, 80, 5, 12];
+
+            LeetCode_1331 classLeetCode = new LeetCode_1331();
+            Console.WriteLine(string.Join(',', classLeetCode.ArrayRankTransform(arr)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ArrayRankTransform(arr)));
+
             ////(1332.) Remove Palindromic Subsequences (EASY)
             //string s = "ababa";
 
@@ -11119,14 +11129,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinDeletion(s, k));
 
             ////(3546.) Equal Sum Grid Partition I (MEDIUM)
-            int[][] grid = [[65917, 79299]];
+            //int[][] grid = [[65917, 79299]];
 
-            LeetCode_3546 classLeetCode = new LeetCode_3546();
-            Console.WriteLine(classLeetCode.CanPartitionGrid(grid));
+            //LeetCode_3546 classLeetCode = new LeetCode_3546();
+            //Console.WriteLine(classLeetCode.CanPartitionGrid(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CanPartitionGrid(grid));
+            //Console.WriteLine(leetCodeAll.CanPartitionGrid(grid));
 
             ////(3550.) Smallest Index With Digit Sum Equal to Index (EASY)
             //int[] nums = [1, 10, 11];
