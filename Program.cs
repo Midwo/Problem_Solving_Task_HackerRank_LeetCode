@@ -11047,14 +11047,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindClosest(x, y, z));
 
             ////(3517.) Smallest Palindromic Rearrangement I (MEDIUM)
-            string s = "babab";
+            //string s = "babab";
 
-            LeetCode_3517 classLeetCode = new LeetCode_3517();
-            Console.WriteLine(classLeetCode.SmallestPalindrome(s));
+            //LeetCode_3517 classLeetCode = new LeetCode_3517();
+            //Console.WriteLine(classLeetCode.SmallestPalindrome(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SmallestPalindrome(s));
+            //Console.WriteLine(leetCodeAll.SmallestPalindrome(s));
 
             ////(3522.) Calculate Score After Performing Instructions (MEDIUM)
             //string[] instructions = ["jump", "add", "add", "jump", "add", "jump"];
@@ -11117,6 +11117,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinDeletion(s, k));
+
+            ////(3546.) Equal Sum Grid Partition I (MEDIUM)
+            int[][] grid = [[65917, 79299]];
+
+            LeetCode_3546 classLeetCode = new LeetCode_3546();
+            Console.WriteLine(classLeetCode.CanPartitionGrid(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CanPartitionGrid(grid));
 
             ////(3550.) Smallest Index With Digit Sum Equal to Index (EASY)
             //int[] nums = [1, 10, 11];
