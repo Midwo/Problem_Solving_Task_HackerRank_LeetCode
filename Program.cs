@@ -5079,14 +5079,14 @@ namespace ProblemSolving
             //}
 
             ////(1331.) Rank Transform of an Array (EASY)
-            int[] arr = [37, 12, 28, 9, 100, 56, 80, 5, 12];
+            //int[] arr = [37, 12, 28, 9, 100, 56, 80, 5, 12];
 
-            LeetCode_1331 classLeetCode = new LeetCode_1331();
-            Console.WriteLine(string.Join(',', classLeetCode.ArrayRankTransform(arr)));
+            //LeetCode_1331 classLeetCode = new LeetCode_1331();
+            //Console.WriteLine(string.Join(',', classLeetCode.ArrayRankTransform(arr)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ArrayRankTransform(arr)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ArrayRankTransform(arr)));
 
             ////(1332.) Remove Palindromic Subsequences (EASY)
             //string s = "ababa";
@@ -7058,6 +7058,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsCovered(ranges, left, right));
+
+            ////(1894.) Find the Student that Will Replace the Chalk (MEDIUM)
+            int[] chalk = [1, 1, 1];
+            int k = 2;
+
+            LeetCode_1894 classLeetCode =   new LeetCode_1894();
+            Console.WriteLine(classLeetCode.ChalkReplacer(chalk, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ChalkReplacer(chalk, k));
 
             ////(1897.) Redistribute Characters to Make All Strings Equal (EASY)
             //string[] words = ["abc", "aabc", "bc"];
