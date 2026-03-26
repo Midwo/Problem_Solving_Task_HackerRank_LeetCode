@@ -7060,15 +7060,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsCovered(ranges, left, right));
 
             ////(1894.) Find the Student that Will Replace the Chalk (MEDIUM)
-            int[] chalk = [1, 1, 1];
-            int k = 2;
+            //int[] chalk = [1, 1, 1];
+            //int k = 2;
 
-            LeetCode_1894 classLeetCode =   new LeetCode_1894();
-            Console.WriteLine(classLeetCode.ChalkReplacer(chalk, k));
+            //LeetCode_1894 classLeetCode =   new LeetCode_1894();
+            //Console.WriteLine(classLeetCode.ChalkReplacer(chalk, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ChalkReplacer(chalk, k));
+            //Console.WriteLine(leetCodeAll.ChalkReplacer(chalk, k));
 
             ////(1897.) Redistribute Characters to Make All Strings Equal (EASY)
             //string[] words = ["abc", "aabc", "bc"];
@@ -8587,6 +8587,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MostFrequentEven(nums));
+
+            ////(2405.) Optimal Partition of String (MEDIUM)
+            string s = "abacaba";
+
+            LeetCode_2405 classLeetCode = new LeetCode_2405();
+            Console.WriteLine(classLeetCode.PartitionString(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.PartitionString(s));
 
             ////(2410.) Maximum Matching of Players With Trainers (MEDIUM)
             //int[] players = [4, 7, 9];
