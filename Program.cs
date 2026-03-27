@@ -3377,6 +3377,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.BackspaceCompare(s, t));
 
+            ////(848.) Shifting Letters (MEDIUM)
+            string s = "abc";
+            int[] shifts = [3,5,9];
+
+            LeetCode_848 classLeetCode = new LeetCode_848();
+            Console.WriteLine(classLeetCode.ShiftingLetters(s, shifts));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ShiftingLetters(s, shifts));
+
             ////(852.) Peak Index in a Mountain Array (MEDIUM)
             //int[] arr = [0, 10, 5, 2];
 
@@ -9688,15 +9699,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindWordsContaining(words, x)));
 
             ////(2946.) Matrix Similarity After Cyclic Shifts (EASY)
-            int[][] mat = [[9, 1, 8, 9, 2, 9, 1, 8, 9, 2], [10, 2, 7, 8, 9, 10, 2, 7, 8, 9], [7, 6, 6, 9, 5, 7, 6, 6, 9, 5]];
-            int k = 5;
+            //int[][] mat = [[9, 1, 8, 9, 2, 9, 1, 8, 9, 2], [10, 2, 7, 8, 9, 10, 2, 7, 8, 9], [7, 6, 6, 9, 5, 7, 6, 6, 9, 5]];
+            //int k = 5;
 
-            LeetCode_2946 classLeetCode = new LeetCode_2946();
-            Console.WriteLine(classLeetCode.AreSimilar(mat, k));
+            //LeetCode_2946 classLeetCode = new LeetCode_2946();
+            //Console.WriteLine(classLeetCode.AreSimilar(mat, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.AreSimilar(mat, k));
+            //Console.WriteLine(leetCodeAll.AreSimilar(mat, k));
 
             ////(2951.) Find the Peaks (EASY)
             //int[] mountain = [1, 4, 3, 8, 5];
