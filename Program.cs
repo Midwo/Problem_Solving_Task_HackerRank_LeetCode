@@ -8589,14 +8589,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MostFrequentEven(nums));
 
             ////(2405.) Optimal Partition of String (MEDIUM)
-            string s = "abacaba";
+            //string s = "abacaba";
 
-            LeetCode_2405 classLeetCode = new LeetCode_2405();
-            Console.WriteLine(classLeetCode.PartitionString(s));
+            //LeetCode_2405 classLeetCode = new LeetCode_2405();
+            //Console.WriteLine(classLeetCode.PartitionString(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PartitionString(s));
+            //Console.WriteLine(leetCodeAll.PartitionString(s));
 
             ////(2410.) Maximum Matching of Players With Trainers (MEDIUM)
             //int[] players = [4, 7, 9];
@@ -9686,6 +9686,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindWordsContaining(words, x)));
+
+            ////(2946.) Matrix Similarity After Cyclic Shifts (EASY)
+            int[][] mat = [[9, 1, 8, 9, 2, 9, 1, 8, 9, 2], [10, 2, 7, 8, 9, 10, 2, 7, 8, 9], [7, 6, 6, 9, 5, 7, 6, 6, 9, 5]];
+            int k = 5;
+
+            LeetCode_2946 classLeetCode = new LeetCode_2946();
+            Console.WriteLine(classLeetCode.AreSimilar(mat, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AreSimilar(mat, k));
 
             ////(2951.) Find the Peaks (EASY)
             //int[] mountain = [1, 4, 3, 8, 5];
