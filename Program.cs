@@ -7374,14 +7374,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindMiddleIndex(nums));
 
             ////(1995.) Count Special Quadruplets (EASY)
-            int[] nums = [35, 15, 38, 1, 10, 26];
+            //int[] nums = [35, 15, 38, 1, 10, 26];
 
-            LeetCode_1995 classLeetCode = new LeetCode_1995();
-            Console.WriteLine(classLeetCode.CountQuadruplets(nums));
+            //LeetCode_1995 classLeetCode = new LeetCode_1995();
+            //Console.WriteLine(classLeetCode.CountQuadruplets(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountQuadruplets(nums));
+            //Console.WriteLine(leetCodeAll.CountQuadruplets(nums));
 
             ////(2000.) Reverse Prefix of Word (EASY)
             //string word = "abcdefd";
@@ -9615,6 +9615,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DifferenceOfSums(n, m));
+
+            ////(2895.) Minimum Processing Time (MEDIUM)
+            IList<int> processorTime = [10, 20];
+            IList<int> tasks = [2, 3, 1, 2, 5, 8, 4, 3];
+
+            LeetCode_2895 classLeetCode = new LeetCode_2895();
+            Console.WriteLine(classLeetCode.MinProcessingTime(processorTime, tasks));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinProcessingTime(processorTime, tasks));
 
             ////(2903.) Find Indices With Index and Value Difference I (EASY)
             //int[] nums = [5, 1, 4, 1];
