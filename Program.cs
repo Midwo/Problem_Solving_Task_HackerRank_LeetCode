@@ -3378,15 +3378,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BackspaceCompare(s, t));
 
             ////(848.) Shifting Letters (MEDIUM)
-            string s = "abc";
-            int[] shifts = [3,5,9];
+            //string s = "abc";
+            //int[] shifts = [3,5,9];
 
-            LeetCode_848 classLeetCode = new LeetCode_848();
-            Console.WriteLine(classLeetCode.ShiftingLetters(s, shifts));
+            //LeetCode_848 classLeetCode = new LeetCode_848();
+            //Console.WriteLine(classLeetCode.ShiftingLetters(s, shifts));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ShiftingLetters(s, shifts));
+            //Console.WriteLine(leetCodeAll.ShiftingLetters(s, shifts));
 
             ////(852.) Peak Index in a Mountain Array (MEDIUM)
             //int[] arr = [0, 10, 5, 2];
@@ -7372,6 +7372,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FindMiddleIndex(nums));
+
+            ////(1995.) Count Special Quadruplets (EASY)
+            int[] nums = [35, 15, 38, 1, 10, 26];
+
+            LeetCode_1995 classLeetCode = new LeetCode_1995();
+            Console.WriteLine(classLeetCode.CountQuadruplets(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountQuadruplets(nums));
 
             ////(2000.) Reverse Prefix of Word (EASY)
             //string word = "abcdefd";
