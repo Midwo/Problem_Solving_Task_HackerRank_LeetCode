@@ -7530,6 +7530,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NextBeautifulNumber(n));
 
+            ////(2053.) Kth Distinct String in an Array (EASY)
+            string[] arr = ["d", "b", "c", "b", "c", "a"];
+            int k = 2;
+
+            LeetCode_2053 classLeetCode = new LeetCode_2053();
+            Console.WriteLine(classLeetCode.KthDistinct(arr, k ));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.KthDistinct(arr, k));
+
             ////(2054.) Two Best Non-Overlapping Events (MEDIUM)
             //int[][] events = [[1, 3, 2], [1000000000, 1000000000, 10]];
 
@@ -9617,15 +9628,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DifferenceOfSums(n, m));
 
             ////(2895.) Minimum Processing Time (MEDIUM)
-            IList<int> processorTime = [10, 20];
-            IList<int> tasks = [2, 3, 1, 2, 5, 8, 4, 3];
+            //IList<int> processorTime = [10, 20];
+            //IList<int> tasks = [2, 3, 1, 2, 5, 8, 4, 3];
 
-            LeetCode_2895 classLeetCode = new LeetCode_2895();
-            Console.WriteLine(classLeetCode.MinProcessingTime(processorTime, tasks));
+            //LeetCode_2895 classLeetCode = new LeetCode_2895();
+            //Console.WriteLine(classLeetCode.MinProcessingTime(processorTime, tasks));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinProcessingTime(processorTime, tasks));
+            //Console.WriteLine(leetCodeAll.MinProcessingTime(processorTime, tasks));
 
             ////(2903.) Find Indices With Index and Value Difference I (EASY)
             //int[] nums = [5, 1, 4, 1];
