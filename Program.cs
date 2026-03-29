@@ -5592,6 +5592,21 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.SimplifiedFractions(n)));
 
+            ////(1448.) Count Good Nodes in Binary Tree (MEDIUM)
+            TreeNode root = new TreeNode(3);
+            root.left = new TreeNode(1);
+            root.left.left = new TreeNode(3);
+            root.right = new TreeNode(4);
+            root.right.right = new TreeNode(5);
+            root.right.left = new TreeNode(1);
+
+            LeetCode_1448 classLeetCode = new LeetCode_1448();
+            Console.WriteLine(classLeetCode.GoodNodes(root));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GoodNodes(root));
+            
             ////(1450.) Number of Students Doing Homework at a Given Time (EASY)
             //int[] startTime = [1, 2, 3];
             //int[] endTime = [3, 2, 7];
@@ -7531,15 +7546,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NextBeautifulNumber(n));
 
             ////(2053.) Kth Distinct String in an Array (EASY)
-            string[] arr = ["d", "b", "c", "b", "c", "a"];
-            int k = 2;
+            //string[] arr = ["d", "b", "c", "b", "c", "a"];
+            //int k = 2;
 
-            LeetCode_2053 classLeetCode = new LeetCode_2053();
-            Console.WriteLine(classLeetCode.KthDistinct(arr, k ));
+            //LeetCode_2053 classLeetCode = new LeetCode_2053();
+            //Console.WriteLine(classLeetCode.KthDistinct(arr, k ));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.KthDistinct(arr, k));
+            //Console.WriteLine(leetCodeAll.KthDistinct(arr, k));
 
             ////(2054.) Two Best Non-Overlapping Events (MEDIUM)
             //int[][] events = [[1, 3, 2], [1000000000, 1000000000, 10]];

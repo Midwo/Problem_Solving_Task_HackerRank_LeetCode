@@ -29420,8 +29420,33 @@ namespace ProblemSolving
 
             //return string.Empty;
         }
+       
+        private int _countGoodNodesTask1448;
+        public int GoodNodes(TreeNode root)
+        {
+            _countGoodNodesTask1448 = 0;
 
+            CountGoodNodes(root.val, root);
 
+            return _countGoodNodesTask1448;
+        }
+        private void CountGoodNodes(int currValueMax, TreeNode root)
+        {
+            if (root == null)
+            {
+                return;
+            }
+            int currValueRoot = root.val;
+
+            if (currValueMax <= currValueRoot)
+            {
+                _countGoodNodesTask1448++;
+                currValueMax = currValueRoot;
+            }
+
+            CountGoodNodes(currValueMax, root.left);
+            CountGoodNodes(currValueMax, root.right);
+        }
 
 
 
