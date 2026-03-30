@@ -9108,6 +9108,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
 
+            ////(2578.) Split With Minimum Sum (EASY)
+            int num = 4325;
+
+            LeetCode_2578 classLeetCode = new LeetCode_2578();
+            Console.WriteLine(classLeetCode.SplitNum(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SplitNum(num));
+
             ////(2579.) Count Total Number of Colored Cells (MEDIUM)
             //int n = 4;
 
@@ -9569,15 +9579,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanBeEqual(s1, s2));
 
             ////(2840.) Check if Strings Can be Made Equal With Operations II (MEDIUM)
-            string s1 = "jh";
-            string s2 = "fy";
+            //string s1 = "jh";
+            //string s2 = "fy";
 
-            LeetCode_2840 classLeetCode = new LeetCode_2840();
-            Console.WriteLine(classLeetCode.CheckStrings(s1, s2));
+            //LeetCode_2840 classLeetCode = new LeetCode_2840();
+            //Console.WriteLine(classLeetCode.CheckStrings(s1, s2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckStrings(s1, s2));
+            //Console.WriteLine(leetCodeAll.CheckStrings(s1, s2));
 
             ////(2843.) Count Symmetric Integers (EASY)
             //int low = 1200;
