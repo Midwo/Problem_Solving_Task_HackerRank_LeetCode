@@ -5593,20 +5593,20 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SimplifiedFractions(n)));
 
             ////(1448.) Count Good Nodes in Binary Tree (MEDIUM)
-            TreeNode root = new TreeNode(3);
-            root.left = new TreeNode(1);
-            root.left.left = new TreeNode(3);
-            root.right = new TreeNode(4);
-            root.right.right = new TreeNode(5);
-            root.right.left = new TreeNode(1);
+            //TreeNode root = new TreeNode(3);
+            //root.left = new TreeNode(1);
+            //root.left.left = new TreeNode(3);
+            //root.right = new TreeNode(4);
+            //root.right.right = new TreeNode(5);
+            //root.right.left = new TreeNode(1);
 
-            LeetCode_1448 classLeetCode = new LeetCode_1448();
-            Console.WriteLine(classLeetCode.GoodNodes(root));
+            //LeetCode_1448 classLeetCode = new LeetCode_1448();
+            //Console.WriteLine(classLeetCode.GoodNodes(root));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GoodNodes(root));
-            
+            //Console.WriteLine(leetCodeAll.GoodNodes(root));
+
             ////(1450.) Number of Students Doing Homework at a Given Time (EASY)
             //int[] startTime = [1, 2, 3];
             //int[] endTime = [3, 2, 7];
@@ -9567,6 +9567,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CanBeEqual(s1, s2));
+
+            ////(2840.) Check if Strings Can be Made Equal With Operations II (MEDIUM)
+            string s1 = "jh";
+            string s2 = "fy";
+
+            LeetCode_2840 classLeetCode = new LeetCode_2840();
+            Console.WriteLine(classLeetCode.CheckStrings(s1, s2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckStrings(s1, s2));
 
             ////(2843.) Count Symmetric Integers (EASY)
             //int low = 1200;
