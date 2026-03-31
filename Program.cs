@@ -4055,6 +4055,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.DivisorGame(n));
 
+            ////(1029.) Two City Scheduling (MEDIUM)
+            int[][] costs = [[515, 563], [451, 713], [537, 709], [343, 819], [855, 779], [457, 60], [650, 359], [631, 42]];
+
+            LeetCode_1029 classLeetCode = new LeetCode_1029();
+            Console.WriteLine(classLeetCode.TwoCitySchedCost(costs));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.TwoCitySchedCost(costs));
+
             ////(1030.) Matrix Cells in Distance Order (EASY)
             //int rows = 2;
             //int cols = 3;
@@ -9173,14 +9183,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinNumber(nums1, nums2));
 
             ////(2609.) Find the Longest Balanced Substring of a Binary String (EASY)
-            string s = "01000111";
+            //string s = "01000111";
 
-            LeetCode_2609 classLeetCode = new LeetCode_2609();
-            Console.WriteLine(classLeetCode.FindTheLongestBalancedSubstring(s));
+            //LeetCode_2609 classLeetCode = new LeetCode_2609();
+            //Console.WriteLine(classLeetCode.FindTheLongestBalancedSubstring(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindTheLongestBalancedSubstring(s));
+            //Console.WriteLine(leetCodeAll.FindTheLongestBalancedSubstring(s));
 
             ////(2610.) Convert an Array Into a 2D Array With Conditions (MEDIUM)
             //int[] nums = [1, 3, 4, 1, 2, 3, 1];
