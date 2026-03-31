@@ -14,7 +14,7 @@ namespace ProblemSolving.LeetCode
             int currCountZero = 0;
             int currCountOne = 0;
             bool resetZero = false;
-            int maxBalancedLenght = 0;
+            int maxBalancedLength = 0;
 
             for (int i = 0; i < s.Length; i++)
             {
@@ -32,11 +32,11 @@ namespace ProblemSolving.LeetCode
                 {
                     currCountOne++;
                     resetZero = true;
-                    maxBalancedLenght = Math.Max(maxBalancedLenght, Math.Min(currCountZero, currCountOne)*2);
+                    maxBalancedLength = Math.Max(maxBalancedLength, Math.Min(currCountZero, currCountOne)*2);
                 }
             }
 
-            return maxBalancedLenght;
+            return maxBalancedLength;
         }
     }
 }
