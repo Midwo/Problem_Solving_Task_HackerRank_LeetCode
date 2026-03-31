@@ -9109,14 +9109,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.LeftRightDifference(nums)));
 
             ////(2578.) Split With Minimum Sum (EASY)
-            int num = 4325;
+            //int num = 4325;
 
-            LeetCode_2578 classLeetCode = new LeetCode_2578();
-            Console.WriteLine(classLeetCode.SplitNum(num));
+            //LeetCode_2578 classLeetCode = new LeetCode_2578();
+            //Console.WriteLine(classLeetCode.SplitNum(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SplitNum(num));
+            //Console.WriteLine(leetCodeAll.SplitNum(num));
 
             ////(2579.) Count Total Number of Colored Cells (MEDIUM)
             //int n = 4;
@@ -9171,6 +9171,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinNumber(nums1, nums2));
+
+            ////(2609.) Find the Longest Balanced Substring of a Binary String (EASY)
+            string s = "01000111";
+
+            LeetCode_2609 classLeetCode = new LeetCode_2609();
+            Console.WriteLine(classLeetCode.FindTheLongestBalancedSubstring(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindTheLongestBalancedSubstring(s));
 
             ////(2610.) Convert an Array Into a 2D Array With Conditions (MEDIUM)
             //int[] nums = [1, 3, 4, 1, 2, 3, 1];
