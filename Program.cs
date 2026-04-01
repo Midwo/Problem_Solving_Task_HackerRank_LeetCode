@@ -4056,14 +4056,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DivisorGame(n));
 
             ////(1029.) Two City Scheduling (MEDIUM)
-            int[][] costs = [[515, 563], [451, 713], [537, 709], [343, 819], [855, 779], [457, 60], [650, 359], [631, 42]];
+            //int[][] costs = [[515, 563], [451, 713], [537, 709], [343, 819], [855, 779], [457, 60], [650, 359], [631, 42]];
 
-            LeetCode_1029 classLeetCode = new LeetCode_1029();
-            Console.WriteLine(classLeetCode.TwoCitySchedCost(costs));
+            //LeetCode_1029 classLeetCode = new LeetCode_1029();
+            //Console.WriteLine(classLeetCode.TwoCitySchedCost(costs));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.TwoCitySchedCost(costs));
+            //Console.WriteLine(leetCodeAll.TwoCitySchedCost(costs));
 
             ////(1030.) Matrix Cells in Distance Order (EASY)
             //int rows = 2;
@@ -8592,6 +8592,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimumRecolors(blocks, k));
+
+            ////(2390.) Removing Stars From a String (MEDIUM)
+            string s = "leet**cod*e";
+
+            LeetCode_2390 classLeetCode = new LeetCode_2390();
+            Console.WriteLine(classLeetCode.RemoveStars(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.RemoveStars(s));
 
             ////(2391.) Minimum Amount of Time to Collect Garbage (MEDIUM)
             //string[] garbage = ["G", "P", "GP", "GG"];

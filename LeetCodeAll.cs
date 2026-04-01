@@ -29591,8 +29591,32 @@ namespace ProblemSolving
 
             return totalCost;
         }
+        public string RemoveStars(string s)
+        {
+            StringBuilder reverseResultStringBuilder = new StringBuilder();
+            int howManySkips = 0;
 
+            for (int i = s.Length - 1; i >= 0; i--)
+            {
+                if (s[i] == '*')
+                {
+                    howManySkips++;
+                }
+                else
+                {
+                    if (howManySkips > 0)
+                    {
+                        howManySkips--;
+                    }
+                    else
+                    {
+                        reverseResultStringBuilder.Append(s[i]);
+                    }
+                }
+            }
 
+            return new string(reverseResultStringBuilder.ToString().Reverse().ToArray());
+        }
 
 
 
