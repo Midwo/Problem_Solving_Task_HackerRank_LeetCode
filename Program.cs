@@ -8594,14 +8594,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumRecolors(blocks, k));
 
             ////(2390.) Removing Stars From a String (MEDIUM)
-            string s = "leet**cod*e";
+            //string s = "leet**cod*e";
 
-            LeetCode_2390 classLeetCode = new LeetCode_2390();
-            Console.WriteLine(classLeetCode.RemoveStars(s));
+            //LeetCode_2390 classLeetCode = new LeetCode_2390();
+            //Console.WriteLine(classLeetCode.RemoveStars(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.RemoveStars(s));
+            //Console.WriteLine(leetCodeAll.RemoveStars(s));
 
             ////(2391.) Minimum Amount of Time to Collect Garbage (MEDIUM)
             //string[] garbage = ["G", "P", "GP", "GG"];
@@ -9784,6 +9784,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumStrongPairXor(nums));
+
+            ////(2937.) Make Three Strings Equal (EASY)
+            string s1 = "abc", s2 = "abb", s3 = "ab";
+
+            LeetCode_2937 classLeetCode = new LeetCode_2937();
+            Console.WriteLine(classLeetCode.FindMinimumOperations(s1, s2, s3));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindMinimumOperations(s1, s2, s3));
 
             ////(2942.) Find Words Containing Character (EASY)
             //string[] words = ["leet", "code"];
