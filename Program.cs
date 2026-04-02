@@ -10889,14 +10889,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.ZigzagTraversal(grid)));
 
             ////(3418.) Maximum Amount of Money Robot Can Earn (MEDIUM)
-            int[][] coins = [[-4]];
+            //int[][] coins = [[-4]];
 
-            LeetCode_3418 classLeetCode = new LeetCode_3418();
-            Console.WriteLine(classLeetCode.MaximumAmount(coins));
+            //LeetCode_3418 classLeetCode = new LeetCode_3418();
+            //Console.WriteLine(classLeetCode.MaximumAmount(coins));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumAmount(coins));
+            //Console.WriteLine(leetCodeAll.MaximumAmount(coins));
 
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
             //int[] nums = [-5, -10, -5];
@@ -11357,6 +11357,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CheckPrimeFrequency(nums));
+
+            ////(3597.) Partition String (MEDIUM)
+            string s = "abbccccd";
+
+            LeetCode_3597 classLeetCode = new LeetCode_3597();
+            Console.WriteLine(string.Join(',',classLeetCode.PartitionString(s)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.PartitionStringTask3597(s)));
 
             ////(3602.) Hexadecimal and Hexatrigesimal Conversion (EASY)
             //int n = 36;

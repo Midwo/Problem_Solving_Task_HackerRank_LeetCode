@@ -29715,8 +29715,26 @@ namespace ProblemSolving
 
             return Math.Max(dp[rows - 1][cols - 1][0], Math.Max(dp[rows - 1][cols - 1][2], dp[rows - 1][cols - 1][1]));
         }
+        public IList<string> PartitionStringTask3597(string s)
+        {
+            List<string> listPatritionString = new List<string>();
+            HashSet<string> uniqueString = new HashSet<string>();
 
+            string currString = string.Empty;
 
+            for (int index = 0; index < s.Length; index++)
+            {
+                currString += s[index];
+
+                if (uniqueString.Add(currString))
+                {
+                    listPatritionString.Add(currString);
+                    currString = string.Empty;
+                }
+            }
+
+            return listPatritionString;
+        }
 
 
 
