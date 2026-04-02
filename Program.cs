@@ -9786,14 +9786,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumStrongPairXor(nums));
 
             ////(2937.) Make Three Strings Equal (EASY)
-            string s1 = "abc", s2 = "abb", s3 = "ab";
+            //string s1 = "abc", s2 = "abb", s3 = "ab";
 
-            LeetCode_2937 classLeetCode = new LeetCode_2937();
-            Console.WriteLine(classLeetCode.FindMinimumOperations(s1, s2, s3));
+            //LeetCode_2937 classLeetCode = new LeetCode_2937();
+            //Console.WriteLine(classLeetCode.FindMinimumOperations(s1, s2, s3));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindMinimumOperations(s1, s2, s3));
+            //Console.WriteLine(leetCodeAll.FindMinimumOperations(s1, s2, s3));
 
             ////(2942.) Find Words Containing Character (EASY)
             //string[] words = ["leet", "code"];
@@ -10887,6 +10887,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ZigzagTraversal(grid)));
+
+            ////(3418.) Maximum Amount of Money Robot Can Earn (MEDIUM)
+            int[][] coins = [[-4]];
+
+            LeetCode_3418 classLeetCode = new LeetCode_3418();
+            Console.WriteLine(classLeetCode.MaximumAmount(coins));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumAmount(coins));
 
             ////(3423.) Maximum Difference Between Adjacent Elements in a Circular Array (EASY)
             //int[] nums = [-5, -10, -5];
