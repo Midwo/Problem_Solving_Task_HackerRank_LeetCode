@@ -22,6 +22,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Timers;
+using System.Xml;
 using System.Xml.Linq;
 using static ProblemSolving.LeetCode.LeetCode_1476;
 using static ProblemSolving.LeetCode.LeetCode_1656;
@@ -11359,14 +11360,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckPrimeFrequency(nums));
 
             ////(3597.) Partition String (MEDIUM)
-            string s = "abbccccd";
+            //string s = "abbccccd";
 
-            LeetCode_3597 classLeetCode = new LeetCode_3597();
-            Console.WriteLine(string.Join(',',classLeetCode.PartitionString(s)));
+            //LeetCode_3597 classLeetCode = new LeetCode_3597();
+            //Console.WriteLine(string.Join(',',classLeetCode.PartitionString(s)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.PartitionStringTask3597(s)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.PartitionStringTask3597(s)));
 
             ////(3602.) Hexadecimal and Hexatrigesimal Conversion (EASY)
             //int n = 36;
@@ -11682,6 +11683,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.BestTower(towers, center, radius)));
 
+            ////(3843.) First Element with Unique Frequency (MEDIUM)
+            int[] nums = [20, 10, 30, 30];
+
+            LeetCode_3843 classLeetCode = new LeetCode_3843();
+            Console.WriteLine(classLeetCode.FirstUniqueFreq(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FirstUniqueFreq(nums));
 
 
 
