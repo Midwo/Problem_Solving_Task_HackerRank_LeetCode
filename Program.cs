@@ -9588,6 +9588,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsAcronym(words, s));
 
+            ////(2829.) Determine the Minimum Sum of a k-avoiding Array (MEDIUM)
+            int n = 1;
+            int k = 1;
+
+            LeetCode_2829 classLeetCode = new LeetCode_2829();
+            Console.WriteLine(classLeetCode.MinimumSum(n, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumSum(n, k));
+
             ////(2833.) Furthest Point From Origin (EASY)
             //string moves = "L_RL__R";
 
@@ -11684,14 +11695,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.BestTower(towers, center, radius)));
 
             ////(3843.) First Element with Unique Frequency (MEDIUM)
-            int[] nums = [20, 10, 30, 30];
+            //int[] nums = [20, 10, 30, 30];
 
-            LeetCode_3843 classLeetCode = new LeetCode_3843();
-            Console.WriteLine(classLeetCode.FirstUniqueFreq(nums));
+            //LeetCode_3843 classLeetCode = new LeetCode_3843();
+            //Console.WriteLine(classLeetCode.FirstUniqueFreq(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FirstUniqueFreq(nums));
+            //Console.WriteLine(leetCodeAll.FirstUniqueFreq(nums));
 
 
 
