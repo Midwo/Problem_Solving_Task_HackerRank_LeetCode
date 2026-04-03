@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using ProblemSolving.HackerRank;
 using ProblemSolving.LeetCode;
 using System;
 using System.Collections;
@@ -47,24 +48,49 @@ namespace ProblemSolving
     {
         static void Main(string[] args)
         {
-            Basic_Task basic_Task = new Basic_Task();
+            HackerRankAll hackerRankAll = new HackerRankAll();
             LeetCodeAll leetCodeAll = new LeetCodeAll();
 
             //HACKERRANK
 
-            ////Subarray Division 1
-            //Console.WriteLine(basic_Task.birthday([2, 2, 1, 3, 2], 4, 2));
 
-            ////Sales by Match
-            //Console.WriteLine(basic_Task.sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
+            ////1. Subarray Division 1
+            //HackerRank_0001 classHackerRank = new HackerRank_0001();
+            //Console.WriteLine(classHackerRank.birthday([2, 2, 1, 3, 2], 4, 2));
 
-            ////Cats and a Mouse
-            //Console.WriteLine(basic_Task.catAndMouse(1, 2, 3));
+            ////OR
 
-            ////Divisible Sum Pairs
-            //Console.WriteLine(basic_Task.divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]));
+            //Console.WriteLine(hackerRankAll.birthday([2, 2, 1, 3, 2], 4, 2));
 
-            ////Apple and Orange
+
+            ////2. Sales by Match
+            //HackerRank_0002 classHackerRank = new HackerRank_0002();
+            //Console.WriteLine(hackerRankAll.sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
+
+
+            ////3. Cats and a Mouse
+            //HackerRank_0003 classHackerRank = new HackerRank_0003();
+            //Console.WriteLine(classHackerRank.catAndMouse(1, 2, 3));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.catAndMouse(1, 2, 3));
+
+
+            ////4. Divisible Sum Pairs
+            //HackerRank_0004 classHackerRank = new HackerRank_0004();
+            //Console.WriteLine(classHackerRank.divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]));
+
+
+            ////5. Apple and Orange
             //List<int> oranges = new List<int>();
             //oranges = [5, -6];
             //List<int> apples = new List<int>();
@@ -73,131 +99,265 @@ namespace ProblemSolving
             //int a = 3;
             //int t = 15;
             //int s = 5;
-            //basic_Task.countApplesAndOranges(s, t, a, b, apples, oranges);
 
-            ////Grading Students
+            //HackerRank_0005 classHackerRank = new HackerRank_0005();
+            //classHackerRank.countApplesAndOranges(s, t, a, b, apples, oranges);
+
+            ////OR
+
+            //hackerRankAll.countApplesAndOranges(s, t, a, b, apples, oranges);
+
+
+            ////6. Grading Students
             //List<int> grades = new List<int>();
             //grades = [73, 67, 38, 33];
-            //foreach (var item in basic_Task.gradingStudents(grades))
+
+            //HackerRank_0006 classHackerRank = new HackerRank_0006();
+            //foreach (var item in classHackerRank.gradingStudents(grades))
             //{
             //    Console.WriteLine(item);
             //}
 
-            ////Happy Ladybugs
-            //Console.WriteLine(basic_Task.Happy_ladybugs("RBY_YBR"));
+            ////OR
 
-            ////Cavity Map
+            //foreach (var item in hackerRankAll.gradingStudents(grades))
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            ////7. Happy Ladybugs
+            //HackerRank_0007 classHackerRank = new HackerRank_0007();
+            //Console.WriteLine(classHackerRank.Happy_ladybugs("RBY_YBR"));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.Happy_ladybugs("RBY_YBR"));
+
+
+            ////8. Cavity Map
             //List<string> grid = new List<string>();
             //grid = ["1112", "1912", "1892", "1234"];
-            //grid = basic_Task.Cavity_Map(grid);
-            //foreach (string item in grid)
+
+            //HackerRank_0008 classHackerRank = new HackerRank_0008();
+            //var resultgrid1 = classHackerRank.Cavity_Map(grid);
+
+            //foreach (string item in resultgrid1)
             //{
             //    Console.WriteLine(item);
             //}
 
-            ////Modified Kaprekar Numbers
-            //Console.WriteLine(basic_Task.kaprekarNumbers(1, 100));
+            ////OR
 
-            ////ACM ICPC TEAM
+            //var resultgrid2 = hackerRankAll.Cavity_Map(grid);
+
+            //foreach (string item in resultgrid2)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            ////9. Modified Kaprekar Numbers
+            //HackerRank_0009 classHackerRank = new HackerRank_0009();
+            //Console.WriteLine(classHackerRank.kaprekarNumbers(1, 100));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.kaprekarNumbers(1, 100));
+
+
+            ////10. ACM ICPC TEAM
             //List<string> topic = new List<string>();
             //topic = ["10101", "11100", "11010", "00101"];
-            //List<int> newList = basic_Task.acmTeam(topic);
-            ////foreach (var item in newList)
-            ////{
-            ////    Console.WriteLine(item);
-            ////}
-            //Console.WriteLine(String.Join(" ", newList.ToArray()));
 
-            ////Fair Rations
+            //HackerRank_0010 classHackerRank = new HackerRank_0010();
+            //List<int> newList1 = classHackerRank.acmTeam(topic);
+            //foreach (var item in newList1)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            ////OR
+
+            //List<int> newList2 = hackerRankAll.acmTeam(topic);
+            //foreach (var item in newList2)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            ////11. Fair Rations
             //List<int> B = new List<int>();
             //B = [1, 2];
-            //Console.WriteLine(basic_Task.fairRations(B));
 
-            ////Encryption
+            //HackerRank_0011 classHackerRank = new HackerRank_0011();
+            //Console.WriteLine(classHackerRank.fairRations(B));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.fairRations(B));
+
+
+            ////12. Encryption
             //string s = "chillout";
-            //Console.WriteLine(basic_Task.encryption(s));
 
-            ////Two Character
+            //HackerRank_0012 classHackerRank = new HackerRank_0012();
+            //Console.WriteLine(classHackerRank.encryption(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.encryption(s));
+
+
+            ////13. Two Character
             //string s = "beabeefeab";
-            //Console.WriteLine(basic_Task.alternate(s));
 
-            ////Flatland Space Stations
+            //HackerRank_0013 classHackerRank = new HackerRank_0013();
+            //Console.WriteLine(classHackerRank.alternate(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.alternate(s));
+
+
+            ////14. Flatland Space Stations
             //int n = 5;
             //int[] c = [0, 4];
-            //Console.WriteLine(basic_Task.flatlandSpaceStations(n, c));
 
-            ////Ice Cream Parlor 
-            //foreach (var item in basic_Task.icecreamParlor(4, [1, 4, 5, 3, 2]))
+            //HackerRank_0014 classHackerRank = new HackerRank_0014();
+            //Console.WriteLine(classHackerRank.flatlandSpaceStations(n, c));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.flatlandSpaceStations(n, c));
+
+
+            ////15. Ice Cream Parlor 
+            //HackerRank_0015 classHackerRank = new HackerRank_0015();
+            //foreach (var item in classHackerRank.icecreamParlor(4, [1, 4, 5, 3, 2]))
             //{
             //    Console.WriteLine(item.ToString());
             //}
 
-            ////Weighted Uniform Strings
-            //List<string> queries = basic_Task.weightedUniformStrings("abbcccdddd",[ 1, 7, 5, 4, 15]);
-            //foreach (string query in queries)
+            ////OR
+
+            //foreach (var item in hackerRankAll.icecreamParlor(4, [1, 4, 5, 3, 2]))
+            //{
+            //    Console.WriteLine(item.ToString());
+            //}
+
+
+            ////16. Weighted Uniform Strings
+            //HackerRank_0016 classHackerRank = new HackerRank_0016();
+            //List<string> queries1 = classHackerRank.weightedUniformStrings("abbcccdddd", [1, 7, 5, 4, 15]);
+            //foreach (string query in queries1)
             //{
             //    Console.WriteLine(query);
             //}
 
-            ////Poker Nim
-            //Console.WriteLine(basic_Task.pokerNim(5, [1,2]));
+            ////OR 
 
-            ////Introduction to Nim Game
-            //Console.WriteLine(basic_Task.nimGame([3, 2, 4]));
-
-            ////Super Reduced String
-            //Console.WriteLine(basic_Task.superReducedString1("acdqglrfkqyuqfjkxyqvnrtysfrzrmzlygfveulqfpdbhlqdqrrqdqlhbdpfqluevfgylzmrzrfsytrnvqyxkjfquyqkfrlacdqj"));
-            ////Faster alernative
-            //Console.WriteLine(basic_Task.superReducedString1("acdqglrfkqyuqfjkxyqvnrtysfrzrmzlygfveulqfpdbhlqdqrrqdqlhbdpfqluevfgylzmrzrfsytrnvqyxkjfquyqkfrlacdqj"));
-
-            ////Beautiful Paris
-            //Console.WriteLine(basic_Task.beautifulPairs([1, 2, 3, 4], [1, 2, 3, 3]));
-
-            ////The Time on Words
-            //Console.WriteLine(basic_Task.timeInWords(5, 45));
-
-            ////Greedy Florist
-            //Console.WriteLine(basic_Task.getMinimumCost(2, [2,5,6]));
-
-            //////Extra Long Factorials
-            //basic_Task.extraLongFactorials(25);
-
-            ////The Power Sum
-            //Console.WriteLine(basic_Task.powerSum(100, 3));
-
-            ////Max Min
-            //Console.WriteLine(basic_Task.maxMin(4, [3, 4, 10, 20, 30, 40, 100, 200, 1, 2]));
-
-            ////Bigger is Greater
-            //Console.WriteLine(basic_Task.biggerIsGreater("ehdegnmorgafrjxvsck"));
-
-            ////Maximum Subarray Sum
-            //List<long> a = new List<long>();
-            //long m;
+            //List<string> queries2 = hackerRankAll.weightedUniformStrings("abbcccdddd", [1, 7, 5, 4, 15]);
+            //foreach (string query in queries2)
+            //{
+            //    Console.WriteLine(query);
+            //}
 
 
-            //LEETCODE//LEETCODE//           
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//           
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//
-            //LEETCODE//LEETCODE//
+            ////17. Poker Nim
+            //HackerRank_0017 classHackerRank = new HackerRank_0017();
+            //Console.WriteLine(classHackerRank.pokerNim(5, [1, 2]));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.pokerNim(5, [1, 2]));
 
 
+            ////18. Introduction to Nim Game
+            //HackerRank_0018 classHackerRank = new HackerRank_0018();
+            //Console.WriteLine(classHackerRank.nimGame([3, 2, 4]));
 
-            //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL
-            //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL
-            //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.nimGame([3, 2, 4]));
+
+
+            ////19. Super Reduced String
+            //HackerRank_0019 classHackerRank = new HackerRank_0019();
+            //Console.WriteLine(classHackerRank.superReducedString1("acdqglrfkqyuqfjkxyqvnrtysfrzrmzlygfveulqfpdbhlqdqrrqdqlhbdpfqluevfgylzmrzrfsytrnvqyxkjfquyqkfrlacdqj"));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.superReducedString1("acdqglrfkqyuqfjkxyqvnrtysfrzrmzlygfveulqfpdbhlqdqrrqdqlhbdpfqluevfgylzmrzrfsytrnvqyxkjfquyqkfrlacdqj"));
+
+
+            ////20. Beautiful Paris
+            //HackerRank_0020 classHackerRank = new HackerRank_0020();
+            //Console.WriteLine(classHackerRank.beautifulPairs([1, 2, 3, 4], [1, 2, 3, 3]));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.beautifulPairs([1, 2, 3, 4], [1, 2, 3, 3]));
+
+
+            ////21.The Time on Words
+            //HackerRank_0021 classHackerRank = new HackerRank_0021();
+            //Console.WriteLine(classHackerRank.timeInWords(5, 45));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.timeInWords(5, 45));
+
+
+            ////22. Greedy Florist
+            //HackerRank_0022 classHackerRank = new HackerRank_0022();
+            //Console.WriteLine(classHackerRank.getMinimumCost(2, [2, 5, 6]));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.getMinimumCost(2, [2, 5, 6]));
+
+
+            ////23. Extra Long Factorials
+            //HackerRank_0023 classHackerRank = new HackerRank_0023();
+            //classHackerRank.extraLongFactorials(25);
+
+            ////OR
+
+            //hackerRankAll.extraLongFactorials(25);
+
+
+            ////24. The Power Sum
+            //HackerRank_0024 classHackerRank = new HackerRank_0024();
+            //Console.WriteLine(classHackerRank.powerSum(100, 3));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.powerSum(100, 3));
+
+
+            ////25. Max Min
+            //HackerRank_0025 classHackerRank = new HackerRank_0025();
+            //Console.WriteLine(classHackerRank.maxMin(4, [3, 4, 10, 20, 30, 40, 100, 200, 1, 2]));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.maxMin(4, [3, 4, 10, 20, 30, 40, 100, 200, 1, 2]));
+
+
+            ////26. Bigger is Greater
+            //HackerRank_0026 classHackerRank = new HackerRank_0026();
+            //Console.WriteLine(classHackerRank.biggerIsGreater("ehdegnmorgafrjxvsck"));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.biggerIsGreater("ehdegnmorgafrjxvsck"));
+
+
+            //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
+            //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
+            //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
+
 
             ////(1.) Two Sum (EASY)
             //Console.WriteLine(String.Join("", leetCodeAll.TwoSum([2, 7, 11, 15], 9)));
@@ -9589,15 +9749,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsAcronym(words, s));
 
             ////(2829.) Determine the Minimum Sum of a k-avoiding Array (MEDIUM)
-            int n = 1;
-            int k = 1;
+            //int n = 4;
+            //int k = 6;
 
-            LeetCode_2829 classLeetCode = new LeetCode_2829();
-            Console.WriteLine(classLeetCode.MinimumSum(n, k));
+            //LeetCode_2829 classLeetCode = new LeetCode_2829();
+            //Console.WriteLine(classLeetCode.MinimumSum(n, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumSum(n, k));
+            //Console.WriteLine(leetCodeAll.MinimumSum(n, k));
 
             ////(2833.) Furthest Point From Origin (EASY)
             //string moves = "L_RL__R";

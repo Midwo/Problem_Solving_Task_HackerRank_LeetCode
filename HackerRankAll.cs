@@ -2,7 +2,7 @@
 
 namespace ProblemSolving
 {
-    internal class Basic_Task
+    internal class HackerRankAll
     {
         //Hackerrank
         public string catAndMouse(int x, int y, int z)
