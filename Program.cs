@@ -7777,15 +7777,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckAlmostEquivalent(word1, word2));
 
             ////(2075.) Decode the Slanted Ciphertext (MEDIUM)
-            string encodedText = "iveo    eed   l te   olc";
-            int rows = 4;
+            //string encodedText = "iveo    eed   l te   olc";
+            //int rows = 4;
 
-            LeetCode_2075 classLeetCode = new LeetCode_2075();
-            Console.WriteLine(classLeetCode.DecodeCiphertext(encodedText, rows));
+            //LeetCode_2075 classLeetCode = new LeetCode_2075();
+            //Console.WriteLine(classLeetCode.DecodeCiphertext(encodedText, rows));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DecodeCiphertext(encodedText, rows));
+            //Console.WriteLine(leetCodeAll.DecodeCiphertext(encodedText, rows));
 
             ////(2078.) Two Furthest Houses With Different Colors (EASY)
             //int[] colors = [6, 6, 6, 6, 6, 6, 6, 6, 6, 19, 19, 6, 6];
@@ -8464,6 +8464,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DigitCount(num));
+
+            ////(2284.) Sender With Largest Word Count (MEDIUM)
+            string[] messages = ["p mmV", "Lb WE u H x f YT", "Rey", "q", "Y R", "Ng", "mP lo oA l jd y", "CP y r N wHA", "Bt l", "Y S xv MNS", "WG vz", "S pl l Dz fX D TpI", "zGq", "z S D"];
+            string[] senders = ["QMnVn", "QMnVn", "nkq", "o", "EEM", "QMnVn", "o", "nkq", "Gd", "Gd", "nkq", "o", "EEM", "EEM"];
+
+            LeetCode_2284 classLeetCode = new LeetCode_2284();
+            Console.WriteLine(classLeetCode.LargestWordCount(messages, senders));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LargestWordCount(messages, senders));
 
             ////(2287.) Rearrange Characters to Make Target String (EASY)
             //string s = "ilovecodingonleetcode";
