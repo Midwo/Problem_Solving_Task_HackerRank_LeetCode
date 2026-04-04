@@ -7776,6 +7776,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CheckAlmostEquivalent(word1, word2));
 
+            ////(2075.) Decode the Slanted Ciphertext (MEDIUM)
+            string encodedText = "iveo    eed   l te   olc";
+            int rows = 4;
+
+            LeetCode_2075 classLeetCode = new LeetCode_2075();
+            Console.WriteLine(classLeetCode.DecodeCiphertext(encodedText, rows));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DecodeCiphertext(encodedText, rows));
+
             ////(2078.) Two Furthest Houses With Different Colors (EASY)
             //int[] colors = [6, 6, 6, 6, 6, 6, 6, 6, 6, 19, 19, 6, 6];
 
