@@ -6551,6 +6551,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.Interpret(command));
 
+            ////(1679.) Max Number of K-Sum Pairs (MEDIUM)
+            int[] nums = [1, 2, 3, 4];
+            int k = 5;
+
+            LeetCode_1679 classLeetCode = new LeetCode_1679();
+            Console.WriteLine(classLeetCode.MaxOperations(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxOperations(nums, k));
+
             ////(1683.) Invalid Tweets (EASY)
             //string SqlQuery =
             //    @"
@@ -7633,14 +7644,14 @@ namespace ProblemSolving
             //}
 
             ////(2027.) Minimum Moves to Convert String (EASY)
-            string s = "OXOX";
+            //string s = "OXOX";
 
-            LeetCode_2027 classLeetCode = new LeetCode_2027();
-            Console.WriteLine(classLeetCode.MinimumMoves(s));
+            //LeetCode_2027 classLeetCode = new LeetCode_2027();
+            //Console.WriteLine(classLeetCode.MinimumMoves(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumMoves(s));
+            //Console.WriteLine(leetCodeAll.MinimumMoves(s));
 
             ////(2032.) Two Out of Three (EASY)
             //int[] nums1 = [1, 1, 3, 2];
