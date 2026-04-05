@@ -7632,6 +7632,16 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', item));
             //}
 
+            ////(2027.) Minimum Moves to Convert String (EASY)
+            string s = "OXOX";
+
+            LeetCode_2027 classLeetCode = new LeetCode_2027();
+            Console.WriteLine(classLeetCode.MinimumMoves(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumMoves(s));
+
             ////(2032.) Two Out of Three (EASY)
             //int[] nums1 = [1, 1, 3, 2];
             //int[] nums2 = [2,3];
@@ -8466,15 +8476,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DigitCount(num));
 
             ////(2284.) Sender With Largest Word Count (MEDIUM)
-            string[] messages = ["p mmV", "Lb WE u H x f YT", "Rey", "q", "Y R", "Ng", "mP lo oA l jd y", "CP y r N wHA", "Bt l", "Y S xv MNS", "WG vz", "S pl l Dz fX D TpI", "zGq", "z S D"];
-            string[] senders = ["QMnVn", "QMnVn", "nkq", "o", "EEM", "QMnVn", "o", "nkq", "Gd", "Gd", "nkq", "o", "EEM", "EEM"];
+            //string[] messages = ["p mmV", "Lb WE u H x f YT", "Rey", "q", "Y R", "Ng", "mP lo oA l jd y", "CP y r N wHA", "Bt l", "Y S xv MNS", "WG vz", "S pl l Dz fX D TpI", "zGq", "z S D"];
+            //string[] senders = ["QMnVn", "QMnVn", "nkq", "o", "EEM", "QMnVn", "o", "nkq", "Gd", "Gd", "nkq", "o", "EEM", "EEM"];
 
-            LeetCode_2284 classLeetCode = new LeetCode_2284();
-            Console.WriteLine(classLeetCode.LargestWordCount(messages, senders));
+            //LeetCode_2284 classLeetCode = new LeetCode_2284();
+            //Console.WriteLine(classLeetCode.LargestWordCount(messages, senders));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LargestWordCount(messages, senders));
+            //Console.WriteLine(leetCodeAll.LargestWordCount(messages, senders));
 
             ////(2287.) Rearrange Characters to Make Target String (EASY)
             //string s = "ilovecodingonleetcode";
