@@ -23,7 +23,6 @@ namespace ProblemSolving
                 return "Cat B";
             }
         }
-
         public int divisibleSumPairs(int n, int k, List<int> ar)
         {
             int count = 0;
@@ -40,7 +39,6 @@ namespace ProblemSolving
             }
             return count;
         }
-
         public void countApplesAndOranges(int s, int t, int a, int b, List<int> apples, List<int> oranges)
         {
             int houseAplle = 0;
@@ -63,7 +61,6 @@ namespace ProblemSolving
             Console.WriteLine(houseAplle);
             Console.WriteLine(houseOranges);
         }
-
         public List<int> gradingStudents(List<int> grades)
         {
             List<int> ListGrading = new List<int>();
@@ -94,7 +91,6 @@ namespace ProblemSolving
             }
             return ListGrading;
         }
-
         public string Happy_ladybugs(string b)
         {
             //b = "RBY_YBR";
@@ -167,7 +163,6 @@ namespace ProblemSolving
                 }
             }
         }
-
         public List<string> Cavity_Map(List<string> grid)
         {
             //grid = ["1112", "1912", "1892", "1234"];
@@ -192,7 +187,6 @@ namespace ProblemSolving
             }
             return newGrid;
         }
-
         public string kaprekarNumbers(int p, int q)
         {
             //p = 1;
@@ -224,7 +218,6 @@ namespace ProblemSolving
             }
             return outPrint.Length > 0 ? outPrint.TrimEnd() : "INVALID RANGE";
         }
-
         public List<int> acmTeam(List<string> topic)
         {
             //topic = ["10101", "11100", "11010", "00101"];
@@ -262,7 +255,6 @@ namespace ProblemSolving
             newPrintList.Add(countPermutationMaxTask);
             return newPrintList;
         }
-
         public string fairRations(List<int> B)
         {
             int howManyRations = 0;
@@ -284,7 +276,6 @@ namespace ProblemSolving
             }
             return failRations == true ? "NO" : howManyRations.ToString();
         }
-
         public string encryption(string s)
         {
             int howLong = s.Length;
@@ -326,7 +317,6 @@ namespace ProblemSolving
             }
             return newOutput.Trim();
         }
-
         public int alternate(string s)
         {
             int lenghtString = s.Length;
@@ -378,7 +368,6 @@ namespace ProblemSolving
             }
             return howLongMax;
         }
-
         public int flatlandSpaceStations(int n, int[] c)
         {
             Array.Sort(c);
@@ -390,7 +379,6 @@ namespace ProblemSolving
             }
             return Math.Max(maxDistanceFromStation, n - 1 - c[c.Length - 1]);
         }
-
         public List<int> icecreamParlor(int m, List<int> arr)
         {
             List<int> outputList = new List<int>();
@@ -408,7 +396,6 @@ namespace ProblemSolving
             }
             return outputList;
         }
-
         public List<string> weightedUniformStrings(string s, List<int> queries)
         {
             Dictionary<char, int> dataCharTable = new Dictionary<char, int>(){
@@ -445,7 +432,6 @@ namespace ProblemSolving
             }
             return outputPrintList;
         }
-
         public string pokerNim(int k, List<int> c)
         {
             var xor = c[0];
@@ -455,7 +441,6 @@ namespace ProblemSolving
             }
             return xor != 0 ? "First" : "Second";
         }
-
         public string nimGame(List<int> pile)
         {
             var xor = pile[0];
@@ -465,7 +450,6 @@ namespace ProblemSolving
             }
             return xor != 0 ? "First" : "Second";
         }
-
         public string superReducedString(string s)
         {
             bool endLoop = false;
@@ -493,7 +477,6 @@ namespace ProblemSolving
             } while (!endLoop);
             return s.Length == 0 ? "Empty String" : s;
         }
-
         public string superReducedString1(string s)
         {
             Stack<char> myStack = new Stack<char>();
@@ -515,7 +498,6 @@ namespace ProblemSolving
 
             return String.IsNullOrEmpty(myString) ? "Empty String" : myString;
         }
-
         public int beautifulPairs(List<int> A, List<int> B)
         {
             int pairs = 0;
@@ -544,7 +526,6 @@ namespace ProblemSolving
             }
             return pairs;
         }
-
         public string timeInWords(int h, int m)
         {
             string outputPrint = string.Empty;
@@ -584,7 +565,6 @@ namespace ProblemSolving
             }
             return outputPrint;
         }
-
         public int getMinimumCost(int k, int[] c)
         {
 
@@ -613,8 +593,7 @@ namespace ProblemSolving
                 } while (howManyFlowers != 0);
             }
             return cost;
-        }
-      
+        }      
         public void extraLongFactorials(int n)
         {
             BigInteger x = 1;
@@ -624,12 +603,10 @@ namespace ProblemSolving
             }
             Console.WriteLine(x);
         }
-
         public int powerSum(int X, int N)
         {
             return recursive(X, N, 1);
         }
-
         private int recursive(int total, int power, int num)
         {
             int val = Convert.ToInt32(total - Math.Pow(num, power));
@@ -639,7 +616,6 @@ namespace ProblemSolving
 
             return recursive(val, power, num + 1) + recursive(total, power, num + 1);
         }
-
         public int maxMin(int k, List<int> arr)
         {
             k--;
@@ -656,7 +632,6 @@ namespace ProblemSolving
             }
             return minValue;
         }
-
         public string biggerIsGreater(string w)
         {
             int lenghtString = w.Length;
@@ -697,7 +672,6 @@ namespace ProblemSolving
             }
             return "no answer";
         }
-
         public int sockMerchant(int n, List<int> ar)
         {
             Dictionary<int, int> dictionary = new Dictionary<int, int>();
@@ -726,7 +700,6 @@ namespace ProblemSolving
             }
             return howManyPairs;
         }
-
         public int birthday(List<int> s, int d, int m)
         {
             int sumChocolate = 0;
@@ -748,6 +721,21 @@ namespace ProblemSolving
             }
             return sumChocolate;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }

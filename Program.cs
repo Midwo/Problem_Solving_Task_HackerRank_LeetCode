@@ -1095,6 +1095,12 @@ namespace ProblemSolving
 
             ////(108.) Convert Sorted Array to Binary Search Tree (EASY)
             //int[] nums = [-10, -3, 0, 5, 9];
+
+            //LeetCode_108 classLeetCode = new LeetCode_108();
+            //TreeNode roo1 = classLeetCode.SortedArrayToBST(nums);
+
+            ////OR
+
             //TreeNode root = leetCodeAll.SortedArrayToBST(nums);
 
             ////(111.) Minimum Depth of Binary Tree (EASY)
@@ -1114,6 +1120,11 @@ namespace ProblemSolving
             //root.right.right.right = new TreeNode(5);
             //root.right.right.right.left = null;
             //root.right.right.right.right = new TreeNode(6);
+
+            //LeetCode_111 classLeetCode = new LeetCode_111();
+            //Console.WriteLine(classLeetCode.MinDepth(root));
+
+            ////OR
 
             //Console.WriteLine(leetCodeAll.MinDepth(root));
 
@@ -1135,12 +1146,31 @@ namespace ProblemSolving
             //root.right = new TreeNode(3);
             //int targetSum = 5;
 
+            //LeetCode_112 classLeetCode = new LeetCode_112();
+            //Console.WriteLine(classLeetCode.HasPathSum(root, targetSum));
+
+            ////OR
+
             //Console.WriteLine(leetCodeAll.HasPathSum(root, targetSum));
 
             ////(118.) Pascal's Triangle (EASY)
             //int numRows = 30;
-            //var x =  leetCodeAll.PascalsTriangleGenerate(numRows);
-            //foreach (var i in x) 
+
+            //LeetCode_118 classLeetCode = new LeetCode_118();
+
+            //foreach (var i in classLeetCode.PascalsTriangleGenerate(numRows))
+            //{
+            //    Console.WriteLine("");
+            //    foreach (var j in i)
+            //    {
+            //        Console.Write(j);
+            //        Console.Write(" ");
+            //    }
+            //}
+
+            ////OR
+
+            //foreach (var i in leetCodeAll.PascalsTriangleGenerate(numRows))
             //{
             //    Console.WriteLine("");
             //    foreach (var j in i)
@@ -1152,8 +1182,16 @@ namespace ProblemSolving
 
             ////(119.) Pascal's Triangle II (EASY)
             //int numRows = 3;
-            //var x = leetCodeAll.GetRow(numRows);
-            //foreach (var i in x)
+
+            //LeetCode_119 classLeetCode = new LeetCode_119();
+            //foreach (var i in classLeetCode.GetRow(numRows))
+            //{
+            //    Console.Write(i + " ");
+            //}
+
+            ////OR
+
+            //foreach (var i in leetCodeAll.GetRow(numRows))
             //{
             //    Console.Write(i + " ");
             //}
@@ -6165,14 +6203,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindKthPositive(arr, k));
 
             ////(1544.) Make The String Great (EASY)
-            string s = "QkqMGmQKq";
+            //string s = "QkqMGmQKq";
 
-            LeetCode_1544 classLeetCode = new LeetCode_1544();
-            Console.WriteLine(classLeetCode.MakeGood(s));
+            //LeetCode_1544 classLeetCode = new LeetCode_1544();
+            //Console.WriteLine(classLeetCode.MakeGood(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MakeGood(s));
+            //Console.WriteLine(leetCodeAll.MakeGood(s));
 
             ////(1550.) Three Consecutive Odds (EASY)
             //int[] arr = [1, 2, 34, 3, 4, 5, 7, 23, 12];
