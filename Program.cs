@@ -3642,15 +3642,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LeafSimilar(root1, root2));
 
             ////(874.) Walking Robot Simulation (MEDIUM)
-            int[] commands = [1, -1, 1, -1, 1, -1, 6];
-            int[][] obstacles = [[0,0]];
+            //int[] commands = [1, -1, 1, -1, 1, -1, 6];
+            //int[][] obstacles = [[0,0]];
 
-            LeetCode_874 classLeetCode = new LeetCode_874();
-            Console.WriteLine(classLeetCode.RobotSim(commands, obstacles));
+            //LeetCode_874 classLeetCode = new LeetCode_874();
+            //Console.WriteLine(classLeetCode.RobotSim(commands, obstacles));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.RobotSim(commands, obstacles));
+            //Console.WriteLine(leetCodeAll.RobotSim(commands, obstacles));
 
             ////(876.) Middle of the Linked List (EASY)
             //ListNode head = new ListNode(1);
@@ -6163,6 +6163,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FindKthPositive(arr, k));
+
+            ////(1544.) Make The String Great (EASY)
+            string s = "QkqMGmQKq";
+
+            LeetCode_1544 classLeetCode = new LeetCode_1544();
+            Console.WriteLine(classLeetCode.MakeGood(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MakeGood(s));
 
             ////(1550.) Three Consecutive Odds (EASY)
             //int[] arr = [1, 2, 34, 3, 4, 5, 7, 23, 12];
