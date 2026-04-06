@@ -3641,6 +3641,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.LeafSimilar(root1, root2));
 
+            ////(874.) Walking Robot Simulation (MEDIUM)
+            int[] commands = [1, -1, 1, -1, 1, -1, 6];
+            int[][] obstacles = [[0,0]];
+
+            LeetCode_874 classLeetCode = new LeetCode_874();
+            Console.WriteLine(classLeetCode.RobotSim(commands, obstacles));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.RobotSim(commands, obstacles));
+
             ////(876.) Middle of the Linked List (EASY)
             //ListNode head = new ListNode(1);
             //head.next = new ListNode(2);
@@ -6552,15 +6563,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.Interpret(command));
 
             ////(1679.) Max Number of K-Sum Pairs (MEDIUM)
-            int[] nums = [1, 2, 3, 4];
-            int k = 5;
+            //int[] nums = [1, 2, 3, 4];
+            //int k = 5;
 
-            LeetCode_1679 classLeetCode = new LeetCode_1679();
-            Console.WriteLine(classLeetCode.MaxOperations(nums, k));
+            //LeetCode_1679 classLeetCode = new LeetCode_1679();
+            //Console.WriteLine(classLeetCode.MaxOperations(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxOperations(nums, k));
+            //Console.WriteLine(leetCodeAll.MaxOperations(nums, k));
 
             ////(1683.) Invalid Tweets (EASY)
             //string SqlQuery =
