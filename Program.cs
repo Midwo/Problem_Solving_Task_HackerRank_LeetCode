@@ -7066,6 +7066,16 @@ namespace ProblemSolving
 
             //LeetCode_1795 classLeetCode = new LeetCode_1795();
 
+            ////(1796.) Second Largest Digit in a String (EASY)
+            string s = "abc1111";
+
+            LeetCode_1796 classLeetCode = new LeetCode_1796();
+            Console.WriteLine(classLeetCode.SecondHighest(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SecondHighest(s));
+
             ////(1800.) Maximum Ascending Subarray Sum (EASY)
             //int[] nums = [10,20,30,5,10,50];
 
@@ -9582,55 +9592,55 @@ namespace ProblemSolving
 
             ////(2069.) Walking Robot Simulation II (MEDIUM)
 
-            LeetCode_2069.Robot robot = new LeetCode_2069.Robot(6,3);
+            //LeetCode_2069.Robot robot = new LeetCode_2069.Robot(6,3);
 
-            robot = new LeetCode_2069.Robot(8, 2);
-            robot.Step(17);
-            Console.WriteLine(string.Join(',', robot.GetPos()));
-            Console.WriteLine(robot.GetDir());
-            robot.Step(21);
-            Console.WriteLine(string.Join(',', robot.GetPos()));
-            Console.WriteLine(robot.GetDir());
-            robot.Step(22);
-            robot.Step(34);
-            Console.WriteLine(string.Join(',', robot.GetPos()));
-            Console.WriteLine(robot.GetDir());
-            robot.Step(1);
-            robot.Step(46);
-            robot.Step(35);
-            Console.WriteLine(string.Join(',', robot.GetPos()));
-            Console.WriteLine(robot.GetDir());
-            robot.Step(44);
-            robot.Step(14);
-            robot.Step(31);
-            Console.WriteLine(string.Join(',', robot.GetPos()));
-            Console.WriteLine(robot.GetDir());
-            robot.Step(50);
+            //robot = new LeetCode_2069.Robot(8, 2);
+            //robot.Step(17);
+            //Console.WriteLine(string.Join(',', robot.GetPos()));
+            //Console.WriteLine(robot.GetDir());
+            //robot.Step(21);
+            //Console.WriteLine(string.Join(',', robot.GetPos()));
+            //Console.WriteLine(robot.GetDir());
+            //robot.Step(22);
+            //robot.Step(34);
+            //Console.WriteLine(string.Join(',', robot.GetPos()));
+            //Console.WriteLine(robot.GetDir());
+            //robot.Step(1);
+            //robot.Step(46);
+            //robot.Step(35);
+            //Console.WriteLine(string.Join(',', robot.GetPos()));
+            //Console.WriteLine(robot.GetDir());
+            //robot.Step(44);
+            //robot.Step(14);
+            //robot.Step(31);
+            //Console.WriteLine(string.Join(',', robot.GetPos()));
+            //Console.WriteLine(robot.GetDir());
+            //robot.Step(50);
 
-            //OR
+            ////OR
 
-            LeetCodeAll.RobotTAsk2069 robot1 = new LeetCodeAll.RobotTAsk2069(8, 2);
-            robot1.Step(17);
-            Console.WriteLine(string.Join(',', robot1.GetPos()));
-            Console.WriteLine(robot1.GetDir());
-            robot1.Step(21);
-            Console.WriteLine(string.Join(',', robot1.GetPos()));
-            Console.WriteLine(robot1.GetDir());
-            robot1.Step(22);
-            robot1.Step(34);
-            Console.WriteLine(string.Join(',', robot1.GetPos()));
-            Console.WriteLine(robot1.GetDir());
-            robot1.Step(1);
-            robot1.Step(46);
-            robot1.Step(35);
-            Console.WriteLine(string.Join(',', robot1.GetPos()));
-            Console.WriteLine(robot1.GetDir());
-            robot1.Step(44);
-            robot1.Step(14);
-            robot1.Step(31);
-            Console.WriteLine(string.Join(',', robot1.GetPos()));
-            Console.WriteLine(robot1.GetDir());
-            robot1.Step(50);
+            //LeetCodeAll.RobotTAsk2069 robot1 = new LeetCodeAll.RobotTAsk2069(8, 2);
+            //robot1.Step(17);
+            //Console.WriteLine(string.Join(',', robot1.GetPos()));
+            //Console.WriteLine(robot1.GetDir());
+            //robot1.Step(21);
+            //Console.WriteLine(string.Join(',', robot1.GetPos()));
+            //Console.WriteLine(robot1.GetDir());
+            //robot1.Step(22);
+            //robot1.Step(34);
+            //Console.WriteLine(string.Join(',', robot1.GetPos()));
+            //Console.WriteLine(robot1.GetDir());
+            //robot1.Step(1);
+            //robot1.Step(46);
+            //robot1.Step(35);
+            //Console.WriteLine(string.Join(',', robot1.GetPos()));
+            //Console.WriteLine(robot1.GetDir());
+            //robot1.Step(44);
+            //robot1.Step(14);
+            //robot1.Step(31);
+            //Console.WriteLine(string.Join(',', robot1.GetPos()));
+            //Console.WriteLine(robot1.GetDir());
+            //robot1.Step(50);
 
             ////(2670.) Find the Distinct Difference Array (EASY)
             //int[] nums = [1, 2, 3, 4, 5];
