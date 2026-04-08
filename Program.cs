@@ -7067,14 +7067,14 @@ namespace ProblemSolving
             //LeetCode_1795 classLeetCode = new LeetCode_1795();
 
             ////(1796.) Second Largest Digit in a String (EASY)
-            string s = "abc1111";
+            //string s = "abc1111";
 
-            LeetCode_1796 classLeetCode = new LeetCode_1796();
-            Console.WriteLine(classLeetCode.SecondHighest(s));
+            //LeetCode_1796 classLeetCode = new LeetCode_1796();
+            //Console.WriteLine(classLeetCode.SecondHighest(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SecondHighest(s));
+            //Console.WriteLine(leetCodeAll.SecondHighest(s));
 
             ////(1800.) Maximum Ascending Subarray Sum (EASY)
             //int[] nums = [10,20,30,5,10,50];
@@ -11811,6 +11811,17 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+
+            ////(3653.) XOR After Range Multiplication Queries I (MEDIUM)
+            int[] nums = [780];
+            int[][] queries = [[0, 0, 1, 13], [0, 0, 1, 17], [0, 0, 1, 9], [0, 0, 1, 18], [0, 0, 1, 16], [0, 0, 1, 6], [0, 0, 1, 4], [0, 0, 1, 11], [0, 0, 1, 7], [0, 0, 1, 18], [0, 0, 1, 8], [0, 0, 1, 15], [0, 0, 1, 12]];
+
+            LeetCode_3653 classLeetCode = new LeetCode_3653();
+            Console.WriteLine(classLeetCode.XorAfterQueries(nums, queries));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.XorAfterQueries(nums, queries));
 
             ////(3658.) GCD of Odd and Even Sums (EASY)
             //int n = 4;
