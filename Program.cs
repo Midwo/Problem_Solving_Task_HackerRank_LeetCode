@@ -354,6 +354,115 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.biggerIsGreater("ehdegnmorgafrjxvsck"));
 
 
+            ////27. Solve Me First (EASY)
+            //HackerRank_0027 classHackerRank = new HackerRank_0027();
+            //Console.WriteLine(classHackerRank.solveMeFirst(3, 5));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.solveMeFirst(3, 5));
+
+
+            ////28. Simple Array Sum (EASY)
+            //HackerRank_0028 classHackerRank = new HackerRank_0028();
+            //Console.WriteLine(classHackerRank.simpleArraySum(new List<int> { 1, 2, 3, 4, 10, 11 }));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.simpleArraySum(new List<int> { 1, 2, 3, 4, 10, 11 }));
+
+
+            ////29. Compare the Triplets (EASY)
+            //HackerRank_0029 classHackerRank = new HackerRank_0029();
+            //Console.WriteLine(string.Join(',',classHackerRank.compareTriplets(new List<int> { 5, 6, 7 }, new List<int> { 3, 6, 10 })));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',',hackerRankAll.compareTriplets(new List<int> { 5, 6, 7 }, new List<int> { 3, 6, 10 })));
+
+
+            ////30. A Very Big Sum (EASY)
+            //HackerRank_0030 classHackerRank = new HackerRank_0030();
+            //Console.WriteLine(classHackerRank.aVeryBigSum(new List<long> { 1000000001,1000000002,1000000003,1000000004,1000000005 }));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.aVeryBigSum(new List<long> { 1000000001, 1000000002, 1000000003, 1000000004, 1000000005 }));
+
+
+            ////31. Diagonal Difference (EASY)
+            //List<List<int>> arr = [[11,2,4],[4,5,6],[10,8,-12]];
+
+            //HackerRank_0031 classHackerRank = new HackerRank_0031();
+            //Console.WriteLine(classHackerRank.diagonalDifference(arr));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.diagonalDifference(arr));
+
+
+            ////32. Plus Minus (EASY)
+            //List<int> arr = [-4,3,-9,0,4,1];
+
+            //HackerRank_0032 classHackerRank = new HackerRank_0032();
+            //classHackerRank.plusMinus(arr);
+
+            ////OR
+
+            //hackerRankAll.plusMinus(arr);
+
+
+            ////33. Staircase (EASY)
+            //HackerRank_0033 classHackerRank = new HackerRank_0033();
+            //classHackerRank.staircase(6);
+
+            ////OR
+
+            //hackerRankAll.staircase(6);
+
+
+            ////34. Mini-Max Sum (EASY)
+            //List<int> arr = [1,2,3,4,5];
+
+            //HackerRank_0034 classHackerRank = new HackerRank_0034();
+            //classHackerRank.miniMaxSum(arr);
+
+            ////OR
+
+            //hackerRankAll.miniMaxSum(arr);
+
+
+            ////35. Birthday Cake Candles (EASY)
+            //List<int> arr = [3,2,1,3];
+
+            //HackerRank_0035 classHackerRank = new HackerRank_0035();
+            //Console.WriteLine(classHackerRank.birthdayCakeCandles(arr));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.birthdayCakeCandles(arr));
+
+
+            ////36. Time Conversion (EASY)
+            //HackerRank_0036 classHackerRank = new HackerRank_0036();
+            //Console.WriteLine(classHackerRank.timeConversion("07:05:45PM"));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.timeConversion("07:05:45PM"));
+
+
+
+            ////37. Number Line Jumps (EASY)
+            //HackerRank_0037 classHackerRank = new HackerRank_0037();
+            //Console.WriteLine(classHackerRank.kangaroo(0,3,4,2));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.kangaroo(0, 3, 4, 2));
+
+
+
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
@@ -11773,14 +11882,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumMedianSum(nums));
 
             ////(3633.) Earliest Finish Time for Land and Water Rides I (EASY)
-            int[] landStartTime = [10], landDuration = [5], waterStartTime = [20], waterDuration = [1];
+            //int[] landStartTime = [10], landDuration = [5], waterStartTime = [20], waterDuration = [1];
 
-            LeetCode_3633 classLeetCode = new LeetCode_3633();
-            Console.WriteLine(classLeetCode.EarliestFinishTime(landStartTime, landDuration, waterStartTime, waterDuration));
+            //LeetCode_3633 classLeetCode = new LeetCode_3633();
+            //Console.WriteLine(classLeetCode.EarliestFinishTime(landStartTime, landDuration, waterStartTime, waterDuration));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.EarliestFinishTime(landStartTime, landDuration, waterStartTime, waterDuration));
+            //Console.WriteLine(leetCodeAll.EarliestFinishTime(landStartTime, landDuration, waterStartTime, waterDuration));
 
             ////(3634.) Minimum Removals to Balance Array (MEDIUM)
             //int[] nums = [1, 6, 2, 9];

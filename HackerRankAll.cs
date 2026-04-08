@@ -721,6 +721,197 @@ namespace ProblemSolving
             }
             return sumChocolate;
         }
+        public int solveMeFirst(int a, int b)
+        {
+            return a + b;
+        }
+        public int simpleArraySum(List<int> ar)
+        {
+            int y = ar.Sum();
+            return y;
+        }
+        public List<int> compareTriplets(List<int> a, List<int> b)
+        {
+            int Alice = 0;
+            int Bob = 0;
+            for (int i = 0; i < a.Count; i++)
+            {
+                if (a[i] > b[i])
+                {
+                    Alice++;
+                }
+                else if (a[i] < b[i])
+                {
+                    Bob++;
+                }
+            }
+            List<int> results = [Alice, Bob];
+            return results;
+        }
+        public long aVeryBigSum(List<long> ar)
+        {
+            long y = ar.Sum();
+            return y;
+        }
+        public int diagonalDifference(List<List<int>> arr)
+        {
+            int z1 = 0;
+            int y1 = 0;
+            int x1 = 0;
+            for (int i = 0; i < arr.Count; i++)
+            {
+                y1 += arr[i][arr.Count - 1 - i];
+                x1 += arr[i][i];
+            }
+            z1 = x1 - y1;
+            return Math.Abs(z1);
+        }
+        public void plusMinus(List<int> arr)
+        {
+            decimal plus = 0;
+            decimal minus = 0;
+            decimal zero = 0;
+            decimal howmany = arr.Count();
+            foreach (int item in arr)
+            {
+                if (item == 0)
+                {
+                    zero++;
+                }
+                else if (item > 0)
+                {
+                    plus++;
+                }
+                else
+                {
+                    minus++;
+                }
+            }
+            decimal pluscount = plus / howmany;
+            decimal minuscount = minus / howmany;
+            decimal zerocount = zero / howmany;
+
+            Console.WriteLine(pluscount);
+            Console.WriteLine(minuscount);
+            Console.WriteLine(zerocount);
+        }
+        public void staircase(int n)
+        {
+            string space = "";
+            string hash = "";
+            string all = "";
+            for (int i = 0; i < n; i++)
+            {
+                space = "";
+                int hashspace = n - i;
+                if (hashspace > 1)
+                {
+                    for (int z = 1; z < hashspace; z++)
+                    {
+                        space += " ";
+                    }
+                }
+
+                hash += "#";
+                all = space + hash;
+                Console.WriteLine(all);
+
+            }
+        }
+        public void miniMaxSum(List<int> arr)
+        {
+            arr = arr.OrderBy(p => p).ToList();
+            long min = 0;
+            long max = 0;
+            for (int i = 0; i < arr.Count - 1; i++)
+            {
+                min += arr[i];
+            }
+            //  Console.WriteLine(min);
+            for (int i = 1; i < arr.Count; i++)
+            {
+                max += arr[i];
+            }
+            Console.WriteLine("{0} {1}", min, max);
+        }
+        public int birthdayCakeCandles(List<int> candles)
+        {
+            int x1 = int.MinValue;
+            int y1 = int.MinValue;
+            foreach (var i in candles)
+            {
+                if (x1 == i)
+                {
+                    y1 += 1;
+                }
+                else if (x1 < i)
+                {
+                    x1 = i;
+                    y1 = 1;
+                }
+
+            }
+            return y1;
+        }
+        public string timeConversion(string s)
+        {
+            DateTime timeValue = Convert.ToDateTime(s);
+            return timeValue.ToString("HH:mm:ss");
+        }
+        public string kangaroo(int x1, int v1, int x2, int v2)
+        {
+            string message = "NO";
+            if (x1 > x2 && v1 > v2)
+            {
+                message = "NO";
+            }
+            else if (x2 > x1 && v2 > v1)
+            {
+                message = "NO";
+            }
+            if (x1 + v1 > x2 + v2)
+            {
+                do
+                {
+                    x1 += v1;
+                    x2 += v2;
+                    if (x1 == x2)
+                    {
+                        message = "YES";
+                    }
+                }
+                while (x1 > x2);
+            }
+            else if (x2 + v2 > x1 + v1)
+            {
+                do
+                {
+                    x1 += v1;
+                    x2 += v2;
+                    if (x2 == x1)
+                    {
+                        message = "YES";
+                    }
+                }
+                while (x2 > x1);
+            }
+            else
+            {
+                message = "YES";
+            }
+
+            return message;
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 
