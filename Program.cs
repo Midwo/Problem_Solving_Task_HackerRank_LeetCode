@@ -11772,6 +11772,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumMedianSum(nums));
 
+            ////(3633.) Earliest Finish Time for Land and Water Rides I (EASY)
+            int[] landStartTime = [10], landDuration = [5], waterStartTime = [20], waterDuration = [1];
+
+            LeetCode_3633 classLeetCode = new LeetCode_3633();
+            Console.WriteLine(classLeetCode.EarliestFinishTime(landStartTime, landDuration, waterStartTime, waterDuration));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.EarliestFinishTime(landStartTime, landDuration, waterStartTime, waterDuration));
+
             ////(3634.) Minimum Removals to Balance Array (MEDIUM)
             //int[] nums = [1, 6, 2, 9];
             //int k = 3;
@@ -11813,15 +11823,15 @@ namespace ProblemSolving
             //}
 
             ////(3653.) XOR After Range Multiplication Queries I (MEDIUM)
-            int[] nums = [780];
-            int[][] queries = [[0, 0, 1, 13], [0, 0, 1, 17], [0, 0, 1, 9], [0, 0, 1, 18], [0, 0, 1, 16], [0, 0, 1, 6], [0, 0, 1, 4], [0, 0, 1, 11], [0, 0, 1, 7], [0, 0, 1, 18], [0, 0, 1, 8], [0, 0, 1, 15], [0, 0, 1, 12]];
+            //int[] nums = [780];
+            //int[][] queries = [[0, 0, 1, 13], [0, 0, 1, 17], [0, 0, 1, 9], [0, 0, 1, 18], [0, 0, 1, 16], [0, 0, 1, 6], [0, 0, 1, 4], [0, 0, 1, 11], [0, 0, 1, 7], [0, 0, 1, 18], [0, 0, 1, 8], [0, 0, 1, 15], [0, 0, 1, 12]];
 
-            LeetCode_3653 classLeetCode = new LeetCode_3653();
-            Console.WriteLine(classLeetCode.XorAfterQueries(nums, queries));
+            //LeetCode_3653 classLeetCode = new LeetCode_3653();
+            //Console.WriteLine(classLeetCode.XorAfterQueries(nums, queries));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.XorAfterQueries(nums, queries));
+            //Console.WriteLine(leetCodeAll.XorAfterQueries(nums, queries));
 
             ////(3658.) GCD of Odd and Even Sums (EASY)
             //int n = 4;
