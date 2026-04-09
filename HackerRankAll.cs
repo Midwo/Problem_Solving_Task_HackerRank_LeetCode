@@ -902,6 +902,325 @@ namespace ProblemSolving
 
             return message;
         }
+        public int getTotalX(List<int> a, List<int> b)
+        {
+            int maxA = a.Max();
+            int minB = b.Min();
+            int count = 0;
+
+            for (int num = maxA; num <= minB; num++)
+            {
+                bool isFactorA = true;
+                bool isFactorB = true;
+                foreach (var i in a)
+                {
+                    if (num % i != 0)
+                    {
+                        isFactorA = false;
+                    }
+                }
+                foreach (var i in b)
+                {
+                    if (i % num != 0)
+                    {
+                        isFactorB = false;
+                    }
+                }
+                if (isFactorA && isFactorB)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+        public List<int> breakingRecords(List<int> scores)
+        {
+            int minValue = int.MaxValue;
+            int maxValue = int.MinValue;
+            int minBrokeCount = 0;
+            int maxBrokeCount = 0;
+            bool firstRecord = true;
+            List<int> lista = new List<int>();
+            foreach (var i in scores)
+            {
+                if (firstRecord)
+                {
+                    minValue = i;
+                    maxValue = i;
+                    firstRecord = false;
+                }
+                if (minValue < i)
+                {
+                    minValue = i;
+                    minBrokeCount++;
+                }
+                if (maxValue > i)
+                {
+                    maxValue = i;
+                    maxBrokeCount++;
+                }
+            }
+            lista.Add(minBrokeCount);
+            lista.Add(maxBrokeCount);
+            return lista;
+        }
+        public int migratoryBirds(List<int> arr)
+        {
+            Dictionary<int, int> dictionary = new Dictionary<int, int>();
+            for (int i = 0; i < arr.Count; i++)
+            {
+                int y = arr[i];
+                if (!dictionary.ContainsKey(y))
+                {
+                    dictionary.Add(y, 1);
+                }
+                else
+                {
+                    int x = dictionary[y] + 1;
+                    dictionary[y] = x;
+                }
+            }
+            int howManyMax = 0;
+            int howManyNow = 0;
+            int keyDictionaryMinValueKey = int.MaxValue;
+            int keyDictionaryNow = int.MaxValue;
+            for (int xy = 0; xy < dictionary.Count; xy++)
+            {
+                int key = dictionary.ElementAt(xy).Key;
+                howManyNow = dictionary[key];
+                if (howManyMax == howManyNow)
+                {
+                    if (key < keyDictionaryMinValueKey)
+                    {
+                        keyDictionaryMinValueKey = key;
+                    }
+                }
+                else if (howManyMax < howManyNow)
+                {
+                    howManyMax = howManyNow;
+                    keyDictionaryMinValueKey = key;
+                }
+            }
+            return keyDictionaryMinValueKey;
+        }
+        public string dayOfProgrammer(int year)
+        {
+            string whenDate = string.Empty;
+
+            if (year < 1918)
+            {
+                if (year % 4 == 0)
+                {
+                    whenDate = "12";
+                }
+                else
+                {
+                    whenDate = "13";
+
+                }
+            }
+            else if (year > 1918)
+            {
+                if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0)
+                {
+                    whenDate = "12";
+                }
+                else
+                {
+                    whenDate = "13";
+                }
+            }
+            else
+            {
+                whenDate = "26";
+            }
+            return whenDate + ".09." + year;
+        }
+        public void bonAppetit(List<int> bill, int k, int b)
+        {
+            int sum1 = 0;
+            for (int i = 0; i < bill.Count; i++)
+            {
+                if (i != k)
+                {
+                    sum1 += bill[i];
+                }
+            }
+            sum1 = b - (sum1 / 2);
+
+            if (sum1 == 0)
+            {
+                Console.WriteLine("Bon Appetit");
+            }
+            else
+            {
+                Console.WriteLine(sum1);
+            }
+        }
+        public int pageCount(int n, int p)
+        {
+            int howMany = 0;
+            int howManyMax = 0;
+            if (p == 1 || p == n)
+            {
+                howMany = 0;
+            }
+            else
+            {
+                double x = p / 2;
+                howMany = (int)x;
+                x = n / 2;
+                howManyMax = (int)x - howMany;
+                if (howMany > howManyMax)
+                {
+                    howMany = howManyMax;
+                }
+            }
+            return howMany;
+        }
+        public int countingValleys(int steps, string path)
+        {
+            int countValley = 0;
+            int height = 0;
+            bool activeValley = false;
+            foreach (char item in path)
+            {
+                if (item == (char)68)
+                {
+                    height--;
+                }
+                else if (item == (char)85)
+                {
+                    height++;
+                }
+                if (height < 0 && activeValley == false)
+                {
+                    activeValley = true;
+                    countValley++;
+                }
+                else if (height >= 0)
+                {
+                    activeValley = false;
+                }
+            }
+
+            return countValley;
+        }
+        public int getMoneySpent(int[] keyboards, int[] drives, int b)
+        {
+            if (keyboards.Min() + drives.Min() > b)
+            {
+                return -1;
+            }
+            else
+            {
+                int maxBuyValue = int.MinValue;
+                foreach (int i in keyboards)
+                {
+                    foreach (int x in drives)
+                    {
+                        if (i + x <= b)
+                        {
+                            maxBuyValue = maxBuyValue < i + x ? i + x : maxBuyValue;
+                        }
+
+                    }
+                }
+                return maxBuyValue;
+            }
+        }
+        public int pickingNumbers(List<int> a)
+        {
+            a.Sort();
+
+            int maxCountFollowing = 0;
+            int actualCountFollowing = 0;
+            int actualValue = 0;
+            bool reset = true;
+
+            bool getNewValue = true;
+            for (int i = 0; i < a.Count - 1; i++)
+            {
+                if (getNewValue)
+                {
+                    actualValue = i;
+                    getNewValue = false;
+                }
+                if (Math.Abs(a[actualValue] - a[i + 1]) <= 1)
+                {
+                    //Console.WriteLine("yes");
+
+                    if (reset)
+                    {
+                        actualCountFollowing = 2;
+                        reset = false;
+                    }
+                    else
+                    {
+                        actualCountFollowing++;
+                    }
+                }
+                else
+                {
+                    getNewValue = true;
+                    reset = true;
+                    if (actualCountFollowing > maxCountFollowing)
+                    {
+                        maxCountFollowing = actualCountFollowing;
+                    }
+                    actualCountFollowing = 0;
+                }
+                if (actualCountFollowing > maxCountFollowing)
+                {
+                    maxCountFollowing = actualCountFollowing;
+                }
+            }
+            return maxCountFollowing;
+        }
+        public int hurdleRace(int k, List<int> height)
+        {
+            int howManyPotions = 0;
+            int heightWithPotion = k;
+            for (int i = 0; i < height.Count; i++)
+            {
+                if (heightWithPotion < height[i])
+                {
+                    for (int x = heightWithPotion; x < height[i]; x++)
+                    {
+                        howManyPotions++;
+                        heightWithPotion++;
+                    }
+                }
+
+            }
+            return howManyPotions;
+        }
+        public int designerPdfViewer(List<int> h, string word)
+        {
+            int maxValue = 0;
+            int currentValue = 0;
+            foreach (char letter in word)
+            {
+                currentValue = h[(letter) - 97];
+                if (currentValue > maxValue)
+                    maxValue = currentValue;
+            }
+            return maxValue * word.Length;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

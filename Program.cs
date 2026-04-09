@@ -462,6 +462,141 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.kangaroo(0, 3, 4, 2));
 
 
+            ////38. Between Two Sets (EASY)
+            //List<int> a = [2,4];
+            //List<int> b = [16,32,96];
+
+            //HackerRank_0038 classHackerRank = new HackerRank_0038();
+            //Console.WriteLine(classHackerRank.getTotalX(a, b));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.getTotalX(a, b));
+
+
+            ////39. Breaking the Records (EASY)
+            //List<int> scores = [10,5,20,20,4,5,2,25,1];
+
+            //HackerRank_0039 classHackerRank = new HackerRank_0039();
+            //foreach(var item in classHackerRank.breakingRecords(scores))
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            ////OR
+
+            //foreach (var item in hackerRankAll.breakingRecords(scores))
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            ////40. Migratory Birds (EASY)
+            //List<int> arr = [10, 5, 20, 20, 4, 5, 2, 25, 1];
+
+            //HackerRank_0040 classHackerRank = new HackerRank_0040();
+            //Console.WriteLine(classHackerRank.migratoryBirds(arr));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.migratoryBirds(arr));
+
+
+            ////41. Day of the Programmer (EASY)
+            //int year = 2017;
+
+            //HackerRank_0041 classHackerRank = new HackerRank_0041();
+            //Console.WriteLine(classHackerRank.dayOfProgrammer(year));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.dayOfProgrammer(year));
+
+
+            ////42. Bill Division (EASY)
+            //List<int> bill = [3, 10,2,9];
+            //int k = 1;
+            //int b = 12;
+
+            //HackerRank_0042 classHackerRank = new HackerRank_0042();
+            //classHackerRank.bonAppetit(bill, k, b);
+
+            ////OR
+
+            //hackerRankAll.bonAppetit(bill, k, b);
+
+
+            ////43. Drawing Book (EASY)
+            //int n = 6;
+            //int p = 2;
+
+            //HackerRank_0043 classHackerRank = new HackerRank_0043();
+            //Console.WriteLine(classHackerRank.pageCount(n, p));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.pageCount(n, p));
+
+
+            //////44. Counting Valleys (EASY)
+            //int n = 8;
+            //string path = "UDDDUDUU";
+
+            //HackerRank_0044 classHackerRank = new HackerRank_0044();
+            //Console.WriteLine(classHackerRank.countingValleys(n, path));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.countingValleys(n, path));
+
+
+            ////45. Electronics Shop (EASY)
+            //int[] keyboards = [40,50,60];
+            //int[] drives = [5,8,12];
+            //int b = 60;
+
+            //HackerRank_0045 classHackerRank = new HackerRank_0045();
+            //Console.WriteLine(classHackerRank.getMoneySpent(keyboards, drives, b));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.getMoneySpent(keyboards, drives, b));
+
+
+            ////46. Picking Numbers (EASY)
+            //List<int> a = [4,6,5,3,3,1];
+
+            //HackerRank_0046 classHackerRank = new HackerRank_0046();
+            //Console.WriteLine(classHackerRank.pickingNumbers(a));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.pickingNumbers(a));
+
+
+            ////47. The Hurdle Race (EASY)
+            //List<int> height = [1,6,3,5,2];
+            //int k = 4;
+
+            //HackerRank_0047 classHackerRank = new HackerRank_0047();
+            //Console.WriteLine(classHackerRank.hurdleRace(k, height));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.hurdleRace(k, height));
+
+
+            ////48. Designer PDF Viewer (EASY)
+            //List<int> h = [1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5];
+            //string word = "abc";
+
+            //HackerRank_0048 classHackerRank = new HackerRank_0048();
+            //Console.WriteLine(classHackerRank.designerPdfViewer(h, word));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.designerPdfViewer(h, word));
+
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
@@ -5735,14 +5870,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindLucky(arr));
 
             ////(1395.) Count Number of Teams (MEDIUM)
-            int[] rating = [2, 5, 3, 4, 1];
+            //int[] rating = [2, 5, 3, 4, 1];
 
-            LeetCode_1395 classLeetCode = new LeetCode_1395();
-            Console.WriteLine(classLeetCode.NumTeams(rating));
+            //LeetCode_1395 classLeetCode = new LeetCode_1395();
+            //Console.WriteLine(classLeetCode.NumTeams(rating));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumTeams(rating));
+            //Console.WriteLine(leetCodeAll.NumTeams(rating));
 
             ////(1402.) Reducing Dishes (HARD)
             //int[] satisfaction = [4, 3, 2];
