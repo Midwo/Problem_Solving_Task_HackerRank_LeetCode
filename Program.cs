@@ -5734,6 +5734,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindLucky(arr));
 
+            ////(1395.) Count Number of Teams (MEDIUM)
+            int[] rating = [2, 5, 3, 4, 1];
+
+            LeetCode_1395 classLeetCode = new LeetCode_1395();
+            Console.WriteLine(classLeetCode.NumTeams(rating));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumTeams(rating));
+
             ////(1402.) Reducing Dishes (HARD)
             //int[] satisfaction = [4, 3, 2];
 
