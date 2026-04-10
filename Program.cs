@@ -318,7 +318,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.getMinimumCost(2, [2, 5, 6]));
 
 
-            ////23. Extra Long Factorials
+            ////23. Extra Long Factorials (MEDIUM)
             //HackerRank_0023 classHackerRank = new HackerRank_0023();
             //classHackerRank.extraLongFactorials(25);
 
@@ -596,6 +596,146 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(hackerRankAll.designerPdfViewer(h, word));
+
+
+            ////49. Utopian Tree (EASY)
+            //int n = 4;
+
+            //HackerRank_0049 classHackerRank = new HackerRank_0049();
+            //Console.WriteLine(classHackerRank.utopianTree(n));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.utopianTree(n));
+
+
+            ////50. Angry Professor (EASY)
+            //int k = 4;
+            //List<int> a = [-1,-3,4,2];
+
+            //HackerRank_0050 classHackerRank = new HackerRank_0050();
+            //Console.WriteLine(classHackerRank.angryProfessor(k, a));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.angryProfessor(k, a));
+
+
+            ////51. Beautiful Days at the Movies (EASY)
+            //int i = 20, j = 23, k = 6;
+
+            //HackerRank_0051 classHackerRank = new HackerRank_0051();
+            //Console.WriteLine(classHackerRank.beautifulDays(i, j, k));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.beautifulDays(i, j, k));
+
+
+            ////52. Viral Advertising (EASY)
+            //int n = 3;
+
+            //HackerRank_0052 classHackerRank = new HackerRank_0052();
+            //Console.WriteLine(classHackerRank.viralAdvertising(n));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.viralAdvertising(n));
+
+
+            ////53. Save the Prisoner! (EASY)
+            //int n = 352926151, m = 380324688, s = 94730870;
+
+            //HackerRank_0053 classHackerRank = new HackerRank_0053();
+            //Console.WriteLine(classHackerRank.saveThePrisoner(n, m, s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.saveThePrisoner(n, m, s));
+
+
+            ////54. Circular Array Rotation (EASY)
+            //List<int> a = [3, 4, 5];
+            //int k = 2;
+            //List<int> queries = [1, 2];
+
+            //HackerRank_0054 classHackerRank = new HackerRank_0054();
+            //Console.WriteLine(string.Join(',',classHackerRank.circularArrayRotation(a, k, queries)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.circularArrayRotation(a, k, queries)));
+
+
+            ////55. Sequence Equation (EASY)
+            //List<int> p = [5, 2, 1,3,4];
+
+            //HackerRank_0055 classHackerRank = new HackerRank_0055();
+            //Console.WriteLine(string.Join(',', classHackerRank.permutationEquation(p)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.permutationEquation(p)));
+
+
+            ////56. Jumping on the Clouds: Revisited (EASY)
+            //int[] c = [0,0,1,0];
+            //int k = 2;
+
+            //HackerRank_0056 classHackerRank = new HackerRank_0056();
+            //Console.WriteLine(string.Join(',', classHackerRank.jumpingOnClouds(c, k)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.jumpingOnClouds(c, k)));
+
+
+            ////57. Find Digits (EASY)
+            //int n = 12;
+
+            //HackerRank_0057 classHackerRank = new HackerRank_0057();
+            //Console.WriteLine(classHackerRank.findDigits(n));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.findDigits(n));
+
+
+            ////58. Append and Delete (EASY)
+            //string s = "y";
+            //string t = "yu";
+            //int k = 2;
+
+            //HackerRank_0058 classHackerRank = new HackerRank_0058();
+            //Console.WriteLine(classHackerRank.appendAndDelete(s, t, k));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.appendAndDelete(s, t, k));
+
+
+            ////59. Sherlock and Squares (EASY)
+            //int a = 3;
+            //int b = 9;
+
+            //HackerRank_0059 classHackerRank = new HackerRank_0059();
+            //Console.WriteLine(classHackerRank.squares(a, b));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.squares(a, b));
+
+
+            ////60. Library Fine (EASY)
+            //int d1 = 9,  m1 = 6,  y1 = 2015,  d2 =6, m2 = 6,  y2 = 2015;
+
+            //HackerRank_0060 classHackerRank = new HackerRank_0060();
+            //Console.WriteLine(classHackerRank.libraryFine(d1,m1,y1,d2,m2,y2));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.libraryFine(d1, m1, y1, d2, m2, y2));
+
 
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL

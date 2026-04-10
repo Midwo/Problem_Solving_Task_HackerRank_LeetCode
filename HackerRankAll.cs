@@ -1207,16 +1207,217 @@ namespace ProblemSolving
             }
             return maxValue * word.Length;
         }
+        public int utopianTree(int n)
+        {
+            int x = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    x++;
+                }
+                else
+                {
+                    x = x *= 2;
+                }
+            }
+            return x;
+        }
+        public string angryProfessor(int k, List<int> a)
+        {
+            int notToolate = 0;
+            foreach (int item in a)
+            {
+                if (item <= 0)
+                {
+                    notToolate++;
+                }
+            }
+            if (notToolate >= k)
+            {
+                return "NO";
+            }
+            else
+            {
+                return "YES";
+            }
+        }
+        public int beautifulDays(int i, int j, int k)
+        {
+            int countBeatifulDay = 0;
+            for (int x = i; x <= j; x++)
+            {
+                int reverseint = int.Parse(x.ToString().Reverse().ToArray());
+                if ((x - reverseint) % k == 0)
+                {
+                    countBeatifulDay++;
+                }
+            }
+            return countBeatifulDay;
+        }
+        public int viralAdvertising(int n)
+        {
+            int liked = 2;
+            int shared = 5;
+            int cumulative = 2;
 
+            for (int i = 1; i < n; i++)
+            {
+                shared = liked * 3;
+                liked = shared / 2;
+                cumulative += liked;
+            }
+            return cumulative;
+        }
+        public int saveThePrisoner(int n, int m, int s)
+        {
+            var pos = s + (m % n) - 1;
+            return (pos == 0 || pos > n) ? Math.Abs(pos - n) : pos;
+        }
+        public List<int> circularArrayRotation(List<int> a, int k, List<int> queries)
+        {
+            List<int> queries1 = new List<int>();
+            int length = a.Count;
+            int remainder = k % length;
 
+            for (int i = 0; i < queries.Count; i++)
+            {
+                int indexSeachr = (length - (remainder - queries[i])) % length;
+                // Console.WriteLine(x);
+                queries1.Add(a[indexSeachr]);
+            }
+            return queries1;
+        }
+        public List<int> permutationEquation(List<int> p)
+        {
+            List<int> newList = new List<int>();
+            int length = p.Count;
 
+            for (int i = 1; i <= length; i++)
+            {
+                bool statusBreak = false;
+                for (int j = 0; j < length; j++)
+                {
+                    if (p[j] == i)
+                    {
+                        for (int k = 0; k < length; k++)
+                        {
+                            if (p[k] == j + 1)
+                            {
+                                newList.Add(k + 1);
+                                statusBreak = true;
+                                break;
+                            }
+                        }
+                        if (statusBreak)
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
+            return newList;
+        }
+        public int jumpingOnClouds(int[] c, int k)
+        {
+            int index = 0;
+            int points = 100;
 
+            while (true)
+            {
+                index += k;
+                if (index > c.Length - 1)
+                {
+                    index = index % c.Length;
+                }
 
+                if (c[index] == 1)
+                    points -= 2;
 
+                points--;
+                if (index == 0) break;
+            }
+            return points;
+        }
+        public int findDigits(int n)
+        {
+            int count = 0;
+            int copyN = n;
 
+            while (copyN > 0)
+            {
+                int temp = copyN % 10;
+                copyN /= 10;
+                if (temp > 0 && n % temp == 0)
+                {
+                    count++;
+                }
+            }
 
+            return count;
+        }
+        public string appendAndDelete(string s, string t, int k)
+        {
+            int countCorrectDigit = 0;
 
+            int lengthS = s.Length;
+            int lengthT = t.Length;
 
+            if (k >= lengthS + lengthT)
+            {
+                return "Yes";
+            }
+
+            int minLenght = Math.Min(lengthS, lengthT);
+
+            for (int i = 0; i < minLenght; i++)
+            {
+                if (s[i] == t[i])
+                {
+                    countCorrectDigit++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            int howManyOperations = lengthS - countCorrectDigit + lengthT - countCorrectDigit;
+            if (howManyOperations > k)
+            {
+                return "No";
+            }
+            else if (howManyOperations != k && (k - howManyOperations) % 2 == 1)
+            {
+                return "No";
+            }
+            return "Yes";
+        }
+        public int squares(int a, int b)
+        {
+            return (int)Math.Floor(Math.Sqrt(b)) - (int)Math.Ceiling(Math.Sqrt(a)) + 1;
+        }
+        public int libraryFine(int d1, int m1, int y1, int d2, int m2, int y2)
+        {
+            DateTime date1 = new DateTime(y1, m1, d1);
+            DateTime date2 = new DateTime(y2, m2, d2);
+
+            if (date1 <= date2)
+            {
+                return 0;
+            }
+            else if (date1.Year > date2.Year)
+            {
+                return 10000;
+            }
+            else if (date1.Month > date2.Month)
+            {
+                return (500 * (date1.Month - date2.Month));
+            }
+            else
+            {
+                return 15 * (int)(date1 - date2).Days;
+            }
+        }
 
 
 
