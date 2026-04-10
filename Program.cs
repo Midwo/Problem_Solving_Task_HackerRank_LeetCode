@@ -3754,6 +3754,22 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinDiffInBST(root));
 
+            ////(784.) Letter Case Permutation (MEDIUM)
+            string s = "a1b2";
+
+            LeetCode_784 classLeetCode = new LeetCode_784();
+            foreach (var item in classLeetCode.LetterCasePermutation(s))
+            {
+                Console.WriteLine(item);
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.LetterCasePermutation(s))
+            {
+                Console.WriteLine(item);
+            }
+
             ////796. Rotate String (EASY)
             //string s = "bbbacddceeb";
             //string goal = "ceebbbbacdd";
