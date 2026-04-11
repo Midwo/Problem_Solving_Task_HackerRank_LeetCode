@@ -1418,9 +1418,64 @@ namespace ProblemSolving
                 return 15 * (int)(date1 - date2).Days;
             }
         }
+        public bool is_smart_number(int num)
+        {
+            int val = (int)Math.Sqrt(num);
+            if (val * val == num)
+                return true;
+            return false;
+        }
+        public string strings_xor(string s, string t)
+        {
 
+            string res = "";
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == t[i])
+                    res += '0';
+                else
+                    res += '1';
+            }
 
+            return res;
+        }
+        public string misereNim(List<int> s)
+        {
+            int n = s.Count();
+            int xr = 0;
+            int sum = 0;
 
+            for (int i = 0; i < n; i++)
+            {
+                xr ^= s[i];
+                sum += s[i];
+            }
+
+            if (n % 2 == 0)
+            {
+                return n != sum && xr == 0 ? "Second" : "First";
+            }
+            else
+            {
+                return n == sum || xr == 0 ? "Second" : "First";
+            }
+
+        }
+        public int towerBreakers(int n, int m)
+        {
+            if (m == 1)
+            {
+                return 2;
+            }
+            else
+            {
+                return 2 - (n % 2);
+            }
+        }
+        public string gameOfStones(int n)
+        {
+            return n % 7 <= 1 ? "Second" : "First";
+        }
 
 
 

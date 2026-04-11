@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProblemSolving.HackerRank
+namespace ProblemSolving.LeetCode
 {
     internal class LeetCode_784
     {

@@ -737,6 +737,63 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.libraryFine(d1, m1, y1, d2, m2, y2));
 
 
+            ////61. Smart Number (EASY)
+            //int num = 169;
+
+            //HackerRank_0061 classHackerRank = new HackerRank_0061();
+            //Console.WriteLine(classHackerRank.is_smart_number(num));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.is_smart_number(num));
+
+
+            ////62. XOR Strings (EASY)
+            //string s = "10101";
+            //string t = "00101";
+
+            //HackerRank_0062 classHackerRank = new HackerRank_0062();
+            //Console.WriteLine(classHackerRank.strings_xor(s, t));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.strings_xor(s, t));
+
+
+            ////63. Misère Nim (EASY)
+            //List<int> s = [2, 1, 3];
+
+            //HackerRank_0063 classHackerRank = new HackerRank_0063();
+            //Console.WriteLine(classHackerRank.misereNim(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.misereNim(s));
+
+
+            ////64. Tower Breakers (EASY)
+            //int n = 1;
+            //int m = 4;
+
+            //HackerRank_0064 classHackerRank = new HackerRank_0064();
+            //Console.WriteLine(classHackerRank.towerBreakers(n, m));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.towerBreakers(n, m));
+
+
+            ////65. Game of Stones (EASY)
+            //int n = 1;
+
+            //HackerRank_0065 classHackerRank = new HackerRank_0065();
+            //Console.WriteLine(classHackerRank.gameOfStones(n));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.gameOfStones(n));
+
+
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
@@ -12408,14 +12465,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumDistance(nums));
 
             ////(3741.) Minimum Distance Between Three Equal Elements II (MEDIUM)
-            int[] nums = [1,2,1,1,3];
+            //int[] nums = [1,2,1,1,3];
 
-            LeetCode_3741 classLeetCode = new LeetCode_3741();
-            Console.WriteLine(classLeetCode.MinimumDistance(nums));
+            //LeetCode_3741 classLeetCode = new LeetCode_3741();
+            //Console.WriteLine(classLeetCode.MinimumDistance(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumDistanceTask3741(nums));
+            //Console.WriteLine(leetCodeAll.MinimumDistanceTask3741(nums));
 
             ////(3750.) Minimum Number of Flips to Reverse Binary String (EASY)
             //int n = 10;
