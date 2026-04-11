@@ -3755,20 +3755,20 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinDiffInBST(root));
 
             ////(784.) Letter Case Permutation (MEDIUM)
-            string s = "a1b2";
+            //string s = "a1b2";
 
-            LeetCode_784 classLeetCode = new LeetCode_784();
-            foreach (var item in classLeetCode.LetterCasePermutation(s))
-            {
-                Console.WriteLine(item);
-            }
+            //LeetCode_784 classLeetCode = new LeetCode_784();
+            //foreach (var item in classLeetCode.LetterCasePermutation(s))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.LetterCasePermutation(s))
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in leetCodeAll.LetterCasePermutation(s))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             ////796. Rotate String (EASY)
             //string s = "bbbacddceeb";
@@ -12406,6 +12406,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimumDistance(nums));
+
+            ////(3741.) Minimum Distance Between Three Equal Elements II (MEDIUM)
+            int[] nums = [1,2,1,1,3];
+
+            LeetCode_3741 classLeetCode = new LeetCode_3741();
+            Console.WriteLine(classLeetCode.MinimumDistance(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumDistanceTask3741(nums));
 
             ////(3750.) Minimum Number of Flips to Reverse Binary String (EASY)
             //int n = 10;

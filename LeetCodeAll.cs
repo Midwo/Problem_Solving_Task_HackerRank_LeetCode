@@ -30330,8 +30330,40 @@ namespace ProblemSolving
                 listAllPermutation.Add(sb.ToString());
             }
         }
+        public int MinimumDistanceTask3741(int[] nums)
+        {
+            Dictionary<int, int[]> numberAndIndices = new Dictionary<int, int[]>();
+            int minDistance = int.MaxValue;
 
+            for (int numsIndex = 0; numsIndex < nums.Length; numsIndex++)
+            {
+                int currValue = nums[numsIndex];
+                if (numberAndIndices.ContainsKey(currValue))
+                {
+                    if (numberAndIndices[currValue][1] > -1)
+                    {
+                        minDistance = Math.Min(minDistance, (numsIndex - numberAndIndices[currValue][0]) * 2);
+                        numberAndIndices[currValue][0] = numberAndIndices[currValue][1];
+                        numberAndIndices[currValue][1] = numsIndex;
+                    }
+                    else
+                    {
+                        numberAndIndices[currValue][1] = numsIndex;
+                    }
+                }
+                else
+                {
+                    numberAndIndices.Add(currValue, new int[2] { numsIndex, -1 });
+                }
+            }
 
+            if (minDistance == int.MaxValue)
+            {
+                return -1;
+            }
+
+            return minDistance;
+        }
 
 
 
