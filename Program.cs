@@ -7611,6 +7611,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxAscendingSum(nums));
 
+            ////(1805.) Number of Different Integers in a String (EASY)
+            string word = "a123bc34d8ef34";
+
+            LeetCode_1805 classLeetCode = new LeetCode_1805();
+            Console.WriteLine(classLeetCode.NumDifferentIntegers(word));
+
+            //OR 
+
+            Console.WriteLine(leetCodeAll.NumDifferentIntegers(word));
+
             ////(1816.) Truncate Sentence (EASY) 
             //string s = "Hello how are you Contestant";
             //int k = 4;
