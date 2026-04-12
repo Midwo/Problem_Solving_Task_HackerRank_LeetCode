@@ -327,7 +327,7 @@ namespace ProblemSolving
             //hackerRankAll.extraLongFactorials(25);
 
 
-            ////24. The Power Sum
+            ////24. The Power Sum (MEDIUM)
             //HackerRank_0024 classHackerRank = new HackerRank_0024();
             //Console.WriteLine(classHackerRank.powerSum(100, 3));
 
@@ -792,6 +792,64 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(hackerRankAll.gameOfStones(n));
+
+
+            ////66. Flipping bits (EASY)
+            //long n = 802743475;
+
+            //HackerRank_0066 classHackerRank = new HackerRank_0066();
+            //Console.WriteLine(classHackerRank.flippingBits(n));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.flippingBits(n));
+
+
+            ////67. Sum vs XOR (EASY)
+            //long n = 5;
+
+            //HackerRank_0067 classHackerRank = new HackerRank_0067();
+            //Console.WriteLine(classHackerRank.sumXor(n));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.sumXor(n));
+
+
+            ////68. Maximizing XOR (EASY)
+            //int l = 10, r = 15;
+
+            //HackerRank_0068 classHackerRank = new HackerRank_0068();
+            //Console.WriteLine(classHackerRank.maximizingXor(l, r));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.maximizingXor(l, r));
+
+
+            ////69. Lonely Integer (EASY)
+            //List<int> a = [1,1];
+
+            //HackerRank_0069 classHackerRank = new HackerRank_0069();
+            //Console.WriteLine(classHackerRank.lonelyinteger(a));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.lonelyinteger(a));
+
+
+            ////70. Permuting Two Arrays (EASY)
+            //int k= 9;
+            //List<int> A = [3,6,8,5,9,9,4,8,4,7];
+            //List<int> B = [5,1,0,1,6,4,1,7,4,3];
+
+            //HackerRank_0070 classHackerRank = new HackerRank_0070();
+            //Console.WriteLine(classHackerRank.twoArrays(k, A, B));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.twoArrays(k, A, B));
+
 
 
 

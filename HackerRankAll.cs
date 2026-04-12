@@ -593,7 +593,7 @@ namespace ProblemSolving
                 } while (howManyFlowers != 0);
             }
             return cost;
-        }      
+        }
         public void extraLongFactorials(int n)
         {
             BigInteger x = 1;
@@ -1476,6 +1476,105 @@ namespace ProblemSolving
         {
             return n % 7 <= 1 ? "Second" : "First";
         }
+        public long flippingBits(long n)
+        {
+            uint binaryValue = Convert.ToUInt32(n);
+            binaryValue = ~binaryValue;
+            n = Convert.ToInt64(binaryValue);
+            return n;
+        }
+        public long sumXor(long n)
+        {
+            long howMany = 0;
+            for (long i = 0; i < n; i++)
+            {
+                if ((n ^ i) == n + i)
+                {
+                    howMany++;
+                }
+            }
+            return howMany;
+        }
+        public int maximizingXor(int l, int r)
+        {
+            int max = 0;
+            for (int i = l; i <= r; i++)
+            {
+                for (int j = i + 1; j <= r; j++)
+                {
+                    int xor = (i ^ j);
+                    if (xor > max)
+                    {
+                        max = xor;
+                    }
+                }
+            }
+            return max;
+        }
+        public int lonelyinteger(List<int> a)
+        {
+            Dictionary<int, int> howManyNumber = new Dictionary<int, int>();
+            int minimumValueReplay = int.MaxValue;
+            int minimumKeyReplay = 0;
+
+            foreach (int i in a)
+            {
+                if (howManyNumber.ContainsKey(i))
+                {
+                    howManyNumber[i]++;
+                }
+                else
+                {
+                    howManyNumber.Add(i, 1);
+                }
+            }
+
+            foreach (var i in howManyNumber)
+            {
+                if (i.Value < minimumValueReplay)
+                {
+                    minimumValueReplay = i.Value;
+                    minimumKeyReplay = i.Key;
+                }
+            }
+
+            return minimumKeyReplay;
+        }
+        public string twoArrays(int k, List<int> A, List<int> B)
+        {
+            A.Sort();
+            B = B.OrderBy(x => x).Reverse().ToList();
+            bool trueOrFalse = false;
+
+            for (int i = 0; i < A.Count; i++)
+            {
+                if (A[i] + B[i] < k)
+                {
+                    return "NO";
+                }
+            }
+            return "YES";
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1506,3 +1605,4 @@ namespace ProblemSolving
 
     }
 }
+
