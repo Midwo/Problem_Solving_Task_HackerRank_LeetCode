@@ -309,7 +309,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.timeInWords(5, 45));
 
 
-            ////22. Greedy Florist
+            ////22. Greedy Florist (MEDIUM)
             //HackerRank_0022 classHackerRank = new HackerRank_0022();
             //Console.WriteLine(classHackerRank.getMinimumCost(2, [2, 5, 6]));
 
@@ -336,7 +336,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.powerSum(100, 3));
 
 
-            ////25. Max Min
+            ////25. Max Min (MEDIUM)
             //HackerRank_0025 classHackerRank = new HackerRank_0025();
             //Console.WriteLine(classHackerRank.maxMin(4, [3, 4, 10, 20, 30, 40, 100, 200, 1, 2]));
 
@@ -849,6 +849,64 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(hackerRankAll.twoArrays(k, A, B));
+
+
+            ////71. Jim and the Orders (EASY)
+            //List<List<int>> orders = [[8,1],[4,2],[5,6],[3,1],[4,3]];
+
+            //HackerRank_0071 classHackerRank = new HackerRank_0071();
+            //Console.WriteLine(string.Join(',',classHackerRank.jimOrders(orders)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.jimOrders(orders)));
+
+
+            ////72. Mark and Toys (EASY)
+            //List<int> prices = [1, 12, 5, 111, 200, 1000, 10];
+            //int k = 50;
+
+            //HackerRank_0072 classHackerRank = new HackerRank_0072();
+            //Console.WriteLine(classHackerRank.maximumToys(prices, k));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.maximumToys(prices, k));
+
+
+            ////73. Largest Permutation (EASY)
+            //List<int> arr = [2, 3, 1, 4];
+            //int k = 4;
+
+            //HackerRank_0073 classHackerRank = new HackerRank_0073();
+            //Console.WriteLine(string.Join(',',classHackerRank.largestPermutation(k, arr)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.largestPermutation(k, arr)));
+
+
+            ////74. Priyanka and Toys (EASY)
+            //List<int> w = [2, 3, 1, 4];
+
+            //HackerRank_0074 classHackerRank = new HackerRank_0074();
+            //Console.WriteLine(classHackerRank.toys(w));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.toys(w));
+
+
+            ////75. Sherlock and The Beast (EASY)
+            //int n = 11;
+
+            //HackerRank_0075 classHackerRank = new HackerRank_0075();
+            //classHackerRank.decentNumber(n);
+
+            ////OR
+
+            //hackerRankAll.decentNumber(n);
+
 
 
 

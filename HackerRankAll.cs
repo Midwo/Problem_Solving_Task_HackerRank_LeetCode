@@ -1555,6 +1555,138 @@ namespace ProblemSolving
             }
             return "YES";
         }
+        public List<int> jimOrders(List<List<int>> orders)
+        {
+            Dictionary<int, int> dictionary = new Dictionary<int, int>();
+
+            for (int i = 0; i < orders.Count; i++)
+            {
+                dictionary.Add(i + 1, (orders[i][0] + orders[i][1]));
+            }
+
+            List<int> jimOrdersList = dictionary.OrderBy(x => x.Value).Select(x => x.Key).ToList();
+
+            return jimOrdersList;
+        }
+        public int maximumToys(List<int> prices, int k)
+        {
+            prices.Sort();
+            int sumCost = 0;
+            int sumCount = 0;
+            for (int i = 0; i < prices.Count; i++)
+            {
+                if (sumCost + prices[i] <= k)
+                {
+                    sumCount++;
+                    sumCost += prices[i];
+                }
+                else
+                {
+                    break; ;
+                }
+            }
+            return sumCount;
+        }
+        public List<int> largestPermutation(int k, List<int> arr)
+        {
+            if (k <= 0 || arr == null || !arr.Any())
+            {
+                return new List<int>();
+            }
+            int length = arr.Count;
+            int currMaxValue = length;
+            var dic = new Dictionary<int, int>();
+            for (int i = 0; i < arr.Count; ++i)
+            {
+                dic.Add(arr[i], i);
+            }
+
+            var currentIndex = 0;
+            var countMove = 0;
+
+            while (currentIndex < length && countMove < k)
+            {
+                if (arr[currentIndex] != currMaxValue)
+                {
+                    int temp = arr[currentIndex];
+                    arr[currentIndex] = currMaxValue;
+                    arr[dic[currMaxValue]] = temp;
+                    dic[temp] = dic[currMaxValue];
+                    currMaxValue--;
+                    countMove++;
+                }
+                else
+                {
+                    currMaxValue--;
+                }
+                currentIndex++;
+            }
+
+            return arr;
+        }
+        public int toys(List<int> w)
+        {
+            w.Sort();
+            int startWeight = w[0];
+            int howManyConteiner = 1;
+
+            foreach (int i in w)
+            {
+                if (startWeight + 4 < i)
+                {
+                    howManyConteiner++;
+                    startWeight = i;
+                }
+            }
+            return howManyConteiner;
+        }
+        public void decentNumber(int n)
+        {
+            if (n < 3)
+            {
+                Console.WriteLine("-1");
+                return;
+            }
+            if (n % 3 == 0)
+            {
+                Console.WriteLine(new string('5', n));
+                return;
+            }
+            int howMany5 = (n / 3) - 1;
+            int howMany3 = n - (howMany5 * 3);
+            if (howMany3 % 5 != 0)
+            {
+                howMany3 = 0;
+                while (howMany5 > 0)
+                {
+                    howMany5--;
+                    howMany3 = n - (howMany5 * 3);
+                    if (howMany3 % 5 == 0)
+                        break;
+                    howMany3 = 0;
+                }
+            }
+            if (howMany5 <= 0 && howMany3 <= 0)
+            {
+                Console.WriteLine("-1");
+                return;
+            }
+            Console.Write(new string('5', howMany5 * 3));
+            Console.WriteLine(new string('3', howMany3));
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
