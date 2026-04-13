@@ -7612,14 +7612,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxAscendingSum(nums));
 
             ////(1805.) Number of Different Integers in a String (EASY)
-            string word = "a123bc34d8ef34";
+            //string word = "a123bc34d8ef34";
 
-            LeetCode_1805 classLeetCode = new LeetCode_1805();
-            Console.WriteLine(classLeetCode.NumDifferentIntegers(word));
+            //LeetCode_1805 classLeetCode = new LeetCode_1805();
+            //Console.WriteLine(classLeetCode.NumDifferentIntegers(word));
 
-            //OR 
+            ////OR 
 
-            Console.WriteLine(leetCodeAll.NumDifferentIntegers(word));
+            //Console.WriteLine(leetCodeAll.NumDifferentIntegers(word));
 
             ////(1816.) Truncate Sentence (EASY) 
             //string s = "Hello how are you Contestant";
@@ -8233,6 +8233,18 @@ namespace ProblemSolving
 
             //LeetCode_2022 classLeetCode = new LeetCode_2022();
             //int[][] result = classLeetCode.Construct2DArray(original, m, n);
+
+            ////(2023.) Number of Pairs of Strings With Concatenation Equal to Target (MEDIUM)
+            string[] nums = ["777", "7", "77", "77"];
+            string target = "7777";
+
+            LeetCode_2023 classLeetCode = new LeetCode_2023();
+            Console.WriteLine(classLeetCode.NumOfPairs(nums, target));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumOfPairs(nums, target));
+
 
             //foreach (var item in result)
             //{
