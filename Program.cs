@@ -8371,7 +8371,7 @@ namespace ProblemSolving
             //LeetCode_2054 classLeetCode = new LeetCode_2054();
             //Console.WriteLine(classLeetCode.MaxTwoEvents(events));
 
-            ////OR
+            //OR
 
             //Console.WriteLine(leetCodeAll.MaxTwoEvents(events));
 
