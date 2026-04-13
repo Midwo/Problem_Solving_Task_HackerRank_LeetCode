@@ -8249,15 +8249,15 @@ namespace ProblemSolving
 
 
             ////(2023.) Number of Pairs of Strings With Concatenation Equal to Target (MEDIUM)
-            string[] nums = ["777", "7", "77", "77"];
-            string target = "7777";
+            //string[] nums = ["777", "7", "77", "77"];
+            //string target = "7777";
 
-            LeetCode_2023 classLeetCode = new LeetCode_2023();
-            Console.WriteLine(classLeetCode.NumOfPairs(nums, target));
+            //LeetCode_2023 classLeetCode = new LeetCode_2023();
+            //Console.WriteLine(classLeetCode.NumOfPairs(nums, target));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumOfPairs(nums, target));
+            //Console.WriteLine(leetCodeAll.NumOfPairs(nums, target));
 
 
             ////(2027.) Minimum Moves to Convert String (EASY)
