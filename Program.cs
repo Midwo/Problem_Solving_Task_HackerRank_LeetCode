@@ -908,6 +908,62 @@ namespace ProblemSolving
             //hackerRankAll.decentNumber(n);
 
 
+            ////76. Beautiful Pairs (EASY)
+            //List<int> A = [1];
+            //List<int> B = [1];
+
+            //HackerRank_0076 classHackerRank = new HackerRank_0076();
+            //Console.WriteLine(classHackerRank.beautifulPairs(A, B));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.beautifulPairs(A, B));
+
+
+            ////77. Maximum Perimeter Triangle (EASY)
+            //List<int> sticks = [1,1,1,2,3,5];
+
+            //HackerRank_0077 classHackerRank = new HackerRank_0077();
+            //Console.WriteLine(string.Join(',',classHackerRank.maximumPerimeterTriangle(sticks)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.maximumPerimeterTriangle(sticks)));
+
+
+            ////78. Luck Balance (EASY)
+            //int k = 1;
+            //List <List<int>> contestsint = [[5,1],[1,1],[4,0]];
+
+            //HackerRank_0078 classHackerRank = new HackerRank_0078();
+            //Console.WriteLine(classHackerRank.luckBalance(k, contestsint));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.luckBalance(k, contestsint));
+
+
+            //////79. Grid Challenge (EASY)
+            //List<string> grid = ["abc","ade","efg"];
+
+            //HackerRank_0079 classHackerRank = new HackerRank_0079();
+            //Console.WriteLine(classHackerRank.gridChallenge(grid));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.gridChallenge(grid));
+
+
+            ////80. Marc's Cakewalk (EASY)
+            List<int> calorie = [7, 4, 9, 6];
+
+            HackerRank_0080 classHackerRank = new HackerRank_0080();
+            Console.WriteLine(classHackerRank.marcsCakewalk(calorie));
+
+            //OR
+
+            Console.WriteLine(hackerRankAll.marcsCakewalk(calorie));
+
 
 
 

@@ -498,34 +498,6 @@ namespace ProblemSolving
 
             return String.IsNullOrEmpty(myString) ? "Empty String" : myString;
         }
-        public int beautifulPairs(List<int> A, List<int> B)
-        {
-            int pairs = 0;
-            int countA = A.Count;
-            for (int i = 0; i < A.Count; i++)
-            {
-                for (int y = 0; y < B.Count; y++)
-                {
-                    if (A[i] == B[y])
-                    {
-                        pairs++;
-                        A.RemoveAt(i);
-                        B.RemoveAt(y);
-                        i = -1;
-                        break;
-                    }
-                }
-            }
-            if (pairs != countA)
-            {
-                pairs++;
-            }
-            else
-            {
-                pairs--;
-            }
-            return pairs;
-        }
         public string timeInWords(int h, int m)
         {
             string outputPrint = string.Empty;
@@ -1674,14 +1646,206 @@ namespace ProblemSolving
             Console.Write(new string('5', howMany5 * 3));
             Console.WriteLine(new string('3', howMany3));
         }
+        public int beautifulPairs(List<int> A, List<int> B)
+        {
+            Dictionary<int, int> dictB = new Dictionary<int, int>();
+            int countBeautifulPairs = 0;
+            bool addOne = false;
+            foreach (int i in B)
+            {
+                if (dictB.ContainsKey(i))
+                {
+                    dictB[i]++;
+                }
+                else
+                {
+                    dictB.Add(i, 1);
+                }
+            }
+
+            for (int index = 0; index < A.Count; index++)
+            {
+                int currValue = A[index];
+
+                if (dictB.ContainsKey(currValue) && dictB[currValue] > 0)
+                {
+                    countBeautifulPairs++;
+                    dictB[currValue]--;
+                }
+                else
+                {
+                    addOne = true;
+                }
+
+            }
+
+            if (addOne)
+            {
+                return countBeautifulPairs + 1;
+            }
+            else
+            {
+                return countBeautifulPairs - 1;
+            }
+
+        }
+        public List<int> maximumPerimeterTriangle(List<int> sticks)
+        {
+            int length = sticks.Count;
+            sticks.Sort();
+            int longLengthStick = sticks[length - 1];
+            int medLengthStick = sticks[length - 2];
+            int shortLengthStick = sticks[length - 3];
+
+            if (longLengthStick < medLengthStick + shortLengthStick)
+            {
+                return [shortLengthStick, medLengthStick, longLengthStick];
+            }
+
+            for (int index = length - 4; index >= 0; index--)
+            {
+                longLengthStick = medLengthStick;
+                medLengthStick = shortLengthStick;
+                shortLengthStick = sticks[index];
+
+                if (longLengthStick < medLengthStick + shortLengthStick)
+                {
+                    return [shortLengthStick, medLengthStick, longLengthStick];
+                }
+            }
+
+            return [-1];
+        }
+        public int luckBalance(int k, List<List<int>> contests)
+        {
+            List<int> important = new List<int>();
+            int luck = 0;
+
+            foreach (var item in contests)
+            {
+                if (item[1] == 1)
+                {
+                    important.Add(item[0]);
+                }
+                else
+                {
+                    luck += item[0];
+                }
+            }
+
+            important = important.OrderByDescending(x => x).ToList();
+
+            luck += important.Take(k).Sum();
+            luck -= important.Skip(k).Sum();
+
+            return luck;
+
+        }
+        public string gridChallenge(List<string> grid)
+        {
+            int rows = grid.Count;
+            int cols = grid[0].Length;
+            char[][] charGrid = new char[rows][];
+
+            for (int i = 0; i < rows; i++)
+            {
+                //charGrid[i] = grid[i].ToArray().OrderBy(x => x).ToArray();
+
+                //Better this:
+                char[] temp = grid[i].ToCharArray();
+                Array.Sort(temp);
+                charGrid[i] = temp;
+            }
+
+            for (int indexCol = 0; indexCol < cols; indexCol++)
+            {
+                int lastChar = charGrid[0][indexCol];
+
+                for (int indexRow = 1; indexRow < rows; indexRow++)
+                {
+                    int currChar = charGrid[indexRow][indexCol];
+
+                    if (lastChar > currChar)
+                    {
+                        return "NO";
+                    }
+                    lastChar = currChar;
+                }
+            }
+
+            return "YES";
+
+            ////Old version -> Much worse. Less efficient.
+
+            //bool endLoop = false;
+            //string outprint = string.Empty;
+            //if (grid.Count > 1)
+            //{
+            //    for (int i = 0; i < grid.Count; i++)
+            //    {
+            //        grid[i] = String.Concat(grid[i].OrderBy(c => c));
+            //    }
+
+            //    int howLengh = grid[0].Length;
+
+            //    for (int i = 0; i < howLengh; i++)
+            //    {
+            //        if (endLoop == false)
+            //        {
+            //            for (int x = 1; x < grid.Count; x++)
+            //            {
+            //                if ((int)Convert.ToChar(grid[x - 1][i]) <= (int)Convert.ToChar(grid[x][i]))
+            //                {
+            //                    outprint = "YES";
+            //                }
+            //                else
+            //                {
+            //                    outprint = "NO";
+            //                    endLoop = true;
+            //                    break;
+            //                }
+            //            }
+            //        }
+            //        else
+            //        {
+            //            break;
+            //        }
+            //    }
+            //}
+            //else
+            //{
+            //    outprint = "YES";
+            //}
+            //return outprint;
+        }
+        public long marcsCakewalk(List<int> calorie)
+        {
+            calorie.Sort();
+            long multiplier = 1;
+            long sumValue = 0;
+
+            for (int i = calorie.Count - 1; 0 <= i; i--)
+            {
+                sumValue += calorie[i] * multiplier;
+                multiplier *= 2;
+                //OR better:
+                //multiplier <<= 1;
+            }
+
+            return sumValue;
 
 
+            ////Old version
+            //calorie.Sort();
 
-
-
-
-
-
+            //double SumValue = 0;
+            //for (int i = calorie.Count - 1; 0 <= i; i--)
+            //{
+            //    SumValue = SumValue + (calorie[calorie.Count - i - 1] * Math.Pow(2, i));
+            //    // Console.WriteLine(SumValue);
+            //}
+            //return (long)SumValue;
+        }
 
 
 
