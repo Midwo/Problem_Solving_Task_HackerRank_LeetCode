@@ -955,14 +955,14 @@ namespace ProblemSolving
 
 
             ////80. Marc's Cakewalk (EASY)
-            List<int> calorie = [7, 4, 9, 6];
+            //List<int> calorie = [7, 4, 9, 6];
 
-            HackerRank_0080 classHackerRank = new HackerRank_0080();
-            Console.WriteLine(classHackerRank.marcsCakewalk(calorie));
+            //HackerRank_0080 classHackerRank = new HackerRank_0080();
+            //Console.WriteLine(classHackerRank.marcsCakewalk(calorie));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(hackerRankAll.marcsCakewalk(calorie));
+            //Console.WriteLine(hackerRankAll.marcsCakewalk(calorie));
 
 
 
@@ -5894,6 +5894,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.Maximum69Number(num));
+
+            ////(1324.) Print Words Vertically (MEDIUM)
+            string s = "CONTEST IS COMING";
+
+            LeetCode_1324 classLeetCode = new LeetCode_1324();
+            Console.WriteLine(string.Join(',', classLeetCode.PrintVertically(s)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.PrintVertically(s)));
 
             /////(1327.) List the Products Ordered in a Period (EASY)
             //string SqlQuery =
