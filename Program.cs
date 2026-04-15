@@ -9952,6 +9952,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.DeleteGreatestValue(grid));
 
+            ////(2515.) Shortest Distance to Target String in a Circular Array (EASY)
+            string[] words = ["hsdqinnoha", "mqhskgeqzr", "zemkwvqrww", "zemkwvqrww", "daljcrktje", "fghofclnwp", "djwdworyka", "cxfpybanhd", "fghofclnwp", "fghofclnwp"];
+            string target = "zemkwvqrww";
+            int startIndex = 8;
+
+            LeetCode_2515 classLeetCode = new LeetCode_2515();
+            Console.WriteLine(classLeetCode.ClosestTarget(words, target, startIndex));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ClosestTarget(words, target, startIndex));
+
             ////(2520.) Count the Digits That Divide a Number (EASY)
             //int num = 1248;
 
