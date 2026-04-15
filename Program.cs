@@ -232,7 +232,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.flatlandSpaceStations(n, c));
 
 
-            ////15. Ice Cream Parlor 
+            ////15. Ice Cream Parlor (EASY)
             //HackerRank_0015 classHackerRank = new HackerRank_0015();
             //foreach (var item in classHackerRank.icecreamParlor(4, [1, 4, 5, 3, 2]))
             //{
@@ -965,6 +965,60 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.marcsCakewalk(calorie));
 
 
+            ////81. Minimum Absolute Difference in an Array (EASY)
+            //List<int> arr = [-2,2,4];
+
+            //HackerRank_0081 classHackerRank = new HackerRank_0081();
+            //Console.WriteLine(classHackerRank.minimumAbsoluteDifference(arr));
+
+            //////OR
+
+            //Console.WriteLine(hackerRankAll.minimumAbsoluteDifference(arr));
+
+
+            ////82. Sherlock and Array (EASY)
+            //List<int> arr = [5,6,8,11];
+
+            //HackerRank_0082 classHackerRank = new HackerRank_0082();
+            //Console.WriteLine(classHackerRank.balancedSums(arr));
+
+            //////OR
+
+            //Console.WriteLine(hackerRankAll.balancedSums(arr));
+
+
+            ////83. Missing Numbers (EASY)
+            //List<int> arr = [7,2,5,3,5,3];
+            //List<int> brr = [7,2,5,4,6,3,5,3];
+
+            //HackerRank_0083 classHackerRank = new HackerRank_0083();
+            //Console.WriteLine(string.Join(',',classHackerRank.missingNumbers(arr, brr)));
+
+            //////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.missingNumbers(arr, brr)));
+
+
+            //////84. String Construction (EASY)
+            //string s = "abab";
+
+            //HackerRank_0084 classHackerRank = new HackerRank_0084();
+            //Console.WriteLine(classHackerRank. stringConstruction(s));
+
+            //////OR
+
+            //Console.WriteLine(hackerRankAll.stringConstruction(s));
+
+
+            ////85. Two Strings (EASY)
+            //string s1 = "and", s2 = "art";
+
+            //HackerRank_0085 classHackerRank = new HackerRank_0085();
+            //Console.WriteLine(classHackerRank.twoStrings(s1, s2));
+
+            //////OR
+
+            //Console.WriteLine(hackerRankAll.twoStrings(s1, s2));
 
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
@@ -5896,14 +5950,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.Maximum69Number(num));
 
             ////(1324.) Print Words Vertically (MEDIUM)
-            string s = "CONTEST IS COMING";
+            //string s = "CONTEST IS COMING";
 
-            LeetCode_1324 classLeetCode = new LeetCode_1324();
-            Console.WriteLine(string.Join(',', classLeetCode.PrintVertically(s)));
+            //LeetCode_1324 classLeetCode = new LeetCode_1324();
+            //Console.WriteLine(string.Join(',', classLeetCode.PrintVertically(s)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.PrintVertically(s)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.PrintVertically(s)));
 
             /////(1327.) List the Products Ordered in a Period (EASY)
             //string SqlQuery =

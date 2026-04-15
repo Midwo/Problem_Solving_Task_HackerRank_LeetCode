@@ -1846,16 +1846,216 @@ namespace ProblemSolving
             //}
             //return (long)SumValue;
         }
+        public int minimumAbsoluteDifference(List<int> arr)
+        {
+            int minAbsValue = int.MaxValue;
+
+            arr.Sort();
+
+            for (int i = 1; i < arr.Count; i++)
+            {
+                int absValue = Math.Abs(arr[i] - arr[i - 1]);
+                if (minAbsValue > absValue)
+                {
+                    minAbsValue = absValue;
+                }
+            }
+            return minAbsValue;
+        }
+        public string balancedSums(List<int> arr)
+        {
+            ////Solution 1 (New):
+
+            var leftSum = 0;
+            var rightSum = arr.Sum();
+
+            foreach (var item in arr)
+            {
+                rightSum -= item;
+                if (leftSum == rightSum)
+                {
+                    return "YES";
+                }
+                leftSum += item;
+            }
+            return "NO";
 
 
+            ////Solution 2 (Old)
+
+            //long lenght = arr.Count;
+            //long total = arr.Sum();
+            //long leftSum = 0;
+            //long rightSum = total;
+
+            //for (int i = 0; i < lenght; i++)
+            //{
+            //    rightSum -= arr[i];
+            //    int leftIndex = (i == 0) ? 0 : i - 1;
+
+            //    if (i > 0)
+            //    {
+            //        leftSum += arr[leftIndex];
+            //    }
+            //    if (leftSum == rightSum)
+            //    {
+            //        return "YES";
+            //    }
+            //}
+            //return "NO";
+        }
+        public List<int> missingNumbers(List<int> arr, List<int> brr)
+        {
+            ////Solution 1 (New)
+
+            var diffDictionary = new Dictionary<int, int>();
+
+            foreach (var number in brr)
+            {
+                if (!diffDictionary.TryAdd(number, 1))
+                {
+                    diffDictionary[number]++;
+                }
+            }
+
+            foreach (var number in arr)
+            {
+                diffDictionary[number]--;
+            }
+
+            var missingNumbersList = new List<int>();
+
+            foreach (var item in diffDictionary)
+            {
+                if (item.Value > 0)
+                {
+                    missingNumbersList.Add(item.Key);
+                }
+            }
+
+            missingNumbersList.Sort();
+
+            return missingNumbersList;
+
+            ////Solution 2 (Old)
+
+            //List<int> listDifference = new List<int>();
+
+            //foreach (int item in brr)
+            //{
+            //    int index = arr.IndexOf(item);
+            //    if (index > -1)
+            //    {
+            //        arr.RemoveAt(index);
+            //    }
+            //    else
+            //    {
+            //        if (!listDifference.Contains(item))
+            //        {
+            //            listDifference.Add(item);
+            //        }
+            //    }
+            //}
+
+            //listDifference.Sort();
+
+            //return listDifference;
+        }
+        public int stringConstruction(string s)
+        {
+            ////Solution 1 (New)
+            var hashSetChars = new HashSet<char>();
+
+            foreach (char c in s)
+            {
+                hashSetChars.Add(c);
+            }
+
+            return hashSetChars.Count;
 
 
+            ////Solution 2 (Old)
 
+            //Dictionary<int, int> dictionary = new Dictionary<int, int>();
 
+            //foreach (char i in s)
+            //{
+            //    if (!dictionary.ContainsKey(i))
+            //    {
+            //        dictionary.Add(i, 1);
+            //    }
+            //    else
+            //    {
+            //        int x = dictionary[i] + 1;
+            //        dictionary[i] = x;
+            //    }
+            //}
+            //int howmany = 0;
+            //foreach (var item in dictionary)
+            //{
+            //    howmany++;
+            //}
+            //return howmany;
+        }
+        public string twoStrings(string s1, string s2)
+        {
+            ////Solution 1 (New)
 
+            var statusChar = new bool[26];
 
+            foreach (var currChar in s1)
+            {
+                statusChar[currChar - 'a'] = true;
+            }
 
+            foreach (var currChar in s2)
+            {
+                if (statusChar[currChar - 'a'])
+                    return "YES";
+            }
 
+            return "NO";
+
+            ////Solution 2 (Old)
+
+            //bool yesOrNot = false;
+
+            //Dictionary<char, int> dictionaryKeyString = new Dictionary<char, int>();
+
+            //foreach (char item in s1)
+            //{
+            //    if (!dictionaryKeyString.ContainsKey(item))
+            //    {
+            //        dictionaryKeyString.Add(item, 1);
+            //    }
+            //}
+            //foreach (char item in s2)
+            //{
+            //    if (dictionaryKeyString.ContainsKey(item))
+            //    {
+            //        dictionaryKeyString[item]++;
+            //        break;
+            //    }
+            //}
+            //foreach (int item in dictionaryKeyString.Values)
+            //{
+            //    if (item > 1)
+            //    {
+            //        yesOrNot = true;
+            //        break;
+            //    }
+            //}
+
+            //if (yesOrNot)
+            //{
+            //    return "YES";
+            //}
+            //else
+            //{
+            //    return "NO";
+
+            //}
+        }
 
 
 
