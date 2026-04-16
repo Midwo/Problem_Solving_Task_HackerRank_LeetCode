@@ -971,7 +971,7 @@ namespace ProblemSolving
             //HackerRank_0081 classHackerRank = new HackerRank_0081();
             //Console.WriteLine(classHackerRank.minimumAbsoluteDifference(arr));
 
-            //////OR
+            ////OR
 
             //Console.WriteLine(hackerRankAll.minimumAbsoluteDifference(arr));
 
@@ -982,7 +982,7 @@ namespace ProblemSolving
             //HackerRank_0082 classHackerRank = new HackerRank_0082();
             //Console.WriteLine(classHackerRank.balancedSums(arr));
 
-            //////OR
+            ////OR
 
             //Console.WriteLine(hackerRankAll.balancedSums(arr));
 
@@ -994,7 +994,7 @@ namespace ProblemSolving
             //HackerRank_0083 classHackerRank = new HackerRank_0083();
             //Console.WriteLine(string.Join(',',classHackerRank.missingNumbers(arr, brr)));
 
-            //////OR
+            ////OR
 
             //Console.WriteLine(string.Join(',', hackerRankAll.missingNumbers(arr, brr)));
 
@@ -1005,7 +1005,7 @@ namespace ProblemSolving
             //HackerRank_0084 classHackerRank = new HackerRank_0084();
             //Console.WriteLine(classHackerRank. stringConstruction(s));
 
-            //////OR
+            ////OR
 
             //Console.WriteLine(hackerRankAll.stringConstruction(s));
 
@@ -1016,9 +1016,66 @@ namespace ProblemSolving
             //HackerRank_0085 classHackerRank = new HackerRank_0085();
             //Console.WriteLine(classHackerRank.twoStrings(s1, s2));
 
-            //////OR
+            ////OR
 
             //Console.WriteLine(hackerRankAll.twoStrings(s1, s2));
+
+
+            ////86. Game of Thrones - I (EASY)
+            //string s = "aaabbbb";
+
+            //HackerRank_0086 classHackerRank = new HackerRank_0086();
+            //Console.WriteLine(classHackerRank.gameOfThrones(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.gameOfThrones(s));
+
+
+            ////87. Making Anagrams (EASY)
+            //string s1 = "abc";
+            //string s2 = "amnop";
+
+            //HackerRank_0087 classHackerRank = new HackerRank_0087();
+            //Console.WriteLine(classHackerRank.makingAnagrams(s1, s2));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.makingAnagrams(s1, s2));
+
+
+            ////88. Anagram (EASY)
+            //string s = "mvdalvkiopaufl";
+
+            //HackerRank_0088 classHackerRank = new HackerRank_0088();
+            //Console.WriteLine(classHackerRank.anagram(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.anagram(s));
+
+
+            ////89. Palindrome Index (EASY)
+            //string s = "bcbc";
+
+            //HackerRank_0089 classHackerRank = new HackerRank_0089();
+            //Console.WriteLine(classHackerRank.palindromeIndex(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.palindromeIndex(s));
+
+
+            ////90. Find the Median (EASY)
+            //List<int> arr = [0,1,2,4,6,5,3];
+
+            //HackerRank_0090 classHackerRank = new HackerRank_0090();
+            //Console.WriteLine(classHackerRank.findMedian(arr));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.findMedian(arr));
+
 
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
@@ -9953,16 +10010,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DeleteGreatestValue(grid));
 
             ////(2515.) Shortest Distance to Target String in a Circular Array (EASY)
-            string[] words = ["hsdqinnoha", "mqhskgeqzr", "zemkwvqrww", "zemkwvqrww", "daljcrktje", "fghofclnwp", "djwdworyka", "cxfpybanhd", "fghofclnwp", "fghofclnwp"];
-            string target = "zemkwvqrww";
-            int startIndex = 8;
+            //string[] words = ["hsdqinnoha", "mqhskgeqzr", "zemkwvqrww", "zemkwvqrww", "daljcrktje", "fghofclnwp", "djwdworyka", "cxfpybanhd", "fghofclnwp", "fghofclnwp"];
+            //string target = "zemkwvqrww";
+            //int startIndex = 8;
 
-            LeetCode_2515 classLeetCode = new LeetCode_2515();
-            Console.WriteLine(classLeetCode.ClosestTarget(words, target, startIndex));
+            //LeetCode_2515 classLeetCode = new LeetCode_2515();
+            //Console.WriteLine(classLeetCode.ClosestTarget(words, target, startIndex));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ClosestTarget(words, target, startIndex));
+            //Console.WriteLine(leetCodeAll.ClosestTarget(words, target, startIndex));
 
             ////(2520.) Count the Digits That Divide a Number (EASY)
             //int num = 1248;

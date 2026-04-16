@@ -2056,17 +2056,219 @@ namespace ProblemSolving
 
             //}
         }
+        public string gameOfThrones(string s)
+        {
+            ////Solution 1 (New)
+            var countOdd = 0;
+            var countChars = new int[26];
 
+            foreach (var currChar in s)
+            {
+                countChars[currChar - 'a']++;
+            }
 
+            foreach (var currChar in countChars)
+            {
+                // if((currChar % 2) == 1)
+                if ((currChar & 1) == 1)
+                {
+                    countOdd++;
+                }
+            }
 
+            return countOdd > 1 ? "NO" : "YES";
 
+            ////Solution 2 (Old)
+            //Dictionary<char, int> dictionaryString = new Dictionary<char, int>();
+            //int howManyOdd = 0;
+            //foreach (char item in s)
+            //{
+            //    if (dictionaryString.ContainsKey(item))
+            //    {
+            //        dictionaryString[item]++;
+            //    }
+            //    else
+            //    {
+            //        dictionaryString.Add(item, 1);
+            //    }
+            //}
+            //foreach (var item in dictionaryString)
+            //{
+            //    if (item.Value % 2 != 0)
+            //    {
+            //        howManyOdd++;
+            //    }
+            //}
+            //return howManyOdd <= 1 ? "YES" : "NO";
+        }
+        public int makingAnagrams(string s1, string s2)
+        {
+            //Solution 1 (New)
 
+            var diffCharsTable = new int[26];
 
+            foreach (var currChar in s1)
+            {
+                diffCharsTable[currChar - 'a']++;
+            }
 
+            foreach (var currChar in s2)
+            {
+                diffCharsTable[currChar - 'a']--;
+            }
 
+            var countOperationsDelete = 0;
 
+            foreach (var diff in diffCharsTable)
+            {
+                countOperationsDelete += diff > 0 ? diff : -diff;
+            }
 
+            return countOperationsDelete;
 
+            //Solution 2 (Old)
+            //Dictionary<char, int> dictionarys1 = new Dictionary<char, int>();
+            //Dictionary<char, int> dictionarys2 = new Dictionary<char, int>();
+            //int howLongS1 = s1.Length;
+            //int howLongS2 = s2.Length;
+            //int howManyTooSame = 0;
+
+            //foreach (char i in s1)
+            //{
+            //    if (!dictionarys1.ContainsKey(i))
+            //    {
+            //        dictionarys1.Add(i, 1);
+            //    }
+            //    else
+            //    {
+            //        int x = dictionarys1[i] + 1;
+            //        dictionarys1[i] = x;
+            //    }
+            //}
+
+            //foreach (char i in s2)
+            //{
+            //    if (!dictionarys2.ContainsKey(i))
+            //    {
+            //        dictionarys2.Add(i, 1);
+            //    }
+            //    else
+            //    {
+            //        int x = dictionarys2[i] + 1;
+            //        dictionarys2[i] = x;
+            //    }
+            //}
+
+            //foreach (var i in dictionarys1)
+            //{
+            //    foreach (var x in dictionarys2)
+            //    {
+            //        if (i.Key == x.Key)
+            //        {
+            //            if (i.Value < x.Value)
+            //            {
+            //                howManyTooSame += i.Value;
+            //            }
+            //            else
+            //            {
+            //                howManyTooSame += x.Value;
+            //            }
+            //        }
+            //    }
+            //}
+            //return howLongS1 + howLongS2 - howManyTooSame * 2;
+        }
+        public int anagram(string s)
+        {
+            //Solution 1 (New)
+            var lengthS = s.Length;
+            if ((lengthS & 1) == 1)
+                return -1;
+
+            var diffTableChars = new int[26];
+
+            for (int i = 0; i < lengthS; i++)
+            {
+                if (i < lengthS / 2)
+                {
+                    diffTableChars[s[i] - 'a']++;
+                }
+                else
+                {
+                    diffTableChars[s[i] - 'a']--;
+                }
+            }
+
+            var countOperations = 0;
+
+            foreach (var currValue in diffTableChars)
+            {
+                countOperations += currValue > 0 ? currValue : -currValue;
+            }
+
+            return countOperations / 2;
+
+            //Solution 2 (Old)
+            //if (s.Length % 2 == 1) return -1;
+
+            //var chars = s.ToCharArray();
+            //var firstString = chars.Take(chars.Length / 2).ToList();
+            //var secondString = chars.Skip(chars.Length / 2).ToList();
+
+            //for (int i = 0; i < firstString.Count; i++)
+            //{
+            //    if (secondString.Contains(firstString[i]))
+            //        secondString.Remove(firstString[i]);
+            //}
+            //return secondString.Count;
+        }
+        public int palindromeIndex(string s)
+        {
+            int left = 0;
+            int right = s.Length - 1;
+
+            while (left < right)
+            {
+                if (s[left] != s[right])
+                {
+                    if (IsPalindrome(s, left + 1, right))
+                        return left;
+
+                    if (IsPalindrome(s, left, right - 1))
+                        return right;
+
+                    return -1;
+                }
+
+                left++;
+                right--;
+            }
+
+            return -1;
+        }
+        private bool IsPalindrome(string s, int left, int right)
+        {
+            while (left < right)
+            {
+                if (s[left] != s[right])
+                    return false;
+
+                left++;
+                right--;
+            }
+            return true;
+        }
+        public int findMedian(List<int> arr)
+        {
+            ////Solution 1 (New)
+            arr.Sort();
+            return arr[arr.Count / 2];
+
+            ////Solution 2 (Old)
+            //arr.Sort();
+            //double median = arr[(arr.Count + 1) / 2 - 1];
+            //return (int)median;
+        }
 
 
 
