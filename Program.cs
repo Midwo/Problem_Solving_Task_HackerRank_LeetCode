@@ -6385,6 +6385,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumTeams(rating));
 
+            ////(1399.) Count Largest Group (EASY)
+            int n = 13;
+
+            LeetCode_1399 classLeetCode = new LeetCode_1399();
+            Console.WriteLine(classLeetCode.CountLargestGroup(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountLargestGroup(n));
+
             ////(1402.) Reducing Dishes (HARD)
             //int[] satisfaction = [4, 3, 2];
 
