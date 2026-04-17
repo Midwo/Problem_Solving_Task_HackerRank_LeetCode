@@ -1077,6 +1077,61 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.findMedian(arr));
 
 
+            ////91. The Love-Letter Mystery (EASY)
+            //string s = "cde";
+
+            //HackerRank_0091 classHackerRank = new HackerRank_0091();
+            //Console.WriteLine(classHackerRank.theLoveLetterMystery(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.theLoveLetterMystery(s));
+
+
+            ////92. Closest Numbers (EASY)
+            //List<int> arr = [-20,-3916237,-357920,-3620601,7374819,-7330761,30,6246457,-6461594,266854];
+
+            //HackerRank_0092 classHackerRank = new HackerRank_0092();
+            //Console.WriteLine(string.Join(',', classHackerRank.closestNumbers(arr)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.closestNumbers(arr)));
+
+
+            ////93. Beautiful Binary String (EASY)
+            //string b = "0100101010";
+
+            //HackerRank_0093 classHackerRank = new HackerRank_0093();
+            //Console.WriteLine(classHackerRank.beautifulBinaryString(b));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.beautifulBinaryString(b));
+
+
+            ////94. Alternating Characters (EASY)
+            //string s = "AABAAB";
+
+            //HackerRank_0094 classHackerRank = new HackerRank_0094();
+            //Console.WriteLine(classHackerRank.alternatingCharacters(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.alternatingCharacters(s));
+
+
+            ////95. Gemstones (EASY)
+            //List<string> arr = ["vtrjvgbj","mkmjyaeav","sibzdmsk"];
+
+            //HackerRank_0095 classHackerRank = new HackerRank_0095();
+            //Console.WriteLine(classHackerRank.gemstones(arr));
+
+            //////OR
+
+            //Console.WriteLine(hackerRankAll.gemstones(arr));
+
+
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
@@ -6386,14 +6441,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumTeams(rating));
 
             ////(1399.) Count Largest Group (EASY)
-            int n = 13;
+            //int n = 13;
 
-            LeetCode_1399 classLeetCode = new LeetCode_1399();
-            Console.WriteLine(classLeetCode.CountLargestGroup(n));
+            //LeetCode_1399 classLeetCode = new LeetCode_1399();
+            //Console.WriteLine(classLeetCode.CountLargestGroup(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountLargestGroup(n));
+            //Console.WriteLine(leetCodeAll.CountLargestGroup(n));
 
             ////(1402.) Reducing Dishes (HARD)
             //int[] satisfaction = [4, 3, 2];

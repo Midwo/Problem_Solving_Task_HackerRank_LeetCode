@@ -2269,6 +2269,217 @@ namespace ProblemSolving
             //double median = arr[(arr.Count + 1) / 2 - 1];
             //return (int)median;
         }
+        public int theLoveLetterMystery(string s)
+        {
+            var cnt = 0;
+
+            for (int i = 0; i < s.Length / 2; i++)
+            {
+                cnt += Math.Abs(s[i] - s[s.Length - 1 - i]);
+            }
+
+            return cnt;
+        }
+        public List<int> closestNumbers(List<int> arr)
+        {
+            ////Solution 1 (New)
+            arr.Sort();
+            var minDiff = int.MaxValue;
+            var lastValue = arr[0];
+            var listWithMinDiff = new List<int>();
+
+            for (int i = 1; i < arr.Count; i++)
+            {
+                var currValue = arr[i];
+                var currDiff = currValue - lastValue;
+                if (minDiff > currDiff)
+                {
+                    listWithMinDiff.Clear();
+                    listWithMinDiff.Add(lastValue);
+                    listWithMinDiff.Add(currValue);
+                    minDiff = currDiff;
+                }
+                else if (minDiff == currDiff)
+                {
+                    listWithMinDiff.Add(lastValue);
+                    listWithMinDiff.Add(currValue);
+                }
+
+                lastValue = currValue;
+            }
+
+            return listWithMinDiff;
+
+            ////Solution 2 (Old)
+            //arr.Sort();
+            //List<int> arr2 = new List<int>();          
+            //int lowDifference = int.MaxValue;
+
+            //for (int i = 1; i < arr.Count; i++)
+            //{
+            //    int x = Math.Abs((arr[i - 1]) - arr[i]);
+            //    if (x < lowDifference)
+            //    {
+            //        lowDifference = x;
+            //        arr2.Clear();
+            //        arr2.Add(arr[i - 1]);
+            //        arr2.Add(arr[i]);
+            //    }
+            //    else if (x == lowDifference)
+            //    {
+            //        arr2.Add(arr[i - 1]);
+            //        arr2.Add(arr[i]);
+            //    }
+            //}
+            //return arr2;
+        }
+        public int beautifulBinaryString(string b)
+        {
+            ////Solution 1 (New)
+            var changeCount = 0;
+            for (int i = 0; i < b.Length - 2; i++)
+            {
+                if (b[i] == '0' && b[i + 1] == '1' && b[i + 2] == '0')
+                {
+                    i += 2;
+                    changeCount++;
+                }
+            }
+
+            return changeCount;
+
+            ////Solution 2 (Old)
+            //string firstAndLastChar = "0";
+            //string MiddleChar = "1";
+            //int howMany = 0;
+
+            //for (int i = 0; i < b.Length - 2; i++)
+            //{
+            //    if (b[i].ToString() == firstAndLastChar && b[i + 2].ToString() == firstAndLastChar && b[i + 1].ToString() == MiddleChar)
+            //    {
+            //        howMany++;
+            //        i += 2;
+            //    }
+            //}
+            //return howMany;
+        }
+        public int alternatingCharacters(string s)
+        {
+            ////Solution 1 (New)
+            var removeCount = 0;
+            var lastChar = s[0];
+
+            for (var index = 1; index < s.Length; index++)
+            {
+                var currChar = s[index];
+                if (lastChar == currChar)
+                    removeCount++;
+                else
+                    lastChar = s[index];
+            }
+
+            return removeCount;
+
+
+            ////Solution 2 (Old)
+
+            //int howManydelete = 0;
+            //for (int i = 0; i < s.Length; i++)
+            //{
+            //    if (i < s.Length - 1)
+            //    {
+            //        if ((int)s[i] == (int)s[i + 1])
+            //        {
+            //            howManydelete++;
+            //        }
+            //    }
+            //    //Console.WriteLine(s[i].ToString());
+
+            //}
+            //return howManydelete;
+        }
+        public int gemstones(List<string> arr)
+        {
+            ////Solution 1 (New)
+            var countFreq = new int[26];
+
+            foreach (var item in arr)
+            {
+                var itExists = new bool[26];
+                foreach (var currChar in item)
+                {
+                    itExists[currChar - 'a'] = true;
+                }
+                for (int i = 0; i < 26; i++)
+                {
+                    if (itExists[i])
+                        countFreq[i]++;
+                }
+            }
+
+            var countCharsInAll = 0;
+
+            foreach (var item in countFreq)
+            {
+                if (item == arr.Count)
+                    countCharsInAll++;
+            }
+
+
+            return countCharsInAll;
+
+            ////Solution 2 (Old)
+            //int sizeArr = arr.Count;
+            //Dictionary<char, int> dictionaryForArr = new Dictionary<char, int>();
+            //Dictionary<char, int> sumDictionaryForArr = new Dictionary<char, int>();
+            //int totalTooSameCollection = 0;
+
+            //foreach (string str in arr)
+            //{
+            //    foreach (char x in str)
+            //    {
+            //        if (!dictionaryForArr.ContainsKey(x))
+            //        {
+            //            dictionaryForArr.Add(x, 1);
+            //        }
+            //    }
+            //    foreach (var y in dictionaryForArr)
+            //    {
+            //        if (sumDictionaryForArr.ContainsKey(y.Key))
+            //        {
+            //            sumDictionaryForArr[y.Key]++;
+            //        }
+            //        else
+            //        {
+            //            sumDictionaryForArr.Add((char)y.Key, 1);
+            //        }
+            //    }
+            //    dictionaryForArr.Clear();
+            //}
+            //foreach (var y in sumDictionaryForArr)
+            //{
+            //    if (sizeArr == y.Value)
+            //    {
+            //        totalTooSameCollection++;
+            //    }
+            //}
+            //return totalTooSameCollection;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
