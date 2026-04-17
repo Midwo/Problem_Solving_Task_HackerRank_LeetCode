@@ -12887,6 +12887,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SumAndMultiply(n));
 
+            /////(3761.) Minimum Absolute Distance Between Mirror Pairs (MEDIUM)
+            int[] nums = [21, 120];
+
+            LeetCode_3761 classLeetCode = new LeetCode_3761();
+            Console.WriteLine(classLeetCode.MinMirrorPairDistance(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinMirrorPairDistance(nums));
+
             ////(3788.) Maximum Score of a Split (MEDIUM)
             //int[] nums = [73, 32, 54];
 
