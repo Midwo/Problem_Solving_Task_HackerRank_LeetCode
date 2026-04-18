@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.VisualBasic;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using ProblemSolving.HackerRank;
 using ProblemSolving.LeetCode;
@@ -247,7 +248,7 @@ namespace ProblemSolving
             //}
 
 
-            ////16. Weighted Uniform Strings
+            ////16. Weighted Uniform Strings (EASY)
             //HackerRank_0016 classHackerRank = new HackerRank_0016();
             //List<string> queries1 = classHackerRank.weightedUniformStrings("abbcccdddd", [1, 7, 5, 4, 15]);
             //foreach (string query in queries1)
@@ -1127,9 +1128,64 @@ namespace ProblemSolving
             //HackerRank_0095 classHackerRank = new HackerRank_0095();
             //Console.WriteLine(classHackerRank.gemstones(arr));
 
-            //////OR
+            ////OR
 
             //Console.WriteLine(hackerRankAll.gemstones(arr));
+
+
+            ////96. Counting Sort 2 (EASY)
+            //List<int> arr = [63, 25, 73, 1, 98, 73, 56, 84, 86, 57, 16, 83, 8, 25, 81, 56, 9, 53, 98, 67, 99, 12, 83, 89, 80, 91, 39, 86, 76, 85, 74, 39, 25, 90, 59, 10, 94, 32, 44, 3, 89, 30, 27, 79, 46, 96, 27, 32, 18, 21, 92, 69, 81, 40, 40, 34, 68, 78, 24, 87, 42, 69, 23, 41, 78, 22, 6, 90, 99, 89, 50, 30, 20, 1, 43, 3, 70, 95, 33, 46, 44, 9, 69, 48, 33, 60, 65, 16, 82, 67, 61, 32, 21, 79, 75, 75, 13, 87, 70, 33];
+
+            //HackerRank_0096 classHackerRank = new HackerRank_0096();
+            //Console.WriteLine(string.Join(',', classHackerRank.countingSort(arr)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.countingSort(arr)));
+
+
+            ////97. Counting Sort 1 (EASY)
+            //List<int> arr = [63, 25, 73, 1, 98, 73, 56, 84, 86, 57, 16, 83, 8, 25, 81, 56, 9, 53, 98, 67, 99, 12, 83, 89, 80, 91, 39, 86, 76, 85, 74, 39, 25, 90, 59, 10, 94, 32, 44, 3, 89, 30, 27, 79, 46, 96, 27, 32, 18, 21, 92, 69, 81, 40, 40, 34, 68, 78, 24, 87, 42, 69, 23, 41, 78, 22, 6, 90, 99, 89, 50, 30, 20, 1, 43, 3, 70, 95, 33, 46, 44, 9, 69, 48, 33, 60, 65, 16, 82, 67, 61, 32, 21, 79, 75, 75, 13, 87, 70, 33];
+
+            //HackerRank_0097 classHackerRank = new HackerRank_0097();
+            //Console.WriteLine(string.Join(',', classHackerRank.countingSort(arr)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.countingSortTask97(arr)));
+
+
+            ////98. Funny String (EASY)
+            //string s = "ovyvzvptyvpvpxyztlrztsrztztqvrxtxuxq";
+
+            //HackerRank_0098 classHackerRank = new HackerRank_0098();
+            //Console.WriteLine(classHackerRank.funnyString(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.funnyString(s));
+
+
+            ////99. Separate the Numbers (EASY)
+            //string s = "99100";
+
+            //HackerRank_0099 classHackerRank = new HackerRank_0099();
+            //classHackerRank.separateNumbers(s);
+
+            ////OR
+
+            //hackerRankAll.separateNumbers(s);
+
+
+            ////100. Pangrams (EASY)
+            //string s = "We promptly judged antique ivory buckles for the next prize";
+
+            //HackerRank_0100 classHackerRank = new HackerRank_0100();
+            //Console.WriteLine(classHackerRank.pangrams(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.pangrams(s));
 
 
 
@@ -12888,14 +12944,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumAndMultiply(n));
 
             /////(3761.) Minimum Absolute Distance Between Mirror Pairs (MEDIUM)
-            int[] nums = [21, 120];
+            //int[] nums = [21, 120];
 
-            LeetCode_3761 classLeetCode = new LeetCode_3761();
-            Console.WriteLine(classLeetCode.MinMirrorPairDistance(nums));
+            //LeetCode_3761 classLeetCode = new LeetCode_3761();
+            //Console.WriteLine(classLeetCode.MinMirrorPairDistance(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinMirrorPairDistance(nums));
+            //Console.WriteLine(leetCodeAll.MinMirrorPairDistance(nums));
 
             ////(3788.) Maximum Score of a Split (MEDIUM)
             //int[] nums = [73, 32, 54];

@@ -2465,16 +2465,188 @@ namespace ProblemSolving
             //}
             //return totalTooSameCollection;
         }
+        public List<int> countingSort(List<int> arr)
+        {
+            arr.Sort();
+            return arr;
+        }
+        public List<int> countingSortTask97(List<int> arr)
+        {
+            ////Solution 1 (New - Better)
+
+            if (arr.Count == 0)
+                return new List<int>();
+
+            var freqNums = new int[100];
+
+            for (int index = 0; index < arr.Count; index++)
+            {
+                freqNums[arr[index]]++;
+            }
+
+            return freqNums.ToList();
+
+            ////Solution 2 (Old - Poor)
+            //Dictionary<int, int> dictionary = new Dictionary<int, int>();
+
+            //int maxValue = arr.Max();
+
+            //foreach (int i in arr)
+            //{
+            //    if (!dictionary.ContainsKey(i))
+            //    {
+            //        dictionary.Add(i, 1);
+            //    }
+            //    else
+            //    {
+            //        dictionary[i] = dictionary[i] + 1;
+            //    }
+            //}
+
+            //arr.Clear();
+
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    if (dictionary.ContainsKey(i))
+            //    {
+            //        arr.Add(dictionary[i]);
+            //    }
+            //    else
+            //    {
+            //        arr.Add(0);
+            //    }
+            //}
+            //return arr;
+        }
+        public string funnyString(string s)
+        {
+            ////Solution 1 (New - Better)
+            var lengthS = s.Length;
+            for (int i = 0; i < lengthS - 1; i++)
+            {
+                if (Math.Abs(s[i + 1] - s[i]) != Math.Abs(s[lengthS - 2 - i] - s[lengthS - 1 - i]))
+                {
+                    return "Not Funny";
+                }
+
+            }
+
+            return "Funny";
 
 
+            ////Solution 2 (Old - Poor)
+            //string contentString = s;
+            //string originalString = string.Empty;
+            //for (int i = 0; i < contentString.Length - 1; i++)
+            //{
+            //    originalString += (Math.Abs((int)contentString[i] - (int)contentString[i + 1]));
+            //}
+            //string reverse = string.Empty;
+            //foreach (char i in contentString.Reverse())
+            //{
+            //    reverse += i;
+            //}
+
+            //string reverseString = string.Empty;
+            //for (int i = 0; i < contentString.Length - 1; i++)
+            //{
+            //    reverseString += (Math.Abs((int)reverse[i] - (int)reverse[i + 1]));
+            //}
+            //if (originalString == reverseString)
+            //{
+            //    return "Funny";
+            //}
+            //else
+            //{
+            //    return "Not Funny";
+            //}
+        }
+        public void separateNumbers(string s)
+        {
+            string textOutput = "NO";
+            if (s.Length > 1)
+            {
+                var sequenceStart = string.Empty;
+
+                for (int i = 0; i < s.Length / 2; i++)
+                {
+                    sequenceStart += s[i];
+                    var num = long.Parse(sequenceStart);
+                    var sequence = string.Empty;
+
+                    while (s.Length > sequence.Length)
+                    {
+                        if (!s.StartsWith(sequence)) break;
+
+                        sequence += num;
+                        ++num;
+                    }
+
+                    if (s.StartsWith(sequence))
+                    {
+                        textOutput = $"YES {sequenceStart}";
+                    }
+
+                    if (s.Length == sequence.Length) break;
+                }
+            }
+            Console.WriteLine(textOutput);
+        }
+        public string pangrams(string s)
+        {
+            ////Solution 1 (New)
+            var itExist = new bool[26];
+
+            foreach (var currChar in s)
+            {
+                if (currChar != ' ')
+                {
+                    if (currChar >= 'a')
+                        itExist[currChar - 'a'] = true;
+                    else
+                        itExist[currChar - 'A'] = true;
+                }
+
+            }
+
+            foreach (var status in itExist)
+            {
+                if (!status)
+                    return "not pangram";
+            }
+
+            return "pangram";
 
 
+            ////Solution 2 (Old)
 
+            //string alphabet = "abcdefghijklmnopqrstuvwxyz";
+            //var x = s.ToLower().Distinct();
+            //string combinedString = string.Join("", x);
+            //combinedString = combinedString.Replace(" ", "");
+            //int x0 = combinedString.Length;
+            //if (combinedString.Length != 26)
+            //{
+            //    return "not pangram";
+            //}
+            //foreach (var item in combinedString)
+            //{
+            //    bool isHere = false;
+            //    foreach (var item1 in alphabet)
+            //    {
+            //        if (item == item1)
+            //        {
+            //            isHere = true;
+            //        }
+            //    }
+            //    if (isHere == false)
+            //    {
+            //        return "not pangram";
+            //    }
+            //}
 
-
-
-
-
+            //return "pangram";
+        }
 
 
 
