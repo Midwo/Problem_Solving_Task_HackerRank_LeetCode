@@ -12961,7 +12961,7 @@ namespace ProblemSolving
 
             //OR
 
-            
+            Console.WriteLine(leetCodeAll.MirrorDistance(n));
 
             ////(3788.) Maximum Score of a Split (MEDIUM)
             //int[] nums = [73, 32, 54];

@@ -30670,38 +30670,20 @@ namespace ProblemSolving
 
             //return minDistance;
         }
-        public void separateNumbers(string s)
+        public int MirrorDistance(int n)
         {
-            string howMany = "NO";
-            if (s.Length > 1)
+            var reverseNumber = 0;
+            var copyN = n;
+
+            while (copyN > 0)
             {
-                var sequenceStart = string.Empty;
-
-                for (int i = 0; i < s.Length / 2; i++)
-                {
-                    sequenceStart += s[i];
-                    var num = long.Parse(sequenceStart);
-                    var sequence = string.Empty;
-
-                    while (s.Length > sequence.Length)
-                    {
-                        if (!s.StartsWith(sequence)) break;
-
-                        sequence += num;
-                        ++num;
-                    }
-
-                    if (s.StartsWith(sequence))
-                    {
-                        howMany = $"YES {sequenceStart}";
-                    }
-
-                    if (s.Length == sequence.Length) break;
-                }
+                reverseNumber *= 10;
+                reverseNumber += copyN % 10;
+                copyN = copyN / 10;
             }
-            Console.WriteLine(howMany);
-        }
 
+            return Math.Abs(n - reverseNumber);
+        }
 
 
 
