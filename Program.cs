@@ -12953,6 +12953,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinMirrorPairDistance(nums));
 
+            ////(3783.) Mirror Distance of an Integer (EASY)
+            int n = 25;
+
+            LeetCode_3783 classLeetCode = new LeetCode_3783();
+            Console.WriteLine(classLeetCode.MirrorDistance(n));
+
+            //OR
+
+            
+
             ////(3788.) Maximum Score of a Split (MEDIUM)
             //int[] nums = [73, 32, 54];
 
