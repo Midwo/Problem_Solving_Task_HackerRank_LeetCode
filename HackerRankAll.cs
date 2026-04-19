@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using System.Text;
 
 namespace ProblemSolving
 {
@@ -2647,6 +2648,210 @@ namespace ProblemSolving
 
             //return "pangram";
         }
+        public List<int> quickSort(List<int> arr)
+        {
+            var left = new List<int>();
+            var pivot = arr[0];
+            var right = new List<int>();
+            for (int i = 1; i < arr.Count; i++)
+            {
+                if (arr[i] < pivot)
+                {
+                    left.Add(arr[i]);
+                }
+                else
+                {
+                    right.Add(arr[i]);
+                }
+            }
+            left.Add(pivot);
+            left.AddRange(right);
+            return left;
+        }
+        public string hackerrankInString(string s)
+        {
+            ////Solution 1 (New - Better)
+            var targetCharsTable = new char[] { 'h', 'a', 'c', 'k', 'e', 'r', 'r', 'a', 'n', 'k' };
+            var indexTarget = 0;
+            var seachrChar = targetCharsTable[indexTarget];
+
+            foreach (char currChar in s)
+            {
+                if (seachrChar == currChar)
+                {
+                    if (++indexTarget == 10)
+                        return "YES";
+                    seachrChar = targetCharsTable[indexTarget];
+                }
+            }
+
+            return "NO";
+
+            ////Solution 2 (Old - Poor)
+            //string targetString = "hackerrank";
+            //int targetStringInt = 0;
+            //foreach (char item in s)
+            //{
+            //    if (targetStringInt == 10)
+            //    {
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        if (targetString[targetStringInt] == item)
+            //        {
+            //            targetStringInt++;
+            //        }
+            //    }
+
+            //}
+            //if (targetStringInt == 10)
+            //{
+            //    return "YES";
+            //}
+            //else
+            //{
+            //    return "NO";
+            //}
+        }
+        public int runningTime(List<int> arr)
+        {
+            var countShifts = 0;
+
+            for (int index = 1; index < arr.Count; index++)
+            {
+                var currValue = arr[index];
+                for (int j = 0; j < index; j++)
+                {
+                    if (currValue < arr[j])
+                    {
+                        countShifts++;
+                    }
+                }
+            }
+            return countShifts++;
+        }
+        public int marsExploration(string s)
+        {
+            ////Solution 1 (New - Better)
+            var countChangedChars = 0;
+
+            for (int i = 0; i < s.Length - 2; i += 3)
+            {
+                if (s[i] != 'S')
+                    countChangedChars++;
+                if (s[i + 1] != 'O')
+                    countChangedChars++;
+                if (s[i + 2] != 'S')
+                    countChangedChars++;
+            }
+
+            return countChangedChars;
+
+            ////Solution 2 (Old - Poor)
+            //string firstAndLastCharCeq = "S";
+            //string middleCharCeq = "O";
+            //string firstChar = string.Empty;
+            //string middleChar = string.Empty;
+            //string lastChar = string.Empty;
+            //int howMany = 0;
+
+            //for (int i = 0; i < s.Length - 2; i++)
+            //{
+            //    firstChar = s[i].ToString();
+            //    middleChar = s[i + 1].ToString();
+            //    lastChar = s[i + 2].ToString();
+            //    if (firstChar == firstAndLastCharCeq && lastChar == firstAndLastCharCeq && middleChar == middleCharCeq)
+            //    {
+            //        i += 2;
+            //    }
+            //    else if (firstChar == firstAndLastCharCeq && lastChar == firstAndLastCharCeq && middleChar != middleCharCeq ||
+            //             firstChar == firstAndLastCharCeq && lastChar != firstAndLastCharCeq && middleChar == middleCharCeq ||
+            //             firstChar != firstAndLastCharCeq && lastChar == firstAndLastCharCeq && middleChar == middleCharCeq)
+            //    {
+            //        howMany++;
+            //        i += 2;
+            //    }
+            //    else if (firstChar == firstAndLastCharCeq && lastChar != firstAndLastCharCeq && middleChar != middleCharCeq ||
+            //         firstChar != firstAndLastCharCeq && lastChar == firstAndLastCharCeq && middleChar != middleCharCeq ||
+            //         firstChar != firstAndLastCharCeq && lastChar != firstAndLastCharCeq && middleChar == middleCharCeq)
+            //    {
+            //        howMany += 2;
+            //        i += 2;
+            //    }
+            //    else
+            //    {
+            //        howMany += 3;
+            //        i += 2;
+            //    }
+            //}
+            //return howMany;
+        }
+        public string caesarCipher(string s, int k)
+        {
+            ////Solution 1 (New)
+            var sbCaesarCipher = new StringBuilder();
+            var rotationValue = k % 26;
+
+            foreach (var currChar in s)
+            {
+                if (currChar >= 'a' && currChar <= 'z')
+                {
+                    int shifted = (currChar - 'a' + rotationValue) % 26 + 'a';
+                    sbCaesarCipher.Append((char)shifted);
+                }
+                else if (currChar >= 'A' && currChar <= 'Z')
+                {
+                    int shifted = (currChar - 'A' + rotationValue) % 26 + 'A';
+                    sbCaesarCipher.Append((char)shifted);
+                }
+                else
+                {
+                    sbCaesarCipher.Append(currChar);
+                }
+            }
+
+            return sbCaesarCipher.ToString();
+
+            ////Solution 2 (Old)
+            //string newS = string.Empty;
+            //int intChar = 0;
+            //int moduloHowManyChar = k % 26;
+            //foreach (char i in s)
+            //{
+            //    intChar = (int)i;
+            //    if ((int)i >= 97 && (int)i <= 122)
+            //    {
+            //        intChar = (int)i + moduloHowManyChar;
+            //        if (intChar > 122)
+            //        {
+            //            intChar = 96 + intChar - 122;
+            //        }
+            //    }
+            //    else if ((int)i >= 65 && (int)i <= 90)
+            //    {
+            //        intChar = (int)i + moduloHowManyChar;
+            //        if (intChar > 90)
+            //        {
+            //            intChar = 64 + intChar - 90;
+            //        }
+            //    }
+            //    newS += (char)intChar;
+            //}
+            //return newS;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

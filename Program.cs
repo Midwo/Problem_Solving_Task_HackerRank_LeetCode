@@ -1188,6 +1188,62 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.pangrams(s));
 
 
+            ////101. Quicksort 1 - Partition (EASY)
+            //List<int> arr = [5, 7, 4, 3, 8];
+
+            //HackerRank_0101 classHackerRank = new HackerRank_0101();
+            //Console.WriteLine(string.Join(',', classHackerRank.quickSort(arr)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.quickSort(arr)));
+
+
+            ////102. HackerRank in a String! (EASY)
+            //string s = "hereiamstackerrank";
+
+            //HackerRank_0102 classHackerRank = new HackerRank_0102();
+            //Console.WriteLine(classHackerRank.hackerrankInString(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.hackerrankInString(s));
+
+
+
+            ////103. Running Time of Algorithms (EASY)
+            //List<int> arr = [2, 1, 3, 1, 2];
+
+            //HackerRank_0103 classHackerRank = new HackerRank_0103();
+            //Console.WriteLine(classHackerRank.runningTime(arr));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.runningTime(arr));
+
+
+            ////104. Mars Exploration (EASY)
+            //string s = "SOSSPSSQSSOR";
+
+            //HackerRank_0104 classHackerRank = new HackerRank_0104();
+            //Console.WriteLine(classHackerRank.marsExploration(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.marsExploration(s));
+
+
+            ////105. Caesar Cipher (EASY)
+            //string s = "abcdefghijklmnopqrstuvwxyz";
+            //int k = 3;
+
+            //HackerRank_0105 classHackerRank = new HackerRank_0105();
+            //Console.WriteLine(classHackerRank.caesarCipher(s, k));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.caesarCipher(s, k));
+
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
@@ -12954,14 +13010,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinMirrorPairDistance(nums));
 
             ////(3783.) Mirror Distance of an Integer (EASY)
-            int n = 25;
+            //int n = 25;
 
-            LeetCode_3783 classLeetCode = new LeetCode_3783();
-            Console.WriteLine(classLeetCode.MirrorDistance(n));
+            //LeetCode_3783 classLeetCode = new LeetCode_3783();
+            //Console.WriteLine(classLeetCode.MirrorDistance(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MirrorDistance(n));
+            //Console.WriteLine(leetCodeAll.MirrorDistance(n));
 
             ////(3788.) Maximum Score of a Split (MEDIUM)
             //int[] nums = [73, 32, 54];
