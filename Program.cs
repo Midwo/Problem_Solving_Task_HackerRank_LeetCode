@@ -8151,6 +8151,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.GetMinDistance(nums, target, start));
 
+            ////(1855.) Maximum Distance Between a Pair of Values (MEDIUM)
+            int[] nums1 = [55, 30, 5, 4, 2];
+            int[] nums2 = [100, 20, 10, 10, 5];
+
+            LeetCode_1855 classLeetCode = new LeetCode_1855();
+            Console.WriteLine(classLeetCode.MaxDistance(nums1, nums2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxDistance(nums1, nums2));
+
             ////(1859.) Sorting the Sentence (EASY)
             //string s = "is2 sentence4 This1 a3";
 

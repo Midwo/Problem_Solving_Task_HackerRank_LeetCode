@@ -30684,8 +30684,40 @@ namespace ProblemSolving
 
             return Math.Abs(n - reverseNumber);
         }
+        public int MaxDistance(int[] nums1, int[] nums2)
+        {
+            int lengthNums1 = nums1.Length;
+            int lengthNums2 = nums2.Length;
+            var maxdDistancePair = -1;
+            var currCheckIndexNums2 = 0;
 
+            if (nums2[0] < nums1[lengthNums1 - 1])
+            {
+                return 0;
+            }
 
+            for (int indexNums1 = 0; indexNums1 < lengthNums1; indexNums1++)
+            {
+                var currValue = nums1[indexNums1];
+
+                currCheckIndexNums2 = currCheckIndexNums2 < indexNums1 ? indexNums1 : currCheckIndexNums2;
+
+                while (currCheckIndexNums2 < lengthNums2)
+                {
+                    if (currValue <= nums2[currCheckIndexNums2])
+                    {
+                        maxdDistancePair = maxdDistancePair < currCheckIndexNums2 - indexNums1 ? currCheckIndexNums2 - indexNums1 : maxdDistancePair;
+                        currCheckIndexNums2++;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+
+            return maxdDistancePair == -1 ? 0 : maxdDistancePair;
+        }
 
 
 
