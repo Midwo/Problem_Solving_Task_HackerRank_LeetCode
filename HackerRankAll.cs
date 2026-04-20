@@ -2840,16 +2840,243 @@ namespace ProblemSolving
             //}
             //return newS;
         }
+        public void insertionSort(int[] A)
+        {
+            for (int i = 1; i < A.Length; i++)
+            {
+                int currValue = A[i];
+                int j = i - 1;
+
+                while (j >= 0 && A[j] > currValue)
+                {
+                    A[j + 1] = A[j];
+                    j--;
+                }
+
+                A[j + 1] = currValue;
+            }
+
+            Console.WriteLine(string.Join(' ', A));
+        }
+        public void insertionSort2(int n, List<int> arr)
+        {
+            ////Solution 1 (New - Better)
+
+            for (int index = 1; index < arr.Count; index++)
+            {
+                int currValue = arr[index];
+                int j = index - 1;
+
+                while (j >= 0 && arr[j] > currValue)
+                {
+                    arr[j + 1] = arr[j];
+                    j--;
+                }
+
+                arr[j + 1] = currValue;
+                Console.WriteLine(string.Join(' ', arr));
+            }
+
+            ////Solution 2 (Old - Poor)
+
+            //bool good = false;
+
+            //do
+            //{
+            //    for (int x = 1; x < arr.Count; x++)
+            //    {
+            //        string xstring = string.Empty;
+
+            //        if (arr[x] < arr[x - 1])
+            //        {
+            //            int whereInsterValue = x - 1;
+            //            for (int item1 = 0; item1 < x; item1++)
+            //            {
+            //                if (arr[item1] > arr[x])
+            //                {
+            //                    whereInsterValue = item1;
+            //                    break;
+            //                }
+            //            }
+            //            int removedRecord = arr[x];
+            //            arr.RemoveAt(x);
+            //            arr.Insert(whereInsterValue, removedRecord);
+            //        }
+            //        foreach (var item in arr)
+            //        {
+            //            xstring += " " + item;
+            //        }
+            //        Console.WriteLine(xstring.Trim());
+            //    }
+
+            //    bool firstValueprevious = true;
+            //    int previousValue = int.MinValue;
+            //    foreach (int i in arr)
+            //    {
+            //        if (firstValueprevious)
+            //        {
+            //            firstValueprevious = false;
+            //            previousValue = i;
+            //        }
+            //        else
+            //        {
+            //            if (previousValue < i)
+            //            {
+            //                previousValue = i;
+            //            }
+            //            else
+            //            {
+            //                good = true;
+            //                previousValue = i;
+            //            }
+            //        }
+
+            //    }
+
+            //} while (good);
+        }
+        public int alternateTask108(string s)
+        {
+            ////Solution 1 (New - Better)
+            var itExist = new bool[26];
+
+            foreach (var item in s)
+            {
+                itExist[item - 'a'] = true;
+            }
+
+            int maxLengthWithTwoChar = 0;
+
+            for (var i = 0; i < 25; i++)
+            {
+                if (itExist[i])
+                {
+                    char firstChar = (char)('a' + i);
+                    for (var j = i + 1; j < 26; j++)
+                    {
+                        if (itExist[j])
+                        {
+                            char secondChar = (char)('a' + j);
+                            int lengthString = 0;
+                            char lastCharAdd = ' ';
+                            bool status = true;
+                            for (var k = 0; k < s.Length; k++)
+                            {
+                                char currChar = s[k];
+                                if (currChar == firstChar || currChar == secondChar)
+                                {
+                                    if (lastCharAdd != currChar)
+                                    {
+                                        lastCharAdd = currChar;
+                                        lengthString++;
+                                    }
+                                    else
+                                    {
+                                        status = false;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (status)
+                            {
+                                maxLengthWithTwoChar = maxLengthWithTwoChar < lengthString ? lengthString : maxLengthWithTwoChar;
+                            }
+                        }
+                    }
+                }
+            }
+
+            return maxLengthWithTwoChar;
 
 
+            ////Solution 2 (Old - Poor)
+            //int lenghtString = s.Length;
+            //List<string> allCharsFromString = new List<string>();
+            //List<string> listStringFromChar = new List<string>();
+            //int howLongMax = 0;
+            //foreach (char item in s)
+            //{
+            //    if (!allCharsFromString.Contains(item.ToString()))
+            //    {
+            //        allCharsFromString.Add(item.ToString());
+            //    }
+            //}
+            //allCharsFromString.Sort();
+            //for (int i = 0; i < allCharsFromString.Count; i++)
+            //{
+            //    for (int j = i + 1; j < allCharsFromString.Count; j++)
+            //    {
+            //        listStringFromChar.Add(allCharsFromString[i].ToString() + allCharsFromString[j].ToString());
+            //    }
+            //}
+            //foreach (var item in listStringFromChar)
+            //{
+            //    string x = string.Empty;
+            //    foreach (var charS in s)
+            //    {
+            //        if (charS == item[0] || charS == item[1])
+            //        {
+            //            x += charS;
+            //        }
+            //    }
+            //    char lastChar = x[0];
+            //    for (int k = 1; k < x.Length; k++)
+            //    {
+            //        if (lastChar == x[k])
+            //        {
+            //            x = "";
+            //            break;
+            //        }
+            //        else
+            //        {
+            //            lastChar = x[k];
+            //        }
+            //    }
+            //    if (x.Length > 0 && x.Length > howLongMax)
+            //    {
+            //        howLongMax = x.Length;
+            //    }
+            //}
+            //return howLongMax;
+        }
+        public int minimumNumber(int n, string password)
+        {
+            int minlenght = 6;
+            string numbers = "0123456789";
+            string lower_case = "abcdefghijklmnopqrstuvwxyz";
+            string upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            string special_characters = "!@#$%^&*()-+";
+
+            int howManyAdd = 0;
 
 
+            howManyAdd = !password.Any(numbers.Contains) ? ++howManyAdd : howManyAdd;
+            howManyAdd = !password.Any(lower_case.Contains) ? ++howManyAdd : howManyAdd;
+            howManyAdd = !password.Any(upper_case.Contains) ? ++howManyAdd : howManyAdd;
+            howManyAdd = !password.Any(special_characters.Contains) ? ++howManyAdd : howManyAdd;
+            howManyAdd = minlenght > n + howManyAdd ? howManyAdd = minlenght - n : howManyAdd;
 
+            return howManyAdd;
+        }
+        public void insertionSort1(int n, List<int> arr)
+        {
+            var last = arr[n - 1];
 
-
-
-
-
+            for (int i = n - 1; i >= 0; i--)
+            {
+                if (i == 0 || last > arr[i - 1])
+                {
+                    arr[i] = last;
+                    Console.WriteLine(string.Join(" ", arr));
+                    break;
+                }
+                else
+                {
+                    arr[i] = arr[i - 1];
+                    Console.WriteLine(string.Join(" ", arr));
+                }
+            }
+        }
 
 
 

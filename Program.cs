@@ -1210,7 +1210,6 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.hackerrankInString(s));
 
 
-
             ////103. Running Time of Algorithms (EASY)
             //List<int> arr = [2, 1, 3, 1, 2];
 
@@ -1243,6 +1242,65 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(hackerRankAll.caesarCipher(s, k));
+
+
+            ////106. Correctness and the Loop Invariant (EASY)
+            //int[] A = [4,1,3,5,6,2];
+
+            //HackerRank_0106 classHackerRank = new HackerRank_0106();
+            //classHackerRank.insertionSort(A);
+
+            ////OR
+
+            //hackerRankAll.insertionSort(A);
+
+
+            ////107. Insertion Sort - Part 2 (EASY)
+            //List<int> arr = [1, 4, 3, 5, 6, 2];
+            //int n = 6;
+
+            //HackerRank_0107 classHackerRank = new HackerRank_0107();
+            //classHackerRank.insertionSort2(n, arr);
+
+            ////OR
+
+            //hackerRankAll.insertionSort2(n, arr);
+
+
+            ////108. Two Characters (EASY)
+            //string s = "beabeefeab";
+
+            //HackerRank_0108 classHackerRank = new HackerRank_0108();
+            //Console.WriteLine(classHackerRank.alternate(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.alternateTask108(s));
+
+
+            ////109. Strong Password (EASY)
+            //int n = 5;
+            //string password = "2bbbb";
+
+            //HackerRank_0109 classHackerRank = new HackerRank_0109();
+            //Console.WriteLine(classHackerRank.minimumNumber(n, password));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.minimumNumber(n, password));
+
+
+            ////110. Insertion Sort - Part 1 (EASY)
+            //int n = 5;
+            //List<int> arr = [1, 2, 4, 5 ,3];
+
+            //HackerRank_0110 classHackerRank = new HackerRank_0110();
+            //classHackerRank.insertionSort1(n, arr);
+
+            ////OR
+
+            //hackerRankAll.insertionSort1(n, arr);
+
 
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
@@ -8152,15 +8210,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GetMinDistance(nums, target, start));
 
             ////(1855.) Maximum Distance Between a Pair of Values (MEDIUM)
-            int[] nums1 = [55, 30, 5, 4, 2];
-            int[] nums2 = [100, 20, 10, 10, 5];
+            //int[] nums1 = [55, 30, 5, 4, 2];
+            //int[] nums2 = [100, 20, 10, 10, 5];
 
-            LeetCode_1855 classLeetCode = new LeetCode_1855();
-            Console.WriteLine(classLeetCode.MaxDistance(nums1, nums2));
+            //LeetCode_1855 classLeetCode = new LeetCode_1855();
+            //Console.WriteLine(classLeetCode.MaxDistance(nums1, nums2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxDistance(nums1, nums2));
+            //Console.WriteLine(leetCodeAll.MaxDistance(nums1, nums2));
 
             ////(1859.) Sorting the Sentence (EASY)
             //string s = "is2 sentence4 This1 a3";
