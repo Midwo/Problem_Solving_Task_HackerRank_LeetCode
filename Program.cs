@@ -12686,6 +12686,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SmallestIndex(nums));
 
+            ////(3560.) Find Minimum Log Transportation Cost (EASY)
+            int n = 6;
+            int m = 5;
+            int k = 5;
+
+            LeetCode_3560 classLeetCode = new LeetCode_3560();
+            Console.WriteLine(classLeetCode.MinCuttingCost(n, m, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinCuttingCost(n, m, k));
+
             ////(3567.) Minimum Absolute Difference in Sliding Submatrix (MEDIUM)
             //int[][] grid = [[3,-1]];
             //int k = 1;

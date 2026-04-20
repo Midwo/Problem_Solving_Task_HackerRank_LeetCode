@@ -30718,8 +30718,21 @@ namespace ProblemSolving
 
             return maxdDistancePair == -1 ? 0 : maxdDistancePair;
         }
+        public long MinCuttingCost(int n, int m, int k)
+        {
+            long costCutting = 0;
 
+            if (n > k)
+            {
+                costCutting += (long)(n - k) * k;
+            }
+            if (m > k)
+            {
+                costCutting += (long)(m - k) * k;
+            }
 
+            return costCutting;
+        }
 
 
 
