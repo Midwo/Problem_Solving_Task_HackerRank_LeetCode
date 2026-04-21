@@ -3077,16 +3077,121 @@ namespace ProblemSolving
                 }
             }
         }
+        public int camelcase(string s)
+        {
+            ////Solution 1 (New - Better)
+
+            var countUpperChar = 1;
+
+            foreach (var currchar in s)
+            {
+                if (char.IsUpper(currchar))
+                    countUpperChar++;
+            }
+
+            return countUpperChar;
+
+            ////Solution 2 (Old - Poor)
+            //int howManyUpper = 0;
+            //bool firstNoUpperWord = true;
+            //foreach (char i in s)
+            //{
+            //    howManyUpper = !char.IsUpper(i) && firstNoUpperWord ? ++howManyUpper : howManyUpper;
+            //    firstNoUpperWord = false;
+            //    howManyUpper = char.IsUpper(i) ? ++howManyUpper : howManyUpper;
+
+            //}
+            //return howManyUpper;
+        }
+        public int introTutorial(int V, List<int> arr)
+        {
+            ////Solution 1 (New - Better)
+            for (int i = 0; i < arr.Count; i++)
+            {
+                if (V == arr[i])
+                    return i;
+            }
+            return -1;
+
+            ////Solution 2 (Old - Poor)
+            ////Kept for reference. This version relied on counting elements smaller than V,
+            ////which only works accidentally for sorted arrays and does NOT solve the actual problem.
+            ////Left here as an example of flawed reasoning before refactoring.
+
+            //int howMany = 0;
+            //foreach (int i in arr)
+            //{
+            //    howMany = V > i ? ++howMany : howMany;
+            //}
+            //return howMany;
+        }
+        public List<string> bigSorting(List<string> unsorted)
+        {
+            return unsorted.OrderBy(s => s.Length).ThenBy(s => s).ToList();
+        }
+        public long strangeCounter(long t)
+        {
+            ////Solution 1 (New - Better)
+            long lastElementTime = 3;
+            long countElements = 3;
+
+            while (t > lastElementTime)
+            {
+                countElements += countElements;
+                lastElementTime += countElements;
+            }
+
+            return lastElementTime - t + 1;
 
 
+            ////Solution 2 (Old - Poor)
+            //bool endLoopSearch = false;
+            //long timeMaxLoop = 3;
+            //long lastValue = 3;
+            //do
+            //{
+            //    if (timeMaxLoop >= t)
+            //    {
+            //        break;
+            //    }
+            //    lastValue = 2 * lastValue;
+            //    timeMaxLoop = timeMaxLoop + lastValue;
+            //} while (!endLoopSearch);
+            //return timeMaxLoop - t + 1;
+        }
+        public List<int> stones(int n, int a, int b)
+        {
+            ////Solution 1 (New - Better)
+            var uniqueLastValue = new HashSet<int>();
+
+            if (a > b)
+            {
+                int temp = b;
+                b = a;
+                a = temp;
+            }
+            for (int i = 0; i < n; i++)
+            {
+                uniqueLastValue.Add(a * (n - i - 1) + b * i);
+            }
+
+            return uniqueLastValue.ToList();
 
 
+            ////Solution 2 (Old - Poor)
+            //List<int> outPrintList = new List<int>();
 
-
-
-
-
-
+            //for (int i = 0; i < n; i++)
+            //{
+            //    int x = (n - i - 1) * a + (i * b);
+            //    if (!outPrintList.Contains(x))
+            //    {
+            //        outPrintList.Add(x);
+            //    }
+            //}
+            //outPrintList.Sort();
+            //return outPrintList;
+        }
 
 
 

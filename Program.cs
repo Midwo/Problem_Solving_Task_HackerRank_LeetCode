@@ -127,7 +127,7 @@ namespace ProblemSolving
             //}
 
 
-            ////7. Happy Ladybugs
+            ////7. Happy Ladybugs (EASY)
             //HackerRank_0007 classHackerRank = new HackerRank_0007();
             //Console.WriteLine(classHackerRank.Happy_ladybugs("RBY_YBR"));
 
@@ -283,7 +283,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.nimGame([3, 2, 4]));
 
 
-            ////19. Super Reduced String
+            ////19. Super Reduced String (EASY)
             //HackerRank_0019 classHackerRank = new HackerRank_0019();
             //Console.WriteLine(classHackerRank.superReducedString1("acdqglrfkqyuqfjkxyqvnrtysfrzrmzlygfveulqfpdbhlqdqrrqdqlhbdpfqluevfgylzmrzrfsytrnvqyxkjfquyqkfrlacdqj"));
 
@@ -1302,10 +1302,67 @@ namespace ProblemSolving
             //hackerRankAll.insertionSort1(n, arr);
 
 
+            ////111. CamelCase (EASY)
+            //string s = "saveChangesInTheEditor";
+
+            //HackerRank_0111 classHackerRank = new HackerRank_0111();
+            //Console.WriteLine(classHackerRank.camelcase(s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.camelcase(s));
+
+
+            ////112. Intro to Tutorial Challenges (EASY)
+            //int V = 4;
+            //List<int> arr = [1, 4, 5, 7, 9, 12];
+
+            //HackerRank_0112 classHackerRank = new HackerRank_0112();
+            //Console.WriteLine(classHackerRank.introTutorial(V, arr));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.introTutorial(V, arr));
+
+
+            ////113. Big Sorting (EASY)
+            //List<string> unsorted = ["31415926535897932384626433832795","1","3","10","3","5"];
+
+            //HackerRank_0113 classHackerRank = new HackerRank_0113();
+            //Console.WriteLine(string.Join(',', classHackerRank.bigSorting(unsorted)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.bigSorting(unsorted)));
+
+
+            ////114. Strange Counter (EASY)
+            //long t = 9;
+
+            //HackerRank_0114 classHackerRank = new HackerRank_0114();
+            //Console.WriteLine(classHackerRank.strangeCounter(t));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.strangeCounter(t));
+
+
+            ////115. Manasa and Stones (EASY)
+            //int n = 4, a = 10, b = 100;
+
+            //HackerRank_0115 classHackerRank = new HackerRank_0115();
+            //Console.WriteLine(string.Join(',', classHackerRank.stones(n, a, b)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.stones(n, a, b)));
+
+
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
+
 
 
             ////(1.) Two Sum (EASY)
@@ -12687,16 +12744,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestIndex(nums));
 
             ////(3560.) Find Minimum Log Transportation Cost (EASY)
-            int n = 6;
-            int m = 5;
-            int k = 5;
+            //int n = 6;
+            //int m = 5;
+            //int k = 5;
 
-            LeetCode_3560 classLeetCode = new LeetCode_3560();
-            Console.WriteLine(classLeetCode.MinCuttingCost(n, m, k));
+            //LeetCode_3560 classLeetCode = new LeetCode_3560();
+            //Console.WriteLine(classLeetCode.MinCuttingCost(n, m, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinCuttingCost(n, m, k));
+            //Console.WriteLine(leetCodeAll.MinCuttingCost(n, m, k));
 
             ////(3567.) Minimum Absolute Difference in Sliding Submatrix (MEDIUM)
             //int[][] grid = [[3,-1]];
