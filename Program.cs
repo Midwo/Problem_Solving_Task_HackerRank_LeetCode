@@ -7806,6 +7806,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.Decode(encoded, first)));
 
+            ////(1722.) Minimize Hamming Distance After Swap Operations (MEDIUM)
+            int[] source = [1, 2, 3, 4];
+            int[] target = [2, 1, 4, 5];
+            int[][] allowedSwaps = [[0, 1], [2, 3]];
+
+            LeetCode_1722 classLeetCode = new LeetCode_1722();
+            Console.WriteLine(classLeetCode.MinimumHammingDistance(source, target, allowedSwaps));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumHammingDistance(source, target, allowedSwaps));
+
             ////(1725.) Number Of Rectangles That Can Form The Largest Square (EASY)
             //int[][] rectangles = [[5,8], [3,9], [5,12], [16,5]];
 
