@@ -10250,6 +10250,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.HaveConflict(event1, event2));
 
+            ////(2452.) Words Within Two Edits of Dictionary (MEDIUM)
+            string[] queries = ["word", "note", "ants", "wood"];
+            string[] dictionary = ["wood", "joke", "moat"];
+
+            LeetCode_2452 classLeetCode = new LeetCode_2452();
+            Console.WriteLine(string.Join(',', classLeetCode.TwoEditWords(queries, dictionary)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.TwoEditWords(queries, dictionary)));
+
             ////(2455.) Average Value of Even Numbers That Are Divisible by Three (EASY)
             //int[] nums = [1, 3, 6, 10, 12, 15];
 

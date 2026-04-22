@@ -30805,8 +30805,32 @@ namespace ProblemSolving
                 }
             }
         }
+        public IList<string> TwoEditWords(string[] queries, string[] dictionary)
+        {
+            var resultCorrectWords = new List<string>();
 
+            foreach (var word in queries)
+            {
 
+                foreach (var dictWord in dictionary)
+                {
+                    int diff = 0;
+                    int index = 0;
+                    while (diff <= 2 && index < word.Length)
+                    {
+                        if (dictWord[index] != word[index++])
+                            diff++;
+                    }
+                    if (diff <= 2)
+                    {
+                        resultCorrectWords.Add(word);
+                        break;
+                    }
+                }
+            }
+
+            return resultCorrectWords;
+        }
 
 
 
