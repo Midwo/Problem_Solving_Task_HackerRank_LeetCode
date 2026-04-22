@@ -136,7 +136,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.Happy_ladybugs("RBY_YBR"));
 
 
-            ////8. Cavity Map
+            ////8. Cavity Map (EASY)
             //List<string> grid = new List<string>();
             //grid = ["1112", "1912", "1892", "1234"];
 
@@ -187,7 +187,7 @@ namespace ProblemSolving
             //}
 
 
-            ////11. Fair Rations
+            ////11. Fair Rations (EASY)
             //List<int> B = new List<int>();
             //B = [1, 2];
 
@@ -221,7 +221,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.alternate(s));
 
 
-            ////14. Flatland Space Stations
+            ////14. Flatland Space Stations (EASY)
             //int n = 5;
             //int[] c = [0, 4];
 
@@ -1356,6 +1356,68 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', hackerRankAll.stones(n, a, b)));
+
+
+            ////116. Lisa's Workbook (EASY)
+            //int n = 5, k = 3;
+            //List<int> arr = [4,2,6,1,10];
+
+            //HackerRank_0116 classHackerRank = new HackerRank_0116();
+            //Console.WriteLine(classHackerRank.workbook(n, k, arr));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.workbook(n, k, arr));
+
+
+            ////117. Service Lane (EASY)
+            //List<List<int>> cases = [[0,3],[4,6],[6,7],[3,5],[0,7]];
+            //List<int> width = [2,3,1,2,3,2,3,3];
+            //int n = 8;
+
+            //HackerRank_0117 classHackerRank = new HackerRank_0117();
+            //Console.WriteLine(string.Join(' ', classHackerRank.serviceLane(n, width,cases)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(' ', hackerRankAll.serviceLane(n, width, cases)));
+
+
+            ////118. Chocolate Feast (EASY)
+            //int n = 15, c = 3, m = 2;
+
+            //HackerRank_0118 classHackerRank = new HackerRank_0118();
+            //Console.WriteLine(classHackerRank.chocolateFeast(n, c, m));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.chocolateFeast(n, c, m));
+
+
+            ////119. The Time in Words (MEDIUM)
+            //int h = 3;
+            //int m = 16;
+
+            //HackerRank_0119 classHackerRank = new HackerRank_0119();
+            //Console.WriteLine(classHackerRank.timeInWords(h, m));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.timeInWordsTask119(h, m));
+
+
+            ////120. Halloween Sale (EASY)
+            //int p = 20;
+            //int d = 3;
+            //int m = 6;
+            //int s = 70;
+
+            //HackerRank_0120 classHackerRank = new HackerRank_0120();
+            //Console.WriteLine(classHackerRank.howManyGames(p, d, m, s));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.howManyGames(p, d, m, s));
 
 
 
@@ -7807,16 +7869,16 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.Decode(encoded, first)));
 
             ////(1722.) Minimize Hamming Distance After Swap Operations (MEDIUM)
-            int[] source = [1, 2, 3, 4];
-            int[] target = [2, 1, 4, 5];
-            int[][] allowedSwaps = [[0, 1], [2, 3]];
+            //int[] source = [1, 2, 3, 4];
+            //int[] target = [2, 1, 4, 5];
+            //int[][] allowedSwaps = [[0, 1], [2, 3]];
 
-            LeetCode_1722 classLeetCode = new LeetCode_1722();
-            Console.WriteLine(classLeetCode.MinimumHammingDistance(source, target, allowedSwaps));
+            //LeetCode_1722 classLeetCode = new LeetCode_1722();
+            //Console.WriteLine(classLeetCode.MinimumHammingDistance(source, target, allowedSwaps));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumHammingDistance(source, target, allowedSwaps));
+            //Console.WriteLine(leetCodeAll.MinimumHammingDistance(source, target, allowedSwaps));
 
             ////(1725.) Number Of Rectangles That Can Form The Largest Square (EASY)
             //int[][] rectangles = [[5,8], [3,9], [5,12], [16,5]];

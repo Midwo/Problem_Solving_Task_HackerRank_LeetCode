@@ -3192,6 +3192,225 @@ namespace ProblemSolving
             //outPrintList.Sort();
             //return outPrintList;
         }
+        public int workbook(int n, int k, List<int> arr)
+        {
+            ///Solution 1 (New)
+            int page = 0;
+            int countSpecialProblems = 0;
+            foreach (var number in arr)
+            {
+                page++;
+                for (int currProblem = 1; currProblem <= number; currProblem++)
+                {
+                    if (currProblem == page)
+                        countSpecialProblems++;
+                    if (currProblem % k == 0 && currProblem < number)
+                        page++;
+                }
+            }
+
+            return countSpecialProblems;
+
+            ////Solution 2 (Old)
+            //int howManySpecial = 0;
+            //int pageMain = 0;
+            //int counter = 0;
+
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    pageMain++;
+            //    counter = 0;
+            //    for (int x = 1; x <= arr[i - 1]; x++)
+            //    {
+            //        counter++;
+            //        if (counter > k)
+            //        {
+            //            pageMain++;
+            //            counter = 1;
+            //        }
+            //        if (pageMain == x)
+            //        {
+            //            howManySpecial++;
+            //        }
+            //    }
+            //}
+            //return howManySpecial;
+        }
+        public List<int> serviceLane(int n, List<int> width, List<List<int>> cases)
+        {
+            ////Solution 1 (New)
+            var serviceLine = new List<int>();
+
+            for (int index = 0; index < cases.Count; index++)
+            {
+                int minValue = int.MaxValue;
+
+                for (int indexWidth = cases[index][0]; indexWidth <= cases[index][1]; indexWidth++)
+                {
+                    minValue = minValue > width[indexWidth] ? width[indexWidth] : minValue;
+
+                }
+                serviceLine.Add(minValue);
+            }
+
+            return serviceLine;
+
+            ////Solution 2 (Old)
+            //List<int> newList = new List<int>();
+            //foreach (List<int> subList in cases)
+            //{
+            //    int resultValue = int.MaxValue;
+            //    int minRange = int.MaxValue;
+            //    int maxRange = int.MinValue;
+            //    foreach (int item in subList)
+            //    {
+            //        minRange = item < minRange ? item : minRange;
+            //        maxRange = item > maxRange ? item : maxRange;
+            //    }
+            //    for (int i = minRange; i <= maxRange; i++)
+            //    {
+            //        resultValue = resultValue > width[i] ? width[i] : resultValue;
+            //    }
+            //    newList.Add(resultValue);
+            //}
+            //return newList;
+        }
+        public int chocolateFeast(int n, int c, int m)
+        {
+            ////Solution 1 (New)
+            int eaten = n / c;
+            int wrappers = eaten;
+
+            while (wrappers >= m)
+            {
+                int currEaten = wrappers / m;
+                wrappers = wrappers % m;
+                wrappers += currEaten;
+                eaten += currEaten;
+            }
+
+            return eaten;
+
+
+            ////Solution 2 (Old)
+            //bool endloop = true;
+
+            //int intHowManyICanBuyBars = n / c;
+            //int intcoupon = intHowManyICanBuyBars;
+            //do
+            //{
+            //    intHowManyICanBuyBars = intHowManyICanBuyBars + intcoupon / m;
+            //    intcoupon = intcoupon % m + intcoupon / m;
+
+            //    if (m > intcoupon)
+            //    {
+            //        endloop = false;
+            //    }
+            //} while (endloop);
+
+            //return intHowManyICanBuyBars;
+        }
+        public string timeInWordsTask119(int h, int m)
+        {
+            var words = new Dictionary<int, string>
+            {
+                {0, "o' clock"}, {1, "one"}, {2, "two"}, {3, "three"}, {4, "four"},
+                {5, "five"}, {6, "six"}, {7, "seven"}, {8, "eight"}, {9, "nine"},
+                {10, "ten"}, {11, "eleven"}, {12, "twelve"}, {13, "thirteen"},
+                {14, "fourteen"}, {15, "quarter"}, {16, "sixteen"}, {17, "seventeen"},
+                {18, "eighteen"}, {19, "nineteen"}, {20, "twenty"}, {21, "twenty one"},
+                {22, "twenty two"}, {23, "twenty three"}, {24, "twenty four"},
+                {25, "twenty five"}, {26, "twenty six"}, {27, "twenty seven"},
+                {28, "twenty eight"}, {29, "twenty nine"}, {30, "half"}
+            };
+
+            if (m == 0)
+                return $"{words[h]} {words[0]}";
+
+            if (m == 15)
+                return $"{words[15]} past {words[h]}";
+
+            if (m == 30)
+                return $"{words[30]} past {words[h]}";
+
+            if (m == 45)
+                return $"{words[15]} to {words[h + 1]}";
+
+            if (m < 30)
+                return $"{words[m]} {(m == 1 ? "minute" : "minutes")} past {words[h]}";
+
+            int to = 60 - m;
+            return $"{words[to]} {(to == 1 ? "minute" : "minutes")} to {words[h + 1]}";
+        }
+        public int howManyGames(int p, int d, int m, int s)
+        {
+            ////Solution 1 (New - Better)
+            int howManyGames = 0;
+            while (s >= m && p <= s)
+            {
+                s -= p;
+                p -= d;
+                p = p > m ? p : m;
+                howManyGames++;
+            }
+
+            return howManyGames;
+
+            ////Solution 2 (Old - Poor)
+            //bool done = true;
+
+            //int howManyCanBuy = 0;
+            //int sum = 0;
+            //int nextValuePrice = 0;
+            //bool firstPrice = true;
+
+            //do
+            //{
+            //    if (firstPrice)
+            //    {
+            //        firstPrice = false;
+            //        if (s >= p)
+            //        {
+            //            sum = p;
+            //            nextValuePrice = p;
+            //            howManyCanBuy++;
+            //        }
+            //        else
+            //        {
+            //            howManyCanBuy = 0;
+            //            done = false;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        nextValuePrice = nextValuePrice - d;
+            //        if (nextValuePrice <= m)
+            //        {
+            //            nextValuePrice = m;
+            //        }
+            //        if (s >= sum + nextValuePrice)
+            //        {
+            //            sum = sum + nextValuePrice;
+            //            howManyCanBuy++;
+            //        }
+            //        else
+            //        {
+            //            done = false;
+            //        }
+            //    }
+
+            //} while (done);
+            //return howManyCanBuy;
+
+        }
+
+
+
+
+
+
+
+
 
 
 
