@@ -1510,6 +1510,109 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', hackerRankAll.cutTheSticks(arr)));
 
 
+            ////129. Revising the Select Query I (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT*
+            //FROM CITY
+            //WHERE CountryCode = 'USA' and POPULATION > 100000
+            //    ";
+
+            ////OR
+
+            //HackerRank_0129 classHackerRank = new HackerRank_0129();
+
+
+            ////130. Revising the Select Query II (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT NAME
+            //FROM CITY
+            //WHERE CountryCode = 'USA' and POPULATION > 120000
+            //    ";
+
+            ////OR
+
+            //HackerRank_0130 classHackerRank = new HackerRank_0130();
+
+
+            ////131. Select All (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT*
+            //FROM CITY
+            //    ";
+
+            ////OR
+
+            //HackerRank_0131 classHackerRank = new HackerRank_0131();
+
+
+            ////132. Select By ID (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT*
+            //FROM CITY
+            //Where ID = '1661'
+            //    ";
+
+            ////OR
+
+            //HackerRank_0132 classHackerRank = new HackerRank_0132();
+
+
+            ////133. Japanese Cities' Attributes (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT*
+            //FROM CITY
+            //Where Countrycode = 'JPN'
+            //    ";
+
+            ////OR
+
+            //HackerRank_0133 classHackerRank = new HackerRank_0133();
+
+
+            ////134. Japanese Cities' Names (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT NAME
+            //FROM CITY
+            //Where Countrycode = 'JPN'
+            //    ";
+
+            ////OR
+
+            //HackerRank_0134 classHackerRank = new HackerRank_0134();
+
+
+            ////135. Weather Observation Station 1 (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT City, State
+            //FROM STATION
+            //    ";
+
+            ////OR
+
+            //HackerRank_0135 classHackerRank = new HackerRank_0135();
+
+
+            ////136. Weather Observation Station 2 (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT 
+            //        CAST(SUM(LAT_N) as decimal(10, 2)), 
+            //        CAST(SUM(LONG_W) as decimal(10, 2))
+            //FROM STATION
+            //    ";
+
+            ////OR
+
+            //HackerRank_0136 classHackerRank = new HackerRank_0136();
+
+
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
