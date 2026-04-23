@@ -10769,8 +10769,14 @@ namespace ProblemSolving
             //}
 
             ////(2615.) Sum of Distances (MEDIUM)
+            int[] nums = [1, 3, 1, 1, 2];
 
+            LeetCode_2615 classLeetCode = new LeetCode_2615();
+            Console.WriteLine(string.Join(',', classLeetCode.Distance(nums)));
 
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.Distance(nums)));
 
             ////(2616.) Minimize the Maximum Difference of Pairs (MEDIUM)
             //int[] nums = [10,1,2,7,1,3];
