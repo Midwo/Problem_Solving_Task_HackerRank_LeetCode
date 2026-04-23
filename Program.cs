@@ -55,7 +55,7 @@ namespace ProblemSolving
             //HACKERRANK
 
 
-            ////1. Subarray Division 1
+            ////1. Subarray Division (EASY)
             //HackerRank_0001 classHackerRank = new HackerRank_0001();
             //Console.WriteLine(classHackerRank.birthday([2, 2, 1, 3, 2], 4, 2));
 
@@ -64,7 +64,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.birthday([2, 2, 1, 3, 2], 4, 2));
 
 
-            ////2. Sales by Match
+            ////2. Sales by Match (EASY)
             //HackerRank_0002 classHackerRank = new HackerRank_0002();
             //Console.WriteLine(hackerRankAll.sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
 
@@ -73,7 +73,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
 
 
-            ////3. Cats and a Mouse
+            ////3. Cats and a Mouse (EASY)
             //HackerRank_0003 classHackerRank = new HackerRank_0003();
             //Console.WriteLine(classHackerRank.catAndMouse(1, 2, 3));
 
@@ -82,7 +82,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.catAndMouse(1, 2, 3));
 
 
-            ////4. Divisible Sum Pairs
+            ////4. Divisible Sum Pairs (EASY)
             //HackerRank_0004 classHackerRank = new HackerRank_0004();
             //Console.WriteLine(classHackerRank.divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]));
 
@@ -91,7 +91,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.divisibleSumPairs(6, 3, [1, 3, 2, 6, 1, 2]));
 
 
-            ////5. Apple and Orange
+            ////5. Apple and Orange (EASY)
             //List<int> oranges = new List<int>();
             //oranges = [5, -6];
             //List<int> apples = new List<int>();
@@ -109,7 +109,7 @@ namespace ProblemSolving
             //hackerRankAll.countApplesAndOranges(s, t, a, b, apples, oranges);
 
 
-            ////6. Grading Students
+            ////6. Grading Students (EASY)
             //List<int> grades = new List<int>();
             //grades = [73, 67, 38, 33];
 
@@ -210,7 +210,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.encryption(s));
 
 
-            ////13. Two Character
+            ////13. Two Characters (EASY)
             //string s = "beabeefeab";
 
             //HackerRank_0013 classHackerRank = new HackerRank_0013();
@@ -265,7 +265,7 @@ namespace ProblemSolving
             //}
 
 
-            ////17. Poker Nim
+            ////17. Poker Nim (EASY)
             //HackerRank_0017 classHackerRank = new HackerRank_0017();
             //Console.WriteLine(classHackerRank.pokerNim(5, [1, 2]));
 
@@ -274,7 +274,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.pokerNim(5, [1, 2]));
 
 
-            ////18. Introduction to Nim Game
+            ////18. Introduction to Nim Game (EASY)
             //HackerRank_0018 classHackerRank = new HackerRank_0018();
             //Console.WriteLine(classHackerRank.nimGame([3, 2, 4]));
 
@@ -292,7 +292,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.superReducedString1("acdqglrfkqyuqfjkxyqvnrtysfrzrmzlygfveulqfpdbhlqdqrrqdqlhbdpfqluevfgylzmrzrfsytrnvqyxkjfquyqkfrlacdqj"));
 
 
-            ////20. Beautiful Paris
+            ////20. Beautiful Pairs (EASY)
             //HackerRank_0020 classHackerRank = new HackerRank_0020();
             //Console.WriteLine(classHackerRank.beautifulPairs([1, 2, 3, 4], [1, 2, 3, 3]));
 
@@ -301,7 +301,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.beautifulPairs([1, 2, 3, 4], [1, 2, 3, 3]));
 
 
-            ////21.The Time on Words
+            ////21.The Time in Words (MEDIUM)
             //HackerRank_0021 classHackerRank = new HackerRank_0021();
             //Console.WriteLine(classHackerRank.timeInWords(5, 45));
 
@@ -10769,14 +10769,14 @@ namespace ProblemSolving
             //}
 
             ////(2615.) Sum of Distances (MEDIUM)
-            int[] nums = [1, 3, 1, 1, 2];
+            //int[] nums = [1, 3, 1, 1, 2];
 
-            LeetCode_2615 classLeetCode = new LeetCode_2615();
-            Console.WriteLine(string.Join(',', classLeetCode.Distance(nums)));
+            //LeetCode_2615 classLeetCode = new LeetCode_2615();
+            //Console.WriteLine(string.Join(',', classLeetCode.Distance(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.Distance(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.Distance(nums)));
 
             ////(2616.) Minimize the Maximum Difference of Pairs (MEDIUM)
             //int[] nums = [10,1,2,7,1,3];
