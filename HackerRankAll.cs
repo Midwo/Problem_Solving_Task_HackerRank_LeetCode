@@ -219,43 +219,6 @@ namespace ProblemSolving
             }
             return outPrint.Length > 0 ? outPrint.TrimEnd() : "INVALID RANGE";
         }
-        public List<int> acmTeam(List<string> topic)
-        {
-            //topic = ["10101", "11100", "11010", "00101"];
-            int countPermutationMaxTask = 0;
-            int maxTaskDoneValueLoop = 0;
-            int maxTaskDoneValue = 0;
-            int howManyTask = topic[0].Length;
-            int howManyTeams = topic.Count();
-            for (int i = 0; i < howManyTeams - 1; i++)
-            {
-                for (int x = i + 1; x < howManyTeams; x++)
-                {
-                    maxTaskDoneValueLoop = 0;
-                    for (int y = 0; y < howManyTask; y++)
-                    {
-                        if ((topic[i][y].ToString() == "1") || (topic[x][y].ToString() == "1"))
-                        {
-                            maxTaskDoneValueLoop++;
-                        }
-                    }
-                    if (maxTaskDoneValueLoop > maxTaskDoneValue)
-                    {
-                        countPermutationMaxTask = 1;
-                        maxTaskDoneValue = maxTaskDoneValueLoop;
-                    }
-                    else if (maxTaskDoneValueLoop == maxTaskDoneValue)
-                    {
-                        countPermutationMaxTask++;
-                        maxTaskDoneValue = maxTaskDoneValueLoop;
-                    }
-                }
-            }
-            List<int> newPrintList = new List<int>();
-            newPrintList.Add(maxTaskDoneValue);
-            newPrintList.Add(countPermutationMaxTask);
-            return newPrintList;
-        }
         public string fairRations(List<int> B)
         {
             int howManyRations = 0;
@@ -3403,19 +3366,368 @@ namespace ProblemSolving
             //return howManyCanBuy;
 
         }
+        public int minimumDistances(List<int> a)
+        {
+            ////Solution 1 (New - Better)
+            var dictNumberLastIndex = new Dictionary<int, int>();
+            int minDistance = int.MaxValue;
+
+            for (int indexA = 0; indexA < a.Count; indexA++)
+            {
+                int currA = a[indexA];
+                if (dictNumberLastIndex.TryGetValue(currA, out int indexDict))
+                {
+                    minDistance = minDistance > indexA - indexDict ? indexA - indexDict : minDistance;
+                }
+
+                dictNumberLastIndex[currA] = indexA;
+
+            }
+
+            return minDistance == int.MaxValue ? -1 : minDistance;
+
+
+            ////Solution 2 (Old - Poor)
+            //int minDistance = int.MaxValue;
+            //bool isMinDistance = false;
+            //for (int i = 0; i < a.Count; i++)
+            //{
+            //    for (int x = 0; x < a.Count; x++)
+            //    {
+
+            //        if (a[i] == a[x] && i != x)
+            //        {
+            //            isMinDistance = true;
+            //            int actualDistance = Math.Abs(Math.Abs(i) - Math.Abs(x));
+            //            minDistance = minDistance > actualDistance ? actualDistance : minDistance;
+            //        }
+            //    }
+            //}
+            //if (isMinDistance)
+            //{
+            //    return minDistance;
+            //}
+            //return -1;
+
+        }
+        public int beautifulTriplets(int d, List<int> arr)
+        {
+            ////Solution 1(New - Better)
+            int lenght = arr.Count;
+            int countBeautifulTriplets = 0;
+
+            for (int indexFirstValue = 0; indexFirstValue < lenght - 2; indexFirstValue++)
+            {
+                int firstseachrValue = arr[indexFirstValue] + d;
+
+                for (int indexSecondValue = indexFirstValue + 1; indexSecondValue < lenght - 1; indexSecondValue++)
+                {
+                    if (arr[indexSecondValue] == firstseachrValue)
+                    {
+                        int secondSearchValue = firstseachrValue + d;
+                        for (int indexLastValue = indexSecondValue + 1; indexLastValue < lenght; indexLastValue++)
+                        {
+                            if (secondSearchValue == arr[indexLastValue])
+                                countBeautifulTriplets++;
+                        }
+                    }
+                }
+            }
+            return countBeautifulTriplets;
+
+            //Solution 2 (Old - Poor)
+            //int howMany = 0;
+            //for (int i = 0; i <= arr.Count; i++)
+            //{
+            //    for (int j = i + 1; j < arr.Count; j++)
+            //    {
+            //        if (arr[j] - arr[i] == d)
+            //        {
+            //            for (int x = j + 1; x < arr.Count; x++)
+            //            {
+            //                if (arr[x] - arr[j] == d)
+            //                {
+            //                    howMany++;
+            //                    break;
+            //                }
+            //            }
+            //            break;
+            //        }
+            //    }
+            //}
+            //return howMany;
+        }
+        public long taumBday(int b, int w, int bc, int wc, int z)
+        {
+            ////Solution 1 (New)
+
+            if (bc + z <= wc)
+                return (long)b * bc + (long)w * (bc + z);
+
+            if (wc + z <= bc)
+                return (long)w * wc + (long)b * (wc + z);
+
+            return (long)w * wc + (long)b * bc;
+
+
+            ////Solution 2 (Old)
+
+            //long howMany = 0;
+
+            //if ((long)bc + (long)z <= (long)wc)
+            //{
+            //    howMany = (long)b * (long)bc + (long)w * ((long)bc + (long)z);
+            //}
+            //else if ((long)wc + (long)z <= (long)bc)
+            //{
+            //    howMany = (long)w * (long)wc + (long)b * ((long)wc + (long)z);
+            //}
+            //else
+            //{
+            //    howMany = (long)w * (long)wc + (long)b * (long)bc;
+            //}
+            //return howMany;
+        }
+        public List<int> acmTeam(List<string> topic)
+        {
+            ////Solution 1 (New)
+            int maxKnow = 0;
+            int countMaxKnow = 0;
+            int m = topic[0].Length;
+            for (int indexFirstTeam = 0; indexFirstTeam < topic.Count - 1; indexFirstTeam++)
+            {
+                for (int indexSecondTeam = indexFirstTeam + 1; indexSecondTeam < topic.Count; indexSecondTeam++)
+                {
+                    int currKnow = 0;
+                    for (int index = 0; index < m; index++)
+                    {
+                        if (topic[indexFirstTeam][index] == '1' || topic[indexSecondTeam][index] == '1')
+                            currKnow++;
+                    }
+                    if (maxKnow < currKnow)
+                    {
+                        maxKnow = currKnow;
+                        countMaxKnow = 1;
+                    }
+                    else if (maxKnow == currKnow)
+                        countMaxKnow++;
+                }
+            }
+            return new List<int> { maxKnow, countMaxKnow };
+
+            ////Solution 2 (Old)
+            //int countPermutationMaxTask = 0;
+            //int maxTaskDoneValueLoop = 0;
+            //int maxTaskDoneValue = 0;
+            //int howManyTask = topic[0].Length;
+            //int howManyTeams = topic.Count();
+            //for (int i = 0; i < howManyTeams - 1; i++)
+            //{
+            //    for (int x = i + 1; x < howManyTeams; x++)
+            //    {
+            //        maxTaskDoneValueLoop = 0;
+            //        for (int y = 0; y < howManyTask; y++)
+            //        {
+            //            if ((topic[i][y].ToString() == "1") || (topic[x][y].ToString() == "1"))
+            //            {
+            //                maxTaskDoneValueLoop++;
+            //            }
+            //        }
+            //        if (maxTaskDoneValueLoop > maxTaskDoneValue)
+            //        {
+            //            countPermutationMaxTask = 1;
+            //            maxTaskDoneValue = maxTaskDoneValueLoop;
+            //        }
+            //        else if (maxTaskDoneValueLoop == maxTaskDoneValue)
+            //        {
+            //            countPermutationMaxTask++;
+            //            maxTaskDoneValue = maxTaskDoneValueLoop;
+            //        }
+            //    }
+            //}
+            //List<int> newPrintList = new List<int>();
+            //newPrintList.Add(maxTaskDoneValue);
+            //newPrintList.Add(countPermutationMaxTask);
+            //return newPrintList;
+        }
+        public int equalizeArray(List<int> arr)
+        {
+            ///Solution 1 (New)
+            var freqNumber = new Dictionary<int, int>();
+            int maxFreq = 1;
+
+            foreach (var item in arr)
+            {
+                if (!freqNumber.TryAdd(item, 1))
+                {
+                    freqNumber[item]++;
+                    int currFreq = freqNumber[item];
+                    maxFreq = maxFreq < currFreq ? currFreq : maxFreq;
+                }
+            }
+
+            return arr.Count - maxFreq;
+
+            ////Solution 2 (Old)
+            //Dictionary<int, int> dictionary = new Dictionary<int, int>();
+            //int maxElement = 1;
+            //foreach (int i in arr)
+            //{
+            //    if (!dictionary.ContainsKey(i))
+            //    {
+            //        dictionary.Add(i, 1);
+            //    }
+            //    else
+            //    {
+            //        int x = dictionary[i] + 1;
+            //        dictionary[i] = x;
+            //        if (maxElement < x)
+            //        {
+            //            maxElement = x;
+            //        }
+            //    }
+            //}
+            //Console.WriteLine(arr.Count - maxElement);
+            //return arr.Count - maxElement;
+        }
+        public int jumpingOnClouds(List<int> c)
+        {
+            ////Solution 1 (New)
+            int countJump = 0;
+            int index = 0;
+            int indexMeta = c.Count - 1;
+
+            while (index < indexMeta)
+            {
+                if (index + 2 <= indexMeta && c[index + 2] == 0)
+                    index += 2;
+                else
+                    index++;
+
+                countJump++;
+            }
+
+            return countJump;
 
 
 
+            ////Solution 2 (Old)
+            //bool finish = false;
+            //int jump = 0;
+            //int index = 0;
+            //do
+            //{
+            //    if (index + 1 <= c.Count - 1)
+            //    {
+            //        if (index + 2 <= c.Count - 1)
+            //        {
+            //            if (c[index + 2] == 0)
+            //            {
+            //                jump++;
+            //                index += 2;
+            //            }
+            //            else if (c[index + 1] == 0)
+            //            {
+            //                jump++;
+            //                index++;
+            //            }
+            //        }
+            //        else
+            //        {
+            //            jump++;
+            //            index++;
+            //        }
+            //    }
 
 
+            //    if (index >= c.Count - 1)
+            //    {
+            //        finish = true;
+            //    }
+
+            //} while (!finish);
+            //return jump;
+        }
+        public long repeatedString(string s, long n)
+        {
+            ////Solution 1 (New)
+            long sumA = 0;
+            int lengthS = s.Length;
+            int totalAInS = 0;
+
+            long multiplier = n / lengthS;
+            long indexStopSum = n % lengthS;
+
+            for (int i = 0; i < lengthS; i++)
+            {
+                if (s[i] == 'a')
+                    totalAInS++;
+                if (i == indexStopSum - 1)
+                    sumA = totalAInS;
+            }
+
+            return sumA + totalAInS * multiplier;
 
 
+            ////Solution 2 (Old)
+            //double howManyDivideDouble = n / s.Length;
+            //long howManyDivideLong = (long)howManyDivideDouble;
 
 
+            //long restFromDivideLong = n - howManyDivideLong * s.Length;
 
 
+            //int howManyAInString = 0;
+
+            //foreach (char i in s)
+            //{
+            //    howManyAInString = i.ToString() == "a" ? ++howManyAInString : howManyAInString;
+            //}
 
 
+            //int howManyAInStringInRest = 0;
+
+            //for (int i = 0; i < restFromDivideLong; i++)
+            //{
+            //    howManyAInStringInRest = s[i].ToString() == "a" ? ++howManyAInStringInRest : howManyAInStringInRest;
+            //}
+
+            //return howManyAInStringInRest + howManyAInString * howManyDivideLong;
+        }
+        public List<int> cutTheSticks(List<int> arr)
+        {
+            ////Solution 1 (New)
+            arr.Sort();
+            int size = arr.Count;
+            int lastValue = arr[0];
+
+            var resultList = new List<int>() { size };
+
+            for (int i = 1; i < size; i++)
+            {
+                int currValue = arr[i];
+                if (lastValue == arr[i])
+                    continue;
+                lastValue = currValue;
+                resultList.Add(size - i);
+            }
+
+            return resultList;
+
+
+            ////Solution 2 (Old)
+            //List<int> ret = new List<int>();
+            //while (arr.Count > 0)
+            //{
+            //    ret.Add(arr.Count);
+            //    int min = arr.Min();
+            //    List<int> tmp = new List<int>();
+            //    for (int i = 0; i < arr.Count; i++)
+            //        if (arr[i] > min) tmp.Add(arr[i] - min);
+            //    arr = tmp;
+            //}
+            //return ret;
+        }
 
 
 

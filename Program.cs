@@ -158,7 +158,7 @@ namespace ProblemSolving
             //}
 
 
-            ////9. Modified Kaprekar Numbers
+            ////9. Modified Kaprekar Numbers (EASY)
             //HackerRank_0009 classHackerRank = new HackerRank_0009();
             //Console.WriteLine(classHackerRank.kaprekarNumbers(1, 100));
 
@@ -167,7 +167,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.kaprekarNumbers(1, 100));
 
 
-            ////10. ACM ICPC TEAM
+            ////10. ACM ICPC TEAM (EASY)
             //List<string> topic = new List<string>();
             //topic = ["10101", "11100", "11010", "00101"];
 
@@ -199,7 +199,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.fairRations(B));
 
 
-            ////12. Encryption
+            ////12. Encryption (MEDIUM)
             //string s = "chillout";
 
             //HackerRank_0012 classHackerRank = new HackerRank_0012();
@@ -346,7 +346,7 @@ namespace ProblemSolving
             //Console.WriteLine(hackerRankAll.maxMin(4, [3, 4, 10, 20, 30, 40, 100, 200, 1, 2]));
 
 
-            ////26. Bigger is Greater
+            ////26. Bigger is Greater (MEDIUM)
             //HackerRank_0026 classHackerRank = new HackerRank_0026();
             //Console.WriteLine(classHackerRank.biggerIsGreater("ehdegnmorgafrjxvsck"));
 
@@ -1418,6 +1418,96 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(hackerRankAll.howManyGames(p, d, m, s));
+
+
+            ////121. Minimum Distances (EASY)
+            //List<int> a = [3,2,1,2,3];
+
+            //HackerRank_0121 classHackerRank = new HackerRank_0121();
+            //Console.WriteLine(classHackerRank.minimumDistances(a));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.minimumDistances(a));
+
+
+            ////122. Beautiful Triplets (EASY)
+            //int d = 1; 
+            //List<int> arr = [2,2,3,4,5];
+
+            //HackerRank_0122 classHackerRank = new HackerRank_0122();
+            //Console.WriteLine(classHackerRank.beautifulTriplets(d, arr));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.beautifulTriplets(d, arr));
+
+
+            ////123. Taum and B'day (EASY)
+            //int b =3, w=5, bc=3, wc=4, z=1;
+
+            //HackerRank_0123 classHackerRank = new HackerRank_0123();
+            //Console.WriteLine(classHackerRank.taumBday(b, w, bc, wc, z));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.taumBday(b, w, bc, wc, z));
+
+
+            ////124. ACM ICPC Team (EASY)
+            //List<string> topic = ["10101","11110","00010"];
+
+            //HackerRank_0124 classHackerRank = new HackerRank_0124();
+            //Console.WriteLine(string.Join(',',classHackerRank.acmTeam(topic)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.acmTeam(topic)));
+
+
+            ////125. Equalize the Array (EASY)
+            //List<int> arr = [1,2,2,3];
+
+            //HackerRank_0125 classHackerRank = new HackerRank_0125();
+            //Console.WriteLine(classHackerRank.equalizeArray(arr));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.equalizeArray(arr));
+
+
+            ////126. Jumping on the Clouds (EASY)
+            //List<int> c = [0,0,1,0,0,1,0];
+
+            //HackerRank_0126 classHackerRank = new HackerRank_0126();
+            //Console.WriteLine(classHackerRank.jumpingOnClouds(c));
+
+            ////OR
+
+            //Console.WriteLine(hackerRankAll.jumpingOnClouds(c));
+
+
+            ////127. Repeated String (EASY)
+            //string s = "aab";
+            //long n = 882787;
+
+            //HackerRank_0127 classHackerRank = new HackerRank_0127();
+            //Console.WriteLine(classHackerRank.repeatedString(s, n));
+
+            ////OR
+
+            //Console.WriteLine(classHackerRank.repeatedString(s, n));
+
+
+            ////128. Cut the sticks (EASY)
+            //List<int> arr = [5, 4, 4, 2, 2, 8];
+
+            //HackerRank_0128 classHackerRank = new HackerRank_0128();
+            //Console.WriteLine(string.Join(',', classHackerRank.cutTheSticks(arr)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', hackerRankAll.cutTheSticks(arr)));
 
 
 
@@ -10251,15 +10341,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.HaveConflict(event1, event2));
 
             ////(2452.) Words Within Two Edits of Dictionary (MEDIUM)
-            string[] queries = ["word", "note", "ants", "wood"];
-            string[] dictionary = ["wood", "joke", "moat"];
+            //string[] queries = ["word", "note", "ants", "wood"];
+            //string[] dictionary = ["wood", "joke", "moat"];
 
-            LeetCode_2452 classLeetCode = new LeetCode_2452();
-            Console.WriteLine(string.Join(',', classLeetCode.TwoEditWords(queries, dictionary)));
+            //LeetCode_2452 classLeetCode = new LeetCode_2452();
+            //Console.WriteLine(string.Join(',', classLeetCode.TwoEditWords(queries, dictionary)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.TwoEditWords(queries, dictionary)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.TwoEditWords(queries, dictionary)));
 
             ////(2455.) Average Value of Even Numbers That Are Divisible by Three (EASY)
             //int[] nums = [1, 3, 6, 10, 12, 15];
@@ -10677,6 +10767,10 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+
+            ////(2615.) Sum of Distances (MEDIUM)
+
+
 
             ////(2616.) Minimize the Maximum Difference of Pairs (MEDIUM)
             //int[] nums = [10,1,2,7,1,3];
