@@ -5579,6 +5579,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.Spellchecker(wordlist, queries)));
 
+            ////(970.) Powerful Integers (MEDIUM)
+            int x = 2;
+            int y = 1;
+            int bound = 10;
+
+            LeetCode_970 classLeetCode = new LeetCode_970();
+            Console.WriteLine(string.Join(',', classLeetCode.PowerfulIntegers(x, y, bound)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.PowerfulIntegers(x, y, bound)));
+
             //////(973.) K Closest Points to Origin (MEDIUM)
             //int[][] points = [[3, 3], [5, -1], [-2, 4]];
             //int k = 2;
