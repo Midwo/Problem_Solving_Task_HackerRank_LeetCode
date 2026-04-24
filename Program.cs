@@ -18,6 +18,7 @@ using System.Numerics;
 using System.Reflection.Emit;
 using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
+using System.Runtime.Intrinsics.X86;
 using System.Security;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
@@ -39,6 +40,7 @@ using static ProblemSolving.LeetCode.LeetCode_705;
 using static ProblemSolving.LeetCode.LeetCode_706;
 using static ProblemSolving.LeetCode.LeetCode_933;
 using static ProblemSolving.LeetCodeAll;
+using static System.Collections.Specialized.BitVector32;
 using static System.Formats.Asn1.AsnWriter;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -1611,6 +1613,252 @@ namespace ProblemSolving
             ////OR
 
             //HackerRank_0136 classHackerRank = new HackerRank_0136();
+
+
+            ////137. Weather Observation Station 3 (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT 
+            //    DISTINCT CITY
+            //FROM STATION
+            //WHERE ID % 2 = 0
+            //    ";
+
+            ////OR
+
+            //HackerRank_0137 classHackerRank = new HackerRank_0137();
+
+
+            ////138. Weather Observation Station 4 (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT 
+            //    COUNT(CITY) -COUNT(DISTINCT CITY)
+            //FROM STATION
+            //    ";
+
+            ////OR
+
+            //HackerRank_0138 classHackerRank = new HackerRank_0138();
+
+
+            ////139. The Blunder (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT 
+            //    CEILING(AVG(CAST(SALARY as DECIMAL)) -AVG(CAST(REPLACE(SALARY, 0, '') as DECIMAL(10, 2))))
+            //FROM EMPLOYEES
+            //    ";
+
+            ////OR
+
+            //HackerRank_0139 classHackerRank = new HackerRank_0139();
+
+
+            ////140. Top Earners (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT top 1 as1, salary1
+            //FROM
+            //    (
+            //        SELECT max([months] * [salary]) as as1, COUNT(*) as salary1
+            //        FROM[Employee]
+            //        GROUP BY[months] * [salary]
+            //    ) as sss
+
+            //order by as1 desc
+            //    ";
+
+            ////OR
+
+            //HackerRank_0140 classHackerRank = new HackerRank_0140();
+
+
+            ////141. Weather Observation Station 13 (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT 
+            //    CAST(SUM(LAT_N) as decimal(10, 4))
+            //FROM STATION
+            //WHERE LAT_N > 38.7880 and LAT_N< 137.2345
+            //    ";
+
+            ////OR
+
+            //HackerRank_0141 classHackerRank = new HackerRank_0141();
+
+
+            ////142. Weather Observation Station 14 (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT 
+            //    MAX(CAST(LAT_N as decimal(10, 4)))
+            //FROM STATION
+            //WHERE LAT_N< 137.2345
+            //    ";
+
+            ////OR
+
+            //HackerRank_0142 classHackerRank = new HackerRank_0142();
+
+
+            ////143. Weather Observation Station 15 (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT TOP 1 
+            //    CAST([LONG_W] as decimal(10, 4))
+            //FROM STATION
+            //WHERE LAT_N< 137.2345
+            //ORDER BY LAT_N desc
+            //    ";
+
+            ////OR
+
+            //HackerRank_0143 classHackerRank = new HackerRank_0143();
+
+
+            ////144. Weather Observation Station 16 (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT 
+            //    MIN(CAST(LAT_N as decimal(10, 4)))
+            //FROM STATION
+            //WHERE LAT_N > 38.7780
+            //    ";
+
+            ////OR
+
+            //HackerRank_0144 classHackerRank = new HackerRank_0144();
+
+
+            ////145. Weather Observation Station 17 (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT 
+            //    CAST(LONG_W as decimal(10, 4))
+            //FROM STATION
+            //WHERE LAT_N = 
+            //    (
+            //        SELECT 
+            //            MIN(LAT_N) 
+            //        FROM STATION 
+            //        WHERE LAT_N> 38.7780
+            //    )
+            //    ";
+
+            ////OR
+
+            //HackerRank_0145 classHackerRank = new HackerRank_0145();
+
+
+            ////146. Weather Observation Station 18 (MEDIUM)
+            //string SqlQuery =
+            //    @"
+            //SELECT 
+            //    CAST((MAX(lat_n) -MIN(lat_n)) +(MAX(long_w) - MIN(long_w)) as decimal(10, 4)) 
+            //FROM station;
+            //    ";
+
+            ////OR
+
+            //HackerRank_0146 classHackerRank = new HackerRank_0146();
+
+
+            ////147. Weather Observation Station 19 (MEDIUM)
+            //string SqlQuery =
+            //    @"
+            //SELECT 
+            //    CAST(SQRT(POWER((MIN(LAT_N)-MAX(LAT_N)),2)+POWER((MIN(LONG_W) - MAX(LONG_W)), 2) ) as decimal(10, 4))
+            //FROM STATION
+            //    ";
+
+            ////OR
+
+            //HackerRank_0147 classHackerRank = new HackerRank_0147();
+
+
+            ////148. Weather Observation Station 20 (MEDIUM)
+            //string SqlQuery =
+            //    @"
+            //DECLARE @How_many_records int
+            //SET @How_many_records = (
+            //                            SELECT 
+            //                                MAX(Row#)
+            //                            FROM
+            //                            (
+            //                                SELECT
+            //                                    ROW_NUMBER() OVER (ORDER BY[LAT_N] ASC) AS Row#
+            //                                FROM [STATION]
+            //                            ) as counting_records
+            //                         )
+
+            //SELECT
+            //    CASE
+            //        WHEN
+            //            (
+            //                SELECT 
+            //                    Rows1
+            //               FROM
+            //               (
+            //                   SELECT 
+            //                        MAX(Row#) as Rows1
+            //                   FROM
+            //                       (
+            //                            SELECT
+            //                            ROW_NUMBER() OVER(ORDER BY[LAT_N] ASC) AS Row#
+            //                            FROM[STATION]
+            //                       ) as counting_records
+            //               ) as counting_records_with_max) % 2 = 0 
+            //               THEN
+            //                   (
+            //                       SELECT
+            //                            CAST(SUM([LAT_N]) / 2 as decimal(10, 4)) as mediana
+            //                       FROM
+            //                           (
+            //                               SELECT
+            //                                    [LAT_N]
+            //                                    ,ROW_NUMBER() OVER(ORDER BY[LAT_N] ASC) AS Row#
+            //                               FROM[STATION]
+
+            //                           ) as mediana
+            //                       WHERE Row# IN (@How_many_records/2, @How_many_records/2+1))
+
+            //                ELSE
+            //                    (
+            //                        SELECT
+            //                            CAST([LAT_N] as decimal(10, 4)) as mediana
+            //                        FROM
+            //                            (
+            //                                SELECT
+            //                                    [LAT_N]
+            //                                    ,ROW_NUMBER() OVER(ORDER BY[LAT_N] ASC) AS Row#
+            //                                FROM[STATION]
+
+            //                            ) as mediana
+            //                        WHERE Row# = ((@How_many_records+1)/2)
+            //                    )
+            //                    END AS Mediana
+            //    ";
+
+            ////OR
+
+            //HackerRank_0148 classHackerRank = new HackerRank_0148();
+
+
+            ////149. Population Census (EASY)
+            //string SqlQuery =
+            //    @"
+            //SELECT
+            //    SUM(A.POPULATION)
+            //FROM CITY as A
+            //JOIN COUNTRY as B
+            //ON A.CountryCode = B.Code
+            //WHERE B.CONTINENT = 'ASIA'
+            //    ";
+
+            ////OR
+
+            //HackerRank_0149 classHackerRank = new HackerRank_0149();
 
 
 
