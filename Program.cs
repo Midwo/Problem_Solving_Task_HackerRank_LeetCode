@@ -2273,9 +2273,9 @@ namespace ProblemSolving
             //            ,[hacker_id]
             //            FROM [Submissions]
             //            WHERE [submission_date] = (SELECT min([submission_date]) FROM [Submissions])
-        
+
             //            UNION ALL
-        
+
             //            SELECT    
             //                       a.[submission_date]
             //                      ,a.[hacker_id]
@@ -12653,6 +12653,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NumberOfSpecialChars(word));
+
+            ////(3127.) Make a Square with the Same Color (EASY)
+            char[][] grid = [['B', 'W', 'B'], ['B', 'W', 'W'], ['B', 'W', 'B']];
+
+            LeetCode_3127 classLeetCode = new LeetCode_3127();
+            Console.WriteLine(classLeetCode.CanMakeSquare(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CanMakeSquare(grid));
 
             ////(3131.) Find the Integer Added to Array I (EASY)
             //int[] nums1 = [2, 6, 4];
