@@ -30968,7 +30968,6 @@ namespace ProblemSolving
             //        else
             //        {
             //            maxIndexY = j;
-            //            break;
             //        }
             //    }
             //}

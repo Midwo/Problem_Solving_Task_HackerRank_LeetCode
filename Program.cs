@@ -1861,6 +1861,490 @@ namespace ProblemSolving
             //HackerRank_0149 classHackerRank = new HackerRank_0149();
 
 
+            ////150. African Cities (EASY)
+            //string SqlQuery =
+            //    @"
+            //        SELECT 
+            //            A.NAME
+            //        FROM CITY as A
+            //        JOIN COUNTRY as B
+            //        ON A.CountryCode = B.Code
+            //        WHERE CONTINENT = 'Africa'
+            //    ";
+
+            //OR
+
+            //HackerRank_0150 classHackerRank = new HackerRank_0150();
+
+
+            ////151. Average Population of Each Continent (EASY)
+            //string SqlQuery =
+            //    @"
+            //        SELECT 
+            //            B.Continent, 
+            //            CAST(FLOOR(AVG(A.POPULATION)) as INT)
+            //        FROM CITY as A
+            //        JOIN COUNTRY as B
+            //        ON A.CountryCode = B.Code
+            //        GROUP BY B.Continent
+            //    ";
+
+            //OR
+
+            //HackerRank_0151 classHackerRank = new HackerRank_0151();
+
+
+            ////152. The Report (MEDIUM)
+            //string SqlQuery =
+            //    @"
+            //        SELECT
+            //            CASE    
+            //                when GRADE >= 8 then NAME
+            //            end as NAME
+            //            ,[Grade]
+            //            ,[Marks]
+            //        FROM 
+            //           (
+            //            SELECT [ID]
+            //                  ,[Name]
+            //                  ,[Marks]
+            //                  ,(SELECT TOP 1 GRADE FROM Grades WHERE [Marks] >= Min_Mark and [Marks] <= Max_Mark) as Grade
+            //            FROM [Students] as A
+
+            //            ) as A1
+            //        order by [GRADE] desc, [NAME]
+            //    ";
+
+            //OR
+
+            //HackerRank_0152 classHackerRank = new HackerRank_0152();
+
+
+            ////153. Top Competitors (MEDIUM)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        Hacker_id,
+            //        Name_Hacker
+            //        --, how_many
+            //    FROM
+            //        (
+            //            SELECT 
+            //                a.[hacker_id] as Hacker_id
+            //                ,d.[Name] as Name_hacker
+            //                --,a.[submission_id]
+            //                --,a.[challenge_id]
+            //                --,a.[score]
+            //                --,b.[difficulty_level]
+            //                --,c.[score] as [MAX_SCORE_TEST]
+            //                ,COUNT(a.[hacker_id]) as how_many
+            //            FROM [Submissions] as a
+            //            LEFT JOIN [Challenges] as b
+            //            ON a.[challenge_id] = b.[challenge_id]
+            //            LEFT JOIN [Difficulty] as c
+            //            ON b.[difficulty_level] = c.[difficulty_level]
+            //            LEFT JOIN [Hackers] as d
+            //            ON a.[hacker_id] = d.[hacker_id]
+            //            WHERE a.score = c.score
+            //            group by  a.[hacker_id] ,d.[Name]
+            //         ) as mm
+            //     where how_many > 1
+            //     order by how_many desc, [hacker_id]
+            //";
+
+            //OR
+
+            //HackerRank_0153 classHackerRank = new HackerRank_0153();
+
+
+            ////154. Ollivander's Inventory (MEDIUM)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        w.id, 
+            //        wp.age, 
+            //        w.coins_needed, 
+            //        w.power
+            //    FROM Wands w
+            //    JOIN Wands_Property wp ON w.code = wp.code
+            //    WHERE wp.is_evil = 0
+            //    AND w.coins_needed = (
+            //                            SELECT 
+            //                                MIN(w2.coins_needed)
+            //                            FROM Wands w2
+            //                            JOIN Wands_Property wp2 ON w2.code = wp2.code
+            //                            WHERE wp2.is_evil = 0
+            //                              AND wp2.age = wp.age
+            //                              AND w2.power = w.power
+            //                          )
+            //    ORDER BY w.power DESC, wp.age DESC;
+            //";
+
+            //OR
+
+            //HackerRank_0154 classHackerRank = new HackerRank_0154();
+
+
+            ////155. Challenges (MEDIUM)
+            //string SqlQuery =
+            //@"
+            //    DECLARE @maxCreateChallenes int
+            //    SET @maxCreateChallenes = 
+            //        (
+            //            SELECT max(x) as x FROM
+            //            (
+            //                SELECT
+            //                    COUNT(*) as x
+            //                FROM [Hackers] as A
+            //                LEFT JOIN [Challenges] as B
+            //                ON a.[hacker_id] = b.[hacker_id]
+            //                GROUP BY a.[hacker_id] 
+            //            ) as max
+            //        );
+
+            //    WITH CTE1 (hacker_id1, name1, CREATED_Challenges)
+            //    as (
+            //      SELECT 
+            //            DISTINCT a.[hacker_id],
+            //            a.[name],
+            //            Count(*) as CREATED_Challenges
+
+            //      FROM [Hackers] as A
+            //      LEFT JOIN [Challenges] as B
+            //      ON a.[hacker_id] = b.[hacker_id]
+            //      GROUP BY a.[hacker_id],
+            //            a.[name]
+            //        )
+
+            //    SELECT a.hacker_id1, a.name1, a.CREATED_Challenges
+            //    FROM CTE1 as a
+            //    left JOIN (SELECT
+            //        CREATED_Challenges,
+            //        COUNT(CREATED_Challenges) as how_many_people
+            //        FROM CTE1 as a
+            //        GROUP BY CREATED_Challenges
+            //        Having CREATED_Challenges = @maxCreateChallenes or COUNT(CREATED_Challenges) = 1) as b
+            //    ON a.CREATED_Challenges = b.CREATED_Challenges
+            //    Where how_many_people is not null
+            //    order by CREATED_Challenges desc, hacker_id1 
+            //";
+
+            //OR
+
+            //HackerRank_0155 classHackerRank = new HackerRank_0155();
+
+
+
+            ////156. Contest Leaderboard (MEDIUM)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        SUM_PRE.[hacker_id], 
+            //        b.[name], 
+            //        SUM(max_score) as TOTAL_SCORE
+            //    FROM 
+            //    (
+            //        SELECT 
+            //            [hacker_id], 
+            //            [challenge_id], 
+            //            max_score
+            //        FROM 
+            //        (
+            //            SELECT 
+            //                [hacker_id]
+            //                ,[challenge_id]
+            //                ,max([score]) as max_score
+            //            FROM [Submissions]
+            //            GROUP BY  [hacker_id] ,[challenge_id] ,[challenge_id]
+            //        ) as MAX_SCORE
+            //    ) as SUM_PRE
+            //    LEFT JOIN  [Hackers] as b
+            //    ON SUM_PRE.[hacker_id] = b.hacker_id
+            //    Group by SUM_PRE.[hacker_id], b.[name]
+            //    HAVING SUM(max_score) > 0
+            //    order by TOTAL_SCORE desc, SUM_PRE.[hacker_id]
+            //";
+
+            //OR
+
+            //HackerRank_0156 classHackerRank = new HackerRank_0156();
+
+
+            ////157. SQL Project Planning (MEDIUM)
+            //string SqlQuery =
+            //@"
+            //    with start_end as 
+            //    (
+            //        select *, 
+            //            lag(end_date) over(order by start_date) as prev_end, 
+            //            lead(start_date) over(order by start_date) as next_start from projects
+            //    )
+            //    -- SELECT * FROM start_end
+            //    ,
+
+            //    start1 as 
+            //    (
+            //        select start_date, row_number() over(order by start_date) as rn 
+            //        from start_end 
+            //        where (prev_end != start_date or prev_end is Null)SQL Project Planning
+            //    )
+            //    --SELECT * FROM start1
+            //    ,
+
+            //        end1 as 
+            //    (
+            //        select end_date,row_number() over(order by start_date) as rn 
+            //        from start_end where (next_start != end_date or next_start is Null)
+            //    )
+            //    --SELECT * FROM end1
+            //    ,
+
+            //        final as 
+            //    (
+            //        select 
+            //            a.start_date,
+            //            b.end_date, 
+            //            datediff(day,a.start_date,b.end_date) as duration 
+            //        from start1 a join end1 b on a.rn = b.rn
+            //    )
+
+            //    select start_date, end_date from final order by duration, start_date;
+            //";
+
+            //OR
+
+            //HackerRank_0157 classHackerRank = new HackerRank_0157();
+
+
+            ////158. Placements (MEDIUM)
+            //string SqlQuery =
+            //@"
+            //    SELECT   
+            //        --a.[ID],
+            //        a.[Name]
+            //        --,d.[Salary]
+            //        --,b.Friend_ID
+            //        --,c.[Name] as Friend_NAME
+            //        --,e.[Salary] as Friend_Salary
+            //        FROM [Students] as a
+            //        LEFT JOIN [Friends] as b
+            //        ON a.ID = b.ID
+            //        LEFT JOIN [Students] as c
+            //        ON b.Friend_ID = c.ID
+            //        LEFT JOIN [Packages] as d
+            //        ON a.ID = d.ID
+            //        LEFT JOIN [Packages] as e
+            //        ON b.Friend_ID = e.ID
+            //        Where d.Salary < e.salary
+            //        order by  e.salary 
+            //";
+
+            //OR
+
+            //HackerRank_0158 classHackerRank = new HackerRank_0158();
+
+
+            ////159. Symmetric Pairs (MEDIUM)
+            //string SqlQuery =
+            //@"
+            //    WITH GROUP_BY (xy)
+            //    AS (
+            //        SELECT 
+            //            case
+            //                when X<=Y then CONCAT(X,Y)
+            //                when X>=Y then CONCAT(Y,X)
+            //            end as xy
+            //        FROM [Functions]
+            //        GROUP BY case
+            //                  when X<=Y then CONCAT(X,Y)
+            //                  when X>=Y then CONCAT(Y,X)
+            //                  end
+            //        HAVING COUNT(case
+            //                  when X<=Y then CONCAT(X,Y)
+            //                  when X>=Y then CONCAT(Y,X)
+            //             end)  > 1
+            //        )
+
+            //    SELECT 
+            //    xy1.x, xy1.y 
+            //    --main.xy
+            //    FROM GROUP_BY as main
+            //    LEFT JOIN  (
+            //                    SELECT x,
+            //                           y,
+            //                           CASE
+            //                                       when X<=Y then CONCAT(X,Y)
+            //                                    when X>=Y then CONCAT(Y,X)
+            //                           end as xy
+            //                    FROM [Functions]
+            //                ) as xy1
+            //    ON main.xy = xy1.xy
+            //    GROUP BY xy1.x, xy1.y
+            //    Having xy1.x <= xy1.y
+            //    order by x
+            //";
+
+            //OR
+
+            //HackerRank_0159 classHackerRank = new HackerRank_0159();
+
+
+            ////160. Interviews (HARD)
+            //string SqlQuery =
+            //@"
+            //    WITH totalsubmissions as
+            //    (
+            //         SELECT 
+            //             a.[contest_id]
+            //            ,SUM([total_submissions]) as [total_submissions]
+            //            ,SUM([total_accepted_submissions]) as [total_accepted_submissions]
+            //         FROM [Colleges] as a
+            //         LEFT JOIN [Challenges] as b
+            //         ON a.[college_id] = b.[college_id] 
+            //         LEFT JOIN [Submission_Stats] as c
+            //         ON c.challenge_id = b.challenge_id
+            //         GROUP BY [contest_id]
+            //    ),
+
+            //    totalviews as 
+            //    (
+            //          SELECT 
+            //            a.[contest_id]
+            //           ,SUM([total_views]) as [total_views]
+            //           ,SUM([total_unique_views]) as [total_unique_views]
+            //        FROM [Colleges] as a
+            //        LEFT JOIN [Challenges] as b
+            //        ON a.[college_id] = b.[college_id] 
+            //        LEFT JOIN [View_Stats]  as c
+            //        ON c.challenge_id = b.challenge_id
+            //        GROUP BY [contest_id]
+            //    ),
+
+            //     finale as 
+            //     (
+            //          SELECT a.[contest_id]
+            //                ,[hacker_id]
+            //                ,[name]
+            //                ,CASE
+            //                 When    b.total_submissions is null then  0 else b.total_submissions end as total_submissions
+            //                ,CASE
+            //                 When    b.total_accepted_submissions is null then  0 else b.total_accepted_submissions end as total_accepted_submissions
+            //                ,CASE
+            //                 When    c.total_views is null then  0 else c.total_views end as total_views
+            //                ,CASE
+            //                 When    c.total_unique_views is null then  0 else c.total_unique_views end as total_unique_views
+
+            //          FROM [Contests] as a
+            //          Left JOIN totalsubmissions as b
+            //          on a.contest_id = b.[contest_id]
+            //          Left JOIN totalviews as c
+            //          ON a.contest_id = c.contest_id
+            //      ),
+
+            //     finalewithout0 as 
+            //     (
+            //     SELECT 
+            //         [contest_id]
+            //        ,[hacker_id]
+            //        ,[name]
+            //        ,total_submissions
+            //        ,total_accepted_submissions
+            //        ,total_views
+            //        ,total_unique_views
+            //     FROM finale
+            //     )
+
+            //    SELECT * FROM finalewithout0
+            //    Where (total_submissions+total_accepted_submissions+total_views+total_unique_views) != 0        
+            //";
+
+            //OR
+
+            //HackerRank_0160 classHackerRank = new HackerRank_0160();
+
+
+            ////161. 15 Days of Learning SQL (HARD)
+            //string SqlQuery =
+            //@"
+            //    WITH RecursiveFUNCTION  AS 
+            //    (
+            //       SELECT 
+            //            [submission_date]
+            //            ,[hacker_id]
+            //            FROM [Submissions]
+            //            WHERE [submission_date] = (SELECT min([submission_date]) FROM [Submissions])
+        
+            //            UNION ALL
+        
+            //            SELECT    
+            //                       a.[submission_date]
+            //                      ,a.[hacker_id]
+            //            FROM [Submissions] as a
+            //            join RecursiveFUNCTION as b 
+            //            ON a.[hacker_id] = b.[hacker_id]
+            //            WHERE  a.[submission_date] = DATEADD(DAY, 1, b.[submission_date])
+            //    )
+            //    --SELECT * FROM RecursiveFUNCTION
+            //    ,
+            //    RecursiveFUNCTIONDISTINCT as 
+            //    (
+            //       SELECT 
+            //             [submission_date]
+            //             ,COUNT(DISTINCT [hacker_id]) as howMANY
+            //       FROM RecursiveFUNCTION
+            //       GROUP BY [submission_date]
+            //    )
+            //    --SELECT * FROM RecursiveFUNCTIONDISTINCT
+            //    ,
+            //    pref4 as 
+            //    ( 
+            //       SELECT [submission_date], hacker_id
+            //            ,COUNT(hacker_id) as count_hacker_id
+            //       FROM [Submissions] 
+            //       GROUP BY submission_date, hacker_id, submission_date
+            //    )
+            //    --select * from pref4
+            //    --order by submission_date
+            //    ,
+            //    f4 as 
+            //    (
+            //       SELECT pref4mod.[submission_date]
+            //              ,min(pref4join.hacker_id) as hacker_id
+            //       FROM (
+            //               SELECT [submission_date], max(count_hacker_id) as maxCount 
+            //               From pref4 
+            //               GROUP BY [submission_date]
+            //            ) as pref4mod
+            //       join pref4 as pref4join
+            //       on pref4mod.[submission_date] = pref4join.[submission_date]
+            //       Where count_hacker_id = maxCount
+            //       GROUP BY pref4mod.[submission_date]
+            //    )
+            //    ----select * from f4
+            //    ,
+            //    AllF4AndRecursive as
+            //    (
+            //       SELECT 
+            //            a.[submission_date]
+            //            ,b.howMANY
+            //            ,a.[hacker_id]
+            //            ,c.[name]
+            //       FROM f4 as a
+            //       JOIN RecursiveFUNCTIONDISTINCT as b
+            //       ON a.[submission_date] = b.submission_date
+            //       join [Hackers] as c
+            //       ON a.hacker_id = c.hacker_id
+            //     )
+
+            //     SELECT * FROM AllF4AndRecursive
+            //     order by [submission_date] 
+            //";
+
+            //OR
+
+            //HackerRank_0161 classHackerRank = new HackerRank_0161();
+
+
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
@@ -5580,16 +6064,16 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.Spellchecker(wordlist, queries)));
 
             ////(970.) Powerful Integers (MEDIUM)
-            int x = 2;
-            int y = 1;
-            int bound = 10;
+            //int x = 2;
+            //int y = 1;
+            //int bound = 10;
 
-            LeetCode_970 classLeetCode = new LeetCode_970();
-            Console.WriteLine(string.Join(',', classLeetCode.PowerfulIntegers(x, y, bound)));
+            //LeetCode_970 classLeetCode = new LeetCode_970();
+            //Console.WriteLine(string.Join(',', classLeetCode.PowerfulIntegers(x, y, bound)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.PowerfulIntegers(x, y, bound)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.PowerfulIntegers(x, y, bound)));
 
             //////(973.) K Closest Points to Origin (MEDIUM)
             //int[][] points = [[3, 3], [5, -1], [-2, 4]];
