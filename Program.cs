@@ -2345,6 +2345,210 @@ namespace ProblemSolving
             //HackerRank_0161 classHackerRank = new HackerRank_0161();
 
 
+            ////162. Draw The Triangle 1 (EASY)
+            //string SqlQuery =
+            //@"
+            //    Declare @x int
+            //    SET @x = 20
+            //    WHILE (@x >= 0)
+            //    BEGIN
+            //    PRINT REPLICATE('* ', @x) 
+            //    SET @x = @x -1;
+            //    END
+            //";
+
+            //OR
+
+            //HackerRank_0162 classHackerRank = new HackerRank_0162();
+
+
+            ////163. Draw The Triangle 2 (EASY)
+            //string SqlQuery =
+            //@"
+            //    Declare  @x int, @y int
+            //    SET @x = 1
+            //    SET @y = 20
+            //    WHILE (@x <= @y)
+            //    BEGIN
+            //    PRINT REPLICATE('* ', @x) 
+            //    SET @x = @x +1;
+            //    END
+            //";
+
+            //OR
+
+            //HackerRank_0163 classHackerRank = new HackerRank_0163();
+
+
+            ////164. Print Prime Numbers (MEDIUM)
+            //string SqlQuery =
+            //@"
+            //    DECLARE @I INT=2
+            //    DECLARE @PRIME INT=0
+            //    DECLARE @OUTPUT TABLE (NUM INT)
+            //    DECLARE @x nvarchar(max)
+            //    WHILE @I<=1000
+            //    BEGIN
+            //        DECLARE @J INT = @I-1
+            //        SET @PRIME=1
+            //        WHILE @J>1
+            //        BEGIN
+            //            IF @I % @J=0
+            //            BEGIN
+            //                SET @PRIME=0
+            //            END
+            //            SET @J=@J-1
+            //        END
+            //        IF @PRIME =1
+            //        BEGIN
+            //            SET @x = CONCAT(@x, '&', @I)
+            //           -- INSERT @OUTPUT VALUES (@I)
+            //        END
+            //        SET @I=@I+1
+            //    END
+            //    --SELECT * FROM @OUTPUT
+            //    PRINT(Substring(@x, 2, LEN(@x)))
+            //";
+
+            //OR
+
+            //HackerRank_0164 classHackerRank = new HackerRank_0164();
+
+
+            ////165. Weather Observation Station 5 (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT TOP 1 
+            //        CITY,
+            //        LEN(CITY)
+            //    FROM STATION
+            //    ORDER by LEN(CITY) desc, CITY ;
+
+            //    SELECT TOP 1
+            //        CITY,
+            //        LEN(CITY)
+            //    FROM STATION
+            //    ORDER by LEN(CITY), CITY;
+            //";
+
+            //OR
+
+            //HackerRank_0165 classHackerRank = new HackerRank_0165();
+
+
+            ////166. Weather Observation Station 6 (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        DISTINCT CITY 
+            //    FROM STATION
+            //    WHERE CITY like 'e%' or CITY like 'a%' or CITY like 'i%' or CITY like 'o%' or CITY LIKE 'u%'
+
+            //    --OR
+
+            //    SELECT 
+            //        DISTINCT CITY 
+            //    FROM STATION
+            //    WHERE CITY like '[eaiou]%'
+            //";
+
+            //OR
+
+            //HackerRank_0166 classHackerRank = new HackerRank_0166();
+
+
+            ////167. Weather Observation Station 7 (EASY)
+            //string SqlQuery =
+            //@"
+            //     SELECT 
+            //        DISTINCT CITY 
+            //     FROM STATION
+            //     WHERE CITY like '%a' or city like '%e' or city like '%i' or city like '%o' or city like '%u' 
+
+            //     --OR
+
+            //     SELECT 
+            //        DISTINCT CITY 
+            //     FROM STATION
+            //     WHERE CITY like '%[aeiou]'
+            //";
+
+            //OR
+
+            //HackerRank_0167 classHackerRank = new HackerRank_0167();
+
+
+            ////168. Weather Observation Station 8 (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        DISTINCT CITY 
+            //    FROM STATION
+            //    WHERE CITY like '[e,a,i,o,u]%' and CITY like '%[e,a,i,o,u]'
+            //";
+
+            //OR
+
+            //HackerRank_0168 classHackerRank = new HackerRank_0168();
+
+
+            ////169. Weather Observation Station 9 (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        DISTINCT CITY 
+            //    FROM STATION
+            //    WHERE CITY NOT LIKE '[aeiouAEIOU]%'
+            //";
+
+            //OR
+
+            //HackerRank_0169 classHackerRank = new HackerRank_0169();     
+
+
+            ////170. Weather Observation Station 10 (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        DISTINCT CITY 
+            //    FROM STATION
+            //    WHERE CITY NOT LIKE '%[aeiouAEIOU]' 
+            //";
+
+            //OR
+
+            //HackerRank_0170 classHackerRank = new HackerRank_0170();
+
+
+            ////171. Weather Observation Station 11 (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        DISTINCT CITY 
+            //    FROM STATION
+            //    WHERE CITY NOT LIKE '[aeiouAEIOU]%' or CITY NOT LIKE '%[aeiouAEIOU]' 
+            //";
+
+            //OR
+
+            //HackerRank_0171 classHackerRank = new HackerRank_0171();
+
+
+            ////172. Weather Observation Station 12 (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        DISTINCT CITY 
+            //    FROM STATION
+            //    WHERE CITY NOT LIKE '[aeiouAEIOU]%' and CITY NOT LIKE '%[aeiouAEIOU]'
+            //";
+
+            //OR
+
+            //HackerRank_0172 classHackerRank = new HackerRank_0172();
+
+
+
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
@@ -12655,14 +12859,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfSpecialChars(word));
 
             ////(3127.) Make a Square with the Same Color (EASY)
-            char[][] grid = [['B', 'W', 'B'], ['B', 'W', 'W'], ['B', 'W', 'B']];
+            //char[][] grid = [['B', 'W', 'B'], ['B', 'W', 'W'], ['B', 'W', 'B']];
 
-            LeetCode_3127 classLeetCode = new LeetCode_3127();
-            Console.WriteLine(classLeetCode.CanMakeSquare(grid));
+            //LeetCode_3127 classLeetCode = new LeetCode_3127();
+            //Console.WriteLine(classLeetCode.CanMakeSquare(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CanMakeSquare(grid));
+            //Console.WriteLine(leetCodeAll.CanMakeSquare(grid));
 
             ////(3131.) Find the Integer Added to Array I (EASY)
             //int[] nums1 = [2, 6, 4];
