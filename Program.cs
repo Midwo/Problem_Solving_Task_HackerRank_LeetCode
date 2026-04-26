@@ -2548,6 +2548,291 @@ namespace ProblemSolving
             //HackerRank_0172 classHackerRank = new HackerRank_0172();
 
 
+            ////173. Higher Than 75 Marks (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        NAME 
+            //    FROM STUDENTS 
+            //    WHERE MARKS > 75
+            //    order by RIGHT(NAME,3), ID
+            //";
+
+            //OR
+
+            //HackerRank_0173 classHackerRank = new HackerRank_0173();
+
+
+            ////174. Employee Names (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        NAME 
+            //    FROM EMPLOYEE
+            //    order by NAME
+            //";
+
+            //OR
+
+            //HackerRank_0174 classHackerRank = new HackerRank_0174();
+
+
+            ////175. Employee Salaries (EASY)
+            //string SqlQuery =
+            //@"
+            //    Select 
+            //        name
+            //    From Employee 
+            //    Where months < 10 and salary > 2000
+            //    order by employee_id
+            //";
+
+            //OR
+
+            //HackerRank_0175 classHackerRank = new HackerRank_0175();
+
+
+            ////176. Type of Triangle (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        CASE 
+            //            WHEN A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle'
+            //            WHEN A = B AND B = C THEN 'Equilateral'
+            //            WHEN A = B OR B = C OR A = C THEN 'Isosceles'
+            //            ELSE 'Scalene'
+            //        END AS triangle_type
+            //    FROM Triangles;
+            //";
+
+            //OR
+
+            //HackerRank_0176 classHackerRank = new HackerRank_0176();
+
+
+            ////177. The PADS (MEDIUM)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        CONCAT([NAME],'(', LEFT([OCCUPATION],1),')')
+            //    FROM occupations
+            //    ORDER BY name ASC;
+
+            //    SELECT 
+            //        CONCAT('There are a total of ',COUNT([OCCUPATION]),' ',LOWER([OCCUPATION]),'s.') as aaa
+            //    FROM occupations
+            //    GROUP BY [OCCUPATION]
+            //    order by COUNT([OCCUPATION]), [OCCUPATION] 
+            //";
+
+            //OR
+
+            //HackerRank_0177 classHackerRank = new HackerRank_0177();
+
+
+            ////178. Occupations (MEDIUM)
+            //string SqlQuery =
+            //@"
+            //    SELECT Doctor
+            //    ,Professor
+            //    , Singer 
+            //    ,Actor
+            //    --,Row1#
+            //    FROM 
+            //    (
+            //    SELECT  Doctor, Professor, Singer, Actor, ROW_NUMBER() OVER(ORDER BY [Row#] ) AS Row1#  FROM(
+            //    SELECT  Doctor, Professor, Singer, ROW_NUMBER() OVER(ORDER BY [Row#] ) AS Row#  FROM(
+
+            //    SELECT Doctor, Professor
+            //    , ROW_NUMBER() OVER(ORDER BY [Row#] ) AS Row# 
+            //    FROM
+            //    (
+            //    (SELECT [NAME] as Doctor, ROW_NUMBER() OVER(ORDER BY [NAME] ASC) AS Row1 FROM [OCCUPATIONS]
+            //    WHERE OCCUPATION = 'Doctor') as DoctorsTable
+            //    full outer JOIN (SELECT [NAME] as Professor, ROW_NUMBER() OVER(ORDER BY [NAME] asc) AS Row# FROM [OCCUPATIONS]
+            //    WHERE OCCUPATION = 'Professor') as ProfessorTable
+            //    ON DoctorsTable.[Row1] = ProfessorTable.Row#
+            //    )
+            //    ) as ok
+
+            //    full JOIN  (SELECT [NAME] as Singer, ROW_NUMBER() OVER(ORDER BY [NAME] asc) AS Row2 FROM [OCCUPATIONS]
+            //    WHERE OCCUPATION = 'Singer') as SingerTable
+            //    ON ok.Row# = SingerTable.Row2
+
+            //    ) as ok1
+            //    full JOIN  (SELECT [NAME] as Actor, ROW_NUMBER() OVER(ORDER BY [NAME] ASC) AS Row3 FROM [OCCUPATIONS]
+            //    WHERE OCCUPATION = 'Actor') as ActorTable
+            //    ON ok1.Row# = ActorTable.Row3
+            //    ) as ok2
+            //";
+
+            //OR
+
+            //HackerRank_0178 classHackerRank = new HackerRank_0178();
+
+
+            ////179. Binary Tree Nodes (MEDIUM)
+            //string SqlQuery =
+            //@"
+            //    SELECT N,
+            //        CASE
+            //            WHEN P is Null THEN 'Root'
+            //            WHEN N IN(SELECT P FROM BST) THEN 'Inner'
+            //            ELSE 'Leaf'        
+            //        END
+            //    FROM[BST]
+            //    Order by N
+            //";
+
+            //OR
+
+            //HackerRank_0179 classHackerRank = new HackerRank_0179();
+
+
+            ////180. New Companies (MEDIUM)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        company_code,
+            //        founder,
+            //        lead_manager,
+            //        senior_manager,
+            //        manager,
+            //        employee
+            //     From 
+            //     (
+            //        SELECT 
+            //            a.company_code,
+            //            a.founder,
+            //            b.lead_manager,
+            //            c.senior_manager,
+            //            d.manager,
+            //            e.employee
+            //        FROM Company as a
+            //        LEFT JOIN 
+            //        (
+            //            SELECT 
+            //                [company_code], 
+            //                COUNT(distinct [lead_manager_code]) as lead_manager, 
+            //                [lead_manager_code]
+            //            FROM [Lead_Manager]
+            //            GROUP BY [company_code], [lead_manager_code]
+            //        ) as b 
+            //     ON a.company_code = b.[company_code]
+            //     LEFT JOIN
+            //     (
+            //        SELECT 
+            //            [company_code], COUNT(distinct [senior_manager_code]) as senior_manager
+            //            FROM [Senior_Manager]
+            //            GROUP BY [company_code]
+            //     ) as c
+            //     ON a.[company_code] = c.[company_code]
+            //     LEFT JOIN 
+            //     (
+            //        SELECT 
+            //           [company_code], COUNT(distinct [manager_code]) as manager
+            //           FROM [Manager]
+            //           GROUP BY [company_code]
+            //     ) as d
+            //     ON a.[company_code] = d.[company_code]
+            //     LEFT JOIN 
+            //     (
+            //        SELECT
+            //            [company_code], COUNT(distinct [employee_code]) as employee
+            //            FROM [Employee]
+            //            GROUP BY [company_code]
+            //     ) as e
+            //     ON a.[company_code] = e.[company_code]  
+            //     ) as x
+            //     order by company_code
+            //";
+
+            //OR
+
+            //HackerRank_0180 classHackerRank = new HackerRank_0180();
+
+
+            ////181. Revising Aggregations - The Count Function (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        COUNT(NAME)
+            //    FROM CITY
+            //    WHERE POPULATION > 100000
+            //";
+
+            //OR
+
+            //HackerRank_0181 classHackerRank = new HackerRank_0181();
+
+
+            ////182. Revising Aggregations - The Sum Function (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT  
+            //        SUM(POPULATION) as SUM_POPULATION
+            //    FROM CITY
+            //    WHERE DISTRICT = 'California'
+            //";
+
+            //OR
+
+            //HackerRank_0182 classHackerRank = new HackerRank_0182();
+
+
+            ////183. Revising Aggregations - Averages (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT
+            //        AVG(POPULATION) AS AVG_POPULATION
+            //    FROM CITY
+            //    WHERE DISTRICT = 'California'
+            //";
+
+            //OR
+
+            //HackerRank_0183 classHackerRank = new HackerRank_0183();
+
+
+            ////184. Average Population (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT
+            //        AVG(POPULATION) as AVG_POPULATION
+            //    FROM CITY
+            //";
+
+            //OR
+
+            //HackerRank_0184 classHackerRank = new HackerRank_0184();
+
+
+            ////185. Japan Population (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT
+            //        SUM(POPULATION) as SUM_POPULATION
+            //    FROM CITY
+            //    WHERE COUNTRYCODE = 'JPN'
+            //";
+
+            //OR
+
+            //HackerRank_0185 classHackerRank = new HackerRank_0185();
+
+
+            ////186. Population Density Difference (EASY)
+            //string SqlQuery =
+            //@"
+            //    SELECT 
+            //        MAX(POPULATION) - MIN(POPULATION) as diff
+            //    FROM CITY   
+            //";
+
+            //OR
+
+            //HackerRank_0186 classHackerRank = new HackerRank_0186();
+
 
 
             //LEETCODE ALL            //LEETCODE ALL          //LEETCODE ALL            //LEETCODE ALL     //LEETCODE ALL            //LEETCODE ALL            //LEETCODE ALL
