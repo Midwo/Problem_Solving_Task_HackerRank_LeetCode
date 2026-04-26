@@ -8782,6 +8782,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ThousandSeparator(n));
 
+            ////(1559.) Detect Cycles in 2D Grid (MEDIUM)
+            char[][] grid = [['a', 'b', 'b'], ['b', 'z', 'b'], ['b', 'b', 'a']];
+
+            LeetCode_1559 classLeetCode = new LeetCode_1559();
+            Console.WriteLine(classLeetCode.ContainsCycle(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ContainsCycle(grid));
+
             ////(1561.) Maximum Number of Coins You Can Get (MEDIUM)
             //int[] piles = [2, 4, 1, 2, 7, 8];
 
