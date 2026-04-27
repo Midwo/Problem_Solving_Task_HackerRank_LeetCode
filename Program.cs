@@ -7540,6 +7540,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinTimeToVisitAllPoints(points));
 
+            ////(1275.) Find Winner on a Tic Tac Toe Game (EASY)
+            int[][] moves = [[0, 0], [2, 0], [1, 1], [2, 1], [2, 2]];
+
+            LeetCode_1275 classLeetCode = new LeetCode_1275();
+            Console.WriteLine(classLeetCode.Tictactoe(moves));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.Tictactoe(moves));
+
             ////(1277.) Count Square Submatrices with All Ones (MEDIUM)
             //int[][] matrix = [[0, 1, 1, 1], [1, 1, 1, 1], [0, 1, 1, 1]];
 
@@ -8783,14 +8793,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ThousandSeparator(n));
 
             ////(1559.) Detect Cycles in 2D Grid (MEDIUM)
-            char[][] grid = [['a', 'b', 'b'], ['b', 'z', 'b'], ['b', 'b', 'a']];
+            //char[][] grid = [['a', 'b', 'b'], ['b', 'z', 'b'], ['b', 'b', 'a']];
 
-            LeetCode_1559 classLeetCode = new LeetCode_1559();
-            Console.WriteLine(classLeetCode.ContainsCycle(grid));
+            //LeetCode_1559 classLeetCode = new LeetCode_1559();
+            //Console.WriteLine(classLeetCode.ContainsCycle(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ContainsCycle(grid));
+            //Console.WriteLine(leetCodeAll.ContainsCycle(grid));
+
 
             ////(1561.) Maximum Number of Coins You Can Get (MEDIUM)
             //int[] piles = [2, 4, 1, 2, 7, 8];
