@@ -7541,14 +7541,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinTimeToVisitAllPoints(points));
 
             ////(1275.) Find Winner on a Tic Tac Toe Game (EASY)
-            int[][] moves = [[0, 0], [2, 0], [1, 1], [2, 1], [2, 2]];
+            //int[][] moves = [[0, 0], [2, 0], [1, 1], [2, 1], [2, 2]];
 
-            LeetCode_1275 classLeetCode = new LeetCode_1275();
-            Console.WriteLine(classLeetCode.Tictactoe(moves));
+            //LeetCode_1275 classLeetCode = new LeetCode_1275();
+            //Console.WriteLine(classLeetCode.Tictactoe(moves));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.Tictactoe(moves));
+            //Console.WriteLine(leetCodeAll.Tictactoe(moves));
 
             ////(1277.) Count Square Submatrices with All Ones (MEDIUM)
             //int[][] matrix = [[0, 1, 1, 1], [1, 1, 1, 1], [0, 1, 1, 1]];
@@ -10346,6 +10346,17 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(item);
             //}
+
+            ////(2033.) Minimum Operations to Make a Uni-Value Grid (MEDIUM)
+            int[][] grid = [[2, 4], [6, 8]];
+            int x = 2;
+
+            LeetCode_2033 classLeetCode = new LeetCode_2033();
+            Console.WriteLine(classLeetCode.MinOperations(grid, x));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperations(grid, x));
 
             ////(2037.) Minimum Number of Moves to Seat Everyone (EASY)
             //int[] seats = [4,1,5,9];
