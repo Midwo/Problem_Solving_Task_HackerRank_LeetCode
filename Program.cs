@@ -7510,6 +7510,24 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.OddCells(m, n, indices));
 
+            ////(1260.) Shift 2D Grid (EASY)
+            int[][] grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+            int k = 1;
+
+            LeetCode_1260 classLeetCode = new LeetCode_1260();
+
+            foreach (var item in classLeetCode.ShiftGrid(grid, k))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.ShiftGrid(grid, k))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
             ////(1262. Greatest Sum Divisible by Three (MEDIUM)
             //int[] nums = [1, 2, 3, 4, 4];
 
@@ -10348,15 +10366,15 @@ namespace ProblemSolving
             //}
 
             ////(2033.) Minimum Operations to Make a Uni-Value Grid (MEDIUM)
-            int[][] grid = [[2, 4], [6, 8]];
-            int x = 2;
+            //int[][] grid = [[2, 4], [6, 8]];
+            //int x = 2;
 
-            LeetCode_2033 classLeetCode = new LeetCode_2033();
-            Console.WriteLine(classLeetCode.MinOperations(grid, x));
+            //LeetCode_2033 classLeetCode = new LeetCode_2033();
+            //Console.WriteLine(classLeetCode.MinOperations(grid, x));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperations(grid, x));
+            //Console.WriteLine(leetCodeAll.MinOperations(grid, x));
 
             ////(2037.) Minimum Number of Moves to Seat Everyone (EASY)
             //int[] seats = [4,1,5,9];
