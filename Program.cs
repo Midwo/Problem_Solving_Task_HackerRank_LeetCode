@@ -7511,22 +7511,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.OddCells(m, n, indices));
 
             ////(1260.) Shift 2D Grid (EASY)
-            int[][] grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-            int k = 1;
+            //int[][] grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+            //int k = 1;
 
-            LeetCode_1260 classLeetCode = new LeetCode_1260();
+            //LeetCode_1260 classLeetCode = new LeetCode_1260();
 
-            foreach (var item in classLeetCode.ShiftGrid(grid, k))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in classLeetCode.ShiftGrid(grid, k))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.ShiftGrid(grid, k))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.ShiftGrid(grid, k))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(1262. Greatest Sum Divisible by Three (MEDIUM)
             //int[] nums = [1, 2, 3, 4, 4];
@@ -12102,6 +12102,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.VowelStrings(words, left, right));
+
+            ////(2587.) Rearrange Array to Maximize Prefix Score (MEDIUM)
+            int[] nums = [2, -1, 0, 1, -3, 3, -3];
+
+            LeetCode_2587 classLeetCode = new LeetCode_2587();
+            Console.WriteLine(classLeetCode.MaxScore(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxScore(nums));
 
             ////(2595.) Number of Even and Odd Bits (EASY)
             //int n = 5;

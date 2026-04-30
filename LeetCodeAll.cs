@@ -31202,6 +31202,32 @@ namespace ProblemSolving
             ////LINQ
             //return newGrid.Select(x => (IList<int>)x.ToList()).ToList();
         }
+        public int MaxScore(int[] nums)
+        {
+            int countNumbers = 0;
+            long currValue = 0;
+
+            Array.Sort(nums, (a, b) => b.CompareTo(a));
+
+            foreach (var number in nums)
+            {
+                currValue += number;
+                if (currValue > 0)
+                {
+                    countNumbers++;
+                }
+                else
+                {
+                    return countNumbers;
+                }
+
+            }
+
+            return countNumbers;
+        }
+
+
+
 
 
 
