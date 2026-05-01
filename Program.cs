@@ -4626,6 +4626,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsSubsequence(s, t));
 
+            ////(396.) Rotate Function (MEDIUM)
+            int[] nums = [4, 3, 2, 6];
+
+            LeetCode_396 classLeetCode = new LeetCode_396();
+            Console.WriteLine(classLeetCode.MaxRotateFunction(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxRotateFunction(nums));
+
             ////(401.) Binary Watch (EASY)
             //int turnedOn = 1;
             //LeetCode_401 classLeetCode = new LeetCode_401();
@@ -12104,14 +12114,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.VowelStrings(words, left, right));
 
             ////(2587.) Rearrange Array to Maximize Prefix Score (MEDIUM)
-            int[] nums = [2, -1, 0, 1, -3, 3, -3];
+            //int[] nums = [2, -1, 0, 1, -3, 3, -3];
 
-            LeetCode_2587 classLeetCode = new LeetCode_2587();
-            Console.WriteLine(classLeetCode.MaxScore(nums));
+            //LeetCode_2587 classLeetCode = new LeetCode_2587();
+            //Console.WriteLine(classLeetCode.MaxScore(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxScore(nums));
+            //Console.WriteLine(leetCodeAll.MaxScore(nums));
 
             ////(2595.) Number of Even and Odd Bits (EASY)
             //int n = 5;
