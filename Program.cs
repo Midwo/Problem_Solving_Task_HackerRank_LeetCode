@@ -4627,14 +4627,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsSubsequence(s, t));
 
             ////(396.) Rotate Function (MEDIUM)
-            int[] nums = [4, 3, 2, 6];
+            //int[] nums = [4, 3, 2, 6];
 
-            LeetCode_396 classLeetCode = new LeetCode_396();
-            Console.WriteLine(classLeetCode.MaxRotateFunction(nums));
+            //LeetCode_396 classLeetCode = new LeetCode_396();
+            //Console.WriteLine(classLeetCode.MaxRotateFunction(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxRotateFunction(nums));
+            //Console.WriteLine(leetCodeAll.MaxRotateFunction(nums));
 
             ////(401.) Binary Watch (EASY)
             //int turnedOn = 1;
@@ -5877,6 +5877,16 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(item);
             //}
+
+            ////(788.) Rotated Digits (MEDIUM)
+            int n = 10;
+            
+            LeetCode_788 classLeetCode = new LeetCode_788();
+            Console.WriteLine(classLeetCode.RotatedDigits(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.RotatedDigits(n));
 
             ////796. Rotate String (EASY)
             //string s = "bbbacddceeb";
