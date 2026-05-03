@@ -5879,14 +5879,14 @@ namespace ProblemSolving
             //}
 
             ////(788.) Rotated Digits (MEDIUM)
-            int n = 10;
+            //int n = 10;
             
-            LeetCode_788 classLeetCode = new LeetCode_788();
-            Console.WriteLine(classLeetCode.RotatedDigits(n));
+            //LeetCode_788 classLeetCode = new LeetCode_788();
+            //Console.WriteLine(classLeetCode.RotatedDigits(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.RotatedDigits(n));
+            //Console.WriteLine(leetCodeAll.RotatedDigits(n));
 
             ////796. Rotate String (EASY)
             //string s = "bbbacddceeb";
@@ -11892,6 +11892,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DeleteGreatestValue(grid));
+
+            ////(2506.) Count Pairs Of Similar Strings (EASY)
+            string[] words = ["aba", "aabb", "abcd", "bac", "aabc"]; 
+
+            LeetCode_2506 classLeetCode = new LeetCode_2506();
+            Console.WriteLine(classLeetCode.SimilarPairs(words));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SimilarPairs(words));
 
             ////(2515.) Shortest Distance to Target String in a Circular Array (EASY)
             //string[] words = ["hsdqinnoha", "mqhskgeqzr", "zemkwvqrww", "zemkwvqrww", "daljcrktje", "fghofclnwp", "djwdworyka", "cxfpybanhd", "fghofclnwp", "fghofclnwp"];
