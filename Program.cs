@@ -3329,7 +3329,7 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.Jump(nums));
 
             ////(48.) Rotate Image (MEDIUM)
-            //int[][] matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+            //int[][] matrix = [[5, 1, 9, 11], [2, 4, 8, 10], [13, 3, 6, 7], [15, 14, 12, 16]];
 
             //LeetCode_48 classLeetCode = new LeetCode_48();
             //classLeetCode.Rotate(matrix);
@@ -5880,7 +5880,7 @@ namespace ProblemSolving
 
             ////(788.) Rotated Digits (MEDIUM)
             //int n = 10;
-            
+
             //LeetCode_788 classLeetCode = new LeetCode_788();
             //Console.WriteLine(classLeetCode.RotatedDigits(n));
 
@@ -10708,6 +10708,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumberOfBeams(bank));
 
+            ////(2126.) Destroying Asteroids (MEDIUM)
+            int mass = 14359;
+            int[] asteroids = [77244, 19898, 13062, 79891, 33924, 90485, 2244];
+
+            LeetCode_2126 classLeetCode = new LeetCode_2126();
+            Console.WriteLine(classLeetCode.AsteroidsDestroyed(mass, asteroids));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AsteroidsDestroyed(mass, asteroids));
+
             ////(2129.) Capitalize the Title (EASY)
             //string title = "First leTTeR of EACH Word";
 
@@ -11894,14 +11905,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DeleteGreatestValue(grid));
 
             ////(2506.) Count Pairs Of Similar Strings (EASY)
-            string[] words = ["aba", "aabb", "abcd", "bac", "aabc"]; 
+            //string[] words = ["aba", "aabb", "abcd", "bac", "aabc"]; 
 
-            LeetCode_2506 classLeetCode = new LeetCode_2506();
-            Console.WriteLine(classLeetCode.SimilarPairs(words));
+            //LeetCode_2506 classLeetCode = new LeetCode_2506();
+            //Console.WriteLine(classLeetCode.SimilarPairs(words));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SimilarPairs(words));
+            //Console.WriteLine(leetCodeAll.SimilarPairs(words));
 
             ////(2515.) Shortest Distance to Target String in a Circular Array (EASY)
             //string[] words = ["hsdqinnoha", "mqhskgeqzr", "zemkwvqrww", "zemkwvqrww", "daljcrktje", "fghofclnwp", "djwdworyka", "cxfpybanhd", "fghofclnwp", "fghofclnwp"];
