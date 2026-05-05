@@ -33,6 +33,7 @@ using static ProblemSolving.LeetCode.LeetCode_2043;
 using static ProblemSolving.LeetCode.LeetCode_225;
 using static ProblemSolving.LeetCode.LeetCode_232;
 using static ProblemSolving.LeetCode.LeetCode_303;
+using static ProblemSolving.LeetCode.LeetCode_3242;
 using static ProblemSolving.LeetCode.LeetCode_380;
 using static ProblemSolving.LeetCode.LeetCode_535;
 using static ProblemSolving.LeetCode.LeetCode_703;
@@ -10709,15 +10710,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfBeams(bank));
 
             ////(2126.) Destroying Asteroids (MEDIUM)
-            int mass = 14359;
-            int[] asteroids = [77244, 19898, 13062, 79891, 33924, 90485, 2244];
+            //int mass = 14359;
+            //int[] asteroids = [77244, 19898, 13062, 79891, 33924, 90485, 2244];
 
-            LeetCode_2126 classLeetCode = new LeetCode_2126();
-            Console.WriteLine(classLeetCode.AsteroidsDestroyed(mass, asteroids));
+            //LeetCode_2126 classLeetCode = new LeetCode_2126();
+            //Console.WriteLine(classLeetCode.AsteroidsDestroyed(mass, asteroids));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.AsteroidsDestroyed(mass, asteroids));
+            //Console.WriteLine(leetCodeAll.AsteroidsDestroyed(mass, asteroids));
 
             ////(2129.) Capitalize the Title (EASY)
             //string title = "First leTTeR of EACH Word";
@@ -13604,6 +13605,22 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.WinningPlayerCount(n, pick));
+
+            ////(3242.) Design Neighbor Sum Service (EASY)
+            LeetCode_3242.NeighborSum classLeetCode = new LeetCode_3242.NeighborSum([[0, 1, 2], [3, 4, 5], [6, 7, 8]]);
+
+            Console.WriteLine(classLeetCode.AdjacentSum(1));
+            Console.WriteLine(classLeetCode.AdjacentSum(4));
+            Console.WriteLine(classLeetCode.DiagonalSum(4));
+            Console.WriteLine(classLeetCode.DiagonalSum(8));
+
+            //OR
+
+            LeetCodeAll.NeighborSum leetCodeAllTask3242 = new LeetCodeAll.NeighborSum(([[0, 1, 2], [3, 4, 5], [6, 7, 8]]));
+            Console.WriteLine(leetCodeAllTask3242.AdjacentSum(1));
+            Console.WriteLine(leetCodeAllTask3242.AdjacentSum(4));
+            Console.WriteLine(leetCodeAllTask3242.DiagonalSum(4));
+            Console.WriteLine(leetCodeAllTask3242.DiagonalSum(8));
 
             ////(3248.) Snake in Matrix (EASY)
             //int n = 3;
