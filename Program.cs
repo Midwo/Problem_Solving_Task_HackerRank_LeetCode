@@ -11192,6 +11192,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.DivisorSubstrings(num, k));
 
+            ////(2270.) Number of Ways to Split Array (MEDIUM)
+            int[] nums = [6, -1, 9];
+
+            LeetCode_2270 classLeetCode = new LeetCode_2270();
+            Console.WriteLine(classLeetCode.WaysToSplitArray(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.WaysToSplitArray(nums));
+
             ////(2273.) Find Resultant Array After Removing Anagrams (EASY)
             //string[] words = ["abba", "baba", "bbaa", "cd", "cd"];
 
