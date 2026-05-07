@@ -9847,6 +9847,25 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SortSentence(s));
 
+            ////(1861.) Rotating the Box (MEDIUM)
+            //char[][] boxGrid = [['#','#','*','.','*','.'],
+            //  ['#','#','#','*','.','.'],
+            //  ['#','#','#','.','#','.']];
+
+            //LeetCode_1861 classLeetCode = new LeetCode_1861();
+
+            //foreach (var item in classLeetCode.RotateTheBox(boxGrid))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
+
+            ////OR
+
+            //foreach (var item in leetCodeAll.RotateTheBox(boxGrid))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
+
             ////(1863.) Sum of All Subset XOR Totals (EASY)
             //int[] nums = [5, 1, 6];
 
@@ -13607,20 +13626,20 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.WinningPlayerCount(n, pick));
 
             ////(3242.) Design Neighbor Sum Service (EASY)
-            LeetCode_3242.NeighborSum classLeetCode = new LeetCode_3242.NeighborSum([[0, 1, 2], [3, 4, 5], [6, 7, 8]]);
+            //LeetCode_3242.NeighborSum classLeetCode = new LeetCode_3242.NeighborSum([[0, 1, 2], [3, 4, 5], [6, 7, 8]]);
 
-            Console.WriteLine(classLeetCode.AdjacentSum(1));
-            Console.WriteLine(classLeetCode.AdjacentSum(4));
-            Console.WriteLine(classLeetCode.DiagonalSum(4));
-            Console.WriteLine(classLeetCode.DiagonalSum(8));
+            //Console.WriteLine(classLeetCode.AdjacentSum(1));
+            //Console.WriteLine(classLeetCode.AdjacentSum(4));
+            //Console.WriteLine(classLeetCode.DiagonalSum(4));
+            //Console.WriteLine(classLeetCode.DiagonalSum(8));
 
-            //OR
+            ////OR
 
-            LeetCodeAll.NeighborSum leetCodeAllTask3242 = new LeetCodeAll.NeighborSum(([[0, 1, 2], [3, 4, 5], [6, 7, 8]]));
-            Console.WriteLine(leetCodeAllTask3242.AdjacentSum(1));
-            Console.WriteLine(leetCodeAllTask3242.AdjacentSum(4));
-            Console.WriteLine(leetCodeAllTask3242.DiagonalSum(4));
-            Console.WriteLine(leetCodeAllTask3242.DiagonalSum(8));
+            //LeetCodeAll.NeighborSum leetCodeAllTask3242 = new LeetCodeAll.NeighborSum(([[0, 1, 2], [3, 4, 5], [6, 7, 8]]));
+            //Console.WriteLine(leetCodeAllTask3242.AdjacentSum(1));
+            //Console.WriteLine(leetCodeAllTask3242.AdjacentSum(4));
+            //Console.WriteLine(leetCodeAllTask3242.DiagonalSum(4));
+            //Console.WriteLine(leetCodeAllTask3242.DiagonalSum(8));
 
             ////(3248.) Snake in Matrix (EASY)
             //int n = 3;
