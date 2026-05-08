@@ -11193,14 +11193,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DivisorSubstrings(num, k));
 
             ////(2270.) Number of Ways to Split Array (MEDIUM)
-            int[] nums = [6, -1, 9];
+            //int[] nums = [6, -1, 9];
 
-            LeetCode_2270 classLeetCode = new LeetCode_2270();
-            Console.WriteLine(classLeetCode.WaysToSplitArray(nums));
+            //LeetCode_2270 classLeetCode = new LeetCode_2270();
+            //Console.WriteLine(classLeetCode.WaysToSplitArray(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.WaysToSplitArray(nums));
+            //Console.WriteLine(leetCodeAll.WaysToSplitArray(nums));
 
             ////(2273.) Find Resultant Array After Removing Anagrams (EASY)
             //string[] words = ["abba", "baba", "bbaa", "cd", "cd"];
@@ -12061,6 +12061,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.SeparateDigits(nums)));
+
+            ////(2554.) Maximum Number of Integers to Choose From a Range I (MEDIUM)
+            int[] banned = [11];
+            int n = 7;
+            int maxSum = 50; 
+
+            LeetCode_2554 classLeetCode = new LeetCode_2554();
+            Console.WriteLine(classLeetCode.MaxCount(banned, n, maxSum));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxCount(banned, n, maxSum));
 
             ////(2558.) Take Gifts From the Richest Pile (EASY)
             //int[] gifts = [25, 64, 9, 4, 100];
