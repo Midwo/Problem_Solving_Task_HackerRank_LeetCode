@@ -10069,6 +10069,23 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxProductDifference(nums));
 
+            ////(1914.) Cyclically Rotating a Grid (MEDIUM)
+            int[][] grid = [[10, 1, 4, 8], [6, 6, 3, 10], [7, 4, 7, 10], [1, 10, 6, 1], [2, 1, 1, 10], [3, 8, 9, 2], [7, 1, 10, 10], [7, 1, 4, 9], [2, 2, 4, 2], [10, 7, 5, 10]];
+            int k = 1;
+
+            LeetCode_1914 classLeetCode = new LeetCode_1914();
+            foreach (var item in classLeetCode.RotateGrid(grid, k))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.RotateGrid(grid, k))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
             ////(1920.) Build Array from Permutation (EASY)
             //int[] nums = [0,2,1,5,3,4];
 
@@ -12063,16 +12080,16 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SeparateDigits(nums)));
 
             ////(2554.) Maximum Number of Integers to Choose From a Range I (MEDIUM)
-            int[] banned = [11];
-            int n = 7;
-            int maxSum = 50; 
+            //int[] banned = [11];
+            //int n = 7;
+            //int maxSum = 50; 
 
-            LeetCode_2554 classLeetCode = new LeetCode_2554();
-            Console.WriteLine(classLeetCode.MaxCount(banned, n, maxSum));
+            //LeetCode_2554 classLeetCode = new LeetCode_2554();
+            //Console.WriteLine(classLeetCode.MaxCount(banned, n, maxSum));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxCount(banned, n, maxSum));
+            //Console.WriteLine(leetCodeAll.MaxCount(banned, n, maxSum));
 
             ////(2558.) Take Gifts From the Richest Pile (EASY)
             //int[] gifts = [25, 64, 9, 4, 100];
