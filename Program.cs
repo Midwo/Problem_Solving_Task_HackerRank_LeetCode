@@ -10070,21 +10070,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxProductDifference(nums));
 
             ////(1914.) Cyclically Rotating a Grid (MEDIUM)
-            int[][] grid = [[10, 1, 4, 8], [6, 6, 3, 10], [7, 4, 7, 10], [1, 10, 6, 1], [2, 1, 1, 10], [3, 8, 9, 2], [7, 1, 10, 10], [7, 1, 4, 9], [2, 2, 4, 2], [10, 7, 5, 10]];
-            int k = 1;
+            //int[][] grid = [[10, 1, 4, 8], [6, 6, 3, 10], [7, 4, 7, 10], [1, 10, 6, 1], [2, 1, 1, 10], [3, 8, 9, 2], [7, 1, 10, 10], [7, 1, 4, 9], [2, 2, 4, 2], [10, 7, 5, 10]];
+            //int k = 1;
 
-            LeetCode_1914 classLeetCode = new LeetCode_1914();
-            foreach (var item in classLeetCode.RotateGrid(grid, k))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //LeetCode_1914 classLeetCode = new LeetCode_1914();
+            //foreach (var item in classLeetCode.RotateGrid(grid, k))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.RotateGrid(grid, k))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.RotateGrid(grid, k))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(1920.) Build Array from Permutation (EASY)
             //int[] nums = [0,2,1,5,3,4];
@@ -12564,6 +12564,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.TheMaximumAchievableX(num, t));
+
+            ////(2770.) Maximum Number of Jumps to Reach the Last Index (MEDIUM)
+            int[] nums = [0, 2, 1, 3];
+            int target = 1;
+
+            LeetCode_2770 classLeetCode = new LeetCode_2770();
+            Console.WriteLine(classLeetCode.MaximumJumps(nums, target));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumJumps(nums, target));
 
             ////(2778.) Sum of Squares of Special Elements (EASY)
             //int[] nums = [1, 2, 3, 4];
