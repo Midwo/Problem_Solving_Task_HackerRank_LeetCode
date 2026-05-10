@@ -22,9 +22,10 @@ namespace ProblemSolving.LeetCode
 
             for (int indexStart = 1; indexStart < length; indexStart++)
             {
+                long currValue = nums[indexStart];
                 for (int prevIndex = 0; prevIndex < indexStart; prevIndex++)
                 {
-                    long diff = (long)nums[indexStart] - nums[prevIndex];
+                    long diff = currValue - nums[prevIndex];
                     if (diff >= -target && diff <= target)
                     {
                         if (dpCountJumps[prevIndex] != -1)

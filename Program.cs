@@ -12566,15 +12566,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TheMaximumAchievableX(num, t));
 
             ////(2770.) Maximum Number of Jumps to Reach the Last Index (MEDIUM)
-            int[] nums = [0, 2, 1, 3];
-            int target = 1;
+            //int[] nums = [0, 2, 1, 3];
+            //int target = 1;
 
-            LeetCode_2770 classLeetCode = new LeetCode_2770();
-            Console.WriteLine(classLeetCode.MaximumJumps(nums, target));
+            //LeetCode_2770 classLeetCode = new LeetCode_2770();
+            //Console.WriteLine(classLeetCode.MaximumJumps(nums, target));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumJumps(nums, target));
+            //Console.WriteLine(leetCodeAll.MaximumJumps(nums, target));
 
             ////(2778.) Sum of Squares of Special Elements (EASY)
             //int[] nums = [1, 2, 3, 4];
