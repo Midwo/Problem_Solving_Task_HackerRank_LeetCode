@@ -14907,9 +14907,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FirstUniqueFreq(nums));
 
+            ////(3857.) Minimum Cost to Split into Ones
+            int n = 4;
 
+            LeetCode_3857 classLeetCode = new LeetCode_3857();
+            Console.WriteLine(classLeetCode.MinCost(n));
 
+            //OR
 
+            Console.WriteLine(leetCodeAll.MinCost(n));
 
 
 

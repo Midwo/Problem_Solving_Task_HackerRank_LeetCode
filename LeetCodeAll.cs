@@ -31683,6 +31683,27 @@ namespace ProblemSolving
 
             return dpCountJumps[length - 1] < 0 ? -1 : dpCountJumps[length - 1];
         }
+        public int MinCost(int n)
+        {
+            ////Solution 1 (Better - mathematical)
+            return (n * (n - 1) / 2);
+
+
+            ////Solution 2 (Manual, Worse)
+            //int sum = 0;
+            //for (int i = 1; i < n; i++)
+            //{
+            //    sum += i;
+            //}
+            //return sum;
+        }
+
+
+
+
+
+
+
 
 
 
