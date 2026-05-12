@@ -9137,6 +9137,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ArrayStringsAreEqual(word1, word2));
 
+            ////(1665.) Minimum Initial Energy to Finish Tasks (HARD)
+            int[][] task = [[1, 2], [1, 7], [2, 3], [5, 9], [2, 2]];
+
+            LeetCode_1665 classLeetCode = new LeetCode_1665();
+            Console.WriteLine(classLeetCode.MinimumEffort(task));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumEffort(task));
+
             ////(1667.) Fix Names in a Table (EASY)
             //string SqlQuery =
             //    @"
@@ -14908,14 +14918,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FirstUniqueFreq(nums));
 
             ////(3857.) Minimum Cost to Split into Ones
-            int n = 4;
+            //int n = 4;
 
-            LeetCode_3857 classLeetCode = new LeetCode_3857();
-            Console.WriteLine(classLeetCode.MinCost(n));
+            //LeetCode_3857 classLeetCode = new LeetCode_3857();
+            //Console.WriteLine(classLeetCode.MinCost(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinCost(n));
+            //Console.WriteLine(leetCodeAll.MinCost(n));
 
 
 
