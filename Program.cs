@@ -9138,14 +9138,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ArrayStringsAreEqual(word1, word2));
 
             ////(1665.) Minimum Initial Energy to Finish Tasks (HARD)
-            int[][] task = [[1, 2], [1, 7], [2, 3], [5, 9], [2, 2]];
+            //int[][] task = [[1, 2], [1, 7], [2, 3], [5, 9], [2, 2]];
 
-            LeetCode_1665 classLeetCode = new LeetCode_1665();
-            Console.WriteLine(classLeetCode.MinimumEffort(task));
+            //LeetCode_1665 classLeetCode = new LeetCode_1665();
+            //Console.WriteLine(classLeetCode.MinimumEffort(task));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumEffort(task));
+            //Console.WriteLine(leetCodeAll.MinimumEffort(task));
 
             ////(1667.) Fix Names in a Table (EASY)
             //string SqlQuery =
@@ -12379,6 +12379,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindThePrefixCommonArray(A, B)));
 
+            ////(2660.) Determine the Winner of a Bowling Game (EASY)
+            int[] player1 = [3, 5, 7, 6];
+            int[] player2 = [8, 10, 10, 2];
+
+            LeetCode_2660 classLeetCode = new LeetCode_2660();
+            Console.WriteLine(classLeetCode.IsWinner(player1, player2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsWinner(player1, player2));
+            
             ////(2069.) Walking Robot Simulation II (MEDIUM)
 
             //LeetCode_2069.Robot robot = new LeetCode_2069.Robot(6,3);
