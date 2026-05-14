@@ -12380,15 +12380,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindThePrefixCommonArray(A, B)));
 
             ////(2660.) Determine the Winner of a Bowling Game (EASY)
-            int[] player1 = [3, 5, 7, 6];
-            int[] player2 = [8, 10, 10, 2];
+            //int[] player1 = [3, 5, 7, 6];
+            //int[] player2 = [8, 10, 10, 2];
 
-            LeetCode_2660 classLeetCode = new LeetCode_2660();
-            Console.WriteLine(classLeetCode.IsWinner(player1, player2));
+            //LeetCode_2660 classLeetCode = new LeetCode_2660();
+            //Console.WriteLine(classLeetCode.IsWinner(player1, player2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsWinner(player1, player2));
+            //Console.WriteLine(leetCodeAll.IsWinner(player1, player2));
             
             ////(2069.) Walking Robot Simulation II (MEDIUM)
 
@@ -12606,6 +12606,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SumOfSquares(nums));
+
+            ////(2784.) Check if Array is Good (MEDIUM)
+            int[] nums = [5, 7, 3, 1, 5, 2, 6, 4];
+            
+            LeetCode_2784 classLeetCode = new LeetCode_2784();
+            Console.WriteLine(classLeetCode.IsGood(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsGood(nums));
 
             ////(2785.) Sort Vowels in a String (MEDIUM)
             //string s = "lEetcOde";
