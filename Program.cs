@@ -12608,14 +12608,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumOfSquares(nums));
 
             ////(2784.) Check if Array is Good (MEDIUM)
-            int[] nums = [5, 7, 3, 1, 5, 2, 6, 4];
+            //int[] nums = [5, 7, 3, 1, 5, 2, 6, 4];
             
-            LeetCode_2784 classLeetCode = new LeetCode_2784();
-            Console.WriteLine(classLeetCode.IsGood(nums));
+            //LeetCode_2784 classLeetCode = new LeetCode_2784();
+            //Console.WriteLine(classLeetCode.IsGood(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsGood(nums));
+            //Console.WriteLine(leetCodeAll.IsGood(nums));
 
             ////(2785.) Sort Vowels in a String (MEDIUM)
             //string s = "lEetcOde";
@@ -13102,6 +13102,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimumCostTask3010(nums));
+
+            ////(3014.) Minimum Number of Pushes to Type Word I (EASY)
+            string word = "xycdefghij";
+
+            LeetCode_3014 classLeetCode = new LeetCode_3014();
+            Console.WriteLine(classLeetCode.MinimumPushes(word));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumPushes(word));
 
             ////(3019.) Number of Changing Keys (EASY)
             //string s = "aAbBcC";
