@@ -3795,6 +3795,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ReverseWordsTask151(s));
 
+            ////(154.) Find Minimum in Rotated Sorted Array II (HARD)
+            int[] nums = [4, 5, 6, 7, 0, 1, 4];
+
+            LeetCode_154 classLeetCode = new LeetCode_154();
+            Console.WriteLine(classLeetCode.FindMin(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindMin(nums));
+
             ////(160.) Intersection of Two Linked List (EASY)
             //ListNode headA = new ListNode(4);
             //ListNode headB = new ListNode(5);
@@ -12389,7 +12399,7 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsWinner(player1, player2));
-            
+
             ////(2069.) Walking Robot Simulation II (MEDIUM)
 
             //LeetCode_2069.Robot robot = new LeetCode_2069.Robot(6,3);
@@ -12609,7 +12619,7 @@ namespace ProblemSolving
 
             ////(2784.) Check if Array is Good (MEDIUM)
             //int[] nums = [5, 7, 3, 1, 5, 2, 6, 4];
-            
+
             //LeetCode_2784 classLeetCode = new LeetCode_2784();
             //Console.WriteLine(classLeetCode.IsGood(nums));
 
@@ -13104,14 +13114,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumCostTask3010(nums));
 
             ////(3014.) Minimum Number of Pushes to Type Word I (EASY)
-            string word = "xycdefghij";
+            //string word = "xycdefghij";
 
-            LeetCode_3014 classLeetCode = new LeetCode_3014();
-            Console.WriteLine(classLeetCode.MinimumPushes(word));
+            //LeetCode_3014 classLeetCode = new LeetCode_3014();
+            //Console.WriteLine(classLeetCode.MinimumPushes(word));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumPushes(word));
+            //Console.WriteLine(leetCodeAll.MinimumPushes(word));
 
             ////(3019.) Number of Changing Keys (EASY)
             //string s = "aAbBcC";
