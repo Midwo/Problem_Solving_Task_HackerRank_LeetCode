@@ -31842,8 +31842,22 @@ namespace ProblemSolving
 
             return nums[l];
         }
+        public ListNode DeleteMiddle(ListNode head)
+        {
+            var dummyListNode = new ListNode(0, head);
+            var slowListNode = dummyListNode;
+            var fastListNode = head;
 
+            while (fastListNode != null && fastListNode.next != null)
+            {
+                fastListNode = fastListNode.next.next;
+                slowListNode = slowListNode.next;
+            }
 
+            slowListNode.next = slowListNode.next.next;
+
+            return dummyListNode.next;
+        }
 
 
 
