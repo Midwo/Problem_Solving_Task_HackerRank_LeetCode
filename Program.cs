@@ -3795,6 +3795,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ReverseWordsTask151(s));
 
+            ////(153.) Find Minimum in Rotated Sorted Array (MEDIUM)
+            int[] nums = [4, 5, 6, 7, 0, 1, 2];
+
+            LeetCode_153 classLeetCode = new LeetCode_153();
+            Console.WriteLine(classLeetCode.FindMin(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindMin(nums));
+
             ////(154.) Find Minimum in Rotated Sorted Array II (HARD)
             //int[] nums = [4, 5, 6, 7, 0, 1, 4];
 
@@ -10662,31 +10672,31 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindEvenNumbers(digits)));
 
             ////(2095.) Delete the Middle Node of a Linked List (MEDIUM)
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(3);
-            head.next.next = new ListNode(4);
-            head.next.next.next = new ListNode(7);
-            head.next.next.next.next = new ListNode(1);
-            head.next.next.next.next.next = new ListNode(2);
-            head.next.next.next.next.next.next = new ListNode(6);
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(3);
+            //head.next.next = new ListNode(4);
+            //head.next.next.next = new ListNode(7);
+            //head.next.next.next.next = new ListNode(1);
+            //head.next.next.next.next.next = new ListNode(2);
+            //head.next.next.next.next.next.next = new ListNode(6);
 
-            LeetCode_2095 classLeetCode = new LeetCode_2095();
-            var result = classLeetCode.DeleteMiddle(head);
+            //LeetCode_2095 classLeetCode = new LeetCode_2095();
+            //var result = classLeetCode.DeleteMiddle(head);
 
-            while(result != null)
-            {
-                Console.WriteLine(result.val);
-                result = result.next;
-            }
+            //while(result != null)
+            //{
+            //    Console.WriteLine(result.val);
+            //    result = result.next;
+            //}
 
-            //OR
+            ////OR
 
-            var result1 = leetCodeAll.DeleteMiddle(head);
-            while (result1 != null)
-            {
-                Console.WriteLine(result1.val);
-                result1 = result1.next;
-            }
+            //var result1 = leetCodeAll.DeleteMiddle(head);
+            //while (result1 != null)
+            //{
+            //    Console.WriteLine(result1.val);
+            //    result1 = result1.next;
+            //}
 
             ////(2099.) Find Subsequence of Length K With the Largest Sum (EASY)
             //int[] nums = [-1, -2, 3, 4];
