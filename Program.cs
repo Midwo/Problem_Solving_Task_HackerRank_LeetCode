@@ -3796,14 +3796,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReverseWordsTask151(s));
 
             ////(153.) Find Minimum in Rotated Sorted Array (MEDIUM)
-            int[] nums = [4, 5, 6, 7, 0, 1, 2];
+            //int[] nums = [4, 5, 6, 7, 0, 1, 2];
 
-            LeetCode_153 classLeetCode = new LeetCode_153();
-            Console.WriteLine(classLeetCode.FindMin(nums));
+            //LeetCode_153 classLeetCode = new LeetCode_153();
+            //Console.WriteLine(classLeetCode.FindMin(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindMin(nums));
+            //Console.WriteLine(leetCodeAll.FindMin(nums));
 
             ////(154.) Find Minimum in Rotated Sorted Array II (HARD)
             //int[] nums = [4, 5, 6, 7, 0, 1, 4];
@@ -8020,6 +8020,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NumOfSubarrays(arr, k, threshold));
+
+            ////(1344.) Angle Between Hands of a Clock (MEDIUM)
+            int hour = 1;
+            int minutes = 57;
+
+            LeetCode_1344 classLeetCode = new LeetCode_1344();
+            Console.Write(classLeetCode.AngleClock(hour, minutes));
+
+            //Or
+
+            Console.Write(leetCodeAll.AngleClock(hour, minutes));
 
             ////(1346.) Check If N and Its Double Exist (EASY)
             //int[] arr = [10,2,5,3];
