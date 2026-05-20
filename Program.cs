@@ -8022,15 +8022,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumOfSubarrays(arr, k, threshold));
 
             ////(1344.) Angle Between Hands of a Clock (MEDIUM)
-            int hour = 1;
-            int minutes = 57;
+            //int hour = 1;
+            //int minutes = 57;
 
-            LeetCode_1344 classLeetCode = new LeetCode_1344();
-            Console.Write(classLeetCode.AngleClock(hour, minutes));
+            //LeetCode_1344 classLeetCode = new LeetCode_1344();
+            //Console.Write(classLeetCode.AngleClock(hour, minutes));
 
-            //Or
+            ////Or
 
-            Console.Write(leetCodeAll.AngleClock(hour, minutes));
+            //Console.Write(leetCodeAll.AngleClock(hour, minutes));
 
             ////(1346.) Check If N and Its Double Exist (EASY)
             //int[] arr = [10,2,5,3];
@@ -10599,6 +10599,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CheckAlmostEquivalent(word1, word2));
+
+            ////(2073.) Time Needed to Buy Tickets (EASY)
+            int[] tickets = [2,3,2];
+            int k = 2;
+
+            LeetCode_2073 classLeetCode = new LeetCode_2073();
+            Console.WriteLine(classLeetCode.TimeRequiredToBuy(tickets, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.TimeRequiredToBuy(tickets, k));
 
             ////(2075.) Decode the Slanted Ciphertext (MEDIUM)
             //string encodedText = "iveo    eed   l te   olc";
