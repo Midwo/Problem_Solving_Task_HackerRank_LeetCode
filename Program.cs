@@ -10601,15 +10601,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckAlmostEquivalent(word1, word2));
 
             ////(2073.) Time Needed to Buy Tickets (EASY)
-            int[] tickets = [2,3,2];
-            int k = 2;
+            //int[] tickets = [2,3,2];
+            //int k = 2;
 
-            LeetCode_2073 classLeetCode = new LeetCode_2073();
-            Console.WriteLine(classLeetCode.TimeRequiredToBuy(tickets, k));
+            //LeetCode_2073 classLeetCode = new LeetCode_2073();
+            //Console.WriteLine(classLeetCode.TimeRequiredToBuy(tickets, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.TimeRequiredToBuy(tickets, k));
+            //Console.WriteLine(leetCodeAll.TimeRequiredToBuy(tickets, k));
 
             ////(2075.) Decode the Slanted Ciphertext (MEDIUM)
             //string encodedText = "iveo    eed   l te   olc";
@@ -13257,6 +13257,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountPrefixSuffixPairs(words));
+
+            ////(3043.) Find the Length of the Longest Common Prefix (MEDIUM)
+            int[] arr1 = [10];
+            int[] arr2 = [17, 11];
+
+            LeetCode_3043 classLeetCode = new LeetCode_3043();
+            Console.WriteLine(classLeetCode.LongestCommonPrefix(arr1, arr2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LongestCommonPrefix(arr1, arr2));
 
             ////(3046.) Split the Array (EASY)
             //int[] nums = [2, 10, 2, 7, 8, 9, 7, 6, 6, 9];
