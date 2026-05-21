@@ -13259,15 +13259,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountPrefixSuffixPairs(words));
 
             ////(3043.) Find the Length of the Longest Common Prefix (MEDIUM)
-            int[] arr1 = [10];
-            int[] arr2 = [17, 11];
+            //int[] arr1 = [10];
+            //int[] arr2 = [17, 11];
 
-            LeetCode_3043 classLeetCode = new LeetCode_3043();
-            Console.WriteLine(classLeetCode.LongestCommonPrefix(arr1, arr2));
+            //LeetCode_3043 classLeetCode = new LeetCode_3043();
+            //Console.WriteLine(classLeetCode.LongestCommonPrefix(arr1, arr2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LongestCommonPrefix(arr1, arr2));
+            //Console.WriteLine(leetCodeAll.LongestCommonPrefix(arr1, arr2));
 
             ////(3046.) Split the Array (EASY)
             //int[] nums = [2, 10, 2, 7, 8, 9, 7, 6, 6, 9];

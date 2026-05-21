@@ -31932,6 +31932,10 @@ namespace ProblemSolving
                         {
                             maxValuePrefix = i + 1;
                         }
+                        else
+                        {
+                            break;
+                        }
                     }
                 }
             }

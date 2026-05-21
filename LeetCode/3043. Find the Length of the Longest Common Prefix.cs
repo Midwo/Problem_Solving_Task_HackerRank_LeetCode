@@ -38,6 +38,10 @@ namespace ProblemSolving.LeetCode
                         {
                             maxValuePrefix = i+1;
                         }
+                        else
+                        {
+                            break;
+                        }
                     }
                 }
             }
