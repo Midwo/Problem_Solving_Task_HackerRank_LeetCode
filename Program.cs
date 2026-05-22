@@ -13322,6 +13322,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimumBoxes(apple, capacity));
 
+            ////(3075.) Maximize Happiness of Selected Children (MEDIUM)
+            int[] happiness = [12,1,42];
+            int k = 3;
+
+            LeetCode_3075 classLeetCode = new LeetCode_3075();
+            Console.WriteLine(classLeetCode.MaximumHappinessSum(happiness, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumHappinessSum(happiness, k));
+
             ////(3079.) Find the Sum of Encrypted Integers (EASY)
             //int[] nums = [10, 21, 31];
 
