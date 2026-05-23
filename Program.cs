@@ -13323,15 +13323,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumBoxes(apple, capacity));
 
             ////(3075.) Maximize Happiness of Selected Children (MEDIUM)
-            int[] happiness = [12,1,42];
-            int k = 3;
+            //int[] happiness = [12,1,42];
+            //int k = 3;
 
-            LeetCode_3075 classLeetCode = new LeetCode_3075();
-            Console.WriteLine(classLeetCode.MaximumHappinessSum(happiness, k));
+            //LeetCode_3075 classLeetCode = new LeetCode_3075();
+            //Console.WriteLine(classLeetCode.MaximumHappinessSum(happiness, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumHappinessSum(happiness, k));
+            //Console.WriteLine(leetCodeAll.MaximumHappinessSum(happiness, k));
 
             ////(3079.) Find the Sum of Encrypted Integers (EASY)
             //int[] nums = [10, 21, 31];
@@ -14966,6 +14966,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimumDistanceTask3741(nums));
+
+            ////(3746.) Minimum String Length After Balanced Removals (MEDIUM)
+            string s = "aabbab";
+
+            LeetCode_3746 classLeetCode = new LeetCode_3746();
+            Console.WriteLine(classLeetCode.MinLengthAfterRemovals(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinLengthAfterRemovals(s));
 
             ////(3750.) Minimum Number of Flips to Reverse Binary String (EASY)
             //int n = 10;

@@ -31958,8 +31958,21 @@ namespace ProblemSolving
 
             return sumHappiness;
         }
+        public int MinLengthAfterRemovals(string s)
+        {
+            int countA = 0;
+            int countB = 0;
 
+            foreach (char c in s)
+            {
+                if (c == 'a')
+                    countA++;
+                else
+                    countB++;
+            }
 
+            return Math.Abs(countB - countA);
+        }
 
 
 
