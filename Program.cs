@@ -9749,6 +9749,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumDifferentIntegers(word));
 
+            ////(1812.) Determine Color of a Chessboard Square (EASY)
+            //string coordinates = "a1";
+
+            //LeetCode_1812 classLeetCode = new LeetCode_1812();
+            //Console.WriteLine(classLeetCode.SquareIsWhite(coordinates));
+
+            ////OR
+
+            //Console.WriteLine(classLeetCode.SquareIsWhite(coordinates));
+
             ////(1816.) Truncate Sentence (EASY) 
             //string s = "Hello how are you Contestant";
             //int k = 4;
@@ -14968,14 +14978,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumDistanceTask3741(nums));
 
             ////(3746.) Minimum String Length After Balanced Removals (MEDIUM)
-            string s = "aabbab";
+            //string s = "aabbab";
 
-            LeetCode_3746 classLeetCode = new LeetCode_3746();
-            Console.WriteLine(classLeetCode.MinLengthAfterRemovals(s));
+            //LeetCode_3746 classLeetCode = new LeetCode_3746();
+            //Console.WriteLine(classLeetCode.MinLengthAfterRemovals(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinLengthAfterRemovals(s));
+            //Console.WriteLine(leetCodeAll.MinLengthAfterRemovals(s));
 
             ////(3750.) Minimum Number of Flips to Reverse Binary String (EASY)
             //int n = 10;
