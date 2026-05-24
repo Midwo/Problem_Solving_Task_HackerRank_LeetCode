@@ -13385,6 +13385,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(classLeetCode.MinimumDeletions(word, k));
 
+            ////(3090.) Maximum Length Substring With Two Occurrences (EASY)
+            string s = "bdbbabccad";
+
+            LeetCode_3090 classLeetCode = new LeetCode_3090();
+            Console.WriteLine(classLeetCode.MaximumLengthSubstring(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumLengthSubstring(s));
+
             ////(3099.) Harshad Number (EASY)
             //int x = 18;
 
