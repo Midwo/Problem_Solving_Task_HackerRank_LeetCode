@@ -11277,6 +11277,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountUnguarded(m, n, guards, walls));
 
+            ////(2259.) Remove Digit From Number to Maximize Result (EASY)
+            string number = "123";
+            char digit = '3';
+
+            LeetCode_2259 classLeetCode = new LeetCode_2259();
+            Console.WriteLine(classLeetCode.RemoveDigit(number, digit));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.RemoveDigit(number, digit));
+
             ////(2264.) Largest 3-Same-Digit Number in String (EASY)
             //string num = "42352338";
 
@@ -13386,14 +13397,14 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.MinimumDeletions(word, k));
 
             ////(3090.) Maximum Length Substring With Two Occurrences (EASY)
-            string s = "bdbbabccad";
+            //string s = "bdbbabccad";
 
-            LeetCode_3090 classLeetCode = new LeetCode_3090();
-            Console.WriteLine(classLeetCode.MaximumLengthSubstring(s));
+            //LeetCode_3090 classLeetCode = new LeetCode_3090();
+            //Console.WriteLine(classLeetCode.MaximumLengthSubstring(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumLengthSubstring(s));
+            //Console.WriteLine(leetCodeAll.MaximumLengthSubstring(s));
 
             ////(3099.) Harshad Number (EASY)
             //int x = 18;
