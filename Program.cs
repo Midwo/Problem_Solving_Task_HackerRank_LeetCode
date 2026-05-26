@@ -8534,6 +8534,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.Shuffle(nums, n)));
 
+            ////(1471.) The k Strongest Values in an Array (MEDIUM)
+            int[] arr = [1,2,3,4,5];
+            int k = 2;
+
+            LeetCode_1471 classLeetCode = new LeetCode_1471();
+            Console.WriteLine(string.Join(',', classLeetCode.GetStrongest(arr, k)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.GetStrongest(arr, k)));
+
             ////(1472.) Design Browser History (MEDIUM)
             //LeetCode_1472.BrowserHistory browserHistory = new LeetCode_1472.BrowserHistory("zav.com");
             //browserHistory.Visit("kni.com");
@@ -11278,15 +11289,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountUnguarded(m, n, guards, walls));
 
             ////(2259.) Remove Digit From Number to Maximize Result (EASY)
-            string number = "123";
-            char digit = '3';
+            //string number = "123";
+            //char digit = '3';
 
-            LeetCode_2259 classLeetCode = new LeetCode_2259();
-            Console.WriteLine(classLeetCode.RemoveDigit(number, digit));
+            //LeetCode_2259 classLeetCode = new LeetCode_2259();
+            //Console.WriteLine(classLeetCode.RemoveDigit(number, digit));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.RemoveDigit(number, digit));
+            //Console.WriteLine(leetCodeAll.RemoveDigit(number, digit));
 
             ////(2264.) Largest 3-Same-Digit Number in String (EASY)
             //string num = "42352338";
