@@ -8535,15 +8535,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.Shuffle(nums, n)));
 
             ////(1471.) The k Strongest Values in an Array (MEDIUM)
-            int[] arr = [1,2,3,4,5];
-            int k = 2;
+            //int[] arr = [1,2,3,4,5];
+            //int k = 2;
 
-            LeetCode_1471 classLeetCode = new LeetCode_1471();
-            Console.WriteLine(string.Join(',', classLeetCode.GetStrongest(arr, k)));
+            //LeetCode_1471 classLeetCode = new LeetCode_1471();
+            //Console.WriteLine(string.Join(',', classLeetCode.GetStrongest(arr, k)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.GetStrongest(arr, k)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.GetStrongest(arr, k)));
 
             ////(1472.) Design Browser History (MEDIUM)
             //LeetCode_1472.BrowserHistory browserHistory = new LeetCode_1472.BrowserHistory("zav.com");
@@ -13487,6 +13487,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NumberOfSpecialChars(word));
+
+            ////(3121.) Count the Number of Special Characters II (MEDIUM)
+            string word = "aaAbcBC";
+
+            LeetCode_3121 classLeetCode = new LeetCode_3121();
+            Console.WriteLine(classLeetCode.NumberOfSpecialChars(word));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumberOfSpecialCharsTask3121(word));
 
             ////(3127.) Make a Square with the Same Color (EASY)
             //char[][] grid = [['B', 'W', 'B'], ['B', 'W', 'W'], ['B', 'W', 'B']];
