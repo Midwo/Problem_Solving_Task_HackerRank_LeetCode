@@ -3381,6 +3381,34 @@ namespace ProblemSolving
             ////(58.) Lenght of Last Word (EASY)
             //Console.WriteLine(leetCodeAll.LengthOfLastWord(" fly me   to   the moon  "));
 
+            ////(61.) Rotate List (MEDIUM)
+            int k = 2;
+            ListNode head = new ListNode(1);
+            head.next = new ListNode(2);
+            head.next.next = new ListNode(3);
+            head.next.next.next = new ListNode(4);
+            head.next.next.next.next = new ListNode(5);
+
+            LeetCode_61 classLeetCode = new LeetCode_61();
+
+            var result = classLeetCode.RotateRight(head, k);
+
+            while (result != null)
+            {
+                Console.WriteLine(result.val);
+                result = result.next;
+            }
+
+            //OR
+
+            var result1 = leetCodeAll.RotateRight(head, k);
+
+            while (result1 != null)
+            {
+                Console.WriteLine(result1.val);
+                result = result1.next;
+            }
+
             ////(63.) Unique Paths II (MEDIUM)
             //int[][] obstacleGrid = [[0, 1, 0, 0]];
 
@@ -13489,14 +13517,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfSpecialChars(word));
 
             ////(3121.) Count the Number of Special Characters II (MEDIUM)
-            string word = "aaAbcBC";
+            //string word = "aaAbcBC";
 
-            LeetCode_3121 classLeetCode = new LeetCode_3121();
-            Console.WriteLine(classLeetCode.NumberOfSpecialChars(word));
+            //LeetCode_3121 classLeetCode = new LeetCode_3121();
+            //Console.WriteLine(classLeetCode.NumberOfSpecialChars(word));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumberOfSpecialCharsTask3121(word));
+            //Console.WriteLine(leetCodeAll.NumberOfSpecialCharsTask3121(word));
 
             ////(3127.) Make a Square with the Same Color (EASY)
             //char[][] grid = [['B', 'W', 'B'], ['B', 'W', 'W'], ['B', 'W', 'B']];
