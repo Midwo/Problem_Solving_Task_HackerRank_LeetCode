@@ -3382,32 +3382,32 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LengthOfLastWord(" fly me   to   the moon  "));
 
             ////(61.) Rotate List (MEDIUM)
-            int k = 2;
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(2);
-            head.next.next = new ListNode(3);
-            head.next.next.next = new ListNode(4);
-            head.next.next.next.next = new ListNode(5);
+            //int k = 2;
+            //ListNode head = new ListNode(1);
+            //head.next = new ListNode(2);
+            //head.next.next = new ListNode(3);
+            //head.next.next.next = new ListNode(4);
+            //head.next.next.next.next = new ListNode(5);
 
-            LeetCode_61 classLeetCode = new LeetCode_61();
+            //LeetCode_61 classLeetCode = new LeetCode_61();
 
-            var result = classLeetCode.RotateRight(head, k);
+            //var result = classLeetCode.RotateRight(head, k);
 
-            while (result != null)
-            {
-                Console.WriteLine(result.val);
-                result = result.next;
-            }
+            //while (result != null)
+            //{
+            //    Console.WriteLine(result.val);
+            //    result = result.next;
+            //}
 
-            //OR
+            ////OR
 
-            var result1 = leetCodeAll.RotateRight(head, k);
+            //var result1 = leetCodeAll.RotateRight(head, k);
 
-            while (result1 != null)
-            {
-                Console.WriteLine(result1.val);
-                result = result1.next;
-            }
+            //while (result1 != null)
+            //{
+            //    Console.WriteLine(result1.val);
+            //    result = result1.next;
+            //}
 
             ////(63.) Unique Paths II (MEDIUM)
             //int[][] obstacleGrid = [[0, 1, 0, 0]];
@@ -11374,6 +11374,18 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(item);
             //}
+
+            ////(2274.) Maximum Consecutive Floors Without Special Floors (MEDIUM)
+            int bottom = 28;
+            int top = 50;
+            int[] special = [35,48];
+
+            LeetCode_2274 classLeetCode = new LeetCode_2274();
+            Console.WriteLine(classLeetCode.MaxConsecutive(bottom, top, special));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxConsecutive(bottom, top, special));
 
             ////(2278.) Percentage of Letter in String (EASY)
             //string s = "foobar";
