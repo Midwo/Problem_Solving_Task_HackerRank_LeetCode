@@ -15089,6 +15089,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SumAndMultiply(n));
 
+            ////(3760.) Maximum Substrings With Distinct Start (MEDIUM)
+            string s = "abcd";
+
+            LeetCode_3760 classLeetCode = new LeetCode_3760();
+            Console.WriteLine(classLeetCode.MaxDistinct(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxDistinct(s));
+
             /////(3761.) Minimum Absolute Distance Between Mirror Pairs (MEDIUM)
             //int[] nums = [21, 120];
 
@@ -15162,14 +15172,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindDegrees(matrix)));
 
             ////(3925.) Concatenate Array With Reverse (EASY)
-            int[] nums = [1,2,3];
+            //int[] nums = [1,2,3];
 
-            LeetCode_3925 classLeetCode = new LeetCode_3925();
-            Console.WriteLine(string.Join(',', classLeetCode.ConcatWithReverse(nums)));
+            //LeetCode_3925 classLeetCode = new LeetCode_3925();
+            //Console.WriteLine(string.Join(',', classLeetCode.ConcatWithReverse(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ConcatWithReverse(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ConcatWithReverse(nums)));
 
 
 
