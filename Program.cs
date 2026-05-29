@@ -15152,21 +15152,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinCost(n));
 
             ////(3898.) Find the Degree of Each Vertex (EASY)
-            int[][] matrix = [[0, 1, 1], [1, 0, 1], [1, 1, 0]];
+            //int[][] matrix = [[0, 1, 1], [1, 0, 1], [1, 1, 0]];
 
-            LeetCode_3898 classLeetCode = new LeetCode_3898();
-            Console.WriteLine(string.Join(',',classLeetCode.FindDegrees(matrix)));
+            //LeetCode_3898 classLeetCode = new LeetCode_3898();
+            //Console.WriteLine(string.Join(',',classLeetCode.FindDegrees(matrix)));
+
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindDegrees(matrix)));
+
+            ////(3925.) Concatenate Array With Reverse (EASY)
+            int[] nums = [1,2,3];
+
+            LeetCode_3925 classLeetCode = new LeetCode_3925();
+            Console.WriteLine(string.Join(',', classLeetCode.ConcatWithReverse(nums)));
 
             //OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindDegrees(matrix)));
-
-
-
-
-
-
-
+            Console.WriteLine(string.Join(',', leetCodeAll.ConcatWithReverse(nums)));
 
 
 
