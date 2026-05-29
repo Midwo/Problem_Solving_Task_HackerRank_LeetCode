@@ -11376,16 +11376,16 @@ namespace ProblemSolving
             //}
 
             ////(2274.) Maximum Consecutive Floors Without Special Floors (MEDIUM)
-            int bottom = 28;
-            int top = 50;
-            int[] special = [35,48];
+            //int bottom = 28;
+            //int top = 50;
+            //int[] special = [35,48];
 
-            LeetCode_2274 classLeetCode = new LeetCode_2274();
-            Console.WriteLine(classLeetCode.MaxConsecutive(bottom, top, special));
+            //LeetCode_2274 classLeetCode = new LeetCode_2274();
+            //Console.WriteLine(classLeetCode.MaxConsecutive(bottom, top, special));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxConsecutive(bottom, top, special));
+            //Console.WriteLine(leetCodeAll.MaxConsecutive(bottom, top, special));
 
             ////(2278.) Percentage of Letter in String (EASY)
             //string s = "foobar";
@@ -15151,6 +15151,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinCost(n));
 
+            ////(3898.) Find the Degree of Each Vertex (EASY)
+            int[][] matrix = [[0, 1, 1], [1, 0, 1], [1, 1, 0]];
+
+            LeetCode_3898 classLeetCode = new LeetCode_3898();
+            Console.WriteLine(string.Join(',',classLeetCode.FindDegrees(matrix)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindDegrees(matrix)));
 
 
 

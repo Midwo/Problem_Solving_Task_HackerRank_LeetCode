@@ -32232,8 +32232,24 @@ namespace ProblemSolving
 
             return maxConsecutive;
         }
+        public int[] FindDegrees(int[][] matrix)
+        {
+            int cols = matrix[0].Length;
+            int rows = matrix.Length;
+            var resultTable = new int[cols];
 
+            for (int indexCol = 0; indexCol < cols; indexCol++)
+            {
+                int sum = 0;
+                for (int indexRow = 0; indexRow < matrix[0].Length; indexRow++)
+                {
+                    sum += matrix[indexRow][indexCol];
+                }
+                resultTable[indexCol] = sum;
+            }
 
+            return resultTable;
+        }
 
 
 
