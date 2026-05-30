@@ -15090,14 +15090,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumAndMultiply(n));
 
             ////(3760.) Maximum Substrings With Distinct Start (MEDIUM)
-            string s = "abcd";
+            //string s = "abcd";
 
-            LeetCode_3760 classLeetCode = new LeetCode_3760();
-            Console.WriteLine(classLeetCode.MaxDistinct(s));
+            //LeetCode_3760 classLeetCode = new LeetCode_3760();
+            //Console.WriteLine(classLeetCode.MaxDistinct(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxDistinct(s));
+            //Console.WriteLine(leetCodeAll.MaxDistinct(s));
 
             /////(3761.) Minimum Absolute Distance Between Mirror Pairs (MEDIUM)
             //int[] nums = [21, 120];
@@ -15128,6 +15128,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumScore(nums));
+
+            ////(3794.) Reverse String Prefix (EASY)
+            //string s = "abcd";
+            //int k = 2;
+
+            //LeetCode_3794 classLeetCode = new LeetCode_3794();
+            //Console.WriteLine(classLeetCode.ReversePrefix(s, k));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.ReversePrefix(s, k));
 
             ////(3809.) Best Reachable Tower (MEDIUM)
             //int[][] towers = [[1, 3, 4], [2, 2, 4], [4, 4, 7]];
