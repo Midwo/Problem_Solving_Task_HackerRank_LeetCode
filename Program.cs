@@ -15192,6 +15192,19 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ConcatWithReverse(nums)));
 
+            ////(3945.) Digit Frequency Score (EASY)
+            int n = 122;
+
+            LeetCode_3945 classLeetCode = new LeetCode_3945();
+            Console.WriteLine(classLeetCode.DigitFrequencyScore(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DigitFrequencyScore(n));
+
+
+
+
 
 
 
