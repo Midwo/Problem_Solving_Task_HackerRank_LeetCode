@@ -15172,6 +15172,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinCost(n));
 
+            ////(3895.) Count Digit Appearances (MEDIUM)
+            int[] nums = [12,54,32,22];
+            int digit = 2;
+
+            LeetCode_3895 classLeetCode = new LeetCode_3895();
+            Console.WriteLine(classLeetCode.CountDigitOccurrences(nums, digit));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountDigitOccurrences(nums, digit));
+
             ////(3898.) Find the Degree of Each Vertex (EASY)
             //int[][] matrix = [[0, 1, 1], [1, 0, 1], [1, 1, 0]];
 
@@ -15193,14 +15204,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.ConcatWithReverse(nums)));
 
             ////(3945.) Digit Frequency Score (EASY)
-            int n = 122;
+            //int n = 122;
 
-            LeetCode_3945 classLeetCode = new LeetCode_3945();
-            Console.WriteLine(classLeetCode.DigitFrequencyScore(n));
+            //LeetCode_3945 classLeetCode = new LeetCode_3945();
+            //Console.WriteLine(classLeetCode.DigitFrequencyScore(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DigitFrequencyScore(n));
+            //Console.WriteLine(leetCodeAll.DigitFrequencyScore(n));
 
 
 
