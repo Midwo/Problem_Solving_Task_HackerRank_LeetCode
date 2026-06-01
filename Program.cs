@@ -15152,6 +15152,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.BestTower(towers, center, radius)));
 
+            ////(3838.) Weighted Word Mapping (EASY)
+            string[] words = ["abcd", "def", "xyz"];
+            int[] weigths = [5, 3, 12, 14, 1, 2, 3, 2, 10, 6, 6, 9, 7, 8, 7, 10, 8, 9, 6, 9, 9, 8, 3, 7, 7, 2];
+
+            LeetCode_3838 classLeetCode = new LeetCode_3838();
+            Console.WriteLine(classLeetCode.MapWordWeights(words, weigths));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MapWordWeights(words, weigths));
+
             ////(3843.) First Element with Unique Frequency (MEDIUM)
             //int[] nums = [20, 10, 30, 30];
 
@@ -15173,15 +15184,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinCost(n));
 
             ////(3895.) Count Digit Appearances (MEDIUM)
-            int[] nums = [12,54,32,22];
-            int digit = 2;
+            //int[] nums = [12,54,32,22];
+            //int digit = 2;
 
-            LeetCode_3895 classLeetCode = new LeetCode_3895();
-            Console.WriteLine(classLeetCode.CountDigitOccurrences(nums, digit));
+            //LeetCode_3895 classLeetCode = new LeetCode_3895();
+            //Console.WriteLine(classLeetCode.CountDigitOccurrences(nums, digit));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountDigitOccurrences(nums, digit));
+            //Console.WriteLine(leetCodeAll.CountDigitOccurrences(nums, digit));
 
             ////(3898.) Find the Degree of Each Vertex (EASY)
             //int[][] matrix = [[0, 1, 1], [1, 0, 1], [1, 1, 0]];
