@@ -11720,6 +11720,16 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', item));
             //}
 
+            ////(2375.) Construct Smallest Number From DI String (MEDIUM)
+            string pattern = "IIIDIDDD";
+
+            LeetCode_2375 classLeetCode = new LeetCode_2375();
+            Console.WriteLine(classLeetCode.SmallestNumber(pattern));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SmallestNumber(pattern));
+
             ////(2379.) Minimum Recolors to Get K Consecutive Black Blocks (EASY)
             //string blocks = "WWBBBWBBBBBWWBWWWB";
             //int k = 16;
@@ -15153,15 +15163,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.BestTower(towers, center, radius)));
 
             ////(3838.) Weighted Word Mapping (EASY)
-            string[] words = ["abcd", "def", "xyz"];
-            int[] weigths = [5, 3, 12, 14, 1, 2, 3, 2, 10, 6, 6, 9, 7, 8, 7, 10, 8, 9, 6, 9, 9, 8, 3, 7, 7, 2];
+            //string[] words = ["abcd", "def", "xyz"];
+            //int[] weigths = [5, 3, 12, 14, 1, 2, 3, 2, 10, 6, 6, 9, 7, 8, 7, 10, 8, 9, 6, 9, 9, 8, 3, 7, 7, 2];
 
-            LeetCode_3838 classLeetCode = new LeetCode_3838();
-            Console.WriteLine(classLeetCode.MapWordWeights(words, weigths));
+            //LeetCode_3838 classLeetCode = new LeetCode_3838();
+            //Console.WriteLine(classLeetCode.MapWordWeights(words, weigths));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MapWordWeights(words, weigths));
+            //Console.WriteLine(leetCodeAll.MapWordWeights(words, weigths));
 
             ////(3843.) First Element with Unique Frequency (MEDIUM)
             //int[] nums = [20, 10, 30, 30];
