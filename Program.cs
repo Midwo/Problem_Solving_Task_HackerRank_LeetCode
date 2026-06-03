@@ -9862,6 +9862,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.CountPoints(points, queries)));
 
+            ////(1829.) Maximum XOR for Each Query (MEDIUM)
+            int[] nums = [0, 1, 1, 3];
+            int maximumBit = 2;
+
+            LeetCode_1829 classLeetCode = new LeetCode_1829();
+            Console.WriteLine(string.Join(',',classLeetCode.GetMaximumXor(nums, maximumBit)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.GetMaximumXor(nums, maximumBit)));
+
             ////(1832.) Check if the Sentence Is Pangram (EASY)
             //string sentence = "thequickbrownfoxjumpsoverthelazydog";
 
@@ -11721,14 +11732,14 @@ namespace ProblemSolving
             //}
 
             ////(2375.) Construct Smallest Number From DI String (MEDIUM)
-            string pattern = "IIIDIDDD";
+            //string pattern = "IIIDIDDD";
 
-            LeetCode_2375 classLeetCode = new LeetCode_2375();
-            Console.WriteLine(classLeetCode.SmallestNumber(pattern));
+            //LeetCode_2375 classLeetCode = new LeetCode_2375();
+            //Console.WriteLine(classLeetCode.SmallestNumber(pattern));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SmallestNumber(pattern));
+            //Console.WriteLine(leetCodeAll.SmallestNumber(pattern));
 
             ////(2379.) Minimum Recolors to Get K Consecutive Black Blocks (EASY)
             //string blocks = "WWBBBWBBBBBWWBWWWB";

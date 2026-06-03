@@ -32397,8 +32397,29 @@ namespace ProblemSolving
 
             return string.Join(null, intSmallestNumber);
         }
+        public int[] GetMaximumXor(int[] nums, int maximumBit)
+        {
+            int length = nums.Length;
+            int[] result = new int[length];
+            int maxK = (int)Math.Pow(2, maximumBit) - 1;
 
+            int xorValue = 0;
 
+            for (int i = 0; i < length; i++)
+            {
+                xorValue ^= nums[i];
+                nums[i] = xorValue;
+            }
+
+            for (int index = 0; index < length; index++)
+            {
+                xorValue = nums[length - index - 1];
+
+                result[index] = xorValue ^ maxK;
+            }
+
+            return result;
+        }
 
 
 
