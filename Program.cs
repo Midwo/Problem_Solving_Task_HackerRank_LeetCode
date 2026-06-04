@@ -9863,15 +9863,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.CountPoints(points, queries)));
 
             ////(1829.) Maximum XOR for Each Query (MEDIUM)
-            int[] nums = [0, 1, 1, 3];
-            int maximumBit = 2;
+            //int[] nums = [0, 1, 1, 3];
+            //int maximumBit = 2;
 
-            LeetCode_1829 classLeetCode = new LeetCode_1829();
-            Console.WriteLine(string.Join(',',classLeetCode.GetMaximumXor(nums, maximumBit)));
+            //LeetCode_1829 classLeetCode = new LeetCode_1829();
+            //Console.WriteLine(string.Join(',',classLeetCode.GetMaximumXor(nums, maximumBit)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.GetMaximumXor(nums, maximumBit)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.GetMaximumXor(nums, maximumBit)));
 
             ////(1832.) Check if the Sentence Is Pangram (EASY)
             //string sentence = "thequickbrownfoxjumpsoverthelazydog";
@@ -15099,6 +15099,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimumFlips(n));
+            
+            ////(3751.) Total Waviness of Numbers in Range I (MEDIUM)
+            //int num1 = 120;
+            //int num2 = 130;
+
+            //LeetCode_3751 classLeetCode = new LeetCode_3751();
+            //Console.WriteLine(classLeetCode.TotalWaviness(num1, num2));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.TotalWaviness(num1, num2));
 
             ////(3754.) Concatenate Non - Zero Digits and Multiply by Sum I (EASY)
             //int n = 0;
