@@ -15215,6 +15215,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinCost(n));
 
+            ////(3894.) Traffic Signal Color (EASY)
+            int timer = 60;
+
+            LeetCode_3894 classLeetCode = new LeetCode_3894();
+            Console.WriteLine(classLeetCode.TrafficSignal(timer));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.TrafficSignal(timer));
+
             ////(3895.) Count Digit Appearances (MEDIUM)
             //int[] nums = [12,54,32,22];
             //int digit = 2;
