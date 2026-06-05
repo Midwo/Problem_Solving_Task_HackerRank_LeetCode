@@ -3486,6 +3486,26 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinWindow(s, t));
 
+            ////(78.) Subsets (MEDIUM)
+            int[] nums = [1, 2, 3];
+
+            LeetCode_78 classLeetCode = new LeetCode_78();
+            var result = classLeetCode.Subsets(nums);
+
+            foreach (var currList in result) 
+            {
+                Console.WriteLine(string.Join(',', currList));            
+            }
+
+            //OR
+
+            var result1 = leetCodeAll.Subsets(nums);
+
+            foreach (var currList in result1)
+            {
+                Console.WriteLine(string.Join(',', currList));
+            }
+
             ////(80.) Remove Duplicates from Sorted Array II  (MEDIUM)
             //int[] nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
 
@@ -15099,7 +15119,7 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimumFlips(n));
-            
+
             ////(3751.) Total Waviness of Numbers in Range I (MEDIUM)
             //int num1 = 120;
             //int num2 = 130;
@@ -15216,14 +15236,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinCost(n));
 
             ////(3894.) Traffic Signal Color (EASY)
-            int timer = 60;
+            //int timer = 60;
 
-            LeetCode_3894 classLeetCode = new LeetCode_3894();
-            Console.WriteLine(classLeetCode.TrafficSignal(timer));
+            //LeetCode_3894 classLeetCode = new LeetCode_3894();
+            //Console.WriteLine(classLeetCode.TrafficSignal(timer));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.TrafficSignal(timer));
+            //Console.WriteLine(leetCodeAll.TrafficSignal(timer));
 
             ////(3895.) Count Digit Appearances (MEDIUM)
             //int[] nums = [12,54,32,22];
