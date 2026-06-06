@@ -3487,24 +3487,24 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinWindow(s, t));
 
             ////(78.) Subsets (MEDIUM)
-            int[] nums = [1, 2, 3];
+            //int[] nums = [1, 2, 3];
 
-            LeetCode_78 classLeetCode = new LeetCode_78();
-            var result = classLeetCode.Subsets(nums);
+            //LeetCode_78 classLeetCode = new LeetCode_78();
+            //var result = classLeetCode.Subsets(nums);
 
-            foreach (var currList in result) 
-            {
-                Console.WriteLine(string.Join(',', currList));            
-            }
+            //foreach (var currList in result) 
+            //{
+            //    Console.WriteLine(string.Join(',', currList));            
+            //}
 
-            //OR
+            ////OR
 
-            var result1 = leetCodeAll.Subsets(nums);
+            //var result1 = leetCodeAll.Subsets(nums);
 
-            foreach (var currList in result1)
-            {
-                Console.WriteLine(string.Join(',', currList));
-            }
+            //foreach (var currList in result1)
+            //{
+            //    Console.WriteLine(string.Join(',', currList));
+            //}
 
             ////(80.) Remove Duplicates from Sorted Array II  (MEDIUM)
             //int[] nums = [0, 0, 1, 1, 1, 1, 2, 3, 3];
@@ -8951,6 +8951,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DiagonalSum(mat));
+
+            ////(1576.) Replace All ?'s to Avoid Consecutive Repeating Characters (EASY)
+            string s = "j?qg??b";
+
+            LeetCode_1576 classLeetCode = new LeetCode_1576();
+            Console.WriteLine(classLeetCode.ModifyString(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ModifyString(s));
+
 
             ////(1578.) Minimum Time to Make Rope Colorful (MEDIUM)
             //string colors = "aabaa";

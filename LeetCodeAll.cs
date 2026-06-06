@@ -32526,8 +32526,54 @@ namespace ProblemSolving
                 currList.RemoveAt(currList.Count - 1);
             }
         }
+        public string ModifyString(string s)
+        {
+            int length = s.Length;
+            var resultTextTable = new char[length];
 
+            for (int i = 0; i < length; i++)
+            {
+                if (s[i] == '?')
+                {
+                    if (i == 0)
+                    {
+                        if (length == 1)
+                        {
+                            resultTextTable[i] = 'a';
+                        }
+                        else
+                        {
+                            if (s[i + 1] != 'a')
+                                resultTextTable[i] = 'a';
+                            else
+                                resultTextTable[i] = 'b';
+                        }
+                    }
+                    else if (i < length - 1)
+                    {
+                        if (resultTextTable[i - 1] != 'a' && s[i + 1] != 'a')
+                            resultTextTable[i] = 'a';
+                        else if (resultTextTable[i - 1] != 'b' && s[i + 1] != 'b')
+                            resultTextTable[i] = 'b';
+                        else
+                            resultTextTable[i] = 'c';
+                    }
+                    else
+                    {
+                        if (resultTextTable[i - 1] != 'a')
+                            resultTextTable[i] = 'a';
+                        else
+                            resultTextTable[i] = 'b';
+                    }
+                }
+                else
+                {
+                    resultTextTable[i] = s[i];
+                }
+            }
 
+            return new string(resultTextTable);
+        }
 
 
 
