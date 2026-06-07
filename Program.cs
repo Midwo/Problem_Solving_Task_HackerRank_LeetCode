@@ -8953,15 +8953,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DiagonalSum(mat));
 
             ////(1576.) Replace All ?'s to Avoid Consecutive Repeating Characters (EASY)
-            string s = "j?qg??b";
+            //string s = "j?qg??b";
 
-            LeetCode_1576 classLeetCode = new LeetCode_1576();
-            Console.WriteLine(classLeetCode.ModifyString(s));
+            //LeetCode_1576 classLeetCode = new LeetCode_1576();
+            //Console.WriteLine(classLeetCode.ModifyString(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ModifyString(s));
-
+            //Console.WriteLine(leetCodeAll.ModifyString(s));
 
             ////(1578.) Minimum Time to Make Rope Colorful (MEDIUM)
             //string colors = "aabaa";
@@ -13508,6 +13507,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumLengthSubstring(s));
+
+            ////(3095.) Shortest Subarray With OR at Least K I   (EASY)
+            int[] nums = [2, 16, 10, 32, 11, 1];
+            int k = 39;
+
+            LeetCode_3095 classLeetCode = new LeetCode_3095();
+            Console.WriteLine(classLeetCode.MinimumSubarrayLength(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumSubarrayLength(nums, k));
 
             ////(3099.) Harshad Number (EASY)
             //int x = 18;
