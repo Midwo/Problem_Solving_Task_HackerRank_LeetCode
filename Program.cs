@@ -13509,15 +13509,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumLengthSubstring(s));
 
             ////(3095.) Shortest Subarray With OR at Least K I   (EASY)
-            int[] nums = [2, 16, 10, 32, 11, 1];
-            int k = 39;
+            //int[] nums = [2, 16, 10, 32, 11, 1];
+            //int k = 39;
 
-            LeetCode_3095 classLeetCode = new LeetCode_3095();
-            Console.WriteLine(classLeetCode.MinimumSubarrayLength(nums, k));
+            //LeetCode_3095 classLeetCode = new LeetCode_3095();
+            //Console.WriteLine(classLeetCode.MinimumSubarrayLength(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumSubarrayLength(nums, k));
+            //Console.WriteLine(leetCodeAll.MinimumSubarrayLength(nums, k));
 
             ////(3099.) Harshad Number (EASY)
             //int x = 18;
@@ -13746,6 +13746,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NumberOfChild(n, k));
+
+            ////(3179.) Find the N-th Value After K Seconds (MEDIUM)
+            int n = 4;
+            int k = 5;
+
+            LeetCode_3179 classLeetCode = new LeetCode_3179();
+            Console.WriteLine(classLeetCode.ValueAfterKSeconds(n, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ValueAfterKSeconds(n, k));
 
             ////(3184.) Count Pairs That Form a Complete Day I (EASY)
             //int[] hours = [72, 48, 24, 3];
