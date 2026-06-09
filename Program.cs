@@ -13748,15 +13748,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfChild(n, k));
 
             ////(3179.) Find the N-th Value After K Seconds (MEDIUM)
-            int n = 4;
-            int k = 5;
+            //int n = 4;
+            //int k = 5;
 
-            LeetCode_3179 classLeetCode = new LeetCode_3179();
-            Console.WriteLine(classLeetCode.ValueAfterKSeconds(n, k));
+            //LeetCode_3179 classLeetCode = new LeetCode_3179();
+            //Console.WriteLine(classLeetCode.ValueAfterKSeconds(n, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ValueAfterKSeconds(n, k));
+            //Console.WriteLine(leetCodeAll.ValueAfterKSeconds(n, k));
 
             ////(3184.) Count Pairs That Form a Complete Day I (EASY)
             //int[] hours = [72, 48, 24, 3];
@@ -15029,6 +15029,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.EvenNumberBitwiseORs(nums));
+
+            ////(3689.) Maximum Total Subarray Value I (MEDIUM)
+            int[] nums = [1,3,2];
+            int k = 2;
+
+            LeetCode_3689 classLeetCode = new LeetCode_3689();
+            Console.WriteLine(classLeetCode.MaxTotalValue(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxTotalValue(nums, k));
 
             ////(3697.) Compute Decimal Representation (EASY)
             //int n = 537;

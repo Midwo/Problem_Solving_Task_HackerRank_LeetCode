@@ -32628,8 +32628,19 @@ namespace ProblemSolving
 
             return tableValues[n - 1];
         }
+        public long MaxTotalValue(int[] nums, int k)
+        {
+            int min = int.MaxValue;
+            int max = int.MinValue;
 
+            foreach (int x in nums)
+            {
+                min = min > x ? x : min;
+                max = max < x ? x : max;
+            }
 
+            return (long)(max - min) * k;
+        }
 
 
 
