@@ -32641,8 +32641,18 @@ namespace ProblemSolving
 
             return (long)(max - min) * k;
         }
+        public int MinOperationsTask3674(int[] nums)
+        {
+            int first = nums[0];
 
+            for (int i = 1; i < nums.Length; i++)
+            {
+                if (nums[i] != first)
+                    return 1;
+            }
 
+            return 0;
+        }
 
 
 

@@ -14989,6 +14989,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.RecoverOrder(order, friends)));
 
+            ////(3674.) Minimum Operations to Equalize Array (EASY)
+            int[] nums = [1,2];
+
+            LeetCode_3674 classLeetCode = new LeetCode_3674();
+            Console.WriteLine(classLeetCode.MinOperations(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperationsTask3674(nums));
+
             ////(3678.) Smallest Absent Positive Greater Than Average (EASY)
             //int[] nums = [3, 5];
 
@@ -15031,15 +15041,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.EvenNumberBitwiseORs(nums));
 
             ////(3689.) Maximum Total Subarray Value I (MEDIUM)
-            int[] nums = [1,3,2];
-            int k = 2;
+            //int[] nums = [1,3,2];
+            //int k = 2;
 
-            LeetCode_3689 classLeetCode = new LeetCode_3689();
-            Console.WriteLine(classLeetCode.MaxTotalValue(nums, k));
+            //LeetCode_3689 classLeetCode = new LeetCode_3689();
+            //Console.WriteLine(classLeetCode.MaxTotalValue(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxTotalValue(nums, k));
+            //Console.WriteLine(leetCodeAll.MaxTotalValue(nums, k));
 
             ////(3697.) Compute Decimal Representation (EASY)
             //int n = 537;
