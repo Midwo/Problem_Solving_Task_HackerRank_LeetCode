@@ -32653,6 +32653,30 @@ namespace ProblemSolving
 
             return 0;
         }
+        public int SpecialArray(int[] nums)
+        {
+            Array.Sort(nums);
+            HashSet<int> hashSet = new HashSet<int>(nums);
+            int length = nums.Length;
+            int maxCount = -1;
+            int leftIndex = 0;
+
+            for (int value = 0; value <= length; value++)
+            {
+                while (leftIndex < length && value > nums[leftIndex])
+                {
+                    leftIndex++;
+                }
+                if (value == length - leftIndex)
+                {
+                    maxCount = Math.Max(maxCount, length - leftIndex);
+                }
+            }
+
+            return maxCount;
+        }
+
+
 
 
 

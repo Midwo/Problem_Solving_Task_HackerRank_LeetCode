@@ -9083,6 +9083,16 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', item));
             //}
 
+            ////(1608.) Special Array With X Elements Greater Than or Equal X (EASY)
+            int[] nums = [3, 5];
+
+            LeetCode_1608 classLeetCode = new LeetCode_1608();
+            Console.WriteLine(classLeetCode.SpecialArray(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SpecialArray(nums));
+
             ////(1614.) Maximum Nesting Depth of the Parentheses (EASY)
             //string s = "(1+(2*3)+((8)/4))+1";
 
@@ -14990,14 +15000,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.RecoverOrder(order, friends)));
 
             ////(3674.) Minimum Operations to Equalize Array (EASY)
-            int[] nums = [1,2];
+            //int[] nums = [1,2];
 
-            LeetCode_3674 classLeetCode = new LeetCode_3674();
-            Console.WriteLine(classLeetCode.MinOperations(nums));
+            //LeetCode_3674 classLeetCode = new LeetCode_3674();
+            //Console.WriteLine(classLeetCode.MinOperations(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperationsTask3674(nums));
+            //Console.WriteLine(leetCodeAll.MinOperationsTask3674(nums));
 
             ////(3678.) Smallest Absent Positive Greater Than Average (EASY)
             //int[] nums = [3, 5];
