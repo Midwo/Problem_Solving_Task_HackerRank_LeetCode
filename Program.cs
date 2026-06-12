@@ -9084,14 +9084,14 @@ namespace ProblemSolving
             //}
 
             ////(1608.) Special Array With X Elements Greater Than or Equal X (EASY)
-            int[] nums = [3, 5];
+            //int[] nums = [3, 5];
 
-            LeetCode_1608 classLeetCode = new LeetCode_1608();
-            Console.WriteLine(classLeetCode.SpecialArray(nums));
+            //LeetCode_1608 classLeetCode = new LeetCode_1608();
+            //Console.WriteLine(classLeetCode.SpecialArray(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SpecialArray(nums));
+            //Console.WriteLine(leetCodeAll.SpecialArray(nums));
 
             ////(1614.) Maximum Nesting Depth of the Parentheses (EASY)
             //string s = "(1+(2*3)+((8)/4))+1";
@@ -9966,6 +9966,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.GetMinDistance(nums, target, start));
+
+            ////(1854.) Maximum Population Year (EASY)
+            int[][] longs = [[1950, 1961], [1960, 1971], [1970, 1981]];
+
+            LeetCode_1854 classLeetCode = new LeetCode_1854();
+            Console.WriteLine(classLeetCode.MaximumPopulation(longs));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumPopulation(longs));
 
             ////(1855.) Maximum Distance Between a Pair of Values (MEDIUM)
             //int[] nums1 = [55, 30, 5, 4, 2];
