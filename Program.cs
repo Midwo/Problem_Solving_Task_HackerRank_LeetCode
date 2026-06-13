@@ -9968,14 +9968,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GetMinDistance(nums, target, start));
 
             ////(1854.) Maximum Population Year (EASY)
-            int[][] longs = [[1950, 1961], [1960, 1971], [1970, 1981]];
+            //int[][] longs = [[1950, 1961], [1960, 1971], [1970, 1981]];
 
-            LeetCode_1854 classLeetCode = new LeetCode_1854();
-            Console.WriteLine(classLeetCode.MaximumPopulation(longs));
+            //LeetCode_1854 classLeetCode = new LeetCode_1854();
+            //Console.WriteLine(classLeetCode.MaximumPopulation(longs));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumPopulation(longs));
+            //Console.WriteLine(leetCodeAll.MaximumPopulation(longs));
 
             ////(1855.) Maximum Distance Between a Pair of Values (MEDIUM)
             //int[] nums1 = [55, 30, 5, 4, 2];
@@ -11342,6 +11342,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FindClosestNumber(nums));
+
+            ////(2244.) Minimum Rounds to Complete All Tasks (MEDIUM)
+            int[] tasks = [2, 2, 3, 3, 2, 4, 4, 4, 4, 4];
+
+            LeetCode_2244 classLeetCode = new LeetCode_2244();
+            Console.WriteLine(classLeetCode.MinimumRounds(tasks));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumRounds(tasks));
 
             ////(2248.) Intersection of Multiple Arrays (EASY)
             //int[][] nums = [[3, 1, 2, 4, 5], [1, 2, 3, 4], [3, 4, 5, 6]];
