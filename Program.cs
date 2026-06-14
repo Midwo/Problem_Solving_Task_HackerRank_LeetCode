@@ -11343,15 +11343,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindClosestNumber(nums));
 
-            ////(2244.) Minimum Rounds to Complete All Tasks (MEDIUM)
-            int[] tasks = [2, 2, 3, 3, 2, 4, 4, 4, 4, 4];
+            //////(2244.) Minimum Rounds to Complete All Tasks (MEDIUM)
+            //int[] tasks = [2, 2, 3, 3, 2, 4, 4, 4, 4, 4];
 
-            LeetCode_2244 classLeetCode = new LeetCode_2244();
-            Console.WriteLine(classLeetCode.MinimumRounds(tasks));
+            //LeetCode_2244 classLeetCode = new LeetCode_2244();
+            //Console.WriteLine(classLeetCode.MinimumRounds(tasks));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumRounds(tasks));
+            //Console.WriteLine(leetCodeAll.MinimumRounds(tasks));
 
             ////(2248.) Intersection of Multiple Arrays (EASY)
             //int[][] nums = [[3, 1, 2, 4, 5], [1, 2, 3, 4], [3, 4, 5, 6]];
@@ -15223,6 +15223,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SumAndMultiply(n));
+
+            ////(3759.) Count Elements With at Least K Greater Values (MEDIUM)
+            int[] nums = [3,2,1];
+            int k = 1;
+
+            LeetCode_3759 classLeetCode = new LeetCode_3759();
+            Console.WriteLine(classLeetCode.CountElements(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountElements(nums, k));
 
             ////(3760.) Maximum Substrings With Distinct Start (MEDIUM)
             //string s = "abcd";
