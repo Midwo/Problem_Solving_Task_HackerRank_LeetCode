@@ -13083,6 +13083,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinProcessingTime(processorTime, tasks));
 
+            ////(2899.) Last Visited Integers (EASY)
+            int[] nums = [1, -1, 2, -1, -1];
+            
+            LeetCode_2899 classLeetCode = new LeetCode_2899();
+            Console.WriteLine(string.Join(',', classLeetCode.LastVisitedIntegers(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.LastVisitedIntegers(nums)));
+
             ////(2903.) Find Indices With Index and Value Difference I (EASY)
             //int[] nums = [5, 1, 4, 1];
             //int indexDifference = 2;
@@ -15225,15 +15235,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumAndMultiply(n));
 
             ////(3759.) Count Elements With at Least K Greater Values (MEDIUM)
-            int[] nums = [3,2,1];
-            int k = 1;
+            //int[] nums = [3,2,1];
+            //int k = 1;
 
-            LeetCode_3759 classLeetCode = new LeetCode_3759();
-            Console.WriteLine(classLeetCode.CountElements(nums, k));
+            //LeetCode_3759 classLeetCode = new LeetCode_3759();
+            //Console.WriteLine(classLeetCode.CountElements(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountElements(nums, k));
+            //Console.WriteLine(leetCodeAll.CountElements(nums, k));
 
             ////(3760.) Maximum Substrings With Distinct Start (MEDIUM)
             //string s = "abcd";
