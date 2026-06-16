@@ -9103,6 +9103,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxDepth(s));
 
+            ////(1619.) Mean of Array After Removing Some Elements (EASY)
+            int[] arr = [6, 0, 7, 0, 7, 5, 7, 8, 3, 4, 0, 7, 8, 1, 6, 8, 1, 1, 2, 4, 8, 1, 9, 5, 4, 3, 8, 5, 10, 8, 6, 6, 1, 0, 6, 10, 8, 2, 3, 4];
+
+            LeetCode_1619 classLeetCode = new LeetCode_1619();
+            Console.Write(classLeetCode.TrimMean(arr));
+
+            //OR
+
+            Console.Write(leetCodeAll.TrimMean(arr));
+
             ////(1624.) Largest Substring Between Two Equal Characters (EASY)
             //string s = "abca";
 
@@ -13084,14 +13094,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinProcessingTime(processorTime, tasks));
 
             ////(2899.) Last Visited Integers (EASY)
-            int[] nums = [1, -1, 2, -1, -1];
-            
-            LeetCode_2899 classLeetCode = new LeetCode_2899();
-            Console.WriteLine(string.Join(',', classLeetCode.LastVisitedIntegers(nums)));
+            //int[] nums = [1, -1, 2, -1, -1];
 
-            //OR
+            //LeetCode_2899 classLeetCode = new LeetCode_2899();
+            //Console.WriteLine(string.Join(',', classLeetCode.LastVisitedIntegers(nums)));
 
-            Console.WriteLine(string.Join(',', leetCodeAll.LastVisitedIntegers(nums)));
+            ////OR
+
+            //Console.WriteLine(string.Join(',', leetCodeAll.LastVisitedIntegers(nums)));
 
             ////(2903.) Find Indices With Index and Value Difference I (EASY)
             //int[] nums = [5, 1, 4, 1];

@@ -32823,8 +32823,21 @@ namespace ProblemSolving
 
             return ansList;
         }
+        public double TrimMean(int[] arr)
+        {
+            int lengthArr = arr.Length;
+            int sumRemoving = 0;
+            int howManyRemoveOneSide = lengthArr / 20;
 
+            Array.Sort(arr);
 
+            for (int i = howManyRemoveOneSide; i < lengthArr - howManyRemoveOneSide; i++)
+            {
+                sumRemoving += arr[i];
+            }
+
+            return (double)sumRemoving / (lengthArr - howManyRemoveOneSide - howManyRemoveOneSide);
+        }
 
 
 
