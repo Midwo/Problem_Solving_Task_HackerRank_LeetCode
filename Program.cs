@@ -9104,14 +9104,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxDepth(s));
 
             ////(1619.) Mean of Array After Removing Some Elements (EASY)
-            int[] arr = [6, 0, 7, 0, 7, 5, 7, 8, 3, 4, 0, 7, 8, 1, 6, 8, 1, 1, 2, 4, 8, 1, 9, 5, 4, 3, 8, 5, 10, 8, 6, 6, 1, 0, 6, 10, 8, 2, 3, 4];
+            //int[] arr = [6, 0, 7, 0, 7, 5, 7, 8, 3, 4, 0, 7, 8, 1, 6, 8, 1, 1, 2, 4, 8, 1, 9, 5, 4, 3, 8, 5, 10, 8, 6, 6, 1, 0, 6, 10, 8, 2, 3, 4];
 
-            LeetCode_1619 classLeetCode = new LeetCode_1619();
-            Console.Write(classLeetCode.TrimMean(arr));
+            //LeetCode_1619 classLeetCode = new LeetCode_1619();
+            //Console.Write(classLeetCode.TrimMean(arr));
 
-            //OR
+            ////OR
 
-            Console.Write(leetCodeAll.TrimMean(arr));
+            //Console.Write(leetCodeAll.TrimMean(arr));
 
             ////(1624.) Largest Substring Between Two Equal Characters (EASY)
             //string s = "abca";
@@ -15317,6 +15317,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.BestTower(towers, center, radius)));
+
+            ////(3823.) Reverse Letters Then Special Characters in a String (EASY)
+            string s = ")ebc#da@f(";
+
+            LeetCode_3823 classLeetCode = new LeetCode_3823();
+            Console.WriteLine(classLeetCode.ReverseByType(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ReverseByType(s));
 
             ////(3838.) Weighted Word Mapping (EASY)
             //string[] words = ["abcd", "def", "xyz"];
