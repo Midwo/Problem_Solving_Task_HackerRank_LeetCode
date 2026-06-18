@@ -7647,6 +7647,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinTimeToVisitAllPoints(points));
 
+            ////(1267.) Count Servers that Communicate (MEDIUM)
+            int[][] grid = [[1, 1, 0, 0], [0, 0, 1, 0], [0, 0, 1, 0], [0, 0, 0, 1]];
+            
+            LeetCode_1267 classLeetCode = new LeetCode_1267();
+            Console.WriteLine(classLeetCode.CountServers(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountServers(grid));
+
             ////(1275.) Find Winner on a Tic Tac Toe Game (EASY)
             //int[][] moves = [[0, 0], [2, 0], [1, 1], [2, 1], [2, 2]];
 
@@ -15319,14 +15329,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.BestTower(towers, center, radius)));
 
             ////(3823.) Reverse Letters Then Special Characters in a String (EASY)
-            string s = ")ebc#da@f(";
+            //string s = ")ebc#da@f(";
 
-            LeetCode_3823 classLeetCode = new LeetCode_3823();
-            Console.WriteLine(classLeetCode.ReverseByType(s));
+            //LeetCode_3823 classLeetCode = new LeetCode_3823();
+            //Console.WriteLine(classLeetCode.ReverseByType(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ReverseByType(s));
+            //Console.WriteLine(leetCodeAll.ReverseByType(s));
 
             ////(3838.) Weighted Word Mapping (EASY)
             //string[] words = ["abcd", "def", "xyz"];
