@@ -7648,14 +7648,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinTimeToVisitAllPoints(points));
 
             ////(1267.) Count Servers that Communicate (MEDIUM)
-            int[][] grid = [[1, 1, 0, 0], [0, 0, 1, 0], [0, 0, 1, 0], [0, 0, 0, 1]];
+            //int[][] grid = [[1, 1, 0, 0], [0, 0, 1, 0], [0, 0, 1, 0], [0, 0, 0, 1]];
             
-            LeetCode_1267 classLeetCode = new LeetCode_1267();
-            Console.WriteLine(classLeetCode.CountServers(grid));
+            //LeetCode_1267 classLeetCode = new LeetCode_1267();
+            //Console.WriteLine(classLeetCode.CountServers(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountServers(grid));
+            //Console.WriteLine(leetCodeAll.CountServers(grid));
 
             ////(1275.) Find Winner on a Tic Tac Toe Game (EASY)
             //int[][] moves = [[0, 0], [2, 0], [1, 1], [2, 1], [2, 2]];
@@ -7742,6 +7742,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FindSpecialInteger(arr));
+
+            ////(1288.) Remove Covered Intervals (MEDIUM)
+            int[][] intervals = [[1, 4], [3, 6], [2, 8]];
+
+            LeetCode_1288 classLeetCode = new LeetCode_1288();
+            Console.WriteLine(classLeetCode.RemoveCoveredIntervals(intervals));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.RemoveCoveredIntervals(intervals));
 
             ////(1290.) Convert Binary Number in a Linked List to Integer (EASY)
             //ListNode head = new ListNode(1);

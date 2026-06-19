@@ -32900,8 +32900,29 @@ namespace ProblemSolving
 
             return countServers;
         }
+        public int RemoveCoveredIntervals(int[][] intervals)
+        {
+            int countRemove = 0;
+            int countIntervals = intervals.Length;
 
+            intervals = intervals.OrderBy(x => x[0]).ThenByDescending(x => x[1]).ToArray();
 
+            int endPeriod = intervals[0][1];
+
+            for (int indexInterval = 1; indexInterval < countIntervals; indexInterval++)
+            {
+                if (endPeriod >= intervals[indexInterval][1])
+                {
+                    countRemove++;
+                }
+                else
+                {
+                    endPeriod = intervals[indexInterval][1];
+                }
+            }
+
+            return countIntervals - countRemove;
+        }
 
 
 
