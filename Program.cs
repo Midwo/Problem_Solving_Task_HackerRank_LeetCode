@@ -7744,14 +7744,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindSpecialInteger(arr));
 
             ////(1288.) Remove Covered Intervals (MEDIUM)
-            int[][] intervals = [[1, 4], [3, 6], [2, 8]];
+            //int[][] intervals = [[1, 4], [3, 6], [2, 8]];
 
-            LeetCode_1288 classLeetCode = new LeetCode_1288();
-            Console.WriteLine(classLeetCode.RemoveCoveredIntervals(intervals));
+            //LeetCode_1288 classLeetCode = new LeetCode_1288();
+            //Console.WriteLine(classLeetCode.RemoveCoveredIntervals(intervals));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.RemoveCoveredIntervals(intervals));
+            //Console.WriteLine(leetCodeAll.RemoveCoveredIntervals(intervals));
 
             ////(1290.) Convert Binary Number in a Linked List to Integer (EASY)
             //ListNode head = new ListNode(1);
@@ -11682,6 +11682,30 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FillCups(amount));
+
+            ////(2336.) Smallest Number in Infinite Set (MEDIUM)
+            LeetCode_2336.SmallestInfiniteSet classLeetCode = new LeetCode_2336.SmallestInfiniteSet();
+
+            classLeetCode.AddBack(2);
+            Console.WriteLine(classLeetCode.PopSmallest());
+            Console.WriteLine(classLeetCode.PopSmallest());
+            Console.WriteLine(classLeetCode.PopSmallest());
+            classLeetCode.AddBack(1);
+            Console.WriteLine(classLeetCode.PopSmallest());
+            Console.WriteLine(classLeetCode.PopSmallest());
+            Console.WriteLine(classLeetCode.PopSmallest());
+
+            //OR
+
+            LeetCodeAll.SmallestInfiniteSet task2336 = new LeetCodeAll.SmallestInfiniteSet();
+            task2336.AddBack(2);
+            Console.WriteLine(task2336.PopSmallest());
+            Console.WriteLine(task2336.PopSmallest());
+            Console.WriteLine(task2336.PopSmallest());
+            task2336.AddBack(1);
+            Console.WriteLine(task2336.PopSmallest());
+            Console.WriteLine(task2336.PopSmallest());
+            Console.WriteLine(task2336.PopSmallest());
 
             ////(2341.) Maximum Number of Pairs in Array (EASY)
             //int[] nums = [1, 3, 2, 1, 3, 2, 2];
