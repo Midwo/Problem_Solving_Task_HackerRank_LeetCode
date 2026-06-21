@@ -27,6 +27,7 @@ using System.Threading;
 using System.Timers;
 using System.Xml;
 using System.Xml.Linq;
+using static ProblemSolving.LeetCode.LeetCode_1396;
 using static ProblemSolving.LeetCode.LeetCode_1476;
 using static ProblemSolving.LeetCode.LeetCode_1656;
 using static ProblemSolving.LeetCode.LeetCode_2043;
@@ -8303,6 +8304,37 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumTeams(rating));
 
+            ////(1396.) Design Underground System (MEDIUM)
+            LeetCode_1396.UndergroundSystem classLeetCode = new LeetCode_1396.UndergroundSystem();
+            classLeetCode.CheckIn(45, "Leyton", 3);
+            classLeetCode.CheckIn(32, "Paradise", 8);
+            classLeetCode.CheckIn(27, "Leyton", 10);
+            classLeetCode.CheckOut(45, "Waterloo", 15);
+            classLeetCode.CheckOut(27, "Waterloo", 20);  
+            classLeetCode.CheckOut(32, "Cambridge", 22); 
+            Console.WriteLine(classLeetCode.GetAverageTime("Paradise", "Cambridge"));
+            Console.WriteLine(classLeetCode.GetAverageTime("Leyton", "Waterloo"));    
+            classLeetCode.CheckIn(10, "Leyton", 24);
+            Console.WriteLine(classLeetCode.GetAverageTime("Leyton", "Waterloo"));   
+            classLeetCode.CheckOut(10, "Waterloo", 38);  
+            Console.WriteLine(classLeetCode.GetAverageTime("Leyton", "Waterloo"));
+
+            //OR
+
+            LeetCodeAll.UndergroundSystem task1396 = new LeetCodeAll.UndergroundSystem();
+            task1396.CheckIn(45, "Leyton", 3);
+            task1396.CheckIn(32, "Paradise", 8);
+            task1396.CheckIn(27, "Leyton", 10);
+            task1396.CheckOut(45, "Waterloo", 15);
+            task1396.CheckOut(27, "Waterloo", 20);
+            task1396.CheckOut(32, "Cambridge", 22);
+            Console.WriteLine(task1396.GetAverageTime("Paradise", "Cambridge"));
+            Console.WriteLine(task1396.GetAverageTime("Leyton", "Waterloo"));
+            task1396.CheckIn(10, "Leyton", 24);
+            Console.WriteLine(task1396.GetAverageTime("Leyton", "Waterloo"));
+            task1396.CheckOut(10, "Waterloo", 38);
+            Console.WriteLine(task1396.GetAverageTime("Leyton", "Waterloo"));
+
             ////(1399.) Count Largest Group (EASY)
             //int n = 13;
 
@@ -11684,28 +11716,28 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FillCups(amount));
 
             ////(2336.) Smallest Number in Infinite Set (MEDIUM)
-            LeetCode_2336.SmallestInfiniteSet classLeetCode = new LeetCode_2336.SmallestInfiniteSet();
+            //LeetCode_2336.SmallestInfiniteSet classLeetCode = new LeetCode_2336.SmallestInfiniteSet();
 
-            classLeetCode.AddBack(2);
-            Console.WriteLine(classLeetCode.PopSmallest());
-            Console.WriteLine(classLeetCode.PopSmallest());
-            Console.WriteLine(classLeetCode.PopSmallest());
-            classLeetCode.AddBack(1);
-            Console.WriteLine(classLeetCode.PopSmallest());
-            Console.WriteLine(classLeetCode.PopSmallest());
-            Console.WriteLine(classLeetCode.PopSmallest());
+            //classLeetCode.AddBack(2);
+            //Console.WriteLine(classLeetCode.PopSmallest());
+            //Console.WriteLine(classLeetCode.PopSmallest());
+            //Console.WriteLine(classLeetCode.PopSmallest());
+            //classLeetCode.AddBack(1);
+            //Console.WriteLine(classLeetCode.PopSmallest());
+            //Console.WriteLine(classLeetCode.PopSmallest());
+            //Console.WriteLine(classLeetCode.PopSmallest());
 
-            //OR
+            ////OR
 
-            LeetCodeAll.SmallestInfiniteSet task2336 = new LeetCodeAll.SmallestInfiniteSet();
-            task2336.AddBack(2);
-            Console.WriteLine(task2336.PopSmallest());
-            Console.WriteLine(task2336.PopSmallest());
-            Console.WriteLine(task2336.PopSmallest());
-            task2336.AddBack(1);
-            Console.WriteLine(task2336.PopSmallest());
-            Console.WriteLine(task2336.PopSmallest());
-            Console.WriteLine(task2336.PopSmallest());
+            //LeetCodeAll.SmallestInfiniteSet task2336 = new LeetCodeAll.SmallestInfiniteSet();
+            //task2336.AddBack(2);
+            //Console.WriteLine(task2336.PopSmallest());
+            //Console.WriteLine(task2336.PopSmallest());
+            //Console.WriteLine(task2336.PopSmallest());
+            //task2336.AddBack(1);
+            //Console.WriteLine(task2336.PopSmallest());
+            //Console.WriteLine(task2336.PopSmallest());
+            //Console.WriteLine(task2336.PopSmallest());
 
             ////(2341.) Maximum Number of Pairs in Array (EASY)
             //int[] nums = [1, 3, 2, 1, 3, 2, 2];
