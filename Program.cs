@@ -7766,6 +7766,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.GetDecimalValue(head));
 
+            ////(1291.) Sequential Digits (MEDIUM)
+            int low = 1000;
+            int high = 13000;
+
+            LeetCode_1291 classLeetCode = new LeetCode_1291();
+            Console.WriteLine(string.Join(',', classLeetCode.SequentialDigits(low, high)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SequentialDigits(low, high)));
+
             ////(1295.) Find Numbers with Even Number of Digits (EASY)
             //int[] nums = [12, 345, 2, 6, 7896];
 
@@ -8305,35 +8316,35 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumTeams(rating));
 
             ////(1396.) Design Underground System (MEDIUM)
-            LeetCode_1396.UndergroundSystem classLeetCode = new LeetCode_1396.UndergroundSystem();
-            classLeetCode.CheckIn(45, "Leyton", 3);
-            classLeetCode.CheckIn(32, "Paradise", 8);
-            classLeetCode.CheckIn(27, "Leyton", 10);
-            classLeetCode.CheckOut(45, "Waterloo", 15);
-            classLeetCode.CheckOut(27, "Waterloo", 20);  
-            classLeetCode.CheckOut(32, "Cambridge", 22); 
-            Console.WriteLine(classLeetCode.GetAverageTime("Paradise", "Cambridge"));
-            Console.WriteLine(classLeetCode.GetAverageTime("Leyton", "Waterloo"));    
-            classLeetCode.CheckIn(10, "Leyton", 24);
-            Console.WriteLine(classLeetCode.GetAverageTime("Leyton", "Waterloo"));   
-            classLeetCode.CheckOut(10, "Waterloo", 38);  
-            Console.WriteLine(classLeetCode.GetAverageTime("Leyton", "Waterloo"));
+            //LeetCode_1396.UndergroundSystem classLeetCode = new LeetCode_1396.UndergroundSystem();
+            //classLeetCode.CheckIn(45, "Leyton", 3);
+            //classLeetCode.CheckIn(32, "Paradise", 8);
+            //classLeetCode.CheckIn(27, "Leyton", 10);
+            //classLeetCode.CheckOut(45, "Waterloo", 15);
+            //classLeetCode.CheckOut(27, "Waterloo", 20);  
+            //classLeetCode.CheckOut(32, "Cambridge", 22); 
+            //Console.WriteLine(classLeetCode.GetAverageTime("Paradise", "Cambridge"));
+            //Console.WriteLine(classLeetCode.GetAverageTime("Leyton", "Waterloo"));    
+            //classLeetCode.CheckIn(10, "Leyton", 24);
+            //Console.WriteLine(classLeetCode.GetAverageTime("Leyton", "Waterloo"));   
+            //classLeetCode.CheckOut(10, "Waterloo", 38);  
+            //Console.WriteLine(classLeetCode.GetAverageTime("Leyton", "Waterloo"));
 
-            //OR
+            ////OR
 
-            LeetCodeAll.UndergroundSystem task1396 = new LeetCodeAll.UndergroundSystem();
-            task1396.CheckIn(45, "Leyton", 3);
-            task1396.CheckIn(32, "Paradise", 8);
-            task1396.CheckIn(27, "Leyton", 10);
-            task1396.CheckOut(45, "Waterloo", 15);
-            task1396.CheckOut(27, "Waterloo", 20);
-            task1396.CheckOut(32, "Cambridge", 22);
-            Console.WriteLine(task1396.GetAverageTime("Paradise", "Cambridge"));
-            Console.WriteLine(task1396.GetAverageTime("Leyton", "Waterloo"));
-            task1396.CheckIn(10, "Leyton", 24);
-            Console.WriteLine(task1396.GetAverageTime("Leyton", "Waterloo"));
-            task1396.CheckOut(10, "Waterloo", 38);
-            Console.WriteLine(task1396.GetAverageTime("Leyton", "Waterloo"));
+            //LeetCodeAll.UndergroundSystem task1396 = new LeetCodeAll.UndergroundSystem();
+            //task1396.CheckIn(45, "Leyton", 3);
+            //task1396.CheckIn(32, "Paradise", 8);
+            //task1396.CheckIn(27, "Leyton", 10);
+            //task1396.CheckOut(45, "Waterloo", 15);
+            //task1396.CheckOut(27, "Waterloo", 20);
+            //task1396.CheckOut(32, "Cambridge", 22);
+            //Console.WriteLine(task1396.GetAverageTime("Paradise", "Cambridge"));
+            //Console.WriteLine(task1396.GetAverageTime("Leyton", "Waterloo"));
+            //task1396.CheckIn(10, "Leyton", 24);
+            //Console.WriteLine(task1396.GetAverageTime("Leyton", "Waterloo"));
+            //task1396.CheckOut(10, "Waterloo", 38);
+            //Console.WriteLine(task1396.GetAverageTime("Leyton", "Waterloo"));
 
             ////(1399.) Count Largest Group (EASY)
             //int n = 13;

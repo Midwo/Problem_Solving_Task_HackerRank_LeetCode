@@ -33006,8 +33006,29 @@ namespace ProblemSolving
                 return (double)_routeFromTo[(startStation, endStation)][0] / _routeFromTo[(startStation, endStation)][1];
             }
         }
+        public IList<int> SequentialDigits(int low, int high)
+        {
+            IList<int> resultList = new List<int>();
+            int startLenght = low.ToString().Length;
+            int maxLenght = high.ToString().Length;
 
+            string pattern = "123456789";
 
+            while (startLenght <= maxLenght)
+            {
+                for (int index = 0; index <= 9 - startLenght; index++)
+                {
+                    int currValue = int.Parse(pattern[index..(index + startLenght)]);
+
+                    if (currValue >= low && currValue <= high)
+                        resultList.Add(currValue);
+                }
+
+                startLenght++;
+            }
+
+            return resultList;
+        }
 
 
 
