@@ -7767,15 +7767,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GetDecimalValue(head));
 
             ////(1291.) Sequential Digits (MEDIUM)
-            int low = 1000;
-            int high = 13000;
+            //int low = 1000;
+            //int high = 13000;
 
-            LeetCode_1291 classLeetCode = new LeetCode_1291();
-            Console.WriteLine(string.Join(',', classLeetCode.SequentialDigits(low, high)));
+            //LeetCode_1291 classLeetCode = new LeetCode_1291();
+            //Console.WriteLine(string.Join(',', classLeetCode.SequentialDigits(low, high)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SequentialDigits(low, high)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.SequentialDigits(low, high)));
 
             ////(1295.) Find Numbers with Even Number of Digits (EASY)
             //int[] nums = [12, 345, 2, 6, 7896];
@@ -12592,6 +12592,16 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+
+            ////(2614.) Prime In Diagonal (EASY)
+            int[][] nums = [[1, 2, 3], [5, 17, 7], [9, 11, 10]];
+
+            LeetCode_2614 classLeetCode = new LeetCode_2614();
+            Console.WriteLine(classLeetCode.DiagonalPrime(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DiagonalPrime(nums));
 
             ////(2615.) Sum of Distances (MEDIUM)
             //int[] nums = [1, 3, 1, 1, 2];
