@@ -12122,6 +12122,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountDistinctIntegers(nums));
 
+            ////(2443.) Sum of Number and Its Reverse (MEDIUM)
+            int num = 10;
+
+            LeetCode_2443 classLeetCode = new LeetCode_2443();
+            Console.WriteLine(classLeetCode.SumOfNumberAndReverse(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumOfNumberAndReverse(num));
+
             ////(2446.) Determine if Two Events Have Conflict (EASY)
             //string[] event1 = ["01:00", "02:00"];
             //string[] event2 = ["01:20", "03:00"];
@@ -12594,14 +12604,14 @@ namespace ProblemSolving
             //}
 
             ////(2614.) Prime In Diagonal (EASY)
-            int[][] nums = [[1, 2, 3], [5, 17, 7], [9, 11, 10]];
+            //int[][] nums = [[1, 2, 3], [5, 17, 7], [9, 11, 10]];
 
-            LeetCode_2614 classLeetCode = new LeetCode_2614();
-            Console.WriteLine(classLeetCode.DiagonalPrime(nums));
+            //LeetCode_2614 classLeetCode = new LeetCode_2614();
+            //Console.WriteLine(classLeetCode.DiagonalPrime(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DiagonalPrime(nums));
+            //Console.WriteLine(leetCodeAll.DiagonalPrime(nums));
 
             ////(2615.) Sum of Distances (MEDIUM)
             //int[] nums = [1, 3, 1, 1, 2];

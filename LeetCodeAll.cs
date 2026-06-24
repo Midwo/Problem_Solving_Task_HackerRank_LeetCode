@@ -33071,8 +33071,28 @@ namespace ProblemSolving
 
             return true;
         }
+        public bool SumOfNumberAndReverse(int num)
+        {
+            if (num == 0)
+                return true;
 
+            for (int firstValue = 1; firstValue < num; firstValue++)
+            {
+                int secondValue = num - firstValue;
+                int reverseSecondValue = 0;
+                while (secondValue != 0)
+                {
+                    reverseSecondValue *= 10;
+                    reverseSecondValue += secondValue % 10;
+                    secondValue /= 10;
+                }
 
+                if (firstValue == reverseSecondValue)
+                    return true;
+            }
+
+            return false;
+        }
 
 
 
