@@ -7650,7 +7650,7 @@ namespace ProblemSolving
 
             ////(1267.) Count Servers that Communicate (MEDIUM)
             //int[][] grid = [[1, 1, 0, 0], [0, 0, 1, 0], [0, 0, 1, 0], [0, 0, 0, 1]];
-            
+
             //LeetCode_1267 classLeetCode = new LeetCode_1267();
             //Console.WriteLine(classLeetCode.CountServers(grid));
 
@@ -12123,14 +12123,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountDistinctIntegers(nums));
 
             ////(2443.) Sum of Number and Its Reverse (MEDIUM)
-            int num = 10;
+            //int num = 10;
 
-            LeetCode_2443 classLeetCode = new LeetCode_2443();
-            Console.WriteLine(classLeetCode.SumOfNumberAndReverse(num));
+            //LeetCode_2443 classLeetCode = new LeetCode_2443();
+            //Console.WriteLine(classLeetCode.SumOfNumberAndReverse(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumOfNumberAndReverse(num));
+            //Console.WriteLine(leetCodeAll.SumOfNumberAndReverse(num));
 
             ////(2446.) Determine if Two Events Have Conflict (EASY)
             //string[] event1 = ["01:00", "02:00"];
@@ -15289,6 +15289,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinMoves(nums));
+
+            ////(3737.) Count Subarrays With Majority Element I (MEDIUM)
+            int[] nums = [1,2,2,3];
+            int target = 2;
+
+            LeetCode_3737 classLeetCode = new LeetCode_3737();
+            Console.WriteLine(classLeetCode.CountMajoritySubarrays(nums, target));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountMajoritySubarrays(nums, target));
 
             ////(3740.) Minimum Distance Between Three Equal Elements I (EASY)
             //int[] nums = [1, 1, 2, 3, 2, 1, 2];
