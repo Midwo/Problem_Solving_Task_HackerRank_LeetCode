@@ -6799,6 +6799,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.BitwiseComplement(n));
 
+            ////(1010.) Pairs of Songs With Total Durations Divisible by 60 (MEDIUM)
+            int[] time = [60,60,60];
+
+            LeetCode_1010 classLeetCode = new LeetCode_1010();
+            Console.WriteLine(classLeetCode.NumPairsDivisibleBy60(time));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumPairsDivisibleBy60(time));
+
             ////(1013.) Partition Array Into Three Parts With Equal Sum (EASY)
             //int[] arr = [18, 12, -18, 18, -19, -1, 10, 10];
 
@@ -15291,15 +15301,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinMoves(nums));
 
             ////(3737.) Count Subarrays With Majority Element I (MEDIUM)
-            int[] nums = [1,2,2,3];
-            int target = 2;
+            //int[] nums = [1,2,2,3];
+            //int target = 2;
 
-            LeetCode_3737 classLeetCode = new LeetCode_3737();
-            Console.WriteLine(classLeetCode.CountMajoritySubarrays(nums, target));
+            //LeetCode_3737 classLeetCode = new LeetCode_3737();
+            //Console.WriteLine(classLeetCode.CountMajoritySubarrays(nums, target));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountMajoritySubarrays(nums, target));
+            //Console.WriteLine(leetCodeAll.CountMajoritySubarrays(nums, target));
 
             ////(3740.) Minimum Distance Between Three Equal Elements I (EASY)
             //int[] nums = [1, 1, 2, 3, 2, 1, 2];
