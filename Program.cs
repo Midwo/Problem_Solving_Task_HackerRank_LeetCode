@@ -6800,14 +6800,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.BitwiseComplement(n));
 
             ////(1010.) Pairs of Songs With Total Durations Divisible by 60 (MEDIUM)
-            int[] time = [60,60,60];
+            //int[] time = [60,60,60];
 
-            LeetCode_1010 classLeetCode = new LeetCode_1010();
-            Console.WriteLine(classLeetCode.NumPairsDivisibleBy60(time));
+            //LeetCode_1010 classLeetCode = new LeetCode_1010();
+            //Console.WriteLine(classLeetCode.NumPairsDivisibleBy60(time));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumPairsDivisibleBy60(time));
+            //Console.WriteLine(leetCodeAll.NumPairsDivisibleBy60(time));
 
             ////(1013.) Partition Array Into Three Parts With Equal Sum (EASY)
             //int[] arr = [18, 12, -18, 18, -19, -1, 10, 10];
@@ -13481,6 +13481,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountKeyChanges(s));
+
+            ////(3020.) Find the Maximum Number of Elements in Subset (MEDIUM)
+            int[] nums = [4, 4, 16, 16, 256, 256, 65536, 65536];
+
+            LeetCode_3020 classLeetCode = new LeetCode_3020();
+            Console.WriteLine(classLeetCode.MaximumLength(nums));
+
+            ////OR
+
+            Console.WriteLine(leetCodeAll.MaximumLengthTask3020(nums));
 
             ////(3021.) Alice and Bob Playing Flower Game (MEDIUM)
             //int n = 3;
