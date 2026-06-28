@@ -10038,6 +10038,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ReplaceDigits(s));
 
+            ////(1846.) Maximum Element After Decreasing and Rearranging (MEDIUM)
+            int[] arr = [2, 2, 1, 2, 1];
+
+            LeetCode_1846 classLeetCode = new LeetCode_1846();
+            Console.WriteLine(classLeetCode.MaximumElementAfterDecrementingAndRearranging(arr));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumElementAfterDecrementingAndRearranging(arr));
+
             ////(1848.) Minimum Distance to the Target Element (EASY)
             //int[] nums = [1, 2, 3, 4, 5];
             //int target = 5;
@@ -13483,14 +13493,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountKeyChanges(s));
 
             ////(3020.) Find the Maximum Number of Elements in Subset (MEDIUM)
-            int[] nums = [4, 4, 16, 16, 256, 256, 65536, 65536];
+            //int[] nums = [4, 4, 16, 16, 256, 256, 65536, 65536];
 
-            LeetCode_3020 classLeetCode = new LeetCode_3020();
-            Console.WriteLine(classLeetCode.MaximumLength(nums));
+            //LeetCode_3020 classLeetCode = new LeetCode_3020();
+            //Console.WriteLine(classLeetCode.MaximumLength(nums));
 
-            ////OR
+            //////OR
 
-            Console.WriteLine(leetCodeAll.MaximumLengthTask3020(nums));
+            //Console.WriteLine(leetCodeAll.MaximumLengthTask3020(nums));
 
             ////(3021.) Alice and Bob Playing Flower Game (MEDIUM)
             //int n = 3;
