@@ -10039,14 +10039,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReplaceDigits(s));
 
             ////(1846.) Maximum Element After Decreasing and Rearranging (MEDIUM)
-            int[] arr = [2, 2, 1, 2, 1];
+            //int[] arr = [2, 2, 1, 2, 1];
 
-            LeetCode_1846 classLeetCode = new LeetCode_1846();
-            Console.WriteLine(classLeetCode.MaximumElementAfterDecrementingAndRearranging(arr));
+            //LeetCode_1846 classLeetCode = new LeetCode_1846();
+            //Console.WriteLine(classLeetCode.MaximumElementAfterDecrementingAndRearranging(arr));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumElementAfterDecrementingAndRearranging(arr));
+            //Console.WriteLine(leetCodeAll.MaximumElementAfterDecrementingAndRearranging(arr));
 
             ////(1848.) Minimum Distance to the Target Element (EASY)
             //int[] nums = [1, 2, 3, 4, 5];
@@ -13156,6 +13156,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(classLeetCode.NumberOfPoints(nums));
 
+            ////(2855.) Minimum Right Shifts to Sort the Array (EASY)
+            IList<int> nums = [2, 1, 4];
+
+            LeetCode_2855 classLeetCode = new LeetCode_2855();
+            Console.WriteLine(classLeetCode.MinimumRightShifts(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumRightShifts(nums));
+            
             ////(2859.) Sum of Values at Indices With K Set Bits (EASY)
             //IList<int> nums = [5, 10, 1, 5, 2];
             //int k = 1;

@@ -33245,6 +33245,44 @@ namespace ProblemSolving
 
             return maxLength;
         }
+        public int MinimumRightShifts(IList<int> nums)
+        {
+            bool shiftDetect = false;
+            int lenght = nums.Count;
+            int lastValue = -1;
+            int indexShift = -1;
+
+            for (int index = 0; index < lenght; index++)
+            {
+                int currValue = nums[index];
+                if (lastValue > currValue)
+                {
+                    if (shiftDetect) return -1;
+                    shiftDetect = true;
+                    indexShift = index;
+                }
+                lastValue = currValue;
+            }
+
+            if (shiftDetect && nums[0] < nums[lenght - 1])
+            {
+                return -1;
+            }
+
+            return shiftDetect == false ? 0 : lenght - indexShift;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
