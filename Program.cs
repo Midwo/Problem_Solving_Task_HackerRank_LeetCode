@@ -8163,6 +8163,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.SortByBits(arr)));
 
+            ////(1358.) Number of Substrings Containing All Three Characters (MEDIUM)
+            string s = "abcabc";
+
+            LeetCode_1358 classLeetCode = new LeetCode_1358();
+            Console.WriteLine(classLeetCode.NumberOfSubstrings(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.NumberOfSubstrings(s));
+
             ////(1365.) How Many Numbers Are Smaller Than the Current Number (EASY)
             //int[] nums = [8, 1, 2, 2, 3];
 
@@ -13157,15 +13167,15 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.NumberOfPoints(nums));
 
             ////(2855.) Minimum Right Shifts to Sort the Array (EASY)
-            IList<int> nums = [2, 1, 4];
+            //IList<int> nums = [2, 1, 4];
 
-            LeetCode_2855 classLeetCode = new LeetCode_2855();
-            Console.WriteLine(classLeetCode.MinimumRightShifts(nums));
+            //LeetCode_2855 classLeetCode = new LeetCode_2855();
+            //Console.WriteLine(classLeetCode.MinimumRightShifts(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumRightShifts(nums));
-            
+            //Console.WriteLine(leetCodeAll.MinimumRightShifts(nums));
+
             ////(2859.) Sum of Values at Indices With K Set Bits (EASY)
             //IList<int> nums = [5, 10, 1, 5, 2];
             //int k = 1;
