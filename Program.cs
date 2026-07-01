@@ -8164,14 +8164,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SortByBits(arr)));
 
             ////(1358.) Number of Substrings Containing All Three Characters (MEDIUM)
-            string s = "abcabc";
+            //string s = "abcabc";
 
-            LeetCode_1358 classLeetCode = new LeetCode_1358();
-            Console.WriteLine(classLeetCode.NumberOfSubstrings(s));
+            //LeetCode_1358 classLeetCode = new LeetCode_1358();
+            //Console.WriteLine(classLeetCode.NumberOfSubstrings(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.NumberOfSubstrings(s));
+            //Console.WriteLine(leetCodeAll.NumberOfSubstrings(s));
 
             ////(1365.) How Many Numbers Are Smaller Than the Current Number (EASY)
             //int[] nums = [8, 1, 2, 2, 3];
@@ -11016,6 +11016,19 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsSameAfterReversals(num));
+
+            ////(2120.) Execution of All Suffix Instructions Staying in a Grid (MEDIUM)
+            int n = 3;
+            int[] startPos = [0,1];
+            string s = "RRDDLU";
+
+            LeetCode_2120 classLeetCode = new LeetCode_2120();
+
+            Console.WriteLine(string.Join(',',classLeetCode.ExecuteInstructions(n, startPos, s)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', classLeetCode.ExecuteInstructions(n, startPos, s)));
 
             ////(2124.) Check if All A's Appears Before All B's (EASY)
             //string s = "aaabbb";
