@@ -11018,17 +11018,17 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsSameAfterReversals(num));
 
             ////(2120.) Execution of All Suffix Instructions Staying in a Grid (MEDIUM)
-            int n = 3;
-            int[] startPos = [0,1];
-            string s = "RRDDLU";
+            //int n = 3;
+            //int[] startPos = [0,1];
+            //string s = "RRDDLU";
 
-            LeetCode_2120 classLeetCode = new LeetCode_2120();
+            //LeetCode_2120 classLeetCode = new LeetCode_2120();
 
-            Console.WriteLine(string.Join(',',classLeetCode.ExecuteInstructions(n, startPos, s)));
+            //Console.WriteLine(string.Join(',',classLeetCode.ExecuteInstructions(n, startPos, s)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', classLeetCode.ExecuteInstructions(n, startPos, s)));
+            //Console.WriteLine(string.Join(',', classLeetCode.ExecuteInstructions(n, startPos, s)));
 
             ////(2124.) Check if All A's Appears Before All B's (EASY)
             //string s = "aaabbb";
@@ -15539,6 +15539,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinCost(n));
+
+            ////(3871.) Count Commas in Range II (MEDIUM)
+            long n = 1133;
+
+            LeetCode_3871 classLeetCode = new LeetCode_3871();
+            Console.WriteLine(classLeetCode.CountCommas(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountCommas(n));
 
             ////(3894.) Traffic Signal Color (EASY)
             //int timer = 60;

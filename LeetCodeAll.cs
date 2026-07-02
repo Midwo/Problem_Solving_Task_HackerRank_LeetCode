@@ -33368,8 +33368,20 @@ namespace ProblemSolving
 
             return resultTable;
         }
+        public long CountCommas(long n)
+        {
+            long countCommas = 0;
+            long multiplier = 1000;
 
+            while (n >= multiplier)
+            {
+                long diff = (n - multiplier + 1);
+                countCommas += diff;
+                multiplier *= 1000;
+            }
 
+            return countCommas;
+        }
 
 
 
