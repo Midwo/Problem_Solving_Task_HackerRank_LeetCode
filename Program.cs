@@ -15456,6 +15456,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinMirrorPairDistance(nums));
 
+            ////(3765.) Complete Prime Number (MEDIUM)
+            int num = 1;
+
+            LeetCode_3765 classLeetCode = new LeetCode_3765();
+            Console.WriteLine(classLeetCode.CompletePrime(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CompletePrime(num));
+
             ////(3783.) Mirror Distance of an Integer (EASY)
             //int n = 25;
 
@@ -15541,14 +15551,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinCost(n));
 
             ////(3871.) Count Commas in Range II (MEDIUM)
-            long n = 1133;
+            //long n = 1133;
 
-            LeetCode_3871 classLeetCode = new LeetCode_3871();
-            Console.WriteLine(classLeetCode.CountCommas(n));
+            //LeetCode_3871 classLeetCode = new LeetCode_3871();
+            //Console.WriteLine(classLeetCode.CountCommas(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountCommas(n));
+            //Console.WriteLine(leetCodeAll.CountCommas(n));
 
             ////(3894.) Traffic Signal Color (EASY)
             //int timer = 60;
