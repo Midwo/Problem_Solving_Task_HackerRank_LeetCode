@@ -15301,6 +15301,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ScoreBalance(s));
 
+            ////(3708.) Longest Fibonacci Subarray (MEDIUM)
+            int[] nums = [1, 2, 1];
+
+            LeetCode_3708 classLeetCode = new LeetCode_3708();
+            Console.WriteLine(classLeetCode.LongestSubarray(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LongestSubarrayTask3708(nums));
+
             ////(3712.) Sum of Elements With Frequency Divisible by K (EASY)
             //int[] nums = [1, 2, 2, 3, 3, 3, 3, 4];
             //int k = 2;
@@ -15457,14 +15467,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinMirrorPairDistance(nums));
 
             ////(3765.) Complete Prime Number (MEDIUM)
-            int num = 1;
+            //int num = 1;
 
-            LeetCode_3765 classLeetCode = new LeetCode_3765();
-            Console.WriteLine(classLeetCode.CompletePrime(num));
+            //LeetCode_3765 classLeetCode = new LeetCode_3765();
+            //Console.WriteLine(classLeetCode.CompletePrime(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CompletePrime(num));
+            //Console.WriteLine(leetCodeAll.CompletePrime(num));
 
             ////(3783.) Mirror Distance of an Integer (EASY)
             //int n = 25;
