@@ -33507,8 +33507,34 @@ namespace ProblemSolving
 
             //return maxLength;
         }
+        public string MaxValue(string n, int x)
+        {
+            int length = n.Length;
+            char charX = (char)('0' + x);
 
+            if (n[0] == '-')
+            {
+                for (int index = 1; index < length; index++)
+                {
+                    if (n[index] > charX)
+                    {
+                        return n[0..(index)] + x + n[(index)..length];
+                    }
+                }
+            }
+            else
+            {
+                for (int index = 0; index < length; index++)
+                {
+                    if (n[index] < charX)
+                    {
+                        return n[0..(index)] + x + n[(index)..length];
+                    }
+                }
+            }
 
+            return n + x;
+        }
 
 
 

@@ -10194,6 +10194,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsSumEqual(firstWord, secondWord, targetWord));
 
+            ////(1881.) Maximum Value after Insertion (MEDIUM)
+            string n = "2882457915";
+            int x = 8;
+
+            LeetCode_1881 classLeetCode = new LeetCode_1881();
+            Console.WriteLine(classLeetCode.MaxValue(n, x));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxValue(n, x));
+
             ////(1886.) Determine Whether Matrix Can Be Obtained By Rotatio (EASY)
             //int[][] mat = [[0, 0, 0], [0, 1, 0], [1, 1, 1]];
             //int[][] target = [[1,1,1],[0,1,0],[0,0,0]];
@@ -15302,14 +15313,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ScoreBalance(s));
 
             ////(3708.) Longest Fibonacci Subarray (MEDIUM)
-            int[] nums = [1, 2, 1];
+            //int[] nums = [1, 2, 1];
 
-            LeetCode_3708 classLeetCode = new LeetCode_3708();
-            Console.WriteLine(classLeetCode.LongestSubarray(nums));
+            //LeetCode_3708 classLeetCode = new LeetCode_3708();
+            //Console.WriteLine(classLeetCode.LongestSubarray(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LongestSubarrayTask3708(nums));
+            //Console.WriteLine(leetCodeAll.LongestSubarrayTask3708(nums));
 
             ////(3712.) Sum of Elements With Frequency Divisible by K (EASY)
             //int[] nums = [1, 2, 2, 3, 3, 3, 3, 4];
