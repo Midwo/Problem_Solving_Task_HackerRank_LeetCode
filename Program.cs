@@ -10195,15 +10195,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsSumEqual(firstWord, secondWord, targetWord));
 
             ////(1881.) Maximum Value after Insertion (MEDIUM)
-            string n = "2882457915";
-            int x = 8;
+            //string n = "2882457915";
+            //int x = 8;
 
-            LeetCode_1881 classLeetCode = new LeetCode_1881();
-            Console.WriteLine(classLeetCode.MaxValue(n, x));
+            //LeetCode_1881 classLeetCode = new LeetCode_1881();
+            //Console.WriteLine(classLeetCode.MaxValue(n, x));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxValue(n, x));
+            //Console.WriteLine(leetCodeAll.MaxValue(n, x));
 
             ////(1886.) Determine Whether Matrix Can Be Obtained By Rotatio (EASY)
             //int[][] mat = [[0, 0, 0], [0, 1, 0], [1, 1, 1]];
@@ -15445,6 +15445,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SumAndMultiply(n));
+
+            ////(3756.) Concatenate Non-Zero Digits and Multiply by Sum II (MEDIUM)
+            string s = "10203004";
+            int[][] queries = [[0, 7], [1, 3], [4, 6]];
+
+            LeetCode_3756 classLeetCode = new LeetCode_3756();
+            Console.WriteLine(string.Join(',', classLeetCode.SumAndMultiply(s, queries)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SumAndMultiply(s, queries)));
 
             ////(3759.) Count Elements With at Least K Greater Values (MEDIUM)
             //int[] nums = [3,2,1];
