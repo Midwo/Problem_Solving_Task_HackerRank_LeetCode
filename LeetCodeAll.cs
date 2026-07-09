@@ -33591,8 +33591,28 @@ namespace ProblemSolving
 
             return resultArray;
         }
+        public bool[] PathExistenceQueries(int n, int[] nums, int maxDiff, int[][] queries)
+        {
+            bool[] result = new bool[queries.Length];
 
+            int[] counterMoreMaxDiff = new int[n];
+            int currCounterMoreMaxDiff = 0;
 
+            for (int index = 1; index < n; index++)
+            {
+                if (nums[index] - nums[index - 1] > maxDiff)
+                    currCounterMoreMaxDiff++;
+
+                counterMoreMaxDiff[index] = currCounterMoreMaxDiff;
+            }
+
+            for (int indexQueries = 0; indexQueries < queries.Length; indexQueries++)
+            {
+                result[indexQueries] = counterMoreMaxDiff[queries[indexQueries][0]] == counterMoreMaxDiff[queries[indexQueries][1]];
+            }
+
+            return result;
+        }
 
 
 

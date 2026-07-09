@@ -14928,6 +14928,19 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindCommonResponse(responses));
 
+            ////(3532.) Path Existence Queries in a Graph I (MEDIUM)
+            int n = 2;
+            int[] nums = [52719, 87657];
+            int maxDiff = 52;
+            int[][] queries = [[0, 0]];
+
+            LeetCode_3532 classLeetCode = new LeetCode_3532();
+            Console.WriteLine(string.Join(',', classLeetCode.PathExistenceQueries(n, nums, maxDiff, queries)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.PathExistenceQueries(n, nums, maxDiff, queries)));
+
             ////(3536.) Maximum Product of Two Digits (EASY)
             //int n = 124;
 
@@ -15447,15 +15460,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumAndMultiply(n));
 
             ////(3756.) Concatenate Non-Zero Digits and Multiply by Sum II (MEDIUM)
-            string s = "10203004";
-            int[][] queries = [[0, 7], [1, 3], [4, 6]];
+            //string s = "10203004";
+            //int[][] queries = [[0, 7], [1, 3], [4, 6]];
 
-            LeetCode_3756 classLeetCode = new LeetCode_3756();
-            Console.WriteLine(string.Join(',', classLeetCode.SumAndMultiply(s, queries)));
+            //LeetCode_3756 classLeetCode = new LeetCode_3756();
+            //Console.WriteLine(string.Join(',', classLeetCode.SumAndMultiply(s, queries)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SumAndMultiply(s, queries)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.SumAndMultiply(s, queries)));
 
             ////(3759.) Count Elements With at Least K Greater Values (MEDIUM)
             //int[] nums = [3,2,1];
