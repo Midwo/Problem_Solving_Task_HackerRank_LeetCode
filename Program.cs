@@ -14929,17 +14929,17 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindCommonResponse(responses));
 
             ////(3532.) Path Existence Queries in a Graph I (MEDIUM)
-            int n = 2;
-            int[] nums = [52719, 87657];
-            int maxDiff = 52;
-            int[][] queries = [[0, 0]];
+            //int n = 2;
+            //int[] nums = [52719, 87657];
+            //int maxDiff = 52;
+            //int[][] queries = [[0, 0]];
 
-            LeetCode_3532 classLeetCode = new LeetCode_3532();
-            Console.WriteLine(string.Join(',', classLeetCode.PathExistenceQueries(n, nums, maxDiff, queries)));
+            //LeetCode_3532 classLeetCode = new LeetCode_3532();
+            //Console.WriteLine(string.Join(',', classLeetCode.PathExistenceQueries(n, nums, maxDiff, queries)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.PathExistenceQueries(n, nums, maxDiff, queries)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.PathExistenceQueries(n, nums, maxDiff, queries)));
 
             ////(3536.) Maximum Product of Two Digits (EASY)
             //int n = 124;
@@ -15553,6 +15553,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.BestTower(towers, center, radius)));
+
+            ////(3819.) Rotate Non Negative Elements (MEDIUM)
+            int[] nums = [0];
+            int k = 10000;
+
+            LeetCode_3819 classLeetCode = new LeetCode_3819();
+            Console.WriteLine(string.Join(',', classLeetCode.RotateElements(nums, k)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.RotateElements(nums, k)));
 
             ////(3823.) Reverse Letters Then Special Characters in a String (EASY)
             //string s = ")ebc#da@f(";
