@@ -12856,6 +12856,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountSeniors(details));
 
+            ////(2682.) Find the Losers of the Circular Game (EASY)
+            int n = 5;
+            int k = 3;
+
+            LeetCode_2682 classLeetCode = new LeetCode_2682();
+            Console.WriteLine(string.Join(',', classLeetCode.CircularGameLosers(n, k)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.CircularGameLosers(n, k)));
+
             ////(2696.) Minimum String Length After Removing Substrings (EASY)
             //string s = "ABFCACDB";
 
@@ -15555,15 +15566,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.BestTower(towers, center, radius)));
 
             ////(3819.) Rotate Non Negative Elements (MEDIUM)
-            int[] nums = [0];
-            int k = 10000;
+            //int[] nums = [0];
+            //int k = 10000;
 
-            LeetCode_3819 classLeetCode = new LeetCode_3819();
-            Console.WriteLine(string.Join(',', classLeetCode.RotateElements(nums, k)));
+            //LeetCode_3819 classLeetCode = new LeetCode_3819();
+            //Console.WriteLine(string.Join(',', classLeetCode.RotateElements(nums, k)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.RotateElements(nums, k)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.RotateElements(nums, k)));
 
             ////(3823.) Reverse Letters Then Special Characters in a String (EASY)
             //string s = ")ebc#da@f(";
