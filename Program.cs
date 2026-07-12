@@ -6175,6 +6175,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ShiftingLetters(s, shifts));
 
+            ////(849.) Maximize Distance to Closest Person (MEDIUM)
+            int[] seats = [1, 0, 0, 1];
+
+            LeetCode_849 classLeetCode = new LeetCode_849();
+            Console.WriteLine(classLeetCode.MaxDistToClosest(seats));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxDistToClosest(seats));
+
             ////(852.) Peak Index in a Mountain Array (MEDIUM)
             //int[] arr = [0, 10, 5, 2];
 
@@ -12857,15 +12867,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountSeniors(details));
 
             ////(2682.) Find the Losers of the Circular Game (EASY)
-            int n = 5;
-            int k = 3;
+            //int n = 5;
+            //int k = 3;
 
-            LeetCode_2682 classLeetCode = new LeetCode_2682();
-            Console.WriteLine(string.Join(',', classLeetCode.CircularGameLosers(n, k)));
+            //LeetCode_2682 classLeetCode = new LeetCode_2682();
+            //Console.WriteLine(string.Join(',', classLeetCode.CircularGameLosers(n, k)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.CircularGameLosers(n, k)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.CircularGameLosers(n, k)));
 
             ////(2696.) Minimum String Length After Removing Substrings (EASY)
             //string s = "ABFCACDB";
