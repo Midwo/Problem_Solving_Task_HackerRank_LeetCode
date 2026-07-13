@@ -6176,14 +6176,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ShiftingLetters(s, shifts));
 
             ////(849.) Maximize Distance to Closest Person (MEDIUM)
-            int[] seats = [1, 0, 0, 1];
+            //int[] seats = [1, 0, 0, 1];
 
-            LeetCode_849 classLeetCode = new LeetCode_849();
-            Console.WriteLine(classLeetCode.MaxDistToClosest(seats));
+            //LeetCode_849 classLeetCode = new LeetCode_849();
+            //Console.WriteLine(classLeetCode.MaxDistToClosest(seats));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxDistToClosest(seats));
+            //Console.WriteLine(leetCodeAll.MaxDistToClosest(seats));
 
             ////(852.) Peak Index in a Mountain Array (MEDIUM)
             //int[] arr = [0, 10, 5, 2];
@@ -7900,6 +7900,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.GetNoZeroIntegers(n)));
+
+            ////(1318.) Minimum Flips to Make a OR b Equal to c (MEDIUM)
+            int a = 2;
+            int b = 6;
+            int c = 5;
+
+            LeetCode_1318 classLeetCode = new LeetCode_1318();
+            Console.WriteLine(classLeetCode.MinFlips(a, b, c));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinFlips(a, b, c));
 
             ////(1321.) Restaurant Growth (MEDIUM)
             //string SqlQuery =
