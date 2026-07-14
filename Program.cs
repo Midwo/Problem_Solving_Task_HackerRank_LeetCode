@@ -7902,16 +7902,16 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.GetNoZeroIntegers(n)));
 
             ////(1318.) Minimum Flips to Make a OR b Equal to c (MEDIUM)
-            int a = 2;
-            int b = 6;
-            int c = 5;
+            //int a = 2;
+            //int b = 6;
+            //int c = 5;
 
-            LeetCode_1318 classLeetCode = new LeetCode_1318();
-            Console.WriteLine(classLeetCode.MinFlips(a, b, c));
+            //LeetCode_1318 classLeetCode = new LeetCode_1318();
+            //Console.WriteLine(classLeetCode.MinFlips(a, b, c));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinFlips(a, b, c));
+            //Console.WriteLine(leetCodeAll.MinFlips(a, b, c));
 
             ////(1321.) Restaurant Growth (MEDIUM)
             //string SqlQuery =
@@ -14529,6 +14529,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SmallestNumber(n));
+
+            ////(3375.) Minimum Operations to Make Array Values Equal to K (EASY)
+            int[] nums = [5,2,5,4,5];
+            int k = 2;
+
+            LeetCode_3375 classLeetCode = new LeetCode_3375();
+            Console.WriteLine(classLeetCode.MinOperations(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperationsTask3375(nums, k));
 
             ////(3379.) Transformed Array (EASY)
             //int[] nums = [-10, -10];

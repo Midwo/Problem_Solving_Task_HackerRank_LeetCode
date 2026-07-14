@@ -33752,8 +33752,20 @@ namespace ProblemSolving
 
             return countFlips;
         }
+        public int MinOperationsTask3375(int[] nums, int k)
+        {
+            HashSet<int> distValuesGreaterThanK = new();
 
+            foreach (int num in nums)
+            {
+                if (num < k)
+                    return -1;
+                else if (num > k)
+                    distValuesGreaterThanK.Add(num);
+            }
 
+            return distValuesGreaterThanK.Count;
+        }
 
 
 
