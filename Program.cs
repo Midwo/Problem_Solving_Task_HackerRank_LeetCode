@@ -11985,6 +11985,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimumRecolors(blocks, k));
 
+            ////(2389.) Longest Subsequence With Limited Sum (EASY)
+            int[] nums = [2, 3, 4, 5];
+            int[] queries = [1];
+
+            LeetCode_2389 classLeetCode = new LeetCode_2389();
+            Console.WriteLine(string.Join(',',classLeetCode.AnswerQueries(nums, queries)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.AnswerQueries(nums, queries)));
+
             ////(2390.) Removing Stars From a String (MEDIUM)
             //string s = "leet**cod*e";
 
@@ -14531,15 +14542,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SmallestNumber(n));
 
             ////(3375.) Minimum Operations to Make Array Values Equal to K (EASY)
-            int[] nums = [5,2,5,4,5];
-            int k = 2;
+            //int[] nums = [5,2,5,4,5];
+            //int k = 2;
 
-            LeetCode_3375 classLeetCode = new LeetCode_3375();
-            Console.WriteLine(classLeetCode.MinOperations(nums, k));
+            //LeetCode_3375 classLeetCode = new LeetCode_3375();
+            //Console.WriteLine(classLeetCode.MinOperations(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperationsTask3375(nums, k));
+            //Console.WriteLine(leetCodeAll.MinOperationsTask3375(nums, k));
 
             ////(3379.) Transformed Array (EASY)
             //int[] nums = [-10, -10];
