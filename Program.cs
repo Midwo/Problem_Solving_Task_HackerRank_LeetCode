@@ -11986,15 +11986,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumRecolors(blocks, k));
 
             ////(2389.) Longest Subsequence With Limited Sum (EASY)
-            int[] nums = [2, 3, 4, 5];
-            int[] queries = [1];
+            //int[] nums = [2, 3, 4, 5];
+            //int[] queries = [1];
 
-            LeetCode_2389 classLeetCode = new LeetCode_2389();
-            Console.WriteLine(string.Join(',',classLeetCode.AnswerQueries(nums, queries)));
+            //LeetCode_2389 classLeetCode = new LeetCode_2389();
+            //Console.WriteLine(string.Join(',',classLeetCode.AnswerQueries(nums, queries)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.AnswerQueries(nums, queries)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.AnswerQueries(nums, queries)));
 
             ////(2390.) Removing Stars From a String (MEDIUM)
             //string s = "leet**cod*e";
@@ -13635,6 +13635,17 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+
+            ////(3034.) Number of Subarrays That Match a Pattern I (MEDIUM)
+            int[] nums = [376068870, 376068870, 376068870, 412890845];
+            int[] pattern = [0,1];
+
+            LeetCode_3034 classLeetCode = new LeetCode_3034();
+            Console.WriteLine(classLeetCode.CountMatchingSubarrays(nums, pattern));
+
+            //OR
+
+            Console.WriteLine(classLeetCode.CountMatchingSubarrays(nums, pattern));
 
             ////(3038.) Maximum Number of Operations With the Same Score I (EASY)
             //int[] nums = [1, 5, 3, 3, 4, 1, 3, 2, 2, 3];
