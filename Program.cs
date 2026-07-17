@@ -10929,6 +10929,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.GetAverages(nums, k)));
 
+            ////(2091.) Removing Minimum and Maximum From Array (MEDIUM)
+            int[] nums = [-87, 60, -30, -67, 74, 55, 76, -53];
+
+            LeetCode_2091 classLeetCode = new LeetCode_2091();
+            Console.WriteLine(classLeetCode.MinimumDeletions(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumDeletions(nums));
+
             ////(2094.) Finding 3-Digit Even Numbers (EASY)
             //int[] digits = [2, 1, 3, 0];
 
@@ -13637,15 +13647,15 @@ namespace ProblemSolving
             //}
 
             ////(3034.) Number of Subarrays That Match a Pattern I (MEDIUM)
-            int[] nums = [376068870, 376068870, 376068870, 412890845];
-            int[] pattern = [0,1];
+            //int[] nums = [376068870, 376068870, 376068870, 412890845];
+            //int[] pattern = [0,1];
 
-            LeetCode_3034 classLeetCode = new LeetCode_3034();
-            Console.WriteLine(classLeetCode.CountMatchingSubarrays(nums, pattern));
+            //LeetCode_3034 classLeetCode = new LeetCode_3034();
+            //Console.WriteLine(classLeetCode.CountMatchingSubarrays(nums, pattern));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(classLeetCode.CountMatchingSubarrays(nums, pattern));
+            //Console.WriteLine(classLeetCode.CountMatchingSubarrays(nums, pattern));
 
             ////(3038.) Maximum Number of Operations With the Same Score I (EASY)
             //int[] nums = [1, 5, 3, 3, 4, 1, 3, 2, 2, 3];
