@@ -10930,14 +10930,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.GetAverages(nums, k)));
 
             ////(2091.) Removing Minimum and Maximum From Array (MEDIUM)
-            int[] nums = [-87, 60, -30, -67, 74, 55, 76, -53];
+            //int[] nums = [-87, 60, -30, -67, 74, 55, 76, -53];
 
-            LeetCode_2091 classLeetCode = new LeetCode_2091();
-            Console.WriteLine(classLeetCode.MinimumDeletions(nums));
+            //LeetCode_2091 classLeetCode = new LeetCode_2091();
+            //Console.WriteLine(classLeetCode.MinimumDeletions(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumDeletions(nums));
+            //Console.WriteLine(leetCodeAll.MinimumDeletions(nums));
 
             ////(2094.) Finding 3-Digit Even Numbers (EASY)
             //int[] digits = [2, 1, 3, 0];
@@ -15370,6 +15370,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaxTotalValue(nums, k));
+
+            ////(3692.) Majority Frequency Characters (EASY)
+            string s = "aaabbbccdddde";
+
+            LeetCode_3692 classLeetCode = new LeetCode_3692();
+            Console.WriteLine(classLeetCode.MajorityFrequencyGroup(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MajorityFrequencyGroup(s));
 
             ////(3697.) Compute Decimal Representation (EASY)
             //int n = 537;
