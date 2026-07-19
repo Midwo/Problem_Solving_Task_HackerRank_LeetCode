@@ -7119,6 +7119,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumTilePossibilities(tiles));
 
+            ////(1081.) Smallest Subsequence of Distinct Characters (MEDIUM)
+            string s = "cbacdcbc";
+
+            LeetCode_1081 classLeetCode = new LeetCode_1081();
+            Console.WriteLine(classLeetCode.SmallestSubsequence(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SmallestSubsequence(s));
+
             ////(1084.) Sales Analysis III (EASY)
             //string SqlQuery =
             //    @"
@@ -15372,14 +15382,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxTotalValue(nums, k));
 
             ////(3692.) Majority Frequency Characters (EASY)
-            string s = "aaabbbccdddde";
+            //string s = "aaabbbccdddde";
 
-            LeetCode_3692 classLeetCode = new LeetCode_3692();
-            Console.WriteLine(classLeetCode.MajorityFrequencyGroup(s));
+            //LeetCode_3692 classLeetCode = new LeetCode_3692();
+            //Console.WriteLine(classLeetCode.MajorityFrequencyGroup(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MajorityFrequencyGroup(s));
+            //Console.WriteLine(leetCodeAll.MajorityFrequencyGroup(s));
 
             ////(3697.) Compute Decimal Representation (EASY)
             //int n = 537;
