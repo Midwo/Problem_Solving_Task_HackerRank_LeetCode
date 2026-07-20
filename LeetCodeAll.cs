@@ -33958,7 +33958,7 @@ namespace ProblemSolving
 
             return sb.ToString();
         }
-        public long CountCompleteDayPairs3185(int[] hours)
+        public long CountCompleteDayPairsTask3185(int[] hours)
         {
             long result = 0;
             long[] countRestModulo = new long[24];
