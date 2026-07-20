@@ -7120,14 +7120,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumTilePossibilities(tiles));
 
             ////(1081.) Smallest Subsequence of Distinct Characters (MEDIUM)
-            string s = "cbacdcbc";
+            //string s = "cbacdcbc";
 
-            LeetCode_1081 classLeetCode = new LeetCode_1081();
-            Console.WriteLine(classLeetCode.SmallestSubsequence(s));
+            //LeetCode_1081 classLeetCode = new LeetCode_1081();
+            //Console.WriteLine(classLeetCode.SmallestSubsequence(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SmallestSubsequence(s));
+            //Console.WriteLine(leetCodeAll.SmallestSubsequence(s));
 
             ////(1084.) Sales Analysis III (EASY)
             //string SqlQuery =
@@ -14073,6 +14073,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountCompleteDayPairs(hours));
+
+            ////(3185.) Count Pairs That Form a Complete Day II (MEDIUM)
+            int[] hours = [72, 48, 24, 3];
+
+            LeetCode_3185 classLeetCode = new LeetCode_3185();
+            Console.WriteLine(classLeetCode.CountCompleteDayPairs(hours));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountCompleteDayPairsTask3185(hours));
 
             ////(3190.) Find Minimum Operations to Make All Elements Divisible by Three (EASY)
             //int[] nums = [1, 2, 3, 4];
