@@ -33958,7 +33958,7 @@ namespace ProblemSolving
 
             return sb.ToString();
         }
-        public long CountCompleteDayPairsTask3185(int[] hours)
+        public long CountCompleteDayPairs3185(int[] hours)
         {
             long result = 0;
             long[] countRestModulo = new long[24];
@@ -33972,14 +33972,14 @@ namespace ProblemSolving
 
             if (currCountModulo >= 2)
             {
-                result += ((countRestModulo[0] - 1) + 1) * (countRestModulo[0] - 1) / 2;
+                result += ((currCountModulo - 1) + 1) * (currCountModulo - 1) / 2;
             }
 
             currCountModulo = countRestModulo[12];
 
             if (currCountModulo >= 2)
             {
-                result += ((countRestModulo[12] - 1) + 1) * (countRestModulo[12] - 1) / 2;
+                result += ((currCountModulo - 1) + 1) * (currCountModulo - 1) / 2;
             }
 
             for (int i = 1; i < 12; i++)
@@ -33989,7 +33989,6 @@ namespace ProblemSolving
 
             return result;
         }
-
 
 
 
