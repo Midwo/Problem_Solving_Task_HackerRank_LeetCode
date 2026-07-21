@@ -14075,14 +14075,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountCompleteDayPairs(hours));
 
             ////(3185.) Count Pairs That Form a Complete Day II (MEDIUM)
-            int[] hours = [72, 48, 24, 3];
+            //int[] hours = [72, 48, 24, 3];
 
-            LeetCode_3185 classLeetCode = new LeetCode_3185();
-            Console.WriteLine(classLeetCode.CountCompleteDayPairs(hours));
+            //LeetCode_3185 classLeetCode = new LeetCode_3185();
+            //Console.WriteLine(classLeetCode.CountCompleteDayPairs(hours));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountCompleteDayPairsTask3185(hours));
+            //Console.WriteLine(leetCodeAll.CountCompleteDayPairsTask3185(hours));
 
             ////(3190.) Find Minimum Operations to Make All Elements Divisible by Three (EASY)
             //int[] nums = [1, 2, 3, 4];
@@ -14949,6 +14949,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ReverseDegree(s));
+
+            ////(3499.) Maximize Active Section with Trade I (MEDIUM)
+            string s = "11";
+
+            LeetCode_3499 classLeetCode = new LeetCode_3499();
+            Console.WriteLine(classLeetCode.MaxActiveSectionsAfterTrade(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxActiveSectionsAfterTrade(s));
 
             ////(3502.) Minimum Cost to Reach Every Position (EASY)
             //int[] cost = [5, 3, 4, 1, 3, 2];
