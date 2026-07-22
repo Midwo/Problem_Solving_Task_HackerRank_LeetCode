@@ -12452,6 +12452,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaximumCount(nums));
 
+            ////(2530.) Maximal Score After Applying K Operations (MEDIUM)
+            int[] nums = [1000000000];
+            int k = 100000;
+
+            LeetCode_2530 classLeetCode = new LeetCode_2530();
+            Console.WriteLine(classLeetCode.MaxKelements(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxKelements(nums, k));
+
             ////(2535.) Difference Between Element Sum and Digit Sum of an Array (EASY)
             //int[] nums = [1, 15, 6, 3];
 
@@ -14951,14 +14962,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReverseDegree(s));
 
             ////(3499.) Maximize Active Section with Trade I (MEDIUM)
-            string s = "11";
+            //string s = "11";
 
-            LeetCode_3499 classLeetCode = new LeetCode_3499();
-            Console.WriteLine(classLeetCode.MaxActiveSectionsAfterTrade(s));
+            //LeetCode_3499 classLeetCode = new LeetCode_3499();
+            //Console.WriteLine(classLeetCode.MaxActiveSectionsAfterTrade(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxActiveSectionsAfterTrade(s));
+            //Console.WriteLine(leetCodeAll.MaxActiveSectionsAfterTrade(s));
 
             ////(3502.) Minimum Cost to Reach Every Position (EASY)
             //int[] cost = [5, 3, 4, 1, 3, 2];
