@@ -7697,6 +7697,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.Tictactoe(moves));
+            
+            ////(1276.) Number of Burgers with No Waste of Ingredients (MEDIUM)
+            int tomatoSlices = 16;
+            int cheeseSlices = 7;
+
+            LeetCode_1276 classLeetCode = new LeetCode_1276();
+            Console.WriteLine(string.Join(',',classLeetCode.NumOfBurgers(tomatoSlices, cheeseSlices)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.NumOfBurgers(tomatoSlices, cheeseSlices)));
 
             ////(1277.) Count Square Submatrices with All Ones (MEDIUM)
             //int[][] matrix = [[0, 1, 1, 1], [1, 1, 1, 1], [0, 1, 1, 1]];
@@ -12453,15 +12464,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumCount(nums));
 
             ////(2530.) Maximal Score After Applying K Operations (MEDIUM)
-            int[] nums = [1000000000];
-            int k = 100000;
+            //int[] nums = [1000000000];
+            //int k = 100000;
 
-            LeetCode_2530 classLeetCode = new LeetCode_2530();
-            Console.WriteLine(classLeetCode.MaxKelements(nums, k));
+            //LeetCode_2530 classLeetCode = new LeetCode_2530();
+            //Console.WriteLine(classLeetCode.MaxKelements(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxKelements(nums, k));
+            //Console.WriteLine(leetCodeAll.MaxKelements(nums, k));
 
             ////(2535.) Difference Between Element Sum and Digit Sum of an Array (EASY)
             //int[] nums = [1, 15, 6, 3];
