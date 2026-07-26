@@ -6545,6 +6545,16 @@ namespace ProblemSolving
             //Console.WriteLine(recentCounter1.Ping(3001));
             //Console.WriteLine(recentCounter1.Ping(3002));
 
+            ////(937.) Reorder Data in Log Files (MEDIUM)
+            string[] logs = ["dig1 8 1 5 1", " let1 art can", "dig2 3 6", "let2 own kit dig", "let3 art zero"];
+
+            LeetCode_937 classLeetCode = new LeetCode_937();
+            Console.WriteLine(string.Join(',', classLeetCode.ReorderLogFiles(logs)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ReorderLogFiles(logs)));
+
             ////(938.) Range Sum of BST (EASY)
             //TreeNode root = new TreeNode(10);
             //root.left = new TreeNode(5);
@@ -7697,7 +7707,7 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.Tictactoe(moves));
-            
+
             ////(1276.) Number of Burgers with No Waste of Ingredients (MEDIUM)
             //int tomatoSlices = 16;
             //int cheeseSlices = 7;
@@ -12932,28 +12942,28 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountSeniors(details));
 
             ////(2679.) Sum in a Matrix (MEDIUM)
-            int[][] nums = [
-                [1,   8, 16, 15, 12,  9, 15, 11, 18,   6,  16,   4,   9,   4], 
-                [3,  19,  8, 17, 19,  4,  9,  3,  2,  10,  15,  17,   3,  11], 
-                [13, 10, 19, 20,  6, 17, 15, 14, 16,   8,   1,  17,   0,   2], 
-                [12, 20,  0, 19, 15, 10,  7, 10,  2,   6,  18,   7,   7,   4], 
-                [17, 14,  2,  2, 10, 16, 15,  3,  9,  17,   9,   3,  17,  10], 
-                [17,  6, 19, 17, 18, 9 , 14,  2, 19,  12,  10,  18,   7,   9], 
-                [5,   6,  5,  1, 19, 8 , 15,  2,  2,   4,   4,   1,   2,  17], 
-                [12, 16,  8, 16,  7, 6,  18, 13, 18,   8,  14,  15,  20,  11], 
-                [2,  10, 19,  3, 15, 18, 20, 10,  6,   7,   0,   8,   3,   7], 
-                [11,  5, 10, 13,  1, 3,   4,  7,  1,  18,  20,  17,  19,   2], 
-                [0,   3, 20,  6, 19, 18,  3, 12,  2,  11,   3,   1,  19,   0], 
-                [6,   5,  3, 15,  6, 1,   0, 17, 13,  19,   3,   8,   2,   7], 
-                [2,  20,  9, 11, 13, 5,   1, 16, 14,   1,  19,   3,  12,   6]
-                ];
+            //int[][] nums = [
+            //    [1,   8, 16, 15, 12,  9, 15, 11, 18,   6,  16,   4,   9,   4], 
+            //    [3,  19,  8, 17, 19,  4,  9,  3,  2,  10,  15,  17,   3,  11], 
+            //    [13, 10, 19, 20,  6, 17, 15, 14, 16,   8,   1,  17,   0,   2], 
+            //    [12, 20,  0, 19, 15, 10,  7, 10,  2,   6,  18,   7,   7,   4], 
+            //    [17, 14,  2,  2, 10, 16, 15,  3,  9,  17,   9,   3,  17,  10], 
+            //    [17,  6, 19, 17, 18, 9 , 14,  2, 19,  12,  10,  18,   7,   9], 
+            //    [5,   6,  5,  1, 19, 8 , 15,  2,  2,   4,   4,   1,   2,  17], 
+            //    [12, 16,  8, 16,  7, 6,  18, 13, 18,   8,  14,  15,  20,  11], 
+            //    [2,  10, 19,  3, 15, 18, 20, 10,  6,   7,   0,   8,   3,   7], 
+            //    [11,  5, 10, 13,  1, 3,   4,  7,  1,  18,  20,  17,  19,   2], 
+            //    [0,   3, 20,  6, 19, 18,  3, 12,  2,  11,   3,   1,  19,   0], 
+            //    [6,   5,  3, 15,  6, 1,   0, 17, 13,  19,   3,   8,   2,   7], 
+            //    [2,  20,  9, 11, 13, 5,   1, 16, 14,   1,  19,   3,  12,   6]
+            //    ];
 
-            LeetCode_2679 classLeetCode =   new LeetCode_2679();
-            Console.WriteLine(classLeetCode.MatrixSum(nums));
+            //LeetCode_2679 classLeetCode =   new LeetCode_2679();
+            //Console.WriteLine(classLeetCode.MatrixSum(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MatrixSum(nums));
+            //Console.WriteLine(leetCodeAll.MatrixSum(nums));
 
             ////(2682.) Find the Losers of the Circular Game (EASY)
             //int n = 5;
