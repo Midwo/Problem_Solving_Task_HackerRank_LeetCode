@@ -6546,14 +6546,14 @@ namespace ProblemSolving
             //Console.WriteLine(recentCounter1.Ping(3002));
 
             ////(937.) Reorder Data in Log Files (MEDIUM)
-            string[] logs = ["dig1 8 1 5 1", " let1 art can", "dig2 3 6", "let2 own kit dig", "let3 art zero"];
+            //string[] logs = ["dig1 8 1 5 1", " let1 art can", "dig2 3 6", "let2 own kit dig", "let3 art zero"];
 
-            LeetCode_937 classLeetCode = new LeetCode_937();
-            Console.WriteLine(string.Join(',', classLeetCode.ReorderLogFiles(logs)));
+            //LeetCode_937 classLeetCode = new LeetCode_937();
+            //Console.WriteLine(string.Join(',', classLeetCode.ReorderLogFiles(logs)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ReorderLogFiles(logs)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ReorderLogFiles(logs)));
 
             ////(938.) Range Sum of BST (EASY)
             //TreeNode root = new TreeNode(10);
@@ -11499,6 +11499,16 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+            
+            ////(2231.) Largest Number After Digit Swaps by Parity (EASY)
+            int num = 1234;
+
+            LeetCode_2231 classLeetCode = new LeetCode_2231();
+            Console.WriteLine(classLeetCode.LargestInteger(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LargestInteger(num));
 
             ////(2235.) Add Two Integers (EASY)
             //int num1 = 12;
