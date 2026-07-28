@@ -11499,16 +11499,16 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
-            
+
             ////(2231.) Largest Number After Digit Swaps by Parity (EASY)
-            int num = 1234;
+            //int num = 1234;
 
-            LeetCode_2231 classLeetCode = new LeetCode_2231();
-            Console.WriteLine(classLeetCode.LargestInteger(num));
+            //LeetCode_2231 classLeetCode = new LeetCode_2231();
+            //Console.WriteLine(classLeetCode.LargestInteger(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LargestInteger(num));
+            //Console.WriteLine(leetCodeAll.LargestInteger(num));
 
             ////(2235.) Add Two Integers (EASY)
             //int num1 = 12;
@@ -15734,6 +15734,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ReversePrefix(s, k));
+
+            ////(3798.) Largest Even Number (EASY)
+            string s = "1112";
+
+            LeetCode_3798 classLeetCode = new LeetCode_3798();
+            Console.WriteLine(classLeetCode.LargestEven(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LargestEven(s));
 
             ////(3809.) Best Reachable Tower (MEDIUM)
             //int[][] towers = [[1, 3, 4], [2, 2, 4], [4, 4, 7]];
