@@ -11598,6 +11598,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.RemoveDigit(number, digit));
 
+            ////(2260.) Minimum Consecutive Cards to Pick Up (MEDIUM)
+            int[] cards = [3, 4, 2, 3, 4, 7];
+
+            LeetCode_2260 classLeetCode = new LeetCode_2260();
+            Console.WriteLine(classLeetCode.MinimumCardPickup(cards));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumCardPickup(cards));
+
             ////(2264.) Largest 3-Same-Digit Number in String (EASY)
             //string num = "42352338";
 
@@ -15736,14 +15746,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReversePrefix(s, k));
 
             ////(3798.) Largest Even Number (EASY)
-            string s = "1112";
+            //string s = "1112";
 
-            LeetCode_3798 classLeetCode = new LeetCode_3798();
-            Console.WriteLine(classLeetCode.LargestEven(s));
+            //LeetCode_3798 classLeetCode = new LeetCode_3798();
+            //Console.WriteLine(classLeetCode.LargestEven(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LargestEven(s));
+            //Console.WriteLine(leetCodeAll.LargestEven(s));
 
             ////(3809.) Best Reachable Tower (MEDIUM)
             //int[][] towers = [[1, 3, 4], [2, 2, 4], [4, 4, 7]];
