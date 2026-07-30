@@ -10556,6 +10556,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumOfStrings(patterns, word));
 
+            ////(1974.) Minimum Time to Type Word Using Special Typewriter (EASY)
+            string word = "zjpc";
+
+            LeetCode_1974 classLeetCode = new LeetCode_1974();
+            Console.WriteLine(classLeetCode.MinTimeToType(word));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinTimeToType(word));
+
             ////(1975.) Maximum Matrix Sum (MEDIUM)
             //int[][] matrix = [[1, 2, 3], [-1, -2, -3], [1, 2, 3]];
 
@@ -11599,14 +11609,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.RemoveDigit(number, digit));
 
             ////(2260.) Minimum Consecutive Cards to Pick Up (MEDIUM)
-            int[] cards = [3, 4, 2, 3, 4, 7];
+            //int[] cards = [3, 4, 2, 3, 4, 7];
 
-            LeetCode_2260 classLeetCode = new LeetCode_2260();
-            Console.WriteLine(classLeetCode.MinimumCardPickup(cards));
+            //LeetCode_2260 classLeetCode = new LeetCode_2260();
+            //Console.WriteLine(classLeetCode.MinimumCardPickup(cards));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumCardPickup(cards));
+            //Console.WriteLine(leetCodeAll.MinimumCardPickup(cards));
 
             ////(2264.) Largest 3-Same-Digit Number in String (EASY)
             //string num = "42352338";

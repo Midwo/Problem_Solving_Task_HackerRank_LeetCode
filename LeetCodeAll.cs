@@ -34302,8 +34302,21 @@ namespace ProblemSolving
 
             return minLenght == int.MaxValue ? -1 : minLenght;
         }
+        public int MinTimeToType(string word)
+        {
+            int lastTypeNumberChar = 1;
+            int minTimeToType = word.Length;
 
+            foreach (char currChar in word)
+            {
+                int numberCurrChar = currChar - 'a' + 1;
+                int minDistance = Math.Abs(numberCurrChar - lastTypeNumberChar);
+                minTimeToType += Math.Min(minDistance, 26 - minDistance);
+                lastTypeNumberChar = numberCurrChar;
+            }
 
+            return minTimeToType;
+        }
 
 
 
