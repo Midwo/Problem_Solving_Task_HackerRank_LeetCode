@@ -10557,14 +10557,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumOfStrings(patterns, word));
 
             ////(1974.) Minimum Time to Type Word Using Special Typewriter (EASY)
-            string word = "zjpc";
+            //string word = "zjpc";
 
-            LeetCode_1974 classLeetCode = new LeetCode_1974();
-            Console.WriteLine(classLeetCode.MinTimeToType(word));
+            //LeetCode_1974 classLeetCode = new LeetCode_1974();
+            //Console.WriteLine(classLeetCode.MinTimeToType(word));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinTimeToType(word));
+            //Console.WriteLine(leetCodeAll.MinTimeToType(word));
 
             ////(1975.) Maximum Matrix Sum (MEDIUM)
             //int[][] matrix = [[1, 2, 3], [-1, -2, -3], [1, 2, 3]];
@@ -15723,6 +15723,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CompletePrime(num));
+
+            ////(3769.) Sort Integers by Binary Reflection (EASY)
+            int[] nums = [4, 5, 4];
+
+            LeetCode_3769 classLeetCode = new LeetCode_3769();
+            Console.WriteLine(string.Join(',', classLeetCode.SortByReflection(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.SortByReflection(nums)));
 
             ////(3783.) Mirror Distance of an Integer (EASY)
             //int n = 25;

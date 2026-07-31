@@ -34317,8 +34317,19 @@ namespace ProblemSolving
 
             return minTimeToType;
         }
+        public int[] SortByReflection(int[] nums)
+        {
+            var result = nums.OrderBy(x => ValueReflection(x)).ThenBy(x => x).ToArray();
 
+            return result;
+        }
+        private int ValueReflection(int num)
+        {
+            string stringNum = Convert.ToString(num, 2);
+            string stringReflectionNum = new string(stringNum.Reverse().ToArray());
 
+            return Convert.ToInt32(stringReflectionNum, 2);
+        }
 
 
 
