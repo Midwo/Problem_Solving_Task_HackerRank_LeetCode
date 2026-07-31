@@ -13687,6 +13687,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimumPushes(word));
 
+            ////(3016.) Minimum Number of Pushes to Type Word II (MEDIUM)
+            string word = "alporfmdqsbhncwyu";
+
+            LeetCode_3016 classLeetCode = new LeetCode_3016();
+            Console.WriteLine(classLeetCode.MinimumPushes(word));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumPushesTask3016(word));
+
             ////(3019.) Number of Changing Keys (EASY)
             //string s = "aAbBcC";
 
@@ -15725,14 +15735,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CompletePrime(num));
 
             ////(3769.) Sort Integers by Binary Reflection (EASY)
-            int[] nums = [4, 5, 4];
+            //int[] nums = [4, 5, 4];
 
-            LeetCode_3769 classLeetCode = new LeetCode_3769();
-            Console.WriteLine(string.Join(',', classLeetCode.SortByReflection(nums)));
+            //LeetCode_3769 classLeetCode = new LeetCode_3769();
+            //Console.WriteLine(string.Join(',', classLeetCode.SortByReflection(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.SortByReflection(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.SortByReflection(nums)));
 
             ////(3783.) Mirror Distance of an Integer (EASY)
             //int n = 25;
