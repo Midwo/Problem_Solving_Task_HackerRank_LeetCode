@@ -4927,6 +4927,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindMaxConsecutiveOnes(nums));
 
+            ////(486.) Predict the Winner (MEDIUM)
+            int[] nums = [3606449, 6, 5, 9, 452429, 7, 9580316, 9857582, 8514433, 9, 6, 6614512, 753594, 5474165, 4, 2697293, 8, 7, 1];
+
+            LeetCode_486 classLeetCode = new LeetCode_486();
+            Console.WriteLine(classLeetCode.PredictTheWinner(nums));
+
+            //OR
+
+
+
             ////(492.) Construct the Rectangle (EASY)
             //int area = 4;
 
@@ -13688,14 +13698,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumPushes(word));
 
             ////(3016.) Minimum Number of Pushes to Type Word II (MEDIUM)
-            string word = "alporfmdqsbhncwyu";
+            //string word = "alporfmdqsbhncwyu";
 
-            LeetCode_3016 classLeetCode = new LeetCode_3016();
-            Console.WriteLine(classLeetCode.MinimumPushes(word));
+            //LeetCode_3016 classLeetCode = new LeetCode_3016();
+            //Console.WriteLine(classLeetCode.MinimumPushes(word));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumPushesTask3016(word));
+            //Console.WriteLine(leetCodeAll.MinimumPushesTask3016(word));
 
             ////(3019.) Number of Changing Keys (EASY)
             //string s = "aAbBcC";
