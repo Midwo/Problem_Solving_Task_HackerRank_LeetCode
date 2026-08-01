@@ -4935,7 +4935,7 @@ namespace ProblemSolving
 
             //OR
 
-
+            Console.WriteLine(leetCodeAll.PredictTheWinner(nums));
 
             ////(492.) Construct the Rectangle (EASY)
             //int area = 4;
