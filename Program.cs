@@ -4928,14 +4928,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindMaxConsecutiveOnes(nums));
 
             ////(486.) Predict the Winner (MEDIUM)
-            int[] nums = [3606449, 6, 5, 9, 452429, 7, 9580316, 9857582, 8514433, 9, 6, 6614512, 753594, 5474165, 4, 2697293, 8, 7, 1];
+            //int[] nums = [3606449, 6, 5, 9, 452429, 7, 9580316, 9857582, 8514433, 9, 6, 6614512, 753594, 5474165, 4, 2697293, 8, 7, 1];
 
-            LeetCode_486 classLeetCode = new LeetCode_486();
-            Console.WriteLine(classLeetCode.PredictTheWinner(nums));
+            //LeetCode_486 classLeetCode = new LeetCode_486();
+            //Console.WriteLine(classLeetCode.PredictTheWinner(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PredictTheWinner(nums));
+            //Console.WriteLine(leetCodeAll.PredictTheWinner(nums));
 
             ////(492.) Construct the Rectangle (EASY)
             //int area = 4;
@@ -6323,6 +6323,16 @@ namespace ProblemSolving
             //    Console.WriteLine(result1.val);
             //    result1 = result1.next;
             //}
+
+            ////(877.) Stone Game (MEDIUM)
+            int[] piles = [5,3,4,5];
+
+            LeetCode_877 classLeetCode = new LeetCode_877();
+            Console.WriteLine(classLeetCode.StoneGame(piles));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.StoneGame(piles));
 
             ////(883.) Projection Area of 3D Shapes (EASY)
             //int[][] grid = [[1, 2], [3, 4]];
