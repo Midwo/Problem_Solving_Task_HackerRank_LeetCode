@@ -6325,14 +6325,14 @@ namespace ProblemSolving
             //}
 
             ////(877.) Stone Game (MEDIUM)
-            int[] piles = [5,3,4,5];
+            //int[] piles = [5,3,4,5];
 
-            LeetCode_877 classLeetCode = new LeetCode_877();
-            Console.WriteLine(classLeetCode.StoneGame(piles));
+            //LeetCode_877 classLeetCode = new LeetCode_877();
+            //Console.WriteLine(classLeetCode.StoneGame(piles));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.StoneGame(piles));
+            //Console.WriteLine(leetCodeAll.StoneGame(piles));
 
             ////(883.) Projection Area of 3D Shapes (EASY)
             //int[][] grid = [[1, 2], [3, 4]];
@@ -8289,6 +8289,29 @@ namespace ProblemSolving
 
             ////OR
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
+
+            ////(1379.) Find a Corresponding Node of a Binary Tree in a Clone of That Tree (EASY)
+            TreeNode original = new TreeNode(7);
+            original.left = new TreeNode(4);
+            original.right = new TreeNode(3);
+            original.right.left = new TreeNode(6);
+            original.right.right = new TreeNode(19);
+
+            TreeNode cloned = new TreeNode(7);
+            cloned.left = new TreeNode(4);
+            cloned.right = new TreeNode(3);
+            cloned.right.left = new TreeNode(6);
+            cloned.right.right = new TreeNode(19);
+
+            TreeNode target = new TreeNode(4);
+
+            LeetCode_1379 classLeetCode = new LeetCode_1379();
+            
+            classLeetCode.GetTargetCopy(original, cloned, target);
+
+            //OR
+            
+            leetCodeAll.GetTargetCopy(original, cloned, target);
 
             ////(1380.) Lucky Numbers in a Matrix (EASY)
             //int[][] matrix = [[3,7,8], [9,11,13], [15,16,17]];

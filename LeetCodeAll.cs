@@ -34417,7 +34417,25 @@ namespace ProblemSolving
             return dp[0, n - 1] >= 0;
         }
 
-
+        private TreeNode _ans, _target;
+        public TreeNode GetTargetCopy(TreeNode original, TreeNode cloned, TreeNode target)
+        {
+            _target = target;
+            inorder(original, cloned);
+            return _ans;
+        }
+        public void inorder(TreeNode original, TreeNode cloned)
+        {
+            if (original != null)
+            {
+                inorder(original.left, cloned.left);
+                if (original == _target)
+                {
+                    _ans = cloned;
+                }
+                inorder(original.right, cloned.right);
+            }
+        }
 
 
 
