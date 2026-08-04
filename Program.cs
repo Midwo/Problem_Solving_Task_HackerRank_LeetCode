@@ -8291,27 +8291,27 @@ namespace ProblemSolving
             //LeetCode_1378 classLeetCode = new LeetCode_1378();
 
             ////(1379.) Find a Corresponding Node of a Binary Tree in a Clone of That Tree (EASY)
-            TreeNode original = new TreeNode(7);
-            original.left = new TreeNode(4);
-            original.right = new TreeNode(3);
-            original.right.left = new TreeNode(6);
-            original.right.right = new TreeNode(19);
+            //TreeNode original = new TreeNode(7);
+            //original.left = new TreeNode(4);
+            //original.right = new TreeNode(3);
+            //original.right.left = new TreeNode(6);
+            //original.right.right = new TreeNode(19);
 
-            TreeNode cloned = new TreeNode(7);
-            cloned.left = new TreeNode(4);
-            cloned.right = new TreeNode(3);
-            cloned.right.left = new TreeNode(6);
-            cloned.right.right = new TreeNode(19);
+            //TreeNode cloned = new TreeNode(7);
+            //cloned.left = new TreeNode(4);
+            //cloned.right = new TreeNode(3);
+            //cloned.right.left = new TreeNode(6);
+            //cloned.right.right = new TreeNode(19);
 
-            TreeNode target = new TreeNode(4);
+            //TreeNode target = new TreeNode(4);
 
-            LeetCode_1379 classLeetCode = new LeetCode_1379();
-            
-            classLeetCode.GetTargetCopy(original, cloned, target);
+            //LeetCode_1379 classLeetCode = new LeetCode_1379();
 
-            //OR
-            
-            leetCodeAll.GetTargetCopy(original, cloned, target);
+            //classLeetCode.GetTargetCopy(original, cloned, target);
+
+            ////OR
+
+            //leetCodeAll.GetTargetCopy(original, cloned, target);
 
             ////(1380.) Lucky Numbers in a Matrix (EASY)
             //int[][] matrix = [[3,7,8], [9,11,13], [15,16,17]];
@@ -15953,7 +15953,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.DigitFrequencyScore(n));
 
+            ////(3959.) Check Good Integer (EASY)
+            int n = 1000;
 
+            LeetCode_3959 classLeetCode = new LeetCode_3959();
+            Console.WriteLine(classLeetCode.CheckGoodInteger(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckGoodInteger(n));
 
 
 

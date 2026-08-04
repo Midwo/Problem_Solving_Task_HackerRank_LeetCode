@@ -34436,7 +34436,21 @@ namespace ProblemSolving
                 inorder(original.right, cloned.right);
             }
         }
+        public bool CheckGoodInteger(int n)
+        {
+            int squareSum = 0;
+            int digitSum = 0;
 
+            while (n != 0)
+            {
+                int currModulo = n % 10;
+                digitSum += currModulo;
+                squareSum += currModulo * currModulo;
+                n /= 10;
+            }
+
+            return squareSum - digitSum >= 50 ? true : false;
+        }
 
 
 
