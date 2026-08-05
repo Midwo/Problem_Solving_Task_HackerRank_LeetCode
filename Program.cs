@@ -13161,6 +13161,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountBeautifulPairs(nums));
 
+            ////(2744.) Find Maximum Number of String Pairs (EASY)
+            string[] words = ["cd", "ac", "dc", "ca", "zz"];
+
+            LeetCode_2744 classLeetCode = new LeetCode_2744();
+            Console.WriteLine(classLeetCode.MaximumNumberOfStringPairs(words));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximumNumberOfStringPairs(words));
+
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
             //int t = 2;
@@ -15954,14 +15964,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DigitFrequencyScore(n));
 
             ////(3959.) Check Good Integer (EASY)
-            int n = 1000;
+            //int n = 1000;
 
-            LeetCode_3959 classLeetCode = new LeetCode_3959();
-            Console.WriteLine(classLeetCode.CheckGoodInteger(n));
+            //LeetCode_3959 classLeetCode = new LeetCode_3959();
+            //Console.WriteLine(classLeetCode.CheckGoodInteger(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckGoodInteger(n));
+            //Console.WriteLine(leetCodeAll.CheckGoodInteger(n));
 
 
 
