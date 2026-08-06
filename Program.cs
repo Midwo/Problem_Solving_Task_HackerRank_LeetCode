@@ -11882,6 +11882,42 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.DecodeMessage(key, message));
 
+            ////(2326.) Spiral Matrix IV (MEDIUM)
+            int m = 4;
+            int n = 5; 
+            ListNode head = new ListNode(515);
+            head.next = new ListNode(942);
+            head.next.next = new ListNode(528);
+            head.next.next.next = new ListNode(483);
+            head.next.next.next.next = new ListNode(20);
+            head.next.next.next.next.next = new ListNode(159);
+            head.next.next.next.next.next.next = new ListNode(868);
+            head.next.next.next.next.next.next.next = new ListNode(999);
+            head.next.next.next.next.next.next.next.next = new ListNode(474);
+            head.next.next.next.next.next.next.next.next.next = new ListNode(320);
+            head.next.next.next.next.next.next.next.next.next.next = new ListNode(734);
+            head.next.next.next.next.next.next.next.next.next.next.next = new ListNode(956);
+            head.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(12);
+            head.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(124);
+            head.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(224);
+            head.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(252);
+            head.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(909);
+            head.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(732);
+
+            LeetCode_2326 classLeetCode = new LeetCode_2326();
+            
+            foreach(var rows in classLeetCode.SpiralMatrix(m,n,head))
+            {
+                Console.WriteLine(string.Join(',',rows));
+            }
+
+            //OR
+
+            foreach (var rows in leetCodeAll.SpiralMatrix(m, n, head))
+            {
+                Console.WriteLine(string.Join(',', rows));
+            }
+
             ////(2327.) Number of People Aware of a Secret (MEDIUM)
             //int n = 4, delay = 1, forget = 3;
 
@@ -13162,14 +13198,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountBeautifulPairs(nums));
 
             ////(2744.) Find Maximum Number of String Pairs (EASY)
-            string[] words = ["cd", "ac", "dc", "ca", "zz"];
+            //string[] words = ["cd", "ac", "dc", "ca", "zz"];
 
-            LeetCode_2744 classLeetCode = new LeetCode_2744();
-            Console.WriteLine(classLeetCode.MaximumNumberOfStringPairs(words));
+            //LeetCode_2744 classLeetCode = new LeetCode_2744();
+            //Console.WriteLine(classLeetCode.MaximumNumberOfStringPairs(words));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaximumNumberOfStringPairs(words));
+            //Console.WriteLine(leetCodeAll.MaximumNumberOfStringPairs(words));
 
             ////(2769.) Find the Maximum Achievable Number (EASY)
             //int num = 3;
