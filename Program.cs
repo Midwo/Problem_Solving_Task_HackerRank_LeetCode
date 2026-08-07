@@ -11883,40 +11883,40 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DecodeMessage(key, message));
 
             ////(2326.) Spiral Matrix IV (MEDIUM)
-            int m = 4;
-            int n = 5; 
-            ListNode head = new ListNode(515);
-            head.next = new ListNode(942);
-            head.next.next = new ListNode(528);
-            head.next.next.next = new ListNode(483);
-            head.next.next.next.next = new ListNode(20);
-            head.next.next.next.next.next = new ListNode(159);
-            head.next.next.next.next.next.next = new ListNode(868);
-            head.next.next.next.next.next.next.next = new ListNode(999);
-            head.next.next.next.next.next.next.next.next = new ListNode(474);
-            head.next.next.next.next.next.next.next.next.next = new ListNode(320);
-            head.next.next.next.next.next.next.next.next.next.next = new ListNode(734);
-            head.next.next.next.next.next.next.next.next.next.next.next = new ListNode(956);
-            head.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(12);
-            head.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(124);
-            head.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(224);
-            head.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(252);
-            head.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(909);
-            head.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(732);
+            //int m = 4;
+            //int n = 5; 
+            //ListNode head = new ListNode(515);
+            //head.next = new ListNode(942);
+            //head.next.next = new ListNode(528);
+            //head.next.next.next = new ListNode(483);
+            //head.next.next.next.next = new ListNode(20);
+            //head.next.next.next.next.next = new ListNode(159);
+            //head.next.next.next.next.next.next = new ListNode(868);
+            //head.next.next.next.next.next.next.next = new ListNode(999);
+            //head.next.next.next.next.next.next.next.next = new ListNode(474);
+            //head.next.next.next.next.next.next.next.next.next = new ListNode(320);
+            //head.next.next.next.next.next.next.next.next.next.next = new ListNode(734);
+            //head.next.next.next.next.next.next.next.next.next.next.next = new ListNode(956);
+            //head.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(12);
+            //head.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(124);
+            //head.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(224);
+            //head.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(252);
+            //head.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(909);
+            //head.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(732);
 
-            LeetCode_2326 classLeetCode = new LeetCode_2326();
+            //LeetCode_2326 classLeetCode = new LeetCode_2326();
             
-            foreach(var rows in classLeetCode.SpiralMatrix(m,n,head))
-            {
-                Console.WriteLine(string.Join(',',rows));
-            }
+            //foreach(var rows in classLeetCode.SpiralMatrix(m,n,head))
+            //{
+            //    Console.WriteLine(string.Join(',',rows));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var rows in leetCodeAll.SpiralMatrix(m, n, head))
-            {
-                Console.WriteLine(string.Join(',', rows));
-            }
+            //foreach (var rows in leetCodeAll.SpiralMatrix(m, n, head))
+            //{
+            //    Console.WriteLine(string.Join(',', rows));
+            //}
 
             ////(2327.) Number of People Aware of a Secret (MEDIUM)
             //int n = 4, delay = 1, forget = 3;
@@ -15947,6 +15947,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountCommas(n));
+
+            ////(3884.) First Matching Character From Both Ends (EASY)
+            string s = "abcacbd";
+
+            LeetCode_3884 classLeetCode = new LeetCode_3884();
+            Console.WriteLine(classLeetCode.FirstMatchingIndex(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FirstMatchingIndex(s));
 
             ////(3894.) Traffic Signal Color (EASY)
             //int timer = 60;
