@@ -3330,6 +3330,22 @@ namespace ProblemSolving
 
             //Console.WriteLine(classLeetCode.Jump(nums));
 
+            ////(46.) Permutations (MEDIUM)
+            int[] nums = [1, 2, 3];
+
+            LeetCode_46 classLeetCode = new LeetCode_46();
+            foreach (var iListLineResult in classLeetCode.Permute(nums))
+            {
+                Console.WriteLine(string.Join(',', iListLineResult));
+            }
+
+            //OR
+
+            foreach (var iListLineResult in l.Permute(nums))
+            {
+                Console.WriteLine(string.Join(',', iListLineResult));
+            }
+
             ////(48.) Rotate Image (MEDIUM)
             //int[][] matrix = [[5, 1, 9, 11], [2, 4, 8, 10], [13, 3, 6, 7], [15, 14, 12, 16]];
 
@@ -11905,7 +11921,7 @@ namespace ProblemSolving
             //head.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(732);
 
             //LeetCode_2326 classLeetCode = new LeetCode_2326();
-            
+
             //foreach(var rows in classLeetCode.SpiralMatrix(m,n,head))
             //{
             //    Console.WriteLine(string.Join(',',rows));
@@ -15949,14 +15965,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountCommas(n));
 
             ////(3884.) First Matching Character From Both Ends (EASY)
-            string s = "abcacbd";
+            //string s = "abcacbd";
 
-            LeetCode_3884 classLeetCode = new LeetCode_3884();
-            Console.WriteLine(classLeetCode.FirstMatchingIndex(s));
+            //LeetCode_3884 classLeetCode = new LeetCode_3884();
+            //Console.WriteLine(classLeetCode.FirstMatchingIndex(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FirstMatchingIndex(s));
+            //Console.WriteLine(leetCodeAll.FirstMatchingIndex(s));
 
             ////(3894.) Traffic Signal Color (EASY)
             //int timer = 60;
