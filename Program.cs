@@ -3320,6 +3320,24 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsValidSudoku(board));
 
+            ////(39.) Combination Sum (MEDIUM)
+            int[] candidates = [2,3,5];
+            int target = 8;
+
+            LeetCode_39 classLeetCode = new LeetCode_39();
+
+            foreach (var currIlist in classLeetCode.CombinationSum(candidates, target)) 
+            {
+                Console.WriteLine(string.Join(',', currIlist));
+            }
+
+            //OR
+
+            foreach (var currIlist in leetCodeAll.CombinationSum(candidates, target))
+            {
+                Console.WriteLine(string.Join(',', currIlist));
+            }
+
             ////(45.) Jump Game II (MEDIUM)
             //int[] nums = [2, 3, 1, 1, 4];
 
@@ -3331,20 +3349,20 @@ namespace ProblemSolving
             //Console.WriteLine(classLeetCode.Jump(nums));
 
             ////(46.) Permutations (MEDIUM)
-            int[] nums = [1, 2, 3];
+            //int[] nums = [1, 2, 3];
 
-            LeetCode_46 classLeetCode = new LeetCode_46();
-            foreach (var iListLineResult in classLeetCode.Permute(nums))
-            {
-                Console.WriteLine(string.Join(',', iListLineResult));
-            }
+            //LeetCode_46 classLeetCode = new LeetCode_46();
+            //foreach (var iListLineResult in classLeetCode.Permute(nums))
+            //{
+            //    Console.WriteLine(string.Join(',', iListLineResult));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var iListLineResult in l.Permute(nums))
-            {
-                Console.WriteLine(string.Join(',', iListLineResult));
-            }
+            //foreach (var iListLineResult in l.Permute(nums))
+            //{
+            //    Console.WriteLine(string.Join(',', iListLineResult));
+            //}
 
             ////(48.) Rotate Image (MEDIUM)
             //int[][] matrix = [[5, 1, 9, 11], [2, 4, 8, 10], [13, 3, 6, 7], [15, 14, 12, 16]];
