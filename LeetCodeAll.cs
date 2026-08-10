@@ -34613,7 +34613,61 @@ namespace ProblemSolving
             }
         }
 
+        private int _maxScoreTask1255;
+        public int MaxScoreWords(string[] words, char[] letters, int[] score)
+        {
+            _maxScoreTask1255 = 0;
+            int[] freqletters = new int[26];
+            int wordsLenght = words.Length;
+            foreach (char letter in letters)
+            {
+                freqletters[letter - 'a']++;
+            }
 
+            BTMaxScoreSearch(words, score, 0, 0, freqletters, wordsLenght);
+
+            return _maxScoreTask1255;
+        }
+
+        private void BTMaxScoreSearch(string[] words, int[] score, int currScore, int indexWord, int[] countFreqWords, int wordsLength)
+        {
+            if (_maxScoreTask1255 < currScore)
+                _maxScoreTask1255 = currScore;
+
+            if (indexWord == wordsLength)
+            {
+                return;
+            }
+
+            BTMaxScoreSearch(words, score, currScore, indexWord + 1, countFreqWords, wordsLength);
+
+            for (int index = indexWord; index < wordsLength; index++)
+            {
+                int addScore = 0;
+                int[] tempFreq = new int[26];
+                int tempScore = currScore;
+
+                Array.Copy(countFreqWords, tempFreq, 26);
+                bool status = true;
+                int[] currFreq = new int[26];
+
+                foreach (char currChar in words[index])
+                {
+                    tempFreq[currChar - 'a']--;
+                    addScore += score[currChar - 'a'];
+                    if (tempFreq[currChar - 'a'] < 0)
+                    {
+                        status = false;
+                        break;
+                    }
+                }
+
+                if (status)
+                {
+                    BTMaxScoreSearch(words, score, tempScore + addScore, indexWord + 1, tempFreq, wordsLength);
+                }
+            }
+        }
 
 
 

@@ -3321,22 +3321,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsValidSudoku(board));
 
             ////(39.) Combination Sum (MEDIUM)
-            int[] candidates = [2,3,5];
-            int target = 8;
+            //int[] candidates = [2,3,5];
+            //int target = 8;
 
-            LeetCode_39 classLeetCode = new LeetCode_39();
+            //LeetCode_39 classLeetCode = new LeetCode_39();
 
-            foreach (var currIlist in classLeetCode.CombinationSum(candidates, target)) 
-            {
-                Console.WriteLine(string.Join(',', currIlist));
-            }
+            //foreach (var currIlist in classLeetCode.CombinationSum(candidates, target)) 
+            //{
+            //    Console.WriteLine(string.Join(',', currIlist));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var currIlist in leetCodeAll.CombinationSum(candidates, target))
-            {
-                Console.WriteLine(string.Join(',', currIlist));
-            }
+            //foreach (var currIlist in leetCodeAll.CombinationSum(candidates, target))
+            //{
+            //    Console.WriteLine(string.Join(',', currIlist));
+            //}
 
             ////(45.) Jump Game II (MEDIUM)
             //int[] nums = [2, 3, 1, 1, 4];
@@ -7693,6 +7693,18 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.OddCells(m, n, indices));
+
+            ////(1255.) Maximum Score Words Formed by Letters (HARD)
+            string[] words = ["xxxz", "ax", "bx", "cx"];
+            char[] letters = ['z', 'a', 'b', 'c', 'x', 'x', 'x'];
+            int[] score = [4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 10];
+
+            LeetCode_1255 classLeetCode = new LeetCode_1255();
+            Console.WriteLine(classLeetCode.MaxScoreWords(words, letters, score));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxScoreWords(words, letters, score));
 
             ////(1260.) Shift 2D Grid (EASY)
             //int[][] grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
