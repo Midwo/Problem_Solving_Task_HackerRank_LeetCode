@@ -7695,16 +7695,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.OddCells(m, n, indices));
 
             ////(1255.) Maximum Score Words Formed by Letters (HARD)
-            string[] words = ["xxxz", "ax", "bx", "cx"];
-            char[] letters = ['z', 'a', 'b', 'c', 'x', 'x', 'x'];
-            int[] score = [4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 10];
+            //string[] words = ["xxxz", "ax", "bx", "cx"];
+            //char[] letters = ['z', 'a', 'b', 'c', 'x', 'x', 'x'];
+            //int[] score = [4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 10];
 
-            LeetCode_1255 classLeetCode = new LeetCode_1255();
-            Console.WriteLine(classLeetCode.MaxScoreWords(words, letters, score));
+            //LeetCode_1255 classLeetCode = new LeetCode_1255();
+            //Console.WriteLine(classLeetCode.MaxScoreWords(words, letters, score));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxScoreWords(words, letters, score));
+            //Console.WriteLine(leetCodeAll.MaxScoreWords(words, letters, score));
 
             ////(1260.) Shift 2D Grid (EASY)
             //int[][] grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
@@ -13770,6 +13770,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.HasTrailingZeros(nums));
+
+            ////(2996.) Smallest Missing Integer Greater Than Sequential Prefix Sum (EASY)
+            int[] nums = [29, 30, 31, 32, 33, 34, 35, 36, 37];
+
+            LeetCode_2996 classLeetCode = new LeetCode_2996();
+            Console.WriteLine(classLeetCode.MissingInteger(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MissingInteger(nums));
 
             ////(2997.) Minimum Number of Operations to Make Array XOR Equal to K (MEDIUM)
             //int[] nums = [2, 1, 3, 4];

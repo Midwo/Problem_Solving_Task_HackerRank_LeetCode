@@ -34628,7 +34628,6 @@ namespace ProblemSolving
 
             return _maxScoreTask1255;
         }
-
         private void BTMaxScoreSearch(string[] words, int[] score, int currScore, int indexWord, int[] countFreqWords, int wordsLength)
         {
             if (_maxScoreTask1255 < currScore)
@@ -34668,8 +34667,43 @@ namespace ProblemSolving
                 }
             }
         }
+        public int MissingInteger(int[] nums)
+        {
+            HashSet<int> uniqeValues = new HashSet<int>();
 
+            foreach (int num in nums)
+            {
+                uniqeValues.Add(num);
+            }
 
+            int lastVallue = nums[0];
+            int sumSequential = lastVallue;
+            int lengthSequential = 1;
+            for (int index = 1; index < nums.Length; index++)
+            {
+                int currValue = nums[index];
+                if (currValue == lastVallue + 1)
+                {
+                    lengthSequential++;
+                    sumSequential += currValue;
+                }
+                else
+                {
+                    break;
+                }
+                lastVallue = currValue;
+            }
+
+            while (true)
+            {
+                if (!uniqeValues.Contains(sumSequential))
+                {
+                    return sumSequential;
+                }
+                sumSequential++;
+            }
+
+        }
 
 
 
