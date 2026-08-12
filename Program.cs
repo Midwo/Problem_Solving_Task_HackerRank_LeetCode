@@ -3521,6 +3521,20 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinWindow(s, t));
 
+            ////(77.) Combinations (MEDIUM)
+            int n = 4;
+            int k = 2;
+
+            LeetCode_77 classLeetCode = new LeetCode_77();
+            foreach(var line in classLeetCode.Combine(n, k))
+            {
+                Console.WriteLine(string.Join(',',line));
+            }
+
+            //OR
+
+
+
             ////(78.) Subsets (MEDIUM)
             //int[] nums = [1, 2, 3];
 
@@ -13772,14 +13786,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.HasTrailingZeros(nums));
 
             ////(2996.) Smallest Missing Integer Greater Than Sequential Prefix Sum (EASY)
-            int[] nums = [29, 30, 31, 32, 33, 34, 35, 36, 37];
+            //int[] nums = [29, 30, 31, 32, 33, 34, 35, 36, 37];
 
-            LeetCode_2996 classLeetCode = new LeetCode_2996();
-            Console.WriteLine(classLeetCode.MissingInteger(nums));
+            //LeetCode_2996 classLeetCode = new LeetCode_2996();
+            //Console.WriteLine(classLeetCode.MissingInteger(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MissingInteger(nums));
+            //Console.WriteLine(leetCodeAll.MissingInteger(nums));
 
             ////(2997.) Minimum Number of Operations to Make Array XOR Equal to K (MEDIUM)
             //int[] nums = [2, 1, 3, 4];
