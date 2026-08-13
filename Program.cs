@@ -3522,21 +3522,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinWindow(s, t));
 
             ////(77.) Combinations (MEDIUM)
-            int n = 4;
-            int k = 2;
+            //int n = 4;
+            //int k = 2;
 
-            LeetCode_77 classLeetCode = new LeetCode_77();
-            foreach(var line in classLeetCode.Combine(n, k))
-            {
-                Console.WriteLine(string.Join(',',line));
-            }
+            //LeetCode_77 classLeetCode = new LeetCode_77();
+            //foreach(var line in classLeetCode.Combine(n, k))
+            //{
+            //    Console.WriteLine(string.Join(',',line));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var line in leetCodeAll.Combine(n, k))
-            {
-                Console.WriteLine(string.Join(',', line));
-            }
+            //foreach (var line in leetCodeAll.Combine(n, k))
+            //{
+            //    Console.WriteLine(string.Join(',', line));
+            //}
 
             ////(78.) Subsets (MEDIUM)
             //int[] nums = [1, 2, 3];
@@ -4221,6 +4221,23 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinSubArrayLen(target, nums));
+
+            ////(216.) Combination Sum III (MEDIUM)
+            int k = 3;
+            int n = 7;
+
+            LeetCode_216 classLeetCode = new LeetCode_216();
+            foreach(var line in classLeetCode.CombinationSum3(k, n))
+            {
+                Console.WriteLine(string.Join(',',line));
+            }
+
+            //OR
+
+            foreach (var line in leetCodeAll.CombinationSum3(k, n))
+            {
+                Console.WriteLine(string.Join(',', line));
+            }
 
             ////(217.) Contains Deplicate (EASY)
             //int[] nums = [1, 2, 3, 1];
