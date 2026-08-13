@@ -3533,7 +3533,10 @@ namespace ProblemSolving
 
             //OR
 
-
+            foreach (var line in leetCodeAll.Combine(n, k))
+            {
+                Console.WriteLine(string.Join(',', line));
+            }
 
             ////(78.) Subsets (MEDIUM)
             //int[] nums = [1, 2, 3];
