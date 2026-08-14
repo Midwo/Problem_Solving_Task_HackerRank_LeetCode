@@ -3364,6 +3364,23 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', iListLineResult));
             //}
 
+            ////(47.) Permutations II (MEDIUM)
+            int[] nums = [1, 1, 2];
+
+            LeetCode_47 classLeetCode = new LeetCode_47();
+
+            foreach(var line in classLeetCode.PermuteUnique(nums))
+            {
+                Console.WriteLine(string.Join(',', line));
+            }
+
+            //OR
+
+            foreach (var line in leetCodeAll.PermuteUnique(nums))
+            {
+                Console.WriteLine(string.Join(',', line));
+            }
+
             ////(48.) Rotate Image (MEDIUM)
             //int[][] matrix = [[5, 1, 9, 11], [2, 4, 8, 10], [13, 3, 6, 7], [15, 14, 12, 16]];
 
@@ -4223,21 +4240,21 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinSubArrayLen(target, nums));
 
             ////(216.) Combination Sum III (MEDIUM)
-            int k = 3;
-            int n = 7;
+            //int k = 3;
+            //int n = 7;
 
-            LeetCode_216 classLeetCode = new LeetCode_216();
-            foreach(var line in classLeetCode.CombinationSum3(k, n))
-            {
-                Console.WriteLine(string.Join(',',line));
-            }
+            //LeetCode_216 classLeetCode = new LeetCode_216();
+            //foreach(var line in classLeetCode.CombinationSum3(k, n))
+            //{
+            //    Console.WriteLine(string.Join(',',line));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var line in leetCodeAll.CombinationSum3(k, n))
-            {
-                Console.WriteLine(string.Join(',', line));
-            }
+            //foreach (var line in leetCodeAll.CombinationSum3(k, n))
+            //{
+            //    Console.WriteLine(string.Join(',', line));
+            //}
 
             ////(217.) Contains Deplicate (EASY)
             //int[] nums = [1, 2, 3, 1];
