@@ -3365,21 +3365,21 @@ namespace ProblemSolving
             //}
 
             ////(47.) Permutations II (MEDIUM)
-            int[] nums = [1, 1, 2];
+            //int[] nums = [1, 1, 2];
 
-            LeetCode_47 classLeetCode = new LeetCode_47();
+            //LeetCode_47 classLeetCode = new LeetCode_47();
 
-            foreach(var line in classLeetCode.PermuteUnique(nums))
-            {
-                Console.WriteLine(string.Join(',', line));
-            }
+            //foreach(var line in classLeetCode.PermuteUnique(nums))
+            //{
+            //    Console.WriteLine(string.Join(',', line));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var line in leetCodeAll.PermuteUnique(nums))
-            {
-                Console.WriteLine(string.Join(',', line));
-            }
+            //foreach (var line in leetCodeAll.PermuteUnique(nums))
+            //{
+            //    Console.WriteLine(string.Join(',', line));
+            //}
 
             ////(48.) Rotate Image (MEDIUM)
             //int[][] matrix = [[5, 1, 9, 11], [2, 4, 8, 10], [13, 3, 6, 7], [15, 14, 12, 16]];
@@ -7673,6 +7673,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinCostToMoveChips(position));
+
+            ////(1219.) Path with Maximum Gold (MEDIUM)
+            int[][] grid = [[0, 6, 0], [5, 8, 7], [0, 9, 0]];
+
+            LeetCode_1219 classLeetCode = new LeetCode_1219();
+            Console.WriteLine(classLeetCode.GetMaximumGold(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GetMaximumGold(grid));
 
             ////(1221.) Split a String in Balanced Strings (EASY)
             //string s = "RLRRRLLRLL";
