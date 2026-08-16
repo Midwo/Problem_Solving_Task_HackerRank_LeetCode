@@ -7675,14 +7675,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinCostToMoveChips(position));
 
             ////(1219.) Path with Maximum Gold (MEDIUM)
-            int[][] grid = [[0, 6, 0], [5, 8, 7], [0, 9, 0]];
+            //int[][] grid = [[0, 6, 0], [5, 8, 7], [0, 9, 0]];
 
-            LeetCode_1219 classLeetCode = new LeetCode_1219();
-            Console.WriteLine(classLeetCode.GetMaximumGold(grid));
+            //LeetCode_1219 classLeetCode = new LeetCode_1219();
+            //Console.WriteLine(classLeetCode.GetMaximumGold(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GetMaximumGold(grid));
+            //Console.WriteLine(leetCodeAll.GetMaximumGold(grid));
 
             ////(1221.) Split a String in Balanced Strings (EASY)
             //string s = "RLRRRLLRLL";
@@ -10881,6 +10881,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimumMoves(s));
+
+            ////(2029.) Stone Game IX (MEDIUM)
+            int[] stones = [2, 1];
+
+            LeetCode_2029 classLeetCode = new LeetCode_2029();
+            Console.WriteLine(classLeetCode.StoneGameIX(stones));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.StoneGameIX(stones));
 
             ////(2032.) Two Out of Three (EASY)
             //int[] nums1 = [1, 1, 3, 2];
