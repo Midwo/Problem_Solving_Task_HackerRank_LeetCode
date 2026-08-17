@@ -10883,14 +10883,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumMoves(s));
 
             ////(2029.) Stone Game IX (MEDIUM)
-            int[] stones = [2, 1];
+            //int[] stones = [2, 1];
 
-            LeetCode_2029 classLeetCode = new LeetCode_2029();
-            Console.WriteLine(classLeetCode.StoneGameIX(stones));
+            //LeetCode_2029 classLeetCode = new LeetCode_2029();
+            //Console.WriteLine(classLeetCode.StoneGameIX(stones));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.StoneGameIX(stones));
+            //Console.WriteLine(leetCodeAll.StoneGameIX(stones));
 
             ////(2032.) Two Out of Three (EASY)
             //int[] nums1 = [1, 1, 3, 2];
@@ -16146,11 +16146,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CheckGoodInteger(n));
 
+            ////(3986.) Number of Elapsed Seconds Between Two Times (EASY)
+            string startTime = "12:34:56";
+            string endTime = "13:00:00";
 
+            LeetCode_3986 classLeetCode = new LeetCode_3986();
+            Console.WriteLine(classLeetCode.SecondsBetweenTimes(startTime, endTime));
 
+            //OR
 
-
-
+            Console.WriteLine(leetCodeAll.SecondsBetweenTimes(startTime, endTime));
 
 
 
