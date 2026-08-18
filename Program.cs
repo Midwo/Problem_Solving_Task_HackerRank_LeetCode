@@ -16116,6 +16116,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindDegrees(matrix)));
 
+            ////(3917.) Count Indices With Opposite Parity (EASY)
+            int[] nums = [1,2,3,4];
+
+            LeetCode_3917 classLeetCode = new LeetCode_3917();
+            Console.WriteLine(string.Join(',', classLeetCode.CountOppositeParity(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.CountOppositeParity(nums)));
+
             ////(3925.) Concatenate Array With Reverse (EASY)
             //int[] nums = [1,2,3];
 
@@ -16147,15 +16157,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckGoodInteger(n));
 
             ////(3986.) Number of Elapsed Seconds Between Two Times (EASY)
-            string startTime = "12:34:56";
-            string endTime = "13:00:00";
+            //string startTime = "12:34:56";
+            //string endTime = "13:00:00";
 
-            LeetCode_3986 classLeetCode = new LeetCode_3986();
-            Console.WriteLine(classLeetCode.SecondsBetweenTimes(startTime, endTime));
+            //LeetCode_3986 classLeetCode = new LeetCode_3986();
+            //Console.WriteLine(classLeetCode.SecondsBetweenTimes(startTime, endTime));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SecondsBetweenTimes(startTime, endTime));
+            //Console.WriteLine(leetCodeAll.SecondsBetweenTimes(startTime, endTime));
 
 
 

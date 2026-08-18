@@ -34889,8 +34889,30 @@ namespace ProblemSolving
         {
             return (int.Parse(endTime[0..2]) - int.Parse(startTime[0..2])) * 3600 + (int.Parse(endTime[3..5]) - int.Parse(startTime[3..5])) * 60 + (int.Parse(endTime[6..8]) - int.Parse(startTime[6..8]));
         }
+        public int[] CountOppositeParity(int[] nums)
+        {
+            int countOdd = 0;
+            int countEven = 0;
 
+            int length = nums.Length;
+            int[] resultTableWithOppositeParity = new int[length];
 
+            for (int index = length - 1; index >= 0; index--)
+            {
+                if (nums[index] % 2 == 0)
+                {
+                    resultTableWithOppositeParity[index] = countOdd;
+                    countEven++;
+                }
+                else
+                {
+                    resultTableWithOppositeParity[index] = countEven;
+                    countOdd++;
+                }
+            }
+
+            return resultTableWithOppositeParity;
+        }
 
 
 
