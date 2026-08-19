@@ -34913,8 +34913,19 @@ namespace ProblemSolving
 
             return resultTableWithOppositeParity;
         }
+        public int ElevatorRequests(int n, int[] requests)
+        {
+            int sumElevatorRequests = 0;
+            int lastValue = 0;
 
+            foreach (int request in requests)
+            {
+                sumElevatorRequests += Math.Abs(request - lastValue);
+                lastValue = request;
+            }
 
+            return sumElevatorRequests;
+        }
 
 
 

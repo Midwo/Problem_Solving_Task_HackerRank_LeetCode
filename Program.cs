@@ -16117,14 +16117,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindDegrees(matrix)));
 
             ////(3917.) Count Indices With Opposite Parity (EASY)
-            int[] nums = [1,2,3,4];
+            //int[] nums = [1,2,3,4];
 
-            LeetCode_3917 classLeetCode = new LeetCode_3917();
-            Console.WriteLine(string.Join(',', classLeetCode.CountOppositeParity(nums)));
+            //LeetCode_3917 classLeetCode = new LeetCode_3917();
+            //Console.WriteLine(string.Join(',', classLeetCode.CountOppositeParity(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.CountOppositeParity(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.CountOppositeParity(nums)));
 
             ////(3925.) Concatenate Array With Reverse (EASY)
             //int[] nums = [1,2,3];
@@ -16167,9 +16167,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SecondsBetweenTimes(startTime, endTime));
 
+            ////(4020.) Elevator Requests I (EASY)
+            int n = 5;
+            int[] requests = [2, 1, 4, 3];
 
+            LeetCode_4020 classLeetCode = new LeetCode_4020();
+            Console.WriteLine(classLeetCode.ElevatorRequests(n, requests));
 
+            //OR
 
+            Console.WriteLine(leetCodeAll.ElevatorRequests(n, requests));
 
 
 
