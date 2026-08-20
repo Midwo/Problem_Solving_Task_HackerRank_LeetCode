@@ -27,6 +27,7 @@ using System.Threading;
 using System.Timers;
 using System.Xml;
 using System.Xml.Linq;
+using static ProblemSolving.LeetCode.LeetCode_1286;
 using static ProblemSolving.LeetCode.LeetCode_1396;
 using static ProblemSolving.LeetCode.LeetCode_1476;
 using static ProblemSolving.LeetCode.LeetCode_1656;
@@ -7911,6 +7912,27 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+
+            ////(1286.) Iterator for Combination (MEDIUM)
+            LeetCode_1286 classLeetCode = new LeetCode_1286();
+
+            CombinationIterator itr = new CombinationIterator("abc", 2);
+            Console.WriteLine(itr.Next());    // return "ab"
+            Console.WriteLine(itr.HasNext()); // return True
+            Console.WriteLine(itr.Next());    // return "ac"
+            Console.WriteLine(itr.HasNext()); // return True
+            Console.WriteLine(itr.Next());    // return "bc"
+            Console.WriteLine(itr.HasNext()); // return False
+
+            //OR
+
+            CombinationIteratorTask1286 itr1 = new CombinationIteratorTask1286("abc", 2);
+            Console.WriteLine(itr1.Next());    // return "ab"
+            Console.WriteLine(itr1.HasNext()); // return True
+            Console.WriteLine(itr1.Next());    // return "ac"
+            Console.WriteLine(itr1.HasNext()); // return True
+            Console.WriteLine(itr1.Next());    // return "bc"
+            Console.WriteLine(itr1.HasNext()); // return False
 
             ////(1287.) Element Appearing More Than 25% In Sorted Array (EASY)
             //int[] arr = arr = [1, 2, 2, 6, 6, 6, 6, 7, 10];
@@ -16168,15 +16190,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SecondsBetweenTimes(startTime, endTime));
 
             ////(4020.) Elevator Requests I (EASY)
-            int n = 5;
-            int[] requests = [2, 1, 4, 3];
+            //int n = 5;
+            //int[] requests = [2, 1, 4, 3];
 
-            LeetCode_4020 classLeetCode = new LeetCode_4020();
-            Console.WriteLine(classLeetCode.ElevatorRequests(n, requests));
+            //LeetCode_4020 classLeetCode = new LeetCode_4020();
+            //Console.WriteLine(classLeetCode.ElevatorRequests(n, requests));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ElevatorRequests(n, requests));
+            //Console.WriteLine(leetCodeAll.ElevatorRequests(n, requests));
 
 
 
