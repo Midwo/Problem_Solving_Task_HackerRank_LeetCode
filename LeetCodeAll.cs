@@ -35022,8 +35022,36 @@ namespace ProblemSolving
                 return _hasNext;
             }
         }
+        public int CountStudents(int[] students, int[] sandwiches)
+        {
+            Queue<int> lineStudents = new Queue<int>(students);
 
+            foreach (int sandwich in sandwiches)
+            {
+                int countStudents = lineStudents.Count;
 
+                for (int i = 0; i < countStudents; i++)
+                {
+                    int tempWhatNeed = lineStudents.Dequeue();
+
+                    if (tempWhatNeed == sandwich)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        lineStudents.Enqueue(tempWhatNeed);
+                    }
+                }
+
+                if (countStudents == lineStudents.Count)
+                {
+                    return countStudents;
+                }
+            }
+
+            return 0;
+        }
 
 
 

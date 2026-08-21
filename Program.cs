@@ -7914,25 +7914,25 @@ namespace ProblemSolving
             //}
 
             ////(1286.) Iterator for Combination (MEDIUM)
-            LeetCode_1286 classLeetCode = new LeetCode_1286();
+            //LeetCode_1286 classLeetCode = new LeetCode_1286();
 
-            CombinationIterator itr = new CombinationIterator("abc", 2);
-            Console.WriteLine(itr.Next());    // return "ab"
-            Console.WriteLine(itr.HasNext()); // return True
-            Console.WriteLine(itr.Next());    // return "ac"
-            Console.WriteLine(itr.HasNext()); // return True
-            Console.WriteLine(itr.Next());    // return "bc"
-            Console.WriteLine(itr.HasNext()); // return False
+            //CombinationIterator itr = new CombinationIterator("abc", 2);
+            //Console.WriteLine(itr.Next());    // return "ab"
+            //Console.WriteLine(itr.HasNext()); // return True
+            //Console.WriteLine(itr.Next());    // return "ac"
+            //Console.WriteLine(itr.HasNext()); // return True
+            //Console.WriteLine(itr.Next());    // return "bc"
+            //Console.WriteLine(itr.HasNext()); // return False
 
-            //OR
+            ////OR
 
-            CombinationIteratorTask1286 itr1 = new CombinationIteratorTask1286("abc", 2);
-            Console.WriteLine(itr1.Next());    // return "ab"
-            Console.WriteLine(itr1.HasNext()); // return True
-            Console.WriteLine(itr1.Next());    // return "ac"
-            Console.WriteLine(itr1.HasNext()); // return True
-            Console.WriteLine(itr1.Next());    // return "bc"
-            Console.WriteLine(itr1.HasNext()); // return False
+            //CombinationIteratorTask1286 itr1 = new CombinationIteratorTask1286("abc", 2);
+            //Console.WriteLine(itr1.Next());    // return "ab"
+            //Console.WriteLine(itr1.HasNext()); // return True
+            //Console.WriteLine(itr1.Next());    // return "ac"
+            //Console.WriteLine(itr1.HasNext()); // return True
+            //Console.WriteLine(itr1.Next());    // return "bc"
+            //Console.WriteLine(itr1.HasNext()); // return False
 
             ////(1287.) Element Appearing More Than 25% In Sorted Array (EASY)
             //int[] arr = arr = [1, 2, 2, 6, 6, 6, 6, 7, 10];
@@ -9737,6 +9737,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumUniqueSubarray(nums));
+
+            ////(1700.) Number of Students Unable to Eat Lunch (EASY)
+            int[] students = [1, 1, 1, 0, 0, 1];
+            int[] sandwiches = [1, 0, 0, 0, 1, 1];
+
+            LeetCode_1700 classLeetCode = new LeetCode_1700();
+            Console.WriteLine(classLeetCode.CountStudents(students, sandwiches));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountStudents(students, sandwiches));
 
             ////(1704.) Determine if String Halves Are Alike (EASY)
             //string s = "book";
