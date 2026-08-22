@@ -9510,6 +9510,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.GetMaximumGenerated(n));
 
+            ////(1652.) Defuse the Bomb (EASY)
+            int[] code = [2, 4, 9, 3];
+            int k = -2;
+
+            LeetCode_1652 classLeetCode = new LeetCode_1652();
+            Console.WriteLine(string.Join(',',classLeetCode.Decrypt(code, k)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.Decrypt(code, k)));
+
             ////(1656.) Design an Ordered Stream (EASY)
             //LeetCode_1656.OrderedStream os = new LeetCode_1656.OrderedStream(5);
             //Console.WriteLine(string.Join(',', os.Insert(3, "ccccc"))); // Inserts (3, "ccccc"), returns [].
@@ -9739,15 +9750,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumUniqueSubarray(nums));
 
             ////(1700.) Number of Students Unable to Eat Lunch (EASY)
-            int[] students = [1, 1, 1, 0, 0, 1];
-            int[] sandwiches = [1, 0, 0, 0, 1, 1];
+            //int[] students = [1, 1, 1, 0, 0, 1];
+            //int[] sandwiches = [1, 0, 0, 0, 1, 1];
 
-            LeetCode_1700 classLeetCode = new LeetCode_1700();
-            Console.WriteLine(classLeetCode.CountStudents(students, sandwiches));
+            //LeetCode_1700 classLeetCode = new LeetCode_1700();
+            //Console.WriteLine(classLeetCode.CountStudents(students, sandwiches));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountStudents(students, sandwiches));
+            //Console.WriteLine(leetCodeAll.CountStudents(students, sandwiches));
 
             ////(1704.) Determine if String Halves Are Alike (EASY)
             //string s = "book";
