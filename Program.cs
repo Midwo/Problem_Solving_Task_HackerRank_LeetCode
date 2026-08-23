@@ -9511,15 +9511,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.GetMaximumGenerated(n));
 
             ////(1652.) Defuse the Bomb (EASY)
-            int[] code = [2, 4, 9, 3];
-            int k = -2;
+            //int[] code = [2, 4, 9, 3];
+            //int k = -2;
 
-            LeetCode_1652 classLeetCode = new LeetCode_1652();
-            Console.WriteLine(string.Join(',',classLeetCode.Decrypt(code, k)));
+            //LeetCode_1652 classLeetCode = new LeetCode_1652();
+            //Console.WriteLine(string.Join(',',classLeetCode.Decrypt(code, k)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.Decrypt(code, k)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.Decrypt(code, k)));
 
             ////(1656.) Design an Ordered Stream (EASY)
             //LeetCode_1656.OrderedStream os = new LeetCode_1656.OrderedStream(5);
@@ -10617,6 +10617,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CountTriples(n));
+
+            ////(1927.) Sum Game (MEDIUM)
+            string num = "?3295???";
+
+            LeetCode_1927 classLeetCode = new LeetCode_1927();
+            Console.WriteLine(classLeetCode.SumGame(num));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumGame(num));
 
             ////(1929.) Concatenation of Array (EASY)
             //int[] nums = [1, 2, 1];
