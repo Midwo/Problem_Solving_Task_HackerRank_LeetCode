@@ -10619,14 +10619,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountTriples(n));
 
             ////(1927.) Sum Game (MEDIUM)
-            string num = "?3295???";
+            //string num = "?3295???";
 
-            LeetCode_1927 classLeetCode = new LeetCode_1927();
-            Console.WriteLine(classLeetCode.SumGame(num));
+            //LeetCode_1927 classLeetCode = new LeetCode_1927();
+            //Console.WriteLine(classLeetCode.SumGame(num));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumGame(num));
+            //Console.WriteLine(leetCodeAll.SumGame(num));
 
             ////(1929.) Concatenation of Array (EASY)
             //int[] nums = [1, 2, 1];
@@ -16220,6 +16220,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SecondsBetweenTimes(startTime, endTime));
+
+            ////(4006.) Count Valid Prefixes (EASY)
+            string s = "00101";
+
+            LeetCode_4006 classLeetCode = new LeetCode_4006();
+            Console.WriteLine(classLeetCode.CountValidPrefixes(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountValidPrefixes(s));
 
             ////(4020.) Elevator Requests I (EASY)
             //int n = 5;

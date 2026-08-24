@@ -35146,8 +35146,20 @@ namespace ProblemSolving
 
             return ((countLeftSpecial + countRightSpecial) % 2 == 1) || (leftSum - rightSum != (countRightSpecial - countLeftSpecial) * 9 / 2);
         }
+        public int CountValidPrefixes(string s)
+        {
+            int countValidPrefixes = 0;
+            int diff = 0;
 
+            for (int index = 0; index < s.Length; index++)
+            {
+                diff += s[index] == '1' ? 1 : -1;
+                if (diff == 1 || diff == -1 || diff == 0)
+                    countValidPrefixes++;
+            }
 
+            return countValidPrefixes;
+        }
 
 
 
