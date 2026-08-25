@@ -11842,6 +11842,21 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.LargestGoodInteger(num));
 
+            ////(2265.) Count Nodes Equal to Average of Subtree (MEDIUM)
+            TreeNode root = new TreeNode(4);
+            root.left = new TreeNode(8);
+            root.left.left = new TreeNode(0);
+            root.left.right = new TreeNode(1);
+            root.right = new TreeNode(5);
+            root.right.right = new TreeNode(6);
+
+            LeetCode_2265 classLeetCode = new LeetCode_2265();
+            Console.WriteLine(classLeetCode.AverageOfSubtree(root));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AverageOfSubtree(root));
+
             ////(2269.) Find the K-Beauty of a Number (EASY)
             //int num = 430043;
             //int k = 2;
@@ -16222,14 +16237,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SecondsBetweenTimes(startTime, endTime));
 
             ////(4006.) Count Valid Prefixes (EASY)
-            string s = "00101";
+            //string s = "00101";
 
-            LeetCode_4006 classLeetCode = new LeetCode_4006();
-            Console.WriteLine(classLeetCode.CountValidPrefixes(s));
+            //LeetCode_4006 classLeetCode = new LeetCode_4006();
+            //Console.WriteLine(classLeetCode.CountValidPrefixes(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountValidPrefixes(s));
+            //Console.WriteLine(leetCodeAll.CountValidPrefixes(s));
 
             ////(4020.) Elevator Requests I (EASY)
             //int n = 5;
