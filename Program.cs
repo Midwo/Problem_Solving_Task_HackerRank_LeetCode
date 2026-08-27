@@ -5412,22 +5412,22 @@ namespace ProblemSolving
             //leetCodeAll.LeetCode_586();
 
             ////(590.) N-ary Tree Postorder Traversal (EASY)
-            LeetCode_590 classLeetCode = new LeetCode_590();
+            //LeetCode_590 classLeetCode = new LeetCode_590();
             
-            Node node5 = new Node(5);
-            Node node6 = new Node(6);
+            //Node node5 = new Node(5);
+            //Node node6 = new Node(6);
 
-            Node node3 = new Node(3, new List<Node> { node5, node6 });
-            Node node2 = new Node(2);
-            Node node4 = new Node(4);
+            //Node node3 = new Node(3, new List<Node> { node5, node6 });
+            //Node node2 = new Node(2);
+            //Node node4 = new Node(4);
 
-            Node root = new Node(1, new List<Node> { node3, node2, node4 });
+            //Node root = new Node(1, new List<Node> { node3, node2, node4 });
 
-            Console.WriteLine(string.Join(',', classLeetCode.Postorder(root)));
+            //Console.WriteLine(string.Join(',', classLeetCode.Postorder(root)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.Postorder(root)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.Postorder(root)));
 
             ////(594.) Longest Harmonious Subsequence (EASY)
             ////int[] nums = [1, 3, 2, 2, 5, 2, 3, 7];
@@ -16250,6 +16250,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.SecondsBetweenTimes(startTime, endTime));
+
+            ////(3992.) Rearrange String to Avoid Character Pair (EASY)
+            string s = "aabc";
+            char x = 'a', y = 'c';
+
+            LeetCode_3992 classLeetCode = new LeetCode_3992();
+            Console.WriteLine(classLeetCode.RearrangeString(s, x, y));
+
+            ////OR
+
+            Console.WriteLine(leetCodeAll.RearrangeString(s, x, y));
 
             ////(4006.) Count Valid Prefixes (EASY)
             //string s = "00101";
