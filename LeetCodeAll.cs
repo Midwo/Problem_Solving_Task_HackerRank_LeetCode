@@ -35239,8 +35239,23 @@ namespace ProblemSolving
 
             return firstSection.ToString();
         }
+        public bool IsAdjacentDiffAtMostTwo(string s)
+        {
+            int lastValue = s[0] - '0';
+            int currValue;
 
+            for (int i = 0; i < s.Length; i++)
+            {
+                currValue = s[i] - '0';
 
+                if (Math.Abs(currValue - lastValue) > 2)
+                    return false;
+
+                lastValue = currValue;
+            }
+
+            return true;
+        }
 
 
 

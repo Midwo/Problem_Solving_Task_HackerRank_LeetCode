@@ -16220,6 +16220,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.ConcatWithReverse(nums)));
 
+            ////(3931.) Check Adjacent Digit Differences (EASY)
+            string s = "132";
+
+            LeetCode_3931 classLeetCode = new LeetCode_3931();
+            Console.WriteLine(classLeetCode.IsAdjacentDiffAtMostTwo(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsAdjacentDiffAtMostTwo(s));
+
             ////(3945.) Digit Frequency Score (EASY)
             //int n = 122;
 
@@ -16252,15 +16262,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SecondsBetweenTimes(startTime, endTime));
 
             ////(3992.) Rearrange String to Avoid Character Pair (EASY)
-            string s = "aabc";
-            char x = 'a', y = 'c';
+            //string s = "aabc";
+            //char x = 'a', y = 'c';
 
-            LeetCode_3992 classLeetCode = new LeetCode_3992();
-            Console.WriteLine(classLeetCode.RearrangeString(s, x, y));
+            //LeetCode_3992 classLeetCode = new LeetCode_3992();
+            //Console.WriteLine(classLeetCode.RearrangeString(s, x, y));
 
-            ////OR
+            //////OR
 
-            Console.WriteLine(leetCodeAll.RearrangeString(s, x, y));
+            //Console.WriteLine(leetCodeAll.RearrangeString(s, x, y));
 
             ////(4006.) Count Valid Prefixes (EASY)
             //string s = "00101";
