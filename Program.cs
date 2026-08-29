@@ -16159,6 +16159,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountCommas(n));
 
+            ////(3875.) Construct Uniform Parity Array I (EASY)
+            int[] nums1 = [2,3];
+
+            LeetCode_3875 classLeetCode = new LeetCode_3875();
+            Console.WriteLine(classLeetCode.UniformArray(nums1));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.UniformArray(nums1));
+
             ////(3884.) First Matching Character From Both Ends (EASY)
             //string s = "abcacbd";
 
@@ -16221,14 +16231,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.ConcatWithReverse(nums)));
 
             ////(3931.) Check Adjacent Digit Differences (EASY)
-            string s = "132";
+            //string s = "132";
 
-            LeetCode_3931 classLeetCode = new LeetCode_3931();
-            Console.WriteLine(classLeetCode.IsAdjacentDiffAtMostTwo(s));
+            //LeetCode_3931 classLeetCode = new LeetCode_3931();
+            //Console.WriteLine(classLeetCode.IsAdjacentDiffAtMostTwo(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsAdjacentDiffAtMostTwo(s));
+            //Console.WriteLine(leetCodeAll.IsAdjacentDiffAtMostTwo(s));
 
             ////(3945.) Digit Frequency Score (EASY)
             //int n = 122;

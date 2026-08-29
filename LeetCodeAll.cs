@@ -35256,6 +35256,29 @@ namespace ProblemSolving
 
             return true;
         }
+        public bool UniformArray(int[] nums1)
+        {
+            return true;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
