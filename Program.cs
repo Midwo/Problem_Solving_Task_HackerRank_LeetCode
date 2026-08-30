@@ -16139,6 +16139,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FirstUniqueFreq(nums));
 
+            ////(3856.) Trim Trailing Vowels (EASY)
+            string s = "idea";
+            
+            LeetCode_3856 classLeetCode = new LeetCode_3856();
+            Console.WriteLine(classLeetCode.TrimTrailingVowels(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.TrimTrailingVowels(s));
+
             ////(3857.) Minimum Cost to Split into Ones
             //int n = 4;
 
@@ -16160,14 +16170,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountCommas(n));
 
             ////(3875.) Construct Uniform Parity Array I (EASY)
-            int[] nums1 = [2,3];
+            //int[] nums1 = [2,3];
 
-            LeetCode_3875 classLeetCode = new LeetCode_3875();
-            Console.WriteLine(classLeetCode.UniformArray(nums1));
+            //LeetCode_3875 classLeetCode = new LeetCode_3875();
+            //Console.WriteLine(classLeetCode.UniformArray(nums1));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.UniformArray(nums1));
+            //Console.WriteLine(leetCodeAll.UniformArray(nums1));
 
             ////(3884.) First Matching Character From Both Ends (EASY)
             //string s = "abcacbd";
