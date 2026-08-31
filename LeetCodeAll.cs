@@ -35273,8 +35273,24 @@ namespace ProblemSolving
 
             return s[0..(indexStop + 1)];
         }
+        public long RemoveZeros(long n)
+        {
+            long result = 0;
+            long multiplier = 1;
 
+            while (n != 0)
+            {
+                long temp = n % 10;
+                if (temp > 0)
+                {
+                    result += multiplier * temp;
+                    multiplier *= 10;
+                }
+                n /= 10;
+            }
 
+            return result;
+        }
 
 
 

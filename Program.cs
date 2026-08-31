@@ -15890,6 +15890,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MissingMultiple(nums, k));
 
+            ////(3726.) Remove Zeros in Decimal Representation (EASY)
+            long n = 1020030;
+
+            LeetCode_3726 classLeetCode = new LeetCode_3726();
+            Console.WriteLine(classLeetCode.RemoveZeros(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.RemoveZeros(n));
+
             ////(3731.) Find Missing Elements (EASY)
             //int[] nums = [1, 4, 2, 5];
 
@@ -16140,14 +16150,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FirstUniqueFreq(nums));
 
             ////(3856.) Trim Trailing Vowels (EASY)
-            string s = "idea";
-            
-            LeetCode_3856 classLeetCode = new LeetCode_3856();
-            Console.WriteLine(classLeetCode.TrimTrailingVowels(s));
+            //string s = "idea";
 
-            //OR
+            //LeetCode_3856 classLeetCode = new LeetCode_3856();
+            //Console.WriteLine(classLeetCode.TrimTrailingVowels(s));
 
-            Console.WriteLine(leetCodeAll.TrimTrailingVowels(s));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.TrimTrailingVowels(s));
 
             ////(3857.) Minimum Cost to Split into Ones
             //int n = 4;
