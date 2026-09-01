@@ -15891,14 +15891,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MissingMultiple(nums, k));
 
             ////(3726.) Remove Zeros in Decimal Representation (EASY)
-            long n = 1020030;
+            //long n = 1020030;
 
-            LeetCode_3726 classLeetCode = new LeetCode_3726();
-            Console.WriteLine(classLeetCode.RemoveZeros(n));
+            //LeetCode_3726 classLeetCode = new LeetCode_3726();
+            //Console.WriteLine(classLeetCode.RemoveZeros(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.RemoveZeros(n));
+            //Console.WriteLine(leetCodeAll.RemoveZeros(n));
 
             ////(3731.) Find Missing Elements (EASY)
             //int[] nums = [1, 4, 2, 5];
@@ -16053,6 +16053,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.SortByReflection(nums)));
+
+            ////(3774.) Absolute Difference Between Maximum and Minimum K Elements (EASY)
+            int[] nums = [5, 2, 2, 4];
+            int k = 2;
+
+            LeetCode_3774 classLeetCode = new LeetCode_3774();
+            Console.WriteLine(classLeetCode.AbsDifference(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.AbsDifference(nums, k));
 
             ////(3783.) Mirror Distance of an Integer (EASY)
             //int n = 25;
