@@ -35306,8 +35306,21 @@ namespace ProblemSolving
 
             return absDifference;
         }
+        public int DistributeCandiesTask2928(int n, int limit)
+        {
+            int result = 0;
 
+            for (int firstChild = 0; firstChild <= limit; firstChild++)
+            {
+                for (int secondChild = 0; secondChild <= limit; secondChild++)
+                {
+                    if (firstChild + secondChild <= n && n - firstChild - secondChild <= limit)
+                        result++;
+                }
+            }
 
+            return result;
+        }
 
 
 

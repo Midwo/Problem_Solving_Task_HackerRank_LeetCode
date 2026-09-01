@@ -5413,7 +5413,7 @@ namespace ProblemSolving
 
             ////(590.) N-ary Tree Postorder Traversal (EASY)
             //LeetCode_590 classLeetCode = new LeetCode_590();
-            
+
             //Node node5 = new Node(5);
             //Node node6 = new Node(6);
 
@@ -13796,6 +13796,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindChampion(grid));
 
+            ////(2928.) Distribute Candies Among Children I (EASY)
+            int n = 5;
+            int limit = 2;
+            
+            LeetCode_2928 classLeetCode = new LeetCode_2928();
+            Console.WriteLine(classLeetCode.DistributeCandies(n, limit));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DistributeCandiesTask2928(n, limit));
+
             ////(2932.) Maximum Strong Pair XOR I (EASY)
             //int[] nums = [1, 2, 3, 4, 5];
 
@@ -16055,15 +16066,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.SortByReflection(nums)));
 
             ////(3774.) Absolute Difference Between Maximum and Minimum K Elements (EASY)
-            int[] nums = [5, 2, 2, 4];
-            int k = 2;
+            //int[] nums = [5, 2, 2, 4];
+            //int k = 2;
 
-            LeetCode_3774 classLeetCode = new LeetCode_3774();
-            Console.WriteLine(classLeetCode.AbsDifference(nums, k));
+            //LeetCode_3774 classLeetCode = new LeetCode_3774();
+            //Console.WriteLine(classLeetCode.AbsDifference(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.AbsDifference(nums, k));
+            //Console.WriteLine(leetCodeAll.AbsDifference(nums, k));
 
             ////(3783.) Mirror Distance of an Integer (EASY)
             //int n = 25;
