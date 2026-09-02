@@ -16325,15 +16325,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.RearrangeString(s, x, y));
 
             ////(3996.) Even Number of Knight Moves (EASY)
-            int[] start = [1,1];
-            int[] target = [2,2];
+            //int[] start = [1,1];
+            //int[] target = [2,2];
 
-            LeetCode_3996 classLeetCode = new LeetCode_3996();
-            Console.WriteLine(classLeetCode.CanReach(start,target));
+            //LeetCode_3996 classLeetCode = new LeetCode_3996();
+            //Console.WriteLine(classLeetCode.CanReach(start,target));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CanReach(start, target));
+            //Console.WriteLine(leetCodeAll.CanReach(start, target));
 
             ////(4006.) Count Valid Prefixes (EASY)
             //string s = "00101";
