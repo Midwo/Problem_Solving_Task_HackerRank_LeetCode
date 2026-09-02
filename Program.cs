@@ -13797,15 +13797,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindChampion(grid));
 
             ////(2928.) Distribute Candies Among Children I (EASY)
-            int n = 5;
-            int limit = 2;
+            //int n = 5;
+            //int limit = 2;
             
-            LeetCode_2928 classLeetCode = new LeetCode_2928();
-            Console.WriteLine(classLeetCode.DistributeCandies(n, limit));
+            //LeetCode_2928 classLeetCode = new LeetCode_2928();
+            //Console.WriteLine(classLeetCode.DistributeCandies(n, limit));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DistributeCandiesTask2928(n, limit));
+            //Console.WriteLine(leetCodeAll.DistributeCandiesTask2928(n, limit));
 
             ////(2932.) Maximum Strong Pair XOR I (EASY)
             //int[] nums = [1, 2, 3, 4, 5];
@@ -16323,6 +16323,17 @@ namespace ProblemSolving
             //////OR
 
             //Console.WriteLine(leetCodeAll.RearrangeString(s, x, y));
+
+            ////(3996.) Even Number of Knight Moves (EASY)
+            int[] start = [1,1];
+            int[] target = [2,2];
+
+            LeetCode_3996 classLeetCode = new LeetCode_3996();
+            Console.WriteLine(classLeetCode.CanReach(start,target));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CanReach(start, target));
 
             ////(4006.) Count Valid Prefixes (EASY)
             //string s = "00101";
