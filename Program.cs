@@ -5666,6 +5666,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', result1));
 
+            ////(654.) Maximum Binary Tree (MEDIUM)
+            int[] nums = [3,2,1,6,0,5];
+
+            LeetCode_654 classLeetCode = new LeetCode_654();
+            classLeetCode.ConstructMaximumBinaryTree(nums);
+
+            //OR
+
+            leetCodeAll.ConstructMaximumBinaryTree(nums);
+
             ////(657.) Robot Return to Origin (EASY)
             //string moves = "UD";
 
@@ -13799,7 +13809,7 @@ namespace ProblemSolving
             ////(2928.) Distribute Candies Among Children I (EASY)
             //int n = 5;
             //int limit = 2;
-            
+
             //LeetCode_2928 classLeetCode = new LeetCode_2928();
             //Console.WriteLine(classLeetCode.DistributeCandies(n, limit));
 
@@ -16355,6 +16365,60 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ElevatorRequests(n, requests));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
