@@ -5667,14 +5667,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', result1));
 
             ////(654.) Maximum Binary Tree (MEDIUM)
-            int[] nums = [3,2,1,6,0,5];
+            //int[] nums = [3,2,1,6,0,5];
 
-            LeetCode_654 classLeetCode = new LeetCode_654();
-            classLeetCode.ConstructMaximumBinaryTree(nums);
+            //LeetCode_654 classLeetCode = new LeetCode_654();
+            //classLeetCode.ConstructMaximumBinaryTree(nums);
 
-            //OR
+            ////OR
 
-            leetCodeAll.ConstructMaximumBinaryTree(nums);
+            //leetCodeAll.ConstructMaximumBinaryTree(nums);
 
             ////(657.) Robot Return to Origin (EASY)
             //string moves = "UD";
@@ -16261,6 +16261,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.FindDegrees(matrix)));
+
+            ////(3903.) Smallest Stable Index I (EASY)
+            int[] nums = [5, 0, 1, 4];
+            int k = 3;
+
+            LeetCode_3903 classLeetCode = new LeetCode_3903();
+            Console.WriteLine(classLeetCode.FirstStableIndex(nums, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FirstStableIndex(nums, k));
 
             ////(3917.) Count Indices With Opposite Parity (EASY)
             //int[] nums = [1,2,3,4];
