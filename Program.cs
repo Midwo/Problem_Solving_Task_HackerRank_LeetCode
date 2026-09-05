@@ -16263,15 +16263,26 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.FindDegrees(matrix)));
 
             ////(3903.) Smallest Stable Index I (EASY)
-            int[] nums = [5, 0, 1, 4];
-            int k = 3;
+            //int[] nums = [5, 0, 1, 4];
+            //int k = 3;
 
-            LeetCode_3903 classLeetCode = new LeetCode_3903();
+            //LeetCode_3903 classLeetCode = new LeetCode_3903();
+            //Console.WriteLine(classLeetCode.FirstStableIndex(nums, k));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.FirstStableIndex(nums, k));
+
+            ////(3904.) Smallest Stable Index II (MEDIUM)
+            int[] nums = [3, 2, 1];
+            int k = 1;
+
+            LeetCode_3904 classLeetCode = new LeetCode_3904();
             Console.WriteLine(classLeetCode.FirstStableIndex(nums, k));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.FirstStableIndex(nums, k));
+            Console.WriteLine(leetCodeAll.FirstStableIndexTask3904(nums, k));
 
             ////(3917.) Count Indices With Opposite Parity (EASY)
             //int[] nums = [1,2,3,4];
