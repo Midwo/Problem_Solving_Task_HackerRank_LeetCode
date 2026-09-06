@@ -8505,6 +8505,19 @@ namespace ProblemSolving
             //Console.WriteLine(stk1.Pop());
             //Console.WriteLine(stk1.Pop());
 
+            ////(1382.) Balance a Binary Search Tree (MEDIUM)
+            TreeNode root = new TreeNode(2);
+            root.left = new TreeNode(1);
+            root.right = new TreeNode(3);
+
+
+            LeetCode_1382 classLeetCode = new LeetCode_1382();
+            classLeetCode.BalanceBST(root);
+
+            //OR
+
+            leetCodeAll.BalanceBST(root);
+
             ////(1385.) Find the Distance Value Between Two Arrays (EASY)
             //int[] arr1 = [4, 5, 8];
             //int[] arr2 = [10,9,1,8];
@@ -16274,15 +16287,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FirstStableIndex(nums, k));
 
             ////(3904.) Smallest Stable Index II (MEDIUM)
-            int[] nums = [3, 2, 1];
-            int k = 1;
+            //int[] nums = [3, 2, 1];
+            //int k = 1;
 
-            LeetCode_3904 classLeetCode = new LeetCode_3904();
-            Console.WriteLine(classLeetCode.FirstStableIndex(nums, k));
+            //LeetCode_3904 classLeetCode = new LeetCode_3904();
+            //Console.WriteLine(classLeetCode.FirstStableIndex(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FirstStableIndexTask3904(nums, k));
+            //Console.WriteLine(leetCodeAll.FirstStableIndexTask3904(nums, k));
 
             ////(3917.) Count Indices With Opposite Parity (EASY)
             //int[] nums = [1,2,3,4];
