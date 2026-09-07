@@ -8506,17 +8506,17 @@ namespace ProblemSolving
             //Console.WriteLine(stk1.Pop());
 
             ////(1382.) Balance a Binary Search Tree (MEDIUM)
-            TreeNode root = new TreeNode(2);
-            root.left = new TreeNode(1);
-            root.right = new TreeNode(3);
+            //TreeNode root = new TreeNode(2);
+            //root.left = new TreeNode(1);
+            //root.right = new TreeNode(3);
 
 
-            LeetCode_1382 classLeetCode = new LeetCode_1382();
-            classLeetCode.BalanceBST(root);
+            //LeetCode_1382 classLeetCode = new LeetCode_1382();
+            //classLeetCode.BalanceBST(root);
 
-            //OR
+            ////OR
 
-            leetCodeAll.BalanceBST(root);
+            //leetCodeAll.BalanceBST(root);
 
             ////(1385.) Find the Distance Value Between Two Arrays (EASY)
             //int[] arr1 = [4, 5, 8];
@@ -16346,6 +16346,24 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CheckGoodInteger(n));
+
+            ////(3963.) Create Grid With Exactly One Path (EASY)
+            int m = 2;
+            int n = 3;
+
+            LeetCode_3963 classLeetCode = new LeetCode_3963();
+
+            foreach (var lineResult in classLeetCode.CreateGrid(m,n))
+            {
+                Console.WriteLine(string.Join(',', lineResult));
+            }
+
+            //OR
+
+            foreach (var lineResult in classLeetCode.CreateGrid(m, n))
+            {
+                Console.WriteLine(string.Join(',', lineResult));
+            }
 
             ////(3986.) Number of Elapsed Seconds Between Two Times (EASY)
             //string startTime = "12:34:56";
