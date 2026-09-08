@@ -16214,6 +16214,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinCost(n));
 
+            ////(3870.) Count Commas in Range (EASY)
+            int n = 1002;
+
+            LeetCode_3870 classLeetCode = new LeetCode_3870();
+            Console.WriteLine(classLeetCode.CountCommas(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountCommas(n));
+
             ////(3871.) Count Commas in Range II (MEDIUM)
             //long n = 1133;
 
@@ -16348,22 +16358,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CheckGoodInteger(n));
 
             ////(3963.) Create Grid With Exactly One Path (EASY)
-            int m = 2;
-            int n = 3;
+            //int m = 2;
+            //int n = 3;
 
-            LeetCode_3963 classLeetCode = new LeetCode_3963();
+            //LeetCode_3963 classLeetCode = new LeetCode_3963();
 
-            foreach (var lineResult in classLeetCode.CreateGrid(m,n))
-            {
-                Console.WriteLine(string.Join(',', lineResult));
-            }
+            //foreach (var lineResult in classLeetCode.CreateGrid(m,n))
+            //{
+            //    Console.WriteLine(string.Join(',', lineResult));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var lineResult in classLeetCode.CreateGrid(m, n))
-            {
-                Console.WriteLine(string.Join(',', lineResult));
-            }
+            //foreach (var lineResult in classLeetCode.CreateGrid(m, n))
+            //{
+            //    Console.WriteLine(string.Join(',', lineResult));
+            //}
 
             ////(3986.) Number of Elapsed Seconds Between Two Times (EASY)
             //string startTime = "12:34:56";
