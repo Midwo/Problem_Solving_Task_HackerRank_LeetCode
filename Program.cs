@@ -16215,14 +16215,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinCost(n));
 
             ////(3870.) Count Commas in Range (EASY)
-            int n = 1002;
+            //int n = 1002;
 
-            LeetCode_3870 classLeetCode = new LeetCode_3870();
-            Console.WriteLine(classLeetCode.CountCommas(n));
+            //LeetCode_3870 classLeetCode = new LeetCode_3870();
+            //Console.WriteLine(classLeetCode.CountCommas(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountCommas(n));
+            //Console.WriteLine(leetCodeAll.CountCommas(n));
 
             ////(3871.) Count Commas in Range II (MEDIUM)
             //long n = 1133;
@@ -16336,6 +16336,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.IsAdjacentDiffAtMostTwo(s));
+
+            ////(3940.) Limit Occurrences in Sorted Array (EASY)
+            int[] nums = [1,1,1,2,2,3];
+            int k = 2;
+
+            LeetCode_3940 classLeetCode = new LeetCode_3940();
+            Console.WriteLine(string.Join(',',classLeetCode.LimitOccurrences(nums, k)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.LimitOccurrences(nums, k)));
 
             ////(3945.) Digit Frequency Score (EASY)
             //int n = 122;
