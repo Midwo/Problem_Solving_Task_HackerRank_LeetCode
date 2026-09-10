@@ -11128,6 +11128,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.NodesBetweenCriticalPoints(head)));
 
+            ////(2062.) Count Vowel Substrings of a String (EASY)
+            string word = "cuaieuouac";
+
+            LeetCode_2062 classLeetCode = new LeetCode_2062();
+            Console.WriteLine(classLeetCode.CountVowelSubstrings(word));
+
+            //OR
+
+            Console.WriteLine(classLeetCode.CountVowelSubstrings(word));
+
             ////(2068.) Check Whether Two Strings are Almost Equivalent (EASY)
             //string word1 = "abcdeef";
             //string word2 = "abaaacc";
@@ -16338,15 +16348,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsAdjacentDiffAtMostTwo(s));
 
             ////(3940.) Limit Occurrences in Sorted Array (EASY)
-            int[] nums = [1,1,1,2,2,3];
-            int k = 2;
+            //int[] nums = [1,1,1,2,2,3];
+            //int k = 2;
 
-            LeetCode_3940 classLeetCode = new LeetCode_3940();
-            Console.WriteLine(string.Join(',',classLeetCode.LimitOccurrences(nums, k)));
+            //LeetCode_3940 classLeetCode = new LeetCode_3940();
+            //Console.WriteLine(string.Join(',',classLeetCode.LimitOccurrences(nums, k)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.LimitOccurrences(nums, k)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.LimitOccurrences(nums, k)));
 
             ////(3945.) Digit Frequency Score (EASY)
             //int n = 122;
