@@ -8096,6 +8096,26 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.DecompressRLElist(nums)));
 
+            ////(1315.) Sum of Nodes with Even-Valued Grandparent (MEDIUM)
+            TreeNode root = new TreeNode(6);
+            root.left = new TreeNode(7);
+            root.left.left = new TreeNode(2);
+            root.left.left.left = new TreeNode(9);
+            root.left.right = new TreeNode(7);
+            root.left.right.left = new TreeNode(1);
+            root.left.right.right = new TreeNode(4);
+            root.right = new TreeNode(8);
+            root.right.left = new TreeNode(1);
+            root.right.right = new TreeNode(3);
+            root.right.right.right = new TreeNode(5);
+
+            LeetCode_1315 classLeetCode = new LeetCode_1315();
+            Console.WriteLine(classLeetCode.SumEvenGrandparent(root));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.SumEvenGrandparent(root));
+
             ////(1317.) Convert Integer to the Sum of Two No-Zero Integers (EASY)
             //int n = 10000;
 
@@ -11129,14 +11149,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.NodesBetweenCriticalPoints(head)));
 
             ////(2062.) Count Vowel Substrings of a String (EASY)
-            string word = "cuaieuouac";
+            //string word = "cuaieuouac";
 
-            LeetCode_2062 classLeetCode = new LeetCode_2062();
-            Console.WriteLine(classLeetCode.CountVowelSubstrings(word));
+            //LeetCode_2062 classLeetCode = new LeetCode_2062();
+            //Console.WriteLine(classLeetCode.CountVowelSubstrings(word));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(classLeetCode.CountVowelSubstrings(word));
+            //Console.WriteLine(classLeetCode.CountVowelSubstrings(word));
 
             ////(2068.) Check Whether Two Strings are Almost Equivalent (EASY)
             //string word1 = "abcdeef";
