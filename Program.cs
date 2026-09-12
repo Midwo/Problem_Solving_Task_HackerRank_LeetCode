@@ -6940,6 +6940,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.LargestSumAfterKNegations(nums, k));
 
+            ////(1008.) Construct Binary Search Tree from Preorder Traversal (MEDIUM)
+            int[] preorder = [8,5,1,7,10,12];
+
+            LeetCode_1008 classLeetCode = new LeetCode_1008();
+            classLeetCode.BstFromPreorder(preorder);
+
+            //OR
+
+            leetCodeAll.BstFromPreorder(preorder);
+
             ////(1009.) Complement of Base 10 Integer (EASY)
             //int n = 5;
 
@@ -8097,24 +8107,24 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.DecompressRLElist(nums)));
 
             ////(1315.) Sum of Nodes with Even-Valued Grandparent (MEDIUM)
-            TreeNode root = new TreeNode(6);
-            root.left = new TreeNode(7);
-            root.left.left = new TreeNode(2);
-            root.left.left.left = new TreeNode(9);
-            root.left.right = new TreeNode(7);
-            root.left.right.left = new TreeNode(1);
-            root.left.right.right = new TreeNode(4);
-            root.right = new TreeNode(8);
-            root.right.left = new TreeNode(1);
-            root.right.right = new TreeNode(3);
-            root.right.right.right = new TreeNode(5);
+            //TreeNode root = new TreeNode(6);
+            //root.left = new TreeNode(7);
+            //root.left.left = new TreeNode(2);
+            //root.left.left.left = new TreeNode(9);
+            //root.left.right = new TreeNode(7);
+            //root.left.right.left = new TreeNode(1);
+            //root.left.right.right = new TreeNode(4);
+            //root.right = new TreeNode(8);
+            //root.right.left = new TreeNode(1);
+            //root.right.right = new TreeNode(3);
+            //root.right.right.right = new TreeNode(5);
 
-            LeetCode_1315 classLeetCode = new LeetCode_1315();
-            Console.WriteLine(classLeetCode.SumEvenGrandparent(root));
+            //LeetCode_1315 classLeetCode = new LeetCode_1315();
+            //Console.WriteLine(classLeetCode.SumEvenGrandparent(root));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.SumEvenGrandparent(root));
+            //Console.WriteLine(leetCodeAll.SumEvenGrandparent(root));
 
             ////(1317.) Convert Integer to the Sum of Two No-Zero Integers (EASY)
             //int n = 10000;

@@ -35590,8 +35590,24 @@ namespace ProblemSolving
             }
             return sumEvenGrandParent;
         }
+        public TreeNode BstFromPreorder(int[] preorder)
+        {
+            int index = 0;
+            int maxIndex = preorder.Length - 1;
+            return BuildTreeNode(int.MaxValue);
 
+            TreeNode BuildTreeNode(int maxValue)
+            {
+                if (index > maxIndex || preorder[index] > maxValue)
+                    return null;
 
+                TreeNode root = new TreeNode(preorder[index++]);
+                root.left = BuildTreeNode(root.val);
+                root.right = BuildTreeNode(maxValue);
+
+                return root;
+            }
+        }
 
 
 
