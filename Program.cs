@@ -6263,6 +6263,17 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', item));
             //}
 
+            ////(835.) Image Overlap (MEDIUM)
+            int[][] img1 = [[1, 1, 0], [0, 1, 0], [0, 1, 0]];
+            int[][] img2 = [[0, 0, 0], [0, 1, 1], [0, 0, 1]];
+
+            LeetCode_835 classLeetCode = new LeetCode_835();
+            Console.WriteLine(classLeetCode.LargestOverlap(img1, img2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LargestOverlap(img1, img2));
+
             ////(836.) Rectangle Overlap (EASY)
             //int[] rec1 = [0, 0, 2, 2];
             //int[] rec2 = [1, 1, 3, 3];
@@ -6941,14 +6952,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LargestSumAfterKNegations(nums, k));
 
             ////(1008.) Construct Binary Search Tree from Preorder Traversal (MEDIUM)
-            int[] preorder = [8,5,1,7,10,12];
+            //int[] preorder = [8,5,1,7,10,12];
 
-            LeetCode_1008 classLeetCode = new LeetCode_1008();
-            classLeetCode.BstFromPreorder(preorder);
+            //LeetCode_1008 classLeetCode = new LeetCode_1008();
+            //classLeetCode.BstFromPreorder(preorder);
 
-            //OR
+            ////OR
 
-            leetCodeAll.BstFromPreorder(preorder);
+            //leetCodeAll.BstFromPreorder(preorder);
 
             ////(1009.) Complement of Base 10 Integer (EASY)
             //int n = 5;
@@ -16479,22 +16490,6 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ElevatorRequests(n, requests));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
