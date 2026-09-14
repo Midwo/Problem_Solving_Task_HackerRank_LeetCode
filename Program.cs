@@ -4459,6 +4459,19 @@ namespace ProblemSolving
             //////OR
             //Console.WriteLine(leetCodeAll.IsPalindrome(head));
 
+            ////(237.) Delete Node in a Linked List (MEDIUM)
+            ListNode head = new ListNode(4);
+            head.next = new ListNode(5);
+            head.next.next = new ListNode(1);
+            head.next.next.next = new ListNode(9);
+
+            LeetCode_237 classLeetCode = new LeetCode_237();
+            classLeetCode.DeleteNode(head);
+
+            //OR
+
+            leetCodeAll.DeleteNode(head);
+
             ////(238.) Product of Array Except Self (MEDIUM)
             //int[] nums = [1, 2  , 3 ,  4];
 
@@ -6263,16 +6276,16 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', item));
             //}
 
-            ////(835.) Image Overlap (MEDIUM)
-            int[][] img1 = [[1, 1, 0], [0, 1, 0], [0, 1, 0]];
-            int[][] img2 = [[0, 0, 0], [0, 1, 1], [0, 0, 1]];
+            //////(835.) Image Overlap (MEDIUM)
+            //int[][] img1 = [[1, 1, 0], [0, 1, 0], [0, 1, 0]];
+            //int[][] img2 = [[0, 0, 0], [0, 1, 1], [0, 0, 1]];
 
-            LeetCode_835 classLeetCode = new LeetCode_835();
-            Console.WriteLine(classLeetCode.LargestOverlap(img1, img2));
+            //LeetCode_835 classLeetCode = new LeetCode_835();
+            //Console.WriteLine(classLeetCode.LargestOverlap(img1, img2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LargestOverlap(img1, img2));
+            //Console.WriteLine(leetCodeAll.LargestOverlap(img1, img2));
 
             ////(836.) Rectangle Overlap (EASY)
             //int[] rec1 = [0, 0, 2, 2];
