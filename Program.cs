@@ -4460,17 +4460,17 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.IsPalindrome(head));
 
             ////(237.) Delete Node in a Linked List (MEDIUM)
-            ListNode head = new ListNode(4);
-            head.next = new ListNode(5);
-            head.next.next = new ListNode(1);
-            head.next.next.next = new ListNode(9);
+            //ListNode head = new ListNode(4);
+            //head.next = new ListNode(5);
+            //head.next.next = new ListNode(1);
+            //head.next.next.next = new ListNode(9);
 
-            LeetCode_237 classLeetCode = new LeetCode_237();
-            classLeetCode.DeleteNode(head);
+            //LeetCode_237 classLeetCode = new LeetCode_237();
+            //classLeetCode.DeleteNode(head);
 
-            //OR
+            ////OR
 
-            leetCodeAll.DeleteNode(head);
+            //leetCodeAll.DeleteNode(head);
 
             ////(238.) Product of Array Except Self (MEDIUM)
             //int[] nums = [1, 2  , 3 ,  4];
@@ -7844,6 +7844,26 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', item));
             //}
+
+            ////(1261.) Find Elements in a Contaminated Binary Tree (MEDIUM)
+            TreeNode root = new TreeNode(-1);
+            root.left = new TreeNode(-1);
+            root.left.right = new TreeNode(-1);
+            root.left.left = new TreeNode(-1);
+            root.left.right = new TreeNode(-1);
+            root.right = new TreeNode(-1);
+
+            LeetCode_1261.FindElements classLeetCode = new LeetCode_1261.FindElements(root);
+            Console.WriteLine(classLeetCode.Find(1));
+            Console.WriteLine(classLeetCode.Find(3));
+            Console.WriteLine(classLeetCode.Find(5));
+
+            //OR
+
+            FindElements leetCodeAllMethod = new FindElements(root);
+            Console.WriteLine(leetCodeAllMethod.Find(1));
+            Console.WriteLine(leetCodeAllMethod.Find(3));
+            Console.WriteLine(leetCodeAllMethod.Find(5));
 
             ////(1262. Greatest Sum Divisible by Three (MEDIUM)
             //int[] nums = [1, 2, 3, 4, 4];
