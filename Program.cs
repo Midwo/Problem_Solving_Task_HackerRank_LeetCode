@@ -7846,24 +7846,24 @@ namespace ProblemSolving
             //}
 
             ////(1261.) Find Elements in a Contaminated Binary Tree (MEDIUM)
-            TreeNode root = new TreeNode(-1);
-            root.left = new TreeNode(-1);
-            root.left.right = new TreeNode(-1);
-            root.left.left = new TreeNode(-1);
-            root.left.right = new TreeNode(-1);
-            root.right = new TreeNode(-1);
+            //TreeNode root = new TreeNode(-1);
+            //root.left = new TreeNode(-1);
+            //root.left.right = new TreeNode(-1);
+            //root.left.left = new TreeNode(-1);
+            //root.left.right = new TreeNode(-1);
+            //root.right = new TreeNode(-1);
 
-            LeetCode_1261.FindElements classLeetCode = new LeetCode_1261.FindElements(root);
-            Console.WriteLine(classLeetCode.Find(1));
-            Console.WriteLine(classLeetCode.Find(3));
-            Console.WriteLine(classLeetCode.Find(5));
+            //LeetCode_1261.FindElements classLeetCode = new LeetCode_1261.FindElements(root);
+            //Console.WriteLine(classLeetCode.Find(1));
+            //Console.WriteLine(classLeetCode.Find(3));
+            //Console.WriteLine(classLeetCode.Find(5));
 
-            //OR
+            ////OR
 
-            FindElements leetCodeAllMethod = new FindElements(root);
-            Console.WriteLine(leetCodeAllMethod.Find(1));
-            Console.WriteLine(leetCodeAllMethod.Find(3));
-            Console.WriteLine(leetCodeAllMethod.Find(5));
+            //FindElements leetCodeAllMethod = new FindElements(root);
+            //Console.WriteLine(leetCodeAllMethod.Find(1));
+            //Console.WriteLine(leetCodeAllMethod.Find(3));
+            //Console.WriteLine(leetCodeAllMethod.Find(5));
 
             ////(1262. Greatest Sum Divisible by Three (MEDIUM)
             //int[] nums = [1, 2, 3, 4, 4];
@@ -16524,11 +16524,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ElevatorRequests(n, requests));
 
+            ////(4049.) Count Values With Equally Spaced Occurrences II (MEDIUM)
+            int[] nums = [1, 8, 1, 5, 1, 5, 8, 5];
 
+            LeetCode_4049 classLeetCode = new LeetCode_4049();
+            Console.WriteLine(classLeetCode.CountSpecialIntegers(nums));
 
+            //OR
 
-
-
+            Console.WriteLine(leetCodeAll.CountSpecialIntegers(nums));
 
 
 
