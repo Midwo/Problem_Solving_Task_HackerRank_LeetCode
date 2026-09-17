@@ -9069,6 +9069,17 @@ namespace ProblemSolving
             //Console.WriteLine(subrectangleQueries1.GetValue(3, 1));
             //Console.WriteLine(subrectangleQueries1.GetValue(3, 1));
 
+            ////(1477.) Find Two Non-overlapping Sub-arrays Each With Target Sum (MEDIUM)
+            int[] arr = [3, 2, 2, 4, 3];
+            int target = 4;
+
+            LeetCode_1477 classLeetCode = new LeetCode_1477();
+            Console.WriteLine(classLeetCode.MinSumOfLengths(arr, target));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinSumOfLengths(arr, target));
+
             ////(1480.) Running Sum of 1d Array (EASY)
             //int[] nums = [1, 1, 1, 1, 1];
 
@@ -16525,14 +16536,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ElevatorRequests(n, requests));
 
             ////(4049.) Count Values With Equally Spaced Occurrences II (MEDIUM)
-            int[] nums = [1, 8, 1, 5, 1, 5, 8, 5];
+            //int[] nums = [1, 8, 1, 5, 1, 5, 8, 5];
 
-            LeetCode_4049 classLeetCode = new LeetCode_4049();
-            Console.WriteLine(classLeetCode.CountSpecialIntegers(nums));
+            //LeetCode_4049 classLeetCode = new LeetCode_4049();
+            //Console.WriteLine(classLeetCode.CountSpecialIntegers(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountSpecialIntegers(nums));
+            //Console.WriteLine(leetCodeAll.CountSpecialIntegers(nums));
 
 
 
