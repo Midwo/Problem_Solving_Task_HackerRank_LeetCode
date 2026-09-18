@@ -9070,15 +9070,15 @@ namespace ProblemSolving
             //Console.WriteLine(subrectangleQueries1.GetValue(3, 1));
 
             ////(1477.) Find Two Non-overlapping Sub-arrays Each With Target Sum (MEDIUM)
-            int[] arr = [3, 2, 2, 4, 3];
-            int target = 4;
+            //int[] arr = [3, 2, 2, 4, 3];
+            //int target = 4;
 
-            LeetCode_1477 classLeetCode = new LeetCode_1477();
-            Console.WriteLine(classLeetCode.MinSumOfLengths(arr, target));
+            //LeetCode_1477 classLeetCode = new LeetCode_1477();
+            //Console.WriteLine(classLeetCode.MinSumOfLengths(arr, target));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinSumOfLengths(arr, target));
+            //Console.WriteLine(leetCodeAll.MinSumOfLengths(arr, target));
 
             ////(1480.) Running Sum of 1d Array (EASY)
             //int[] nums = [1, 1, 1, 1, 1];
@@ -11750,6 +11750,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.CellsInRange(s)));
+
+            ////(2196.) Create Binary Tree From Descriptions (MEDIUM)
+            int[][] descriptions = [[20, 15, 1], [20, 17, 0], [50, 20, 1], [50, 80, 0], [80, 19, 1]];
+
+            LeetCode_2196 classLeetCode = new LeetCode_2196();
+            classLeetCode.CreateBinaryTree(descriptions);
+
+            //OR
+
+            leetCodeAll.CreateBinaryTree(descriptions);
 
             ////(2197.) Replace Non-Coprime Numbers in Array (HARD)
             //int[] nums = [6, 4, 3, 2, 7, 6, 2];
