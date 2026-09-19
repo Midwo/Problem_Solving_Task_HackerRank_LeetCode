@@ -8713,6 +8713,22 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountLargestGroup(n));
 
+            ////(1401.) Circle and Rectangle Overlapping (MEDIUM)
+            int radius = 1;
+            int xCenter = 0;
+            int yCenter = 0;
+            int x1 = 1;
+            int y1 = -1;
+            int x2 = 3;
+            int y2 = 1;
+
+            LeetCode_1401 classLeetCode = new LeetCode_1401();
+            Console.WriteLine(classLeetCode.CheckOverlap(radius, xCenter, yCenter, x1, y1, x2, y2));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckOverlap(radius, xCenter, yCenter, x1, y1, x2, y2));
+
             ////(1402.) Reducing Dishes (HARD)
             //int[] satisfaction = [4, 3, 2];
 
@@ -11752,14 +11768,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.CellsInRange(s)));
 
             ////(2196.) Create Binary Tree From Descriptions (MEDIUM)
-            int[][] descriptions = [[20, 15, 1], [20, 17, 0], [50, 20, 1], [50, 80, 0], [80, 19, 1]];
+            //int[][] descriptions = [[20, 15, 1], [20, 17, 0], [50, 20, 1], [50, 80, 0], [80, 19, 1]];
 
-            LeetCode_2196 classLeetCode = new LeetCode_2196();
-            classLeetCode.CreateBinaryTree(descriptions);
+            //LeetCode_2196 classLeetCode = new LeetCode_2196();
+            //classLeetCode.CreateBinaryTree(descriptions);
 
-            //OR
+            ////OR
 
-            leetCodeAll.CreateBinaryTree(descriptions);
+            //leetCodeAll.CreateBinaryTree(descriptions);
 
             ////(2197.) Replace Non-Coprime Numbers in Array (HARD)
             //int[] nums = [6, 4, 3, 2, 7, 6, 2];
