@@ -8714,20 +8714,20 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountLargestGroup(n));
 
             ////(1401.) Circle and Rectangle Overlapping (MEDIUM)
-            int radius = 1;
-            int xCenter = 0;
-            int yCenter = 0;
-            int x1 = 1;
-            int y1 = -1;
-            int x2 = 3;
-            int y2 = 1;
+            //int radius = 1;
+            //int xCenter = 0;
+            //int yCenter = 0;
+            //int x1 = 1;
+            //int y1 = -1;
+            //int x2 = 3;
+            //int y2 = 1;
 
-            LeetCode_1401 classLeetCode = new LeetCode_1401();
-            Console.WriteLine(classLeetCode.CheckOverlap(radius, xCenter, yCenter, x1, y1, x2, y2));
+            //LeetCode_1401 classLeetCode = new LeetCode_1401();
+            //Console.WriteLine(classLeetCode.CheckOverlap(radius, xCenter, yCenter, x1, y1, x2, y2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckOverlap(radius, xCenter, yCenter, x1, y1, x2, y2));
+            //Console.WriteLine(leetCodeAll.CheckOverlap(radius, xCenter, yCenter, x1, y1, x2, y2));
 
             ////(1402.) Reducing Dishes (HARD)
             //int[] satisfaction = [4, 3, 2];
@@ -16571,11 +16571,25 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountSpecialIntegers(nums));
 
+            ////(4052.) Cyclically Shift Rows and Columns (EASY)
+            int n = 3;
+            int[][] grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+            int[] rowShift = [1, 2, 0];
+            int[] colShift = [2, 2, 1];
 
+            LeetCode_4052 classLeetCode = new LeetCode_4052();
 
+            foreach (var item in classLeetCode.CyclicShift(n, grid, rowShift, colShift))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
+            //OR
 
-
+            foreach (var item in leetCodeAll.CyclicShift(n, grid, rowShift, colShift))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
 
 
