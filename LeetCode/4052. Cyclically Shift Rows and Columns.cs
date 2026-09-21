@@ -15,13 +15,13 @@ namespace ProblemSolving.LeetCode
             for (int row = 0; row < n; row++)
             {
                 int shift = rowShift[row] % n;
-                
+
                 if (shift != 0)
                 {
                     gridRowShift[row] = new int[n];
                     for (int col = 0; col < n; col++)
                     {
-                        gridRowShift[row][col] = grid[row][(col+shift)%n];
+                        gridRowShift[row][col] = grid[row][(col + shift) % n];
                     }
                 }
                 else
@@ -29,8 +29,8 @@ namespace ProblemSolving.LeetCode
                     gridRowShift[row] = (int[])grid[row].Clone();
                 }
             }
-            
-            for (int col = 0; col < n; col++) 
+
+            for (int col = 0; col < n; col++)
             {
                 int shift = colShift[col] % n;
 
