@@ -9677,6 +9677,16 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', os1.Insert(5, "eeeee"))); // Inserts (5, "eeeee"), returns [].
             //Console.WriteLine(string.Join(',', os1.Insert(4, "ddddd"))); // Inserts (4, "ddddd"), returns ["ddddd", "eeeee"].
 
+            ////(1658.) Minimum Operations to Reduce X to Zero (MEDIUM)
+            int[] nums = [3, 2, 20, 1, 1, 3];
+            int x = 10;
+
+            LeetCode_1658 classLeetCode = new LeetCode_1658();
+            Console.WriteLine(classLeetCode.MinOperations(nums, x));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinOperationsTask1658(nums, x));
 
             ////(1661.) Average Time of Process per Machine (EASY)
             //string SqlQuery =
@@ -16603,14 +16613,14 @@ namespace ProblemSolving
             //}
 
             ////(4048.) Count Values With Equally Spaced Occurrences I (EASY)
-            int[] nums = [1, 8, 1, 5, 1, 5, 8, 5];
+            //int[] nums = [1, 8, 1, 5, 1, 5, 8, 5];
 
-            LeetCode_4048 classLeetCode = new LeetCode_4048();
-            Console.WriteLine(classLeetCode.CountSpecialIntegers(nums));
+            //LeetCode_4048 classLeetCode = new LeetCode_4048();
+            //Console.WriteLine(classLeetCode.CountSpecialIntegers(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountSpecialIntegersTask4048(nums));
+            //Console.WriteLine(leetCodeAll.CountSpecialIntegersTask4048(nums));
 
 
 
