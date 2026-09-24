@@ -9678,15 +9678,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', os1.Insert(4, "ddddd"))); // Inserts (4, "ddddd"), returns ["ddddd", "eeeee"].
 
             ////(1658.) Minimum Operations to Reduce X to Zero (MEDIUM)
-            int[] nums = [3, 2, 20, 1, 1, 3];
-            int x = 10;
+            //int[] nums = [3, 2, 20, 1, 1, 3];
+            //int x = 10;
 
-            LeetCode_1658 classLeetCode = new LeetCode_1658();
-            Console.WriteLine(classLeetCode.MinOperations(nums, x));
+            //LeetCode_1658 classLeetCode = new LeetCode_1658();
+            //Console.WriteLine(classLeetCode.MinOperations(nums, x));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinOperationsTask1658(nums, x));
+            //Console.WriteLine(leetCodeAll.MinOperationsTask1658(nums, x));
 
             ////(1661.) Average Time of Process per Machine (EASY)
             //string SqlQuery =
@@ -16527,6 +16527,16 @@ namespace ProblemSolving
             //{
             //    Console.WriteLine(string.Join(',', lineResult));
             //}
+
+            ////(3982.) Sum of Integers with Maximum Digit Range (EASY)
+            int[] nums = [5724, 111, 350];
+
+            LeetCode_3982 classLeetCode = new LeetCode_3982();
+            Console.WriteLine(classLeetCode.MaxDigitRange(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxDigitRange(nums));
 
             ////(3986.) Number of Elapsed Seconds Between Two Times (EASY)
             //string startTime = "12:34:56";
