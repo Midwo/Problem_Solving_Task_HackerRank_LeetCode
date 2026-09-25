@@ -16459,6 +16459,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.CountOppositeParity(nums)));
 
+            ////(3921.) Score Validator (EASY)
+            string[] events = ["WD", "NB", "0", "4", "4"];
+
+            LeetCode_3921 classLeetCode = new LeetCode_3921();
+            Console.WriteLine(string.Join(',',classLeetCode.ScoreValidator(events)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ScoreValidator(events)));
+
             ////(3925.) Concatenate Array With Reverse (EASY)
             //int[] nums = [1,2,3];
 
@@ -16529,14 +16539,14 @@ namespace ProblemSolving
             //}
 
             ////(3982.) Sum of Integers with Maximum Digit Range (EASY)
-            int[] nums = [5724, 111, 350];
+            //int[] nums = [5724, 111, 350];
 
-            LeetCode_3982 classLeetCode = new LeetCode_3982();
-            Console.WriteLine(classLeetCode.MaxDigitRange(nums));
+            //LeetCode_3982 classLeetCode = new LeetCode_3982();
+            //Console.WriteLine(classLeetCode.MaxDigitRange(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxDigitRange(nums));
+            //Console.WriteLine(leetCodeAll.MaxDigitRange(nums));
 
             ////(3986.) Number of Elapsed Seconds Between Two Times (EASY)
             //string startTime = "12:34:56";
