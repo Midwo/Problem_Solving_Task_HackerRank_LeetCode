@@ -10317,6 +10317,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.NumDifferentIntegers(word));
 
+            ////(1807.) Evaluate the Bracket Pairs of a String (MEDIUM)
+            string s = "(name)is(age)yearsold";
+            IList<IList<string>> knowledge = [["name", "bob"], ["age", "two"]];
+
+            LeetCode_1807 classLeetCoe = new LeetCode_1807();
+            Console.WriteLine(classLeetCoe.Evaluate(s, knowledge));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.Evaluate(s, knowledge));
+
             ////(1812.) Determine Color of a Chessboard Square (EASY)
             //string coordinates = "a1";
 
@@ -16460,14 +16471,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.CountOppositeParity(nums)));
 
             ////(3921.) Score Validator (EASY)
-            string[] events = ["WD", "NB", "0", "4", "4"];
+            //string[] events = ["WD", "NB", "0", "4", "4"];
 
-            LeetCode_3921 classLeetCode = new LeetCode_3921();
-            Console.WriteLine(string.Join(',',classLeetCode.ScoreValidator(events)));
+            //LeetCode_3921 classLeetCode = new LeetCode_3921();
+            //Console.WriteLine(string.Join(',',classLeetCode.ScoreValidator(events)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ScoreValidator(events)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ScoreValidator(events)));
 
             ////(3925.) Concatenate Array With Reverse (EASY)
             //int[] nums = [1,2,3];
