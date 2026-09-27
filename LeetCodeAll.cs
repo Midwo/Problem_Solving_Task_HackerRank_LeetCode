@@ -36169,7 +36169,6 @@ namespace ProblemSolving
         }
         public string ReverseParentheses(string s)
         {
-            StringBuilder sbTemp = new StringBuilder();
             StringBuilder sbResult = new StringBuilder();
 
             int length = s.Length;
@@ -36179,37 +36178,54 @@ namespace ProblemSolving
             for (int index = 0; index < length; index++)
             {
                 char currChar = s[index];
-                sbTemp.Append(currChar);
 
                 if (currChar == '(')
                 {
-                    stackIndexOpened.Push(index);
+                    stackIndexOpened.Push(sbResult.Length);
                 }
                 else if (currChar == ')')
                 {
                     int lIndex = stackIndexOpened.Pop();
-                    int rIndex = index;
+                    int rIndex = sbResult.Length - 1;
 
                     while (lIndex < rIndex)
                     {
-                        char temp = sbTemp[lIndex];
-                        sbTemp[lIndex++] = sbTemp[rIndex];
-                        sbTemp[rIndex--] = temp;
+                        char temp = sbResult[lIndex];
+                        sbResult[lIndex++] = sbResult[rIndex];
+                        sbResult[rIndex--] = temp;
                     }
                 }
-            }
-
-            for (int index = 0; index < sbTemp.Length; index++)
-            {
-                char currChar = sbTemp[index];
-                if (currChar != '(' && currChar != ')')
+                else
                 {
                     sbResult.Append(currChar);
                 }
             }
-
             return sbResult.ToString();
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
