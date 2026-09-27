@@ -36167,8 +36167,49 @@ namespace ProblemSolving
 
             return sbResult.ToString();
         }
+        public string ReverseParentheses(string s)
+        {
+            StringBuilder sbTemp = new StringBuilder();
+            StringBuilder sbResult = new StringBuilder();
 
+            int length = s.Length;
 
+            Stack<int> stackIndexOpened = new Stack<int>();
+
+            for (int index = 0; index < length; index++)
+            {
+                char currChar = s[index];
+                sbTemp.Append(currChar);
+
+                if (currChar == '(')
+                {
+                    stackIndexOpened.Push(index);
+                }
+                else if (currChar == ')')
+                {
+                    int lIndex = stackIndexOpened.Pop();
+                    int rIndex = index;
+
+                    while (lIndex < rIndex)
+                    {
+                        char temp = sbTemp[lIndex];
+                        sbTemp[lIndex++] = sbTemp[rIndex];
+                        sbTemp[rIndex--] = temp;
+                    }
+                }
+            }
+
+            for (int index = 0; index < sbTemp.Length; index++)
+            {
+                char currChar = sbTemp[index];
+                if (currChar != '(' && currChar != ')')
+                {
+                    sbResult.Append(currChar);
+                }
+            }
+
+            return sbResult.ToString();
+        }
 
 
 

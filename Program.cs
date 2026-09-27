@@ -7616,6 +7616,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxNumberOfBalloons(text));
 
+            ////(1190.) Reverse Substrings Between Each Pair of Parentheses (MEDIUM)
+            string s = "(ed(et(oc))el)";
+
+            LeetCode_1190 classLeetCode = new LeetCode_1190();
+            Console.WriteLine(classLeetCode.ReverseParentheses(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ReverseParentheses(s));
+
+
             ////(1193.) Monthly Transactions I (MEDIUM)
             //string SqlQuery =
             //    @"
@@ -10318,15 +10329,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumDifferentIntegers(word));
 
             ////(1807.) Evaluate the Bracket Pairs of a String (MEDIUM)
-            string s = "(name)is(age)yearsold";
-            IList<IList<string>> knowledge = [["name", "bob"], ["age", "two"]];
+            //string s = "(name)is(age)yearsold";
+            //IList<IList<string>> knowledge = [["name", "bob"], ["age", "two"]];
 
-            LeetCode_1807 classLeetCoe = new LeetCode_1807();
-            Console.WriteLine(classLeetCoe.Evaluate(s, knowledge));
+            //LeetCode_1807 classLeetCoe = new LeetCode_1807();
+            //Console.WriteLine(classLeetCoe.Evaluate(s, knowledge));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.Evaluate(s, knowledge));
+            //Console.WriteLine(leetCodeAll.Evaluate(s, knowledge));
 
             ////(1812.) Determine Color of a Chessboard Square (EASY)
             //string coordinates = "a1";
