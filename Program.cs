@@ -16149,6 +16149,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinimumDistanceTask3741(nums));
 
+            ////(3745.) Maximize Expression of Three Elements (EASY)
+            int[] nums = [-2, 0, 5, -2, 4];
+
+            LeetCode_3745 classLeetCode = new LeetCode_3745();
+            Console.WriteLine(classLeetCode.MaximizeExpressionOfThree(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaximizeExpressionOfThree(nums));
+
             ////(3746.) Minimum String Length After Balanced Removals (MEDIUM)
             //string s = "aabbab";
 
