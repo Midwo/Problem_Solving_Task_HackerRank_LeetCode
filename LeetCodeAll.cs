@@ -36247,8 +36247,30 @@ namespace ProblemSolving
 
             return result;
         }
+        public int[] MaxDepthAfterSplit(string seq)
+        {
+            int length = seq.Length;
+            int[] result = new int[length];
+            int countOpen = 0;
 
+            for (int index = 0; index < length; index++)
+            {
+                char currChar = seq[index];
 
+                if (currChar == '(')
+                {
+                    countOpen++;
+                    result[index] = countOpen % 2;
+                }
+                else
+                {
+                    result[index] = countOpen % 2;
+                    countOpen--;
+                }
+            }
+
+            return result;
+        }
 
 
 

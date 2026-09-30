@@ -5425,31 +5425,31 @@ namespace ProblemSolving
             //leetCodeAll.LeetCode_586();
 
             ////(589.) N-ary Tree Preorder Traversal (EASY)
-            Node node14 = new Node(14);
+            //Node node14 = new Node(14);
 
-            Node node11 = new Node(11, new List<Node> { node14 });
-            Node node12 = new Node(12);
-            Node node13 = new Node(13);
+            //Node node11 = new Node(11, new List<Node> { node14 });
+            //Node node12 = new Node(12);
+            //Node node13 = new Node(13);
 
-            Node node6 = new Node(6);
-            Node node7 = new Node(7, new List<Node> { node11 });
-            Node node8 = new Node(8, new List<Node> { node12 });
-            Node node9 = new Node(9, new List<Node> { node13 });
-            Node node10 = new Node(10);
+            //Node node6 = new Node(6);
+            //Node node7 = new Node(7, new List<Node> { node11 });
+            //Node node8 = new Node(8, new List<Node> { node12 });
+            //Node node9 = new Node(9, new List<Node> { node13 });
+            //Node node10 = new Node(10);
 
-            Node node2 = new Node(2);
-            Node node3 = new Node(3, new List<Node> { node6, node7 });
-            Node node4 = new Node(4, new List<Node> { node8 } );
-            Node node5 = new Node(5, new List<Node> { node9, node10 });
+            //Node node2 = new Node(2);
+            //Node node3 = new Node(3, new List<Node> { node6, node7 });
+            //Node node4 = new Node(4, new List<Node> { node8 } );
+            //Node node5 = new Node(5, new List<Node> { node9, node10 });
 
-            Node root = new Node(1, new List<Node> {node2, node3, node4, node5});
+            //Node root = new Node(1, new List<Node> {node2, node3, node4, node5});
 
-            LeetCode_589 classLeetCode = new LeetCode_589();
-            Console.WriteLine(string.Join(',', classLeetCode.Preorder(root)));
+            //LeetCode_589 classLeetCode = new LeetCode_589();
+            //Console.WriteLine(string.Join(',', classLeetCode.Preorder(root)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.Preorder(root)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.Preorder(root)));
 
             ////(590.) N-ary Tree Postorder Traversal (EASY)
             //LeetCode_590 classLeetCode = new LeetCode_590();
@@ -7395,6 +7395,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.DefangIPaddr(address));
 
+            ////(1111.) Maximum Nesting Depth of Two Valid Parentheses Strings (MEDIUM)
+            string seq = "()(())()";
+
+            LeetCode_1111 classLeetCode = new LeetCode_1111();
+            Console.WriteLine(string.Join(',', classLeetCode.MaxDepthAfterSplit(seq)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.MaxDepthAfterSplit(seq)));
 
             ////(1114.) Print in Order (EASY)
 
