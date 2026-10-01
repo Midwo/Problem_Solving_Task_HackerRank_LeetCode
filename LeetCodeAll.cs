@@ -36271,8 +36271,24 @@ namespace ProblemSolving
 
             return result;
         }
+        public IList<int> ToggleLightBulbs(IList<int> bulbs)
+        {
+            List<int> result = new List<int>();
+            bool[] statusBulbs = new bool[101];
 
+            foreach (int bulb in bulbs)
+            {
+                statusBulbs[bulb] = !statusBulbs[bulb];
+            }
 
+            for (int index = 1; index < 101; index++)
+            {
+                if (statusBulbs[index])
+                    result.Add(index);
+            }
+
+            return result;
+        }
 
 
 

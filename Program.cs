@@ -7396,14 +7396,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DefangIPaddr(address));
 
             ////(1111.) Maximum Nesting Depth of Two Valid Parentheses Strings (MEDIUM)
-            string seq = "()(())()";
+            //string seq = "()(())()";
 
-            LeetCode_1111 classLeetCode = new LeetCode_1111();
-            Console.WriteLine(string.Join(',', classLeetCode.MaxDepthAfterSplit(seq)));
+            //LeetCode_1111 classLeetCode = new LeetCode_1111();
+            //Console.WriteLine(string.Join(',', classLeetCode.MaxDepthAfterSplit(seq)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.MaxDepthAfterSplit(seq)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.MaxDepthAfterSplit(seq)));
 
             ////(1114.) Print in Order (EASY)
 
@@ -16393,6 +16393,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MapWordWeights(words, weigths));
+
+            ////(3842.) Toggle Light Bulbs (EASY)
+            IList<int> bulbs = [10, 30, 20, 10];
+
+            LeetCode_3842 classLeetCode = new LeetCode_3842();
+            Console.WriteLine(string.Join(',', classLeetCode.ToggleLightBulbs(bulbs)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.ToggleLightBulbs(bulbs)));
 
             ////(3843.) First Element with Unique Frequency (MEDIUM)
             //int[] nums = [20, 10, 30, 30];
