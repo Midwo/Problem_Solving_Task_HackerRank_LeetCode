@@ -16395,14 +16395,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MapWordWeights(words, weigths));
 
             ////(3842.) Toggle Light Bulbs (EASY)
-            IList<int> bulbs = [10, 30, 20, 10];
+            //IList<int> bulbs = [10, 30, 20, 10];
 
-            LeetCode_3842 classLeetCode = new LeetCode_3842();
-            Console.WriteLine(string.Join(',', classLeetCode.ToggleLightBulbs(bulbs)));
+            //LeetCode_3842 classLeetCode = new LeetCode_3842();
+            //Console.WriteLine(string.Join(',', classLeetCode.ToggleLightBulbs(bulbs)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.ToggleLightBulbs(bulbs)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.ToggleLightBulbs(bulbs)));
 
             ////(3843.) First Element with Unique Frequency (MEDIUM)
             //int[] nums = [20, 10, 30, 30];
@@ -16720,9 +16720,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountSpecialIntegersTask4048(nums));
 
+            ////(4065.) Rearrange Array by Removing Distinct Values (EASY)
+            int[] nums = [3,1,3,2,1,3];
 
+            LeetCode_4065 classLeetCode = new LeetCode_4065();
+            Console.WriteLine(string.Join(',',classLeetCode.RearrangeArray(nums)));
 
+            //OR
 
+            Console.WriteLine(string.Join(',', leetCodeAll.RearrangeArrayTask4065(nums)));
 
 
 
