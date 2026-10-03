@@ -36318,8 +36318,30 @@ namespace ProblemSolving
 
             return result;
         }
+        public int MinimumIndex(int[] capacity, int itemSize)
+        {
+            int minIndex = int.MaxValue;
+            int minCorrectValue = int.MaxValue;
 
+            for (int index = 0; index < capacity.Length; index++)
+            {
+                int currValue = capacity[index];
+                if (currValue > itemSize)
+                {
+                    if (minCorrectValue > currValue)
+                    {
+                        minCorrectValue = currValue;
+                        minIndex = index;
+                    }
+                }
+                else if (currValue == itemSize)
+                {
+                    return index;
+                }
+            }
 
+            return minIndex == int.MaxValue ? -1 : minIndex;
+        }
 
 
 

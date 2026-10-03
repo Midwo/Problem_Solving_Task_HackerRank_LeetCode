@@ -16434,6 +16434,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinCost(n));
 
+            ////(3861.) Minimum Capacity Box (EASY)
+            int[] capacity = [1, 5, 3, 7];
+            int itemSize = 3;
+
+            LeetCode_3861 classLeetCode = new LeetCode_3861();
+            Console.WriteLine(classLeetCode.MinimumIndex(capacity, itemSize));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimumIndex(capacity, itemSize));
+
             ////(3870.) Count Commas in Range (EASY)
             //int n = 1002;
 
@@ -16721,14 +16732,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountSpecialIntegersTask4048(nums));
 
             ////(4065.) Rearrange Array by Removing Distinct Values (EASY)
-            int[] nums = [3,1,3,2,1,3];
+            //int[] nums = [3,1,3,2,1,3];
 
-            LeetCode_4065 classLeetCode = new LeetCode_4065();
-            Console.WriteLine(string.Join(',',classLeetCode.RearrangeArray(nums)));
+            //LeetCode_4065 classLeetCode = new LeetCode_4065();
+            //Console.WriteLine(string.Join(',',classLeetCode.RearrangeArray(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.RearrangeArrayTask4065(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.RearrangeArrayTask4065(nums)));
 
 
 
