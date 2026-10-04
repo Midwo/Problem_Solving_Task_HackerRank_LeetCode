@@ -16435,15 +16435,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinCost(n));
 
             ////(3861.) Minimum Capacity Box (EASY)
-            int[] capacity = [1, 5, 3, 7];
-            int itemSize = 3;
+            //int[] capacity = [1, 5, 3, 7];
+            //int itemSize = 3;
 
-            LeetCode_3861 classLeetCode = new LeetCode_3861();
-            Console.WriteLine(classLeetCode.MinimumIndex(capacity, itemSize));
+            //LeetCode_3861 classLeetCode = new LeetCode_3861();
+            //Console.WriteLine(classLeetCode.MinimumIndex(capacity, itemSize));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimumIndex(capacity, itemSize));
+            //Console.WriteLine(leetCodeAll.MinimumIndex(capacity, itemSize));
 
             ////(3870.) Count Commas in Range (EASY)
             //int n = 1002;
@@ -16690,6 +16690,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ElevatorRequests(n, requests));
+
+            ////(4043.) Count Rotations With Exactly K Equal Adjacent Pairs (EASY)
+            string s = "aab";
+            int k = 1;
+
+            LeetCode_4043 classLeetCode = new LeetCode_4043();
+            Console.WriteLine(classLeetCode.CountRotations(s, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountRotations(s, k));
 
             ////(4049.) Count Values With Equally Spaced Occurrences II (MEDIUM)
             //int[] nums = [1, 8, 1, 5, 1, 5, 8, 5];

@@ -36342,8 +36342,40 @@ namespace ProblemSolving
 
             return minIndex == int.MaxValue ? -1 : minIndex;
         }
+        public int CountRotations(string s, int k)
+        {
+            int totalResult = 0;
+            int length = s.Length;
 
+            for (int startIndex = 0; startIndex < length; startIndex++)
+            {
+                int correctCount = 0;
+                int currIndex = startIndex;
 
+                for (int i = 0; i < length - 1; i++)
+                {
+                    if (currIndex == length)
+                    {
+                        currIndex = 0;
+                    }
+
+                    if (currIndex == length - 1)
+                    {
+                        if (s[currIndex] == s[0])
+                            correctCount++;
+                    }
+                    else if (s[currIndex] == s[currIndex + 1])
+                        correctCount++;
+
+                    currIndex++;
+                }
+
+                if (correctCount == k)
+                    totalResult++;
+            }
+
+            return totalResult;
+        }
 
 
 
