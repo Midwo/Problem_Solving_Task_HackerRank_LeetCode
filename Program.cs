@@ -6367,6 +6367,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.PeakIndexInMountainArray(arr));
 
+            ////(856.) Score of Parentheses (MEDIUM)
+            string s = "(())";
+
+            LeetCode_856 classLeetCode = new LeetCode_856();
+            Console.WriteLine(classLeetCode.ScoreOfParentheses(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ScoreOfParentheses(s));
+
             ////(859.) Buddy Strings (EASY)
             //string s = "ab";
             //string goal = "ab";
@@ -16692,15 +16702,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ElevatorRequests(n, requests));
 
             ////(4043.) Count Rotations With Exactly K Equal Adjacent Pairs (EASY)
-            string s = "aab";
-            int k = 1;
+            //string s = "aab";
+            //int k = 1;
 
-            LeetCode_4043 classLeetCode = new LeetCode_4043();
-            Console.WriteLine(classLeetCode.CountRotations(s, k));
+            //LeetCode_4043 classLeetCode = new LeetCode_4043();
+            //Console.WriteLine(classLeetCode.CountRotations(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountRotations(s, k));
+            //Console.WriteLine(leetCodeAll.CountRotations(s, k));
 
             ////(4049.) Count Values With Equally Spaced Occurrences II (MEDIUM)
             //int[] nums = [1, 8, 1, 5, 1, 5, 8, 5];

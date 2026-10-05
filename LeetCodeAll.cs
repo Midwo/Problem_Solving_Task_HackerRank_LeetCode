@@ -36376,8 +36376,26 @@ namespace ProblemSolving
 
             return totalResult;
         }
+        public int ScoreOfParentheses(string s)
+        {
+            int score = 0;
+            Stack<int> stackScore = new Stack<int>();
 
+            foreach (char currChar in s)
+            {
+                if (currChar == '(')
+                {
+                    stackScore.Push(score);
+                    score = 0;
+                }
+                else
+                {
+                    score += stackScore.Pop() + Math.Max(score * 2, 1);
+                }
+            }
 
+            return score;
+        }
 
 
 
