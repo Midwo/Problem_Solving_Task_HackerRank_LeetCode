@@ -5612,6 +5612,24 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.TriangleNumber(nums));
 
+            ////(617.) Merge Two Binary Trees (EASY)
+            TreeNode root1 = new TreeNode(1);
+            root1.left = new TreeNode(3);
+            root1.left.left = new TreeNode(5);
+            root1.right = new TreeNode(2);
+
+            TreeNode root2 = new TreeNode(2);
+            root2.left = new TreeNode(1);
+            root2.right = new TreeNode(3);
+            root2.right.right = new TreeNode(7); 
+
+            LeetCode_617 classLeetCode = new LeetCode_617();
+            classLeetCode.MergeTrees(root1, root2);
+
+            //OR
+
+            leetCodeAll.MergeTrees(root1, root2);
+
             ////(619.) Biggest Single Number (EASY)
 
             //LeetCode_619 classLeetCode = new LeetCode_619();
@@ -6368,14 +6386,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PeakIndexInMountainArray(arr));
 
             ////(856.) Score of Parentheses (MEDIUM)
-            string s = "(())";
+            //string s = "(())";
 
-            LeetCode_856 classLeetCode = new LeetCode_856();
-            Console.WriteLine(classLeetCode.ScoreOfParentheses(s));
+            //LeetCode_856 classLeetCode = new LeetCode_856();
+            //Console.WriteLine(classLeetCode.ScoreOfParentheses(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ScoreOfParentheses(s));
+            //Console.WriteLine(leetCodeAll.ScoreOfParentheses(s));
 
             ////(859.) Buddy Strings (EASY)
             //string s = "ab";
