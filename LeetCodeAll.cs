@@ -36414,8 +36414,24 @@ namespace ProblemSolving
 
             return root1;
         }
+        public bool ValidDigit(int n, int x)
+        {
+            int firstValueN = 0;
+            bool nCostainsX = false;
 
+            while (n != 0)
+            {
+                firstValueN = n % 10;
+                if (firstValueN == x)
+                    nCostainsX = true;
+                n = n / 10;
+            }
 
+            if (firstValueN != x && nCostainsX)
+                return true;
+
+            return false;
+        }
 
 
 

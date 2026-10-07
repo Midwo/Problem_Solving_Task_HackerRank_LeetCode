@@ -5613,22 +5613,22 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.TriangleNumber(nums));
 
             ////(617.) Merge Two Binary Trees (EASY)
-            TreeNode root1 = new TreeNode(1);
-            root1.left = new TreeNode(3);
-            root1.left.left = new TreeNode(5);
-            root1.right = new TreeNode(2);
+            //TreeNode root1 = new TreeNode(1);
+            //root1.left = new TreeNode(3);
+            //root1.left.left = new TreeNode(5);
+            //root1.right = new TreeNode(2);
 
-            TreeNode root2 = new TreeNode(2);
-            root2.left = new TreeNode(1);
-            root2.right = new TreeNode(3);
-            root2.right.right = new TreeNode(7); 
+            //TreeNode root2 = new TreeNode(2);
+            //root2.left = new TreeNode(1);
+            //root2.right = new TreeNode(3);
+            //root2.right.right = new TreeNode(7); 
 
-            LeetCode_617 classLeetCode = new LeetCode_617();
-            classLeetCode.MergeTrees(root1, root2);
+            //LeetCode_617 classLeetCode = new LeetCode_617();
+            //classLeetCode.MergeTrees(root1, root2);
 
-            //OR
+            ////OR
 
-            leetCodeAll.MergeTrees(root1, root2);
+            //leetCodeAll.MergeTrees(root1, root2);
 
             ////(619.) Biggest Single Number (EASY)
 
@@ -16565,6 +16565,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FirstStableIndexTask3904(nums, k));
+
+            ////(3908.) Valid Digit Number (EASY)
+            int n = 101;
+            int x = 0;
+
+            LeetCode_3908 classLeetCode = new LeetCode_3908();
+            Console.WriteLine(classLeetCode.ValidDigit(n,x));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ValidDigit(n, x));
 
             ////(3917.) Count Indices With Opposite Parity (EASY)
             //int[] nums = [1,2,3,4];
