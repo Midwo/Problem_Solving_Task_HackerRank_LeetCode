@@ -16567,15 +16567,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FirstStableIndexTask3904(nums, k));
 
             ////(3908.) Valid Digit Number (EASY)
-            int n = 101;
-            int x = 0;
+            //int n = 101;
+            //int x = 0;
 
-            LeetCode_3908 classLeetCode = new LeetCode_3908();
-            Console.WriteLine(classLeetCode.ValidDigit(n,x));
+            //LeetCode_3908 classLeetCode = new LeetCode_3908();
+            //Console.WriteLine(classLeetCode.ValidDigit(n,x));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ValidDigit(n, x));
+            //Console.WriteLine(leetCodeAll.ValidDigit(n, x));
 
             ////(3917.) Count Indices With Opposite Parity (EASY)
             //int[] nums = [1,2,3,4];
@@ -16791,8 +16791,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.RearrangeArrayTask4065(nums)));
 
+            ////(4070.) Minimum Rotations to Dial a Number I (EASY)
+            string s = "0192837465";
 
+            LeetCode_4070 classLeetCode = new LeetCode_4070();
+            Console.WriteLine(classLeetCode.MinRotations(s));
 
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinRotations(s));
 
 
 

@@ -36432,8 +36432,23 @@ namespace ProblemSolving
 
             return false;
         }
+        public int MinRotations(string s)
+        {
+            int totalMinRotate = 0;
+            int lastPosition = 0;
 
+            foreach (char currChar in s)
+            {
+                int currPosition = currChar - '0';
+                int currMinRotate = Math.Abs(lastPosition - currPosition);
 
+                totalMinRotate += Math.Min(currMinRotate, 10 - currMinRotate);
+
+                lastPosition = currPosition;
+            }
+
+            return totalMinRotate;
+        }
 
 
 
