@@ -36449,9 +36449,20 @@ namespace ProblemSolving
 
             return totalMinRotate;
         }
+        public bool IsMiddleElementUnique(int[] nums)
+        {
+            int length = nums.Length;
+            int middleElementIndex = length / 2;
+            int middleElementValue = nums[middleElementIndex];
 
+            for (int index = 0; index < length; index++)
+            {
+                if (nums[index] == middleElementValue && index != middleElementIndex)
+                    return false;
+            }
 
-
+            return true;
+        }
 
 
 

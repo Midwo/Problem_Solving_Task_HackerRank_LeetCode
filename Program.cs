@@ -16666,6 +16666,16 @@ namespace ProblemSolving
             //    Console.WriteLine(string.Join(',', lineResult));
             //}
 
+            ////(3978.) Unique Middle Element (EASY)
+            int[] nums = [1,2,2];
+
+            LeetCode_3978 classLeetCode = new LeetCode_3978();
+            Console.WriteLine(classLeetCode.IsMiddleElementUnique(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsMiddleElementUnique(nums));
+
             ////(3982.) Sum of Integers with Maximum Digit Range (EASY)
             //int[] nums = [5724, 111, 350];
 
@@ -16792,14 +16802,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.RearrangeArrayTask4065(nums)));
 
             ////(4070.) Minimum Rotations to Dial a Number I (EASY)
-            string s = "0192837465";
+            //string s = "0192837465";
 
-            LeetCode_4070 classLeetCode = new LeetCode_4070();
-            Console.WriteLine(classLeetCode.MinRotations(s));
+            //LeetCode_4070 classLeetCode = new LeetCode_4070();
+            //Console.WriteLine(classLeetCode.MinRotations(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinRotations(s));
+            //Console.WriteLine(leetCodeAll.MinRotations(s));
 
 
 
