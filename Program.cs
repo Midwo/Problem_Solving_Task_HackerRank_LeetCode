@@ -16442,6 +16442,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FirstUniqueFreq(nums));
 
+            ////(3852.) Smallest Pair With Different Frequencies (EASY)
+            int[] nums = [1, 1, 2, 2, 3, 4];
+
+            LeetCode_3852 classLeetCode = new LeetCode_3852();
+            Console.WriteLine(string.Join(',', classLeetCode.MinDistinctFreqPair(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.MinDistinctFreqPair(nums)));
+
             ////(3856.) Trim Trailing Vowels (EASY)
             //string s = "idea";
 
@@ -16667,14 +16677,14 @@ namespace ProblemSolving
             //}
 
             ////(3978.) Unique Middle Element (EASY)
-            int[] nums = [1,2,2];
+            //int[] nums = [1,2,2];
 
-            LeetCode_3978 classLeetCode = new LeetCode_3978();
-            Console.WriteLine(classLeetCode.IsMiddleElementUnique(nums));
+            //LeetCode_3978 classLeetCode = new LeetCode_3978();
+            //Console.WriteLine(classLeetCode.IsMiddleElementUnique(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.IsMiddleElementUnique(nums));
+            //Console.WriteLine(leetCodeAll.IsMiddleElementUnique(nums));
 
             ////(3982.) Sum of Integers with Maximum Digit Range (EASY)
             //int[] nums = [5724, 111, 350];
