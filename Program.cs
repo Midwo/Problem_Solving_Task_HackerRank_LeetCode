@@ -12022,6 +12022,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindClosestNumber(nums));
 
+            ////(2243.) Calculate Digit Sum of a String (EASY)
+            string s = "11111222223";
+            int k = 3;
+
+            LeetCode_2243 classLeetCode = new LeetCode_2243();
+            Console.WriteLine(classLeetCode.DigitSum(s, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DigitSum(s, k));
+
             //////(2244.) Minimum Rounds to Complete All Tasks (MEDIUM)
             //int[] tasks = [2, 2, 3, 3, 2, 4, 4, 4, 4, 4];
 
@@ -16751,15 +16762,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ElevatorRequests(n, requests));
 
             ////(4024.) Nearest Available Drone (EASY)
-            int[][] drones = [[2, 1, 5], [4, 4, 5], [6, 6, 8]];
-            int[] target = [5, 5];
+            //int[][] drones = [[2, 1, 5], [4, 4, 5], [6, 6, 8]];
+            //int[] target = [5, 5];
 
-            LeetCode_4024 classLeetCode = new LeetCode_4024();
-            Console.WriteLine(string.Join(',',classLeetCode.NearestDrone(drones, target)));
+            //LeetCode_4024 classLeetCode = new LeetCode_4024();
+            //Console.WriteLine(string.Join(',',classLeetCode.NearestDrone(drones, target)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',',classLeetCode.NearestDrone(drones, target)));
+            //Console.WriteLine(string.Join(',',classLeetCode.NearestDrone(drones, target)));
 
             ////(4043.) Count Rotations With Exactly K Equal Adjacent Pairs (EASY)
             //string s = "aab";
