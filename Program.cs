@@ -16443,14 +16443,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FirstUniqueFreq(nums));
 
             ////(3852.) Smallest Pair With Different Frequencies (EASY)
-            int[] nums = [1, 1, 2, 2, 3, 4];
+            //int[] nums = [1, 1, 2, 2, 3, 4];
 
-            LeetCode_3852 classLeetCode = new LeetCode_3852();
-            Console.WriteLine(string.Join(',', classLeetCode.MinDistinctFreqPair(nums)));
+            //LeetCode_3852 classLeetCode = new LeetCode_3852();
+            //Console.WriteLine(string.Join(',', classLeetCode.MinDistinctFreqPair(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.MinDistinctFreqPair(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.MinDistinctFreqPair(nums)));
 
             ////(3856.) Trim Trailing Vowels (EASY)
             //string s = "idea";
@@ -16749,6 +16749,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.ElevatorRequests(n, requests));
+
+            ////(4024.) Nearest Available Drone (EASY)
+            int[][] drones = [[2, 1, 5], [4, 4, 5], [6, 6, 8]];
+            int[] target = [5, 5];
+
+            LeetCode_4024 classLeetCode = new LeetCode_4024();
+            Console.WriteLine(string.Join(',',classLeetCode.NearestDrone(drones, target)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',',classLeetCode.NearestDrone(drones, target)));
 
             ////(4043.) Count Rotations With Exactly K Equal Adjacent Pairs (EASY)
             //string s = "aab";
