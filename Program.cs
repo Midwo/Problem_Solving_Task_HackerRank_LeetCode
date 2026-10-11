@@ -12023,15 +12023,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindClosestNumber(nums));
 
             ////(2243.) Calculate Digit Sum of a String (EASY)
-            string s = "11111222223";
-            int k = 3;
+            //string s = "11111222223";
+            //int k = 3;
 
-            LeetCode_2243 classLeetCode = new LeetCode_2243();
-            Console.WriteLine(classLeetCode.DigitSum(s, k));
+            //LeetCode_2243 classLeetCode = new LeetCode_2243();
+            //Console.WriteLine(classLeetCode.DigitSum(s, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DigitSum(s, k));
+            //Console.WriteLine(leetCodeAll.DigitSum(s, k));
 
             //////(2244.) Minimum Rounds to Complete All Tasks (MEDIUM)
             //int[] tasks = [2, 2, 3, 3, 2, 4, 4, 4, 4, 4];
@@ -15134,6 +15134,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.MinBitwiseArray(nums)));
+
+            ////(3315.) Construct the Minimum Bitwise Array II (MEDIUM)
+            IList<int> nums = [2, 3, 5, 7];
+
+            LeetCode_3315 classLeetCode = new LeetCode_3315();
+            Console.WriteLine(string.Join(',',classLeetCode.MinBitwiseArray(nums)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.MinBitwiseArrayTask3315(nums)));
 
             ////(3318.) Find X-Sum of All K-Long Subarrays I (EASY)
             //int[] nums = [1, 1, 2, 2, 3, 4, 2, 3];

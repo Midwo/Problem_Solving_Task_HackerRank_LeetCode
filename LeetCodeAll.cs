@@ -36566,8 +36566,29 @@ namespace ProblemSolving
 
             return newS;
         }
+        public int[] MinBitwiseArrayTask3315(IList<int> nums)
+        {
+            int length = nums.Count;
+            int[] ans = new int[length];
 
+            for (int i = 0; i < length; i++)
+            {
+                int currValue = nums[i];
+                int firstHalfValue = currValue / 2;
+                int secondHalfValue = firstHalfValue + firstHalfValue == currValue ? firstHalfValue : firstHalfValue + 1;
 
+                int andValueOperation = firstHalfValue & secondHalfValue;
+
+                firstHalfValue += andValueOperation;
+
+                if ((firstHalfValue | (firstHalfValue + 1)) == currValue)
+                    ans[i] = firstHalfValue;
+                else
+                    ans[i] = -1;
+            }
+
+            return ans;
+        }
 
 
 
