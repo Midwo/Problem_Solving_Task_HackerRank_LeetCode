@@ -16432,6 +16432,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ReverseByType(s));
 
+            ////(3827.) Count Monobit Integers (EASY)
+            int n = 4;
+
+            LeetCode_3827 classLeetCode = new LeetCode_3827();
+            Console.WriteLine(classLeetCode.CountMonobit(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountMonobit(n));
+
             ////(3838.) Weighted Word Mapping (EASY)
             //string[] words = ["abcd", "def", "xyz"];
             //int[] weigths = [5, 3, 12, 14, 1, 2, 3, 2, 10, 6, 6, 9, 7, 8, 7, 10, 8, 9, 6, 9, 9, 8, 3, 7, 7, 2];
@@ -16535,14 +16545,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.UniformArray(nums1));
 
             ////(3880.) Minimum Absolute Difference Between Two Values (EASY)
-            int[] nums = [1, 0, 0, 2, 0, 1];
+            //int[] nums = [1, 0, 0, 2, 0, 1];
 
-            LeetCode_3880 clasSLeetCode = new LeetCode_3880();
-            Console.WriteLine(clasSLeetCode.MinAbsoluteDifference(nums));
+            //LeetCode_3880 clasSLeetCode = new LeetCode_3880();
+            //Console.WriteLine(clasSLeetCode.MinAbsoluteDifference(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinAbsoluteDifference(nums));
+            //Console.WriteLine(leetCodeAll.MinAbsoluteDifference(nums));
 
             ////(3884.) First Matching Character From Both Ends (EASY)
             //string s = "abcacbd";

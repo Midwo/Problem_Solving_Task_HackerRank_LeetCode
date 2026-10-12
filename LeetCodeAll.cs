@@ -36620,8 +36620,28 @@ namespace ProblemSolving
                 return -1;
             return minAbsoluteDiff;
         }
+        public int CountMonobit(int n)
+        {
+            if (n == 0)
+            {
+                return 1;
+            }
 
+            int count = 2;
+            int sum = 1;
+            int pow = 1;
 
+            while (true)
+            {
+                sum += (int)Math.Pow(2, pow++);
+                if (sum <= n)
+                    count++;
+                else
+                    break;
+            }
+
+            return count;
+        }
 
 
 
