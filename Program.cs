@@ -15136,14 +15136,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.MinBitwiseArray(nums)));
 
             ////(3315.) Construct the Minimum Bitwise Array II (MEDIUM)
-            IList<int> nums = [2, 3, 5, 7];
+            //IList<int> nums = [2, 3, 5, 7];
 
-            LeetCode_3315 classLeetCode = new LeetCode_3315();
-            Console.WriteLine(string.Join(',',classLeetCode.MinBitwiseArray(nums)));
+            //LeetCode_3315 classLeetCode = new LeetCode_3315();
+            //Console.WriteLine(string.Join(',',classLeetCode.MinBitwiseArray(nums)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.MinBitwiseArrayTask3315(nums)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.MinBitwiseArrayTask3315(nums)));
 
             ////(3318.) Find X-Sum of All K-Long Subarrays I (EASY)
             //int[] nums = [1, 1, 2, 2, 3, 4, 2, 3];
@@ -16533,6 +16533,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.UniformArray(nums1));
+
+            ////(3880.) Minimum Absolute Difference Between Two Values (EASY)
+            int[] nums = [1, 0, 0, 2, 0, 1];
+
+            LeetCode_3880 clasSLeetCode = new LeetCode_3880();
+            Console.WriteLine(clasSLeetCode.MinAbsoluteDifference(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinAbsoluteDifference(nums));
 
             ////(3884.) First Matching Character From Both Ends (EASY)
             //string s = "abcacbd";
