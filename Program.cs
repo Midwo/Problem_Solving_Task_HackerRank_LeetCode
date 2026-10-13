@@ -5312,6 +5312,21 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.ArrayPairSum(nums));
 
+            ////(563.) Binary Tree Tilt (EASY)
+            TreeNode root = new TreeNode(4);
+            root.left = new TreeNode(2);
+            root.left.left = new TreeNode(3);
+            root.left.right = new TreeNode(5);
+            root.right = new TreeNode(9);
+            root.right.right = new TreeNode(7);
+
+            LeetCode_563 classLeetCode = new LeetCode_563();
+            Console.WriteLine(classLeetCode.FindTilt(root));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindTilt(root));
+
             ////(566.) Reshape the Matrix (EASY)
             //int[][] mat = [[1, 2], [3, 4]];
             //int r = 1;
@@ -16433,14 +16448,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ReverseByType(s));
 
             ////(3827.) Count Monobit Integers (EASY)
-            int n = 4;
+            //int n = 4;
 
-            LeetCode_3827 classLeetCode = new LeetCode_3827();
-            Console.WriteLine(classLeetCode.CountMonobit(n));
+            //LeetCode_3827 classLeetCode = new LeetCode_3827();
+            //Console.WriteLine(classLeetCode.CountMonobit(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountMonobit(n));
+            //Console.WriteLine(leetCodeAll.CountMonobit(n));
 
             ////(3838.) Weighted Word Mapping (EASY)
             //string[] words = ["abcd", "def", "xyz"];
