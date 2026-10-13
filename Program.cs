@@ -5313,19 +5313,19 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.ArrayPairSum(nums));
 
             ////(563.) Binary Tree Tilt (EASY)
-            TreeNode root = new TreeNode(4);
-            root.left = new TreeNode(2);
-            root.left.left = new TreeNode(3);
-            root.left.right = new TreeNode(5);
-            root.right = new TreeNode(9);
-            root.right.right = new TreeNode(7);
+            //TreeNode root = new TreeNode(4);
+            //root.left = new TreeNode(2);
+            //root.left.left = new TreeNode(3);
+            //root.left.right = new TreeNode(5);
+            //root.right = new TreeNode(9);
+            //root.right.right = new TreeNode(7);
 
-            LeetCode_563 classLeetCode = new LeetCode_563();
-            Console.WriteLine(classLeetCode.FindTilt(root));
+            //LeetCode_563 classLeetCode = new LeetCode_563();
+            //Console.WriteLine(classLeetCode.FindTilt(root));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindTilt(root));
+            //Console.WriteLine(leetCodeAll.FindTilt(root));
 
             ////(566.) Reshape the Matrix (EASY)
             //int[][] mat = [[1, 2], [3, 4]];
@@ -16197,6 +16197,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.RemoveZeros(n));
+
+            ////(3727.) Maximum Alternating Sum of Squares (MEDIUM)
+            int[] nums = [1, -1, 2, -2, 3, -3];
+            
+            LeetCode_3727 classLeetCode = new LeetCode_3727();
+            Console.WriteLine(classLeetCode.MaxAlternatingSum(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxAlternatingSum(nums));
 
             ////(3731.) Find Missing Elements (EASY)
             //int[] nums = [1, 4, 2, 5];
