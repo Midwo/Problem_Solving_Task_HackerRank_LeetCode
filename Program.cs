@@ -9730,14 +9730,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaxWidthOfVerticalArea(points));
 
             ////(1641.) Count Sorted Vowel Strings (MEDIUM)
-            int n = 2;
+            //int n = 2;
 
-            LeetCode_1641 classLeetCode = new LeetCode_1641();
-            Console.WriteLine(classLeetCode.CountVowelStrings(n));
+            //LeetCode_1641 classLeetCode = new LeetCode_1641();
+            //Console.WriteLine(classLeetCode.CountVowelStrings(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountVowelStrings(n));
+            //Console.WriteLine(leetCodeAll.CountVowelStrings(n));
 
             ////(1646.) Get Maximum in Generated Array (EASY)
             //int n = 7;
@@ -16208,6 +16208,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MissingMultiple(nums, k));
+
+            ////(3723.) Maximize Sum of Squares of Digits (MEDIUM)
+            int num = 2;
+            int sum = 3;
+
+            LeetCode_3723 classLeetCode = new LeetCode_3723();
+            Console.WriteLine(classLeetCode.MaxSumOfSquares(num, sum));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxSumOfSquares(num, sum));
 
             ////(3726.) Remove Zeros in Decimal Representation (EASY)
             //long n = 1020030;
