@@ -9729,6 +9729,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MaxWidthOfVerticalArea(points));
 
+            ////(1641.) Count Sorted Vowel Strings (MEDIUM)
+            int n = 2;
+
+            LeetCode_1641 classLeetCode = new LeetCode_1641();
+            Console.WriteLine(classLeetCode.CountVowelStrings(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountVowelStrings(n));
+
             ////(1646.) Get Maximum in Generated Array (EASY)
             //int n = 7;
 
@@ -13981,15 +13991,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.LastVisitedIntegers(nums)));
 
             ////(2900.) Longest Unequal Adjacent Groups Subsequence I (EASY)
-            string[] words = ["a", "b", "c", "d"];
-            int[] groups = [1, 0, 1, 1];
+            //string[] words = ["a", "b", "c", "d"];
+            //int[] groups = [1, 0, 1, 1];
 
-            LeetCode_2900 classLeetCode = new LeetCode_2900();
-            Console.WriteLine(string.Join(',',classLeetCode.GetLongestSubsequence(words, groups)));
+            //LeetCode_2900 classLeetCode = new LeetCode_2900();
+            //Console.WriteLine(string.Join(',',classLeetCode.GetLongestSubsequence(words, groups)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.GetLongestSubsequence(words, groups)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.GetLongestSubsequence(words, groups)));
 
             ////(2903.) Find Indices With Index and Value Difference I (EASY)
             //int[] nums = [5, 1, 4, 1];
