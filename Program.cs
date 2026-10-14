@@ -13980,6 +13980,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.LastVisitedIntegers(nums)));
 
+            ////(2900.) Longest Unequal Adjacent Groups Subsequence I (EASY)
+            string[] words = ["a", "b", "c", "d"];
+            int[] groups = [1, 0, 1, 1];
+
+            LeetCode_2900 classLeetCode = new LeetCode_2900();
+            Console.WriteLine(string.Join(',',classLeetCode.GetLongestSubsequence(words, groups)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.GetLongestSubsequence(words, groups)));
+
             ////(2903.) Find Indices With Index and Value Difference I (EASY)
             //int[] nums = [5, 1, 4, 1];
             //int indexDifference = 2;
@@ -16199,14 +16210,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.RemoveZeros(n));
 
             ////(3727.) Maximum Alternating Sum of Squares (MEDIUM)
-            int[] nums = [1, -1, 2, -2, 3, -3];
-            
-            LeetCode_3727 classLeetCode = new LeetCode_3727();
-            Console.WriteLine(classLeetCode.MaxAlternatingSum(nums));
+            //int[] nums = [1, -1, 2, -2, 3, -3];
 
-            //OR
+            //LeetCode_3727 classLeetCode = new LeetCode_3727();
+            //Console.WriteLine(classLeetCode.MaxAlternatingSum(nums));
 
-            Console.WriteLine(leetCodeAll.MaxAlternatingSum(nums));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.MaxAlternatingSum(nums));
 
             ////(3731.) Find Missing Elements (EASY)
             //int[] nums = [1, 4, 2, 5];
