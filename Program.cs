@@ -16499,6 +16499,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountMonobit(n));
 
+            ////(3833.) Count Dominant Indices (EASY)
+            int[] nums = [4,1,2]; 
+
+            LeetCode_3833 classLeetCode = new LeetCode_3833();
+            Console.WriteLine(classLeetCode.DominantIndices(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DominantIndices(nums));
+
             ////(3838.) Weighted Word Mapping (EASY)
             //string[] words = ["abcd", "def", "xyz"];
             //int[] weigths = [5, 3, 12, 14, 1, 2, 3, 2, 10, 6, 6, 9, 7, 8, 7, 10, 8, 9, 6, 9, 9, 8, 3, 7, 7, 2];
@@ -16572,14 +16582,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumIndex(capacity, itemSize));
 
             ////(3866.) First Unique Even Element (EASY)
-            int[] nums = [3,4,2,5,4,6];
+            //int[] nums = [3,4,2,5,4,6];
 
-            LeetCode_3866 classLeetCode = new LeetCode_3866();
-            Console.WriteLine(classLeetCode.FirstUniqueEven(nums));
+            //LeetCode_3866 classLeetCode = new LeetCode_3866();
+            //Console.WriteLine(classLeetCode.FirstUniqueEven(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FirstUniqueEven(nums));
+            //Console.WriteLine(leetCodeAll.FirstUniqueEven(nums));
 
             ////(3870.) Count Commas in Range (EASY)
             //int n = 1002;

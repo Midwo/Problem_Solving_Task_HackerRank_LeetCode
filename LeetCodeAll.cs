@@ -36781,6 +36781,27 @@ namespace ProblemSolving
 
             return -1;
         }
+        public int DominantIndices(int[] nums)
+        {
+            int sum = nums[nums.Length - 1];
+            int count = 1;
+            int countDominantIdices = 0;
+
+            for (int index = nums.Length - 2; index >= 0; index--)
+            {
+                int currValue = nums[index];
+                int avg = sum / count;
+
+                if (currValue > avg)
+                    countDominantIdices++;
+
+                sum += currValue;
+                count++;
+            }
+
+
+            return countDominantIdices;
+        }
 
 
 
