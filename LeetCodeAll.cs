@@ -36762,6 +36762,30 @@ namespace ProblemSolving
 
             return currSum == sum ? sb.ToString() : "";
         }
+        public int FirstUniqueEven(int[] nums)
+        {
+            int[] countNum = new int[101];
+
+            foreach (int num in nums)
+            {
+                countNum[num]++;
+            }
+
+            for (int index = 0; index < nums.Length; index++)
+            {
+                if (countNum[nums[index]] == 1 && nums[index] % 2 == 0)
+                {
+                    return nums[index];
+                }
+            }
+
+            return -1;
+        }
+
+
+
+
+
 
 
 

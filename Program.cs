@@ -16210,15 +16210,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MissingMultiple(nums, k));
 
             ////(3723.) Maximize Sum of Squares of Digits (MEDIUM)
-            int num = 2;
-            int sum = 3;
+            //int num = 2;
+            //int sum = 3;
 
-            LeetCode_3723 classLeetCode = new LeetCode_3723();
-            Console.WriteLine(classLeetCode.MaxSumOfSquares(num, sum));
+            //LeetCode_3723 classLeetCode = new LeetCode_3723();
+            //Console.WriteLine(classLeetCode.MaxSumOfSquares(num, sum));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxSumOfSquares(num, sum));
+            //Console.WriteLine(leetCodeAll.MaxSumOfSquares(num, sum));
 
             ////(3726.) Remove Zeros in Decimal Representation (EASY)
             //long n = 1020030;
@@ -16570,6 +16570,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinimumIndex(capacity, itemSize));
+
+            ////(3866.) First Unique Even Element (EASY)
+            int[] nums = [3,4,2,5,4,6];
+
+            LeetCode_3866 classLeetCode = new LeetCode_3866();
+            Console.WriteLine(classLeetCode.FirstUniqueEven(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FirstUniqueEven(nums));
 
             ////(3870.) Count Commas in Range (EASY)
             //int n = 1002;
