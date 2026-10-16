@@ -36802,8 +36802,32 @@ namespace ProblemSolving
 
             return countDominantIdices;
         }
+        public int ScoreDifference(int[] nums)
+        {
+            int firstPlayerScore = 0;
+            int secondPlayerScore = 0;
+            bool addScoreToPlayerOne = true;
 
+            for (int index = 0; index < nums.Length; index++)
+            {
+                int num = nums[index];
 
+                if (num % 2 == 1)
+                    addScoreToPlayerOne = !addScoreToPlayerOne;
+
+                if ((index + 1) % 6 == 0)
+                {
+                    addScoreToPlayerOne = !addScoreToPlayerOne;
+                }
+
+                if (addScoreToPlayerOne)
+                    firstPlayerScore += num;
+                else
+                    secondPlayerScore += num;
+            }
+
+            return firstPlayerScore - secondPlayerScore;
+        }
 
 
 

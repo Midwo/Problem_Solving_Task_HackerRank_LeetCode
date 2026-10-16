@@ -16500,14 +16500,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountMonobit(n));
 
             ////(3833.) Count Dominant Indices (EASY)
-            int[] nums = [4,1,2]; 
+            //int[] nums = [4,1,2]; 
 
-            LeetCode_3833 classLeetCode = new LeetCode_3833();
-            Console.WriteLine(classLeetCode.DominantIndices(nums));
+            //LeetCode_3833 classLeetCode = new LeetCode_3833();
+            //Console.WriteLine(classLeetCode.DominantIndices(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DominantIndices(nums));
+            //Console.WriteLine(leetCodeAll.DominantIndices(nums));
 
             ////(3838.) Weighted Word Mapping (EASY)
             //string[] words = ["abcd", "def", "xyz"];
@@ -16539,6 +16539,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.FirstUniqueFreq(nums));
+
+            ////(3847.) Find the Score Difference in a Game (MEDIUM)
+            int[] nums = [2,4,2,1,2,1];
+
+            LeetCode_3847 classLeetCode = new LeetCode_3847();
+            Console.WriteLine(classLeetCode.ScoreDifference(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ScoreDifference(nums));
 
             ////(3852.) Smallest Pair With Different Frequencies (EASY)
             //int[] nums = [1, 1, 2, 2, 3, 4];
