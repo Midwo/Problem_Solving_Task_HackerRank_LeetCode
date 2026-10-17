@@ -3434,6 +3434,22 @@ namespace ProblemSolving
             ////(58.) Lenght of Last Word (EASY)
             //Console.WriteLine(leetCodeAll.LengthOfLastWord(" fly me   to   the moon  "));
 
+            ////(59.) Spiral Matrix II (MEDIUM)
+            int n = 3;
+            
+            LeetCode_59 classLeetCode = new LeetCode_59();
+            foreach (var item in classLeetCode.GenerateMatrix(n))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.GenerateMatrix(n))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
             ////(61.) Rotate List (MEDIUM)
             //int k = 2;
             //ListNode head = new ListNode(1);
@@ -16541,14 +16557,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FirstUniqueFreq(nums));
 
             ////(3847.) Find the Score Difference in a Game (MEDIUM)
-            int[] nums = [2,4,2,1,2,1];
+            //int[] nums = [2,4,2,1,2,1];
 
-            LeetCode_3847 classLeetCode = new LeetCode_3847();
-            Console.WriteLine(classLeetCode.ScoreDifference(nums));
+            //LeetCode_3847 classLeetCode = new LeetCode_3847();
+            //Console.WriteLine(classLeetCode.ScoreDifference(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ScoreDifference(nums));
+            //Console.WriteLine(leetCodeAll.ScoreDifference(nums));
 
             ////(3852.) Smallest Pair With Different Frequencies (EASY)
             //int[] nums = [1, 1, 2, 2, 3, 4];
