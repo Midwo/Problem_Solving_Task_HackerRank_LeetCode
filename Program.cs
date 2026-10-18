@@ -3435,20 +3435,20 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LengthOfLastWord(" fly me   to   the moon  "));
 
             ////(59.) Spiral Matrix II (MEDIUM)
-            int n = 3;
+            //int n = 3;
             
-            LeetCode_59 classLeetCode = new LeetCode_59();
-            foreach (var item in classLeetCode.GenerateMatrix(n))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //LeetCode_59 classLeetCode = new LeetCode_59();
+            //foreach (var item in classLeetCode.GenerateMatrix(n))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.GenerateMatrix(n))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.GenerateMatrix(n))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(61.) Rotate List (MEDIUM)
             //int k = 2;
@@ -10287,6 +10287,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NearestValidPoint(x, y, points));
+
+            ////(1780.) Check if Number is a Sum of Powers of Three (MEDIUM)
+            int n = 91;
+
+            LeetCode_1780 classLeetCode = new LeetCode_1780();
+            Console.WriteLine(classLeetCode.CheckPowersOfThree(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CheckPowersOfThree(n));
 
             ////(1784.) Check if Binary String Has at Most One Segment of Ones (EASY)
             //string s = "110";
