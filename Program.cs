@@ -4969,6 +4969,16 @@ namespace ProblemSolving
             //    Console.WriteLine(item);
             //}
 
+            ////(451.) Sort Characters By Frequency (MEDIUM)
+            string s = "Aabb";
+
+            LeetCode_451 classLeetCode = new LeetCode_451();
+            Console.WriteLine(classLeetCode.FrequencySort(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FrequencySort(s));
+
             ////(455.) Assign Cookies (EASY)
             //int[] g = [1, 2];
             //int[] s = [1, 2, 3];
@@ -10289,14 +10299,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NearestValidPoint(x, y, points));
 
             ////(1780.) Check if Number is a Sum of Powers of Three (MEDIUM)
-            int n = 91;
+            //int n = 91;
 
-            LeetCode_1780 classLeetCode = new LeetCode_1780();
-            Console.WriteLine(classLeetCode.CheckPowersOfThree(n));
+            //LeetCode_1780 classLeetCode = new LeetCode_1780();
+            //Console.WriteLine(classLeetCode.CheckPowersOfThree(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CheckPowersOfThree(n));
+            //Console.WriteLine(leetCodeAll.CheckPowersOfThree(n));
 
             ////(1784.) Check if Binary String Has at Most One Segment of Ones (EASY)
             //string s = "110";
