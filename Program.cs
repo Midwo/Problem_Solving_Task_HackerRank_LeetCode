@@ -4970,14 +4970,14 @@ namespace ProblemSolving
             //}
 
             ////(451.) Sort Characters By Frequency (MEDIUM)
-            string s = "Aabb";
+            //string s = "Aabb";
 
-            LeetCode_451 classLeetCode = new LeetCode_451();
-            Console.WriteLine(classLeetCode.FrequencySort(s));
+            //LeetCode_451 classLeetCode = new LeetCode_451();
+            //Console.WriteLine(classLeetCode.FrequencySort(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FrequencySort(s));
+            //Console.WriteLine(leetCodeAll.FrequencySort(s));
 
             ////(455.) Assign Cookies (EASY)
             //int[] g = [1, 2];
@@ -13597,6 +13597,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.CircularGameLosers(n, k)));
+
+            ////(2683.) Neighboring Bitwise XOR (MEDIUM)
+            int[] derived = [1, 1];
+
+            LeetCode_2683 classLeetCode = new LeetCode_2683();
+            Console.WriteLine(classLeetCode.DoesValidArrayExist(derived));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.DoesValidArrayExist(derived));
 
             ////(2696.) Minimum String Length After Removing Substrings (EASY)
             //string s = "ABFCACDB";
