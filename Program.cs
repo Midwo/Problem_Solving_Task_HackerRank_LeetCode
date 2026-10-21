@@ -8266,6 +8266,23 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', leetCodeAll.DecompressRLElist(nums)));
 
+            ////(1314.) Matrix Block Sum (MEDIUM)
+            int[][] mat = [[1,2,3],[4,5,6],[7,8,9]];
+            int k = 1;
+
+            LeetCode_1314 classLeetCode = new LeetCode_1314();
+            foreach (var item in classLeetCode.MatrixBlockSum(mat, k))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.MatrixBlockSum(mat, k))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
             ////(1315.) Sum of Nodes with Even-Valued Grandparent (MEDIUM)
             //TreeNode root = new TreeNode(6);
             //root.left = new TreeNode(7);
@@ -13599,14 +13616,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.CircularGameLosers(n, k)));
 
             ////(2683.) Neighboring Bitwise XOR (MEDIUM)
-            int[] derived = [1, 1];
+            //int[] derived = [1, 1];
 
-            LeetCode_2683 classLeetCode = new LeetCode_2683();
-            Console.WriteLine(classLeetCode.DoesValidArrayExist(derived));
+            //LeetCode_2683 classLeetCode = new LeetCode_2683();
+            //Console.WriteLine(classLeetCode.DoesValidArrayExist(derived));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.DoesValidArrayExist(derived));
+            //Console.WriteLine(leetCodeAll.DoesValidArrayExist(derived));
 
             ////(2696.) Minimum String Length After Removing Substrings (EASY)
             //string s = "ABFCACDB";
