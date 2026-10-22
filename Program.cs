@@ -5249,6 +5249,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.DiameterOfBinaryTree(root));
 
+            ////(547.) Number of Provinces (MEDIUM)
+            int[][] isConnected = [[1, 1, 0], [1, 1, 0], [0, 0, 1]];
+
+            LeetCode_547 classLeetCode = new LeetCode_547();
+            Console.WriteLine(classLeetCode.FindCircleNum(isConnected));
+
+            //
+
+            Console.WriteLine(leetCodeAll.FindCircleNum(isConnected));
+
             ////(550.) Game Play Analysis IV (MEDIUM)
             //string SqlQuery =
             //    @"
@@ -8267,21 +8277,21 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.DecompressRLElist(nums)));
 
             ////(1314.) Matrix Block Sum (MEDIUM)
-            int[][] mat = [[1,2,3],[4,5,6],[7,8,9]];
-            int k = 1;
+            //int[][] mat = [[1,2,3],[4,5,6],[7,8,9]];
+            //int k = 1;
 
-            LeetCode_1314 classLeetCode = new LeetCode_1314();
-            foreach (var item in classLeetCode.MatrixBlockSum(mat, k))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //LeetCode_1314 classLeetCode = new LeetCode_1314();
+            //foreach (var item in classLeetCode.MatrixBlockSum(mat, k))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.MatrixBlockSum(mat, k))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.MatrixBlockSum(mat, k))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(1315.) Sum of Nodes with Even-Valued Grandparent (MEDIUM)
             //TreeNode root = new TreeNode(6);
