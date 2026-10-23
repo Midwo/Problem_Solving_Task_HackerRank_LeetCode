@@ -37073,7 +37073,43 @@ namespace ProblemSolving
 
             return groupCities.Count;
         }
+        public int PasswordStrength(string password)
+        {
+            bool[] statusASCII = new bool[128];
 
+            foreach (char currChar in password)
+            {
+                statusASCII[currChar] = true;
+            }
+
+            int strengthPassword = 0;
+
+            for (char currChar = 'a'; currChar <= 'z'; currChar++)
+            {
+                if (statusASCII[currChar])
+                    strengthPassword++;
+            }
+
+            for (char currChar = 'A'; currChar <= 'Z'; currChar++)
+            {
+                if (statusASCII[currChar])
+                    strengthPassword += 2;
+            }
+
+            for (char currChar = '0'; currChar <= '9'; currChar++)
+            {
+                if (statusASCII[currChar])
+                    strengthPassword += 3;
+            }
+
+            strengthPassword += statusASCII['!'] == true ? 5 : 0;
+            strengthPassword += statusASCII['@'] == true ? 5 : 0;
+            strengthPassword += statusASCII['#'] == true ? 5 : 0;
+            strengthPassword += statusASCII['$'] == true ? 5 : 0;
+
+
+            return strengthPassword;
+        }
 
 
 

@@ -3436,7 +3436,7 @@ namespace ProblemSolving
 
             ////(59.) Spiral Matrix II (MEDIUM)
             //int n = 3;
-            
+
             //LeetCode_59 classLeetCode = new LeetCode_59();
             //foreach (var item in classLeetCode.GenerateMatrix(n))
             //{
@@ -5250,14 +5250,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DiameterOfBinaryTree(root));
 
             ////(547.) Number of Provinces (MEDIUM)
-            int[][] isConnected = [[1, 1, 0], [1, 1, 0], [0, 0, 1]];
+            //int[][] isConnected = [[1, 1, 0], [1, 1, 0], [0, 0, 1]];
 
-            LeetCode_547 classLeetCode = new LeetCode_547();
-            Console.WriteLine(classLeetCode.FindCircleNum(isConnected));
+            //LeetCode_547 classLeetCode = new LeetCode_547();
+            //Console.WriteLine(classLeetCode.FindCircleNum(isConnected));
 
-            //
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindCircleNum(isConnected));
+            //Console.WriteLine(leetCodeAll.FindCircleNum(isConnected));
 
             ////(550.) Game Play Analysis IV (MEDIUM)
             //string SqlQuery =
@@ -16838,6 +16838,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.LimitOccurrences(nums, k)));
+
+            ////(3941.) Password Strength (MEDIUM)
+            string password = "aA1!";
+
+            LeetCode_3941 classLeetCode = new LeetCode_3941();
+            Console.WriteLine(classLeetCode.PasswordStrength(password));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.PasswordStrength(password));
 
             ////(3945.) Digit Frequency Score (EASY)
             //int n = 122;
