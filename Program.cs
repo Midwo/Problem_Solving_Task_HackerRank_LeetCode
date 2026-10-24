@@ -12758,6 +12758,19 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.PartitionString(s));
 
+            ////(2409.) Count Days Spent Together (EASY)
+            string arriveAlice = "08-15";
+            string leaveAlice = "08-18";
+            string arriveBob = "08-16";
+            string leaveBob = "08-16";
+
+            LeetCode_2409 classLeetCode = new LeetCode_2409();
+            Console.WriteLine(classLeetCode.CountDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+
             ////(2410.) Maximum Matching of Players With Trainers (MEDIUM)
             //int[] players = [4, 7, 9];
             //int[] trainers = [8, 2, 5, 8];
@@ -16840,14 +16853,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.LimitOccurrences(nums, k)));
 
             ////(3941.) Password Strength (MEDIUM)
-            string password = "aA1!";
+            //string password = "aA1!";
 
-            LeetCode_3941 classLeetCode = new LeetCode_3941();
-            Console.WriteLine(classLeetCode.PasswordStrength(password));
+            //LeetCode_3941 classLeetCode = new LeetCode_3941();
+            //Console.WriteLine(classLeetCode.PasswordStrength(password));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PasswordStrength(password));
+            //Console.WriteLine(leetCodeAll.PasswordStrength(password));
 
             ////(3945.) Digit Frequency Score (EASY)
             //int n = 122;
