@@ -12759,17 +12759,17 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.PartitionString(s));
 
             ////(2409.) Count Days Spent Together (EASY)
-            string arriveAlice = "08-15";
-            string leaveAlice = "08-18";
-            string arriveBob = "08-16";
-            string leaveBob = "08-16";
+            //string arriveAlice = "08-15";
+            //string leaveAlice = "08-18";
+            //string arriveBob = "08-16";
+            //string leaveBob = "08-16";
 
-            LeetCode_2409 classLeetCode = new LeetCode_2409();
-            Console.WriteLine(classLeetCode.CountDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+            //LeetCode_2409 classLeetCode = new LeetCode_2409();
+            //Console.WriteLine(classLeetCode.CountDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+            //Console.WriteLine(leetCodeAll.CountDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
 
             ////(2410.) Maximum Matching of Players With Trainers (MEDIUM)
             //int[] players = [4, 7, 9];
@@ -17055,6 +17055,43 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinRotations(s));
+
+            ////(4092.) Binary Digit Score (EASY)
+            int a = 10;
+            int b = 12;
+
+            LeetCode_4092 classLeetCode = new LeetCode_4092();
+            Console.WriteLine(classLeetCode.CalculateScore(a, b));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CalculateScore(a, b));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

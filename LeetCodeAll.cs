@@ -37178,6 +37178,53 @@ namespace ProblemSolving
 
             return countDaysTogether;
         }
+        public int CalculateScore(int a, int b)
+        {
+            int countOneInA = 0;
+            int countOneInB = 0;
+
+            while (a != 0)
+            {
+                if (a % 2 == 1)
+                    countOneInA++;
+                a /= 2;
+            }
+
+            while (b != 0)
+            {
+                if (b % 2 == 1)
+                    countOneInB++;
+                b /= 2;
+            }
+
+            if (countOneInA >= countOneInB)
+                return countOneInA * countOneInB;
+
+            return countOneInB / countOneInA;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
