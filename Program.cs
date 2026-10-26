@@ -17056,16 +17056,26 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinRotations(s));
 
-            ////(4092.) Binary Digit Score (EASY)
-            int a = 10;
-            int b = 12;
+            ////(4088.) Difference Between Peaks and Valleys (EASY)
+            int[] nums = [1, 5, 2, 4, 1, 3, 0];
 
-            LeetCode_4092 classLeetCode = new LeetCode_4092();
-            Console.WriteLine(classLeetCode.CalculateScore(a, b));
+            LeetCode_4088 classLeetCode = new LeetCode_4088();
+            Console.WriteLine(classLeetCode.PeakValleyDifference(nums));
 
             //OR
 
-            Console.WriteLine(leetCodeAll.CalculateScore(a, b));
+            Console.WriteLine(leetCodeAll.PeakValleyDifference(nums));
+
+            ////(4092.) Binary Digit Score (EASY)
+            //int a = 10;
+            //int b = 12;
+
+            //LeetCode_4092 classLeetCode = new LeetCode_4092();
+            //Console.WriteLine(classLeetCode.CalculateScore(a, b));
+
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.CalculateScore(a, b));
 
 
 
