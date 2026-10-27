@@ -37269,8 +37269,18 @@ namespace ProblemSolving
 
             return maxDistance;
         }
+        public int MinDeletions(int[] nums)
+        {
+            int minDeletions = 0;
 
+            for (int index = 0; index < nums.Length - 1; index++)
+            {
+                if ((nums[index] ^ nums[index + 1]) == 0)
+                    minDeletions++;
+            }
 
+            return minDeletions;
+        }
 
 
 

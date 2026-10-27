@@ -9502,15 +9502,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinOperations(n));
 
             ////(1552.) Magnetic Force Between Two Balls (MEDIUM) 
-            int[] position = [1, 2, 3, 4, 7];
-            int m = 3;
+            //int[] position = [1, 2, 3, 4, 7];
+            //int m = 3;
 
-            LeetCode_1552 classLeetCode = new LeetCode_1552();
-            Console.WriteLine(classLeetCode.MaxDistance(position, m));
+            //LeetCode_1552 classLeetCode = new LeetCode_1552();
+            //Console.WriteLine(classLeetCode.MaxDistance(position, m));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxDistance(position, m));
+            //Console.WriteLine(leetCodeAll.MaxDistance(position, m));
 
             ////(1556.) Thousand Separator (EASY)
             //int n = 1234;
@@ -17066,6 +17066,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinRotations(s));
+
+            ////(4083.) Minimum Deletions to Make Array Sharp (EASY)
+            int[] nums = [1, 1, 2, 2, 2, 3];
+
+            LeetCode_4083 classLeetCode = new LeetCode_4083();
+            Console.WriteLine(classLeetCode.MinDeletions(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinDeletions(nums));
 
             ////(4088.) Difference Between Peaks and Valleys (EASY)
             //int[] nums = [1, 5, 2, 4, 1, 3, 0];
