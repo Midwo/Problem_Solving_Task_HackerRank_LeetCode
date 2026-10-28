@@ -3544,6 +3544,16 @@ namespace ProblemSolving
 
             //classLeetCode.SetZeroes(matrix);
 
+            ////(75.) Sort Colors (MEDIUM)
+            int[] nums = [2, 0, 2, 1, 1, 0];
+
+            LeetCode_75 classLeetCode = new LeetCode_75();
+            classLeetCode.SortColors(nums);
+
+            //OR
+
+            leetCodeAll.SortColors(nums);
+
             ////(76.) Minimum Window Substring (HARD)
             //string s = "ADOBECODEBANC";
             //string t = "ABC";
@@ -17068,14 +17078,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinRotations(s));
 
             ////(4083.) Minimum Deletions to Make Array Sharp (EASY)
-            int[] nums = [1, 1, 2, 2, 2, 3];
+            //int[] nums = [1, 1, 2, 2, 2, 3];
 
-            LeetCode_4083 classLeetCode = new LeetCode_4083();
-            Console.WriteLine(classLeetCode.MinDeletions(nums));
+            //LeetCode_4083 classLeetCode = new LeetCode_4083();
+            //Console.WriteLine(classLeetCode.MinDeletions(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinDeletions(nums));
+            //Console.WriteLine(leetCodeAll.MinDeletions(nums));
 
             ////(4088.) Difference Between Peaks and Valleys (EASY)
             //int[] nums = [1, 5, 2, 4, 1, 3, 0];
