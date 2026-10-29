@@ -3545,14 +3545,14 @@ namespace ProblemSolving
             //classLeetCode.SetZeroes(matrix);
 
             ////(75.) Sort Colors (MEDIUM)
-            int[] nums = [2, 0, 2, 1, 1, 0];
+            //int[] nums = [2, 0, 2, 1, 1, 0];
 
-            LeetCode_75 classLeetCode = new LeetCode_75();
-            classLeetCode.SortColors(nums);
+            //LeetCode_75 classLeetCode = new LeetCode_75();
+            //classLeetCode.SortColors(nums);
 
-            //OR
+            ////OR
 
-            leetCodeAll.SortColors(nums);
+            //leetCodeAll.SortColors(nums);
 
             ////(76.) Minimum Window Substring (HARD)
             //string s = "ADOBECODEBANC";
@@ -10300,6 +10300,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinOperationsTask1758(s));
+
+            ////(1763.) Longest Nice Substring (EASY)
+            string s = "qlERNCNVvWLOrrkAaDcXnlaDQxNEneRXQMKnrNN";
+
+            LeetCode_1763 classLeetCode = new LeetCode_1763();
+            Console.WriteLine(classLeetCode.LongestNiceSubstring(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LongestNiceSubstring(s));
 
             ////(1768.) Merge Strings Alternately (EASY)
             //string word1 = "abc";
