@@ -5785,6 +5785,22 @@ namespace ProblemSolving
 
             //Console.WriteLine(string.Join(',', result1));
 
+            ////(653.) Two Sum IV - Input is a BST (EASY)
+            TreeNode root = new TreeNode(5);
+            root.left = new TreeNode(3);
+            root.left.left = new TreeNode(2);
+            root.left.right = new TreeNode(4);
+            root.right = new TreeNode(6);
+            root.right.right = new TreeNode(7);
+            int k = 9;
+
+            LeetCode_653 classLeetCode = new LeetCode_653();
+            Console.WriteLine(classLeetCode.FindTarget(root, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.FindTarget(root, k));
+
             ////(654.) Maximum Binary Tree (MEDIUM)
             //int[] nums = [3,2,1,6,0,5];
 
@@ -10302,14 +10318,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinOperationsTask1758(s));
 
             ////(1763.) Longest Nice Substring (EASY)
-            string s = "qlERNCNVvWLOrrkAaDcXnlaDQxNEneRXQMKnrNN";
+            //string s = "qlERNCNVvWLOrrkAaDcXnlaDQxNEneRXQMKnrNN";
 
-            LeetCode_1763 classLeetCode = new LeetCode_1763();
-            Console.WriteLine(classLeetCode.LongestNiceSubstring(s));
+            //LeetCode_1763 classLeetCode = new LeetCode_1763();
+            //Console.WriteLine(classLeetCode.LongestNiceSubstring(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LongestNiceSubstring(s));
+            //Console.WriteLine(leetCodeAll.LongestNiceSubstring(s));
 
             ////(1768.) Merge Strings Alternately (EASY)
             //string word1 = "abc";
