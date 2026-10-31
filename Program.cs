@@ -5786,20 +5786,20 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', result1));
 
             ////(653.) Two Sum IV - Input is a BST (EASY)
-            TreeNode root = new TreeNode(5);
-            root.left = new TreeNode(3);
-            root.left.left = new TreeNode(2);
-            root.left.right = new TreeNode(4);
-            root.right = new TreeNode(6);
-            root.right.right = new TreeNode(7);
-            int k = 9;
+            //TreeNode root = new TreeNode(5);
+            //root.left = new TreeNode(3);
+            //root.left.left = new TreeNode(2);
+            //root.left.right = new TreeNode(4);
+            //root.right = new TreeNode(6);
+            //root.right.right = new TreeNode(7);
+            //int k = 9;
 
-            LeetCode_653 classLeetCode = new LeetCode_653();
-            Console.WriteLine(classLeetCode.FindTarget(root, k));
+            //LeetCode_653 classLeetCode = new LeetCode_653();
+            //Console.WriteLine(classLeetCode.FindTarget(root, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.FindTarget(root, k));
+            //Console.WriteLine(leetCodeAll.FindTarget(root, k));
 
             ////(654.) Maximum Binary Tree (MEDIUM)
             //int[] nums = [3,2,1,6,0,5];
@@ -7926,6 +7926,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(string.Join(',', leetCodeAll.RemoveSubfolders(folder)));
+
+            ////(1248.) Count Number of Nice Subarrays (MEDIUM)
+            int[] nums = [1, 1, 2, 1, 1];
+            int k = 3;
+
+            LeetCode_1248 classLeetCode = new LeetCode_1248();
+            Console.WriteLine(classLeetCode.NumberOfSubarrays(nums, k));
+
+            //OR
+
+            Console.WriteLine(classLeetCode.NumberOfSubarrays(nums, k));
 
             ////(1251.) Average Selling Price (EASY)
             //string SqlQuery =
