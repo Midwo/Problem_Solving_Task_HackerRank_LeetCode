@@ -4989,6 +4989,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FrequencySort(s));
 
+            ////(453.) Minimum Moves to Equal Array Elements (MEDIUM)
+            int[] nums = [1,2,3];
+
+            LeetCode_453 classLeetCode = new LeetCode_453();
+            Console.WriteLine(classLeetCode.MinMoves(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinMovesTask453(nums));
+
             ////(455.) Assign Cookies (EASY)
             //int[] g = [1, 2];
             //int[] s = [1, 2, 3];
@@ -7928,15 +7938,15 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',', leetCodeAll.RemoveSubfolders(folder)));
 
             ////(1248.) Count Number of Nice Subarrays (MEDIUM)
-            int[] nums = [1, 1, 2, 1, 1];
-            int k = 3;
+            //int[] nums = [1, 1, 2, 1, 1];
+            //int k = 3;
 
-            LeetCode_1248 classLeetCode = new LeetCode_1248();
-            Console.WriteLine(classLeetCode.NumberOfSubarrays(nums, k));
+            //LeetCode_1248 classLeetCode = new LeetCode_1248();
+            //Console.WriteLine(classLeetCode.NumberOfSubarrays(nums, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(classLeetCode.NumberOfSubarrays(nums, k));
+            //Console.WriteLine(classLeetCode.NumberOfSubarrays(nums, k));
 
             ////(1251.) Average Selling Price (EASY)
             //string SqlQuery =

@@ -37535,8 +37535,33 @@ namespace ProblemSolving
             }
             return countNiceSubarrays;
         }
+        public int MinMovesTask453(int[] nums)
+        {
+            /////Solution 1
+            long sumValues = 0;
+            int minValue = int.MaxValue;
+            int length = nums.Length;
+
+            foreach (int num in nums)
+            {
+                minValue = minValue > num ? num : minValue;
+                sumValues += num;
+            }
+
+            return (int)(sumValues - length * minValue);
 
 
+            ////Solution 2
+            //int min = nums.Min();
+            //int countDiff = 0;
+
+            //foreach (int num in nums)
+            //{
+            //    countDiff += num - min;
+            //}
+
+            //return countDiff;
+        }
 
 
 
