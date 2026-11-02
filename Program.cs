@@ -5031,6 +5031,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.HammingDistance(x, y));
 
+            ////(462.) Minimum Moves to Equal Array Elements II (MEDIUM)
+            int[] nums = [1, 10, 2, 9];
+
+            LeetCode_462 classLeetCode = new LeetCode_462();
+            Console.WriteLine(classLeetCode.MinMoves2(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinMoves2(nums));
+
             ////(463.) Island Perimeter (EASY)
             //int[][] grid = [[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]];
 
@@ -17022,15 +17032,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanReach(start, target));
 
             ////(4000.) Largest Integer With Given Digit Sum (EASY)
-            int n = 2;
-            int s = 9;
+            //int n = 2;
+            //int s = 9;
 
-            LeetCode_4000 classLeetCode = new LeetCode_4000();
-            Console.WriteLine(classLeetCode.LargestInteger(n, s));
+            //LeetCode_4000 classLeetCode = new LeetCode_4000();
+            //Console.WriteLine(classLeetCode.LargestInteger(n, s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.LargestInteger(n, s));
+            //Console.WriteLine(leetCodeAll.LargestInteger(n, s));
 
             ////(4006.) Count Valid Prefixes (EASY)
             //string s = "00101";

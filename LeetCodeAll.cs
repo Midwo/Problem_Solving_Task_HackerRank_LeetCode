@@ -37582,8 +37582,19 @@ namespace ProblemSolving
 
             return s == 0 ? largestInteger : -1;
         }
+        public int MinMoves2(int[] nums)
+        {
+            Array.Sort(nums);
+            int median = nums[nums.Length / 2];
+            int countMoves = 0;
 
+            foreach (int num in nums)
+            {
+                countMoves += Math.Abs(num - median);
+            }
 
+            return countMoves;
+        }
 
 
 
