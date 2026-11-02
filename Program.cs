@@ -4990,14 +4990,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FrequencySort(s));
 
             ////(453.) Minimum Moves to Equal Array Elements (MEDIUM)
-            int[] nums = [1,2,3];
+            //int[] nums = [1,2,3];
 
-            LeetCode_453 classLeetCode = new LeetCode_453();
-            Console.WriteLine(classLeetCode.MinMoves(nums));
+            //LeetCode_453 classLeetCode = new LeetCode_453();
+            //Console.WriteLine(classLeetCode.MinMoves(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinMovesTask453(nums));
+            //Console.WriteLine(leetCodeAll.MinMovesTask453(nums));
 
             ////(455.) Assign Cookies (EASY)
             //int[] g = [1, 2];
@@ -17020,6 +17020,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.CanReach(start, target));
+
+            ////(4000.) Largest Integer With Given Digit Sum (EASY)
+            int n = 2;
+            int s = 9;
+
+            LeetCode_4000 classLeetCode = new LeetCode_4000();
+            Console.WriteLine(classLeetCode.LargestInteger(n, s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.LargestInteger(n, s));
 
             ////(4006.) Count Valid Prefixes (EASY)
             //string s = "00101";
