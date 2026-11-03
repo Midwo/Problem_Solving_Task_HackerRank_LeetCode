@@ -5032,14 +5032,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.HammingDistance(x, y));
 
             ////(462.) Minimum Moves to Equal Array Elements II (MEDIUM)
-            int[] nums = [1, 10, 2, 9];
+            //int[] nums = [1, 10, 2, 9];
 
-            LeetCode_462 classLeetCode = new LeetCode_462();
-            Console.WriteLine(classLeetCode.MinMoves2(nums));
+            //LeetCode_462 classLeetCode = new LeetCode_462();
+            //Console.WriteLine(classLeetCode.MinMoves2(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinMoves2(nums));
+            //Console.WriteLine(leetCodeAll.MinMoves2(nums));
 
             ////(463.) Island Perimeter (EASY)
             //int[][] grid = [[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]];
@@ -13286,6 +13286,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.DistinctIntegers(n));
+
+            ////(2451.) Odd String Difference (EASY)
+            string[] words = ["aaaba", "sssts", "vvvwv", "sssts", "ooopo", "rrrsr", "iiiji", "pppqp", "aabbb", "xxxyx", "nnnon", "bbbcb", "hhhih", "jjjkj", "hhhih", "kkklk", "yyyzy", "jjjkj", "nnnon", "eeefe", "eeefe", "ggghg", "sssts", "cccdc", "rrrsr"];
+
+            LeetCode_2451 classLeetCode = new LeetCode_2451();
+            Console.WriteLine(classLeetCode.OddString(words));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.OddString(words));
 
             ////(2553.) Separate the Digits in an Array (EASY)
             //int[] nums = [13, 25, 83, 77];
