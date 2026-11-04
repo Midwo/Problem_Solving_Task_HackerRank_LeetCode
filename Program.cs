@@ -16630,6 +16630,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.LargestEven(s));
 
+            ////(3803.) Count Residue Prefixes (EASY)
+            string s = "abc";
+
+            LeetCode_3803 classLeetCode = new LeetCode_3803();
+            Console.WriteLine(classLeetCode.ResiduePrefixes(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ResiduePrefixes(s));
+
             ////(3809.) Best Reachable Tower (MEDIUM)
             //int[][] towers = [[1, 3, 4], [2, 2, 4], [4, 4, 7]];
             //int[] center = [0,0];
@@ -17187,14 +17197,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CalculateScore(a, b));
 
             ////(4097.) Minimum Value of Merged Integers (EASY)
-            int[] nums = [23, 55, 42, 21];
+            //int[] nums = [23, 55, 42, 21];
 
-            LeetCode_4097 classLeetCode = new LeetCode_4097();
-            Console.WriteLine(classLeetCode.MinMergedInteger(nums));
+            //LeetCode_4097 classLeetCode = new LeetCode_4097();
+            //Console.WriteLine(classLeetCode.MinMergedInteger(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinMergedInteger(nums));
+            //Console.WriteLine(leetCodeAll.MinMergedInteger(nums));
 
 
 

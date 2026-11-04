@@ -37645,8 +37645,28 @@ namespace ProblemSolving
 
             return minValue;
         }
+        public int ResiduePrefixes(string s)
+        {
+            bool[] charVisited = new bool[26];
+            int countDistinctVisited = 0;
+            int countResiduePrefix = 0;
 
+            for (int index = 0; index < s.Length; index++)
+            {
+                int numberChar = s[index] - 'a';
 
+                if (!charVisited[numberChar])
+                {
+                    countDistinctVisited++;
+                    charVisited[numberChar] = true;
+                }
+
+                if ((index + 1) % 3 == countDistinctVisited)
+                    countResiduePrefix++;
+            }
+
+            return countResiduePrefix;
+        }
 
 
 
