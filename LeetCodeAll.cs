@@ -37633,8 +37633,18 @@ namespace ProblemSolving
 
             return "";
         }
+        public int MinMergedInteger(int[] nums)
+        {
+            int minValue = int.MaxValue;
 
+            for (int index = 1; index < nums.Length; index += 2)
+            {
+                int mergeValueString = int.Parse(nums[index - 1].ToString() + nums[index].ToString());
+                minValue = minValue > mergeValueString ? mergeValueString : minValue;
+            }
 
+            return minValue;
+        }
 
 
 

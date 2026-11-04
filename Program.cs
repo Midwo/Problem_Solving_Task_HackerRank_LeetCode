@@ -13288,14 +13288,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.DistinctIntegers(n));
 
             ////(2451.) Odd String Difference (EASY)
-            string[] words = ["aaaba", "sssts", "vvvwv", "sssts", "ooopo", "rrrsr", "iiiji", "pppqp", "aabbb", "xxxyx", "nnnon", "bbbcb", "hhhih", "jjjkj", "hhhih", "kkklk", "yyyzy", "jjjkj", "nnnon", "eeefe", "eeefe", "ggghg", "sssts", "cccdc", "rrrsr"];
+            //string[] words = ["aaaba", "sssts", "vvvwv", "sssts", "ooopo", "rrrsr", "iiiji", "pppqp", "aabbb", "xxxyx", "nnnon", "bbbcb", "hhhih", "jjjkj", "hhhih", "kkklk", "yyyzy", "jjjkj", "nnnon", "eeefe", "eeefe", "ggghg", "sssts", "cccdc", "rrrsr"];
 
-            LeetCode_2451 classLeetCode = new LeetCode_2451();
-            Console.WriteLine(classLeetCode.OddString(words));
+            //LeetCode_2451 classLeetCode = new LeetCode_2451();
+            //Console.WriteLine(classLeetCode.OddString(words));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.OddString(words));
+            //Console.WriteLine(leetCodeAll.OddString(words));
 
             ////(2553.) Separate the Digits in an Array (EASY)
             //int[] nums = [13, 25, 83, 77];
@@ -17186,9 +17186,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CalculateScore(a, b));
 
+            ////(4097.) Minimum Value of Merged Integers (EASY)
+            int[] nums = [23, 55, 42, 21];
 
+            LeetCode_4097 classLeetCode = new LeetCode_4097();
+            Console.WriteLine(classLeetCode.MinMergedInteger(nums));
 
+            //OR
 
+            Console.WriteLine(leetCodeAll.MinMergedInteger(nums));
 
 
 
