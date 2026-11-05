@@ -16631,14 +16631,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LargestEven(s));
 
             ////(3803.) Count Residue Prefixes (EASY)
-            string s = "abc";
+            //string s = "abc";
 
-            LeetCode_3803 classLeetCode = new LeetCode_3803();
-            Console.WriteLine(classLeetCode.ResiduePrefixes(s));
+            //LeetCode_3803 classLeetCode = new LeetCode_3803();
+            //Console.WriteLine(classLeetCode.ResiduePrefixes(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ResiduePrefixes(s));
+            //Console.WriteLine(leetCodeAll.ResiduePrefixes(s));
 
             ////(3809.) Best Reachable Tower (MEDIUM)
             //int[][] towers = [[1, 3, 4], [2, 2, 4], [4, 4, 7]];
@@ -17164,6 +17164,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MinRotations(s));
+
+            ////(4078.) Three Fibonacci Sum (EASY)
+            int n = 16;
+
+            LeetCode_4078 classLeetCode = new LeetCode_4078();
+            Console.WriteLine(classLeetCode.ThreeFibonacciSum(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ThreeFibonacciSum(n));
 
             ////(4083.) Minimum Deletions to Make Array Sharp (EASY)
             //int[] nums = [1, 1, 2, 2, 2, 3];

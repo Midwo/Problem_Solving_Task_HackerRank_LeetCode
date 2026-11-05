@@ -37667,8 +37667,27 @@ namespace ProblemSolving
 
             return countResiduePrefix;
         }
+        public bool ThreeFibonacciSum(int n)
+        {
+            int first = 1;
+            int second = 1;
+            int third = 0;
+            int sum = 1;
 
+            while (sum < n)
+            {
+                first = second + third;
 
+                sum = first + second + third;
+                if (sum == n)
+                    return true;
+
+                third = second;
+                second = first;
+            }
+
+            return false;
+        }
 
 
 
