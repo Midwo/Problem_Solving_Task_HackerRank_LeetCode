@@ -9380,6 +9380,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.LongestSubarray1493(nums));
+            
+            ////(1496.) Path Crossing (EASY)
+            string path = "NES";
+
+            LeetCode_1496 classLeetCode = new LeetCode_1496();
+            Console.WriteLine(classLeetCode.IsPathCrossing(path));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.IsPathCrossing(path));
 
             ////(1498.) Number of Subsequences That Satisfy the Given Sum Condition (MEDIUM)
             //int[] nums = [5, 2, 4, 1, 7, 6, 8];
@@ -17166,14 +17176,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinRotations(s));
 
             ////(4078.) Three Fibonacci Sum (EASY)
-            int n = 16;
+            //int n = 16;
 
-            LeetCode_4078 classLeetCode = new LeetCode_4078();
-            Console.WriteLine(classLeetCode.ThreeFibonacciSum(n));
+            //LeetCode_4078 classLeetCode = new LeetCode_4078();
+            //Console.WriteLine(classLeetCode.ThreeFibonacciSum(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.ThreeFibonacciSum(n));
+            //Console.WriteLine(leetCodeAll.ThreeFibonacciSum(n));
 
             ////(4083.) Minimum Deletions to Make Array Sharp (EASY)
             //int[] nums = [1, 1, 2, 2, 2, 3];
