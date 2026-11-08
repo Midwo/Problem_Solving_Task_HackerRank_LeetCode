@@ -8804,6 +8804,18 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.FindTheDistanceValue(arr1, arr2, d));
 
+            ////(1387.) Sort Integers by The Power Value (MEDIUM)
+            int lo = 7;
+            int hi = 11;
+            int k = 4;
+
+            LeetCode_1387 classLeetCode = new LeetCode_1387();
+            Console.WriteLine(classLeetCode.GetKth(lo, hi, k));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.GetKth(lo, hi, k));
+
             ////(1389.) Create Target Array in the Given Order (EASY)
             //int[] nums = [0, 1, 2, 3, 4];
             //int[] index = [0, 1, 2, 2, 1];
@@ -9380,7 +9392,7 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.LongestSubarray1493(nums));
-            
+
             ////(1496.) Path Crossing (EASY)
             //string path = "NES";
 
@@ -17105,14 +17117,14 @@ namespace ProblemSolving
             //Console.WriteLine(string.Join(',',classLeetCode.NearestDrone(drones, target)));
 
             ////(4030.) Check ASCII Palindromic (EASY)
-            string s = "a";
+            //string s = "a";
 
-            LeetCode_4030 classLeetCode = new LeetCode_4030();
-            Console.WriteLine(classLeetCode.IsPalindromic(s));
+            //LeetCode_4030 classLeetCode = new LeetCode_4030();
+            //Console.WriteLine(classLeetCode.IsPalindromic(s));
 
-            ////OR
+            //////OR
 
-            Console.WriteLine(leetCodeAll.IsPalindromic(s));
+            //Console.WriteLine(leetCodeAll.IsPalindromic(s));
 
             ////(4043.) Count Rotations With Exactly K Equal Adjacent Pairs (EASY)
             //string s = "aab";
