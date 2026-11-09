@@ -4789,6 +4789,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CanConstruct(ransomNote, magazine));
 
+            ////(386.) Lexicographical Numbers (MEDIUM)
+            int n = 13;
+
+            LeetCode_386 classLeetCode = new LeetCode_386();
+            Console.WriteLine(string.Join(',', classLeetCode.LexicalOrder(n)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.LexicalOrder(n)));
+
+
             ////(387.) First Unique Character in a String (EASY)
             //string s = "loveleetcode";
 
@@ -8805,16 +8816,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.FindTheDistanceValue(arr1, arr2, d));
 
             ////(1387.) Sort Integers by The Power Value (MEDIUM)
-            int lo = 7;
-            int hi = 11;
-            int k = 4;
+            //int lo = 7;
+            //int hi = 11;
+            //int k = 4;
 
-            LeetCode_1387 classLeetCode = new LeetCode_1387();
-            Console.WriteLine(classLeetCode.GetKth(lo, hi, k));
+            //LeetCode_1387 classLeetCode = new LeetCode_1387();
+            //Console.WriteLine(classLeetCode.GetKth(lo, hi, k));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.GetKth(lo, hi, k));
+            //Console.WriteLine(leetCodeAll.GetKth(lo, hi, k));
 
             ////(1389.) Create Target Array in the Given Order (EASY)
             //int[] nums = [0, 1, 2, 3, 4];
