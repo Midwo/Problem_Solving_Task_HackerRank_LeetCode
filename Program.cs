@@ -4790,15 +4790,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CanConstruct(ransomNote, magazine));
 
             ////(386.) Lexicographical Numbers (MEDIUM)
-            int n = 13;
+            //int n = 13;
 
-            LeetCode_386 classLeetCode = new LeetCode_386();
-            Console.WriteLine(string.Join(',', classLeetCode.LexicalOrder(n)));
+            //LeetCode_386 classLeetCode = new LeetCode_386();
+            //Console.WriteLine(string.Join(',', classLeetCode.LexicalOrder(n)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.LexicalOrder(n)));
-
+            //Console.WriteLine(string.Join(',', leetCodeAll.LexicalOrder(n)));
 
             ////(387.) First Unique Character in a String (EASY)
             //string s = "loveleetcode";
@@ -16343,6 +16342,17 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MajorityFrequencyGroup(s));
+
+            ////(3693.) Climbing Stairs II (MEDIUM)
+            int n = 4;
+            int[] costs = [5, 1, 6, 2];
+            
+            LeetCode_3693 classLeetCode = new LeetCode_3693();
+            Console.WriteLine(classLeetCode.ClimbStairs(n, costs));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.ClimbStairs(n, costs));
 
             ////(3697.) Compute Decimal Representation (EASY)
             //int n = 537;
