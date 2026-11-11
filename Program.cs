@@ -16344,15 +16344,15 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MajorityFrequencyGroup(s));
 
             ////(3693.) Climbing Stairs II (MEDIUM)
-            int n = 4;
-            int[] costs = [5, 1, 6, 2];
-            
-            LeetCode_3693 classLeetCode = new LeetCode_3693();
-            Console.WriteLine(classLeetCode.ClimbStairs(n, costs));
+            //int n = 4;
+            //int[] costs = [5, 1, 6, 2];
 
-            //OR
+            //LeetCode_3693 classLeetCode = new LeetCode_3693();
+            //Console.WriteLine(classLeetCode.ClimbStairs(n, costs));
 
-            Console.WriteLine(leetCodeAll.ClimbStairs(n, costs));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.ClimbStairs(n, costs));
 
             ////(3697.) Compute Decimal Representation (EASY)
             //int n = 537;
@@ -16651,6 +16651,20 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.MaximumScore(nums));
+
+            ////(3789.) Minimum Cost to Acquire Required Items (MEDIUM)
+            int cost1 = 625014;
+            int cost2 = 207793;
+            int costBoth = 875334; 
+            int need1 = 554292; 
+            int need2 = 90094;
+
+            LeetCode_3789 classLeetCode = new LeetCode_3789();
+            Console.WriteLine(classLeetCode.MinimumCost(cost1, cost2, costBoth, need1, need2));
+
+            //OR
+
+            Console.WriteLine(classLeetCode.MinimumCost(cost1, cost2, costBoth, need1, need2));
 
             ////(3794.) Reverse String Prefix (EASY)
             //string s = "abcd";
