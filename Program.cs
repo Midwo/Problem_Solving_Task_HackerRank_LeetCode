@@ -6450,6 +6450,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.IsRectangleOverlap(rec1,rec2));
 
+            ////(841.) Keys and Rooms (MEDIUM)
+            IList<IList<int>> rooms = [[1], [2], [3], []];
+
+            LeetCode_841 classLeetCode = new LeetCode_841();
+            Console.WriteLine(classLeetCode.CanVisitAllRooms(rooms));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CanVisitAllRooms(rooms));
+
             ////(844.) Backspace String Compare (EASY)
             //string s = "ab##";
             //string t = "c#d#";
@@ -16653,18 +16663,18 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MaximumScore(nums));
 
             ////(3789.) Minimum Cost to Acquire Required Items (MEDIUM)
-            int cost1 = 625014;
-            int cost2 = 207793;
-            int costBoth = 875334; 
-            int need1 = 554292; 
-            int need2 = 90094;
+            //int cost1 = 625014;
+            //int cost2 = 207793;
+            //int costBoth = 875334; 
+            //int need1 = 554292; 
+            //int need2 = 90094;
 
-            LeetCode_3789 classLeetCode = new LeetCode_3789();
-            Console.WriteLine(classLeetCode.MinimumCost(cost1, cost2, costBoth, need1, need2));
+            //LeetCode_3789 classLeetCode = new LeetCode_3789();
+            //Console.WriteLine(classLeetCode.MinimumCost(cost1, cost2, costBoth, need1, need2));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(classLeetCode.MinimumCost(cost1, cost2, costBoth, need1, need2));
+            //Console.WriteLine(classLeetCode.MinimumCost(cost1, cost2, costBoth, need1, need2));
 
             ////(3794.) Reverse String Prefix (EASY)
             //string s = "abcd";
