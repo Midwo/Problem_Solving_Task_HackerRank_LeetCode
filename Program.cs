@@ -3930,27 +3930,27 @@ namespace ProblemSolving
             //lRUCache1.Get(2);
 
             ////(148.) Sort List  (MEDIUM)
-            ListNode head = new ListNode(4);
-            head.next = new ListNode(2);
-            head.next.next = new ListNode(1);
-            head.next.next.next = new ListNode(3);
+            //ListNode head = new ListNode(4);
+            //head.next = new ListNode(2);
+            //head.next.next = new ListNode(1);
+            //head.next.next.next = new ListNode(3);
 
-            LeetCode_148 classLeetCode = new LeetCode_148();
-            ListNode resultListNode1 = classLeetCode.SortList(head);
-            while(resultListNode1 != null)
-            {
-                Console.WriteLine(resultListNode1.val);
-                resultListNode1 = resultListNode1.next;
-            }
+            //LeetCode_148 classLeetCode = new LeetCode_148();
+            //ListNode resultListNode1 = classLeetCode.SortList(head);
+            //while(resultListNode1 != null)
+            //{
+            //    Console.WriteLine(resultListNode1.val);
+            //    resultListNode1 = resultListNode1.next;
+            //}
 
-            //OR
+            ////OR
 
-            ListNode resultListNode2 = classLeetCode.SortList(head);
-            while (resultListNode2 != null)
-            {
-                Console.WriteLine(resultListNode2.val);
-                resultListNode2 = resultListNode2.next;
-            }
+            //ListNode resultListNode2 = classLeetCode.SortList(head);
+            //while (resultListNode2 != null)
+            //{
+            //    Console.WriteLine(resultListNode2.val);
+            //    resultListNode2 = resultListNode2.next;
+            //}
 
             //////(151.) Reverse Words in a String (MEDIUM)
             //string s = "a good   example";
@@ -10422,6 +10422,22 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.LongestNiceSubstring(s));
+
+            ////(1765.) Map of Highest Peak (MEDIUM)
+            int[][] isWater = isWater = [[0, 0, 1], [1, 0, 0], [0, 0, 0]];
+
+            LeetCode_1765 classLeetCode = new LeetCode_1765();
+            foreach(var item in classLeetCode.HighestPeak(isWater))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
+
+            //OR
+
+            foreach (var item in leetCodeAll.HighestPeak(isWater))
+            {
+                Console.WriteLine(string.Join(',', item));
+            }
 
             ////(1768.) Merge Strings Alternately (EASY)
             //string word1 = "abc";
