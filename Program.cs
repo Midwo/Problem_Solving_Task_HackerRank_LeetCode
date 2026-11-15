@@ -10205,6 +10205,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.HalvesAreAlike(s));
 
+            ////(1706.) Where Will the Ball Fall (MEDIUM)
+            int[][] grid = [[1, 1, 1, -1, -1], [1, 1, 1, -1, -1], [-1, -1, -1, 1, 1], [1, 1, 1, 1, -1], [-1, -1, -1, -1, -1]];
+
+            LeetCode_1706 classLeetCode = new LeetCode_1706();
+            Console.WriteLine(string.Join(',', classLeetCode.FindBall(grid)));
+
+            //OR
+
+            Console.WriteLine(string.Join(',', leetCodeAll.FindBall(grid)));
+
             ////(1710.) Maximum Units on a Truck (EASY)
             //int[][] boxTypes = [[1, 3], [2, 2], [3, 1]];
             //int truckSize = 4;
@@ -10424,20 +10434,20 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.LongestNiceSubstring(s));
 
             ////(1765.) Map of Highest Peak (MEDIUM)
-            int[][] isWater = isWater = [[0, 0, 1], [1, 0, 0], [0, 0, 0]];
+            //int[][] isWater = isWater = [[0, 0, 1], [1, 0, 0], [0, 0, 0]];
 
-            LeetCode_1765 classLeetCode = new LeetCode_1765();
-            foreach(var item in classLeetCode.HighestPeak(isWater))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //LeetCode_1765 classLeetCode = new LeetCode_1765();
+            //foreach(var item in classLeetCode.HighestPeak(isWater))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
-            //OR
+            ////OR
 
-            foreach (var item in leetCodeAll.HighestPeak(isWater))
-            {
-                Console.WriteLine(string.Join(',', item));
-            }
+            //foreach (var item in leetCodeAll.HighestPeak(isWater))
+            //{
+            //    Console.WriteLine(string.Join(',', item));
+            //}
 
             ////(1768.) Merge Strings Alternately (EASY)
             //string word1 = "abc";
