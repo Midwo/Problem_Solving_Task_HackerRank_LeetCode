@@ -10206,14 +10206,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.HalvesAreAlike(s));
 
             ////(1706.) Where Will the Ball Fall (MEDIUM)
-            int[][] grid = [[1, 1, 1, -1, -1], [1, 1, 1, -1, -1], [-1, -1, -1, 1, 1], [1, 1, 1, 1, -1], [-1, -1, -1, -1, -1]];
+            //int[][] grid = [[1, 1, 1, -1, -1], [1, 1, 1, -1, -1], [-1, -1, -1, 1, 1], [1, 1, 1, 1, -1], [-1, -1, -1, -1, -1]];
 
-            LeetCode_1706 classLeetCode = new LeetCode_1706();
-            Console.WriteLine(string.Join(',', classLeetCode.FindBall(grid)));
+            //LeetCode_1706 classLeetCode = new LeetCode_1706();
+            //Console.WriteLine(string.Join(',', classLeetCode.FindBall(grid)));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(string.Join(',', leetCodeAll.FindBall(grid)));
+            //Console.WriteLine(string.Join(',', leetCodeAll.FindBall(grid)));
 
             ////(1710.) Maximum Units on a Truck (EASY)
             //int[][] boxTypes = [[1, 3], [2, 2], [3, 1]];
@@ -17342,11 +17342,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinMergedInteger(nums));
 
+            ////(4111.) Count Consistent Subarrays I (EASY)
+            int[] nums = [5, 3, 1, 2];
+            
+            LeetCode_4111 classLeetCode = new LeetCode_4111();
+            Console.WriteLine(classLeetCode.CountConsistent(nums));
 
+            //OR
 
-
-
-
+            Console.WriteLine(leetCodeAll.CountConsistent(nums));
 
 
 

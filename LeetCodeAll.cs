@@ -38069,8 +38069,29 @@ namespace ProblemSolving
 
             return resultTable;
         }
+        public int CountConsistent(int[] nums)
+        {
+            int length = nums.Length;
+            int contConsistent = length;
 
+            for (int indexFirstValue = 0; indexFirstValue < length - 1; indexFirstValue++)
+            {
+                int minValue = nums[indexFirstValue];
+                int bitwiseAnd = minValue;
 
+                for (int nextIndex = indexFirstValue + 1; nextIndex < length; nextIndex++)
+                {
+                    int currValue = nums[nextIndex];
+                    minValue = minValue > currValue ? currValue : minValue;
+                    bitwiseAnd &= currValue;
+
+                    if (minValue == bitwiseAnd)
+                        contConsistent++;
+                }
+            }
+
+            return contConsistent;
+        }
 
 
 
