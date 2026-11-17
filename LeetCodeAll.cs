@@ -38092,9 +38092,27 @@ namespace ProblemSolving
 
             return contConsistent;
         }
+        public int CountIntersectingIntervals(int[][] intervals)
+        {
+            int countIntervalParis = 0;
+            int length = intervals.Length;
 
+            for (int startPairIndex = 0; startPairIndex < length; startPairIndex++)
+            {
+                int startValue = intervals[startPairIndex][0];
+                int stopValue = intervals[startPairIndex][1];
 
+                for (int nextPairIndex = startPairIndex + 1; nextPairIndex < length; nextPairIndex++)
+                {
+                    if (startValue <= intervals[nextPairIndex][1] && stopValue >= intervals[nextPairIndex][0])
+                    {
+                        countIntervalParis++;
+                    }
+                }
+            }
 
+            return countIntervalParis;
+        }
 
 
 

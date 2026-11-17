@@ -17271,6 +17271,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountSpecialIntegersTask4048(nums));
 
+            ////(4056.) Number of Intersecting Interval Pairs I (EASY)
+            int[][] intervals = [[1, 2], [2, 3], [3, 4]];
+
+            LeetCode_4056 classLeetCode = new LeetCode_4056();
+            Console.WriteLine(classLeetCode.CountIntersectingIntervals(intervals));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountIntersectingIntervals(intervals));
+
             ////(4065.) Rearrange Array by Removing Distinct Values (EASY)
             //int[] nums = [3,1,3,2,1,3];
 
@@ -17343,14 +17353,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinMergedInteger(nums));
 
             ////(4111.) Count Consistent Subarrays I (EASY)
-            int[] nums = [5, 3, 1, 2];
-            
-            LeetCode_4111 classLeetCode = new LeetCode_4111();
-            Console.WriteLine(classLeetCode.CountConsistent(nums));
+            //int[] nums = [5, 3, 1, 2];
 
-            //OR
+            //LeetCode_4111 classLeetCode = new LeetCode_4111();
+            //Console.WriteLine(classLeetCode.CountConsistent(nums));
 
-            Console.WriteLine(leetCodeAll.CountConsistent(nums));
+            ////OR
+
+            //Console.WriteLine(leetCodeAll.CountConsistent(nums));
 
 
 
