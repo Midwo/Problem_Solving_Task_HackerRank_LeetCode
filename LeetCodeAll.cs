@@ -38113,6 +38113,24 @@ namespace ProblemSolving
 
             return countIntervalParis;
         }
+        public int MinChanges(string s)
+        {
+            int countChanges = 0;
+
+            for (int index = 1; index < s.Length; index += 2)
+            {
+                if (s[index - 1] != s[index])
+                    countChanges++;
+            }
+
+            return countChanges;
+        }
+
+
+
+
+
+
 
 
 

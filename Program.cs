@@ -14316,6 +14316,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.SumCounts(nums));
 
+            ////(2914.) Minimum Number of Changes to Make Binary String Beautiful (MEDIUM)
+            string s = "1001";
+
+            LeetCode_2914 classLeetCode = new LeetCode_2914();
+            Console.WriteLine(classLeetCode.MinChanges(s));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinChanges(s));
+
             ////(2917.) Find the K-or of an Array (EASY)
             //int[] nums = [7, 12, 9, 8, 9, 15];
             //int k = 4;
@@ -17272,14 +17282,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountSpecialIntegersTask4048(nums));
 
             ////(4056.) Number of Intersecting Interval Pairs I (EASY)
-            int[][] intervals = [[1, 2], [2, 3], [3, 4]];
+            //int[][] intervals = [[1, 2], [2, 3], [3, 4]];
 
-            LeetCode_4056 classLeetCode = new LeetCode_4056();
-            Console.WriteLine(classLeetCode.CountIntersectingIntervals(intervals));
+            //LeetCode_4056 classLeetCode = new LeetCode_4056();
+            //Console.WriteLine(classLeetCode.CountIntersectingIntervals(intervals));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountIntersectingIntervals(intervals));
+            //Console.WriteLine(leetCodeAll.CountIntersectingIntervals(intervals));
 
             ////(4065.) Rearrange Array by Removing Distinct Values (EASY)
             //int[] nums = [3,1,3,2,1,3];
