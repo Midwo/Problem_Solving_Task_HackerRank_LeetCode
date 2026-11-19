@@ -13452,6 +13452,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinMaxDifference(num));
 
+            ////(2567.) Minimum Score by Changing Two Elements (MEDIUM)
+            int[] nums = [1, 4, 7, 8, 5];
+
+            LeetCode_2567 classLeetCode = new LeetCode_2567();
+            Console.WriteLine(classLeetCode.MinimizeSum(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MinimizeSum(nums));
+
             ////(2570.) Merge Two 2D Arrays by Summing Values (EASY)
             //int[][] nums1 = [[1, 2], [2, 3], [4, 5]];
             //int[][] nums2 = [[1, 4], [3, 2], [4, 1]];
@@ -14317,14 +14327,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.SumCounts(nums));
 
             ////(2914.) Minimum Number of Changes to Make Binary String Beautiful (MEDIUM)
-            string s = "1001";
+            //string s = "1001";
 
-            LeetCode_2914 classLeetCode = new LeetCode_2914();
-            Console.WriteLine(classLeetCode.MinChanges(s));
+            //LeetCode_2914 classLeetCode = new LeetCode_2914();
+            //Console.WriteLine(classLeetCode.MinChanges(s));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinChanges(s));
+            //Console.WriteLine(leetCodeAll.MinChanges(s));
 
             ////(2917.) Find the K-or of an Array (EASY)
             //int[] nums = [7, 12, 9, 8, 9, 15];
