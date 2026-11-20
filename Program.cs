@@ -5938,6 +5938,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.HasAlternatingBits(n));
 
+            ////(695.) Max Area of Island (MEDIUM)
+            int[][] grid = [[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]];
+
+            LeetCode_695 classLeetCode = new LeetCode_695();
+            Console.WriteLine(classLeetCode.MaxAreaOfIsland(grid));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.MaxAreaOfIsland(grid));
+
             ////(696.) Count Binary Substrings (EASY)
             //string s = "000111000";
 
@@ -13452,15 +13462,15 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MinMaxDifference(num));
 
-            ////(2567.) Minimum Score by Changing Two Elements (MEDIUM)
-            int[] nums = [1, 4, 7, 8, 5];
+            //////(2567.) Minimum Score by Changing Two Elements (MEDIUM)
+            //int[] nums = [1, 4, 7, 8, 5];
 
-            LeetCode_2567 classLeetCode = new LeetCode_2567();
-            Console.WriteLine(classLeetCode.MinimizeSum(nums));
+            //LeetCode_2567 classLeetCode = new LeetCode_2567();
+            //Console.WriteLine(classLeetCode.MinimizeSum(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinimizeSum(nums));
+            //Console.WriteLine(leetCodeAll.MinimizeSum(nums));
 
             ////(2570.) Merge Two 2D Arrays by Summing Values (EASY)
             //int[][] nums1 = [[1, 2], [2, 3], [4, 5]];
