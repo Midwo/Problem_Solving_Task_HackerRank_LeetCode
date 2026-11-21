@@ -5939,14 +5939,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.HasAlternatingBits(n));
 
             ////(695.) Max Area of Island (MEDIUM)
-            int[][] grid = [[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]];
+            //int[][] grid = [[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]];
 
-            LeetCode_695 classLeetCode = new LeetCode_695();
-            Console.WriteLine(classLeetCode.MaxAreaOfIsland(grid));
+            //LeetCode_695 classLeetCode = new LeetCode_695();
+            //Console.WriteLine(classLeetCode.MaxAreaOfIsland(grid));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxAreaOfIsland(grid));
+            //Console.WriteLine(leetCodeAll.MaxAreaOfIsland(grid));
 
             ////(696.) Count Binary Substrings (EASY)
             //string s = "000111000";
@@ -14048,6 +14048,16 @@ namespace ProblemSolving
             ////OR
 
             //Console.WriteLine(leetCodeAll.NumberOfEmployeesWhoMetTarget(hours, target));
+
+            ////(2799.) Count Complete Subarrays in an Array (MEDIUM)
+            int[] nums = [1, 3, 1, 2, 2];
+
+            LeetCode_2799 classLeetCode = new LeetCode_2799();
+            Console.WriteLine(classLeetCode.CountCompleteSubarrays(nums));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.CountCompleteSubarrays(nums));
 
             ////(2806.) Account Balance After Rounded Purchase (EASY)
             //int purchaseAmount = 15;

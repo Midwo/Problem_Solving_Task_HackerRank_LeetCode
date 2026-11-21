@@ -38242,8 +38242,36 @@ namespace ProblemSolving
 
             return maxIsland;
         }
+        public int CountCompleteSubarrays(int[] nums)
+        {
+            int countCompleteSubarrays = 0;
 
+            HashSet<int> distinctValuesNums = new HashSet<int>();
 
+            foreach (int number in nums)
+            {
+                distinctValuesNums.Add(number);
+            }
+
+            for (int indexStart = 0; indexStart < nums.Length; indexStart++)
+            {
+                HashSet<int> subarrayDistinctValues = new HashSet<int>();
+                int currCompleteSubarrays = 0;
+                for (int index = indexStart; index < nums.Length; index++)
+                {
+                    subarrayDistinctValues.Add(nums[index]);
+                    if (subarrayDistinctValues.Count == distinctValuesNums.Count)
+                    {
+                        currCompleteSubarrays = nums.Length - index;
+
+                        break;
+                    }
+                }
+                countCompleteSubarrays += currCompleteSubarrays;
+            }
+
+            return countCompleteSubarrays;
+        }
 
 
 
