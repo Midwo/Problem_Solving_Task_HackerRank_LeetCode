@@ -38272,8 +38272,25 @@ namespace ProblemSolving
 
             return countCompleteSubarrays;
         }
+        public int MinRange(int a, int b, int c)
+        {
+            while (true)
+            {
+                if (a > b + c)
+                    a = b + c;
+                else if (b > a + c)
+                    b = a + c;
+                else if (c > a + b)
+                    c = a + b;
+                else
+                {
+                    break;
+                }
+            }
 
-
+            return Math.Max(Math.Max(a, b), c) - Math.Min(Math.Min(a, b), c);
+        }
+ 
 
 
 

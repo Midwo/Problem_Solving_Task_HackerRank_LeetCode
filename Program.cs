@@ -14050,14 +14050,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.NumberOfEmployeesWhoMetTarget(hours, target));
 
             ////(2799.) Count Complete Subarrays in an Array (MEDIUM)
-            int[] nums = [1, 3, 1, 2, 2];
+            //int[] nums = [1, 3, 1, 2, 2];
 
-            LeetCode_2799 classLeetCode = new LeetCode_2799();
-            Console.WriteLine(classLeetCode.CountCompleteSubarrays(nums));
+            //LeetCode_2799 classLeetCode = new LeetCode_2799();
+            //Console.WriteLine(classLeetCode.CountCompleteSubarrays(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.CountCompleteSubarrays(nums));
+            //Console.WriteLine(leetCodeAll.CountCompleteSubarrays(nums));
 
             ////(2806.) Account Balance After Rounded Purchase (EASY)
             //int purchaseAmount = 15;
@@ -17402,10 +17402,17 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountConsistent(nums));
 
+            ////(4117.) Minimum Range After Sum Operations (MEDIUM)
+            int a = 9;
+            int b = 2;
+            int c = 5;
 
+            LeetCode_4117 classLeetCode = new LeetCode_4117();
+            Console.WriteLine(classLeetCode.MinRange(a, b, c));
 
+            //OR
 
-
+            Console.WriteLine(leetCodeAll.MinRange(a, b, c));
 
 
 
