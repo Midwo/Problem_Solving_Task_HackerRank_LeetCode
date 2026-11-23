@@ -8707,6 +8707,33 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.CountNegatives(grid));
 
+            ////(1352.) Product of the Last K Numbers (MEDIUM)
+            LeetCode_1352.ProductOfNumbers classLeetCode = new LeetCode_1352.ProductOfNumbers();
+            classLeetCode.Add(3);
+            classLeetCode.Add(0);
+            classLeetCode.Add(2);
+            classLeetCode.Add(5);
+            classLeetCode.Add(4);
+            Console.WriteLine(classLeetCode.GetProduct(2));
+            Console.WriteLine(classLeetCode.GetProduct(3));
+            Console.WriteLine(classLeetCode.GetProduct(4));
+            classLeetCode.Add(8);
+            Console.WriteLine(classLeetCode.GetProduct(2));
+
+            //OR
+
+            ProductOfNumbersTask1352 testLeetCodeAll = new ProductOfNumbersTask1352();
+            testLeetCodeAll.Add(3);
+            testLeetCodeAll.Add(0);
+            testLeetCodeAll.Add(2);
+            testLeetCodeAll.Add(5);
+            testLeetCodeAll.Add(4);
+            Console.WriteLine(testLeetCodeAll.GetProduct(2));
+            Console.WriteLine(testLeetCodeAll.GetProduct(3));
+            Console.WriteLine(testLeetCodeAll.GetProduct(4));
+            testLeetCodeAll.Add(8);
+            Console.WriteLine(testLeetCodeAll.GetProduct(2));
+
             ////(1356.) Sort Integers by The Number of 1 Bits (EASY)
             //int[] arr = [1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1];
 
@@ -17403,16 +17430,16 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.CountConsistent(nums));
 
             ////(4117.) Minimum Range After Sum Operations (MEDIUM)
-            int a = 9;
-            int b = 2;
-            int c = 5;
+            //int a = 9;
+            //int b = 2;
+            //int c = 5;
 
-            LeetCode_4117 classLeetCode = new LeetCode_4117();
-            Console.WriteLine(classLeetCode.MinRange(a, b, c));
+            //LeetCode_4117 classLeetCode = new LeetCode_4117();
+            //Console.WriteLine(classLeetCode.MinRange(a, b, c));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MinRange(a, b, c));
+            //Console.WriteLine(leetCodeAll.MinRange(a, b, c));
 
 
 
