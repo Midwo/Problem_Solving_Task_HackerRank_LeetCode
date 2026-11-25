@@ -13894,6 +13894,16 @@ namespace ProblemSolving
 
             //Console.WriteLine(leetCodeAll.MakeSmallestPalindrome(s));
 
+            ////(2698.) Find the Punishment Number of an Integer (MEDIUM)
+            int n = 10;
+
+            LeetCode_2698 classLeetCode = new LeetCode_2698();
+            Console.WriteLine(classLeetCode.PunishmentNumber(n));
+
+            //OR
+
+            Console.WriteLine(leetCodeAll.PunishmentNumber(n));
+
             ////(2706.) Buy Two Chocolates (EASY)
             //int[] prices = { 1, 2, 2 };
             //int money = 3;
@@ -15702,14 +15712,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MinimumOperations(grid));
 
             ////(3411.) Maximum Subarray With Equal Products (EASY)
-            int[] nums = [2, 3, 4, 5, 6];
+            //int[] nums = [2, 3, 4, 5, 6];
 
-            LeetCode_3411 classLeetCode = new LeetCode_3411();
-            Console.WriteLine(classLeetCode.MaxLength(nums));
+            //LeetCode_3411 classLeetCode = new LeetCode_3411();
+            //Console.WriteLine(classLeetCode.MaxLength(nums));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.MaxLength(nums));
+            //Console.WriteLine(leetCodeAll.MaxLength(nums));
 
             ////(3417.) Zigzag Grid Traversal With Skip (EASY)
             //int[][] grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
