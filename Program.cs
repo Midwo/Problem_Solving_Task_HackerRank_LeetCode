@@ -27,6 +27,7 @@ using System.Threading;
 using System.Timers;
 using System.Xml;
 using System.Xml.Linq;
+using static ProblemSolving.LeetCode.LeetCode_1115;
 using static ProblemSolving.LeetCode.LeetCode_1286;
 using static ProblemSolving.LeetCode.LeetCode_1396;
 using static ProblemSolving.LeetCode.LeetCode_1476;
@@ -7585,9 +7586,34 @@ namespace ProblemSolving
 
             ////(1114.) Print in Order (EASY)
 
-            //LeetCode_1114.Foo123 classLeetCode = new LeetCode_1114.Foo123();
+            //LeetCode_1114.Foo classLeetCode = new LeetCode_1114.Foo();
+
+            ////(1115.) Print FooBar Alternately (MEDIUM)
+            int n = 4;
+
+            LeetCode_1115.FooBar classLeetCode = new LeetCode_1115.FooBar(n);
+            
+            Thread threadA = new Thread(() => classLeetCode.Foo(() => { }));
+            Thread threadB = new Thread(() => classLeetCode.Bar(() => { }));
+
+            threadA.Start();
+            threadB.Start();
+
+            threadA.Join();
+            threadB.Join();
 
             //OR
+
+            FooBarTask1115 leetCodeTask = new FooBarTask1115(n);
+
+            Thread threadC = new Thread(() => classLeetCode.Foo(() => { }));
+            Thread threadD = new Thread(() => classLeetCode.Bar(() => { }));
+
+            threadC.Start();
+            threadD.Start();
+
+            threadC.Join();
+            threadD.Join();
 
             ////(1122.) Relative Sort Array (EASY)
             //int[] arr1 = [2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19];
@@ -13895,14 +13921,14 @@ namespace ProblemSolving
             //Console.WriteLine(leetCodeAll.MakeSmallestPalindrome(s));
 
             ////(2698.) Find the Punishment Number of an Integer (MEDIUM)
-            int n = 10;
+            //int n = 10;
 
-            LeetCode_2698 classLeetCode = new LeetCode_2698();
-            Console.WriteLine(classLeetCode.PunishmentNumber(n));
+            //LeetCode_2698 classLeetCode = new LeetCode_2698();
+            //Console.WriteLine(classLeetCode.PunishmentNumber(n));
 
-            //OR
+            ////OR
 
-            Console.WriteLine(leetCodeAll.PunishmentNumber(n));
+            //Console.WriteLine(leetCodeAll.PunishmentNumber(n));
 
             ////(2706.) Buy Two Chocolates (EASY)
             //int[] prices = { 1, 2, 2 };

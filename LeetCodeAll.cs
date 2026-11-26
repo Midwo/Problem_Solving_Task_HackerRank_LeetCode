@@ -38484,8 +38484,52 @@ namespace ProblemSolving
 
             return sumPunishmentNumber;
         }
+        public class FooBarTask1115
+        {
+            private int n;
+            private Semaphore _fooStatus;
+            private Semaphore _barStatus;
 
+            public FooBarTask1115(int n)
+            {
+                this.n = n;
+                _barStatus = new Semaphore(0, n);
+                _fooStatus = new Semaphore(0, n);
+            }
 
+            public void Foo(Action printFoo)
+            {
+
+                for (int i = 0; i < n; i++)
+                {
+
+                    // printFoo() outputs "foo". Do not change or remove this line.
+
+                    //printFoo();
+                    //Local Test:      
+
+                    Console.Write("foo");
+                    _barStatus.Release();
+                    _fooStatus.WaitOne();
+
+                }
+            }
+
+            public void Bar(Action printBar)
+            {
+
+                for (int i = 0; i < n; i++)
+                {
+
+                    // printBar() outputs "bar". Do not change or remove this line.
+                    _barStatus.WaitOne();
+                    //printBar();
+                    //Local Test:
+                    Console.Write("Bar");
+                    _fooStatus.Release();
+                }
+            }
+        }
 
 
 
