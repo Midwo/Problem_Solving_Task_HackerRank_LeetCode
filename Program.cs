@@ -7589,31 +7589,31 @@ namespace ProblemSolving
             //LeetCode_1114.Foo classLeetCode = new LeetCode_1114.Foo();
 
             ////(1115.) Print FooBar Alternately (MEDIUM)
-            int n = 4;
+            //int n = 4;
 
-            LeetCode_1115.FooBar classLeetCode = new LeetCode_1115.FooBar(n);
-            
-            Thread threadA = new Thread(() => classLeetCode.Foo(() => { }));
-            Thread threadB = new Thread(() => classLeetCode.Bar(() => { }));
+            //LeetCode_1115.FooBar classLeetCode = new LeetCode_1115.FooBar(n);
 
-            threadA.Start();
-            threadB.Start();
+            //Thread threadA = new Thread(() => classLeetCode.Foo(() => { }));
+            //Thread threadB = new Thread(() => classLeetCode.Bar(() => { }));
 
-            threadA.Join();
-            threadB.Join();
+            //threadA.Start();
+            //threadB.Start();
 
-            //OR
+            //threadA.Join();
+            //threadB.Join();
 
-            FooBarTask1115 leetCodeTask = new FooBarTask1115(n);
+            ////OR
 
-            Thread threadC = new Thread(() => classLeetCode.Foo(() => { }));
-            Thread threadD = new Thread(() => classLeetCode.Bar(() => { }));
+            //FooBarTask1115 leetCodeTask = new FooBarTask1115(n);
 
-            threadC.Start();
-            threadD.Start();
+            //Thread threadC = new Thread(() => classLeetCode.Foo(() => { }));
+            //Thread threadD = new Thread(() => classLeetCode.Bar(() => { }));
 
-            threadC.Join();
-            threadD.Join();
+            //threadC.Start();
+            //threadD.Start();
+
+            //threadC.Join();
+            //threadD.Join();
 
             ////(1122.) Relative Sort Array (EASY)
             //int[] arr1 = [2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19];
@@ -7892,6 +7892,46 @@ namespace ProblemSolving
             //////OR
 
             //LeetCode_1193 classLeetCode = new LeetCode_1193();
+
+            ////(1195.) Fizz Buzz Multithreaded (MEDIUM)
+            int n = 15;
+            LeetCode_1195.FizzBuzz classLeetCode = new LeetCode_1195.FizzBuzz(n);
+
+            Thread threadA = new Thread(() => classLeetCode.Fizz(() => Console.WriteLine("fizz")));
+            Thread threadB = new Thread(() => classLeetCode.Buzz(() => Console.WriteLine("buzz")));
+            Thread threadC = new Thread(() => classLeetCode.Fizzbuzz(() => Console.WriteLine("fizzbuzz")));
+            Thread threadD = new Thread(() => classLeetCode.Number(x => Console.WriteLine(x)));
+
+            threadA.Start();
+            threadB.Start();
+            threadC.Start();
+            threadD.Start();
+
+            threadA.Join();
+            threadB.Join();
+            threadC.Join();
+            threadD.Join();
+
+            //OR
+
+            int x = 15;
+
+            var leetCodeClass = new FizzBuzzTask1195(x);
+            Thread thread1 = new Thread(() => leetCodeClass.Fizz(() => Console.WriteLine("fizz")));
+            Thread thread2 = new Thread(() => leetCodeClass.Buzz(() => Console.WriteLine("buzz")));
+            Thread thread3 = new Thread(() => leetCodeClass.Fizzbuzz(() => Console.WriteLine("fizzbuzz")));
+            Thread thread4 = new Thread(() => leetCodeClass.Number(x => Console.WriteLine(x)));
+
+            thread1.Start();
+            thread2.Start();
+            thread3.Start();
+            thread4.Start();
+
+            thread1.Join();
+            thread2.Join();
+            thread3.Join();
+            thread4.Join();
+
 
             ////(1200.) Minimum Absolute Difference (EASY)
             //int[] arr = [4, 2, 1, 3];
